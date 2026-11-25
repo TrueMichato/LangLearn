@@ -21,7 +21,17 @@ const snapshot: Readonly<Record<string, readonly Identity[]>> = Object.fromEntri
 
 // Approved retirements: lessonId → card id → reason. A retired card's former
 // pairs must then have no owner, so its schedule is never handed to another card.
-const retired: Readonly<Record<string, Readonly<Record<string, string>>>> = {};
+const retired: Readonly<Record<string, Readonly<Record<string, string>>>> = {
+  articles: {
+    'definite-article-system': 'set prompt split into atomic cards (rule-article-agreement, article-agreement, definite-masculine-plural)',
+  },
+  demonstratives: {
+    'distance-system': 'set prompt split into atomic cards (rule-este-speaker, rule-esse-listener, rule-aquele-far)',
+  },
+  'futuro-subjuntivo': {
+    'future-subjunctive-formation': 'set prompt split into atomic cards (rule-future-subjunctive-stem, rule-future-subjunctive-eu-ending, rule-future-subjunctive-nos-ending, rule-future-subjunctive-eles-ending)',
+  },
+};
 
 // Justified overlaps where a cloze's one-word answer is also a token on its
 // front: 'lessonId/cardId' → reason.
@@ -98,6 +108,14 @@ function frontErrors(lessonId: string, card: GrammarReviewItem): string[] {
     ? [`${lessonId}/${card.id}: one-word answer "${card.answer}" is already on the front`] : [];
 }
 
+// An answer's core is its lead phrase before any elaboration, so "-dade (as in
+// cidade)" has core "-dade". Planting only the core still gives the card away.
+const coreSeparators = [' (', ':', ';', ',', ' as in ', ' — ', '. '];
+function answerCore(answer: string): string {
+  const cut = Math.min(answer.length, ...coreSeparators.map((separator) => answer.indexOf(separator)).filter((at) => at >= 0));
+  return plain(answer.slice(0, cut));
+}
+
 function ruleCardErrors(lessonId: string, markdown: string, cards = grammar(markdown)): string[] {
   const sections = lessonHeadings(markdown);
   const errors: string[] = [];
@@ -107,6 +125,11 @@ function ruleCardErrors(lessonId: string, markdown: string, cards = grammar(mark
     if (card.kind !== 'concept' || card.format !== 'qa') errors.push(`${label}: must be concept + qa`);
     if (!plain(card.answer)) errors.push(`${label}: empty answer`);
     else if (containsPhrase(plain(front), plain(card.answer))) errors.push(`${label}: answer appears verbatim on the front`);
+    else {
+      const core = answerCore(card.answer);
+      const size = tokens(core).length;
+      if (size > 0 && size <= 3 && containsPhrase(plain(front), core)) errors.push(`${label}: core answer "${core}" appears on the front`);
+    }
     if (!sections.includes(card.sourceSection)) errors.push(`${label}: sourceSection is not a lesson heading`);
     const frontWords = new Set(tokens(front));
     for (const other of cards) {
@@ -204,7 +227,7 @@ describe('Portuguese reviewed grammar lessons', () => {
       'present-ar/ar-plural: removed without an approved retirement',
       'present-ar: "Eles ___ muito. (trabalhar)" must be owned by ar-plural, found none',
     ]);
-    expect(identityErrors(removed, { 'present-ar': { 'ar-plural': 'example retirement' } })).toEqual([]);
+    expect(identityErrors(removed, { ...retired, 'present-ar': { 'ar-plural': 'example retirement' } })).toEqual([]);
     const moved = { ...removed, 'present-er-ir': [...removed['present-er-ir'], plural] };
     expect(identityErrors(moved)).toContain('present-ar/ar-plural: moved to present-er-ir');
   });
@@ -217,6 +240,17 @@ describe('Portuguese reviewed grammar lessons', () => {
     expect(ruleCardErrors('present-ar', markdown, [...cards, recall])).toEqual([]);
     expect(ruleCardErrors('present-ar', markdown, [...cards, { ...recall, hint: 'Remove -ar, leaving fal-' }])).toEqual([
       'present-ar/rule-stem-formation: answer appears verbatim on the front',
+    ]);
+  });
+
+  it('rejects a rule-recall card whose front plants only the core of its answer', () => {
+    const markdown = lesson('cognates');
+    const cards = grammar(markdown);
+    const suffix = cards.find((card) => card.id === 'rule-ty-suffix')!;
+    expect(ruleCardErrors('cognates', markdown)).toEqual([]);
+    const planted = { ...suffix, prompt: `${suffix.prompt} (-dade)` };
+    expect(ruleCardErrors('cognates', markdown, cards.map((card) => card === suffix ? planted : card))).toEqual([
+      'cognates/rule-ty-suffix: core answer "-dade" appears on the front',
     ]);
   });
 });

@@ -6,9 +6,9 @@ The future subjunctive remains productive in everyday Portuguese, unlike in many
 
 ## Formation
 
-<!-- grammar-card: {"id":"future-subjunctive-formation","kind":"concept","format":"qa","priority":"optional","sourceSection":"Formation","rule":"Add -r, -r, -rmos, -rem to the eles preterite minus -ram","example":"After removing -ram from the eles preterite, what endings form the future subjunctive for eu, você, nós, and eles?","answer":"-r, -r, -rmos, and -rem respectively.","explanation":"The preterite base plus these endings gives falar, falar, falarmos, falarem; irregular preterite stems remain significant."} -->
 <!-- grammar-card: {"id":"future-subjunctive-regular-overlap","kind":"concept","format":"qa","priority":"essential","sourceSection":"Formation","rule":"Only regular future-subjunctive forms can be safely copied from their infinitives","example":"Can the regular-verb resemblance to the personal infinitive safely derive every future subjunctive?","answer":"No. Irregular verbs use their preterite stems, as ter → tiver rather than ter.","explanation":"Regular forms coincide with the personal infinitive; irregular forms can differ."} -->
 <!-- grammar-card: {"id":"rule-future-subjunctive-stem","kind":"concept","format":"qa","priority":"essential","sourceSection":"Formation","rule":"The future subjunctive is built from the eles preterite minus -ram","example":"How is the future subjunctive stem obtained from the preterite?","answer":"Take the eles (third-person plural) preterite form and drop -ram.","explanation":"falaram → falar, tiveram → tiver: drop -ram, then add -r, -r, -rmos or -rem."} -->
+<!-- grammar-card: {"id":"rule-future-subjunctive-eu-ending","kind":"concept","format":"qa","priority":"optional","sourceSection":"Formation","rule":"Eu and você take -r in the future subjunctive","example":"In the future subjunctive, which ending marks eu and você after the preterite-based stem?","answer":"-r (as in falar and tiver).","explanation":"The eu and você/ele/ela ending is -r for regular and irregular verbs alike: falar, comer, tiver."} -->
 <!-- grammar-card: {"id":"rule-future-subjunctive-nos-ending","kind":"concept","format":"qa","priority":"optional","sourceSection":"Formation","rule":"Nós takes -rmos in the future subjunctive","example":"In the future subjunctive, which ending marks nós after the preterite-based stem?","answer":"-rmos (as in falarmos and tivermos).","explanation":"The nós ending is -rmos for regular and irregular verbs alike: falarmos, comermos, tivermos."} -->
 <!-- grammar-card: {"id":"rule-future-subjunctive-eles-ending","kind":"concept","format":"qa","priority":"optional","sourceSection":"Formation","rule":"Eles and vocês take -rem in the future subjunctive","example":"In the future subjunctive, which ending marks eles and vocês after the preterite-based stem?","answer":"-rem (as in falarem and tiverem).","explanation":"The eles/vocês ending is -rem for regular and irregular verbs alike: falarem, comerem, tiverem."} -->
 
@@ -20,6 +20,8 @@ The future subjunctive is formed from the **third person plural preterite** (ele
 | você/ele/ela | falar | comer | partir |
 | nós | falarmos | comermos | partirmos |
 | vocês/eles/elas | falarem | comerem | partirem |
+
+Eu and você/ele/ela share the same **-r** ending (falar, tiver), so the subject or context tells them apart.
 
 For **regular** verbs, the future subjunctive looks identical to the personal infinitive. However, for **irregular** verbs, they are different!
 

@@ -21,7 +21,6 @@ Portuguese has **four** definite articles, depending on the gender and number of
 - **Os livros** (ooz lee-vrooz) — The books
 - **As casas** (ahz kah-zahz) — The houses
 
-<!-- grammar-card: {"id":"definite-article-system","kind":"concept","format":"qa","priority":"optional","sourceSection":"Definite Articles — \"The\"","rule":"Definite articles distinguish masculine/feminine and singular/plural","example":"Which definite articles correspond to masculine singular, feminine singular, masculine plural, and feminine plural?","answer":"o, a, os, as.","explanation":"All four mean the; choose according to the noun's gender and number."} -->
 <!-- grammar-card: {"id":"definite-masculine-plural","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Definite Articles — \"The\"","rule":"Os accompanies a masculine plural noun","example":"___ livros são novos. (the books)","answer":"Os","explanation":"Livros is masculine plural, so its definite article is os; feminine plural casas takes as."} -->
 <!-- vocab-card: {"id":"vocab-livro","word":"livro","meaning":"book","priority":"optional","sourceSection":"Definite Articles — \"The\""} -->
 <!-- vocab-card: {"id":"vocab-casa","word":"casa","meaning":"house","priority":"optional","sourceSection":"Definite Articles — \"The\""} -->

@@ -801,16 +801,6 @@
       "lessonId": "articles",
       "teachingPoints": [
         {
-          "id": "definite-article-system",
-          "kind": "concept",
-          "format": "qa",
-          "priority": "optional",
-          "sourceSection": "Definite Articles — \"The\"",
-          "prompt": "Which definite articles correspond to masculine singular, feminine singular, masculine plural, and feminine plural?",
-          "answer": "o, a, os, as.",
-          "objective": "Map the four definite articles to noun gender and number."
-        },
-        {
           "id": "definite-masculine-plural",
           "kind": "rule",
           "format": "cloze",
@@ -3664,16 +3654,6 @@
           "objective": "Extend demonstrative reference to discourse and remembered periods rather than only physical distance.",
           "prompt": "Besides physical distance, what else can aquele point to?",
           "answer": "Something mentioned earlier, or a remote period, as in naquela época."
-        },
-        {
-          "id": "distance-system",
-          "kind": "concept",
-          "format": "qa",
-          "priority": "optional",
-          "sourceSection": "The Three Levels of Distance",
-          "prompt": "In the three-way distinction, which series refers to something near the speaker, near the listener, and far from both?",
-          "answer": "Este/esta near the speaker; esse/essa near the listener; aquele/aquela far from both.",
-          "objective": "Map the careful three-way system to speaker, listener, and shared distance."
         },
         {
           "id": "vocab-este",

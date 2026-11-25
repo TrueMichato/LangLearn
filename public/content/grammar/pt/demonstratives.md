@@ -12,8 +12,6 @@ Portuguese demonstratives are organized into three groups based on proximity:
 2. **Esse/Essa** — that (near the listener)
 3. **Aquele/Aquela** — that (far from both speaker and listener)
 
-<!-- grammar-card: {"id":"distance-system","kind":"concept","format":"qa","priority":"optional","sourceSection":"The Three Levels of Distance","rule":"The formal three-way system relates distance to speaker and listener","example":"In the three-way distinction, which series refers to something near the speaker, near the listener, and far from both?","answer":"Este/esta near the speaker; esse/essa near the listener; aquele/aquela far from both.","explanation":"This is the distinction taught for careful usage; casual Brazilian speech often merges este and esse."} -->
-
 ### Este/Esta — Near the Speaker
 
 Use **este** (masculine) and **esta** (feminine) when referring to something close to you:
