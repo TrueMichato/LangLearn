@@ -457,6 +457,14 @@ describe('Spanish reviewed grammar — per-lesson contract', () => {
 });
 
 describe('Spanish reviewed grammar — regressions', () => {
+  it('cheatsheet-subjunctive-triggers: negated belief distinguishes sea now from both valid past forms', () => {
+    const card = parseLessonReviewItems(lesson('cheatsheet-subjunctive-triggers')).items
+      .find((item): item is GrammarReviewItem => item.kind === 'rule' && item.id === 'negated-belief');
+    expect(card?.explanation).toMatch(/\b(?:past|then)\b/i);
+    expect(card?.explanation).toMatch(/\bfuera\b/i);
+    expect(card?.explanation).toMatch(/\bfuese\b/i);
+  });
+
   it('present-ar regression: vosotros practice asks for -áis (habláis) and notes ustedes', () => {
     const cards = parseLessonReviewItems(lesson('present-ar')).items
       .filter((item): item is GrammarReviewItem => item.kind !== 'vocabulary');
