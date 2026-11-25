@@ -128,7 +128,7 @@ Since みる is a Group 2 verb, てみる conjugates normally:
 > *Nihongo wo hanasou to shita.*
 > I tried to speak Japanese. (I made an effort — it may have been difficult.)
 
-<!-- grammar-card: {"id":"trial-attempt-contrast","kind":"concept","format":"qa","priority":"essential","sourceSection":"てみる vs ようとする — Key Differences","rule":"てみる foregrounds a trial experience; ようとする foregrounds an attempt or imminent action","example":"How does 寿司を食べてみた differ from 寿司を食べようとした?","answer":"食べてみた presents trying sushi as an experience; 食べようとした presents an attempt to eat it without guaranteeing completion.","explanation":"Do not memorize a success/failure rule. A trial need not be successful, and an attempt need not fail."} -->
+<!-- grammar-card: {"id":"trial-attempt-contrast","kind":"rule","format":"qa","priority":"essential","sourceSection":"てみる vs ようとする — Key Differences","rule":"てみる foregrounds a trial experience; ようとする foregrounds an attempt or imminent action","example":"How does 寿司を食べてみた differ from 寿司を食べようとした?","answer":"食べてみた presents trying sushi as an experience; 食べようとした presents an attempt to eat it without guaranteeing completion.","explanation":"Do not memorize a success/failure rule. A trial need not be successful, and an attempt need not fail."} -->
 ## ことにする — "Decide to ~"
 
 **ことにする** expresses a **personal decision** made by the speaker.

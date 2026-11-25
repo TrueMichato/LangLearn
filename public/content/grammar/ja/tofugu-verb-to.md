@@ -120,7 +120,7 @@ Here's another example for showing past habits, but in an old-fashioned way:
 
 <!-- vocab-card: {"id":"vocab-hareru","word":"晴れる","reading":"はれる","meaning":"to clear up; to be sunny","priority":"optional","sourceSection":"と for Habits"} -->
 <!-- grammar-card: {"id":"past-habit-tense","kind":"concept","format":"qa","priority":"optional","sourceSection":"と for Habits","rule":"A past habitual result can follow a nonpast condition with と","example":"Why is 晴れるとよくランニングをした compatible with a past habit although 晴れる is nonpast?","answer":"The past tense in the result した locates the repeated habit in the past; the condition before と stays nonpast.","explanation":"This differs from changing the condition itself into a past-form conditional."} -->
-<!-- grammar-card: {"id":"reminiscent-monoda","kind":"concept","format":"qa","priority":"optional","sourceSection":"と for Habits","rule":"Past + ものだ adds a reminiscent narrative tone to an old habit","example":"What tone does ものだ add to 晴れるとよくランニングをしたものだ?","answer":"A reflective recollection of an old habit, often with a nostalgic or narrative tone.","explanation":"The plain past can already describe the old habit; ものだ adds the recollective framing."} -->
+<!-- grammar-card: {"id":"reminiscent-monoda","kind":"rule","format":"qa","priority":"optional","sourceSection":"と for Habits","rule":"Past + ものだ adds a reminiscent narrative tone to an old habit","example":"What tone does ものだ add to 晴れるとよくランニングをしたものだ?","answer":"A reflective recollection of an old habit, often with a nostalgic or narrative tone.","explanation":"The plain past can already describe the old habit; ものだ adds the recollective framing."} -->
 
 ### と for General Conditions
 

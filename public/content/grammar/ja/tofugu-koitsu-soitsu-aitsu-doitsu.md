@@ -138,7 +138,7 @@ For example, imagine you have a little puppy and are introducing him to your fri
 
 In this case, こいつ indicates you're talking about your puppy in a friendly way.
 
-<!-- grammar-card: {"id":"animal-reference","kind":"concept","format":"qa","priority":"optional","sourceSection":"こいつ, そいつ, and あいつ for Animals","rule":"こいつ can be affectionate but blunt when referring to an animal","example":"What tone does こいつ have when an owner says こいつ、ミルクが好きなんだ about their puppy?","answer":"Affectionate (\"this little guy\"), though still informal and blunt — not an insult.","explanation":"Animal reference does not make the word a polite expression for people.","legacyAliases":[{"rule":"こいつ can be affectionate but blunt when referring to an animal","example":"Does using こいつ for a puppy necessarily insult the animal?"}]} -->
+<!-- grammar-card: {"id":"animal-reference","kind":"rule","format":"qa","priority":"optional","sourceSection":"こいつ, そいつ, and あいつ for Animals","rule":"こいつ can be affectionate but blunt when referring to an animal","example":"What tone does こいつ have when an owner says こいつ、ミルクが好きなんだ about their puppy?","answer":"Affectionate (\"this little guy\"), though still informal and blunt — not an insult.","explanation":"Animal reference does not make the word a polite expression for people.","legacyAliases":[{"rule":"こいつ can be affectionate but blunt when referring to an animal","example":"Does using こいつ for a puppy necessarily insult the animal?"}]} -->
 
 ### こいつ, そいつ, and あいつ for Things
 
@@ -150,7 +150,7 @@ Sometimes, you can also use こいつ, そいつ, and あいつ to refer to thin
 
 Since the plate is an object, it's standard to use the word これ or このお皿. Using こいつ personifies the plate, so it can sound a little comical.
 
-<!-- grammar-card: {"id":"object-personification","kind":"concept","format":"qa","priority":"optional","sourceSection":"こいつ, そいつ, and あいつ for Things","rule":"Using a person demonstrative for an object can personify it","example":"What effect does calling a plate こいつ have instead of simply これ?","answer":"It personifies the plate and can sound comical or gruff.","explanation":"これ or このお皿 is the neutral choice for the object."} -->
+<!-- grammar-card: {"id":"object-personification","kind":"rule","format":"qa","priority":"optional","sourceSection":"こいつ, そいつ, and あいつ for Things","rule":"Using a person demonstrative for an object can personify it","example":"What effect does calling a plate こいつ have instead of simply これ?","answer":"It personifies the plate and can sound comical or gruff.","explanation":"これ or このお皿 is the neutral choice for the object."} -->
 
 ### こいつ and そいつ for Situations
 
@@ -170,7 +170,7 @@ On the other hand, if someone just told you that they've gone through some terri
 
 Note that it's more standard to say これ and それ. こいつ and そいつ will be chosen by some people who prefer a certain speech style that sounds gruffer, and perhaps more comical.
 
-<!-- grammar-card: {"id":"situation-reference","kind":"concept","format":"qa","priority":"optional","sourceSection":"こいつ and そいつ for Situations","rule":"こいつ and そいつ can refer to situations in a gruff style","example":"What does そいつ refer to in そいつは大変でしたね after hearing a difficult story?","answer":"The situation the listener just described, not necessarily a person.","explanation":"それ is more neutral; こいつ can refer to the speaker's own situation."} -->
+<!-- grammar-card: {"id":"situation-reference","kind":"rule","format":"qa","priority":"optional","sourceSection":"こいつ and そいつ for Situations","rule":"こいつ and そいつ can refer to situations in a gruff style","example":"What does そいつ refer to in そいつは大変でしたね after hearing a difficult story?","answer":"The situation the listener just described, not necessarily a person.","explanation":"それ is more neutral; こいつ can refer to the speaker's own situation."} -->
 
 ## Beyond the Basics
 

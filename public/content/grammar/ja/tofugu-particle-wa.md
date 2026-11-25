@@ -357,7 +357,7 @@ The feeling of contrast can also be increased with a pause after the は when sp
 
 ### When は is Replaced with a Comma
 
-<!-- grammar-card: {"id":"comma-softens-contrast","kind":"concept","format":"qa","priority":"optional","sourceSection":"When は is Replaced with a Comma","rule":"A pause can frame familiar information without the same explicit topic contrast","example":"How does 今年、日本に行くんです differ from 今年は日本に行くんです in this discussion?","answer":"The comma or spoken pause generally reduces the explicit contrast with other years.","explanation":"The trip is still this year. This is a contextual omission pattern, not a rule that punctuation can replace every は."} -->
+<!-- grammar-card: {"id":"comma-softens-contrast","kind":"rule","format":"qa","priority":"optional","sourceSection":"When は is Replaced with a Comma","rule":"A pause can frame familiar information without the same explicit topic contrast","example":"How does 今年、日本に行くんです differ from 今年は日本に行くんです in this discussion?","answer":"The comma or spoken pause generally reduces the explicit contrast with other years.","explanation":"The trip is still this year. This is a contextual omission pattern, not a rule that punctuation can replace every は."} -->
 
 は can be replaced with a comma in writing. The comma has a similar effect to は, but any notion of comparison (or other nuance) is softened. This is very common with time phrases such as 来週 (next week), 先月 (last month), or 今年 (this year):
 

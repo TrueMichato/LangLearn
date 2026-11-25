@@ -47,6 +47,7 @@ Putting a な-adjective into this form is very simple as well. Simply add 〜そ
 
 <!-- grammar-card: {"id":"i-stem-appearance","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Forming 〜そう","rule":"Appearance そう replaces an い-adjective's final い","example":"おいしい → looks delicious: おいし___。","answer":"そう","explanation":"Removing い distinguishes the speaker's impression from hearsay おいしいそう."} -->
 <!-- grammar-card: {"id":"na-stem-appearance","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Forming 〜そう","rule":"A な-adjective stem takes appearance そう without な","example":"便利 → looks convenient: 便利___。","answer":"そう","explanation":"Use 便利そう, not 便利なそう or 便利だそう for this appearance meaning."} -->
+<!-- grammar-card: {"id":"rule-sou-drop-i","kind":"concept","format":"qa","priority":"essential","sourceSection":"Forming 〜そう","rule":"For 'looks …', an i-adjective drops its final い before そう","example":"To turn an i-adjective into \"looks …\" with 'sou', what do you do to the adjective first?","answer":"Drop the final i (い).","explanation":"Any answer saying remove the final い counts: おいしい → おいしそう. Keeping い gives hearsay instead (おいしいそう = I've heard it's delicious)."} -->
 <!-- vocab-card: {"id":"vocab-oishii","word":"おいしい","reading":"おいしい","meaning":"delicious","priority":"optional","sourceSection":"Forming 〜そう"} -->
 <!-- vocab-card: {"id":"vocab-benri","word":"便利","reading":"べんり","meaning":"convenient","priority":"optional","sourceSection":"Forming 〜そう"} -->
 
@@ -72,6 +73,7 @@ To use 〜そう in the negative with な-adjectives, you'll have to add 〜そ�
 
 <!-- grammar-card: {"id":"negative-appearance","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Negative 〜そう","rule":"A negative adjective ending in ない uses なさ before appearance そう","example":"おいしくない → looks unappetizing: おいしく___そう。","answer":"なさ","explanation":"Replace the final い in ない with さ: おいしくなさそう. The same step gives 便利じゃなさそう."} -->
 <!-- grammar-card: {"id":"ii-exception","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Negative 〜そう","rule":"いい uses the exceptional stem よさ before appearance そう","example":"いい → looks good: ___そう。","answer":"よさ","explanation":"The form is よさそう, not いそう or よそう. The exceptional さ is needed even in the affirmative."} -->
+<!-- grammar-card: {"id":"rule-sou-negative-sa","kind":"concept","format":"qa","priority":"essential","sourceSection":"Negative 〜そう","rule":"A negative ending in ない changes its final い to さ before そう","example":"Before appearance 'sou', what does the final い of a negative adjective ending (-nai) become?","answer":"さ (sa), giving -nasasou.","explanation":"さ or 'sa' counts. おいしくない → おいしくなさそう; 便利じゃない → 便利じゃなさそう. いい also takes さ: よさそう."} -->
 <!-- vocab-card: {"id":"vocab-ii","word":"いい","reading":"いい","meaning":"good","priority":"optional","sourceSection":"Negative 〜そう"} -->
 
 ### Politeness
@@ -82,7 +84,7 @@ Politeness in Japanese is marked at the end of a sentence with forms like です
 
   - It looks delicious.
 
-<!-- grammar-card: {"id":"polite-appearance","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Politeness","rule":"そう ends a polite sentence with です","hint":"Add the polite copula.","example":"おいしそう___。","answer":"です","explanation":"The final copula marks politeness; appearance そう itself remains unchanged."} -->
+<!-- grammar-card: {"id":"polite-appearance","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Politeness","rule":"そう ends a polite sentence with です","hint":"Add the polite copula.","example":"Politely: It looks delicious. おいしそう___。","answer":"です","explanation":"The final copula marks politeness; appearance そう itself remains unchanged.","legacyAliases":[{"rule":"そう ends a polite sentence with です","example":"おいしそう___。"}]} -->
 
 ## Patterns of Use
 
@@ -121,7 +123,8 @@ And we can even turn it into an adverb with に:
 <!-- grammar-card: {"id":"adverbial-ni","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Patterns of Use","rule":"そう takes に when it modifies a verb","example":"おいしそう___食べています。","answer":"に","explanation":"The な-adjective-like form becomes adverbial with に, describing how the eating appears."} -->
 
 <!-- grammar-card: {"id":"attributive-na","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Patterns of Use","rule":"そう behaves as a な-adjective before a noun","example":"おいしそう___ケーキだね！","answer":"な","explanation":"Appearance そう takes な before ケーキ, even though its source adjective was an い-adjective."} -->
-<!-- grammar-card: {"id":"negative-scope","kind":"concept","format":"qa","priority":"optional","sourceSection":"Patterns of Use","rule":"Negating the impression differs from forming an impression of a negative quality","example":"How does おいしそうじゃない differ in emphasis from おいしくなさそう?","answer":"The first denies that it looks delicious; the second presents an impression that it is not delicious.","explanation":"The first can be a softer denial of a positive appearance, rather than a direct negative assessment."} -->
+<!-- grammar-card: {"id":"rule-sou-behaves-like","kind":"concept","format":"qa","priority":"optional","sourceSection":"Patterns of Use","rule":"An adjective + そう behaves like a な-adjective","example":"Once appearance 'sou' is attached, what kind of word does the result behave like grammatically?","answer":"A na-adjective.","explanation":"Na-adjective counts. So it takes な before a noun (おいしそうなケーキ), に as an adverb (おいしそうに), and じゃない for negation."} -->
+<!-- grammar-card: {"id":"negative-scope","kind":"rule","format":"qa","priority":"optional","sourceSection":"Patterns of Use","rule":"Negating the impression differs from forming an impression of a negative quality","example":"How does おいしそうじゃない differ in emphasis from おいしくなさそう?","answer":"The first denies that it looks delicious; the second presents an impression that it is not delicious.","explanation":"The first can be a softer denial of a positive appearance, rather than a direct negative assessment."} -->
 
 ## Uses
 
@@ -164,7 +167,7 @@ You may have come across a very similar construction, where you add 〜そう to
 
   - I've heard that cake is delicious.
 
-<!-- grammar-card: {"id":"appearance-hearsay-contrast","kind":"concept","format":"qa","priority":"essential","sourceSection":"Common Mistakes","rule":"Keeping or dropping adjective い separates hearsay from appearance","example":"What is the difference between おいしそうです and おいしいそうです?","answer":"The first means it looks delicious; the second means I have heard it is delicious.","explanation":"Appearance attaches to the adjective stem; hearsay attaches to the complete plain predicate."} -->
+<!-- grammar-card: {"id":"appearance-hearsay-contrast","kind":"rule","format":"qa","priority":"essential","sourceSection":"Common Mistakes","rule":"Keeping or dropping adjective い separates hearsay from appearance","example":"What is the difference between おいしそうです and おいしいそうです?","answer":"The first means it looks delicious; the second means I have heard it is delicious.","explanation":"Appearance attaches to the adjective stem; hearsay attaches to the complete plain predicate."} -->
 
 ---
 

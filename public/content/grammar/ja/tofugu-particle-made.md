@@ -239,7 +239,7 @@ Let's continue the same scenario. You are surprised at your friend's reaction be
 
   - Are you surprised **that much**?
 
-<!-- grammar-card: {"id":"made-extreme-even","kind":"concept","format":"qa","priority":"optional","sourceSection":"Emphatic まで","rule":"Emphatic まで treats something as a surprising extreme endpoint","example":"Why can 納豆まで食べれるの express surprise rather than a travel endpoint?","answer":"Natto is treated as the extreme item on the imagined list of foods the person will eat.","explanation":"The endpoint image extends to even natto or, with そこまで, to that extent. The colloquial 食べれる form belongs to the quoted example."} -->
+<!-- grammar-card: {"id":"made-extreme-even","kind":"rule","format":"qa","priority":"optional","sourceSection":"Emphatic まで","rule":"Emphatic まで treats something as a surprising extreme endpoint","example":"Why can 納豆まで食べれるの express surprise rather than a travel endpoint?","answer":"Natto is treated as the extreme item on the imagined list of foods the person will eat.","explanation":"The endpoint image extends to even natto or, with そこまで, to that extent. The colloquial 食べれる form belongs to the quoted example."} -->
 In this case, まで marks そこ (there), referring to the extreme point of your friend's surprise. It suggests it was an overreaction, and you wonder if loving *natto* deserved a reaction "to that extent."
 
 #### Difference Between Emphatic まで and the Particle も
@@ -328,7 +328,7 @@ The emphatic まで and も can be combined when both of their uses overlap to m
 
 Since this is an exaggerated expression, it might not be commonly used when speaking, because you can emphasize things using just the tone of your voice. Because of this, similar expressions may appear more often in writing to create a particular effect.
 
-<!-- grammar-card: {"id":"made-mo-emphasis","kind":"concept","format":"qa","priority":"optional","sourceSection":"まで + も","rule":"までも can combine extreme extent with additive emphasis","example":"What effect does までも add in 納豆までも食べれるの?","answer":"Stronger, exaggerated emphasis on even natto.","explanation":"まで and も overlap in this example. The combined effect is often more conspicuous in writing; speech can supply emphasis through intonation."} -->
+<!-- grammar-card: {"id":"made-mo-emphasis","kind":"rule","format":"qa","priority":"optional","sourceSection":"まで + も","rule":"までも can combine extreme extent with additive emphasis","example":"What effect does までも add in 納豆までも食べれるの?","answer":"Stronger, exaggerated emphasis on even natto.","explanation":"まで and も overlap in this example. The combined effect is often more conspicuous in writing; speech can supply emphasis through intonation."} -->
 
 Lastly, the combination of まで and も can also be used in a set phrase, 〜までもない. This phrase is combined with the plain form of a verb, and usually refers to a simple action that can be effortlessly carried out, adding the meaning "needless to 〜" or "It goes without 〜ing."
 

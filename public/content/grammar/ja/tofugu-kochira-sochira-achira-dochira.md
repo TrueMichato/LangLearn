@@ -264,7 +264,7 @@ I hope this announcement wasn't just a jōdan, or 冗談 (joke), and Michael Jor
 Finally, you can replace こちらのもの with こっちのもの in a casual conversation.
 
 <!-- vocab-card: {"id":"vocab-kochiranomono","priority":"optional","sourceSection":"こちらのもの","word":"こちらのもの","reading":"こちらのもの","meaning":"ours; in our hands (confident of success)"} -->
-<!-- grammar-card: {"id":"ours-success","kind":"concept","format":"qa","priority":"optional","sourceSection":"こちらのもの","rule":"こちらのもの can express confidence that success is on our side","example":"What does 勝負はこちらのものだ express beyond literal ownership?","answer":"Confidence that we will win or that the contest is as good as ours.","explanation":"Casual こっちのもの has the same idiomatic idea in a less formal register."} -->
+<!-- grammar-card: {"id":"ours-success","kind":"rule","format":"qa","priority":"optional","sourceSection":"こちらのもの","rule":"こちらのもの can express confidence that success is on our side","example":"What does 勝負はこちらのものだ express beyond literal ownership?","answer":"Confidence that we will win or that the contest is as good as ours.","explanation":"Casual こっちのもの has the same idiomatic idea in a less formal register."} -->
 
   
 

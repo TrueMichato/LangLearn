@@ -254,7 +254,7 @@ In formal situations, use the honorific equivalents:
 | 先生が教えてあげた (about yourself) | 先生に教えてもらった | Use もらう when you receive |
 | 手伝ってあげてください (when asking for help for yourself) | 手伝ってくれませんか | あげてください is grammatical when requesting help for a third party instead |
 
-<!-- grammar-card: {"id":"third-party-request","kind":"concept","format":"qa","priority":"optional","sourceSection":"Common Mistakes","rule":"てあげてください can request a favor for a third party","example":"What is the speaker asking for with 弟を手伝ってあげてください?","answer":"For the listener to help my younger brother (a third party), not me.","explanation":"Use てくれませんか or an appropriate receiving-based request when asking for a favor for yourself.","legacyAliases":[{"rule":"てあげてください can request a favor for a third party","example":"Is 弟を手伝ってあげてください always wrong?"}]} -->
+<!-- grammar-card: {"id":"third-party-request","kind":"rule","format":"qa","priority":"optional","sourceSection":"Common Mistakes","rule":"てあげてください can request a favor for a third party","example":"What is the speaker asking for with 弟を手伝ってあげてください?","answer":"For the listener to help my younger brother (a third party), not me.","explanation":"Use てくれませんか or an appropriate receiving-based request when asking for a favor for yourself.","legacyAliases":[{"rule":"てあげてください can request a favor for a third party","example":"Is 弟を手伝ってあげてください always wrong?"}]} -->
 
 <!-- quiz:{"type":"multiple-choice","question":"Your boss kindly explained the project. Which is correct?","options":["部長がプロジェクトを説明してあげた","部長にプロジェクトを説明してもらった","部長がプロジェクトを説明してくださった","部長がプロジェクトを説明していただいた"],"answer":2} -->
 

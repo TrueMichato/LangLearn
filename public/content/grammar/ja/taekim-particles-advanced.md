@@ -91,7 +91,7 @@ Compare:
 For the locations in these examples, いる/ある (exist) and 住む (live) use に; activities such as 遊ぶ and 勉強する use で. This is a distinction between these location roles, not a universal rule that every state takes に.
 
 <!-- grammar-card: {"id":"ni-existence-place","kind":"rule","format":"cloze","priority":"essential","sourceSection":"に vs で — A Key Distinction","rule":"に marks the place where something exists","example":"公園___猫がいる。","answer":"に","explanation":"いる states existence rather than an action, so the location takes に and not で."} -->
-<!-- grammar-card: {"id":"location-role-contrast","kind":"concept","format":"qa","priority":"essential","sourceSection":"に vs で — A Key Distinction","rule":"Existence location and activity location take different particles","example":"Why do 公園に猫がいる and 公園で遊ぶ use different location particles?","answer":"The first locates an existing cat; the second locates the activity of playing.","explanation":"Choose by the noun's role with the predicate, not by whether the same place is mentioned."} -->
+<!-- grammar-card: {"id":"location-role-contrast","kind":"rule","format":"qa","priority":"essential","sourceSection":"に vs で — A Key Distinction","rule":"Existence location and activity location take different particles","example":"Why do 公園に猫がいる and 公園で遊ぶ use different location particles?","answer":"The first locates an existing cat; the second locates the activity of playing.","explanation":"Choose by the noun's role with the predicate, not by whether the same place is mentioned."} -->
 
 ## へ (e) — Direction
 

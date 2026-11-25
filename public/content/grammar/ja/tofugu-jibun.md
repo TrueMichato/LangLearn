@@ -23,7 +23,7 @@ Pronoun
 自分 is grammatically not very different from other Japanese pronouns and nouns in general. Compared to English reflexive pronouns, 自分 has more flexibility in terms of where it can be used, what it can refer to, or how it's translated. To understand what 自分 really is, it's best to learn from actual examples, so keep reading to find out more!
 
 <!-- vocab-card: {"id":"vocab-jibun","word":"自分","reading":"じぶん","meaning":"self; oneself (referent depends on context)","priority":"essential","sourceSection":"The Basics"} -->
-<!-- grammar-card: {"id":"animate-perspective","kind":"concept","format":"qa","priority":"essential","sourceSection":"The Basics","rule":"Reflexive 自分 is gender-neutral and takes an animate perspective, not a fixed English person form","example":"Must 自分 always refer to the current speaker, and can it ordinarily reflexively name a lifeless object's self?","answer":"No to both. It can take another animate person's or animal's perspective, and is not ordinarily reflexive reference to an inanimate object.","explanation":"English myself, yourself, and herself distinguish person or gender where 自分 itself does not."} -->
+<!-- grammar-card: {"id":"animate-perspective","kind":"concept","format":"qa","priority":"essential","sourceSection":"The Basics","rule":"Reflexive 自分 is gender-neutral and takes an animate perspective, not a fixed English person form","example":"Besides the speaker, what kinds of referents can 自分 have?","answer":"Any animate being, another person or an animal, seen from their perspective; it is not used for inanimate things.","explanation":"English myself, yourself, and herself distinguish person or gender where 自分 itself does not.","legacyAliases":[{"rule":"Reflexive 自分 is gender-neutral and takes an animate perspective, not a fixed English person form","example":"Must 自分 always refer to the current speaker, and can it ordinarily reflexively name a lifeless object's self?"}]} -->
 
 ### 自分 as a Reflexive Pronoun
 
@@ -45,7 +45,7 @@ Technically, you could be repetitive and say キョーコはキョーコが正�
 
 You might also wonder, "why not use the third-person pronoun 彼女 (she) just like we do in English?" In Japanese, using third-person pronouns is not as common as in English, especially since 彼女 typically means "girlfriend" rather than "she," so 自分 would be the most suitable choice here.
 
-<!-- grammar-card: {"id":"reflexive-referent","kind":"concept","format":"qa","priority":"essential","sourceSection":"自分 as a Reflexive Pronoun","rule":"自分 can refer back to the subject or perspective-holder","example":"Who does 自分 refer to in キョーコは自分を信じている?","answer":"Kyoko herself.","explanation":"を marks 自分 as the object here; 自分 can also be the subject of an embedded clause, as in 自分が正しいと思っている."} -->
+<!-- grammar-card: {"id":"reflexive-referent","kind":"rule","format":"qa","priority":"essential","sourceSection":"自分 as a Reflexive Pronoun","rule":"自分 can refer back to the subject or perspective-holder","example":"Who does 自分 refer to in キョーコは自分を信じている?","answer":"Kyoko herself.","explanation":"を marks 自分 as the object here; 自分 can also be the subject of an embedded clause, as in 自分が正しいと思っている."} -->
 
 ### 自分で for Things You Do Yourself
 
@@ -68,9 +68,9 @@ By using 自分 with the particle で, you can add emphasis on how the action is
   - Kyoko built a house all by herself.
 
 <!-- vocab-card: {"id":"vocab-hitori-de","word":"一人で","reading":"ひとりで","meaning":"alone; on one's own","priority":"optional","sourceSection":"自分で for Things You Do Yourself"} -->
-<!-- grammar-card: {"id":"self-versus-alone","kind":"concept","format":"qa","priority":"essential","sourceSection":"自分で for Things You Do Yourself","rule":"自分で identifies personal involvement; 一人で makes acting alone explicit","example":"Does 自分で建てた necessarily mean no one helped with the building?","answer":"No. It emphasizes that the person did it themselves; 一人で explicitly says alone.","explanation":"Personal agency and the absence of helpers are different claims."} -->
+<!-- grammar-card: {"id":"self-versus-alone","kind":"rule","format":"qa","priority":"essential","sourceSection":"自分で for Things You Do Yourself","rule":"自分で identifies personal involvement; 一人で makes acting alone explicit","example":"What is the difference between 自分で建てた and 一人で建てた?","answer":"自分で: built it oneself, emphasizing personal agency without excluding help; 一人で: built it all alone, with no help.","explanation":"Personal agency and the absence of helpers are different claims.","legacyAliases":[{"rule":"自分で identifies personal involvement; 一人で makes acting alone explicit","example":"Does 自分で建てた necessarily mean no one helped with the building?"}]} -->
 
-<!-- grammar-card: {"id":"personal-agency","kind":"rule","format":"cloze","priority":"optional","sourceSection":"自分で for Things You Do Yourself","rule":"自分で means doing something by oneself","hint":"Emphasize that Kyoko personally did the work, without specifying whether she had help.","example":"キョーコは家を___建てた。","answer":"自分で","explanation":"自分で marks Kyoko's personal agency; it does not by itself exclude assistance."} -->
+<!-- grammar-card: {"id":"personal-agency","kind":"rule","format":"cloze","priority":"optional","sourceSection":"自分で for Things You Do Yourself","rule":"自分で means doing something by oneself","hint":"Emphasize that Kyoko personally did the work, without specifying whether she had help.","example":"Kyoko built the house herself (stress her own agency; help is not ruled out): キョーコは家を___建てた。","answer":"自分で","explanation":"自分で marks Kyoko's personal agency; it does not by itself exclude assistance. 一人で would say all alone.","legacyAliases":[{"rule":"自分で means doing something by oneself","example":"キョーコは家を___建てた。"}]} -->
 
 ### 自分の for Things of One's Own
 
@@ -87,6 +87,7 @@ We can use 自分 (again) to make sure that we explain that Kyoko impressively b
 Attaching の to turn 自分 into the possessive form like this, you specify that the house is Kyoko's house.
 
 <!-- grammar-card: {"id":"own-possession","kind":"rule","format":"cloze","priority":"essential","sourceSection":"自分の for Things of One's Own","rule":"自分の marks ownership by the contextually identified self","example":"Kyoko built her own house: キョーコは自分___家を建てた。","answer":"の","explanation":"の marks the house as Kyoko's, while 自分で would identify who did the building."} -->
+<!-- grammar-card: {"id":"rule-jibun-agency","kind":"concept","format":"qa","priority":"essential","sourceSection":"自分で for Things You Do Yourself","rule":"自分で emphasizes one's own agency without necessarily excluding help","example":"When jibun de describes how someone did something, what does it tell you about their role?","answer":"They personally did it; they didn't necessarily do it alone.","explanation":"The key is personal agency. 自分で建てた means they built it themselves, whether or not anyone helped."} -->
 
 ### 自分 For "Yourself" in General
 
@@ -100,7 +101,7 @@ Attaching の to turn 自分 into the possessive form like this, you specify tha
 
   - What you've done comes back to you.
 
-<!-- grammar-card: {"id":"generic-self","kind":"concept","format":"qa","priority":"optional","sourceSection":"自分 For \"Yourself\" in General","rule":"自分 can represent an unspecified person's self in advice or general sayings","example":"In general advice 自分を信じて, does 自分 have to name the speaker?","answer":"No. It tells the addressee or people generally to believe in themselves.","explanation":"The referent is supplied by the advisory context rather than a fixed first-person meaning."} -->
+<!-- grammar-card: {"id":"generic-self","kind":"concept","format":"qa","priority":"optional","sourceSection":"自分 For \"Yourself\" in General","rule":"自分 can represent an unspecified person's self in advice or general sayings","example":"In general sayings and advice, whom does 自分 refer to?","answer":"An unspecified person or people in general (oneself / yourself), e.g. 自分を信じて = believe in yourself.","explanation":"The referent is supplied by the advisory context rather than a fixed first-person meaning.","legacyAliases":[{"rule":"自分 can represent an unspecified person's self in advice or general sayings","example":"In general advice 自分を信じて, does 自分 have to name the speaker?"}]} -->
 ## Beyond The Basics
 
 ### 自分 Without Subject
@@ -121,7 +122,7 @@ You can usually assume that the subject is the person who said it even if they d
 
 You know that it's a "she," aka Kyoko, that 自分 refers to because she is the topic of your conversation. And I mean, of course, you know she is busy working on her hardcore DIY projects, what did you expect?
 
-<!-- grammar-card: {"id":"omitted-perspective","kind":"concept","format":"qa","priority":"optional","sourceSection":"自分 Without Subject","rule":"An omitted subject does not make 自分 automatically first-person","example":"When Kyoko is the topic, can 自分のことで精一杯そう refer to her rather than the speaker?","answer":"Yes. The established conversational topic can supply Kyoko as the relevant self.","explanation":"Without that context, 自分に自信がないんです would often be understood as the speaker's lack of confidence."} -->
+<!-- grammar-card: {"id":"omitted-perspective","kind":"concept","format":"qa","priority":"optional","sourceSection":"自分 Without Subject","rule":"An omitted subject does not make 自分 automatically first-person","example":"When 自分 appears with no stated subject, what decides whose self it is?","answer":"Context: by default the speaker, but an established conversational topic (e.g. Kyoko, in 自分のことで精一杯そう) can supply the referent.","explanation":"自分に自信がないんです on its own would usually be understood as the speaker's lack of confidence.","legacyAliases":[{"rule":"An omitted subject does not make 自分 automatically first-person","example":"When Kyoko is the topic, can 自分のことで精一杯そう refer to her rather than the speaker?"}]} -->
 
 ### What 自分 Can Refer To
 
@@ -145,7 +146,7 @@ You: She said that Kanae blames 自分.
 
 And even in this case, 自分 can still refer to either Mami or Kanae. Mami is even in a separate sentence, but in this context where Mami is who you and your friend are talking about, it's very possible it could be about her.
 
-<!-- grammar-card: {"id":"long-distance-reference","kind":"concept","format":"qa","priority":"essential","sourceSection":"What 自分 Can Refer To","rule":"自分 can take a perspective-holder outside its own clause, sometimes ambiguously","example":"In マミは、カナエが自分を責めてるって言ってた, must 自分 refer only to Kanae?","answer":"No. Depending on context and perspective, it can refer to Kanae or Mami.","explanation":"Unlike a mechanical nearest-subject rule, Japanese 自分 can support a more distant perspective-holder, even one established in prior discourse."} -->
+<!-- grammar-card: {"id":"long-distance-reference","kind":"concept","format":"qa","priority":"essential","sourceSection":"What 自分 Can Refer To","rule":"自分 can take a perspective-holder outside its own clause, sometimes ambiguously","example":"Unlike English reflexives, how far away can the person 自分 refers to be?","answer":"Outside its own clause, or even in earlier discourse: in マミは、カナエが自分を責めてるって言ってた it can be Kanae or Mami.","explanation":"Unlike a mechanical nearest-subject rule, Japanese 自分 can support a more distant perspective-holder; context decides.","legacyAliases":[{"rule":"自分 can take a perspective-holder outside its own clause, sometimes ambiguously","example":"In マミは、カナエが自分を責めてるって言ってた, must 自分 refer only to Kanae?"}]} -->
 
 ### 自分 as a Personal Pronoun
 
@@ -168,7 +169,7 @@ In addition to using 自分 in first-person contexts, in the Kansai area dialect
 Depending on the relationship and tone, this Kansai second-person use can sound familiar or direct, and is not automatically caring or polite.
 
 <!-- grammar-card: {"id":"personal-pronoun-register","kind":"concept","format":"qa","priority":"optional","sourceSection":"自分 as a Personal Pronoun","rule":"First-person 自分 is introspective and associated with some hierarchical communities","example":"What self-presentation is often associated with first-person 自分も、そう思います?","answer":"An introspective, relatively gender-neutral stance, often associated with military or athletic communities.","explanation":"This is a social association, not a requirement that every speaker belong to those communities."} -->
-<!-- grammar-card: {"id":"kansai-second-person","kind":"concept","format":"qa","priority":"optional","sourceSection":"自分 as a Personal Pronoun","rule":"In Kansai usage 自分 can refer to the listener","example":"In Kansai speech, who may 自分 address in 自分、何してんの?","answer":"The listener: what are you doing? Its tone depends on the relationship and context.","explanation":"Do not automatically interpret this regional use as I, or assume it is a polite way to address anyone."} -->
+<!-- grammar-card: {"id":"kansai-second-person","kind":"concept","format":"qa","priority":"optional","sourceSection":"自分 as a Personal Pronoun","rule":"In Kansai usage 自分 can refer to the listener","example":"In Kansai speech, whom else can 自分 refer to besides oneself?","answer":"The listener (you): 自分、何してんの? = What are you doing? Its tone depends on the relationship and context.","explanation":"Do not automatically interpret this regional use as I, or assume it is a polite way to address anyone.","legacyAliases":[{"rule":"In Kansai usage 自分 can refer to the listener","example":"In Kansai speech, who may 自分 address in 自分、何してんの?"}]} -->
 
 ### Modifying 自分
 
@@ -190,10 +191,10 @@ It's also common to modify 自分 with a clause.
 
   - I am disappointed by **my confession-lacking-self**.
 
-<!-- grammar-card: {"id":"clause-modified-self","kind":"concept","format":"qa","priority":"optional","sourceSection":"Modifying 自分","rule":"A plain clause can modify 自分 like any other noun","example":"What describes the self in 告白できなかった自分が情けない?","answer":"The clause 告白できなかった: the self who could not confess.","explanation":"自分 can be modified by a full clause as well as an adjective."} -->
+<!-- grammar-card: {"id":"clause-modified-self","kind":"concept","format":"qa","priority":"optional","sourceSection":"Modifying 自分","rule":"A plain clause can modify 自分 like any other noun","example":"Since 自分 is grammatically a noun, what can modify it?","answer":"Adjectives and full clauses, e.g. 告白できなかった自分 (the self who couldn't confess).","explanation":"Like any noun, the modifier comes before 自分.","legacyAliases":[{"rule":"A plain clause can modify 自分 like any other noun","example":"What describes the self in 告白できなかった自分が情けない?"}]} -->
 
-<!-- grammar-card: {"id":"true-self","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Modifying 自分","rule":"自分 can head a noun phrase meaning 'the self'","hint":"Use 本当 (ほんとう) to describe one's true self.","example":"___を探す旅に出る。","answer":"本当の自分","explanation":"本当の自分 (ほんとうのじぶん) is one's true self, and here it is the object of the search."} -->
-<!-- grammar-card: {"id":"shy-self","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Modifying 自分","rule":"自分 can be modified like any ordinary noun","hint":"Use シャイ to describe the speaker's shy self.","example":"___にはカラオケはできない。","answer":"シャイな自分","explanation":"シャイ is a な-adjective, so シャイな自分 describes the speaker's shy self."} -->
+<!-- grammar-card: {"id":"true-self","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Modifying 自分","rule":"自分 can head a noun phrase meaning 'the self'","hint":"Use 本当 (ほんとう) to describe one's true self.","example":"I'm going on a trip to find my true self (use 本当): ___を探す旅に出る。","answer":"本当の自分","explanation":"本当の自分 (ほんとうのじぶん) is one's true self, and here it is the object of the search.","legacyAliases":[{"rule":"自分 can head a noun phrase meaning 'the self'","example":"___を探す旅に出る。"}]} -->
+<!-- grammar-card: {"id":"shy-self","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Modifying 自分","rule":"自分 can be modified like any ordinary noun","hint":"Use シャイ to describe the speaker's shy self.","example":"My shy self can't do karaoke (use シャイ): ___にはカラオケはできない。","answer":"シャイな自分","explanation":"シャイ is a な-adjective, so シャイな自分 describes the speaker's shy self.","legacyAliases":[{"rule":"自分 can be modified like any ordinary noun","example":"___にはカラオケはできない。"}]} -->
 
 ### Plural 自分
 

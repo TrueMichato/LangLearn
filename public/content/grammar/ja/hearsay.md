@@ -103,7 +103,7 @@ This そうだ attaches to the **verb stem** or **adjective stem** (not the plai
 
 This one-character difference completely changes the meaning!
 
-<!-- grammar-card: {"id":"sou-information-source","kind":"concept","format":"qa","priority":"essential","sourceSection":"Key Difference: Hearsay vs Appearance そうだ","rule":"Plain-form and stem attachment distinguish hearsay from appearance","example":"How do 美味しいそうだ and 美味しそうだ differ in information source?","answer":"美味しいそうだ reports that it is delicious; 美味しそうだ describes the speaker's impression that it looks delicious.","explanation":"Keeping versus removing い is meaningful. These forms are not simply different degrees of certainty."} -->
+<!-- grammar-card: {"id":"sou-information-source","kind":"rule","format":"qa","priority":"essential","sourceSection":"Key Difference: Hearsay vs Appearance そうだ","rule":"Plain-form and stem attachment distinguish hearsay from appearance","example":"How do 美味しいそうだ and 美味しそうだ differ in information source?","answer":"美味しいそうだ reports that it is delicious; 美味しそうだ describes the speaker's impression that it looks delicious.","explanation":"Keeping versus removing い is meaningful. These forms are not simply different degrees of certainty."} -->
 ## ようだ / ような ("It seems like ~")
 
 **ようだ** expresses an inference or resemblance based on evidence or observation. It is not automatically more objective or more certain than appearance そうだ; the context supplies the evidence.
@@ -139,7 +139,7 @@ This one-character difference completely changes the meaning!
 > *Kodomo no you ni hashitta.*
 > I ran like a child.
 
-<!-- grammar-card: {"id":"you-evidence","kind":"concept","format":"qa","priority":"essential","sourceSection":"ようだ / ような (\"It seems like ~\")","rule":"ようだ presents an inference based on evidence","example":"What does 誰もいないようだ communicate beyond directly asserting nobody is here?","answer":"The speaker infers or judges from evidence that nobody is here.","explanation":"ようだ can mark an inference, while そうだ can mark a report or apparent likelihood depending on attachment."} -->
+<!-- grammar-card: {"id":"you-evidence","kind":"rule","format":"qa","priority":"essential","sourceSection":"ようだ / ような (\"It seems like ~\")","rule":"ようだ presents an inference based on evidence","example":"What does 誰もいないようだ communicate beyond directly asserting nobody is here?","answer":"The speaker infers or judges from evidence that nobody is here.","explanation":"ようだ can mark an inference, while そうだ can mark a report or apparent likelihood depending on attachment."} -->
 <!-- grammar-card: {"id":"you-na-adjective","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Formation","rule":"A な-adjective takes な before ようだ","example":"It seems quiet: 静か___ようだ。","answer":"な","explanation":"静かなようだ retains the attributive な; compare noun + のようだ."} -->
 <!-- grammar-card: {"id":"you-noun-link","kind":"rule","format":"cloze","priority":"essential","sourceSection":"ようだ / ような (\"It seems like ~\")","rule":"A noun takes の before ようだ","example":"It seems like a cold: 風邪___ようです。","answer":"の","explanation":"風邪のようです (かぜのようです) uses の between the noun and よう."} -->
 <!-- grammar-card: {"id":"you-modifier","kind":"rule","format":"cloze","priority":"optional","sourceSection":"ような + Noun (comparison/resemblance)","rule":"ような modifies a noun; ように modifies an action","example":"A dream-like story: 夢のよう___話だ。","answer":"な","explanation":"ような precedes 話. 子供のように走った uses ように before the verb instead."} -->

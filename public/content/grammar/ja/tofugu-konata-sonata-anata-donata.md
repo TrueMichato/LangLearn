@@ -22,7 +22,6 @@ Demonstrative
 <!-- vocab-card: {"id":"vocab-donata","priority":"essential","sourceSection":"The Basics","word":"どなた","reading":"どなた","meaning":"who (polite)"} -->
 <!-- vocab-card: {"id":"vocab-konata","priority":"optional","sourceSection":"The Basics","word":"こなた","reading":"こなた","meaning":"this side; this person; I; you (archaic, context-dependent)"} -->
 <!-- vocab-card: {"id":"vocab-sonata","priority":"optional","sourceSection":"The Basics","word":"そなた","reading":"そなた","meaning":"you; that side (archaic)"} -->
-<!-- grammar-card: {"id":"rule-archaic-members","kind":"concept","format":"qa","priority":"optional","sourceSection":"The Basics","rule":"konata and sonata are archaic; anata (you) and donata (polite who) remain in modern use","example":"Which members of the konata / sonata / anata / donata set are archaic today, and what do the two modern members mean?","answer":"konata and sonata are archaic; anata means \"you\" and donata is a polite \"who?\".","explanation":"こなた and そなた still appear in period fiction and classical writing."} -->
 
 ### Conceptualizing こそあど
 
@@ -84,7 +83,7 @@ That being said, you may still come across こなた and そなた in period pie
 
   - **You**, what is your name?
 
-<!-- grammar-card: {"id":"sonata-period-fiction","kind":"concept","format":"qa","priority":"optional","sourceSection":"こなた, そなた, あなた for \"You\"","rule":"そなた as you belongs chiefly to historical or stylized speech","example":"What register does そなた、名を何と言う？ evoke today?","answer":"Archaic or period-fiction speech, not ordinary modern conversation.","explanation":"Recognition is useful in manga, drama and classical writing without making it a default form of address."} -->
+<!-- grammar-card: {"id":"sonata-period-fiction","kind":"rule","format":"qa","priority":"optional","sourceSection":"こなた, そなた, あなた for \"You\"","rule":"そなた as you belongs chiefly to historical or stylized speech","example":"What register does そなた、名を何と言う？ evoke today?","answer":"Archaic or period-fiction speech, not ordinary modern conversation.","explanation":"Recognition is useful in manga, drama and classical writing without making it a default form of address."} -->
 
 ### どなた for "Who?"
 
@@ -103,7 +102,7 @@ That being said, you may still come across こなた and そなた in period pie
 In this case, 様 can add extra politeness, but polite language generally increases the distance between you and the person you are addressing. So some people may intentionally choose to use 様 to emphasize this distance while sarcastically implying, "I don't know you, who are you?" in a polite manner.
 
 <!-- grammar-card: {"id":"polite-who-sama","kind":"rule","format":"cloze","priority":"essential","sourceSection":"どなた for \"Who?\"","rule":"どなた is the polite word for 'who'","example":"Politely asking who someone is, adding the honorific suffix for extra deference: 失礼ですが、___でしょうか？","answer":"どなた様","explanation":"どなた様 (どなたさま) adds 様 to polite どなた. Context and tone can still make the extra distance sound pointed or sarcastic.","legacyAliases":[{"rule":"どなた is the polite word for 'who'","example":"失礼ですが、___でしょうか？"}]} -->
-<!-- grammar-card: {"id":"third-person-who","kind":"concept","format":"qa","priority":"essential","sourceSection":"どなた for \"Who?\"","rule":"どなた can ask about a third person's identity","example":"Whose identity does この方はどなたですか ask about?","answer":"This person's — a third person present, not necessarily the listener's own name.","explanation":"Polite who is not restricted to directly addressing an unknown caller or visitor.","legacyAliases":[{"rule":"どなた can ask about a third person's identity","example":"In この方はどなたですか, is the question necessarily asking the listener's own name?"}]} -->
+<!-- grammar-card: {"id":"third-person-who","kind":"rule","format":"qa","priority":"essential","sourceSection":"どなた for \"Who?\"","rule":"どなた can ask about a third person's identity","example":"Whose identity does この方はどなたですか ask about?","answer":"This person's — a third person present, not necessarily the listener's own name.","explanation":"Polite who is not restricted to directly addressing an unknown caller or visitor.","legacyAliases":[{"rule":"どなた can ask about a third person's identity","example":"In この方はどなたですか, is the question necessarily asking the listener's own name?"}]} -->
 
 ## Beyond the Basics
 
@@ -131,7 +130,7 @@ In classical Japanese, こなた can also mean "this person." For example, in th
 
 This use is similar to こちら (and its formal version この方) in modern Japanese.
 
-<!-- grammar-card: {"id":"classical-this-person","kind":"concept","format":"qa","priority":"optional","sourceSection":"こなた for \"This Person\"","rule":"Classical こなた can refer to a nearby person","example":"What person-reference meaning can こなた have in the cited Tale of Genji passage?","answer":"This person, comparable to modern こちら or この方.","explanation":"The classical referent is determined by context, so こなた does not always mean you."} -->
+<!-- grammar-card: {"id":"classical-this-person","kind":"rule","format":"qa","priority":"optional","sourceSection":"こなた for \"This Person\"","rule":"Classical こなた can refer to a nearby person","example":"What person-reference meaning can こなた have in the cited Tale of Genji passage?","answer":"This person, comparable to modern こちら or この方.","explanation":"The classical referent is determined by context, so こなた does not always mean you."} -->
 
 ### こなた for "Me"
 
@@ -143,7 +142,7 @@ In classical Japanese, こなた can also mean "I" or "me." For example, in the 
 
 This use is also similar to こちら in modern Japanese, and in this case, you are referring to yourself as "this side" (my side).
 
-<!-- grammar-card: {"id":"classical-self-side","kind":"concept","format":"qa","priority":"optional","sourceSection":"こなた for \"Me\"","rule":"Classical this-side reference can denote the speaker","example":"How can こなた mean me in the Noh example rather than a person being addressed?","answer":"It refers to the speaker's own side, comparable to self-reference with こちら.","explanation":"This historical contextual use is distinct from modern everyday first-person pronouns."} -->
+<!-- grammar-card: {"id":"classical-self-side","kind":"rule","format":"qa","priority":"optional","sourceSection":"こなた for \"Me\"","rule":"Classical this-side reference can denote the speaker","example":"How can こなた mean me in the Noh example rather than a person being addressed?","answer":"It refers to the speaker's own side, comparable to self-reference with こちら.","explanation":"This historical contextual use is distinct from modern everyday first-person pronouns."} -->
 
   
 

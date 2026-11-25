@@ -45,7 +45,7 @@ Catch the drift? SOMEone did SOMEthing, and left it that way for SOME reason…!
 
 <!-- vocab-card: {"id":"vocab-oku","word":"置く","reading":"おく","meaning":"to put; to place","priority":"optional","sourceSection":"The Basics"} -->
 <!-- vocab-card: {"id":"vocab-souji","word":"掃除","reading":"そうじ","meaning":"cleaning","priority":"optional","sourceSection":"The Basics"} -->
-<!-- grammar-card: {"id":"result-and-agency","kind":"concept","format":"qa","priority":"essential","sourceSection":"The Basics","rule":"てある presents a remaining result as due to someone's earlier action","example":"What does メモが置いてある imply beyond the mere existence of a memo?","answer":"Someone placed it there and left it in that state, usually for a purpose.","explanation":"The person and precise purpose need not be known or stated."} -->
+<!-- grammar-card: {"id":"result-and-agency","kind":"rule","format":"qa","priority":"essential","sourceSection":"The Basics","rule":"てある presents a remaining result as due to someone's earlier action","example":"What does メモが置いてある imply beyond the mere existence of a memo?","answer":"Someone placed it there and left it in that state, usually for a purpose.","explanation":"The person and precise purpose need not be known or stated."} -->
 
 This unique nuance can be applied in a number of other situations as well; you can give a heads-up to others about an odd situation you created and left for some purpose, or you can even generate an air of purposeful ambiguity that implies a hesitation or unwillingness to assign blame, too.
 
@@ -109,7 +109,7 @@ For example, if your colleague asks you about the location of a memo, you can us
 
 In this case, it's obvious that your colleague knows about the existence of a memo as they've just asked you where it is. So you use は to refer to the topic of the memo, saying "As for the memo…" and explain that it's on the desk.
 
-<!-- grammar-card: {"id":"known-topic-ha","kind":"concept","format":"qa","priority":"optional","sourceSection":"〜は〜てある","rule":"は frames a known affected thing as the topic","example":"Why is は natural in メモはデスクに置いてある when a colleague has just asked where the memo is?","answer":"The memo is already a shared topic; は frames the reply as as for that memo.","explanation":"The remaining state is the location in which someone left it."} -->
+<!-- grammar-card: {"id":"known-topic-ha","kind":"rule","format":"qa","priority":"optional","sourceSection":"〜は〜てある","rule":"は frames a known affected thing as the topic","example":"Why is は natural in メモはデスクに置いてある when a colleague has just asked where the memo is?","answer":"The memo is already a shared topic; は frames the reply as as for that memo.","explanation":"The remaining state is the location in which someone left it."} -->
 
 #### 〜が〜てある
 
@@ -123,7 +123,7 @@ For example, the sentence below sounds as if you've just noticed that there is a
 
 (*Nuance*: Oh! A memo has been left on the desk.)
 
-<!-- grammar-card: {"id":"noticed-subject-ga","kind":"concept","format":"qa","priority":"optional","sourceSection":"〜が〜てある","rule":"が can introduce a newly noticed result","example":"What focus does メモがデスクに置いてある have when you first notice the memo?","answer":"It draws attention to a memo having been left on the desk as a newly recognized situation.","explanation":"Changing the information structure does not remove てある's implication of prior human action."} -->
+<!-- grammar-card: {"id":"noticed-subject-ga","kind":"rule","format":"qa","priority":"optional","sourceSection":"〜が〜てある","rule":"が can introduce a newly noticed result","example":"What focus does メモがデスクに置いてある have when you first notice the memo?","answer":"It draws attention to a memo having been left on the desk as a newly recognized situation.","explanation":"Changing the information structure does not remove てある's implication of prior human action."} -->
 
 #### 〜を〜てある
 
@@ -310,7 +310,7 @@ If you use 〜ている, it simply describes the door being open without further
   - The door is open.
 
 <!-- grammar-card: {"id":"intransitive-plain-state","kind":"rule","format":"cloze","priority":"essential","sourceSection":"〜てある VS 〜ている","rule":"ている with an intransitive verb describes a plain state","example":"ドアが開(あ)い___。","answer":"ている","explanation":"開いている states that the door is open without itself asserting whether someone opened it. Polite ています also counts."} -->
-<!-- grammar-card: {"id":"aru-iru-agency-contrast","kind":"concept","format":"qa","priority":"essential","sourceSection":"〜てある VS 〜ている","rule":"The open-door contrast separates an attributed action from a neutral state","example":"What differs between ドアが開けてある and ドアが開いている?","answer":"The first implies someone opened and left the door that way; the second simply describes it as open.","explanation":"The former uses transitive あける, the latter intransitive あく."} -->
+<!-- grammar-card: {"id":"aru-iru-agency-contrast","kind":"rule","format":"qa","priority":"essential","sourceSection":"〜てある VS 〜ている","rule":"The open-door contrast separates an attributed action from a neutral state","example":"What differs between ドアが開けてある and ドアが開いている?","answer":"The first implies someone opened and left the door that way; the second simply describes it as open.","explanation":"The former uses transitive あける, the latter intransitive あく."} -->
 
 Notice the verbs in the above examples are also slightly different. The example with 〜てある is **開け**てある while the one with 〜ている is **開い**ている. The first verb is the transitive verb  開(あ)ける and the second is the intransitive verb  開(あ)く.
 

@@ -97,7 +97,7 @@ Another way to see it:
 
 Over time, you will develop a natural sense for this distinction through practice and exposure.
 
-<!-- grammar-card: {"id":"topic-identification-contrast","kind":"concept","format":"qa","priority":"essential","sourceSection":"The Crucial は vs が Distinction","rule":"Topic framing and subject identification answer different conversational needs","example":"How does 田中さんは食べた differ from 田中さんが食べた in the example pair?","answer":"The first comments on Tanaka as the topic; the second identifies Tanaka as the one who ate.","explanation":"Known versus new information is a useful starting cue, not an absolute rule for every use of either particle."} -->
+<!-- grammar-card: {"id":"topic-identification-contrast","kind":"rule","format":"qa","priority":"essential","sourceSection":"The Crucial は vs が Distinction","rule":"Topic framing and subject identification answer different conversational needs","example":"How does 田中さんは食べた differ from 田中さんが食べた in the example pair?","answer":"The first comments on Tanaka as the topic; the second identifies Tanaka as the one who ate.","explanation":"Known versus new information is a useful starting cue, not an absolute rule for every use of either particle."} -->
 
 <!-- quiz:{"type":"multiple-choice","question":"Someone asks: 'What is delicious?' You reply: 'Ramen is delicious.' Which particle fits? 'ラーメン___美味しい。'","options":["は","が","を","に"],"answer":1} -->
 

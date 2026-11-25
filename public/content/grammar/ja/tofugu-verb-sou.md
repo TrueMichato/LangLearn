@@ -111,7 +111,7 @@ You may have already seen the past form of the verb with 〜そう, but in this 
 
   - I heard that that tree fell down!
 
-<!-- grammar-card: {"id":"appearance-hearsay-contrast","kind":"concept","format":"qa","priority":"essential","sourceSection":"When You Can't Use そう","rule":"Stem + そう judges an appearance; a plain clause + そうだ reports hearsay","example":"How does 倒れそうだ differ from 倒れたそうだ?","answer":"The first means it looks about to fall; the second means I heard that it fell.","explanation":"The completed past clause 倒れた belongs to the hearsay construction, not the appearance construction.","legacyAliases":[{"rule":"Adjectives whose quality is directly visible cannot take そう","example":"あの花(はな)は___ですね。"}]} -->
+<!-- grammar-card: {"id":"appearance-hearsay-contrast","kind":"rule","format":"qa","priority":"essential","sourceSection":"When You Can't Use そう","rule":"Stem + そう judges an appearance; a plain clause + そうだ reports hearsay","example":"How does 倒れそうだ differ from 倒れたそうだ?","answer":"The first means it looks about to fall; the second means I heard that it fell.","explanation":"The completed past clause 倒れた belongs to the hearsay construction, not the appearance construction.","legacyAliases":[{"rule":"Adjectives whose quality is directly visible cannot take そう","example":"あの花(はな)は___ですね。"}]} -->
 
 ## Other Forms of そう
 

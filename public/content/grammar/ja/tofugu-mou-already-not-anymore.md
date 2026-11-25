@@ -189,7 +189,7 @@ Let's continue on with the same scenario. Say you tell your friend that you were
 
 Here, もう expresses that twenty should *already* be old enough (and passed the age) that you should have to adhere to a curfew.
 
-<!-- grammar-card: {"id":"late-old-implication","kind":"concept","format":"qa","priority":"optional","sourceSection":"もう and Time/Age","rule":"もう can frame a time or age as later or older than expected","example":"What does もう add to 十一時だ after you lose track of time?","answer":"It presents eleven o'clock as already reached, often later than expected.","explanation":"The same relative framing can present an age as old enough for an expectation, as with もう二十才."} -->
+<!-- grammar-card: {"id":"late-old-implication","kind":"rule","format":"qa","priority":"optional","sourceSection":"もう and Time/Age","rule":"もう can frame a time or age as later or older than expected","example":"What does もう add to 十一時だ after you lose track of time?","answer":"It presents eleven o'clock as already reached, often later than expected.","explanation":"The same relative framing can present an age as old enough for an expectation, as with もう二十才."} -->
 
 ## Beyond the Basics
 

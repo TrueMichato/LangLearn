@@ -172,7 +172,7 @@ For example, if you are hiking with your friend and want to suggest taking a bre
 Note ここら辺, そこら辺, and あそこら辺 are casual expressions. To describe an approximate place more formally, you use a different set of こそあど words この, その, あの, and どの with 〜辺 or 辺り, as in この辺 or この辺り.
 
 <!-- vocab-card: {"id":"vocab-kokorahen","priority":"optional","sourceSection":"ここ, そこ, あそこ, どこ with 〜ら辺 for an Approximate of Places","word":"ここら辺","reading":"ここらへん","meaning":"around here (casual)"} -->
-<!-- grammar-card: {"id":"approximate-place-register","kind":"concept","format":"qa","priority":"optional","sourceSection":"ここ, そこ, あそこ, どこ with 〜ら辺 for an Approximate of Places","rule":"ら辺 makes a casual approximate place expression","example":"What is a more formal alternative to ここら辺?","answer":"この辺 or この辺り.","explanation":"ここら辺 (ここらへん) and この辺り (このあたり) both mean around here; do not treat ら辺 as an independent dictionary word."} -->
+<!-- grammar-card: {"id":"approximate-place-register","kind":"rule","format":"qa","priority":"optional","sourceSection":"ここ, そこ, あそこ, どこ with 〜ら辺 for an Approximate of Places","rule":"ら辺 makes a casual approximate place expression","example":"What is a more formal alternative to ここら辺?","answer":"この辺 or この辺り.","explanation":"ここら辺 (ここらへん) and この辺り (このあたり) both mean around here; do not treat ら辺 as an independent dictionary word."} -->
 
 ### ここ, そこ, and あそこ for Points in Time
 
@@ -205,7 +205,7 @@ And since そこ is objective, it can be combined with the particle で and form
   - When I opened the refrigerator, I found that we were out of eggs and milk. **So** then I gave up on making pancakes.
 
 <!-- vocab-card: {"id":"vocab-sokode","priority":"optional","sourceSection":"ここ, そこ, and あそこ for Points in Time","word":"そこで","reading":"そこで","meaning":"so; thereupon (conjunction)"} -->
-<!-- grammar-card: {"id":"time-not-only-place","kind":"concept","format":"qa","priority":"optional","sourceSection":"ここ, そこ, and あそこ for Points in Time","rule":"Place demonstratives can refer to stages or moments","example":"Looking back on a past decision, what does あそこ refer to in あそこで違う行動に出ていたら…?","answer":"That point or moment in time, recalled from memory — not necessarily a physical place.","explanation":"ここ can make a moment vivid or signal now; そこ can refer back to the established stage more neutrally.","legacyAliases":[{"rule":"Place demonstratives can refer to stages or moments","example":"Does あそこで in a reflection on a past decision have to mean a physical place?"}]} -->
+<!-- grammar-card: {"id":"time-not-only-place","kind":"rule","format":"qa","priority":"optional","sourceSection":"ここ, そこ, and あそこ for Points in Time","rule":"Place demonstratives can refer to stages or moments","example":"Looking back on a past decision, what does あそこ refer to in あそこで違う行動に出ていたら…?","answer":"That point or moment in time, recalled from memory — not necessarily a physical place.","explanation":"ここ can make a moment vivid or signal now; そこ can refer back to the established stage more neutrally.","legacyAliases":[{"rule":"Place demonstratives can refer to stages or moments","example":"Does あそこで in a reflection on a past decision have to mean a physical place?"}]} -->
 
 ### ここ for Duration
 
@@ -223,7 +223,7 @@ It can also stretch into the future:
 
   - **These next** few days will be a critical time.
 
-<!-- grammar-card: {"id":"duration-includes-now","kind":"concept","format":"qa","priority":"optional","sourceSection":"ここ for Duration","rule":"ここ plus a duration anchors the interval to the present","example":"What does ここ add in ここ一週間会社に来ていない?","answer":"It specifies the past week up to now; with a future context, ここ can also cover the next few days.","explanation":"The construction includes the present reference point rather than naming any arbitrary week."} -->
+<!-- grammar-card: {"id":"duration-includes-now","kind":"rule","format":"qa","priority":"optional","sourceSection":"ここ for Duration","rule":"ここ plus a duration anchors the interval to the present","example":"What does ここ add in ここ一週間会社に来ていない?","answer":"It specifies the past week up to now; with a future context, ここ can also cover the next few days.","explanation":"The construction includes the present reference point rather than naming any arbitrary week."} -->
 
 ### Referring to Extent
 
@@ -235,7 +235,7 @@ Sometimes, ここ, そこ, and あそこ can be used to refer to an extent to wh
 
 In this case, the choice between the three characters depends on how you feel about the amount of effort you put in. That is, ここ shows that you are still emotionally involved with, and frustrated by, all the work you put in for this person, given the outcome of the situation. It still feels raw. そこ sounds like you're calmly analyzing all your effort from an objective point of view. And あそこ indicates that you are looking back at what happened, so it often adds a sentimental tone, but with more distance than if you used ここ.
 
-<!-- grammar-card: {"id":"extent-made","kind":"concept","format":"qa","priority":"optional","sourceSection":"Referring to Extent","rule":"A place word plus まで can mark the extent of an effort","example":"What does ここまで refer to when someone says ここまでしたのに about their efforts?","answer":"The extent to which they went, not necessarily a place they reached.","explanation":"ここ keeps the effort psychologically close; そこ is more detached and あそこ can look back at it from a distance."} -->
+<!-- grammar-card: {"id":"extent-made","kind":"rule","format":"qa","priority":"optional","sourceSection":"Referring to Extent","rule":"A place word plus まで can mark the extent of an effort","example":"What does ここまで refer to when someone says ここまでしたのに about their efforts?","answer":"The extent to which they went, not necessarily a place they reached.","explanation":"ここ keeps the effort psychologically close; そこ is more detached and あそこ can look back at it from a distance."} -->
 
 ---
 

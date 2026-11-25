@@ -205,7 +205,7 @@ More formal and literary than てはいけない. Used in rules, laws, and writt
 > *Hōritsu ni ihan shite wa naranai.*
 > One must not violate the law.
 
-<!-- grammar-card: {"id":"prohibition-register-choice","kind":"concept","format":"qa","priority":"essential","sourceSection":"Alternative Prohibition Expressions","rule":"だめ and ならない express prohibition in different registers","example":"Which better suits a formal written rule, 触っちゃだめ or 触ってはならない?","answer":"触ってはならない; 触っちゃだめ is conversational and casual.","explanation":"てはいけない is a standard prohibition; てはだめ is more conversational, and てはならない is formal or literary."} -->
+<!-- grammar-card: {"id":"prohibition-register-choice","kind":"rule","format":"qa","priority":"essential","sourceSection":"Alternative Prohibition Expressions","rule":"だめ and ならない express prohibition in different registers","example":"Which better suits a formal written rule, 触っちゃだめ or 触ってはならない?","answer":"触ってはならない; 触っちゃだめ is conversational and casual.","explanation":"てはいけない is a standard prohibition; てはだめ is more conversational, and てはならない is formal or literary."} -->
 ### Formality Comparison for Prohibition
 
 | Expression | Formality | Usage |
@@ -260,7 +260,7 @@ To express that something is **not necessary** (but is allowed), use **なくて
 
 <!-- grammar-card: {"id":"no-obligation","kind":"rule","format":"cloze","priority":"essential","sourceSection":"なくてもいい — \"Don't Have To\"","rule":"なくてもいい removes an obligation rather than granting permission","hint":"来る, politely say there is no need to come.","example":"Politely: 'You don't have to come tomorrow': 明日(あした)は来(こ)___。","answer":"なくてもいいです","explanation":"来なくてもいいです permits not coming; it does not forbid coming. 来 is read こ in this negative form.","legacyAliases":[{"rule":"なくてもいい removes an obligation rather than granting permission","example":"明日(あした)は来(こ)___。"}]} -->
 <!-- grammar-card: {"id":"rule-no-obligation-formation","kind":"concept","format":"qa","priority":"optional","sourceSection":"なくてもいい — \"Don't Have To\"","rule":"'Don't have to' is the ない-form with い changed to くてもいい","example":"How do you build 'don't have to ~' from a verb?","answer":"Take the ない-form, drop い, add くてもいい.","explanation":"行かない → 行かなくてもいい; 来ない → 来(こ)なくてもいい."} -->
-<!-- grammar-card: {"id":"no-obligation-versus-ban","kind":"concept","format":"qa","priority":"essential","sourceSection":"なくてもいい — \"Don't Have To\"","rule":"Permission not to act is different from prohibition","example":"How does 食べなくてもいい differ from 食べてはいけない?","answer":"食べなくてもいい: you don't have to eat (but may). 食べてはいけない: you must not eat.","explanation":"The negative in なくてもいい removes necessity; it does not make the positive action impermissible.","legacyAliases":[{"rule":"Permission not to act is different from prohibition","example":"Does 食べなくてもいい mean you are forbidden to eat?"}]} -->
+<!-- grammar-card: {"id":"no-obligation-versus-ban","kind":"rule","format":"qa","priority":"essential","sourceSection":"なくてもいい — \"Don't Have To\"","rule":"Permission not to act is different from prohibition","example":"How does 食べなくてもいい differ from 食べてはいけない?","answer":"食べなくてもいい: you don't have to eat (but may). 食べてはいけない: you must not eat.","explanation":"The negative in なくてもいい removes necessity; it does not make the positive action impermissible.","legacyAliases":[{"rule":"Permission not to act is different from prohibition","example":"Does 食べなくてもいい mean you are forbidden to eat?"}]} -->
 
 ## Adjective & Noun Permission/Prohibition
 

@@ -66,10 +66,11 @@ You can even ask both "who" and "what" using this method! In that case, the sent
 
   - **Who** did you give **what** to?
 
-<!-- grammar-card: {"id":"in-place-question","kind":"concept","format":"qa","priority":"essential","sourceSection":"Question Pronouns","rule":"Japanese question pronouns occupy the corresponding noun's position rather than moving to the sentence front","example":"Must 何 move to the start when プレゼント is replaced in ケンイチにプレゼントをあげたの?","answer":"No. It stays in the object position: ケンイチに何をあげたの?","explanation":"Particles retain the grammatical role. A sentence can replace more than one unknown noun at once."} -->
+<!-- grammar-card: {"id":"in-place-question","kind":"concept","format":"qa","priority":"essential","sourceSection":"Question Pronouns","rule":"Japanese question pronouns occupy the corresponding noun's position rather than moving to the sentence front","example":"When 何 replaces the object プレゼント in ケンイチにプレゼントをあげたの, where does it go?","answer":"In the object's own position, keeping を: ケンイチに何をあげたの? It does not move to the front as in English.","explanation":"Particles retain the grammatical role. A sentence can replace more than one unknown noun at once.","legacyAliases":[{"rule":"Japanese question pronouns occupy the corresponding noun's position rather than moving to the sentence front","example":"Must 何 move to the start when プレゼント is replaced in ケンイチにプレゼントをあげたの?"}]} -->
+<!-- grammar-card: {"id":"rule-question-word-position","kind":"concept","format":"qa","priority":"essential","sourceSection":"Question Pronouns","rule":"Japanese question words stay in the position of the unknown they replace","example":"In English, question words move to the start of the sentence. Where does a Japanese question word go?","answer":"In the same position as the unknown thing it replaces, keeping that position's particle; nothing moves to the front.","explanation":"ケンイチにプレゼントをあげたの → ケンイチに何をあげたの / 誰にプレゼントをあげたの."} -->
 
-<!-- grammar-card: {"id":"what-object","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Question Pronouns","rule":"何 asks which thing","hint":"Ask what was given, using kanji.","example":"ケンイチに___をあげたの？","answer":"何","explanation":"何を (なにを) asks what was given to Kenichi."} -->
-<!-- grammar-card: {"id":"who-recipient","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Question Pronouns","rule":"誰 asks which person","hint":"Ask who received the present, using kanji.","example":"___にプレゼントをあげたの？","answer":"誰","explanation":"誰に (だれに) asks who received the present."} -->
+<!-- grammar-card: {"id":"what-object","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Question Pronouns","rule":"何 asks which thing","hint":"Ask what was given, using kanji.","example":"What did you give Kenichi? (in kanji): ケンイチに___をあげたの？","answer":"何","explanation":"何を (なにを) asks what was given to Kenichi.","legacyAliases":[{"rule":"何 asks which thing","example":"ケンイチに___をあげたの？"}]} -->
+<!-- grammar-card: {"id":"who-recipient","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Question Pronouns","rule":"誰 asks which person","hint":"Ask who received the present, using kanji.","example":"Who did you give a present to? (in kanji): ___にプレゼントをあげたの？","answer":"誰","explanation":"誰に (だれに) asks who received the present.","legacyAliases":[{"rule":"誰 asks which person","example":"___にプレゼントをあげたの？"}]} -->
 
 #### Question Adverbs
 
@@ -140,7 +141,7 @@ This is a useful tendency, not an exceptionless sound rule. For example, 何で 
   - **What** is your favorite alcoholic drink?
 
 <!-- vocab-card: {"id":"vocab-nani","word":"何","reading":"なに; なん (depending on the expression)","meaning":"what","priority":"essential","sourceSection":"何 for \"What\""} -->
-<!-- grammar-card: {"id":"nani-nan-reading","kind":"concept","format":"qa","priority":"optional","sourceSection":"何 for \"What\"","rule":"何 has なに and なん readings shaped by the expression, not just an automatic consonant substitution","example":"How is 何 read in 何ですか, and does that force every 何で to have the same reading?","answer":"なんですか; no, 何で can be なにで for by what means, while なんで commonly means why.","explanation":"The sound-based shortcut is a tendency. Learn conventional expressions and their meanings together."} -->
+<!-- grammar-card: {"id":"nani-nan-reading","kind":"concept","format":"qa","priority":"optional","sourceSection":"何 for \"What\"","rule":"何 has なに and なん readings shaped by the expression, not just an automatic consonant substitution","example":"How is 何 usually read before sounds of the な-, だ- and た-lines, as in 何ですか?","answer":"なん: なんですか.","explanation":"This is a tendency, not an exceptionless rule: 何で can be なにで (by what means), while なんで commonly means why.","legacyAliases":[{"rule":"何 has なに and なん readings shaped by the expression, not just an automatic consonant substitution","example":"How is 何 read in 何ですか, and does that force every 何で to have the same reading?"}]} -->
 
 ### 誰 / どなた for "Who"
 
@@ -186,7 +187,7 @@ In English we use different varieties of "who" — namely "whom" and "whose" —
   - **What part** of the Japanese language do you like?
 
 <!-- vocab-card: {"id":"vocab-doko","word":"どこ","reading":"どこ","meaning":"where; what place or part","priority":"essential","sourceSection":"どこ for \"Where\""} -->
-<!-- grammar-card: {"id":"figurative-place","kind":"concept","format":"qa","priority":"optional","sourceSection":"どこ for \"Where\"","rule":"どこ can ask about an aspect or part as well as a literal location","example":"Does 日本語のどこが好きですか ask for the language's physical location?","answer":"No. It asks what part or aspect of Japanese the listener likes.","explanation":"The location word has a figurative part-of-something use."} -->
+<!-- grammar-card: {"id":"figurative-place","kind":"concept","format":"qa","priority":"optional","sourceSection":"どこ for \"Where\"","rule":"どこ can ask about an aspect or part as well as a literal location","example":"Besides physical location, what can どこ ask about, as in 日本語のどこが好きですか?","answer":"Which part or aspect of something: what part of Japanese the listener likes.","explanation":"The location word has a figurative part-of-something use.","legacyAliases":[{"rule":"どこ can ask about an aspect or part as well as a literal location","example":"Does 日本語のどこが好きですか ask for the language's physical location?"}]} -->
 
 ### どれ / どっち / どちら for "Which One"
 
@@ -239,7 +240,7 @@ As こちら, そちら and あちら are polite ways of referring to a person o
 
 <!-- vocab-card: {"id":"vocab-dochira","word":"どちら","reading":"どちら","meaning":"which one; which direction; who (indirect or polite, depending on context)","priority":"optional","sourceSection":"どちら"} -->
 <!-- vocab-card: {"id":"vocab-dochirasama","word":"どちら様","reading":"どちらさま","meaning":"who (polite inquiry about the caller or visitor)","priority":"optional","sourceSection":"どちら"} -->
-<!-- grammar-card: {"id":"choice-number-register","kind":"concept","format":"qa","priority":"optional","sourceSection":"どちら","rule":"どっち commonly selects between two casually; polite どちら need not be limited to two","example":"Must a polite offer of three kinds of beer avoid どちら?","answer":"No. どちら can cover three or more choices; casual どっち normally frames a two-way choice.","explanation":"どちら can also indirectly ask who or which school/workplace, so context determines whether a direction is intended."} -->
+<!-- grammar-card: {"id":"choice-number-register","kind":"concept","format":"qa","priority":"optional","sourceSection":"どちら","rule":"どっち commonly selects between two casually; polite どちら need not be limited to two","example":"How many options can polite どちら and casual どっち each cover?","answer":"どちら: two or more (e.g. three kinds of beer); どっち: normally just two.","explanation":"どちら can also indirectly ask who (どちら様) or which school/workplace, so context determines whether a direction is intended.","legacyAliases":[{"rule":"どっち commonly selects between two casually; polite どちら need not be limited to two","example":"Must a polite offer of three kinds of beer avoid どちら?"}]} -->
 
 ### どの〜 for "Which 〜"
 
@@ -271,7 +272,7 @@ Even though this could be meant as "What breed of dog?" in English, the question
 <!-- vocab-card: {"id":"vocab-donna","word":"どんな","reading":"どんな","meaning":"what kind of; what is it like (before a noun)","priority":"optional","sourceSection":"どんな〜 / どういう〜 / どのような〜 for \"What Kind of 〜\""} -->
 <!-- vocab-card: {"id":"vocab-douiu","word":"どういう","reading":"どういう","meaning":"what kind of; what is meant by (before a noun)","priority":"optional","sourceSection":"どんな〜 / どういう〜 / どのような〜 for \"What Kind of 〜\""} -->
 <!-- vocab-card: {"id":"vocab-donoyouna","word":"どのような","reading":"どのような","meaning":"what kind of; what sort of (before a noun, relatively formal)","priority":"optional","sourceSection":"どんな〜 / どういう〜 / どのような〜 for \"What Kind of 〜\""} -->
-<!-- grammar-card: {"id":"kind-open-details","kind":"concept","format":"qa","priority":"optional","sourceSection":"どんな〜 / どういう〜 / どのような〜 for \"What Kind of 〜\"","rule":"どんな asks for descriptive details, not necessarily a taxonomic category","example":"Must the answer to どんな犬 be only the dog's breed?","answer":"No. Size, appearance, temperament, or other relevant details may answer it.","explanation":"What kind of is an approximate gloss, not a restriction to formally named categories."} -->
+<!-- grammar-card: {"id":"kind-open-details","kind":"concept","format":"qa","priority":"optional","sourceSection":"どんな〜 / どういう〜 / どのような〜 for \"What Kind of 〜\"","rule":"どんな asks for descriptive details, not necessarily a taxonomic category","example":"What kinds of information can answer a どんな question such as どんな犬?","answer":"Any relevant details: size, appearance, temperament or breed, not only a named category.","explanation":"What kind of is an approximate gloss, not a restriction to formally named categories.","legacyAliases":[{"rule":"どんな asks for descriptive details, not necessarily a taxonomic category","example":"Must the answer to どんな犬 be only the dog's breed?"}]} -->
 
 ### いつ for "When"
 
@@ -301,7 +302,7 @@ You can also use いつ as an indirect object with the particle に, which marks
   - **When** would you like to move the appointment to?
 
 <!-- vocab-card: {"id":"vocab-itsu","word":"いつ","reading":"いつ","meaning":"when","priority":"optional","sourceSection":"いつ for \"When\""} -->
-<!-- grammar-card: {"id":"itsu-particles","kind":"concept","format":"qa","priority":"optional","sourceSection":"いつ for \"When\"","rule":"Adverbial いつ often lacks a time particle, but nominal or result-target uses can take particles","example":"Is いつに always wrong because いつ東京に行きますか has no に?","answer":"No. いつに can ask the new target time of a rescheduled appointment; いつが can mark a time as the subject.","explanation":"Adverbial いつ needs no ordinary time に, while other grammatical uses remain possible."} -->
+<!-- grammar-card: {"id":"itsu-particles","kind":"concept","format":"qa","priority":"optional","sourceSection":"いつ for \"When\"","rule":"Adverbial いつ often lacks a time particle, but nominal or result-target uses can take particles","example":"Adverbial いつ (いつ東京に行きますか) takes no particle. When is いつ used with に or が?","answer":"As a noun: いつに asks the new target time of a change (ご予約いつに変更しますか); いつが marks a time as the subject (いつが空いてますか).","explanation":"Adverbial いつ needs no ordinary time に, while other grammatical uses remain possible.","legacyAliases":[{"rule":"Adverbial いつ often lacks a time particle, but nominal or result-target uses can take particles","example":"Is いつに always wrong because いつ東京に行きますか has no に?"}]} -->
 
 ### なぜ / なんで / どうして for "Why?"
 
@@ -363,7 +364,7 @@ There's also a very polite version of どう — いかが. You may hear it in c
 <!-- vocab-card: {"id":"vocab-dou","word":"どう","reading":"どう","meaning":"how; in what way or condition","priority":"optional","sourceSection":"どう for \"How\""} -->
 <!-- vocab-card: {"id":"vocab-douyatte","word":"どうやって","reading":"どうやって","meaning":"how; by what method","priority":"optional","sourceSection":"どう for \"How\""} -->
 <!-- vocab-card: {"id":"vocab-ikaga","word":"いかが","reading":"いかが","meaning":"how (polite)","priority":"optional","sourceSection":"どう for \"How\""} -->
-<!-- grammar-card: {"id":"method-decision-contrast","kind":"concept","format":"qa","priority":"optional","sourceSection":"どう for \"How\"","rule":"どうやって asks a method, while どうする often asks what action to choose","example":"How does asking どうやって調理する differ from asking 練習のあと、どうする?","answer":"The first asks how to cook it; the second asks what to do after practice.","explanation":"どうしたんですか commonly asks what happened or what is wrong, rather than requesting a technical method."} -->
+<!-- grammar-card: {"id":"method-decision-contrast","kind":"rule","format":"qa","priority":"optional","sourceSection":"どう for \"How\"","rule":"どうやって asks a method, while どうする often asks what action to choose","example":"How does asking どうやって調理する differ from asking 練習のあと、どうする?","answer":"The first asks how to cook it; the second asks what to do after practice.","explanation":"どうしたんですか commonly asks what happened or what is wrong, rather than requesting a technical method."} -->
 
 ### どのくらい for "How Much" (Amount)
 
@@ -431,7 +432,7 @@ And finally, it can also occur with 〜ても to emphasize that no amount of eff
 <!-- vocab-card: {"id":"vocab-ikura","word":"いくら","reading":"いくら","meaning":"how much (usually a price or monetary amount in questions)","priority":"optional","sourceSection":"いくら for \"How Much\" (Cost/Price)"} -->
 <!-- vocab-card: {"id":"vocab-oikura","word":"おいくら","reading":"おいくら","meaning":"how much (polite price question)","priority":"optional","sourceSection":"いくら for \"How Much\" (Cost/Price)"} -->
 <!-- grammar-card: {"id":"price-amount-contrast","kind":"concept","format":"qa","priority":"essential","sourceSection":"いくら for \"How Much\" (Cost/Price)","rule":"Interrogative いくら normally asks money, whereas どのくらい asks broader extent","example":"Which expression normally asks how much water someone drinks: いくら or どのくらい?","answer":"どのくらい; いくら normally asks a price or monetary amount.","explanation":"どのくらい also covers time, distance, and height, with countable or uncountable quantities."} -->
-<!-- grammar-card: {"id":"ikura-temo","kind":"concept","format":"qa","priority":"optional","sourceSection":"いくら for \"How Much\" (Cost/Price)","rule":"いくら…ても expresses no matter how much rather than asking a price","example":"What does いくら洗っても汚れが落ちない mean about washing?","answer":"No matter how much one washes it, the stain does not come off.","explanation":"This concessive use is not a money question and does not share the interrogative price restriction."} -->
+<!-- grammar-card: {"id":"ikura-temo","kind":"concept","format":"qa","priority":"optional","sourceSection":"いくら for \"How Much\" (Cost/Price)","rule":"いくら…ても expresses no matter how much rather than asking a price","example":"What does いくら + verb-ても express, as in いくら洗っても汚れが落ちない?","answer":"No matter how much one does it, there is no better result: no matter how much I wash it, the stain won't come off.","explanation":"This concessive use is not a money question and does not share the interrogative price restriction.","legacyAliases":[{"rule":"いくら…ても expresses no matter how much rather than asking a price","example":"What does いくら洗っても汚れが落ちない mean about washing?"}]} -->
 
 ### いくつ for "How Many"
 
@@ -455,7 +456,7 @@ Another thing that 〜つ can count is difference in age. So いくつ can be us
 (*Literally*: How many years apart from your wife are you?)
 
 <!-- vocab-card: {"id":"vocab-ikutsu","word":"いくつ","reading":"いくつ","meaning":"how many; how old (in age questions)","priority":"optional","sourceSection":"いくつ for \"How Many\""} -->
-<!-- grammar-card: {"id":"count-age","kind":"concept","format":"qa","priority":"optional","sourceSection":"いくつ for \"How Many\"","rule":"いくつ asks counts and can ask age or an age difference; お adds politeness","example":"Is いくつ limited to asking the number of objects, never a person's age?","answer":"No. It can ask a child's age or an age difference, and おいくつ is a polite age-question form.","explanation":"The child's つ-counter use does not prohibit conventional おいくつ for an adult's age."} -->
+<!-- grammar-card: {"id":"count-age","kind":"concept","format":"qa","priority":"optional","sourceSection":"いくつ for \"How Many\"","rule":"いくつ asks counts and can ask age or an age difference; お adds politeness","example":"Besides the number of countable objects, what else can いくつ ask?","answer":"Age: a child's age (counted with つ up to nine) or an age difference; おいくつ is the polite form.","explanation":"The child's つ-counter use does not prohibit conventional おいくつ for an adult's age.","legacyAliases":[{"rule":"いくつ asks counts and can ask age or an age difference; お adds politeness","example":"Is いくつ limited to asking the number of objects, never a person's age?"}]} -->
 
 Just like いくら, you can attach an honorific prefix 御 (お) to いくつ to sound polite.
 
@@ -550,7 +551,8 @@ When question words are combined with the particle か, they indicate an unspeci
 <!-- vocab-card: {"id":"vocab-ikuraka","word":"いくらか","reading":"いくらか","meaning":"some amount; somewhat","priority":"optional","sourceSection":"Question Word + か"} -->
 <!-- vocab-card: {"id":"vocab-ikutsuka","word":"いくつか","reading":"いくつか","meaning":"some; a few","priority":"optional","sourceSection":"Question Word + か"} -->
 
-<!-- grammar-card: {"id":"indefinite-something","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Question Word + か","rule":"か after a question word turns it into 'some-'","hint":"Use the indefinite expression meaning something, in kanji and kana.","example":"コンビニで___甘いの買ってきて。","answer":"何か","explanation":"何か (なにか) means something here, not an embedded question asking what."} -->
+<!-- grammar-card: {"id":"indefinite-something","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Question Word + か","rule":"か after a question word turns it into 'some-'","hint":"Use the indefinite expression meaning something, in kanji and kana.","example":"Buy something sweet at the convenience store (indefinite \"something\", kanji + kana): コンビニで___甘いの買ってきて。","answer":"何か","explanation":"何か (なにか) means something here, not an embedded question asking what.","legacyAliases":[{"rule":"か after a question word turns it into 'some-'","example":"コンビニで___甘いの買ってきて。"}]} -->
+<!-- grammar-card: {"id":"rule-ka-mo","kind":"concept","format":"qa","priority":"essential","sourceSection":"Question Word + か","rule":"Question word + ka = some-; question word + mo = every-/no- depending on polarity","example":"What do \"question word + ka\" and \"question word + mo\" generally express?","answer":"+ か: an unspecified some- (something, someone, somewhere); + も: all or nothing, many forms mainly with negatives (nothing, nobody).","explanation":"何か = something, 誰か = someone; 何もない = nothing, 誰も来ない = nobody comes."} -->
 
 ### Question Word + も
 
@@ -632,7 +634,7 @@ And then there are question words that work in both negative and positive senten
 
 Some of the pairs of question words + も are used idiomatically. For example, どうしても means "no matter what" and いつも means "always."
 
-<!-- grammar-card: {"id":"mo-polarity","kind":"concept","format":"qa","priority":"optional","sourceSection":"Question Word + も","rule":"Question-word + も depends on both the expression and sentence polarity","example":"Does every question word plus も mean everything in an affirmative sentence?","answer":"No. 何も and 誰も normally pair with negatives, while どれも can mean every one affirmatively or none with a negative.","explanation":"どこも can be affirmative for everywhere, and いつも and どうしても have conventional idiomatic meanings."} -->
+<!-- grammar-card: {"id":"mo-polarity","kind":"concept","format":"qa","priority":"optional","sourceSection":"Question Word + も","rule":"Question-word + も depends on both the expression and sentence polarity","example":"What kind of sentence do 何も and 誰も normally appear in, and how does どれも differ?","answer":"何も and 誰も normally pair with negatives (nothing, nobody); どれも works in both: every one with a positive, none with a negative.","explanation":"どこも can be affirmative for everywhere, and いつも and どうしても have conventional idiomatic meanings.","legacyAliases":[{"rule":"Question-word + も depends on both the expression and sentence polarity","example":"Does every question word plus も mean everything in an affirmative sentence?"}]} -->
 <!-- vocab-card: {"id":"vocab-itsumo","word":"いつも","reading":"いつも","meaning":"always; usually","priority":"optional","sourceSection":"Question Word + も"} -->
 <!-- vocab-card: {"id":"vocab-doushitemo","word":"どうしても","reading":"どうしても","meaning":"no matter what; by all means","priority":"optional","sourceSection":"Question Word + も"} -->
 <!-- vocab-card: {"id":"vocab-nanimo","word":"何も","reading":"なにも","meaning":"nothing; not anything (with a negative predicate)","priority":"optional","sourceSection":"Question Word + も"} -->
@@ -705,7 +707,7 @@ Like the combination of question words and も, some other words and particles c
 
   - This dog is kind to anyone.
 
-<!-- grammar-card: {"id":"demo-free-choice","kind":"concept","format":"qa","priority":"optional","sourceSection":"Question Word + でも","rule":"Question-word + でも expresses free choice; a case particle may intervene","example":"What does 誰にでも express in この犬は、誰にでも優しい?","answer":"Kind to anyone, regardless of which person it is.","explanation":"に retains the recipient/target relation inside 誰にでも; 何でも similarly means anything."} -->
+<!-- grammar-card: {"id":"demo-free-choice","kind":"concept","format":"qa","priority":"optional","sourceSection":"Question Word + でも","rule":"Question-word + でも expresses free choice; a case particle may intervene","example":"What does question word + でも express, as in この犬は、誰にでも優しい?","answer":"Free choice, any at all, regardless of which: kind to anyone.","explanation":"に retains the recipient/target relation inside 誰にでも; 何でも similarly means anything.","legacyAliases":[{"rule":"Question-word + でも expresses free choice; a case particle may intervene","example":"What does 誰にでも express in この犬は、誰にでも優しい?"}]} -->
 <!-- vocab-card: {"id":"vocab-nandemo","word":"何でも","reading":"なんでも","meaning":"anything; whatever","priority":"optional","sourceSection":"Question Word + でも"} -->
 <!-- vocab-card: {"id":"vocab-daredemo","word":"誰でも","reading":"だれでも","meaning":"anyone; whoever","priority":"optional","sourceSection":"Question Word + でも"} -->
 <!-- vocab-card: {"id":"vocab-dokodemo","word":"どこでも","reading":"どこでも","meaning":"anywhere; wherever","priority":"optional","sourceSection":"Question Word + でも"} -->

@@ -185,7 +185,7 @@ For example, your sister is upset because her favorite ice cream (that she even 
 
 Just like that, you can use it to provide information to resolve a misunderstanding. You’ll often see the sentence ending particle よ paired up with this んだ. They match up well because よ indicates you’re trying to offer a new perspective that your listener does not have.
 
-<!-- grammar-card: {"id":"misunderstanding-yo","kind":"concept","format":"qa","priority":"optional","sourceSection":"んだ for Resolving Misunderstandings","rule":"Explanatory んだよ can supply a corrective perspective","example":"What is the role of the ending in 違うよ、お母さんが食べたんだよ when someone wrongly blames you?","answer":"It presents the mother eating it as the explanation that corrects the listener's mistaken belief.","explanation":"よ highlights a perspective the listener lacks; the explanatory ending connects that information to the accusation."} -->
+<!-- grammar-card: {"id":"misunderstanding-yo","kind":"rule","format":"qa","priority":"optional","sourceSection":"んだ for Resolving Misunderstandings","rule":"Explanatory んだよ can supply a corrective perspective","example":"What is the role of the ending in 違うよ、お母さんが食べたんだよ when someone wrongly blames you?","answer":"It presents the mother eating it as the explanation that corrects the listener's mistaken belief.","explanation":"よ highlights a perspective the listener lacks; the explanatory ending connects that information to the accusation."} -->
 
 ## Beyond The Basics
 
@@ -308,7 +308,7 @@ While you might not see んだ being used like this in real-life too often, you�
 This probably comes from you knowing your son’s habit of skipping breakfast. You’re worried about him and you use んだよ to express that you’re wanting him to understand he should eat breakfast everyday.
 
 <!-- vocab-card: {"id":"vocab-nigeru","priority":"optional","sourceSection":"んだ For Commands","word":"逃げる","reading":"にげる","meaning":"to escape; to run away"} -->
-<!-- grammar-card: {"id":"explanatory-command","kind":"concept","format":"qa","priority":"optional","sourceSection":"んだ For Commands","rule":"A plain descriptive verb with んだ can function as an emphatic directive","example":"In an urgent movie scene, what does 逃げるんだ！ do beyond merely explaining an escape?","answer":"It urges the listener to run, as if making them understand the seriousness of the situation.","explanation":"The directive uses dictionary-form 逃げる, not an imperative followed by んだ. Everyday んだよ can also convey concerned instructions."} -->
+<!-- grammar-card: {"id":"explanatory-command","kind":"rule","format":"qa","priority":"optional","sourceSection":"んだ For Commands","rule":"A plain descriptive verb with んだ can function as an emphatic directive","example":"In an urgent movie scene, what does 逃げるんだ！ do beyond merely explaining an escape?","answer":"It urges the listener to run, as if making them understand the seriousness of the situation.","explanation":"The directive uses dictionary-form 逃げる, not an imperative followed by んだ. Everyday んだよ can also convey concerned instructions."} -->
 
 ---
 

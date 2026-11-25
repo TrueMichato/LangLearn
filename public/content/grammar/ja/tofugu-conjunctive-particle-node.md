@@ -26,7 +26,8 @@ An example should give you a better picture — let's see how it works in action
 
 ので also has a polite feel to it, so this sounds like something you would say to people who you don't know well, or you want to be polite with, such as your teacher or boss.
 
-<!-- grammar-card: {"id":"reason-before-result","kind":"concept","format":"qa","priority":"essential","sourceSection":"The Basics","rule":"The clause before ので gives the reason for the following result","example":"In お腹が空いたのでレストランに行きました, which event is the reason and which is the result?","answer":"Getting hungry is the reason; going to the restaurant is the result.","explanation":"Keep the direction of the link: reason + ので + consequence."} -->
+<!-- grammar-card: {"id":"reason-before-result","kind":"rule","format":"qa","priority":"essential","sourceSection":"The Basics","rule":"The clause before ので gives the reason for the following result","example":"In お腹が空いたのでレストランに行きました, which event is the reason and which is the result?","answer":"Getting hungry is the reason; going to the restaurant is the result.","explanation":"Keep the direction of the link: reason + ので + consequence."} -->
+<!-- grammar-card: {"id":"rule-node-reason-clause","kind":"concept","format":"qa","priority":"optional","sourceSection":"The Basics","rule":"The clause before ので is the reason; what follows is the result","example":"In a sentence of the shape [A] 'node' [B], what role does clause A play?","answer":"It gives the reason or cause for B.","explanation":"Reason, cause or explanation counts. お腹が空いたので (reason) → レストランに行きました (result)."} -->
 <!-- vocab-card: {"id":"vocab-onaka-ga-suku","word":"お腹が空く","reading":"おなかがすく","meaning":"to get hungry","priority":"optional","sourceSection":"The Basics"} -->
 
 ### Patterns of Use
@@ -65,8 +66,9 @@ You may be wondering, "why do we add な?" This is because な historically come
 
 Since です is a politeness marker, 〜ですので sounds extra polite compared to 〜なので.
 
-<!-- grammar-card: {"id":"noun-na-link","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Connecting Sentences","rule":"After a noun, ので becomes なので","hint":"Use the plain noun-linking form of the reason connector.","example":"二十歳___、お酒が飲めます。","answer":"なので","explanation":"二十歳 (はたち) is a noun, so insert な; present な-adjectives follow the same pattern. ですので is a more polite alternative."} -->
-<!-- grammar-card: {"id":"plain-verb-reason","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Connecting Sentences","rule":"ので attaches to the plain form to give a reason","hint":"Use the softer reason connector taught here.","example":"お腹が空いた___、レストランに行きました。","answer":"ので","explanation":"The plain past 空いた takes the connector directly. There is no inserted な after a verb."} -->
+<!-- grammar-card: {"id":"noun-na-link","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Connecting Sentences","rule":"After a noun, ので becomes なので","hint":"Use the plain noun-linking form of the reason connector.","example":"Softer reason connector (not から), without です: 二十歳___、お酒が飲めます。 (I'm twenty, so I can drink.)","answer":"なので","explanation":"二十歳 (はたち) is a noun, so insert な; present な-adjectives follow the same pattern. ですので is a more polite alternative and also correct.","legacyAliases":[{"rule":"After a noun, ので becomes なので","example":"二十歳___、お酒が飲めます。"}]} -->
+<!-- grammar-card: {"id":"rule-node-na","kind":"concept","format":"qa","priority":"essential","sourceSection":"Connecting Sentences","rule":"A present noun or な-adjective takes な before ので","example":"What must a present-tense noun or na-adjective add before the reason connector 'node'?","answer":"Na (な), or polite desu.","explanation":"な counts; mentioning です as the more polite option is a bonus. 二十歳なので, きれいなので; 二十歳ので is ungrammatical."} -->
+<!-- grammar-card: {"id":"plain-verb-reason","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Connecting Sentences","rule":"ので attaches to the plain form to give a reason","hint":"Use the softer reason connector taught here.","example":"Softer, polite-sounding reason connector (not から): お腹が空いた___、レストランに行きました。","answer":"ので","explanation":"The plain past 空いた takes the connector directly. There is no inserted な after a verb. から would also be grammatical, but sounds more casual.","legacyAliases":[{"rule":"ので attaches to the plain form to give a reason","example":"お腹が空いた___、レストランに行きました。"}]} -->
 <!-- vocab-card: {"id":"vocab-hatachi","word":"二十歳","reading":"はたち","meaning":"twenty years old","priority":"optional","sourceSection":"Connecting Sentences"} -->
 <!-- vocab-card: {"id":"vocab-sentaku","word":"洗濯","reading":"せんたく","meaning":"laundry; washing clothes","priority":"optional","sourceSection":"Connecting Sentences"} -->
 
@@ -82,7 +84,7 @@ Although you see ので here, it's actually not the ので we are talking about,
 
 Each of the particles の and で have many uses and can mean different things, so keep in mind that ので together might not always be the conjunctive particle used to show a reason. And on top of that, you might stumble upon the combinations of the particles の and で being used for expressing different meanings!
 
-<!-- grammar-card: {"id":"nominalizer-selection-contrast","kind":"concept","format":"qa","priority":"essential","sourceSection":"の + で Combinations","rule":"Adjacent の and で need not form a reason connector","example":"Does 赤いのでお願いします mean because it is red in this shopping exchange?","answer":"No. の stands for the red one, and で marks that selection: the red one, please.","explanation":"Identify the nominalizer and selection particle separately rather than translating every ので as because."} -->
+<!-- grammar-card: {"id":"nominalizer-selection-contrast","kind":"rule","format":"qa","priority":"essential","sourceSection":"の + で Combinations","rule":"Adjacent の and で need not form a reason connector","example":"Does 赤いのでお願いします mean because it is red in this shopping exchange?","answer":"No. の stands for the red one, and で marks that selection: the red one, please.","explanation":"Identify the nominalizer and selection particle separately rather than translating every ので as because."} -->
 
 ## Beyond The Basics
 
@@ -96,7 +98,7 @@ As we mentioned, ので marks a reason, and it's followed by a statement that's 
 
 As you can see, this suggests that you can't join your senpai for drinks. Just like that, by presenting a reason, you can hint what you may be about to say, even though you often end up not saying anything after that. And it's okay, because people usually take the hint and get what you mean through assumption. They will probably actually appreciate your indirect and polite way of rejecting the invitation or offer, or whatever may come off awkward to say explicitly.
 
-<!-- grammar-card: {"id":"unfinished-refusal","kind":"concept","format":"qa","priority":"optional","sourceSection":"ので at the End of a Sentence","rule":"A reason alone can imply an omitted refusal","example":"What can 課題があるので… imply in response to an invitation for drinks?","answer":"That the speaker cannot join because they have assignments to do.","explanation":"The refusal is inferred from context; ので itself still marks the reason, not a lexical word for no."} -->
+<!-- grammar-card: {"id":"unfinished-refusal","kind":"rule","format":"qa","priority":"optional","sourceSection":"ので at the End of a Sentence","rule":"A reason alone can imply an omitted refusal","example":"What can 課題があるので… imply in response to an invitation for drinks?","answer":"That the speaker cannot join because they have assignments to do.","explanation":"The refusal is inferred from context; ので itself still marks the reason, not a lexical word for no."} -->
 <!-- vocab-card: {"id":"vocab-kadai","word":"課題","reading":"かだい","meaning":"assignment; task","priority":"optional","sourceSection":"ので at the End of a Sentence"} -->
 
 ### Difference Between ので And から
@@ -113,7 +115,8 @@ Another conjunctive particle for a reason, から, is very similar to ので fun
 
   - It's hot, so be careful.
 
-<!-- grammar-card: {"id":"kara-node-register","kind":"concept","format":"qa","priority":"optional","sourceSection":"Difference Between ので And から","rule":"ので often softens an explanation but is not restricted to formal situations","example":"Does the contrast between 熱いので、気をつけてください and 熱いから、気をつけてね mean friends cannot use ので?","answer":"No. The first is a gentler polite warning and the second a more direct casual one; neither connector has an absolute social restriction.","explanation":"Register comes from the full utterance as well as the connector."} -->
+<!-- grammar-card: {"id":"kara-node-register","kind":"rule","format":"qa","priority":"optional","sourceSection":"Difference Between ので And から","rule":"ので often softens an explanation but is not restricted to formal situations","example":"Does the contrast between 熱いので、気をつけてください and 熱いから、気をつけてね mean friends cannot use ので?","answer":"No. The first is a gentler polite warning and the second a more direct casual one; neither connector has an absolute social restriction.","explanation":"Register comes from the full utterance as well as the connector."} -->
+<!-- grammar-card: {"id":"rule-node-kara-tone","kind":"concept","format":"qa","priority":"essential","sourceSection":"Difference Between ので And から","rule":"ので tends to sound softer and more polite than から","example":"Both 'node' and 'kara' give reasons. How do they typically differ in tone?","answer":"Node sounds softer and more polite, suiting people you aren't close to; kara is more casual and direct.","explanation":"Any answer making ので the softer/more polite one counts. These are tendencies: casual ので and polite から both occur."} -->
 
 ---
 

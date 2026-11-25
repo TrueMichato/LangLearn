@@ -102,7 +102,7 @@ Both can translate as "in order to," but ために is more direct purpose and �
 - **道(みち)に迷(まよ)うことがあります。** — I sometimes get lost.
 
 <!-- grammar-card: {"id":"occasional-event","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Present: ことがある — \"There are times when\"","rule":"Nonpast plus ことがある expresses occasional occurrences","example":"There are times when I skip breakfast: 朝ご飯を食べない___。","answer":"ことがあります","explanation":"食べない is nonpast negative: sometimes I do not eat breakfast, not I have never eaten it."} -->
-<!-- grammar-card: {"id":"experience-versus-sometimes","kind":"concept","format":"qa","priority":"essential","sourceSection":"Present: ことがある — \"There are times when\"","rule":"The verb form before ことがある distinguishes experience from occasional events","example":"How do 行ったことがある and 行くことがある differ?","answer":"行ったことがある means have been/gone before; 行くことがある means there are times when one goes.","explanation":"Past た names experience, while nonpast names an occasional occurrence."} -->
+<!-- grammar-card: {"id":"experience-versus-sometimes","kind":"rule","format":"qa","priority":"essential","sourceSection":"Present: ことがある — \"There are times when\"","rule":"The verb form before ことがある distinguishes experience from occasional events","example":"How do 行ったことがある and 行くことがある differ?","answer":"行ったことがある means have been/gone before; 行くことがある means there are times when one goes.","explanation":"Past た names experience, while nonpast names an occasional occurrence."} -->
 
 <!-- quiz:{"type":"multiple-choice","question":"'日本に行ったことがありますか' means:","options":["Do you go to Japan?","Will you go to Japan?","Have you ever been to Japan?","Are you going to Japan?"],"answer":2} -->
 

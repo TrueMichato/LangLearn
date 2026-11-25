@@ -149,7 +149,7 @@ Because of this nuance difference, に cannot be substituted for から when mar
 
 Here, you can only use から and not に because you are marking the beginning point of a continuous action. You want to build a good workout routine and today is the day you wish to start from, so から is the particle you are looking for!
 
-<!-- grammar-card: {"id":"kara-time-versus-ni","kind":"concept","format":"qa","priority":"essential","sourceSection":"から for a Beginning Point in Time","rule":"から highlights the beginning of a continuing span; に locates a time point","example":"How does １１時から会議が始まる differ from １１時に会議が始まる?","answer":"から presents eleven as the start of a period continuing afterward; に simply locates the start at eleven.","explanation":"For the intended today-onward routine in 今日から筋トレする, から supplies the continuing-start meaning. This is not a general ban on に with all ongoing actions."} -->
+<!-- grammar-card: {"id":"kara-time-versus-ni","kind":"rule","format":"qa","priority":"essential","sourceSection":"から for a Beginning Point in Time","rule":"から highlights the beginning of a continuing span; に locates a time point","example":"How does １１時から会議が始まる differ from １１時に会議が始まる?","answer":"から presents eleven as the start of a period continuing afterward; に simply locates the start at eleven.","explanation":"For the intended today-onward routine in 今日から筋トレする, から supplies the continuing-start meaning. This is not a general ban on に with all ongoing actions."} -->
 
 ### から for the Original State in a Transition
 
@@ -310,7 +310,7 @@ Even when it's clear that the actions are not simultaneously happening, you can 
 
   - You do your homework before playing games, all right?
 
-<!-- grammar-card: {"id":"kara-te-overlap-contrast","kind":"concept","format":"qa","priority":"optional","sourceSection":"から for Continuous Actions","rule":"てから resolves the potential overlap of actions linked by bare て","example":"What does adding から clarify in 宿題をしてから友達と遊んだ compared with bare て?","answer":"The homework is done first, and hanging out with the friend happens afterward.","explanation":"Bare て can connect sequential actions but may also permit a simultaneous reading in this context. から explicitly orders them, and can emphasize that the first must finish before the second."} -->
+<!-- grammar-card: {"id":"kara-te-overlap-contrast","kind":"rule","format":"qa","priority":"optional","sourceSection":"から for Continuous Actions","rule":"てから resolves the potential overlap of actions linked by bare て","example":"What does adding から clarify in 宿題をしてから友達と遊んだ compared with bare て?","answer":"The homework is done first, and hanging out with the friend happens afterward.","explanation":"Bare て can connect sequential actions but may also permit a simultaneous reading in this context. から explicitly orders them, and can emphasize that the first must finish before the second."} -->
 
 ### から for Since
 

@@ -199,7 +199,7 @@ Again, in more old-fashioned Japanese, it's common to add ものだ to the end o
 
 These sentences both convey a feeling that we're talking about "the old days."
 
-<!-- grammar-card: {"id":"reminiscent-monoda","kind":"concept","format":"qa","priority":"optional","sourceSection":"〜ば for Habits","rule":"Past result plus ものだ can convey nostalgic recollection","example":"What does 食べたものだ add in the recollection of repeated Sapporo trips?","answer":"A reminiscence about what the speaker used to do in the old days.","explanation":"The lesson contrasts this past-habit recollection with timeless nonpast ものだ."} -->
+<!-- grammar-card: {"id":"reminiscent-monoda","kind":"rule","format":"qa","priority":"optional","sourceSection":"〜ば for Habits","rule":"Past result plus ものだ can convey nostalgic recollection","example":"What does 食べたものだ add in the recollection of repeated Sapporo trips?","answer":"A reminiscence about what the speaker used to do in the old days.","explanation":"The lesson contrasts this past-habit recollection with timeless nonpast ものだ."} -->
 
 ### 〜ば for the Future
 
@@ -251,7 +251,7 @@ We can also use the ば form to talk about an alternative reality in the past. I
 
 When using 〜ば for hypothetical situations in the past, it's common for のに to be added to the end, as you can see in a couple of the example sentences above. This reinforces the nuance that the result didn't happen, but it could have if **only** the condition had been in place.
 
-<!-- grammar-card: {"id":"counterfactual-result","kind":"concept","format":"qa","priority":"essential","sourceSection":"〜ば for Hypothetical Situations","rule":"A past result with のに can present an unrealized alternative","example":"What does のに contribute in 札幌に行けば、スープカレーを食べられたのに?","answer":"An “if only” sense: the result was possible under that condition, but did not happen.","explanation":"The same conditional shape can describe an imagined past, not only a real future."} -->
+<!-- grammar-card: {"id":"counterfactual-result","kind":"rule","format":"qa","priority":"essential","sourceSection":"〜ば for Hypothetical Situations","rule":"A past result with のに can present an unrealized alternative","example":"What does のに contribute in 札幌に行けば、スープカレーを食べられたのに?","answer":"An “if only” sense: the result was possible under that condition, but did not happen.","explanation":"The same conditional shape can describe an imagined past, not only a real future."} -->
 <!-- grammar-card: {"id":"present-hypothetical","kind":"rule","format":"qa","priority":"optional","sourceSection":"〜ば for Hypothetical Situations","rule":"ば can introduce an imagined present situation","example":"Does もし札幌に住んでいれば、毎日スープカレーを食べる assert that the speaker really lives there?","answer":"No. It can imagine living there and state what the speaker would do in that situation.","explanation":"Context determines whether the condition is real, uncertain, or contrary to fact."} -->
 
 ### 〜ば in Questions

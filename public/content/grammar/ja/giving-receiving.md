@@ -107,7 +107,7 @@ The same event can often be expressed with either くれる or もらう:
 
 Both are correct — choose based on what you want to emphasize.
 
-<!-- grammar-card: {"id":"same-event-focus","kind":"concept","format":"qa","priority":"essential","sourceSection":"くれる vs もらう — Same Event, Different Focus","rule":"くれる and もらう can describe one transfer with different subjects","example":"How does the focus change from 友達が本をくれた to 友達に本をもらった?","answer":"The first focuses on my friend's giving; the second on my receiving from the friend.","explanation":"が marks the giver with くれる; に marks the giver/source with もらう. The transfer can be the same."} -->
+<!-- grammar-card: {"id":"same-event-focus","kind":"rule","format":"qa","priority":"essential","sourceSection":"くれる vs もらう — Same Event, Different Focus","rule":"くれる and もらう can describe one transfer with different subjects","example":"How does the focus change from 友達が本をくれた to 友達に本をもらった?","answer":"The first focuses on my friend's giving; the second on my receiving from the friend.","explanation":"が marks the giver with くれる; に marks the giver/source with もらう. The transfer can be the same."} -->
 
 <!-- quiz:{"type":"multiple-choice","question":"'友達にプレゼントをもらいました' means:","options":["I gave my friend a present","My friend gave me a present (focus on giver)","I received a present from my friend","My friend received a present"],"answer":2} -->
 

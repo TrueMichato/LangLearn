@@ -213,7 +213,7 @@ Again, we could use particle が instead of で here without a major change in m
 
 ### で for Time Boundaries
 
-<!-- grammar-card: {"id":"duration-versus-completion-limit","kind":"concept","format":"qa","priority":"essential","sourceSection":"で for Time Boundaries","rule":"Time-span で can mark the time needed or allowed for completion","example":"What changes when 五分話します becomes 五分で話します in the example here?","answer":"It changes from speaking for five minutes to finishing the talk within five minutes.","explanation":"で frames a completion boundary rather than a bare duration. With a clock time such as 三時で, it can mark the cutoff of an ongoing activity."} -->
+<!-- grammar-card: {"id":"duration-versus-completion-limit","kind":"rule","format":"qa","priority":"essential","sourceSection":"で for Time Boundaries","rule":"Time-span で can mark the time needed or allowed for completion","example":"What changes when 五分話します becomes 五分で話します in the example here?","answer":"It changes from speaking for five minutes to finishing the talk within five minutes.","explanation":"で frames a completion boundary rather than a bare duration. With a clock time such as 三時で, it can mark the cutoff of an ongoing activity."} -->
 
 で can also be used to specify a time limit or boundary. For example, if you say 五分話します, it means you'll talk about something **for** five minutes. If you add で after 五分, however, the meaning changes to mean you'll finish the talk **within** five minutes.
 
