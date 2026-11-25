@@ -1,5 +1,7 @@
 # Indirect Speech & Reported Questions
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 When you retell what someone said, asked, or thought, you use **indirect (reported) speech**. Russian indirect speech follows different rules from English — notably, Russian does **not** shift tenses the way English does. The original tense is preserved, and the conjunction **что** (that) or **чтобы** (that / in order to) introduces the reported clause.
 
 ---
@@ -41,7 +43,11 @@ To report what someone said, use a reporting verb + **что** + the original st
 
 <!-- quiz:{"type":"multiple-choice","question":"In Russian indirect speech, does the tense change from the original statement?","options":["Yes, it shifts back one tense.","Yes, it always becomes past tense.","No, the original tense is preserved.","It depends on the reporting verb."],"answer":2} -->
 
-<!-- grammar-card: {"rule":"A reported statement is introduced by что","hint":"что / чтобы / ли","example":"Он сказал, ___ он живёт в Москве.","answer":"что","explanation":"Plain statements are reported with что, and unlike English the comma before it is obligatory."} -->
+<!-- grammar-card: {"id": "said-he-lives-in-moscow", "kind": "rule", "format": "cloze", "priority": "optional", "sourceSection": "1. Reporting Statements with Что", "rule": "A reported statement is introduced by что", "example": "He said that he lives in Moscow. Report the statement: Он сказал, ___ он живёт в Москве.", "answer": "что", "explanation": "A plain statement is reported with что (that), after an obligatory comma; чтобы would turn it into a command and ли into a question.", "legacyAliases": [{"rule": "A reported statement is introduced by что", "example": "Он сказал, ___ он живёт в Москве."}]} -->
+
+<!-- grammar-card: {"id": "wrote-he-would-come-soon", "kind": "rule", "format": "qa", "priority": "essential", "sourceSection": "1. Reporting Statements with Что", "rule": "Reported speech keeps the tense of the original words", "example": "Он написал, что он скоро приедет. Приедет is the future tense of приехать (to come), and скоро means soon. In his own words, what did he write, in English?", "answer": "I will come soon.", "explanation": "Russian keeps the original tense in reported speech, so the future приедет shows that his own words were in the future: I will come soon."} -->
+
+<!-- grammar-card: {"id": "rule-no-tense-shift", "kind": "concept", "format": "qa", "priority": "essential", "sourceSection": "1. Reporting Statements with Что", "rule": "Russian does not shift tenses in reported speech", "example": "When Russian reports what someone said, what happens to the tense of the original verb?", "answer": "It stays the same.", "explanation": "Any answer saying the tense is kept counts. Он сказал: Я живу в Москве becomes Он сказал, что он живёт в Москве, with the present живёт unchanged."} -->
 
 ---
 
@@ -70,6 +76,8 @@ When converting direct speech to indirect speech, **pronouns** and **possessives
 *(Studenty skazali, chto oni sdali ekzamen.)* — The students said that they had passed the exam.
 
 > **Note:** The reflexive possessive **свой** often remains **свой** in indirect speech when referring back to the subject.
+
+<!-- grammar-card: {"id": "her-brother-is-doctor", "kind": "rule", "format": "cloze", "priority": "essential", "sourceSection": "2. Changes in Pronouns and Possessives", "rule": "Possessives shift to the reporter's perspective", "example": "She said: Мой брат — врач. (My brother is a doctor.) Report it: Она сказала, что ___ брат — врач.", "answer": "её", "explanation": "The мой of her own words becomes her from the reporter's point of view, and the possessive for she is её, which never changes its form."} -->
 
 ---
 
@@ -108,7 +116,9 @@ To report commands, requests, or demands, use **чтобы** + **past tense**:
 
 <!-- quiz:{"type":"multiple-choice","question":"To report a command in Russian, you use:","options":["что + present tense","что + future tense","чтобы + past tense","чтобы + infinitive"],"answer":2} -->
 
-<!-- grammar-card: {"rule":"A reported command uses чтобы with a past-tense verb","hint":"что / чтобы / ли","example":"Мама сказала, ___ я убрал комнату.","answer":"чтобы","explanation":"An order becomes чтобы plus the past form убрал — Russian does not use an infinitive here."} -->
+<!-- grammar-card: {"id": "mom-said-clean-room", "kind": "rule", "format": "cloze", "priority": "essential", "sourceSection": "3. Reported Requests and Commands (Чтобы)", "rule": "A reported command uses чтобы with a past-tense verb", "example": "Mom said: Убери комнату! (Clean your room!) Report the command: Мама сказала, ___ я убрал комнату.", "answer": "чтобы", "explanation": "A command is reported with чтобы plus the past form убрал; что would only report a statement of fact.", "legacyAliases": [{"rule": "A reported command uses чтобы with a past-tense verb", "example": "Мама сказала, ___ я убрал комнату."}]} -->
+
+<!-- grammar-card: {"id": "rule-command-past-tense", "kind": "concept", "format": "qa", "priority": "essential", "sourceSection": "3. Reported Requests and Commands (Чтобы)", "rule": "A reported command takes the past tense after its conjunction", "example": "In a reported command such as Mom said that I should clean my room, which verb form follows the conjunction?", "answer": "The past tense.", "explanation": "Any answer naming the past tense counts. Мама сказала, чтобы я убрал комнату: убрал is past in form, though the cleaning is still to come."} -->
 
 ---
 
@@ -141,6 +151,10 @@ To report a yes/no question, use the conjunction **ли** (whether). The word **
 
 <!-- quiz:{"type":"multiple-choice","question":"How are yes/no questions reported in Russian?","options":["Using что","Using ли after the emphasized word","Using если","Using кто"],"answer":1} -->
 
+<!-- grammar-card: {"id": "asked-if-i-speak-russian", "kind": "rule", "format": "cloze", "priority": "essential", "sourceSection": "Yes/No questions: use ли", "rule": "A reported yes-no question uses the particle ли", "example": "He asked: Ты говоришь по-русски? (Do you speak Russian?) Report the question: Он спросил, говорю ___ я по-русски.", "answer": "ли", "explanation": "A yes-no question has no question word, so the particle ли (whether) carries the question and follows the verb being asked about, говорю.", "legacyAliases": [{"rule": "A reported yes-no question uses the particle ли", "example": "Он спросил, говорю ___ я по-русски."}]} -->
+
+<!-- grammar-card: {"id": "rule-whether-particle-position", "kind": "concept", "format": "qa", "priority": "optional", "sourceSection": "Yes/No questions: use ли", "rule": "The whether particle follows the emphasized word", "example": "In a reported yes-no question, the particle meaning whether goes directly after which word?", "answer": "The word being asked about.", "explanation": "Any answer naming the emphasized or questioned word counts, usually the verb. Я спросил, дома ли он: the question is about дома."} -->
+
 ### Wh-questions: keep the question word
 
 To report a question that starts with a question word (кто, что, где, когда, почему, как, etc.), simply use that question word as the conjunction:
@@ -169,7 +183,7 @@ To report a question that starts with a question word (кто, что, где, �
 **Indirect:** Они спросили, как добраться до вокзала.
 *(Oni sprosili, kak dobratsya do vokzala.)* — They asked how to get to the station.
 
-<!-- grammar-card: {"rule":"A reported yes-no question uses the particle ли","hint":"ли follows the word in question","example":"Он спросил, говорю ___ я по-русски.","answer":"ли","explanation":"Ли takes the place of the question mark and follows the verb it questions, говорю."} -->
+<!-- grammar-card: {"id": "asked-when-i-arrive", "kind": "rule", "format": "cloze", "priority": "optional", "sourceSection": "Wh-questions: keep the question word", "rule": "A reported wh-question keeps its question word", "example": "She asked me when I would arrive. Report the question: Она спросила, ___ я приеду.", "answer": "когда", "explanation": "A question with a question word keeps that word as the link, so when stays когда; ли is only for yes-no questions."} -->
 
 ---
 
@@ -207,6 +221,14 @@ The same constructions work with verbs of thinking:
 | узнать | to find out | что, question words, ли |
 | написать / писать | to write | что |
 | сообщить / сообщать | to report, inform | что |
+
+<!-- vocab-card: {"id": "vocab-sprosit", "word": "спроси́ть", "meaning": "to ask (a question)", "priority": "optional", "sourceSection": "6. Common Reporting Verbs"} -->
+
+<!-- vocab-card: {"id": "vocab-poprosit", "word": "попроси́ть", "meaning": "to ask for, to request", "priority": "optional", "sourceSection": "6. Common Reporting Verbs"} -->
+
+<!-- vocab-card: {"id": "vocab-prikazat", "word": "приказа́ть", "meaning": "to order, to command", "priority": "optional", "sourceSection": "6. Common Reporting Verbs"} -->
+
+<!-- vocab-card: {"id": "vocab-soobshchit", "word": "сообщи́ть", "meaning": "to report, to inform", "priority": "optional", "sourceSection": "6. Common Reporting Verbs"} -->
 
 ---
 

@@ -22,7 +22,15 @@ export const reviewed: readonly string[] = [
   'pronouns',
   'numbers',
   // Rollout batch 2 (lessons 20–28)
-
+  'comparatives',
+  'conjunctions',
+  'expressions',
+  'imperative',
+  'prefixes',
+  'participles',
+  'gerunds',
+  'conditional',
+  'indirect-speech',
   // Rollout batch 3 (lessons 29–37)
 
   // Rollout batch 4 (lessons 38–47)
