@@ -25,6 +25,7 @@ Use **mai** before an adjective or adverb to mean **more** or **-er**.
 <!-- vocab-card: {"id":"vocab-frumos","priority":"optional","sourceSection":"Comparative: mai + adjective/adverb","word":"frumos","meaning":"beautiful (masculine/neuter singular)"} -->
 <!-- vocab-card: {"id":"vocab-repede","priority":"optional","sourceSection":"Comparative: mai + adjective/adverb","word":"repede","meaning":"quickly; fast"} -->
 <!-- vocab-card: {"id":"vocab-bine","priority":"optional","sourceSection":"Comparative: mai + adjective/adverb","word":"bine","meaning":"well"} -->
+<!-- grammar-card: {"id":"rule-comparative-formation","priority":"essential","sourceSection":"Comparative: mai + adjective/adverb","kind":"concept","format":"qa","rule":"Mai before an adjective or adverb forms the comparative","example":"How does Romanian form the comparative (more / -er) of an adjective or adverb?","answer":"Put mai before it: mai mare (bigger).","explanation":"Mai repede = faster and mai înaltă = taller; the adjective still agrees with its noun, and decât introduces what is compared. Any answer placing mai before the adjective or adverb counts."} -->
 
 ## Than: decât
 
@@ -38,7 +39,7 @@ In everyday speech, you may also hear **ca**, but **decât** is the standard com
 
 <!-- grammar-card: {"id":"comparative-city","priority":"essential","sourceSection":"Than: decât","kind":"rule","format":"cloze","rule":"Use mai + adjective + decât for comparisons","example":"Acest oraș este ___ mare decât satul. (bigger)","answer":"mai","explanation":"Mai precedes mare; decât introduces the comparison standard.","legacyAliases":[{"rule":"Use mai + adjective + decât for comparisons","example":"Acest oraș este ___ mare decât satul."}]} -->
 <!-- vocab-card: {"id":"vocab-decat","priority":"optional","sourceSection":"Than: decât","word":"decât","meaning":"than (in a comparison)"} -->
-<!-- grammar-card: {"id":"comparison-marker-register","priority":"optional","sourceSection":"Than: decât","kind":"concept","format":"qa","rule":"Decât is the standard marker after comparative mai","example":"Which marker should a learner prefer after mai in a standard comparison, even if ca is heard in speech?","answer":"Prefer decât; ca is also heard in everyday speech.","explanation":"Prefer decât; ca is also heard in everyday speech."} -->
+<!-- grammar-card: {"id":"comparison-marker-register","priority":"optional","sourceSection":"Than: decât","kind":"concept","format":"qa","rule":"Decât is the standard marker after comparative mai","example":"Which marker should a learner prefer after mai in a standard comparison, even if ca is heard in speech?","answer":"Prefer decât; ca is also heard in everyday speech.","explanation":"Maria este mai înaltă decât Ana is the standard model; mai înaltă ca Ana is colloquial. Answering decât counts."} -->
 
 ## Less: mai puțin
 
@@ -64,7 +65,8 @@ To say two things are equal, use **la fel de ... ca**.
 
 <!-- quiz: {"type":"multiple-choice","question":"How do you say 'as tall as'?","options":["mai înalt decât","cel mai înalt","la fel de înalt ca","mai puțin înalt"],"answer":2} -->
 
-<!-- grammar-card: {"id":"equality-height","priority":"essential","sourceSection":"Equality: la fel de ... ca","kind":"rule","format":"cloze","rule":"Equality uses la fel de + adjective + ca","example":"El este ___ înalt ca fratele lui. (He is as tall as his brother.)","answer":"la fel de","explanation":"La fel de introduces the adjective; ca introduces the comparison standard."} -->
+<!-- grammar-card: {"id":"equality-height","priority":"essential","sourceSection":"Equality: la fel de ... ca","kind":"rule","format":"cloze","rule":"Equality uses la fel de + adjective + ca","example":"El este ___ înalt ca fratele lui. (He is as tall as his brother.)","answer":"la fel de","explanation":"La fel de introduces the adjective; ca introduces the comparison standard. Tot atât de înalt ca, a less common equivalent, also counts."} -->
+<!-- grammar-card: {"id":"rule-equality-pattern","priority":"optional","sourceSection":"Equality: la fel de ... ca","kind":"concept","format":"qa","rule":"Equality uses la fel de + adjective + ca","example":"What pattern expresses equality (as … as) with an adjective?","answer":"la fel de + adjective + ca","explanation":"El este la fel de înalt ca fratele lui = He is as tall as his brother; the adjective agrees with the subject (la fel de interesantă). Tot atât de … ca, a less common equivalent, also counts."} -->
 
 ## Superlative: cel mai, cea mai, cei mai, cele mai
 
@@ -85,7 +87,7 @@ The relative superlative means **the most** or **the -est**. The first word agre
 
 <!-- grammar-card: {"id":"superlative-coffee","priority":"essential","sourceSection":"Superlative: cel mai, cea mai, cei mai, cele mai","kind":"rule","format":"cloze","rule":"The superlative article agrees with the noun: cel, cea, cei, cele","example":"Aceasta este ___ mai bună cafea.","answer":"cea","explanation":"Cafea is feminine singular, requiring cea mai."} -->
 <!-- grammar-card: {"id":"superlative-neuter-plural","priority":"optional","sourceSection":"Superlative: cel mai, cea mai, cei mai, cele mai","kind":"rule","format":"cloze","rule":"Neuter plural nouns use cele mai","example":"Acestea sunt ___ mai importante lucruri.","answer":"cele","explanation":"Lucruri is neuter plural and takes the feminine-plural agreement form."} -->
-<!-- grammar-card: {"id":"superlative-agreement","priority":"essential","sourceSection":"Superlative: cel mai, cea mai, cei mai, cele mai","kind":"concept","format":"qa","rule":"The superlative article reflects gender and number","example":"Which superlative article accompanies masculine singular, feminine singular, masculine plural, and feminine/neuter plural nouns?","answer":"Cel, cea, cei, and cele respectively.","explanation":"Cel, cea, cei, and cele respectively."} -->
+<!-- grammar-card: {"id":"superlative-agreement","priority":"essential","sourceSection":"Superlative: cel mai, cea mai, cei mai, cele mai","kind":"concept","format":"qa","rule":"The superlative article reflects gender and number","example":"Which superlative article accompanies masculine singular, feminine singular, masculine plural, and feminine/neuter plural nouns?","answer":"Cel, cea, cei, and cele respectively.","explanation":"Cel mai bun student, cea mai bună studentă, cei mai buni studenți, cele mai bune cărți; neuter plurals such as lucruri also take cele."} -->
 
 ## Very and Extremely
 
@@ -100,7 +102,7 @@ These do not compare one thing to another; they simply intensify.
 <!-- vocab-card: {"id":"vocab-foarte","priority":"optional","sourceSection":"Very and Extremely","word":"foarte","meaning":"very"} -->
 <!-- vocab-card: {"id":"vocab-extrem-de","priority":"optional","sourceSection":"Very and Extremely","word":"extrem de","meaning":"extremely"} -->
 <!-- vocab-card: {"id":"vocab-deosebit-de","priority":"optional","sourceSection":"Very and Extremely","word":"deosebit de","meaning":"particularly; exceptionally"} -->
-<!-- grammar-card: {"id":"absolute-relative-degree","priority":"optional","sourceSection":"Very and Extremely","kind":"concept","format":"qa","rule":"Intensifiers do not rank one thing against another","example":"Does foarte bun identify the best member of a group?","answer":"No. It means very good; cel mai bun makes a relative comparison.","explanation":"No. It means very good; cel mai bun makes a relative comparison."} -->
+<!-- grammar-card: {"id":"absolute-relative-degree","priority":"optional","sourceSection":"Very and Extremely","kind":"concept","format":"qa","rule":"Intensifiers do not rank one thing against another","example":"Does foarte bun identify the best member of a group?","answer":"No. It means very good; cel mai bun makes a relative comparison.","explanation":"Foarte, extrem de, and deosebit de only intensify (foarte bun = very good); ranking within a group needs cel mai (cel mai bun = the best)."} -->
 
 ## Sources
 

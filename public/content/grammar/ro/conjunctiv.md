@@ -44,6 +44,7 @@ For many verbs, most subjunctive forms look like present tense. The third person
 
 <!-- grammar-card: {"id":"vreau-subjunctive-marker","kind":"rule","format":"cloze","priority":"essential","sourceSection":"The Basic Pattern","rule":"After vreau, Romanian uses să + verb","example":"Vreau ___ citesc.","answer":"să","explanation":"Să introduces the subjunctive after vreau."} -->
 <!-- grammar-card: {"id":"lucra-third-subjunctive","kind":"rule","format":"cloze","priority":"essential","sourceSection":"a lucra — to work","rule":"Third-person lucrează changes to subjunctive lucreze","example":"Vreau ca el să ___. (a lucra)","answer":"lucreze","explanation":"Both el/ea and ei/ele use să lucreze; noi and voi retain să lucrăm and să lucrați."} -->
+<!-- grammar-card: {"id":"rule-third-person-changes","kind":"concept","format":"qa","priority":"essential","sourceSection":"Regular Group 1 Examples","rule":"In many regular verbs only the third-person subjunctive differs from the present indicative","example":"In regular verbs such as a cânta, which person's subjunctive form usually differs from the present indicative?","answer":"The third person (he, she, and they).","explanation":"Indicative cântă becomes să cânte and lucrează becomes să lucreze, while să cânt or să cântăm look like the present. Naming the third person, singular and plural, counts."} -->
 
 ## Important Irregular Subjunctives
 
@@ -69,7 +70,7 @@ For many verbs, most subjunctive forms look like present tense. The third person
 <!-- vocab-card: {"id":"vocab-a-lua","word":"a lua","meaning":"to take","priority":"optional","sourceSection":"Important Irregular Subjunctives"} -->
 <!-- quiz: {"type":"multiple-choice","question":"Which form is correct: 'She wants to go home'?","options":["Ea vrea să merge acasă.","Ea vrea să meargă acasă.","Ea vrea merge acasă.","Ea vrea să merg acasă."],"answer":1} -->
 
-<!-- grammar-card: {"id":"merge-third-subjunctive","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Important Irregular Subjunctives","rule":"The third-person subjunctive of a merge is să meargă","example":"El vrea ___ acasă.","answer":"să meargă","explanation":"The third-person subjunctive is meargă, not indicative merge; the marker să is also missing."} -->
+<!-- grammar-card: {"id":"merge-third-subjunctive","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Important Irregular Subjunctives","rule":"The third-person subjunctive of a merge is să meargă","example":"El vrea ___ acasă. (a merge)","answer":"să meargă","explanation":"The blank needs both the marker să and the third-person subjunctive meargă, not indicative merge.","legacyAliases":[{"rule":"The third-person subjunctive of a merge is să meargă","example":"El vrea ___ acasă."}]} -->
 
 ## Common Triggers
 
@@ -101,6 +102,7 @@ For simple commands, Romanian has separate imperative forms, but **să nu...** i
 
 <!-- grammar-card: {"id":"negative-subjunctive-order","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Negative Subjunctive","rule":"Nu follows să in a negative subjunctive","example":"Te rog să ___ pleci. (Please don't leave.)","answer":"nu","explanation":"The order is să + nu + verb, not nu să."} -->
 <!-- grammar-card: {"id":"subjunctive-request-not-imperative","kind":"concept","format":"qa","priority":"optional","sourceSection":"Negative Subjunctive","rule":"A negative să clause can make a request without being the separate imperative paradigm","example":"Is să nu pleci in Te rog să nu pleci the same construction as an infinitive-based negative tu imperative?","answer":"No. It is a negative subjunctive clause after te rog.","explanation":"Romanian has separate imperative forms; a polite request need not use that imperative paradigm."} -->
+<!-- grammar-card: {"id":"rule-negative-subjunctive-order","kind":"concept","format":"qa","priority":"essential","sourceSection":"Negative Subjunctive","rule":"In a negative subjunctive, nu comes after să and before the verb","example":"In what order do the subjunctive marker, the negation word, and the verb come in a negative subjunctive?","answer":"Subjunctive marker, then negation, then verb: să nu pleci.","explanation":"Te rog să nu pleci and Trebuie să nu uităm keep să first; nu să pleci is wrong. Any answer giving să + nu + verb counts."} -->
 <!-- quiz: {"type":"multiple-choice","question":"How do you say 'Please don't leave' with să?","options":["Te rog nu să pleci.","Te rog să nu pleci.","Te rog să pleci nu.","Te rog nu pleci să."],"answer":1} -->
 
 ## Sources

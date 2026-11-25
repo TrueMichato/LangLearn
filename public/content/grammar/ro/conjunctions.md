@@ -44,7 +44,7 @@ Romanian has several ways to say **because**.
 <!-- vocab-card: {"id":"vocab-fiindca","priority":"optional","sourceSection":"Because: pentru că, fiindcă, deoarece","word":"fiindcă","meaning":"because"} -->
 <!-- vocab-card: {"id":"vocab-deoarece","priority":"optional","sourceSection":"Because: pentru că, fiindcă, deoarece","word":"deoarece","meaning":"because (often more formal)"} -->
 <!-- grammar-card: {"id":"because-rain","priority":"essential","sourceSection":"Because: pentru că, fiindcă, deoarece","kind":"rule","format":"cloze","rule":"Pentru că introduces a reason","example":"Stau acasă ___ plouă. (Use the two-word connector for because.)","answer":"pentru că","explanation":"Pentru că introduces the reason for staying home.","legacyAliases":[{"rule":"Pentru că introduces a reason","example":"Stau acasă ___ plouă."}]} -->
-<!-- grammar-card: {"id":"causal-register","priority":"optional","sourceSection":"Because: pentru că, fiindcă, deoarece","kind":"concept","format":"qa","rule":"Causal connectors can differ in style","example":"How does deoarece compare in style with the common pentru că and neutral fiindcă?","answer":"Deoarece is often more formal.","explanation":"Deoarece is often more formal."} -->
+<!-- grammar-card: {"id":"causal-register","priority":"optional","sourceSection":"Because: pentru că, fiindcă, deoarece","kind":"concept","format":"qa","rule":"Causal connectors can differ in style","example":"How does deoarece compare in style with the common pentru că and neutral fiindcă?","answer":"Deoarece is often more formal.","explanation":"The lesson marks pentru că and fiindcă as common and deoarece as more formal (Plecăm devreme deoarece avem tren). Any answer saying deoarece is more formal counts."} -->
 
 ## If, When, After, Before
 
@@ -78,7 +78,7 @@ A comma often separates a **deși** clause from the main clause.
 
 <!-- vocab-card: {"id":"vocab-desi","priority":"essential","sourceSection":"Although and Contrast","word":"deși","meaning":"although"} -->
 <!-- vocab-card: {"id":"vocab-totusi","priority":"optional","sourceSection":"Although and Contrast","word":"totuși","meaning":"nevertheless; still"} -->
-<!-- grammar-card: {"id":"concession-result-contrast","priority":"optional","sourceSection":"Although and Contrast","kind":"concept","format":"qa","rule":"Deși introduces a concession; totuși presents a contrasting result","example":"How do deși and totuși differ in Deși este greu, încerc and Este greu. Totuși, încerc?","answer":"Deși means although and introduces the concession; totuși means nevertheless and introduces the contrasting response.","explanation":"Deși means although and introduces the concession; totuși means nevertheless and introduces the contrasting response."} -->
+<!-- grammar-card: {"id":"concession-result-contrast","priority":"optional","sourceSection":"Although and Contrast","kind":"concept","format":"qa","rule":"Deși introduces a concession; totuși presents a contrasting result","example":"How do deși and totuși differ in Deși este greu, încerc and Este greu. Totuși, încerc?","answer":"Deși means although and introduces the concession; totuși means nevertheless and introduces the contrasting response.","explanation":"Deși opens the although-clause (Deși este frig, mergem afară); totuși starts the statement that follows a difficulty (Este greu. Totuși, încerc.). Any answer pairing deși with although and totuși with nevertheless or still counts."} -->
 
 ## Purpose: ca să
 
@@ -105,7 +105,7 @@ Do not confuse **că** (that/because in some contexts) with **ca să** (in order
 
 <!-- vocab-card: {"id":"vocab-ca-statement","priority":"optional","sourceSection":"That: că","word":"că","meaning":"that (introducing a statement)"} -->
 <!-- grammar-card: {"id":"belief-statement","priority":"essential","sourceSection":"That: că","kind":"rule","format":"cloze","rule":"Că introduces a statement after verbs like știu, cred, spun","example":"Cred ___ vine mâine.","answer":"că","explanation":"Cred că introduces what the speaker thinks."} -->
-<!-- grammar-card: {"id":"statement-purpose-contrast","priority":"essential","sourceSection":"That: că","kind":"concept","format":"qa","rule":"Că and ca să are different clause linkers","example":"Which linker introduces a belief after cred, and which two-word linker expresses an intended goal?","answer":"Că introduces the belief; ca să expresses purpose.","explanation":"Că introduces the belief; ca să expresses purpose."} -->
+<!-- grammar-card: {"id":"statement-purpose-contrast","priority":"essential","sourceSection":"That: că","kind":"concept","format":"qa","rule":"Că and ca să are different clause linkers","example":"Which linker introduces a belief after cred, and which two-word linker expresses an intended goal?","answer":"Că introduces the belief; ca să expresses purpose.","explanation":"Cred că vine mâine reports a belief; Învăț ca să vorbesc cu prietenii states a goal. Any answer pairing că with the belief and ca să with purpose counts."} -->
 
 ## Sources
 

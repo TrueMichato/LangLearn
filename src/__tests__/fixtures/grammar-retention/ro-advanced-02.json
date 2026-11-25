@@ -83,9 +83,9 @@
           "sourceSection": "Direct Object Pronouns",
           "objective": "Separate the two clitic paradigms by grammatical role.",
           "format": "qa",
-          "prompt": "How do you distinguish a direct object from an indirect recipient here?",
-          "answer": "A direct object answers whom or what; an indirect recipient answers to whom or for whom.",
-          "explanation": "A direct object answers whom or what; an indirect recipient answers to whom or for whom."
+          "prompt": "What question does a direct object answer, and what question does an indirect object (recipient) answer?",
+          "answer": "Direct: whom? or what? Indirect: to whom? or for whom?",
+          "explanation": "Îl văd answers whom? (him), so îl is a direct object; Îi dau o carte answers to whom? (to him/her), so îi is indirect. Any wording that pairs whom/what with direct and to/for whom with indirect counts."
         },
         {
           "id": "human-object-maria",
@@ -107,7 +107,7 @@
           "format": "qa",
           "prompt": "Does an ordinary object such as cartea take pe in Citesc cartea?",
           "answer": "No. Say Citesc cartea or replace cartea with O citesc.",
-          "explanation": "No. Say Citesc cartea or replace cartea with O citesc."
+          "explanation": "Pe marks specific people, as in O cunosc pe profesoară; a thing such as cartea takes no pe, so Citesc pe cartea is wrong."
         },
         {
           "id": "vocab-imi",
@@ -199,6 +199,39 @@
           "prompt": "Ajută-___! (Help me!)",
           "answer": "mă",
           "explanation": "The affirmative command is Ajută-mă, with a hyphen."
+        },
+        {
+          "id": "rule-human-object-doubling",
+          "kind": "concept",
+          "priority": "essential",
+          "sourceSection": "Pe with Human Direct Objects",
+          "objective": "Recall clitic doubling plus pe for specific human direct objects.",
+          "format": "qa",
+          "prompt": "When the direct object is a specific person, what two elements does Romanian often use to mark it?",
+          "answer": "A matching object clitic plus pe before the person.",
+          "explanation": "Îl cunosc pe profesor and O cunosc pe profesoară pair the clitic with pe + the person; an ordinary thing such as cartea takes no pe (Citesc cartea). Any answer naming both the clitic and pe counts."
+        },
+        {
+          "id": "rule-clitic-negation-order",
+          "kind": "concept",
+          "priority": "essential",
+          "sourceSection": "Placement Before the Verb",
+          "objective": "Recall the nu + clitic + verb order.",
+          "format": "qa",
+          "prompt": "In a negative present-tense sentence, in what order do the negation word, an object clitic, and the verb come?",
+          "answer": "Negation, clitic, verb: Nu îl văd.",
+          "explanation": "Nu îți scriu azi follows the same order; the clitic never moves in front of nu. Any answer giving nu + clitic + verb counts."
+        },
+        {
+          "id": "rule-clitic-vowel-auxiliary",
+          "kind": "concept",
+          "priority": "optional",
+          "sourceSection": "Clitics with Past and Commands",
+          "objective": "Recall that clitics shorten and hyphenate before a vowel-initial auxiliary.",
+          "format": "qa",
+          "prompt": "What often happens to an object clitic right before a compound-past auxiliary that begins with a vowel?",
+          "answer": "It shortens and attaches with a hyphen (îmi + a → mi-a).",
+          "explanation": "Mi-a spus adevărul and L-am văzut pe Andrei show the shortened clitic joined to the auxiliary; feminine o instead follows the participle (Am văzut-o). Any answer saying it shortens and hyphenates counts."
         }
       ],
       "exclusions": [
@@ -294,7 +327,7 @@
           "format": "qa",
           "prompt": "Which marker should a learner prefer after mai in a standard comparison, even if ca is heard in speech?",
           "answer": "Prefer decât; ca is also heard in everyday speech.",
-          "explanation": "Prefer decât; ca is also heard in everyday speech."
+          "explanation": "Maria este mai înaltă decât Ana is the standard model; mai înaltă ca Ana is colloquial. Answering decât counts."
         },
         {
           "id": "vocab-mai-putin",
@@ -325,7 +358,7 @@
           "format": "cloze",
           "prompt": "El este ___ înalt ca fratele lui. (He is as tall as his brother.)",
           "answer": "la fel de",
-          "explanation": "La fel de introduces the adjective; ca introduces the comparison standard."
+          "explanation": "La fel de introduces the adjective; ca introduces the comparison standard. Tot atât de înalt ca, a less common equivalent, also counts."
         },
         {
           "id": "superlative-coffee",
@@ -358,7 +391,7 @@
           "format": "qa",
           "prompt": "Which superlative article accompanies masculine singular, feminine singular, masculine plural, and feminine/neuter plural nouns?",
           "answer": "Cel, cea, cei, and cele respectively.",
-          "explanation": "Cel, cea, cei, and cele respectively."
+          "explanation": "Cel mai bun student, cea mai bună studentă, cei mai buni studenți, cele mai bune cărți; neuter plurals such as lucruri also take cele."
         },
         {
           "id": "vocab-foarte",
@@ -396,7 +429,29 @@
           "format": "qa",
           "prompt": "Does foarte bun identify the best member of a group?",
           "answer": "No. It means very good; cel mai bun makes a relative comparison.",
-          "explanation": "No. It means very good; cel mai bun makes a relative comparison."
+          "explanation": "Foarte, extrem de, and deosebit de only intensify (foarte bun = very good); ranking within a group needs cel mai (cel mai bun = the best)."
+        },
+        {
+          "id": "rule-comparative-formation",
+          "kind": "concept",
+          "priority": "essential",
+          "sourceSection": "Comparative: mai + adjective/adverb",
+          "objective": "Recall that mai before an adjective or adverb forms the comparative.",
+          "format": "qa",
+          "prompt": "How does Romanian form the comparative (more / -er) of an adjective or adverb?",
+          "answer": "Put mai before it: mai mare (bigger).",
+          "explanation": "Mai repede = faster and mai înaltă = taller; the adjective still agrees with its noun, and decât introduces what is compared. Any answer placing mai before the adjective or adverb counts."
+        },
+        {
+          "id": "rule-equality-pattern",
+          "kind": "concept",
+          "priority": "optional",
+          "sourceSection": "Equality: la fel de ... ca",
+          "objective": "Recall the la fel de + adjective + ca equality frame.",
+          "format": "qa",
+          "prompt": "What pattern expresses equality (as … as) with an adjective?",
+          "answer": "la fel de + adjective + ca",
+          "explanation": "El este la fel de înalt ca fratele lui = He is as tall as his brother; the adjective agrees with the subject (la fel de interesantă). Tot atât de … ca, a less common equivalent, also counts."
         }
       ],
       "exclusions": [
@@ -483,7 +538,7 @@
           "format": "qa",
           "prompt": "Why does frumos stay unchanged in both El cântă frumos and Ele cântă frumos?",
           "answer": "It describes how they sing, not the people singing.",
-          "explanation": "It describes how they sing, not the people singing."
+          "explanation": "Frumos modifies cântă, so it keeps the same form for every subject; frumoasă or frumoase would describe a noun, not the action. Any answer saying it describes the verb (how) counts."
         },
         {
           "id": "vocab-corect",
@@ -712,7 +767,7 @@
           "format": "qa",
           "prompt": "Do all adverbs ending in -ește name languages?",
           "answer": "No. Românește means in Romanian, but prietenește means in a friendly way.",
-          "explanation": "No. Românește means in Romanian, but prietenește means in a friendly way."
+          "explanation": "Românește and englezește name languages, while prietenește describes a manner (in a friendly way). Any answer saying no, some express a manner, counts."
         },
         {
           "id": "comparative-slower",
@@ -735,6 +790,39 @@
           "prompt": "Ea aleargă ___ mai repede. (She runs the fastest.)",
           "answer": "cel",
           "explanation": "Here cel mai modifies repede, not the feminine subject ea."
+        },
+        {
+          "id": "rule-adverb-masculine-form",
+          "kind": "concept",
+          "priority": "essential",
+          "sourceSection": "Adjectives Used as Adverbs",
+          "objective": "Recall that manner adverbs share the masculine singular adjective shape.",
+          "format": "qa",
+          "prompt": "Many manner adverbs look identical to an adjective. Which gender and number of the adjective do they match?",
+          "answer": "Masculine singular (clar, corect, rapid).",
+          "explanation": "Vorbește clar and răspunde corect use the masculine singular shape whatever the subject, never clară or corectă. Answering masculine singular counts."
+        },
+        {
+          "id": "rule-never-needs-negation",
+          "kind": "concept",
+          "priority": "optional",
+          "sourceSection": "Time and Frequency Adverbs",
+          "objective": "Recall that niciodată needs nu with a finite verb.",
+          "format": "qa",
+          "prompt": "In a clause with a conjugated verb, what must accompany niciodată (never)?",
+          "answer": "Nu before the verb.",
+          "explanation": "Nu beau cafea niciodată = I never drink coffee; Beau cafea niciodată is wrong. Niciodată can stand alone only as a one-word reply. Any answer naming nu counts."
+        },
+        {
+          "id": "rule-adverb-superlative-fixed",
+          "kind": "concept",
+          "priority": "optional",
+          "sourceSection": "Comparative Adverbs",
+          "objective": "Recall that the adverbial superlative cel mai never agrees.",
+          "format": "qa",
+          "prompt": "Does the superlative marker of an adverb change for a feminine or plural subject?",
+          "answer": "No. It stays cel mai for every subject.",
+          "explanation": "Ea aleargă cel mai repede keeps cel mai because it modifies repede, not ea; cea mai is for a feminine noun or adjective. Any answer saying it stays unchanged counts."
         }
       ],
       "exclusions": [
@@ -848,7 +936,7 @@
           "format": "qa",
           "prompt": "How does deoarece compare in style with the common pentru că and neutral fiindcă?",
           "answer": "Deoarece is often more formal.",
-          "explanation": "Deoarece is often more formal."
+          "explanation": "The lesson marks pentru că and fiindcă as common and deoarece as more formal (Plecăm devreme deoarece avem tren). Any answer saying deoarece is more formal counts."
         },
         {
           "id": "vocab-daca",
@@ -924,7 +1012,7 @@
           "format": "qa",
           "prompt": "How do deși and totuși differ in Deși este greu, încerc and Este greu. Totuși, încerc?",
           "answer": "Deși means although and introduces the concession; totuși means nevertheless and introduces the contrasting response.",
-          "explanation": "Deși means although and introduces the concession; totuși means nevertheless and introduces the contrasting response."
+          "explanation": "Deși opens the although-clause (Deși este frig, mergem afară); totuși starts the statement that follows a difficulty (Este greu. Totuși, încerc.). Any answer pairing deși with although and totuși with nevertheless or still counts."
         },
         {
           "id": "vocab-ca-sa",
@@ -975,7 +1063,7 @@
           "format": "qa",
           "prompt": "Which linker introduces a belief after cred, and which two-word linker expresses an intended goal?",
           "answer": "Că introduces the belief; ca să expresses purpose.",
-          "explanation": "Că introduces the belief; ca să expresses purpose."
+          "explanation": "Cred că vine mâine reports a belief; Învăț ca să vorbesc cu prietenii states a goal. Any answer pairing că with the belief and ca să with purpose counts."
         }
       ],
       "exclusions": [
@@ -1116,7 +1204,7 @@
           "format": "qa",
           "prompt": "What Romanian endings often correspond to English -tion, and does that guarantee a word's meaning?",
           "answer": "Often -ție or -țiune; no, the meaning and Romanian spelling still need checking.",
-          "explanation": "Often -ție or -țiune; no, the meaning and Romanian spelling still need checking."
+          "explanation": "Nation → națiune and information → informație show the pattern, but a false friend such as actual (current) proves a familiar shape can mislead. Any answer naming -ție or -țiune and saying no counts."
         },
         {
           "id": "vocab-actual",
@@ -1243,7 +1331,7 @@
           "sourceSection": "False Friends to Learn Early",
           "objective": "Retrieve the book-buying location without an answer-bearing hint.",
           "format": "cloze",
-          "prompt": "Cumpăr o carte la ___.",
+          "prompt": "Cumpăr o carte la ___. (at the bookstore)",
           "answer": "librărie",
           "explanation": "A librărie is a bookstore. A library where you borrow books is a bibliotecă."
         },
@@ -1256,29 +1344,29 @@
           "format": "qa",
           "prompt": "What is the difference between a librărie and a bibliotecă?",
           "answer": "A librărie is a bookstore where books are sold; a bibliotecă is a library where books can be borrowed.",
-          "explanation": "A librărie is a bookstore where books are sold; a bibliotecă is a library where books can be borrowed."
+          "explanation": "Cumpăr o carte la librărie, but you borrow books from a bibliotecă. Any answer contrasting buying with borrowing counts."
         },
         {
           "id": "magazin-revista-contrast",
-          "kind": "concept",
+          "kind": "rule",
           "priority": "optional",
           "sourceSection": "False Friends to Learn Early",
           "objective": "Distinguish the shopping place from the publication.",
           "format": "qa",
           "prompt": "Does Romanian magazin mean an English magazine? What word names that publication?",
           "answer": "No. Magazin means shop or store; revistă means magazine.",
-          "explanation": "No. Magazin means shop or store; revistă means magazine."
+          "explanation": "Revista este pe masă = The magazine is on the table; you go to a magazin to shop. Both parts are needed: magazin = store, revistă = magazine."
         },
         {
           "id": "eventual-time-contrast",
-          "kind": "concept",
+          "kind": "rule",
           "priority": "optional",
           "sourceSection": "False Friends to Learn Early",
           "objective": "Prevent transferring a false friend's temporal meaning into Romanian.",
           "format": "qa",
           "prompt": "Which expression conveys English eventually meaning in the end, rather than Romanian eventual?",
           "answer": "În cele din urmă.",
-          "explanation": "În cele din urmă."
+          "explanation": "Romanian eventual means possible or if necessary; for eventually meaning in the end, say în cele din urmă."
         },
         {
           "id": "vocab-real",
@@ -1307,7 +1395,7 @@
           "format": "qa",
           "prompt": "How does Romanian actual differ from English actual meaning real?",
           "answer": "Romanian actual means current or present-day; use real or adevărat for English actual meaning real.",
-          "explanation": "Romanian actual means current or present-day; use real or adevărat for English actual meaning real."
+          "explanation": "Președintele actual is the current president; Este o problemă reală means it is an actual (real) problem. Any answer contrasting current with real or adevărat counts."
         },
         {
           "id": "vocab-rezonabil",
@@ -1320,14 +1408,14 @@
         },
         {
           "id": "personality-false-friend-contrast",
-          "kind": "concept",
+          "kind": "rule",
           "priority": "essential",
           "sourceSection": "Simpatic and Sensibil",
           "objective": "Maintain the pilot's three-way personality contrast.",
           "format": "qa",
           "prompt": "Which Romanian words mean likeable, sensitive, and sensible respectively?",
           "answer": "simpatic = likeable; sensibil = sensitive; rezonabil = sensible or reasonable.",
-          "explanation": "simpatic = likeable; sensibil = sensitive; rezonabil = sensible or reasonable."
+          "explanation": "Profesorul este simpatic (nice), Copilul este sensibil (sensitive), Este o idee rezonabilă (sensible). Sensibil never means sensible."
         },
         {
           "id": "sensible-idea-application",
@@ -1349,7 +1437,7 @@
           "format": "qa",
           "prompt": "What should you check before trusting a familiar-looking Romanian cognate?",
           "answer": "Its meaning in context, gender and plural, pronunciation, and diacritics.",
-          "explanation": "Its meaning in context, gender and plural, pronunciation, and diacritics."
+          "explanation": "The lesson checklist: gender and plural (o informație, două informații), pronunciation and diacritics (națiune), and meaning in context for false friends. Any answer covering meaning plus these form checks counts."
         }
       ],
       "exclusions": [
