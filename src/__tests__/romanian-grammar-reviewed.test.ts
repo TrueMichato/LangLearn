@@ -214,7 +214,18 @@ describe('Romanian reviewed grammar', () => {
       return { id, total: rules.length, essential: rules.filter((card) => card.priority === 'essential').length };
     });
     expect(perLesson.filter(({ total, essential }) => total > 4 || essential > 2)).toEqual([]);
-    expect(perLesson.reduce((sum, { total }) => sum + total, 0)).toBe(105);
+    expect(perLesson.reduce((sum, { total }) => sum + total, 0)).toBe(106);
+  });
+
+  it('comparatives keeps the retired superlative-table recall card retired', () => {
+    const retired = [
+      'The superlative article reflects gender and number',
+      'Which superlative article accompanies masculine singular, feminine singular, masculine plural, and feminine/neuter plural nouns?',
+    ];
+    const cards = grammar(lesson('comparatives'));
+    expect(cards.filter((card) => card.id === 'superlative-agreement')).toEqual([]);
+    expect(cards.filter((card) => [card.rule, card.prompt, ...card.legacyAliases.flatMap(({ rule, example }) => [rule, example])]
+      .some((text) => retired.includes(text))).map(({ id }) => id)).toEqual([]);
   });
 
   describe('the checks fire on bad cards', () => {

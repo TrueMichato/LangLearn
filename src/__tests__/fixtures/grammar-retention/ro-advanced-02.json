@@ -383,17 +383,6 @@
           "explanation": "Lucruri is neuter plural and takes the feminine-plural agreement form."
         },
         {
-          "id": "superlative-agreement",
-          "kind": "concept",
-          "priority": "essential",
-          "sourceSection": "Superlative: cel mai, cea mai, cei mai, cele mai",
-          "objective": "Recall the agreement set while retaining neuter plural as feminine-pattern agreement.",
-          "format": "qa",
-          "prompt": "Which superlative article accompanies masculine singular, feminine singular, masculine plural, and feminine/neuter plural nouns?",
-          "answer": "Cel, cea, cei, and cele respectively.",
-          "explanation": "Cel mai bun student, cea mai bună studentă, cei mai buni studenți, cele mai bune cărți; neuter plurals such as lucruri also take cele."
-        },
-        {
           "id": "vocab-foarte",
           "kind": "vocabulary",
           "priority": "optional",
@@ -452,6 +441,17 @@
           "prompt": "What pattern expresses equality (as … as) with an adjective?",
           "answer": "la fel de + adjective + ca",
           "explanation": "El este la fel de înalt ca fratele lui = He is as tall as his brother; the adjective agrees with the subject (la fel de interesantă). Tot atât de … ca, a less common equivalent, also counts."
+        },
+        {
+          "id": "rule-superlative-pattern",
+          "kind": "concept",
+          "priority": "essential",
+          "sourceSection": "Superlative: cel mai, cea mai, cei mai, cele mai",
+          "objective": "Recall that an agreeing article before mai + adjective forms the superlative.",
+          "format": "qa",
+          "prompt": "How does Romanian form the superlative (the biggest, the best) of an adjective?",
+          "answer": "Put an article that agrees with the noun before mai + adjective: cel mai mare oraș (the biggest city).",
+          "explanation": "The article follows the noun's gender and number (cel, cea, cei, cele), as in cea mai bună cafea and cele mai importante lucruri. Any paraphrase naming an agreeing article + mai + adjective counts."
         }
       ],
       "exclusions": [
