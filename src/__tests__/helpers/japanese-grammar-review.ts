@@ -362,9 +362,9 @@ function ruleCardErrors(lessonId: string, cards: GrammarReviewItem[]): string[] 
 function identityErrors(
   lessonId: string,
   cards: GrammarReviewItem[],
-  shipped: Record<string, JapaneseBaselineCard> | undefined,
+  // A lesson absent from the baseline is brand-new: it has no shipped cards to keep.
+  shipped: Record<string, JapaneseBaselineCard> = {},
 ): string[] {
-  if (!shipped) return [`${lessonId}: [identity] lesson is missing from japanese-grammar-reviewed-baseline.json`];
   const errors: string[] = [];
   const source = `git show ${JA_REVIEW_BASELINE_COMMIT}:public/content/grammar/ja/${lessonId}.md`;
   const byId = new Map(cards.map((card) => [card.id, card]));
@@ -378,7 +378,7 @@ function identityErrors(
   for (const [id, baseline] of Object.entries(shipped)) {
     const card = byId.get(id);
     if (!card) {
-      errors.push(`${lessonId}/${id}: [identity] shipped card id "${id}" was deleted or renamed; restore it (${source}). Never delete or rename ids; an outdated card can become "optional"`);
+      errors.push(`${lessonId}/${id}: [identity] shipped card id "${id}" was deleted or renamed; saved cards are keyed by this id, so restore it (${source}). To repair an outdated card, correct it in place under the same id and append its shipped pair to legacyAliases; author a genuinely new target under a new id`);
       continue;
     }
     const aliasHashes = card.legacyAliases.map((alias) => pairHash(alias.rule, alias.example));
@@ -401,7 +401,7 @@ function identityErrors(
     const allowed = new Set(shipped[card.id]?.pairs ?? []);
     for (const alias of card.legacyAliases) {
       if (!allowed.has(pairHash(alias.rule, alias.example))) {
-        errors.push(`${lessonId}/${card.id}: [identity] unauthorized legacyAliases entry ${JSON.stringify(alias)}; an alias may only hold this card's own pair as shipped at ${JA_REVIEW_BASELINE_COMMIT}${shipped[card.id] ? '' : ' (new ids must have no legacyAliases)'}`);
+        errors.push(`${lessonId}/${card.id}: [identity] unauthorized legacyAliases entry ${JSON.stringify(alias)}; an alias may only hold this card's own pair as shipped at ${JA_REVIEW_BASELINE_COMMIT}${Object.hasOwn(shipped, card.id) ? '' : ' (new ids, including every card of a new lesson, must have no legacyAliases)'}`);
       }
     }
   }
@@ -454,6 +454,8 @@ function inventoryFor(
 export interface JapaneseReviewSources {
   /** Raw ja-*.json inventory files keyed by path; defaults to the real fixtures. */
   inventories?: Record<string, string>;
+  /** Defaults to grammar-retention-legacy.json. */
+  legacy?: LegacyBaseline;
   baseline?: JapaneseReviewBaseline;
 }
 
@@ -474,7 +476,7 @@ export function japaneseReviewErrorsFor(
   }
 
   // The same per-lesson validation grammar-retention-catalog.test.ts runs.
-  const legacy = LEGACY.lessons[`ja/${lessonId}`];
+  const legacy = (sources.legacy ?? LEGACY).lessons[`ja/${lessonId}`];
   if (!legacy) errors.push(`${lessonId}: [legacy] missing from grammar-retention-legacy.json`);
   else errors.push(...validateLegacyLesson(markdown, legacy, `ja/${lessonId}`).map((error) => `${lessonId}: [legacy] ${error}`));
   const { inventory, errors: inventoryErrors } = inventoryFor(lessonId, sources.inventories ?? INVENTORY_ASSETS);

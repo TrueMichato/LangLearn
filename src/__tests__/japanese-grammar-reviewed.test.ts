@@ -12,11 +12,18 @@ import {
   japaneseReviewErrorsFor,
   pairHash,
 } from './helpers/japanese-grammar-review';
+import { captureLegacyLesson, type LegacyBaseline } from './helpers/grammar-retention';
+import legacyJson from './fixtures/grammar-retention-legacy.json';
 
 type CardJson = Record<string, unknown> & { id: string };
 
 const CARD_BLOCK = /<!--\s*grammar-card:\s*([\s\S]*?)\s*-->/g;
 const lessonIds = japaneseLessonIds();
+// Lessons captured at the shipped baseline must all stay indexed and reviewed;
+// lessons indexed later are gated once they are listed.
+const BASELINE_LESSON_COUNT = 179;
+const baselineIds = Object.keys(japaneseBaseline.lessons);
+const gatedIds = [...new Set([...baselineIds, ...reviewed])];
 
 function lesson(id: string): string {
   const markdown = japaneseLessonMarkdown(id);
@@ -75,37 +82,72 @@ function shippedPair(lessonId: string, id: string): { rule: string; example: str
 }
 
 describe('Japanese reviewed-grammar registry', () => {
-  it('lists unique, indexed lessons that the review scope recognizes', () => {
-    expect(new Set(reviewed).size).toBe(reviewed.length);
-    for (const id of reviewed) expect(lessonIds, id).toContain(id);
-    for (const id of lessonIds) expect(isReviewedGrammarLesson('ja', id), id).toBe(reviewed.includes(id));
+  it('lists every lesson captured at the shipped baseline, and each is indexed', () => {
+    expect(baselineIds).toHaveLength(BASELINE_LESSON_COUNT);
+    expect(baselineIds.filter((id) => !lessonIds.includes(id)), 'baseline lessons missing from index.json').toEqual([]);
+    expect(baselineIds.filter((id) => !reviewed.includes(id)), 'baseline lessons missing from grammar-reviewed/ja.ts').toEqual([]);
   });
 
-  if (reviewed.length) {
-    it.each([...reviewed])('%s passes the Japanese review gate', (id) => {
-      expect(japaneseReviewErrors(id)).toEqual([]);
-    });
-  } else {
-    it('has no listed lesson to gate yet', () => {
-      expect(reviewed).toEqual([]);
-    });
-  }
+  it('lists unique, indexed lessons that the review scope recognizes', () => {
+    expect(new Set(reviewed).size).toBe(reviewed.length);
+    expect(reviewed.filter((id) => !lessonIds.includes(id)), 'listed lessons missing from index.json').toEqual([]);
+    for (const id of new Set([...lessonIds, ...reviewed])) {
+      expect(isReviewedGrammarLesson('ja', id), id).toBe(reviewed.includes(id));
+    }
+  });
+
+  it.each(gatedIds)('%s passes the Japanese review gate', (id) => {
+    expect(japaneseReviewErrors(id)).toEqual([]);
+  });
 });
 
 describe('Japanese shipped card identities', () => {
-  it(`snapshot every indexed lesson's cards as shipped at ${JA_REVIEW_BASELINE_COMMIT}`, () => {
+  it(`snapshot the ${BASELINE_LESSON_COUNT} lessons shipped at ${JA_REVIEW_BASELINE_COMMIT}`, () => {
     expect(japaneseBaseline.baselineCommit).toBe(JA_REVIEW_BASELINE_COMMIT);
-    expect(lessonIds).toHaveLength(179);
-    expect(Object.keys(japaneseBaseline.lessons).sort()).toEqual([...lessonIds].sort());
+    expect(baselineIds).toHaveLength(BASELINE_LESSON_COUNT);
     for (const [id, cards] of Object.entries(japaneseBaseline.lessons)) {
       expect(Object.keys(cards).length, id).toBeGreaterThan(0);
       for (const card of Object.values(cards)) expect(card.pairs.every((hash) => /^[0-9a-f]{16}$/.test(hash))).toBe(true);
     }
   });
 
-  it('are kept by every Japanese lesson, listed or not', () => {
-    expect(lessonIds.flatMap((id) => japaneseIdentityErrors(id))).toEqual([]);
+  it('are kept by every baseline lesson, and no indexed lesson claims unshipped aliases', () => {
+    expect([...new Set([...baselineIds, ...lessonIds])].flatMap((id) => japaneseIdentityErrors(id))).toEqual([]);
   }, 60_000);
+
+  it('treat a missing baseline lesson asset as deleting all of its shipped ids', () => {
+    const errors = japaneseIdentityErrors('particles', '');
+    expect(errors).toHaveLength(Object.keys(japaneseBaseline.lessons.particles).length);
+    expect(errors.every((error) => error.includes('[identity] shipped card id'))).toBe(true);
+  });
+
+  it('permit a brand-new lesson with no shipped identities, under the normal authoring rules', () => {
+    const withoutAliases = lesson('particles').replace(CARD_BLOCK, (block, json: string) => {
+      const { legacyAliases, ...card } = JSON.parse(json) as CardJson;
+      return legacyAliases ? `<!-- grammar-card: ${JSON.stringify(card)} -->` : block;
+    });
+    // A new lesson still brings its own legacy entry, as the shared catalog requires.
+    const legacy: LegacyBaseline = legacyJson;
+    const asNew = {
+      baseline: {
+        ...japaneseBaseline,
+        lessons: Object.fromEntries(Object.entries(japaneseBaseline.lessons).filter(([id]) => id !== 'particles')),
+      },
+      legacy: { ...legacy, lessons: { ...legacy.lessons, 'ja/particles': captureLegacyLesson(withoutAliases) } },
+    };
+    expect(japaneseReviewErrorsFor('particles', withoutAliases, asNew)).toEqual([]);
+
+    const aliased = editCard(withoutAliases, 'subject-marker', (json) => ({
+      ...json, legacyAliases: [{ rule: 'が (subject)', example: '犬＿＿います。' }],
+    }));
+    expect(japaneseReviewErrorsFor('particles', aliased, asNew).some((error) =>
+      error.includes('particles/subject-marker: [identity] unauthorized legacyAliases entry') &&
+      error.includes('every card of a new lesson'))).toBe(true);
+
+    const interpretation = editCard(withoutAliases, 'topic-reading-cue', (json) => ({ ...json, example: 'What does 私は学生です mean?' }));
+    expect(japaneseReviewErrorsFor('particles', interpretation, asNew).some((error) =>
+      error.startsWith('particles/topic-reading-cue: [concept-phrasing]'))).toBe(true);
+  });
 });
 
 describe('Japanese review gate rejects planted violations', () => {
