@@ -3,7 +3,7 @@ import index from '../../public/content/grammar/ro/index.json';
 import { reviewed } from '../lib/grammar-reviewed/ro';
 import { parseLessonReviewItems } from '../lib/lesson-capture';
 import { readLessonReviewBlocks, type GrammarReviewItem } from '../lib/lesson-review';
-import { lessonHeadings, validateReviewItemQuality } from './helpers/grammar-retention';
+import { captureLegacyLesson, lessonHeadings, validateReviewItemQuality } from './helpers/grammar-retention';
 
 // Inventories and the legacy baseline already gate every Romanian lesson in
 // grammar-retention-catalog.test.ts; this file adds what "reviewed" promises.
@@ -226,6 +226,34 @@ describe('Romanian reviewed grammar', () => {
     expect(cards.filter((card) => card.id === 'superlative-agreement')).toEqual([]);
     expect(cards.filter((card) => [card.rule, card.prompt, ...card.legacyAliases.flatMap(({ rule, example }) => [rule, example])]
       .some((text) => retired.includes(text))).map(({ id }) => id)).toEqual([]);
+  });
+
+  it('cognates-false-friends offers individual personality suggestions without the redundant aggregate', () => {
+    const { items, diagnostics } = parseLessonReviewItems(lesson('cognates-false-friends'));
+    expect(diagnostics).toEqual([]);
+    expect(items.map(({ id }) => id)).not.toContain('personality-false-friend-contrast');
+    for (const [id, word, meaning] of [
+      ['vocab-simpatic', 'simpatic', 'nice; likeable'],
+      ['vocab-sensibil', 'sensibil', 'sensitive'],
+      ['vocab-rezonabil', 'rezonabil', 'sensible; reasonable'],
+    ]) {
+      expect(items.find((item) => item.id === id)).toMatchObject({
+        id, kind: 'vocabulary', provenance: 'authored', priority: 'essential', word, meaning,
+      });
+    }
+    expect(items.find((item) => item.id === 'sensible-idea-application')).toMatchObject({
+      kind: 'rule', format: 'cloze', provenance: 'authored', priority: 'optional',
+      rule: 'Rezonabil translates sensible in this context',
+      prompt: 'Este o idee ___. (It is a sensible idea.)', answer: 'rezonabilă',
+    });
+  });
+
+  it('cognates-false-friends never transfers the retired aggregate pair to another card or legacy alias', () => {
+    const captured = captureLegacyLesson(lesson('cognates-false-friends'));
+    expect(captured.grammarPairs).not.toContainEqual(expect.objectContaining({
+      rule: 'Simpatic, sensibil, and rezonabil express different qualities',
+      example: 'Which Romanian words mean likeable, sensitive, and sensible respectively?',
+    }));
   });
 
   describe('the checks fire on bad cards', () => {

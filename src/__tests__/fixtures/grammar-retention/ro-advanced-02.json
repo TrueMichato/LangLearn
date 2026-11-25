@@ -1407,17 +1407,6 @@
           "meaning": "sensible; reasonable"
         },
         {
-          "id": "personality-false-friend-contrast",
-          "kind": "rule",
-          "priority": "essential",
-          "sourceSection": "Simpatic and Sensibil",
-          "objective": "Maintain the pilot's three-way personality contrast.",
-          "format": "qa",
-          "prompt": "Which Romanian words mean likeable, sensitive, and sensible respectively?",
-          "answer": "simpatic = likeable; sensibil = sensitive; rezonabil = sensible or reasonable.",
-          "explanation": "Profesorul este simpatic (nice), Copilul este sensibil (sensitive), Este o idee rezonabilă (sensible). Sensibil never means sensible."
-        },
-        {
           "id": "sensible-idea-application",
           "kind": "rule",
           "priority": "optional",
