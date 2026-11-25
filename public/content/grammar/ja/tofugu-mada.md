@@ -47,6 +47,7 @@ Did you notice how the words *still* and *not yet* appear in both explanations? 
 
 <!-- vocab-card: {"id":"vocab-mada","priority":"essential","sourceSection":"The Basics","word":"まだ","reading":"まだ","meaning":"still; yet (not yet with a negative predicate)"} -->
 <!-- grammar-card: {"id":"reference-not-passed","kind":"concept","format":"qa","priority":"essential","sourceSection":"The Basics","rule":"まだ locates a situation before a relevant boundary has been passed","example":"What connects the continuing-state and not-yet-completed senses of this lesson's adverb?","answer":"The situation has not passed the relevant reference point: a state continues, or an expected event has not happened.","explanation":"The predicate and context determine the boundary; a negative predicate is not a separate meaning of the adverb alone."} -->
+<!-- grammar-card: {"id":"rule-mada-polarity","kind":"concept","format":"qa","priority":"essential","sourceSection":"The Basics","rule":"まだ with an affirmative predicate means 'still'; with a negative predicate it means 'not yet'","example":"What does the adverb mada mean with an affirmative predicate, and what with a negative one?","answer":"Affirmative: still. Negative: not yet.","explanation":"Both halves needed. まだ冷たい (still cold) vs まだ冷たくない (not cold yet)."} -->
 
 ### Patterns of Use
 
@@ -69,7 +70,8 @@ To take it one step further, if the focus is on the fact that you are *still eat
 So be on the lookout if someone asks you, "Have you had lunch yet?" Beginner learners frequently make the error of saying まだ食べない, which means "I won't eat yet." To say you haven't eaten yet, you need to say まだ食べて(い)ない.
 
 <!-- grammar-card: {"id":"not-yet-versus-not-now","kind":"concept","format":"qa","priority":"essential","sourceSection":"まだ + Verb","rule":"まだ食べていない denies completion; まだ食べない postpones eating","example":"What is the difference between まだ食べていない and まだ食べない when discussing lunch?","answer":"The first means I have not eaten yet; the second means I will not eat yet.","explanation":"The completion/result reading needs ていない here. Casual speech may omit い."} -->
-<!-- grammar-card: {"id":"not-eaten-application","kind":"rule","format":"cloze","priority":"essential","sourceSection":"まだ + Verb","rule":"Use ていない to say an eating event has not yet occurred","example":"I haven't eaten yet: まだ食べ___。 (Keep い.)","answer":"ていない","explanation":"まだ食べていない answers a completion question, unlike a statement of future intention."} -->
+<!-- grammar-card: {"id":"not-eaten-application","kind":"rule","format":"cloze","priority":"essential","sourceSection":"まだ + Verb","rule":"Use ていない to say an eating event has not yet occurred","example":"I haven't eaten yet: まだ食べ___。 (Keep い.)","answer":"ていない","explanation":"まだ食べていない answers a completion question, unlike a statement of future intention. Polite ていません also counts; casual speech often drops い (食べてない)."} -->
+<!-- grammar-card: {"id":"rule-not-yet-teinai","kind":"concept","format":"qa","priority":"optional","sourceSection":"まだ + Verb","rule":"'Haven't done X yet' uses まだ + the negative ている form, not the plain negative","example":"To say you haven't done something yet (e.g. haven't had lunch), which verb form goes with mada, and what would the plain negative mean instead?","answer":"The negative ている form (〜ていない / 〜てない); the plain negative means you won't do it yet.","explanation":"Count any answer naming ていない and the intention reading of plain ない: まだ食べていない vs まだ食べない."} -->
 
 #### まだ + Adjective
 
@@ -147,7 +149,7 @@ Here, the full sentence would be まだ**できてない**よ. In its shortened 
 
 Just like in this example, まだ can be directly followed by the affirmative だ, as in まだだ, or the polite です, as in まだです, when indicating "not yet."
 
-<!-- grammar-card: {"id":"standalone-not-yet","kind":"concept","format":"qa","priority":"essential","sourceSection":"まだ Without ない For \"Not Yet\"","rule":"A short まだ response can leave the negative predicate unspoken","example":"Asked whether dinner is ready, can まだです mean that it is not ready, despite the affirmative です?","answer":"Yes. The unfinished or not-ready predicate is understood from context; まだです can mean not yet.","explanation":"The affirmative copula in the short response does not reverse the implied negative state."} -->
+<!-- grammar-card: {"id":"standalone-not-yet","kind":"concept","format":"qa","priority":"essential","sourceSection":"まだ Without ない For \"Not Yet\"","rule":"A short まだ response can leave the negative predicate unspoken","example":"Asked whether dinner is ready, someone replies まだです. What does the affirmative です stand in for there?","answer":"The omitted negative predicate (e.g. できていない), so the reply means not yet.","explanation":"Any answer saying the unspoken not-ready/unfinished predicate is understood counts. The affirmative copula in the short response does not reverse the implied negative state.","legacyAliases":[{"rule":"A short まだ response can leave the negative predicate unspoken","example":"Asked whether dinner is ready, can まだです mean that it is not ready, despite the affirmative です?"}]} -->
 
 #### Is This まだ "Not Yet" or "Still"?
 
@@ -203,7 +205,7 @@ As you can see, when まだ means "still," the context is focusing on the contin
 
 So if you aren't sure if まだ means "still" or "not yet," just pay attention to the context, and it will tell you the answer!
 
-<!-- grammar-card: {"id":"standalone-still-context","kind":"concept","format":"qa","priority":"optional","sourceSection":"Is This まだ \"Not Yet\" or \"Still\"?","rule":"Context can make a standalone まだ an astonished response about continuation","example":"A friend says they are continuing a surprising relationship. What can え、まだ！？ react to?","answer":"It can mean What, still!? in response to the continuing relationship, rather than automatically meaning not yet.","explanation":"Ordinary short answers to completion questions more often mean not yet; context is decisive."} -->
+<!-- grammar-card: {"id":"standalone-still-context","kind":"rule","format":"qa","priority":"optional","sourceSection":"Is This まだ \"Not Yet\" or \"Still\"?","rule":"Context can make a standalone まだ an astonished response about continuation","example":"A friend says they are continuing a surprising relationship. What can え、まだ！？ react to?","answer":"It can mean What, still!? in response to the continuing relationship, rather than automatically meaning not yet.","explanation":"Ordinary short answers to completion questions more often mean not yet; context is decisive."} -->
 
 ### まだ For "Still have…"
 
@@ -336,7 +338,7 @@ Let's consider another scenario. Someone asks you, "Would you rather have nosy n
 Again, in this example, your reference point is whichever option is worse. So to refer back to the concept that using まだ indicates an established baseline, what you're saying is that having nosy neighbors is *still* on the bearable side of that line, having *not yet* crossed it.
 
 <!-- vocab-card: {"id":"vocab-mashi","priority":"optional","sourceSection":"まだいい or まだまし For \"Slightly Better\" In Comparison","word":"まし","reading":"まし","meaning":"better; more tolerable (than an undesirable alternative)"} -->
-<!-- grammar-card: {"id":"lesser-evil","kind":"concept","format":"qa","priority":"optional","sourceSection":"まだいい or まだまし For \"Slightly Better\" In Comparison","rule":"まだいい and まだまし can prefer one bad option without praising it","example":"Does choosing fruit over chocolate with まだいい imply that you actually like the fruit?","answer":"No. It can mean the fruit is the more tolerable of two unwanted options.","explanation":"The comparison is relative to the worse alternative, not a declaration that either choice is good."} -->
+<!-- grammar-card: {"id":"lesser-evil","kind":"concept","format":"qa","priority":"optional","sourceSection":"まだいい or まだまし For \"Slightly Better\" In Comparison","rule":"まだいい and まだまし can prefer one bad option without praising it","example":"When comparing two options, what does まだいい or まだまし say about the preferred one?","answer":"It is only the more tolerable of two undesirable options, not something good in itself.","explanation":"Any answer about the lesser of two evils counts. フルーツの方が、チョコレートよりはまだいい prefers fruit without praising it.","legacyAliases":[{"rule":"まだいい and まだまし can prefer one bad option without praising it","example":"Does choosing fruit over chocolate with まだいい imply that you actually like the fruit?"}]} -->
 
   
 

@@ -78,7 +78,8 @@ If you want to say that you were attempting to do something but were unable to c
   - I could**n't** do it **any further beyond that**.
 
 <!-- grammar-card: {"id":"no-longer-able","kind":"rule","format":"cloze","priority":"essential","sourceSection":"もう + Verb","rule":"もう with a negative predicate marks no longer holding or continuing","example":"I can't do it anymore: ___できない。","answer":"もう","explanation":"The previous possibility has ended; まだできない would mean I cannot do it yet."} -->
-<!-- grammar-card: {"id":"past-negative-limit","kind":"concept","format":"qa","priority":"optional","sourceSection":"もう + Verb","rule":"それ以上 can specify the point beyond which continuation was impossible","example":"What does それ以上 clarify in もうそれ以上できなかった?","answer":"That the speaker could not continue or do any further beyond that point.","explanation":"The past negative alone can also describe an opportunity that was no longer available."} -->
+<!-- grammar-card: {"id":"rule-mou-polarity","kind":"concept","format":"qa","priority":"essential","sourceSection":"もう + Verb","rule":"もう with a past (completed) predicate means 'already'; with a negative predicate it means 'not anymore'","example":"What does the adverb mou mean with a past (completed) verb, and what with a negative one?","answer":"Past: already. Negative: not anymore / no longer.","explanation":"Both halves needed. もうできた (already done) vs もうできない (can't do it anymore)."} -->
+<!-- grammar-card: {"id":"past-negative-limit","kind":"rule","format":"qa","priority":"optional","sourceSection":"もう + Verb","rule":"それ以上 can specify the point beyond which continuation was impossible","example":"What does それ以上 clarify in もうそれ以上できなかった?","answer":"That the speaker could not continue or do any further beyond that point.","explanation":"The past negative alone can also describe an opportunity that was no longer available."} -->
 
 #### もう + Adjective
 
@@ -135,12 +136,12 @@ On the other hand, if you want to highlight that you are no longer a high school
 
   - I'm **not** a high school student **anymore**.
 
-<!-- grammar-card: {"id":"noun-no-longer","kind":"rule","format":"cloze","priority":"optional","sourceSection":"もう + Noun","rule":"もう plus a negative noun predicate marks a role that no longer holds","example":"I am no longer a high school student: もう高校生___。 (casual)","answer":"じゃない","explanation":"The same noun with an affirmative copula would mean the high-school stage has already been reached."} -->
+<!-- grammar-card: {"id":"noun-no-longer","kind":"rule","format":"cloze","priority":"optional","sourceSection":"もう + Noun","rule":"もう plus a negative noun predicate marks a role that no longer holds","example":"I am no longer a high school student: もう高校生___。 (casual)","answer":"じゃない","explanation":"The same noun with an affirmative copula would mean the high-school stage has already been reached. ではない also counts but is less casual."} -->
 
 ### もう For Asking "Have You Already…?"
 
 <!-- grammar-card: {"id":"not-yet-reply","kind":"rule","format":"cloze","priority":"essential","sourceSection":"もう For Asking \"Have You Already…?\"","rule":"まだ with a negative means 'not yet'","example":"Reply 'Not yet' when asked whether you have eaten: ___（食べてない）。","answer":"まだ","explanation":"The event has not occurred yet. もう食べてない would not be the intended not-yet answer.","legacyAliases":[{"rule":"まだ with a negative means 'not yet'","example":"___（食べてない）。"}]} -->
-<!-- grammar-card: {"id":"already-question","kind":"rule","format":"cloze","priority":"essential","sourceSection":"もう For Asking \"Have You Already…?\"","rule":"もう with a past verb asks whether something is done already","example":"___宿題(しゅくだい)した？","answer":"もう","explanation":"The intended question asks whether the homework is already done. A negative not-yet reply uses まだ."} -->
+<!-- grammar-card: {"id":"already-question","kind":"rule","format":"cloze","priority":"essential","sourceSection":"もう For Asking \"Have You Already…?\"","rule":"もう with a past verb asks whether something is done already","example":"Ask a friend whether they've already done their homework: ___宿題(しゅくだい)した？","answer":"もう","explanation":"The intended question asks whether the homework is already done. A negative not-yet reply uses まだ.","legacyAliases":[{"rule":"もう with a past verb asks whether something is done already","example":"___宿題(しゅくだい)した？"}]} -->
 
 You learned how to use もう to say that you've "already" done something. This use of もう is also frequently used to *ask* whether someone has already done something.
 
@@ -281,7 +282,7 @@ This もう can also be used to playfully tease someone. For example, if your fa
 
 Simple as that, もう can be used as an interjection to express a range of emotions, depending on the context and *how* you say it.
 
-<!-- grammar-card: {"id":"emotional-interjection","kind":"concept","format":"qa","priority":"optional","sourceSection":"もう for \"Interjection\"","rule":"Interjectional もう can convey emotion rather than temporal already","example":"Must the opening もう in もう！いい加減にしてよ be translated as a time expression?","answer":"No. It can express frustration, like Come on!; other contexts can convey delight or playful reproach.","explanation":"Intonation and the surrounding situation distinguish the emotional uses."} -->
+<!-- grammar-card: {"id":"emotional-interjection","kind":"concept","format":"qa","priority":"optional","sourceSection":"もう for \"Interjection\"","rule":"Interjectional もう can convey emotion rather than temporal already","example":"Besides already and not anymore, what can an exclamatory もう at the start of もう！いい加減にしてよ express?","answer":"Emotion as an interjection: here frustration, like Come on!; other contexts can convey delight or playful reproach.","explanation":"Any answer naming an emotional interjection (not a time meaning) counts. Intonation and the surrounding situation distinguish the emotional uses.","legacyAliases":[{"rule":"Interjectional もう can convey emotion rather than temporal already","example":"Must the opening もう in もう！いい加減にしてよ be translated as a time expression?"}]} -->
 
   
 

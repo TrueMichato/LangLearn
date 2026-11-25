@@ -37,7 +37,7 @@ Still cloudy? That’s understandable. Although it’s a common expression, it h
 
 #### With Verbs
 
-<!-- grammar-card: {"id":"plain-verb-link","kind":"rule","format":"cloze","priority":"essential","sourceSection":"With Verbs","rule":"The plain form comes directly before んです","example":"実(じつ)は、来週(らいしゅう)引(ひ)っ越(こ)す___です。","answer":"ん","explanation":"引っ越すんです keeps the verb plain, with です carrying all the politeness."} -->
+<!-- grammar-card: {"id":"plain-verb-link","kind":"rule","format":"cloze","priority":"essential","sourceSection":"With Verbs","rule":"The plain form comes directly before んです","example":"実(じつ)は、来週(らいしゅう)引(ひ)っ越(こ)す___です。","answer":"ん","explanation":"引っ越すんです keeps the verb plain, with です carrying all the politeness. The uncontracted の (引っ越すのです) also counts but sounds stiffer in conversation."} -->
 
 Like we mentioned earlier, the first part of んだ is the nominalizer の. So if you are familiar with how verbs interact with the nominalizer の, you might already know how you can attach んだ to verbs.
 For those who are not sure, don’t worry, it’s quite simple with verbs. You can use pretty much any form of verb, like present form, passive form, potential form, negative form, you name it. Then you simply attach んだ (or its variation) at the end.
@@ -79,7 +79,8 @@ Another thing to note is that it only works with the plain form as opposed to th
 If you want to be polite, んです would be a good option for you!
 
 <!-- vocab-card: {"id":"vocab-benkyou-suru","priority":"optional","sourceSection":"With Verbs","word":"勉強する","reading":"べんきょうする","meaning":"to study"} -->
-<!-- grammar-card: {"id":"verb-form-limits","kind":"concept","format":"qa","priority":"optional","sourceSection":"With Verbs","rule":"Explanatory endings follow plain descriptive verb forms, not command or volitional forms","example":"Can you attach the explanatory ending directly to 勉強します or 勉強しろ?","answer":"No. Use a plain descriptive form such as 勉強する; put politeness in the final explanatory ending.","explanation":"Past, negative, potential, and passive forms can describe a situation. An imperative or volitional is not the descriptive base used here."} -->
+<!-- grammar-card: {"id":"verb-form-limits","kind":"rule","format":"qa","priority":"optional","sourceSection":"With Verbs","rule":"Explanatory endings follow plain descriptive verb forms, not command or volitional forms","example":"Can you attach the explanatory ending directly to 勉強します or 勉強しろ?","answer":"No. Use a plain descriptive form such as 勉強する; put politeness in the final explanatory ending.","explanation":"Past, negative, potential, and passive forms can describe a situation. An imperative or volitional is not the descriptive base used here."} -->
+<!-- grammar-card: {"id":"rule-plain-before-explanatory","kind":"concept","format":"qa","priority":"essential","sourceSection":"With Verbs","rule":"Verbs and い-adjectives take the explanatory ending in their plain form; politeness goes only on the final です","example":"When a verb or い-adjective takes the explanatory ending (n-da / n-desu), what form must the verb or adjective itself be in?","answer":"The plain form, not the polite ます/です form.","explanation":"Any answer saying plain (dictionary/た/ない) form counts. 勉強するんです, not 勉強しますんだ; 悲しいんです, not 悲しいですんだ."} -->
 
 > 
 > 
@@ -111,7 +112,7 @@ If you want to be polite, んです would be a good option for you!
 
 い-Adjectives should be in the plain form, not in the polite form.
 
-<!-- grammar-card: {"id":"i-adjective-negative","kind":"rule","format":"cloze","priority":"optional","sourceSection":"With い-Adjectives","rule":"The plain negative adjective precedes the explanatory ending","example":"Explain politely that you are not sad: 悲しくない___。","answer":"んです","explanation":"Keep 悲しくない plain; do not insert です before ん."} -->
+<!-- grammar-card: {"id":"i-adjective-negative","kind":"rule","format":"cloze","priority":"optional","sourceSection":"With い-Adjectives","rule":"The plain negative adjective precedes the explanatory ending","example":"Explain politely that you are not sad: 悲しくない___。","answer":"んです","explanation":"Keep 悲しくない plain; do not insert です before ん. のです also counts, though it sounds stiffer in conversation."} -->
 
 > 
 > 
@@ -150,12 +151,13 @@ What about if you wanted to say “I *was* a vegetarian“ or “It *isn’t* ea
 In case you were wondering why we added な to the present form instead of だ — that’s because historically, な comes from だ. Crazy, right? But hopefully that explains why we use it with both nouns and な-adjectives (which are noun-based adjectives). Both of these can also precede だ to form a sentence.
 
 <!-- vocab-card: {"id":"vocab-kantan","priority":"optional","sourceSection":"With Nouns And な-Adjectives","word":"簡単","reading":"かんたん","meaning":"easy; simple"} -->
-<!-- grammar-card: {"id":"noun-na-link","kind":"rule","format":"cloze","priority":"essential","sourceSection":"With Nouns And な-Adjectives","rule":"Nouns and な-adjectives take な before んです","example":"彼(かれ)はまだ学生(がくせい)___です。","answer":"なん","explanation":"学生なんです needs な after the affirmative nonpast noun."} -->
+<!-- grammar-card: {"id":"noun-na-link","kind":"rule","format":"cloze","priority":"essential","sourceSection":"With Nouns And な-Adjectives","rule":"Nouns and な-adjectives take な before んです","example":"Explain why he doesn't own a car yet: 彼(かれ)はまだ学生(がくせい)___です。","answer":"なん","explanation":"学生なんです needs な after the affirmative nonpast noun. Uncontracted なの (学生なのです) also counts.","legacyAliases":[{"rule":"Nouns and な-adjectives take な before んです","example":"彼(かれ)はまだ学生(がくせい)___です。"}]} -->
+<!-- grammar-card: {"id":"rule-noun-na-linker","kind":"concept","format":"qa","priority":"essential","sourceSection":"With Nouns And な-Adjectives","rule":"Affirmative nonpast nouns and な-adjectives insert な before the explanatory ending","example":"What must you insert between an affirmative nonpast noun or な-adjective and the explanatory ending (n-da)?","answer":"な (which historically comes from だ).","explanation":"Naming な counts. ベジタリアンなんだ, 簡単なんだ; past and negative use だった / じゃない instead, with no な."} -->
 <!-- grammar-card: {"id":"noun-past-link","kind":"rule","format":"cloze","priority":"optional","sourceSection":"With Nouns And な-Adjectives","rule":"Past noun predicates keep だった before the explanatory ending","example":"Explain casually that you were a vegetarian: ベジタリアン___んだ。","answer":"だった","explanation":"The な linker belongs to the affirmative nonpast pattern, not after だった or じゃない."} -->
 
 ### んだ for Explaining
 
-<!-- grammar-card: {"id":"background-response","kind":"rule","format":"cloze","priority":"essential","sourceSection":"んだ for Explaining","rule":"んです supplies the background to a situation","example":"どうしたんですか。— 頭(あたま)が痛(いた)い___。","answer":"んです","explanation":"痛いんです offers the headache as the explanation being asked for."} -->
+<!-- grammar-card: {"id":"background-response","kind":"rule","format":"cloze","priority":"essential","sourceSection":"んだ for Explaining","rule":"んです supplies the background to a situation","example":"A colleague sees you wincing and asks what's wrong. Explain politely, offering the background: 頭(あたま)が痛(いた)い___。","answer":"んです","explanation":"痛いんです offers the headache as the explanation being asked for. The uncontracted のです also counts; plain 痛いです states the fact without the explanatory link.","legacyAliases":[{"rule":"んです supplies the background to a situation","example":"どうしたんですか。— 頭(あたま)が痛(いた)い___。"}]} -->
 
 Adding an explanatory tone is one of the most common features of んだ. We already saw an example of んだ being used for this purpose earlier. In the previous example, you humblebragged about why you speak Italian after you unpurposefully impressed your date with your Italian skills, saying:
 
@@ -237,7 +239,7 @@ In this case, you want to use の or んですか as you’re seeking an explana
 
 Ew, a cockroach!? Yikes, but it all makes sense now why everyone is freaking out!
 
-<!-- grammar-card: {"id":"seek-explanation","kind":"rule","format":"cloze","priority":"essential","sourceSection":"の And んですか For Seeking Explanation","rule":"んですか asks for the context behind an observed situation","example":"Everyone at work is panicking. Ask politely what happened: 何かあった___？","answer":"んですか","explanation":"The question asks the listener to fill a contextual gap. Casual speech can use 何かあったの？"} -->
+<!-- grammar-card: {"id":"seek-explanation","kind":"rule","format":"cloze","priority":"essential","sourceSection":"の And んですか For Seeking Explanation","rule":"んですか asks for the context behind an observed situation","example":"Everyone at work is panicking. Ask politely what happened: 何かあった___？","answer":"んですか","explanation":"The question asks the listener to fill a contextual gap. のですか also counts; casual speech can use 何かあったの？"} -->
 
 ### んだ For Introducing A New Topic
 

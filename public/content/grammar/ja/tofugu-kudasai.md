@@ -16,8 +16,8 @@ Phrase
 
 ## The Basics
 
-<!-- grammar-card: {"id":"favor-question","kind":"rule","format":"cloze","priority":"essential","sourceSection":"The Basics","rule":"てもらえませんか is softer than てください","example":"もう少しゆっくり話して___？","answer":"もらえませんか","explanation":"The negative potential question asks whether you can receive a favor rather than directly instructing the listener."} -->
-<!-- grammar-card: {"id":"direct-request","kind":"rule","format":"cloze","priority":"essential","sourceSection":"The Basics","rule":"The て-form plus ください makes a polite request","example":"もう少しゆっくり話して___。","answer":"ください","explanation":"話してください asks the listener directly but politely to speak more slowly."} -->
+<!-- grammar-card: {"id":"favor-question","kind":"rule","format":"cloze","priority":"essential","sourceSection":"The Basics","rule":"てもらえませんか is softer than てください","example":"Humbly ask a fast talker to slow down, framing yourself as the one receiving the favor (negative potential question): もう少しゆっくり話して___？","answer":"もらえませんか","explanation":"The negative potential question of もらう asks whether you can receive a favor rather than directly instructing the listener. もらえますか is close; くれませんか frames the listener as giver instead.","legacyAliases":[{"rule":"てもらえませんか is softer than てください","example":"もう少しゆっくり話して___？"}]} -->
+<!-- grammar-card: {"id":"direct-request","kind":"rule","format":"cloze","priority":"essential","sourceSection":"The Basics","rule":"The て-form plus ください makes a polite request","example":"Politely but directly tell a fast talker \"please speak a little more slowly\": もう少しゆっくり話して___。","answer":"ください","explanation":"話してください asks the listener directly but politely to speak more slowly. 下さい in kanji also counts.","legacyAliases":[{"rule":"The て-form plus ください makes a polite request","example":"もう少しゆっくり話して___。"}]} -->
 <!-- grammar-card: {"id":"polite-not-indirect","kind":"concept","format":"qa","priority":"essential","sourceSection":"The Basics","rule":"Respectful directness is not the same as a tentative favor request","example":"Why might a polite instruction still feel too direct when asking someone to slow their speech for you?","answer":"It tells the listener what to do; a question about receiving the favor gives them more room to decline.","explanation":"ください respects the listener but does not automatically make a request indirect or establish social rank."} -->
 
 ください is an honorific expression used to indicate a request. It sounds direct but polite, like "please" in English, so you can use it to ask for all sorts of things.
@@ -97,7 +97,8 @@ Note that in Japanese, quantities are usually a combination of a number and a co
 #### Verb て-form  + ください
 
 <!-- vocab-card: {"id":"vocab-yameru","priority":"optional","sourceSection":"Verb て-form  + ください","word":"やめる","reading":"やめる","meaning":"to stop; to quit"} -->
-<!-- grammar-card: {"id":"verb-te-request","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Verb て-form  + ください","rule":"ください attaches to the て-form, never the dictionary form","example":"もし寒かったら、窓を閉め___。","answer":"てください","explanation":"In the ordinary verb request pattern, 閉める becomes 閉めて before ください. The separate honorific stem pattern uses お閉めください."} -->
+<!-- grammar-card: {"id":"verb-te-request","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Verb て-form  + ください","rule":"ください attaches to the て-form, never the dictionary form","example":"Using the standard polite verb request, tell a guest they may close the window if cold: もし寒かったら、窓を閉め___。","answer":"てください","explanation":"In the ordinary verb request pattern, 閉める becomes 閉めて before ください. The separate honorific stem pattern uses お閉めください.","legacyAliases":[{"rule":"ください attaches to the て-form, never the dictionary form","example":"もし寒かったら、窓を閉め___。"}]} -->
+<!-- grammar-card: {"id":"rule-te-request","kind":"concept","format":"qa","priority":"essential","sourceSection":"Verb て-form  + ください","rule":"To request an action, ください follows the verb's て-form","example":"When you politely ask someone to do an action, which form of the verb comes before kudasai?","answer":"The て-form.","explanation":"Naming the て-form counts. やめる → やめてください, 食べる → 食べてください; never the dictionary form."} -->
 
 As learned earlier, ください can follow the て form of a verb to request that someone do something. For example, if you want to tell someone to stop doing something, you can turn the verb やめる (to stop) into its て form and say:
 
@@ -135,6 +136,7 @@ Although these are straight requests, ください still shows that you're expre
 
 <!-- vocab-card: {"id":"vocab-karakau","priority":"optional","sourceSection":"Verb Negative Form + で + ください","word":"からかう","reading":"からかう","meaning":"to tease"} -->
 <!-- grammar-card: {"id":"negative-request","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Verb Negative Form + で + ください","rule":"A negative request uses the ない form plus でください","example":"Ask someone not to tease you: からかわない___ください。","answer":"で","explanation":"Use からかわないでください, not a negative て-form instruction."} -->
+<!-- grammar-card: {"id":"rule-negative-request","kind":"concept","format":"qa","priority":"essential","sourceSection":"Verb Negative Form + で + ください","rule":"A polite request not to do something is the ない form + で + ください","example":"To politely ask someone NOT to do something, what verb form and what particle come before kudasai?","answer":"The ない (negative) form plus で.","explanation":"Both parts are needed: マネする → マネしないでください, からかう → からかわないでください."} -->
 
 ## Beyond the Basics
 
@@ -176,6 +178,7 @@ Even in these scenarios, though, the messages are presented in such a way that t
 
 <!-- grammar-card: {"id":"honorific-instruction","kind":"rule","format":"cloze","priority":"optional","sourceSection":"ご/お〜ください for Formal Instruction","rule":"Formal instructions can use お plus a verb stem plus ください","example":"Invite a guest to close the window if cold, using the formal stem pattern: 窓をお閉め___。","answer":"ください","explanation":"お閉めください uses 閉め, not 閉めて, in this honorific instruction pattern."} -->
 <!-- grammar-card: {"id":"formal-not-universal","kind":"concept","format":"qa","priority":"essential","sourceSection":"ご/お〜ください for Formal Instruction","rule":"The honorific stem pattern is not a universal upgrade for personal favor requests","example":"Why is お閉めください awkward when a guest asks the host to close a window for the guest?","answer":"It is characteristically a formal invitation or instruction, often for the listener's benefit, not a general way to ask a personal favor.","explanation":"Public ご遠慮ください and ご協力ください show that this is a pragmatic tendency, not a ban whenever the speaker benefits."} -->
+<!-- grammar-card: {"id":"rule-honorific-stem-pattern","kind":"concept","format":"qa","priority":"optional","sourceSection":"ご/お〜ください for Formal Instruction","rule":"The formal instruction is お/ご + verb stem + ください","example":"How is the formal honorific-prefix instruction (more formal than the て-form request) built from a verb?","answer":"お (ご for many Sino-Japanese words) + the verb's stem + ください.","explanation":"Count any answer with the prefix, the ます-stem (not the て-form), and ください: 閉める → お閉めください, 遠慮 → ご遠慮ください."} -->
 
 ### 〜てくださいませんか？ for Asking Someone to Do Something
 
@@ -233,7 +236,7 @@ When you're making a request to do something, all you have to do is turn the ver
 How easy!
 
 <!-- vocab-card: {"id":"vocab-choudai","priority":"optional","sourceSection":"Ways to Make Casual Requests","word":"ちょうだい","reading":"ちょうだい","meaning":"give me; please give (casual request)"} -->
-<!-- grammar-card: {"id":"casual-te-request","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Ways to Make Casual Requests","rule":"A bare て-form can request an action from someone close","example":"Casually ask a friend to get that apple, using 取る: そのりんごを___。","answer":"取って","explanation":"The bare connective can act as a casual request; ください is omitted."} -->
+<!-- grammar-card: {"id":"casual-te-request","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Ways to Make Casual Requests","rule":"A bare て-form can request an action from someone close","example":"Casually ask a friend to get that apple, using 取る: そのりんごを___。","answer":"取って","explanation":"The bare connective can act as a casual request; ください is omitted. 取ってくれる？ or 取ってちょうだい are also casual, but this card targets the bare て-form."} -->
 
 ---
 

@@ -105,6 +105,7 @@ Notice the above examples described the extra bottle of beer as もう一**本**
 This is because in Japanese, quantities are usually a combination of a number and a counter, such as 〜つ, 〜個, 〜回, or 〜本. If you're not familiar with counters and want to learn more, or if you need a refresher, check out our counter guide!
 
 <!-- grammar-card: {"id":"additional-bottle","kind":"rule","format":"cloze","priority":"optional","sourceSection":"もう + Quantity","rule":"もう before a counted quantity requests that much more","example":"Request another bottle of beer: ビール、___一本ください。","answer":"もう","explanation":"The number need not be one: もう二、三個 means two or three more. 本 is the counter used for the bottle."} -->
+<!-- grammar-card: {"id":"rule-mou-counter","kind":"concept","format":"qa","priority":"essential","sourceSection":"もう + Quantity","rule":"'N more' is もう + number + counter","example":"How do you build 'N more (of something)' with additive mou?","answer":"もう + number + counter, e.g. もう一つ, もう一本, もう二、三個.","explanation":"The counter matches the item (本 for bottles, 個 for small items, 回 for times)."} -->
 
 #### もう + Adverb
 
@@ -135,7 +136,7 @@ Be careful though, because もう can't be combined with every adverb. It works 
 <!-- vocab-card: {"id":"vocab-shibaraku","priority":"optional","sourceSection":"もう + Adverb","word":"しばらく","reading":"しばらく","meaning":"a while; for some time"} -->
 <!-- grammar-card: {"id":"near-summit","kind":"rule","format":"cloze","priority":"optional","sourceSection":"もう + Adverb","rule":"もうすぐ means 'very soon'","example":"Tell a companion the summit will be reached very soon: ___頂上(ちょうじょう)だよ。","answer":"もうすぐ","explanation":"The summit is nearly reached. すぐ may be omitted when the context makes this clear.","legacyAliases":[{"rule":"もうすぐ means 'very soon'","example":"___頂上(ちょうじょう)だよ。"}]} -->
 
-<!-- grammar-card: {"id":"adverb-selection","kind":"concept","format":"qa","priority":"optional","sourceSection":"もう + Adverb","rule":"Additive もう combines naturally with certain small-extent expressions","example":"Does additive もう combine freely with every adverb?","answer":"No. Common combinations include ちょっと, 少し, すぐ, and しばらく, referring to a small further extent or time.","explanation":"もうちょっとで届く describes almost reaching; the extra amount is the remaining distance or effort."} -->
+<!-- grammar-card: {"id":"adverb-selection","kind":"rule","format":"qa","priority":"optional","sourceSection":"もう + Adverb","rule":"Additive もう combines naturally with certain small-extent expressions","example":"Additive mou doesn't combine freely with every adverb. Which four small-extent adverbs does the lesson say it pairs with best?","answer":"ちょっと, 少し, すぐ, and しばらく (もうちょっと, もう少し, もうすぐ, もうしばらく).","explanation":"Each refers to a small further extent or time; もうちょっとで届く describes almost reaching.","legacyAliases":[{"rule":"Additive もう combines naturally with certain small-extent expressions","example":"Does additive もう combine freely with every adverb?"}]} -->
 
 ## Beyond the Basics
 
@@ -175,6 +176,7 @@ If you specifically mean that you were already struggling in the water and almos
 <!-- vocab-card: {"id":"vocab-oboreru","priority":"optional","sourceSection":"もう少しで〜ところだった for \"Almost Did…\"","word":"溺れる","reading":"おぼれる","meaning":"to drown; to struggle in water (not necessarily fatally)"} -->
 <!-- vocab-card: {"id":"vocab-obore-shinu","priority":"optional","sourceSection":"もう少しで〜ところだった for \"Almost Did…\"","word":"溺れ死ぬ","reading":"おぼれしぬ","meaning":"to die by drowning"} -->
 <!-- grammar-card: {"id":"almost-fell","kind":"rule","format":"cloze","priority":"essential","sourceSection":"もう少しで〜ところだった for \"Almost Did…\"","rule":"もう少しで plus a dictionary verb plus ところだった describes a narrowly avoided event","example":"I almost fell: もう少しでこける___。","answer":"ところだった","explanation":"The speaker approached the point of falling but did not fall."} -->
+<!-- grammar-card: {"id":"rule-almost-did","kind":"concept","format":"qa","priority":"optional","sourceSection":"もう少しで〜ところだった for \"Almost Did…\"","rule":"もう少しで + dictionary verb + ところだった = almost did (but didn't)","example":"What full pattern, starting with mou sukoshi de, says you almost did something but it didn't happen?","answer":"もう少しで + dictionary-form verb + ところだった.","explanation":"ところ marks the point of the action; だった puts it in the past. The event itself was avoided."} -->
 <!-- grammar-card: {"id":"avoided-outcome-scope","kind":"concept","format":"qa","priority":"optional","sourceSection":"もう少しで〜ところだった for \"Almost Did…\"","rule":"The verb determines which event or outcome was narrowly avoided","example":"Why distinguish 溺れる from 溺れ死ぬ when describing a narrowly avoided event in water?","answer":"The first does not entail death; the second explicitly names dying by drowning.","explanation":"Choose the event you mean was avoided rather than assuming every English or Japanese drowning expression has the same endpoint."} -->
 
 ---
