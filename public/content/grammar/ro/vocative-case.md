@@ -15,7 +15,7 @@ Use the vocative for direct address, often with a comma in writing.
 | **doamnă** | **Doamnă!** | Ma'am! |
 | **fetiță** | **Fetițo!** | Little girl! |
 
-- **Băiete, vino aici!** (buh-YEH-teh VEE-noh ah-CHʲ) — Boy, come here!
+- **Băiete, vino aici!** (buh-YEH-teh VEE-noh ah-EECHʲ) — Boy, come here!
 - **Ioane, unde ești?** (yoh-AH-neh OON-deh yeshʲ) — Ion, where are you?
 - **Doamnă, vă rog să așteptați.** — Ma'am, please wait.
 
@@ -35,15 +35,16 @@ Many masculine nouns and names take **-e** in direct address. Some common nouns 
 | **om** | **omule!** | man! / person! |
 | **domn** | **domnule!** | sir! / Mr.! |
 
-- **Prietene, ascultă-mă!** (pryeh-TEH-neh ahs-KOOL-tuh muh) — Friend, listen to me!
+- **Prietene, ascultă-mă!** (PRYEH-teh-neh ahs-KOOL-tuh muh) — Friend, listen to me!
 - **Omule, ai grijă!** (OH-moo-leh ay GREE-juh) — Man, be careful!
 - **Domnule Popescu, aveți un telefon.** — Mr. Popescu, you have a phone call.
 
-<!-- grammar-card: {"id":"boy-vocative","priority":"essential","sourceSection":"Masculine Singular: -e and -ule","kind":"rule","format":"cloze","rule":"Many masculine singular vocatives use -e or -ule","example":"___, vino aici! (boy!)","answer":"Băiete","explanation":"The direct-address form of băiat is băiete."} -->
+<!-- grammar-card: {"id":"boy-vocative","priority":"essential","sourceSection":"Masculine Singular: -e and -ule","kind":"rule","format":"cloze","rule":"Many masculine singular vocatives use -e or -ule","example":"___, vino aici! (boy!)","answer":"Băiete","explanation":"The usual direct-address form of băiat is băiete; colloquial băiatule also occurs."} -->
 <!-- vocab-card: {"id":"vocab-prietene","priority":"optional","sourceSection":"Masculine Singular: -e and -ule","word":"prietene","meaning":"friend! (direct address)"} -->
 <!-- vocab-card: {"id":"vocab-omule","priority":"optional","sourceSection":"Masculine Singular: -e and -ule","word":"omule","meaning":"man!; person! (familiar direct address; tone-dependent)"} -->
 <!-- vocab-card: {"id":"vocab-domnule","priority":"optional","sourceSection":"Masculine Singular: -e and -ule","word":"domnule","meaning":"sir!; Mr. (direct address)"} -->
-<!-- grammar-card: {"id":"name-vocative-ion","priority":"optional","sourceSection":"Masculine Singular: -e and -ule","kind":"rule","format":"cloze","rule":"Some names change their stem in direct address","example":"___, unde ești? (address Ion)","answer":"Ioane","explanation":"Ion has the traditional vocative Ioane."} -->
+<!-- grammar-card: {"id":"name-vocative-ion","priority":"optional","sourceSection":"Masculine Singular: -e and -ule","kind":"rule","format":"cloze","rule":"Some names change their stem in direct address","example":"___, unde ești? (address Ion with the traditional vocative)","answer":"Ioane","explanation":"Ion has the traditional vocative Ioane.","legacyAliases":[{"rule":"Some names change their stem in direct address","example":"___, unde ești? (address Ion)"}]} -->
+<!-- grammar-card: {"id":"rule-masculine-vocative-endings","kind":"concept","format":"qa","priority":"essential","sourceSection":"Masculine Singular: -e and -ule","rule":"Many masculine singular nouns and names take -e or -ule in direct address","example":"Which two endings do many masculine singular nouns and names take when you address someone directly?","answer":"-e and -ule.","explanation":"Count it if you name both endings. Prieten → Prietene!, domn → Domnule!"} -->
 
 ## Feminine Singular: Often Same Form or -o
 
@@ -68,6 +69,7 @@ Feminine vocatives are common with the same form as the noun, especially in poli
 <!-- grammar-card: {"id":"girl-familiar-vocative","priority":"essential","sourceSection":"Feminine Singular: Often Same Form or -o","kind":"rule","format":"cloze","rule":"A familiar feminine vocative can end in -o","example":"___, nu alerga! (address fetiță in the familiar form)","answer":"Fetițo","explanation":"Fetițo is familiar address, not the safest polite default."} -->
 <!-- grammar-card: {"id":"ana-familiar-vocative","priority":"optional","sourceSection":"Feminine Singular: Often Same Form or -o","kind":"rule","format":"cloze","rule":"Familiar feminine name vocatives can replace final a with o","example":"___, hai cu noi! (address Ana in the familiar -o form)","answer":"Ano","explanation":"Ano is familiar or emotional; a plain Ana can also be used in direct address."} -->
 <!-- grammar-card: {"id":"feminine-vocative-register","priority":"essential","sourceSection":"Feminine Singular: Often Same Form or -o","kind":"concept","format":"qa","rule":"Unchanged feminine forms are often the polite choice","example":"Must doamnă become a form ending in -o to be a vocative?","answer":"No. Doamnă itself is the normal polite direct-address form.","explanation":"No. Doamnă itself is the normal polite direct-address form."} -->
+<!-- grammar-card: {"id":"rule-familiar-feminine-o","kind":"concept","format":"qa","priority":"optional","sourceSection":"Feminine Singular: Often Same Form or -o","rule":"Familiar or emotional feminine direct address often uses -o","example":"Polite feminine address often keeps the plain form. Which ending often marks familiar or emotional feminine address instead?","answer":"-o.","explanation":"Count it if you say -o in place of the final vowel. Fetiță → Fetițo!, Ana → Ano!"} -->
 
 ## Plural Vocatives
 
@@ -81,7 +83,7 @@ Plural direct address often uses the normal plural form. Formal or respectful pl
 | **domni** | **domnilor!** | gentlemen! |
 | **oameni** | **oamenilor!** | people! |
 
-- **Băieți, veniți aici!** (buh-YETSʲ veh-NEETSʲ ah-CHʲ) — Boys, come here!
+- **Băieți, veniți aici!** (buh-YETSʲ veh-NEETSʲ ah-EECHʲ) — Boys, come here!
 - **Doamnelor și domnilor, bună seara!** — Ladies and gentlemen, good evening!
 - **Oamenilor, ascultați!** — People, listen!
 
@@ -101,7 +103,8 @@ In writing, put a comma before or after the person addressed. In speech, the voc
 
 Vocative forms can sound warm, urgent, or rude depending on tone. **Domnule!** is polite in a shop; **Omule!** can sound impatient if said sharply.
 
-<!-- grammar-card: {"id":"vocative-comma","priority":"optional","sourceSection":"Commas and Tone","kind":"concept","format":"qa","rule":"An address term is separated from the rest of the sentence by commas","example":"How should Maria be punctuated in Vino Maria la masă?","answer":"Vino, Maria, la masă!","explanation":"Vino, Maria, la masă!"} -->
+<!-- grammar-card: {"id":"vocative-comma","priority":"optional","sourceSection":"Commas and Tone","kind":"rule","format":"qa","rule":"An address term is separated from the rest of the sentence by commas","example":"How should Maria be punctuated in Vino Maria la masă?","answer":"Vino, Maria, la masă!","explanation":"Vino, Maria, la masă!"} -->
+<!-- grammar-card: {"id":"rule-address-commas","kind":"concept","format":"qa","priority":"optional","sourceSection":"Commas and Tone","rule":"In writing, a term of direct address is set off from the rest of the sentence by commas","example":"In writing, what sets off a name or title of direct address from the rest of the sentence?","answer":"Commas.","explanation":"Count it if you say a comma before and/or after the address term. Maria, vino la masă! / Vino, Maria, la masă!"} -->
 <!-- grammar-card: {"id":"vocative-tone","priority":"optional","sourceSection":"Commas and Tone","kind":"concept","format":"qa","rule":"A vocative's politeness depends on its wording and intonation","example":"Can Omule! sound impatient even though it directly addresses someone?","answer":"Yes. Direct address can sound warm, urgent, or rude depending on tone and context.","explanation":"Yes. Direct address can sound warm, urgent, or rude depending on tone and context."} -->
 
 ## Sources

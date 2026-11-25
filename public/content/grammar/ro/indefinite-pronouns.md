@@ -52,6 +52,7 @@ Use **pe nimeni** for a human direct object, just like **pe Maria** or **pe Andr
 <!-- grammar-card: {"id":"nothing-concord","priority":"essential","sourceSection":"Negative Pronouns: nimeni, nimic, niciunul","kind":"rule","format":"cloze","rule":"Romanian negative pronouns normally require nu as well","example":"Nu am ___. (I do not have anything.)","answer":"nimic","explanation":"Nu remains in the clause alongside nimic."} -->
 <!-- grammar-card: {"id":"negative-subject-concord","priority":"essential","sourceSection":"Negative Pronouns: nimeni, nimic, niciunul","kind":"rule","format":"cloze","rule":"A fronted negative subject still requires nu","example":"Nimeni ___ știe.","answer":"nu","explanation":"Nimeni nu știe means nobody knows."} -->
 <!-- grammar-card: {"id":"negative-person-pe","priority":"optional","sourceSection":"Negative Pronouns: nimeni, nimic, niciunul","kind":"rule","format":"cloze","rule":"A human direct object nimeni takes pe","example":"Nu văd ___ nimeni.","answer":"pe","explanation":"Pe nimeni means nobody as a direct object."} -->
+<!-- grammar-card: {"id":"rule-negative-concord","kind":"concept","format":"qa","priority":"essential","sourceSection":"Negative Pronouns: nimeni, nimic, niciunul","rule":"A negative pronoun such as nimeni normally appears with nu before the verb (negative concord)","example":"When a clause contains nimeni or another negative pronoun, what else does Romanian normally keep before the verb?","answer":"The negator nu.","explanation":"Count it if you say nu. Nu văd pe nimeni; Nimeni nu știe — nu stays even when the negative word comes first."} -->
 
 ## Tot, toată, toți, toate
 
@@ -78,6 +79,7 @@ As pronouns, these forms can stand alone:
 <!-- vocab-card: {"id":"vocab-toate","priority":"optional","sourceSection":"Tot, toată, toți, toate","word":"toate","meaning":"all (feminine/neuter plural)"} -->
 <!-- grammar-card: {"id":"all-day","priority":"optional","sourceSection":"Tot, toată, toți, toate","kind":"rule","format":"cloze","rule":"Feminine singular nouns take toată","example":"___ ziua învăț. (I study all day.)","answer":"Toată","explanation":"Ziua is feminine singular, so use toată."} -->
 <!-- grammar-card: {"id":"all-books","priority":"essential","sourceSection":"Tot, toată, toți, toate","kind":"rule","format":"cloze","rule":"Feminine/neuter plurals take toate","example":"___ cărțile sunt aici. (All the books are here.)","answer":"Toate","explanation":"Cărțile is feminine plural."} -->
+<!-- grammar-card: {"id":"rule-tot-agreement","kind":"concept","format":"qa","priority":"optional","sourceSection":"Tot, toată, toți, toate","rule":"Tot agrees in gender and number with the noun it modifies","example":"What does tot (all, the whole) agree with?","answer":"The noun it modifies, in gender and number.","explanation":"Count it if you say the noun, by gender and number. Tot orașul, toată ziua, toți prietenii, toate cărțile."} -->
 
 ## Fiecare: each / every
 

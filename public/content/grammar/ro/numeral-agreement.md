@@ -40,6 +40,7 @@ Use **doi** with masculine plural nouns. Use **două** with feminine plural noun
 
 <!-- grammar-card: {"id":"two-cars","priority":"essential","sourceSection":"Two: doi and două","kind":"rule","format":"cloze","rule":"Use doi with masculine plurals and două with feminine or neuter plurals","example":"Am ___ mașini. (two)","answer":"două","explanation":"Mașini is feminine plural, so use două.","legacyAliases":[{"rule":"Use doi with masculine plurals and două with feminine or neuter plurals","example":"Am ___ mașini."}]} -->
 <!-- grammar-card: {"id":"two-neuter","priority":"optional","sourceSection":"Two: doi and două","kind":"rule","format":"cloze","rule":"Neuter nouns take două in the plural","example":"Avem ___ scaune libere. (two)","answer":"două","explanation":"Neuter scaun has feminine-pattern plural agreement."} -->
+<!-- grammar-card: {"id":"rule-two-gender","kind":"concept","format":"qa","priority":"essential","sourceSection":"Two: doi and două","rule":"Doi goes with masculine plural nouns; feminine and neuter plurals take două","example":"Romanian has two forms for two. Which nouns take doi?","answer":"Masculine plural nouns; feminine and neuter plurals take două.","explanation":"Count it if you say masculine plurals. Doi băieți, doi câini, but două fete, două scaune."} -->
 
 ## Compounds Ending in One or Two
 
@@ -60,6 +61,7 @@ The last part of a compound number can still show gender. This is most visible w
 <!-- grammar-card: {"id":"compound-thirty-two","priority":"essential","sourceSection":"Compounds Ending in One or Two","kind":"rule","format":"cloze","rule":"The final two of a compound agrees with the counted noun","example":"treizeci și ___ de eleve (thirty-two female students)","answer":"două","explanation":"Eleve is feminine plural; the final numeral is două."} -->
 <!-- grammar-card: {"id":"compound-twenty-one","priority":"optional","sourceSection":"Compounds Ending in One or Two","kind":"rule","format":"cloze","rule":"The final one of a compound can reflect feminine gender","example":"douăzeci și ___ de zile (twenty-one days)","answer":"una","explanation":"Zi is feminine, so the compound ends in una."} -->
 <!-- grammar-card: {"id":"twelve-feminine","priority":"optional","sourceSection":"Compounds Ending in One or Two","kind":"rule","format":"cloze","rule":"Twelve has a feminine form douăsprezece","example":"___ fete (twelve girls)","answer":"douăsprezece","explanation":"Use douăsprezece for feminine fete, versus doisprezece băieți."} -->
+<!-- grammar-card: {"id":"rule-compound-final-gender","kind":"concept","format":"qa","priority":"optional","sourceSection":"Compounds Ending in One or Two","rule":"In compound numbers, the final one or two agrees with the gender of the counted noun","example":"In compound numbers such as 21 or 32, which part of the number shows the gender of the counted noun?","answer":"The final part: the one or two at the end.","explanation":"Count it if you say the last part. Treizeci și doi de elevi but treizeci și două de eleve; douăzeci și unu de băieți but douăzeci și una de fete."} -->
 
 ## The de Rule After 20
 
@@ -79,6 +81,7 @@ For counted nouns, numbers from **20 upward** normally take **de** before the no
 <!-- quiz: {"type":"multiple-choice","question":"Which phrase correctly means twenty cars?","options":["douăzeci de mașini","douăzeci mașini","doi zeci de mașini","douăzeci de mașină"],"answer":0} -->
 
 <!-- grammar-card: {"id":"forty-de","priority":"essential","sourceSection":"The de Rule After 20","kind":"rule","format":"cloze","rule":"Numbers from 20 upward normally take de before counted nouns","example":"Sunt patruzeci ___ studenți.","answer":"de","explanation":"Patruzeci de studenți uses de before the counted plural noun."} -->
+<!-- grammar-card: {"id":"rule-twenty-plus-de","kind":"concept","format":"qa","priority":"essential","sourceSection":"The de Rule After 20","rule":"From 20 upward, the number is normally linked to the counted noun by de","example":"From twenty upward, which small Romanian word normally links the number to the counted noun?","answer":"De.","explanation":"Count it if you say de. Douăzeci de mașini, cincizeci de oameni; compare nouăsprezece mașini, with no link word."} -->
 <!-- grammar-card: {"id":"larger-number-de-exception","priority":"essential","sourceSection":"The de Rule After 20","kind":"concept","format":"qa","rule":"Larger compounds ending in 1–19 normally connect directly to the counted noun","example":"Does every number above nineteen require de, including o sută două cărți?","answer":"No. Larger compounds whose final part is 1–19 normally omit de; o sută două cărți has no de.","explanation":"Compare o sută două cărți (102) with o sută douăzeci de cărți (120)."} -->
 
 ## Both: amândoi and amândouă
