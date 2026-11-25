@@ -29,12 +29,16 @@ These are illustrative local choices, not uniform regional standards; dialect sp
 
 <!-- quiz: {"type": "multiple-choice", "question": "Which Levantine form means I want tea?", "options": ["بَدِّي شَاي (baddī shāy)", "أَبْغَى شَاي (abghā shāy)", "مَاكُو شَاي (māku shāy)", "الْكِتَاب دَه (il-kitāb da)"], "answer": 0} -->
 
+<!-- grammar-card: {"id":"rule-moroccan-bghit-present","kind":"concept","format":"qa","priority":"optional","sourceSection":"Forms and examples","rule":"Moroccan-style بْغِيت (bghīt) can express a current wish despite its past-form shape.","example":"In Moroccan-style Arabic, what can بْغِيت express despite its past-form shape?","answer":"A current wish: “I want.”","explanation":"بْغِيت أَتَاي (bghīt atāy) — I want tea. Context can also give it a past meaning."} -->
+
 ## Usage notes
 
 Levantine بَدّ (badd) takes pronoun endings: بَدِّي (baddī), بَدَّك (baddak), بَدِّك (baddik), بَدُّه (baddu). Egyptian عَايِز (ʿāyiz) agrees with the speaker in gender, so a female speaker commonly says عَايْزَة (ʿāyza).
 
 <!-- grammar-card: {"id":"levantine-want","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Usage notes","rule":"Levantine expresses wanting with بَدّ plus pronoun endings, not with an MSA-style present-tense verb.","example":"Levantine “I want water”: ___ مَيّ.","answer":"بَدِّي","explanation":"The -ī ending identifies the person wanting; the noun names what is wanted.","legacyAliases":[{"rule":"Levantine expresses wanting with بَدّ plus pronoun endings, not with an MSA-style present-tense verb.","example":"بَدِّي مَيّ (baddī mayy)"}]} -->
 <!-- grammar-card: {"id":"levantine-addressee","kind":"rule","format":"qa","priority":"optional","sourceSection":"Usage notes","rule":"Levantine بَدّ takes different pronoun endings for the addressee.","example":"What forms mean “you want” to a male and female addressee respectively in the Levantine examples?","answer":"بَدَّك (baddak) to a male; بَدِّك (baddik) to a female.","explanation":"The pronoun endings change; بَدُّه (baddu) instead identifies him as the person wanting."} -->
+<!-- grammar-card: {"id":"rule-egyptian-want-agreement","kind":"concept","format":"qa","priority":"essential","sourceSection":"Usage notes","rule":"Egyptian عَايِز (ʿāyiz) agrees in gender with the person who wants.","example":"In Egyptian Arabic, what does the want-word عَايِز agree with in gender?","answer":"The person who wants (the speaker, in “I want”).","explanation":"A male speaker says عَايِز (ʿāyiz); a female speaker uses its feminine form. It behaves more like an adjective than a conjugated verb."} -->
+<!-- grammar-card: {"id":"rule-levantine-badd-suffix","kind":"concept","format":"qa","priority":"essential","sourceSection":"Usage notes","rule":"Levantine بَدّ (badd) shows who wants with attached pronoun endings.","example":"In Levantine Arabic, how does بَدّ show who is wanting?","answer":"With attached pronoun endings.","explanation":"badd + -ī, -ak, -ik, -u gives “I want, you (m.) want, you (f.) want, he wants”; it is not conjugated like an MSA present-tense verb."} -->
 
 ## Practice patterns
 
@@ -47,7 +51,7 @@ Use the dialect want-form before a noun or before another verb:
 <!-- quiz: {"type": "multiple-choice", "question": "Which Egyptian form is commonly used by a female speaker for I want?", "options": ["عَايْزَة (ʿāyza)", "عَايِز (ʿāyiz)", "بَدِّي (baddī)", "دْيَالِي (dyālī)"], "answer": 0} -->
 
 <!-- grammar-card: {"id":"egyptian-female-want","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Practice patterns","rule":"Egyptian عَايِز changes for the speaker's gender: masculine عَايِز and feminine عَايْزَة.","example":"A female speaker says Egyptian “I want tea”: أَنَا ___ شَاي.","answer":"عَايْزَة","explanation":"In this first-person construction the adjective-like form agrees with the female speaker.","legacyAliases":[{"rule":"Egyptian عَايِز changes for the speaker's gender: masculine عَايِز and feminine عَايْزَة.","example":"أَنَا عَايْزَة شَاي (ana ʿāyza shāy)"}]} -->
-<!-- grammar-card: {"id":"want-before-verb","kind":"concept","format":"qa","priority":"optional","sourceSection":"Practice patterns","rule":"The illustrated dialect want expression can precede another verb.","example":"In أَبْغَى أَتْعَلَّم, is the wanted complement an object noun or an action?","answer":"An action: I want to learn.","explanation":"A want expression can precede a verb, as in the Egyptian and Moroccan-style going examples too."} -->
+<!-- grammar-card: {"id":"want-before-verb","kind":"rule","format":"qa","priority":"optional","sourceSection":"Practice patterns","rule":"The illustrated dialect want expression can precede another verb.","example":"In أَبْغَى أَتْعَلَّم, is the wanted complement an object noun or an action?","answer":"An action: I want to learn.","explanation":"A want expression can precede a verb, as in the Egyptian and Moroccan-style going examples too."} -->
 
 ## Sources
 

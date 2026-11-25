@@ -10,6 +10,8 @@ Arabic has two kinds of initial hamza behavior. **هَمْزَةُ الْوَص�
 
 Hamzat al-waṣl connects speech smoothly. In **ٱسْمُ الطَّالِبِ جَمِيلٌ** (ismu aṭ-ṭālibi jamīlun) — the student's name is beautiful, the first vowel is heard because the word begins the phrase. After another word, it drops: **قُلِ ٱسْمَكَ** (quli-smaka) — say your name.
 
+<!-- grammar-card: {"id":"rule-wasl-when-heard","kind":"concept","format":"qa","priority":"essential","sourceSection":"Core idea","rule":"Hamzat al-waṣl is pronounced only when speech begins with its word.","example":"When is hamzat al-waṣl pronounced?","answer":"Only when speech begins with its word.","explanation":"ٱسْمُ is read ismu at the start, but قُلِ ٱسْمَكَ is read quli-smaka: after another word the helping vowel drops."} -->
+
 ## Forms and examples
 
 <!-- grammar-card: {"id":"connected-qata","kind":"rule","format":"qa","priority":"essential","sourceSection":"Forms and examples","rule":"Qaṭʿ survives connection after وَ.","example":"How does the hamza behave in وَأَكَلَ compared with وَٱسْتَمَعَ?","answer":"The first retains the glottal stop, wa-ʾakala; the second drops the initial helping vowel, wa-stamaʿa.","explanation":"Qaṭʿ is written with أ or إ and remains audible; ordinary waṣl may be plain ا or marked ٱ."} -->
@@ -22,6 +24,8 @@ Hamzat al-waṣl connects speech smoothly. In **ٱسْمُ الطَّالِبِ 
 | connected qaṭʿ | **وَأَكَلَ** | hamza remains after **وَ** | **وَأَكَلَ الْوَلَدُ** (wa-ʾakala al-waladu) — and the boy ate |
 
 <!-- quiz: {"type": "multiple-choice", "question": "Which initial hamza can disappear in connected speech?", "options": ["Hamzat al-waṣl", "Hamzat al-qaṭʿ", "The final tāʾ marbūṭa", "The long vowel wāw"], "answer": 0} -->
+
+<!-- grammar-card: {"id":"rule-qata-always-heard","kind":"concept","format":"qa","priority":"essential","sourceSection":"Forms and examples","rule":"Hamzat al-qaṭʿ stays pronounced after a preceding word.","example":"What happens to hamzat al-qaṭʿ after a preceding word such as وَ?","answer":"It is still pronounced as a glottal stop.","explanation":"وَأَكَلَ الْوَلَدُ (wa-ʾakala al-waladu) keeps the glottal stop of أَكَلَ. Qaṭʿ is written with أ, إ or أُ; only waṣl drops in connected speech."} -->
 
 ## Usage notes
 

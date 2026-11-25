@@ -12,6 +12,7 @@ A word like **بَيْتٌ** (baytun) — house is read as the connected sequenc
 
 <!-- grammar-card: {"id":"six-non-connectors","kind":"concept","format":"qa","priority":"essential","sourceSection":"Core idea","rule":"Six letters do not join to the next letter on their left","example":"Which six Arabic letters interrupt joining to the next letter on the left?","answer":"ا، د، ذ، ر، ز، و","explanation":"They can receive a connection from the preceding letter on the right, but cannot continue it to the left."} -->
 <!-- grammar-card: {"id":"positional-shapes","kind":"concept","format":"qa","priority":"essential","sourceSection":"Core idea","rule":"A letter's shape depends on its position and connections","example":"Do different connected shapes of ب represent different letters?","answer":"No. They are positional forms of the same letter.","explanation":"Recognize the letter skeleton across its connected and isolated forms; Arabic has 28 main letters."} -->
+<!-- grammar-card: {"id":"rule-non-connector-break","kind":"concept","format":"qa","priority":"optional","sourceSection":"Core idea","rule":"A non-connecting letter leaves a small break before the next letter","example":"What visible effect does one of the six non-connecting letters have inside a word?","answer":"A small break: the letter after it starts unjoined.","explanation":"In دَارٌ (dārun, house), د does not join the following ا, so one word shows a gap."} -->
 
 ## Forms and examples
 
@@ -49,6 +50,7 @@ Try tracing the right-to-left flow:
 <!-- vocab-card: {"id":"vocab-madrasah","word":"مَدْرَسَةٌ","reading":"madrasatun","meaning":"school","priority":"optional","sourceSection":"Practice patterns"} -->
 <!-- vocab-card: {"id":"vocab-zaman","word":"زَمَانٌ","reading":"zamānun","meaning":"time","priority":"optional","sourceSection":"Practice patterns"} -->
 <!-- grammar-card: {"id":"reading-direction","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Practice patterns","rule":"Read Arabic words from right to left, even when the English explanation around them reads left to right.","hint":"Start at the right edge of the Arabic word.","example":"In كِتَابٌ (kitābun) — book, the first letter you read is ___ .","answer":"كِـ","explanation":"The rightmost letter ك (kāf), carrying kasra here, begins كِتَابٌ."} -->
+<!-- grammar-card: {"id":"rule-reading-direction","kind":"concept","format":"qa","priority":"essential","sourceSection":"Practice patterns","rule":"Arabic script is written and read from right to left","example":"In which direction is Arabic script written and read?","answer":"Right to left.","explanation":"Start at the right edge of each word: بَيْتٌ begins with ب on the right, even when the English around it reads left to right."} -->
 
 ## Sources
 

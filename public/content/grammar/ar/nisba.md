@@ -29,18 +29,19 @@ The **النِّسْبَةُ** (an-nisbah) — relative adjective usually adds *
 
 Nisba adjectives agree like other adjectives: **طَالِبٌ مِصْرِيٌّ** (ṭālibun miṣriyyun) — an Egyptian male student, **طَالِبَةٌ مِصْرِيَّةٌ** (ṭālibatun miṣriyyatun) — an Egyptian female student.
 
-<!-- grammar-card: {"id":"nisba-scientific","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Usage notes","rule":"The nisba ending usually creates an adjective meaning “related to” a noun.","example":"Complete “scientific research”: بَحْثٌ ___ (baḥthun ___).","answer":"عِلْمِيٌّ","explanation":"The adjective derives from ʿilm, science/knowledge."} -->
+<!-- grammar-card: {"id":"nisba-scientific","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Usage notes","rule":"The nisba ending usually creates an adjective meaning “related to” a noun.","example":"Complete “scientific research” (from عِلْمٌ): بَحْثٌ ___ (baḥthun ___).","answer":"عِلْمِيٌّ","explanation":"The adjective derives from ʿilm, science/knowledge.","legacyAliases":[{"rule":"The nisba ending usually creates an adjective meaning “related to” a noun.","example":"Complete “scientific research”: بَحْثٌ ___ (baḥthun ___)."}]} -->
+<!-- grammar-card: {"id":"rule-nisba-agrees","kind":"concept","format":"qa","priority":"essential","sourceSection":"Usage notes","rule":"Nisba adjectives agree like other adjectives, in gender and number.","example":"How does a nisba adjective agree with the noun it describes?","answer":"Like any adjective: it matches the noun's gender and number.","explanation":"طَالِبٌ مِصْرِيٌّ (an Egyptian male student) but طَالِبَةٌ مِصْرِيَّةٌ (an Egyptian female student), with feminine -iyyatun."} -->
 
 ## Practice patterns
 
 Some bases change slightly before the ending. **مَدِينَةٌ** (madīnatun) — city gives **مَدَنِيٌّ** (madaniyyun) — civil / urban. The idea is still “related to,” even when the shape is not a simple add-on.
 
 <!-- vocab-card: {"id":"vocab-madani","word":"مَدَنِيٌّ","reading":"madaniyyun","meaning":"civil; urban","priority":"optional","sourceSection":"Practice patterns"} -->
-<!-- grammar-card: {"id":"nisba-stem-change","kind":"concept","format":"qa","priority":"optional","sourceSection":"Practice patterns","rule":"Nisba may alter its base stem.","example":"Does مَدِينَةٌ form its taught nisba by merely appending an ending to the entire noun?","answer":"No. The base changes to madan- in مَدَنِيٌّ.","explanation":"Retain this lexical stem adjustment rather than assuming mechanical suffixation."} -->
+<!-- grammar-card: {"id":"nisba-stem-change","kind":"concept","format":"qa","priority":"optional","sourceSection":"Practice patterns","rule":"Nisba may alter its base stem.","example":"When مَدِينَةٌ (city) forms its nisba adjective (civil/urban), what happens to its stem?","answer":"It changes to madan-, giving مَدَنِيٌّ rather than a simple add-on to the whole noun.","explanation":"Retain this lexical stem adjustment rather than assuming mechanical suffixation.","legacyAliases":[{"rule":"Nisba may alter its base stem.","example":"Does مَدِينَةٌ form its taught nisba by merely appending an ending to the entire noun?"}]} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"Which feminine nisba form means “Egyptian female”?","options":["مِصْرِيَّةٌ (miṣriyyatun)","مِصْرِيٌّ (miṣriyyun)","مِصْرُ (miṣru)","مِصْرِيَّانِ (miṣriyyāni)"],"answer":0} -->
 
-<!-- grammar-card: {"id":"nisba-feminine","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Practice patterns","rule":"Nisba adjectives agree with the nouns they describe in gender and number.","example":"Complete “a Lebanese female teacher”: مُعَلِّمَةٌ ___ (muʿallimatun ___).","answer":"لُبْنَانِيَّةٌ","explanation":"The feminine singular noun needs the -iyyatun form."} -->
+<!-- grammar-card: {"id":"nisba-feminine","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Practice patterns","rule":"Nisba adjectives agree with the nouns they describe in gender and number.","example":"Complete “a Lebanese female teacher” (لُبْنَانِيٌّ): مُعَلِّمَةٌ ___ (muʿallimatun ___).","answer":"لُبْنَانِيَّةٌ","explanation":"The feminine singular noun needs the -iyyatun form.","legacyAliases":[{"rule":"Nisba adjectives agree with the nouns they describe in gender and number.","example":"Complete “a Lebanese female teacher”: مُعَلِّمَةٌ ___ (muʿallimatun ___)."}]} -->
 
 ## Sources
 

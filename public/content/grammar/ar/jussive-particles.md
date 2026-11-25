@@ -10,6 +10,9 @@ The jussive mood, **الْجَزْمُ** (al-jazmu), appears after specific part
 
 A regular imperfect verb often shows sukūn in the jussive: **يَكْتُبُ** (yaktubu) — he writes becomes **لَمْ يَكْتُبْ** (lam yaktub) — he did not write. Weak verbs and the five verbs show deletion instead of a simple sukūn.
 
+<!-- grammar-card: {"id":"rule-sound-jussive-sukun","kind":"concept","format":"qa","priority":"essential","sourceSection":"Core idea","rule":"A regular singular imperfect shows the jussive with final sukūn.","example":"How is the jussive marked on a regular singular imperfect verb?","answer":"With final sukūn in place of ḍamma.","explanation":"لَا تَكْتُبْ هُنَا (lā taktub hunā) — do not write here: the final -u becomes sukūn."} -->
+<!-- grammar-card: {"id":"rule-weak-jussive-deletion","kind":"concept","format":"qa","priority":"optional","sourceSection":"Core idea","rule":"A final-weak imperfect marks the jussive by deleting its final weak letter.","example":"How does an imperfect verb ending in a weak letter mark the jussive?","answer":"By deleting the final weak letter.","explanation":"يَدْعُو (yadʿū) becomes لَمْ يَدْعُ (lam yadʿu): the wāw drops and only a short vowel remains."} -->
+
 ## Forms and examples
 
 <!-- vocab-card: {"id":"vocab-lam","word":"لَمْ","reading":"lam","meaning":"did not; governs a jussive imperfect","priority":"optional","sourceSection":"Forms and examples"} -->
@@ -18,8 +21,8 @@ A regular imperfect verb often shows sukūn in the jussive: **يَكْتُبُ**
 
 | Particle | Main meaning | Jussive effect | Example |
 |---|---|---|---|
-| **لَمْ** (lam) | past negation | final sukūn or deletion | **لَمْ يَكْتُبْ سَامِيٌ الرِّسَالَةَ** (lam yaktub Sāmīyun ar-risālata) — Sami did not write the letter |
-| **لَمَّا** (lammā) | not yet | same jussive effect | **لَمَّا يَصِلْ الْقِطَارُ** (lammā yaṣil al-qiṭāru) — the train has not arrived yet |
+| **لَمْ** (lam) | past negation | final sukūn or deletion | **لَمْ يَكْتُبْ سَامِي الرِّسَالَةَ** (lam yaktub Sāmī ar-risālata) — Sami did not write the letter |
+| **لَمَّا** (lammā) | not yet | same jussive effect | **لَمَّا يَصِلِ الْقِطَارُ** (lammā yaṣili al-qiṭāru) — the train has not arrived yet |
 | **لَا النَّاهِيَةُ** (lā an-nāhiyatu) | negative command | makes the addressee verb jussive | **لَا تَكْتُبْ هُنَا** (lā taktub hunā) — do not write here |
 | **لِـ** (li-) | command or request | jussive after prefixed lām | **لِيَكْتُبْ أَحْمَدُ الْجَوَابَ** (liyaktub Aḥmadu al-jawāba) — let Ahmad write the answer |
 
@@ -32,12 +35,14 @@ A regular imperfect verb often shows sukūn in the jussive: **يَكْتُبُ**
 **لَمْ** turns a present-form verb into past-time negation: **لَمْ أَفْهَمْ** (lam afham) — I did not understand. **لَمَّا** often implies that the action is still expected: **لَمَّا نَبْدَأْ** (lammā nabdaʾ) — we have not started yet. With the five verbs, the jussive drops the final nūn: **لَا تَذْهَبُوا** (lā tadhhabū) — do not go.
 
 <!-- grammar-card: {"id":"prohibitive-la","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Usage notes","rule":"Prohibitive لَا makes the following imperfect jussive.","example":"“Do not be late for the lesson”: لَا ___ عَنِ الدَّرْسِ. (تَتَأَخَّرُ)","answer":"تَتَأَخَّرْ","explanation":"This لَا is a negative command, not ordinary indicative negation.","legacyAliases":[{"rule":"The particles لَمْ, لَمَّا, لَا النَّاهِيَةُ, and لِـ make the following imperfect verb jussive.","example":"لَا تَتَأَخَّرْ عَنِ الدَّرْسِ (lā tataʾakhkhar ʿani ad-darsi)"}]} -->
+<!-- grammar-card: {"id":"rule-lam-past-meaning","kind":"concept","format":"qa","priority":"essential","sourceSection":"Usage notes","rule":"The particle لَمْ plus a jussive imperfect negates the past.","example":"What time reference does لَمْ give to the imperfect verb it negates?","answer":"Past time: “did not”.","explanation":"لَمْ أَفْهَمْ (lam afham) — I did not understand: the verb looks imperfect, but the meaning is past."} -->
+<!-- grammar-card: {"id":"rule-five-verbs-jussive-nun","kind":"concept","format":"qa","priority":"optional","sourceSection":"Usage notes","rule":"The five verbs mark the jussive by dropping the final nūn.","example":"How do the five verbs mark the jussive?","answer":"By dropping the final nūn.","explanation":"تَكْتُبُونَ (taktubūna) becomes لَا تَكْتُبُوا (lā taktubū) — do not write: the nūn goes and the plural wāw stays."} -->
 
 ## Practice patterns
 
 Compare the indicative and jussive forms:
 
-- **يَدْرُسُ الطَّالِبُ** (yadrusu aṭ-ṭālibu) — the student studies; **لَمْ يَدْرُسْ الطَّالِبُ** (lam yadrus aṭ-ṭālibu) — the student did not study.
+- **يَدْرُسُ الطَّالِبُ** (yadrusu aṭ-ṭālibu) — the student studies; **لَمْ يَدْرُسِ الطَّالِبُ** (lam yadrusi aṭ-ṭālibu) — the student did not study.
 - **يَدْعُو الْمُعَلِّمُ** (yadʿū al-muʿallimu) — the teacher calls; **لَمْ يَدْعُ الْمُعَلِّمُ** (lam yadʿu al-muʿallimu) — the teacher did not call.
 - **تَكْتُبُونَ بِسُرْعَةٍ** (taktubūna bisurʿatin) — you all write quickly; **لَا تَكْتُبُوا بِسُرْعَةٍ** (lā taktubū bisurʿatin) — do not write quickly.
 

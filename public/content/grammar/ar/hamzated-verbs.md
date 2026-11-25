@@ -8,6 +8,8 @@ Hamzated verbs have hamza as one of the root letters. Their meanings are normal,
 
 A **فِعْلٌ مَهْمُوزٌ** (fiʿlun mahmūzun) contains hamza as the first, second, or third root consonant. The hamza seat may change with nearby vowels, while the root meaning stays the same.
 
+<!-- grammar-card: {"id":"rule-mahmuz-definition","kind":"concept","format":"qa","priority":"essential","sourceSection":"Core idea","rule":"A hamzated (mahmūz) verb has hamza as one of its root consonants.","example":"What makes a verb hamzated (mahmūz)?","answer":"Hamza is one of its root consonants: first, second, or third.","explanation":"أَخَذَ (akhadha) has initial hamza, سَأَلَ (saʾala) middle hamza, and قَرَأَ (qaraʾa) final hamza."} -->
+
 ## Forms and examples
 
 | Type | Past | Imperfect | Example |
@@ -26,7 +28,7 @@ A **فِعْلٌ مَهْمُوزٌ** (fiʿlun mahmūzun) contains hamza as the 
 
 ## Usage notes
 
-Some very common initial-hamza verbs have short imperatives: **خُذْ** (khudh) — take, **كُلْ** (kul) — eat, and **مُرْ** (mur) — command. These are not new roots; they are high-frequency shortened commands.
+Some very common initial-hamza verbs have short imperatives: **خُذْ** (khudh) — take, **كُلْ** (kul) — eat, and **مُرْ** (mur) — command. These are not new roots; they are high-frequency shortened commands. Most other initial-hamza verbs form a regular, unshortened imperative.
 
 For spelling, watch the vowel environment around hamza: **سَأَلَ** (saʾala), **سُؤَالٌ** (suʾālun), and **مَسْؤُولٌ** (masʾūlun) all keep the same root idea of asking or responsibility.
 
@@ -34,8 +36,9 @@ For spelling, watch the vowel environment around hamza: **سَأَلَ** (saʾal
 <!-- vocab-card: {"id":"vocab-masul","word":"مَسْؤُولٌ","reading":"masʾūlun","meaning":"responsible","priority":"optional","sourceSection":"Usage notes"} -->
 <!-- grammar-card: {"id":"hamza-root-position","kind":"rule","format":"qa","priority":"essential","sourceSection":"Usage notes","rule":"A hamzated verb has hamza as one of its root consonants.","example":"Is قَرَأَ initial-, middle-, or final-hamzated?","answer":"Final-hamzated: hamza is its third root consonant.","explanation":"The root is ق-ر-ء. By contrast, أَخَذَ is initial-hamzated and سَأَلَ is middle-hamzated.","legacyAliases":[{"rule":"A hamzated verb has hamza as one of its root consonants.","example":"قَرَأَ الْوَلَدُ قِصَّةً"}]} -->
 <!-- grammar-card: {"id":"seat-not-new-root","kind":"concept","format":"qa","priority":"essential","sourceSection":"Usage notes","rule":"A changed hamza seat need not change the root consonant.","example":"Do أ in سَأَلَ and ؤ in سُؤَالٌ mean these words have different root consonants at that position?","answer":"No. Both represent hamza; its written seat changes with the vowel environment.","explanation":"Spelling support letters are not extra radicals. The asking-related family retains the root س-ء-ل."} -->
-<!-- grammar-card: {"id":"eat-short-command","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Usage notes","rule":"The frequent verb أَكَلَ has a shortened masculine singular imperative.","example":"Give the command “Eat bread”: ___ خُبْزًا.","answer":"كُلْ","explanation":"كُلْ (kul) is the conventional imperative of أَكَلَ, not a new root."} -->
-<!-- grammar-card: {"id":"command-short-form","kind":"rule","format":"qa","priority":"optional","sourceSection":"Usage notes","rule":"مُرْ is a common shortened command meaning command.","example":"Which short imperative taught here means “command,” rather than take or eat?","answer":"مُرْ","explanation":"مُرْ (mur) belongs with the high-frequency shortened commands. Learn these lexical exceptions rather than deleting hamza from every imperative."} -->
+<!-- grammar-card: {"id":"eat-short-command","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Usage notes","rule":"The frequent verb أَكَلَ has a shortened masculine singular imperative.","example":"Give the masculine singular command “Eat bread”: ___ خُبْزًا.","answer":"كُلْ","explanation":"كُلْ (kul) is the conventional imperative of أَكَلَ, not a new root.","legacyAliases":[{"rule":"The frequent verb أَكَلَ has a shortened masculine singular imperative.","example":"Give the command “Eat bread”: ___ خُبْزًا."}]} -->
+<!-- grammar-card: {"id":"command-short-form","kind":"rule","format":"qa","priority":"optional","sourceSection":"Usage notes","rule":"أَمَرَ has a common shortened masculine singular imperative.","example":"What is the short masculine singular imperative of أَمَرَ (to command)?","answer":"مُرْ","explanation":"مُرْ (mur) belongs with the high-frequency shortened commands. After وَ or فَ the full form usually returns: وَأْمُرْ (wa-ʾmur). Learn these lexical exceptions rather than deleting hamza from every imperative.","legacyAliases":[{"rule":"مُرْ is a common shortened command meaning command.","example":"Which short imperative taught here means “command,” rather than take or eat?"}]} -->
+<!-- grammar-card: {"id":"rule-short-imperative-limited","kind":"concept","format":"qa","priority":"optional","sourceSection":"Usage notes","rule":"Only a few frequent initial-hamza verbs have shortened imperatives.","example":"Do most initial-hamza verbs shorten their imperative the way the verb for “take” does?","answer":"No. Only a few frequent verbs, such as take, eat, and command, shorten; most form a regular imperative.","explanation":"أَخَذَ, أَكَلَ, and أَمَرَ are the common short ones; learn them as lexical exceptions."} -->
 
 ## Practice patterns
 
@@ -45,7 +48,9 @@ Conjugate slowly and keep the hamza audible:
 - **سَأَلَ، يَسْأَلُ، اِسْأَلْ** (saʾala, yasʾalu, isʾal) — asked, asks, ask.
 - **قَرَأَ، يَقْرَأُ، اِقْرَأْ** (qaraʾa, yaqraʾu, iqraʾ) — read, reads, read.
 
-<!-- grammar-card: {"id":"ask-retains-hamza","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Practice patterns","rule":"The imperative of سَأَلَ retains its root hamza.","example":"سَأَلَ → masculine singular command: ___.","answer":"اِسْأَلْ","explanation":"اِسْأَلْ (isʾal) keeps the middle hamza. The short commands خُذْ and كُلْ are not a general hamza-deletion formula."} -->
+Classical Arabic also has the short command **سَلْ** (sal) — ask, as in Qurʾān 2:211, but **اِسْأَلْ** (isʾal) is the usual MSA form.
+
+<!-- grammar-card: {"id":"ask-retains-hamza","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Practice patterns","rule":"In MSA, the usual imperative of سَأَلَ retains its root hamza.","example":"سَأَلَ → usual MSA masculine singular command: ___.","answer":"اِسْأَلْ","explanation":"اِسْأَلْ (isʾal) keeps the middle hamza. Classical Arabic also has the short form سَلْ (sal), as in سَلْ بَنِي إِسْرَائِيلَ (Qurʾān 2:211); accept it too. The short commands خُذْ and كُلْ are not a general hamza-deletion formula.","legacyAliases":[{"rule":"The imperative of سَأَلَ retains its root hamza.","example":"سَأَلَ → masculine singular command: ___."}]} -->
 <!-- grammar-card: {"id":"read-retains-hamza","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Practice patterns","rule":"The imperative of قَرَأَ retains its final root hamza.","example":"قَرَأَ → masculine singular command: ___.","answer":"اِقْرَأْ","explanation":"اِقْرَأْ (iqraʾ) retains the final hamza and its sukūn."} -->
 
 <!-- quiz: {"type": "multiple-choice", "question": "Which command means take from the verb أَخَذَ?", "options": ["خُذْ", "كُلْ", "اِقْرَأْ", "اِسْأَلْ"], "answer": 0} -->

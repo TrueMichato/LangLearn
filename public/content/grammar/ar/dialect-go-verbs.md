@@ -10,6 +10,9 @@ MSA commonly uses ذَهَبَ (dhahaba), "to go." Many dialects use the root ر
 
 Do not expect MSA أَذْهَبُ (adhhabu) to be the normal everyday form in conversation. Egyptian, Levantine, Gulf, and Iraqi commonly say forms like أَرُوح (arūḥ) or بَرُوح (barūḥ). Maghrebi commonly says نَمْشِي (nmshī).
 
+<!-- grammar-card: {"id":"rule-rwh-root","kind":"concept","format":"qa","priority":"essential","sourceSection":"Core idea","rule":"Egyptian, Levantine, Gulf and Iraqi Arabic commonly use the root ر-و-ح (r-w-ḥ) for going.","example":"Which root do Egyptian, Levantine, Gulf and Iraqi Arabic commonly use for ordinary going?","answer":"ر-و-ح (r-w-ḥ)","explanation":"أَرُوح (arūḥ) — I go, rather than MSA أَذْهَبُ (adhhabu). In MSA, رَاحَ is connected with going away or departing."} -->
+<!-- grammar-card: {"id":"rule-maghrebi-mshy","kind":"concept","format":"qa","priority":"essential","sourceSection":"Core idea","rule":"Moroccan-style Arabic commonly uses the root م-ش-ي (m-sh-y) for going.","example":"Which root does Moroccan-style Arabic commonly use for going?","answer":"م-ش-ي (m-sh-y)","explanation":"نَمْشِي (nmshī) — I go. The same root can also mean walk, so context decides."} -->
+
 ## Forms and examples
 
 The table gives illustrative local usages, not a full tense/aspect paradigm for each region. Dialect spelling and vowel marks are approximate. In particular, habitual/progressive marking varies; Moroccan-style forms do not represent every Maghrebi variety.

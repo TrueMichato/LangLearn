@@ -9,6 +9,7 @@ The passive participle lets Arabic describe what has been done to something: wri
 The **اِسْمُ الْمَفْعُولِ** (ism al-mafʿūl) — passive participle names the receiver of an action. For many Form I sound verbs, it uses the pattern **مَفْعُولٌ** (mafʿūlun) — thing-done-to pattern.
 
 <!-- grammar-card: {"id":"passive-participle-role","kind":"concept","format":"qa","priority":"essential","sourceSection":"Core idea","rule":"Passive participles describe the receiver, not the doer.","example":"How does a passive participle differ in role from an active participle?","answer":"It describes what receives the action, rather than what performs it.","explanation":"Compare writer with written; mafʿūlun is common for sound Form I verbs, not every verb."} -->
+<!-- grammar-card: {"id":"rule-passive-pattern-form-one","kind":"concept","format":"qa","priority":"essential","sourceSection":"Core idea","rule":"The passive participle of a sound Form I verb usually follows مَفْعُولٌ (mafʿūlun).","example":"Which pattern does the passive participle of a sound Form I verb usually follow?","answer":"مَفْعُولٌ (mafʿūlun)","explanation":"كَتَبَ gives مَكْتُوبٌ (written) and سَمِعَ gives مَسْمُوعٌ (heard); derived forms use other patterns."} -->
 <!-- vocab-card: {"id":"vocab-maktub","word":"مَكْتُوبٌ","reading":"maktūbun","meaning":"written","priority":"essential","sourceSection":"Forms and examples"} -->
 <!-- vocab-card: {"id":"vocab-maftuh","word":"مَفْتُوحٌ","reading":"maftūḥun","meaning":"open; opened","priority":"essential","sourceSection":"Forms and examples"} -->
 <!-- vocab-card: {"id":"vocab-masmu","word":"مَسْمُوعٌ","reading":"masmūʿun","meaning":"heard; audible","priority":"optional","sourceSection":"Forms and examples"} -->
@@ -30,6 +31,7 @@ The **اِسْمُ الْمَفْعُولِ** (ism al-mafʿūl) — passive part
 The passive participle often works like an adjective: **الْبَابُ مَفْتُوحٌ** (al-bābu maftūḥun) — the door is open. It can also be a noun: **مَفْهُومٌ جَدِيدٌ** (mafhūmun jadīdun) — a new concept / thing understood.
 
 <!-- grammar-card: {"id":"passive-participle-pattern","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Core idea","rule":"The Form I passive participle often follows مَفْعُولٌ (mafʿūlun).","example":"Form the passive participle of فَتَحَ: ___.","answer":"مَفْتُوحٌ","explanation":"This sound Form I verb gives maftūḥun, open/opened.","legacyAliases":[{"rule":"The Form I passive participle often follows مَفْعُولٌ (mafʿūlun).","example":"Complete “opened”: فَتَحَ (fataḥa) → ___ (maftūḥun)."}]} -->
+<!-- grammar-card: {"id":"rule-passive-participle-noun-use","kind":"concept","format":"qa","priority":"optional","sourceSection":"Usage notes","rule":"A passive participle can work as an adjective or as a noun.","example":"Besides describing a noun like an adjective (“the door is open”), what else can a passive participle work as?","answer":"A noun in its own right, such as مَفْهُومٌ (a concept).","explanation":"مَفْهُومٌ جَدِيدٌ means a new concept: the “thing understood” has become a noun."} -->
 
 ## Practice patterns
 
@@ -44,7 +46,7 @@ Pair active and passive participles to hear the contrast:
 
 <!-- quiz: {"type":"multiple-choice","question":"In الْبَابُ مَفْتُوحٌ (al-bābu maftūḥun), what does مَفْتُوحٌ mean?","options":["open / opened","opening person","key","door"],"answer":0} -->
 
-<!-- grammar-card: {"id":"passive-participle-predicate","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Practice patterns","rule":"Passive participles can serve as predicates in nominal sentences.","example":"Translate “the lesson is understood”: الدَّرْسُ ___ (ad-darsu ___).","answer":"مَفْهُومٌ","explanation":"The nominal sentence needs no present-tense copula."} -->
+<!-- grammar-card: {"id":"passive-participle-predicate","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Practice patterns","rule":"Passive participles can serve as predicates in nominal sentences.","example":"Complete “the lesson is understood” (from فَهِمَ): الدَّرْسُ ___ (ad-darsu ___).","answer":"مَفْهُومٌ","explanation":"The nominal sentence needs no present-tense copula.","legacyAliases":[{"rule":"Passive participles can serve as predicates in nominal sentences.","example":"Translate “the lesson is understood”: الدَّرْسُ ___ (ad-darsu ___)."}]} -->
 
 ## Sources
 

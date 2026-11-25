@@ -6,9 +6,12 @@ Some Arabic verbs naturally take **two direct objects**: a person who receives o
 
 ## Core idea
 
-<!-- grammar-card: {"id":"recipient-object","kind":"concept","format":"qa","priority":"essential","sourceSection":"Core idea","rule":"The recipient can be a direct object in an Arabic two-object construction.","example":"Does English “to the student” require an Arabic preposition in أَعْطَى الْمُعَلِّمُ الطَّالِبَ قَلَمًا?","answer":"No. The student is the first direct object; the pen is the second.","explanation":"Both complements are accusative in this permitted verb pattern; English prepositions do not determine Arabic case."} -->
+<!-- grammar-card: {"id":"recipient-object","kind":"rule","format":"qa","priority":"essential","sourceSection":"Core idea","rule":"The recipient can be a direct object in an Arabic two-object construction.","example":"Does English “to the student” require an Arabic preposition in أَعْطَى الْمُعَلِّمُ الطَّالِبَ قَلَمًا?","answer":"No. The student is the first direct object; the pen is the second.","explanation":"Both complements are accusative in this permitted verb pattern; English prepositions do not determine Arabic case."} -->
 
 In **أَعْطَى الْمُعَلِّمُ الطَّالِبَ قَلَمًا** (aʿṭā al-muʿallimu aṭ-ṭāliba qalaman) — “the teacher gave the student a pen,” **الطَّالِبَ** (aṭ-ṭāliba) and **قَلَمًا** (qalaman) are both objects. The first object is usually the recipient; the second is the item, information, or quality transferred.
+
+<!-- grammar-card: {"id":"rule-both-accusative","kind":"concept","format":"qa","priority":"essential","sourceSection":"Core idea","rule":"Both objects of a two-object verb such as أَعْطَى are accusative.","example":"In MSA, which case do both objects of a verb like أَعْطَى take?","answer":"The accusative.","explanation":"أَعْطَى الْمُعَلِّمُ الطَّالِبَ قَلَمًا — the teacher gave the student a pen: الطَّالِبَ and قَلَمًا are both accusative, even where English says “to”."} -->
+<!-- grammar-card: {"id":"rule-recipient-first","kind":"concept","format":"qa","priority":"essential","sourceSection":"Core idea","rule":"With two-object verbs, the first object is usually the recipient or learner and the second the thing transferred.","example":"With two-object verbs such as أَعْطَى and عَلَّمَ, which object usually comes first?","answer":"The recipient or learner; the thing given or taught comes second.","explanation":"عَلَّمَتِ الْمُدَرِّسَةُ الطِّفْلَ الْحُرُوفَ — the teacher taught the child the letters: the child first, then the letters."} -->
 
 ## Forms and examples
 

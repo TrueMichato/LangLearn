@@ -9,6 +9,7 @@ At certain word boundaries, Arabic connected speech avoids a meeting of two suk�
 The issue is called **اِلْتِقَاءُ السَّاكِنَيْنِ** (iltiqāʾu as-sākinayni), the meeting of two sukūns. In many common cases, Arabic adds a kasrah to the first word: **قُلِ الْحَقَّ** (quli al-ḥaqqa), not a heavy pause between **قُلْ** and **الْحَقَّ**.
 
 <!-- grammar-card: {"id":"wasl-junction-not-all-clusters","kind":"concept","format":"qa","priority":"essential","sourceSection":"Core idea","rule":"A helping vowel can resolve the word-boundary cluster created when hamzat al-waṣl drops.","example":"Why can a helping vowel be needed before الْـ even though Arabic permits consonant clusters within words?","answer":"In connected speech the initial waṣl vowel drops, bringing a sukūn-final word directly against the next consonant.","explanation":"The lesson concerns this junction, not a prohibition on every pair of adjacent consonants."} -->
+<!-- grammar-card: {"id":"rule-default-helping-kasra","kind":"concept","format":"qa","priority":"essential","sourceSection":"Core idea","rule":"When two sukūns meet across words, the usual helping vowel is kasra.","example":"When a sukūn-final word meets a following sukūn, which helping vowel does Arabic usually add?","answer":"Kasra.","explanation":"قُلْ + الْحَقَّ gives قُلِ الْحَقَّ (quli al-ḥaqqa). Some words have fixed exceptions, such as مِنَ before the article."} -->
 
 ## Forms and examples
 
@@ -34,6 +35,7 @@ The helping vowel is usually not part of the dictionary form. The command is sti
 This topic connects pronunciation and grammar: you need to know where words begin, but you pronounce them smoothly as one phrase.
 
 <!-- grammar-card: {"id":"qul-connected-kasra","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Usage notes","rule":"Arabic often inserts a helping vowel when two sukūns meet in connected speech.","example":"Connect the command قُلْ to its object: ___ الْحَقَّ.","answer":"قُلِ","explanation":"قُلِ (quli) uses a helping kasra when the article's initial vowel drops in connected reading. The command still means say.","legacyAliases":[{"rule":"Arabic often inserts a helping vowel when two sukūns meet in connected speech.","example":"قُلِ الْحَقَّ"}]} -->
+<!-- grammar-card: {"id":"rule-helping-vowel-not-lexical","kind":"concept","format":"qa","priority":"optional","sourceSection":"Usage notes","rule":"The helping vowel is not part of the dictionary form.","example":"Is the helping vowel that breaks up two sukūns part of the word's dictionary form?","answer":"No. It appears only in connected speech; the word alone keeps its sukūn.","explanation":"قُلْ (qul) alone, but قُلِ الْحَقَّ (quli al-ḥaqqa) in connected reading."} -->
 
 ## Practice patterns
 

@@ -11,7 +11,7 @@ The energetic nūn adds strong confirmation to a verb. In careful MSA it is most
 The meaning is not a new tense. It is an emphatic mood: the speaker presents the action as certain, urgent, or strongly commanded.
 
 <!-- grammar-card: {"id":"heavy-light-nun","kind":"concept","format":"qa","priority":"essential","sourceSection":"Core idea","rule":"The energetic marker has heavy and light forms.","example":"What are the heavy and light forms of the emphatic nūn?","answer":"Heavy نَّ and light نْ.","explanation":"The heavy form doubles n and is more commonly encountered in the reading examples."} -->
-<!-- grammar-card: {"id":"emphasis-not-tense","kind":"concept","format":"qa","priority":"essential","sourceSection":"Core idea","rule":"Energetic marking strengthens the force of a verb rather than independently locating it in time.","example":"Does energetic nūn introduce a separate tense?","answer":"No. It adds strong confirmation or urgency to the action.","explanation":"Oaths, solemn promises, emphatic commands and prohibitions are characteristic environments."} -->
+<!-- grammar-card: {"id":"emphasis-not-tense","kind":"concept","format":"qa","priority":"essential","sourceSection":"Core idea","rule":"Energetic marking strengthens the force of a verb rather than independently locating it in time.","example":"What does energetic nūn add to a verb's meaning?","answer":"Strong confirmation or urgency — an emphatic mood, not a new tense.","explanation":"Oaths, solemn promises, emphatic commands and prohibitions are characteristic environments.","legacyAliases":[{"rule":"Energetic marking strengthens the force of a verb rather than independently locating it in time.","example":"Does energetic nūn introduce a separate tense?"}]} -->
 
 ## Forms and examples
 
@@ -23,6 +23,8 @@ The meaning is not a new tense. It is an emphatic mood: the speaker presents the
 | Emphatic plural promise | لَنُسَاعِدَنَّ الْجَارَ (la-nusāʿidanna al-jāra) — We will certainly help the neighbor |
 
 <!-- quiz: {"type":"multiple-choice","question":"What does نَّ add in لَأَكْتُبَنَّ (la-aktubanna)?","options":["Strong emphasis: I will surely write","Past meaning: I wrote yesterday","A passive meaning: it was written","A question meaning: shall I write?"],"answer":0} -->
+
+<!-- grammar-card: {"id":"rule-energetic-contexts","kind":"concept","format":"qa","priority":"essential","sourceSection":"Forms and examples","rule":"In careful MSA, energetic nūn appears mostly in oaths, solemn promises, emphatic commands and emphatic prohibitions.","example":"In careful MSA, in which kinds of sentence is energetic nūn mostly found?","answer":"Oaths and solemn promises, emphatic commands, and emphatic prohibitions.","explanation":"لَأَكْتُبَنَّ الرِّسَالَةَ is a promise, اُدْرُسَنَّ الدَّرْسَ a command, and لَا تُهْمِلَنَّ الْوَقْتَ a prohibition."} -->
 
 ## Usage notes
 
@@ -53,7 +55,7 @@ Compare the plain verb with the emphatic verb:
 
 Do not confuse energetic نَّ with the feminine plural ending ـنَ in forms such as يَكْتُبْنَ (yaktubna) — they write. Energetic نَّ is an added marker of emphasis and is usually pronounced with a doubled n sound.
 
-<!-- grammar-card: {"id":"feminine-nun-contrast","kind":"concept","format":"qa","priority":"essential","sourceSection":"Watch out","rule":"An ordinary feminine-plural subject ending is not an energetic suffix.","example":"Does the final nūn in يَكْتُبْنَ mark energetic emphasis?","answer":"No. It is the feminine plural subject ending.","explanation":"Yaktubna means they, feminine, write. Heavy energetic نَّ has a doubled n and an emphatic function."} -->
+<!-- grammar-card: {"id":"feminine-nun-contrast","kind":"concept","format":"qa","priority":"essential","sourceSection":"Watch out","rule":"An ordinary feminine-plural subject ending is not an energetic suffix.","example":"Why is the final nūn in يَكْتُبْنَ not an energetic nūn?","answer":"It is the feminine plural subject ending, not an added emphatic marker.","explanation":"Yaktubna means they, feminine, write. Heavy energetic نَّ has a doubled n and an emphatic function.","legacyAliases":[{"rule":"An ordinary feminine-plural subject ending is not an energetic suffix.","example":"Does the final nūn in يَكْتُبْنَ mark energetic emphasis?"}]} -->
 
 <!-- quiz: {"type":"multiple-choice","question":"Which translation best fits لَا تَخُونَنَّ الْأَمَانَةَ (lā takhūnanna al-amānata)?","options":["Do not ever betray the trust","You did not betray the trust","The trust was betrayed","Will you betray the trust?"],"answer":0} -->
 
