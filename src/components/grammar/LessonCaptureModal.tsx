@@ -4,6 +4,7 @@ import { findSavedLessonItems, saveLessonReviewItems } from '../../db/lesson-car
 import type { GrammarReviewItem, LessonReviewDiagnostic, LessonReviewItem, VocabularyReviewItem } from '../../lib/lesson-review';
 import { looksLikeSentence } from '../../lib/lesson-capture';
 import { getLanguageLabel } from '../../lib/languages';
+import { grammarDirection } from '../../lib/grammar-direction';
 import { isReviewedGrammarLesson } from '../../lib/grammar-review-scope';
 import { rtlProps } from '../../lib/rtl';
 import { useXPStore } from '../../stores/xpStore';
@@ -255,7 +256,8 @@ export default function LessonCaptureModal({
                             })} />
                           <span className="min-w-0 flex-1">
                             <span className="block break-words font-medium text-slate-800 dark:text-slate-100"
-                              {...(item.kind === 'vocabulary' ? rtlProps(language) : { dir: 'auto' })}>
+                              {...(item.kind === 'vocabulary' ? rtlProps(language)
+                                : language === 'ar' ? grammarDirection(item.prompt, language) : { dir: 'auto' })}>
                               {item.kind === 'vocabulary' ? item.word : item.prompt}
                             </span>
                             <span className="mt-1 block text-xs text-slate-500 dark:text-slate-400">
