@@ -126,6 +126,8 @@ Key interfaces: `Word` (id, language, word, reading, meaning, contextSentence, t
 
 SM-2 algorithm in `src/lib/sm2.ts`. Grade 0-2 resets card; grade 3-5 advances interval. 6 card types: classic (rep 0+), reverse/cloze (rep 2+), listening/MC (rep 4+), grammar (always for type='grammar'). MC and cloze auto-grade; others show manual grade buttons. Failed cards re-queue to end. Grammar cards auto-created from `<!-- grammar-card: {...} -->` blocks in lessons on completion.
 
+Reviewed grammar lessons are listed per language in `src/lib/grammar-reviewed/{lang}.ts` (checked via `src/lib/grammar-review-scope.ts`). Rule-recall cards (`isRuleRecallCard`: concept cards in reviewed lessons) get their next due date doubled after a pass (`RULE_CARD_INTERVAL_MULTIPLIER`, `src/db/reviews.ts`); stored interval/stability stay unscaled so spacing doesn't compound. See `docs/knowledge-practice.md`.
+
 `/review` is the review home and owns study sets. Scheduled sessions use
 `processReview` (SM-2 or FSRS); explicit optional practice uses all available
 source members and the same batch-size setting, but grades only in memory.

@@ -1,5 +1,7 @@
 # Gender & Agreement
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 Russian nouns belong to one of **three grammatical genders**: masculine (мужской род), feminine (женский род), or neuter (средний род). Gender affects how adjectives, pronouns, and past-tense verbs agree with the noun. Learning to identify gender quickly is one of the most important early skills in Russian.
 
 ---
@@ -25,6 +27,12 @@ Every Russian noun has a fixed gender. Unlike some languages, gender in Russian 
 **Неделя была длинной.** *(Nedelya byla dlinnoy.)* — The week was long.
 
 **Море очень красивое.** *(More ochen' krasivoye.)* — The sea is very beautiful.
+
+<!-- grammar-card: {"id":"rule-gender-consonant-ending","kind":"concept","format":"qa","priority":"optional","sourceSection":"1. The Three Genders","rule":"Nouns ending in a consonant or -й are masculine","example":"A noun ends in a consonant or -й, like стол or музей. What gender is it?","answer":"Masculine.","explanation":"Any answer saying masculine counts. Новый стол: the masculine adjective ending -ый agrees with стол."} -->
+
+<!-- grammar-card: {"id":"rule-gender-a-ya-ending","kind":"concept","format":"qa","priority":"essential","sourceSection":"1. The Three Genders","rule":"Nouns ending in -а or -я are usually feminine","example":"A noun ends in -а or -я, like книга or неделя. What gender is it usually?","answer":"Feminine.","explanation":"Any answer saying feminine counts. Новая книга shows feminine -ая agreement. The exception is nouns for male people, like папа, which are masculine."} -->
+
+<!-- grammar-card: {"id":"rule-gender-o-e-ending","kind":"concept","format":"qa","priority":"optional","sourceSection":"1. The Three Genders","rule":"Nouns ending in -о, -е, or -мя are neuter","example":"A noun ends in -о or -е, like окно or море. What gender is it?","answer":"Neuter.","explanation":"Any answer saying neuter counts. Новое окно shows neuter -ое agreement. Nouns in -мя, like время, are neuter too."} -->
 
 ---
 
@@ -70,7 +78,7 @@ Some nouns ending in **-ь** are masculine. These must be memorized.
 
 **Дождь идёт весь день.** *(Dozhd' idyot ves' den'.)* — It has been raining all day.
 
-<!-- grammar-card: {"rule":"A noun ending in a consonant is masculine","hint":"table","example":"___ стоит в углу.","answer":"Стол","explanation":"Стол ends in a hard consonant, which makes it masculine and governs masculine agreement throughout."} -->
+<!-- vocab-card: {"id":"vocab-stol","word":"стол","meaning":"table","priority":"optional","sourceSection":"Consonant Endings"} -->
 
 ---
 
@@ -191,7 +199,11 @@ The soft sign **-ь** does not tell you the gender. You must memorize whether ea
 
 <!-- quiz:{"type":"multiple-choice","question":"What gender is the noun «тетрадь» (notebook)?","options":["Masculine","Feminine","Neuter","It changes depending on context"],"answer":1} -->
 
-<!-- grammar-card: {"rule":"Nouns ending in -ь may be masculine or feminine and must be learned individually","hint":"night","example":"Сегодня холодная ___.","answer":"ночь","explanation":"Ночь is feminine despite the soft sign, hence холодная; день has the same ending but is masculine."} -->
+<!-- vocab-card: {"id":"vocab-noch","word":"ночь","meaning":"night","priority":"optional","sourceSection":"5. The Soft-Sign Problem: -ь Nouns"} -->
+
+<!-- grammar-card: {"id":"night-gender","kind":"rule","format":"qa","priority":"optional","sourceSection":"5. The Soft-Sign Problem: -ь Nouns","rule":"Agreement can reveal the gender of a noun ending in ь","example":"You read холодная ночь (a cold night). What gender does the adjective tell you ночь is?","answer":"Feminine.","explanation":"The ending -ая in холодная gives it away. The soft sign alone doesn't: день (day) is masculine."} -->
+
+<!-- grammar-card: {"id":"rule-soft-sign-gender","kind":"concept","format":"qa","priority":"essential","sourceSection":"5. The Soft-Sign Problem: -ь Nouns","rule":"A final -ь does not show a noun's gender; -ь nouns can be masculine or feminine","example":"Can you tell a noun's gender from a final -ь alone?","answer":"No. It can be masculine or feminine, so learn each one.","explanation":"The answer counts if it says no and that -ь nouns can be either gender. День (day) is masculine; ночь (night) is feminine."} -->
 
 ---
 
@@ -223,7 +235,7 @@ Adjectives **must agree** with the noun they modify in gender (and also number a
 
 <!-- quiz:{"type":"multiple-choice","question":"Which adjective form correctly completes: «_______ книга лежит на столе» (The interesting book is on the table)?","options":["интересный","интересная","интересное","интересные"],"answer":1} -->
 
-<!-- grammar-card: {"rule":"An adjective takes the gender of the noun it modifies","hint":"новый (new)","example":"Это ___ книга.","answer":"новая","explanation":"Книга is feminine, so новый must appear in its feminine form новая."} -->
+<!-- grammar-card: {"id":"new-book-agreement","kind":"rule","format":"cloze","priority":"essential","sourceSection":"6. Adjective Agreement with Gender","rule":"An adjective takes the gender of the noun it modifies","example":"Describe the book as new. Use новый (new): Это ___ книга.","answer":"новая","explanation":"Книга is feminine, so the adjective ends in -ая: новая книга.","legacyAliases":[{"rule":"An adjective takes the gender of the noun it modifies","example":"Это ___ книга."}]} -->
 
 ---
 

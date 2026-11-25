@@ -3,6 +3,7 @@ import { addWord, saveWordsToVocabulary } from './words';
 import { normalizeGrammarCardSource, type GrammarCardSource } from '../lib/grammar-cards';
 import { captureTags, lessonTag, type CaptureCandidate } from '../lib/lesson-capture';
 import type { LessonReviewItem } from '../lib/lesson-review';
+import { reviewedGrammarLessonId } from '../lib/grammar-review-scope';
 import {
   lessonSourceSnapshot,
   mergeStoredCardMetadata,
@@ -25,6 +26,12 @@ export interface SaveLessonReviewResult {
 
 export interface ReconcileSavedLessonResult {
   repaired: number;
+}
+
+export interface RefreshLessonCounts {
+  updated: number;
+  unchanged: number;
+  skipped: number;
 }
 
 function itemSource(item: LessonReviewItem, lessonId: string): LessonItemSource {
@@ -97,8 +104,10 @@ async function reconcileExistingItem(
   match: Word,
   row: Omit<Word, 'id' | 'createdAt'>,
   item: LessonReviewItem,
+  preserveTags = false,
 ): Promise<boolean> {
   const updates = mergeStoredCardMetadata(match, row);
+  if (preserveTags) delete updates.tags;
   if (item.kind !== 'vocabulary') {
     const source = row.lessonSource!;
     const keepAuthoredSource = match.lessonSource?.provenance === 'authored' && source.provenance === 'legacy';
@@ -135,23 +144,52 @@ async function reconcileExistingItem(
  * Adopt/repair only cards already saved. Loading source material must never add
  * missing or previously declined items, create reviews, or award saving XP.
  */
-export async function reconcileSavedLessonItems(
+export function reconcileSavedLessonItems(
   items: LessonReviewItem[],
   language: string,
   lessonId: string,
-): Promise<ReconcileSavedLessonResult> {
-  let repaired = 0;
-  if (!items.length) return { repaired };
-  await db.transaction('rw', db.words, async () => {
-    const existing = await db.words.where('language').equals(language).toArray();
-    for (const item of items) {
-      if (item.provenance === 'custom' || item.learnerEdited) continue;
+): Promise<ReconcileSavedLessonResult>;
+export function reconcileSavedLessonItems(
+  items: LessonReviewItem[], language: string, lessonId: string, refreshWordIds: ReadonlySet<number>,
+): Promise<RefreshLessonCounts>;
+export async function reconcileSavedLessonItems(
+  items: LessonReviewItem[], language: string, lessonId: string, refreshWordIds?: ReadonlySet<number>,
+): Promise<ReconcileSavedLessonResult | RefreshLessonCounts> {
+  const counts = { updated: 0, unchanged: 0, skipped: refreshWordIds?.size ?? 0 };
+  if (!items.length) return refreshWordIds ? counts : { repaired: 0 };
+  return db.transaction('rw', db.words, async () => {
+    let repaired = 0;
+    const existing = refreshWordIds
+      ? await db.words.where('type').equals('grammar').filter((word) => word.language === language).toArray()
+      : await db.words.where('language').equals(language).toArray();
+    const sources = items.filter((item) => item.provenance !== 'custom' && !item.learnerEdited &&
+      (!refreshWordIds || item.kind !== 'vocabulary')).map((item) => {
       const row = itemWord(item, language, lessonId);
-      const match = existing.find((word) => sameStoredCard(word, row));
-      if (match && await reconcileExistingItem(match, row, item)) repaired++;
+      return { item, row, matches: existing.filter((word) => sameStoredCard(word, row)) };
+    });
+    // Resolve the entire lesson before writing: two sources sharing a legacy
+    // alias (or two saved rows claiming a source) must never transfer mastery.
+    const claims = new Map<Word, number>();
+    for (const { item, matches } of sources) {
+      if (item.kind !== 'vocabulary') for (const word of matches) claims.set(word, (claims.get(word) ?? 0) + 1);
     }
+    for (const { item, row, matches } of sources) {
+      const match = matches[0];
+      if (!match || (item.kind !== 'vocabulary' && (matches.length !== 1 || claims.get(match) !== 1))) continue;
+      if (refreshWordIds && (!refreshWordIds.has(match.id!) || reviewedGrammarLessonId(match) !== lessonId ||
+        !sourceWordingUnchanged(match) || match.lessonSource?.provenance === 'custom' ||
+        (match.lessonSource?.provenance === 'authored' && item.provenance === 'legacy'))) continue;
+
+      const before = refreshWordIds ? JSON.stringify(lessonSourceSnapshot(match)) : undefined;
+      if (await reconcileExistingItem(match, row, item, !!refreshWordIds)) repaired++;
+      if (refreshWordIds) {
+        counts.skipped--;
+        if (JSON.stringify(lessonSourceSnapshot(match)) === before) counts.unchanged++;
+        else counts.updated++;
+      }
+    }
+    return refreshWordIds ? counts : { repaired };
   });
-  return { repaired };
 }
 
 async function saveItems(

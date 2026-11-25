@@ -1,5 +1,7 @@
 # Russian Spelling Rules
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 Russian spelling follows a few strict rules that override the "expected" endings you might predict from grammar tables. These rules exist because of how certain consonants interact with certain vowels — some combinations are simply impossible in Russian. Understanding these rules is essential because they affect **noun plurals**, **adjective endings**, **verb conjugations**, and **case endings** throughout the language.
 
 ---
@@ -23,16 +25,16 @@ The normal nominative plural ending for feminine nouns is **-ы**. But when the 
 | **руба́шка** *(rubáshka)* — shirt | *рубашкы | **руба́шки** *(rubáshki)* | К + Ы → К + И |
 | **но́жка** *(nózhka)* — little leg | *ножкы | **но́жки** *(nózhki)* | К + Ы → К + И |
 
-<!-- vocab-card: {"id":"vocab-kniga","word":"кни́га","reading":"kníga","meaning":"book","priority":"essential","sourceSection":"1. The 7-Letter Rule"} -->
-<!-- vocab-card: {"id":"vocab-koshka","word":"ко́шка","reading":"kóshka","meaning":"cat","priority":"optional","sourceSection":"1. The 7-Letter Rule"} -->
-<!-- vocab-card: {"id":"vocab-rubashka","word":"руба́шка","reading":"rubáshka","meaning":"shirt","priority":"essential","sourceSection":"1. The 7-Letter Rule"} -->
-<!-- vocab-card: {"id":"vocab-nozhka","word":"но́жка","reading":"nózhka","meaning":"little leg","priority":"optional","sourceSection":"1. The 7-Letter Rule"} -->
+<!-- vocab-card: {"id":"vocab-kniga","word":"кни́га","reading":"kníga","meaning":"book","priority":"essential","sourceSection":"Why It Matters: Noun Plurals"} -->
+<!-- vocab-card: {"id":"vocab-koshka","word":"ко́шка","reading":"kóshka","meaning":"cat","priority":"optional","sourceSection":"Why It Matters: Noun Plurals"} -->
+<!-- vocab-card: {"id":"vocab-rubashka","word":"руба́шка","reading":"rubáshka","meaning":"shirt","priority":"essential","sourceSection":"Why It Matters: Noun Plurals"} -->
+<!-- vocab-card: {"id":"vocab-nozhka","word":"но́жка","reading":"nózhka","meaning":"little leg","priority":"optional","sourceSection":"Why It Matters: Noun Plurals"} -->
 
 Compare with a noun that does NOT end in one of the 7 letters:
 
 - **ла́мпа** *(lámpa)* — lamp → **ла́мпы** *(lámpy)* — lamps (П is not one of the 7, so Ы is fine)
 
-<!-- vocab-card: {"id":"vocab-lampa","word":"ла́мпа","reading":"lámpa","meaning":"lamp","priority":"essential","sourceSection":"1. The 7-Letter Rule"} -->
+<!-- vocab-card: {"id":"vocab-lampa","word":"ла́мпа","reading":"lámpa","meaning":"lamp","priority":"essential","sourceSection":"Why It Matters: Noun Plurals"} -->
 
 ### Why It Matters: Adjective Endings
 
@@ -44,11 +46,11 @@ The 7-letter rule also affects adjective endings. The masculine nominative endin
 - **ти́хий** *(tíkhiy)* — quiet (Х is one of the 7, so -ий)
 - **стро́гий** *(strógiy)* — strict (Г is one of the 7, so -ий)
 
-<!-- vocab-card: {"id":"vocab-novyy","word":"но́вый","reading":"nóvyy","meaning":"new","priority":"optional","sourceSection":"Adjective Endings"} -->
-<!-- vocab-card: {"id":"vocab-russkiy","word":"ру́сский","reading":"rússkiy","meaning":"Russian","priority":"optional","sourceSection":"Adjective Endings"} -->
-<!-- vocab-card: {"id":"vocab-khoroshiy","word":"хоро́ший","reading":"khoróshiy","meaning":"good","priority":"optional","sourceSection":"Adjective Endings"} -->
-<!-- vocab-card: {"id":"vocab-tikhiy","word":"ти́хий","reading":"tíkhiy","meaning":"quiet","priority":"essential","sourceSection":"Adjective Endings"} -->
-<!-- vocab-card: {"id":"vocab-strogiy","word":"стро́гий","reading":"strógiy","meaning":"strict","priority":"optional","sourceSection":"Adjective Endings"} -->
+<!-- vocab-card: {"id":"vocab-novyy","word":"но́вый","reading":"nóvyy","meaning":"new","priority":"optional","sourceSection":"Why It Matters: Adjective Endings"} -->
+<!-- vocab-card: {"id":"vocab-russkiy","word":"ру́сский","reading":"rússkiy","meaning":"Russian","priority":"optional","sourceSection":"Why It Matters: Adjective Endings"} -->
+<!-- vocab-card: {"id":"vocab-khoroshiy","word":"хоро́ший","reading":"khoróshiy","meaning":"good","priority":"optional","sourceSection":"Why It Matters: Adjective Endings"} -->
+<!-- vocab-card: {"id":"vocab-tikhiy","word":"ти́хий","reading":"tíkhiy","meaning":"quiet","priority":"essential","sourceSection":"Why It Matters: Adjective Endings"} -->
+<!-- vocab-card: {"id":"vocab-strogiy","word":"стро́гий","reading":"strógiy","meaning":"strict","priority":"optional","sourceSection":"Why It Matters: Adjective Endings"} -->
 
 **Ру́сский язы́к — краси́вый язы́к.** *(Rússkiy yazýk — krasívyy yazýk.)* — Russian is a beautiful language.
 
@@ -56,11 +58,11 @@ The 7-letter rule also affects adjective endings. The masculine nominative endin
 
 <!-- quiz:{"type":"multiple-choice","question":"What is the correct plural of кни́га (book)?","options":["книгы","книги","книге","книга"],"answer":1} -->
 
-<!-- grammar-card: {"id":"seven-letter-plural","kind":"rule","format":"cloze","priority":"essential","sourceSection":"1. The 7-Letter Rule","rule":"After к, г, х, ж, ч, ш and щ write и, never ы","hint":"кни́га → plural","example":"Хоро́шие ___ лежа́т на по́лке.","answer":"кни́ги","explanation":"The stem кни́г- ends in г, so the plural is кни́ги and never the expected книгы."} -->
+<!-- grammar-card: {"id":"seven-letter-plural","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Why It Matters: Noun Plurals","rule":"After к, г, х, ж, ч, ш and щ write и, never ы","example":"Say that good books are on the shelf. Use the plural of кни́га: Хоро́шие ___ лежа́т на по́лке.","answer":"кни́ги","explanation":"The stem кни́г- ends in г, so write -и rather than -ы in the plural.","legacyAliases":[{"rule":"After к, г, х, ж, ч, ш and щ write и, never ы","example":"Хоро́шие ___ лежа́т на по́лке."}]} -->
 
-<!-- grammar-card: {"id":"seven-letter-scope","kind":"concept","format":"qa","priority":"essential","sourceSection":"1. The 7-Letter Rule","rule":"The seven-letter ы → и rule does not include ц","example":"Which consonants trigger the seven-letter ы → и rule, and is ц one of them?","answer":"к, г, х, ж, ш, щ, ч; ц is not in this set.","explanation":"The rule changes ы to и after those seven consonants. Ц has separate spelling rules, so огурцы́ is not an exception to this set."} -->
+<!-- grammar-card: {"id":"seven-letter-scope","kind":"concept","format":"qa","priority":"essential","sourceSection":"1. The 7-Letter Rule (Правило семи букв)","rule":"The seven-letter ы → и rule does not include ц","example":"Which consonants trigger the seven-letter ы → и rule?","answer":"к, г, х, ж, ш, щ, ч; ц is not in this set.","explanation":"Ц has separate spelling rules, so огурцы́ (cucumbers) does not break the seven-letter rule.","legacyAliases":[{"rule":"The seven-letter ы → и rule does not include ц","example":"Which consonants trigger the seven-letter ы → и rule, and is ц one of them?"}]} -->
 
-<!-- grammar-card: {"id":"seven-letter-adjective","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Adjective Endings","rule":"The seven-letter rule also affects adjective endings","example":"A quiet house: ти́х___ дом. (-ый or -ий?)","answer":"ий","explanation":"The stem ends in х, so the masculine ending is -ий: ти́хий. The ending is a spelling pattern, not a vocabulary word."} -->
+<!-- grammar-card: {"id":"seven-letter-adjective","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Why It Matters: Adjective Endings","rule":"The seven-letter rule also affects adjective endings","example":"Describe a quiet house: ти́х___ дом.","answer":"ий","explanation":"After х the masculine adjective ending is spelled -ий, not -ый: ти́хий дом.","legacyAliases":[{"rule":"The seven-letter rule also affects adjective endings","example":"A quiet house: ти́х___ дом. (-ый or -ий?)"}]} -->
 
 ---
 
@@ -100,13 +102,13 @@ But when the same ending is **unstressed**, you write Е instead:
 
 The key is to check: **Is the ending stressed?** If yes → О is fine. If no → write Е.
 
-<!-- vocab-card: {"id":"vocab-nozh","word":"нож","reading":"nozh","meaning":"knife","priority":"optional","sourceSection":"2. The 5-Letter Rule"} -->
-<!-- vocab-card: {"id":"vocab-karandash","word":"каранда́ш","reading":"karandásh","meaning":"pencil","priority":"optional","sourceSection":"2. The 5-Letter Rule"} -->
-<!-- vocab-card: {"id":"vocab-muzh","word":"муж","reading":"muzh","meaning":"husband","priority":"optional","sourceSection":"2. The 5-Letter Rule"} -->
+<!-- vocab-card: {"id":"vocab-nozh","word":"нож","reading":"nozh","meaning":"knife","priority":"optional","sourceSection":"Stressed О Is Kept"} -->
+<!-- vocab-card: {"id":"vocab-karandash","word":"каранда́ш","reading":"karandásh","meaning":"pencil","priority":"optional","sourceSection":"Stressed О Is Kept"} -->
+<!-- vocab-card: {"id":"vocab-muzh","word":"муж","reading":"muzh","meaning":"husband","priority":"optional","sourceSection":"Unstressed О → Е"} -->
 
 <!-- quiz:{"type":"multiple-choice","question":"After ж, ш, ч, щ, ц — when do you write О in the ending?","options":["Always","Never","Only when the ending is stressed","Only when the ending is unstressed"],"answer":2} -->
 
-<!-- grammar-card: {"id":"five-letter-stress-condition","kind":"concept","format":"qa","priority":"essential","sourceSection":"2. The 5-Letter Rule","rule":"Stress determines о or е in these endings after ж, ш, ч, щ, ц","example":"In the noun and adjective endings taught here, how do you choose о or е after ж, ш, ч, щ, ц?","answer":"Write о when the ending vowel is stressed; write е when it is unstressed.","explanation":"Compare ножо́м with му́жем. This condition concerns the illustrated endings, not every vowel in a word's root."} -->
+<!-- grammar-card: {"id":"five-letter-stress-condition","kind":"concept","format":"qa","priority":"essential","sourceSection":"2. The 5-Letter Rule (Правило пяти букв)","rule":"Stress determines о or е in these endings after ж, ш, ч, щ, ц","example":"In the noun and adjective endings taught here, how do you choose о or е after ж, ш, ч, щ, ц?","answer":"Write о when the ending vowel is stressed; write е when it is unstressed.","explanation":"Compare ножо́м with му́жем. This condition concerns the illustrated endings, not every vowel in a word's root."} -->
 
 <!-- grammar-card: {"id":"five-letter-stressed-o","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Stressed О Is Kept","rule":"A stressed instrumental ending keeps о after ж","example":"With a knife: нож___м. (The ending is stressed.)","answer":"о́","explanation":"The instrumental is ножо́м. The stressed о is retained after ж."} -->
 
@@ -152,9 +154,11 @@ These exceptions are rare and mostly limited to foreign words and proper names.
 
 <!-- grammar-card: {"id":"ts-u-application","kind":"rule","format":"cloze","priority":"essential","sourceSection":"3. The Ц Rule","rule":"Write у rather than ю after ц in ordinary Russian endings","example":"To the father: отц___. (dative of оте́ц)","answer":"у́","explanation":"The dative is отцу́, with у after ц, not ю."} -->
 
-<!-- grammar-card: {"id":"ts-a-application","kind":"rule","format":"cloze","priority":"optional","sourceSection":"3. The Ц Rule","rule":"Write а rather than я after ц in ordinary Russian spellings","example":"Street: у́лиц___. (а or я?)","answer":"а","explanation":"У́лица ends in ца. This illustrates the а side of the цу/ца spelling rule."} -->
+<!-- grammar-card: {"id":"ts-a-application","kind":"rule","format":"cloze","priority":"optional","sourceSection":"3. The Ц Rule","rule":"Write а rather than я after ц in ordinary Russian spellings","example":"Finish the dictionary form for street: у́лиц___.","answer":"а","explanation":"Write -ца at the end of у́лица. The ordinary spelling after ц here is а, not я.","legacyAliases":[{"rule":"Write а rather than я after ц in ordinary Russian spellings","example":"Street: у́лиц___. (а or я?)"}]} -->
 
-<!-- grammar-card: {"id":"ts-rule-exceptions","kind":"concept","format":"qa","priority":"essential","sourceSection":"Exceptions","rule":"The цу/ца rule has rare borrowed-word and proper-name exceptions","example":"What replaces ю and я after ц in ordinary Russian spelling, and why can Цю́рих still contain ю?","answer":"Use у and а; rare borrowed words and proper names such as Цю́рих and Цявло́вский can retain ю or я.","explanation":"Keep the qualification with the rule. These named exceptions do not make ц part of the seven-letter ы → и set."} -->
+<!-- grammar-card: {"id":"rule-ts-u-a","kind":"concept","format":"qa","priority":"optional","sourceSection":"3. The Ц Rule","rule":"After ц, ordinary Russian spelling writes у and а, never ю or я","example":"In ordinary Russian words, what do you write after ц instead of ю, and instead of я?","answer":"у instead of ю; а instead of я.","explanation":"Both replacements are needed to count. отцу́ (to the father) and у́лица (street) follow the rule."} -->
+
+<!-- grammar-card: {"id":"ts-rule-exceptions","kind":"concept","format":"qa","priority":"essential","sourceSection":"Exceptions","rule":"The цу/ца rule has rare borrowed-word and proper-name exceptions","example":"You see Zurich written Цю́рих. Why isn't the ю a spelling mistake?","answer":"Borrowed names can keep ю after ц.","explanation":"Ordinary Russian spellings use у and а after ц. A few borrowings and names keep ю or я, as in Цю́рих and Цявло́вский.","legacyAliases":[{"rule":"The цу/ца rule has rare borrowed-word and proper-name exceptions","example":"What replaces ю and я after ц in ordinary Russian spelling, and why can Цю́рих still contain ю?"}]} -->
 
 ---
 
@@ -199,7 +203,7 @@ Adjective declension tables often seem to have different endings after different
 
 A helpful mnemonic for the 7 letters: **Г**де **Ж**е **Ш**ёл **Ч**ижик, **Щ**ипая **Х**леб с **К**олбасой? — Where did the siskin walk, nibbling bread with sausage? The highlighted initials give **Г, Ж, Ш, Ч, Щ, Х, К** — the seven-letter set in a different order. The connective **с** means “with”; it is not one of the mnemonic initials.
 
-<!-- grammar-card: {"id":"seven-letter-mnemonic","kind":"concept","format":"qa","priority":"optional","sourceSection":"5. Summary of All Three Rules","rule":"A mnemonic sentence helps recall the seven-letter consonant set","example":"Recall the siskin mnemonic for the seven-letter spelling rule, including its meaning and the initials it encodes.","answer":"Где Же Шёл Чижик, Щипая Хлеб с Колбасой? — Where did the siskin walk, nibbling bread with sausage? The mnemonic initials are Г, Ж, Ш, Ч, Щ, Х, К.","explanation":"Где → Г; Же → Ж; Шёл → Ш; Чижик → Ч; Щипая → Щ; Хлеб → Х; Колбасой → К. The connective с means with; it is not one of the mnemonic initials. These are the seven consonants к, г, х, ж, ш, щ, ч in a different order."} -->
+<!-- grammar-card: {"id":"seven-letter-mnemonic","kind":"concept","format":"qa","priority":"optional","sourceSection":"5. Summary of All Three Rules","rule":"A mnemonic sentence helps recall the seven-letter consonant set","example":"Which Russian sentence about a siskin helps you remember the seven-letter spelling rule?","answer":"Где Же Шёл Чижик, Щипая Хлеб с Колбасой?","explanation":"“Where did the siskin walk, nibbling bread with sausage?” Где → Г; Же → Ж; Шёл → Ш; Чижик → Ч; Щипая → Щ; Хлеб → Х; Колбасой → К. Skip с (“with”): it is not one of the seven initials.","legacyAliases":[{"rule":"A mnemonic sentence helps recall the seven-letter consonant set","example":"Recall the siskin mnemonic for the seven-letter spelling rule, including its meaning and the initials it encodes."}]} -->
 
 **Э́ти пра́вила ну́жно за́помнить.** *(Éti právila núzhno zápomnit'.)* — These rules must be memorized.
 

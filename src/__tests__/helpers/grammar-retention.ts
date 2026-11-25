@@ -137,7 +137,7 @@ export function lessonQuizPayloads(markdown: string): unknown[] {
     .map((match) => JSON.parse(match[1]) as unknown);
 }
 
-function fingerprintQuizzes(quizzes: readonly unknown[]): Pick<LegacyLesson, 'quizCount' | 'quizSha256'> {
+export function fingerprintQuizzes(quizzes: readonly unknown[]): Pick<LegacyLesson, 'quizCount' | 'quizSha256'> {
   return {
     quizCount: quizzes.length,
     quizSha256: createHash('sha256').update(stableJson(quizzes)).digest('hex'),
@@ -152,11 +152,12 @@ export function quizFingerprint(markdown: string): Pick<LegacyLesson, 'quizCount
 export function restoreApprovedQuizCorrections(
   quizzes: readonly unknown[],
   lessonKey: string,
+  corrections: readonly QuizCorrection[] = APPROVED_QUIZ_CORRECTIONS,
 ): { quizzes: unknown[]; errors: string[] } {
   const restored = [...quizzes];
   const errors: string[] = [];
   const positions = new Set<number>();
-  for (const correction of APPROVED_QUIZ_CORRECTIONS.filter((entry) => entry.lessonKey === lessonKey)) {
+  for (const correction of corrections.filter((entry) => entry.lessonKey === lessonKey)) {
     if (!Number.isInteger(correction.position) || correction.position < 1 ||
       positions.has(correction.position) || !correction.rationale.trim()) {
       errors.push(`${lessonKey}: invalid or duplicate approved quiz correction at position ${correction.position}`);

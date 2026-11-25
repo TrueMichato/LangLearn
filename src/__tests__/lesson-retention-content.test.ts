@@ -39,22 +39,34 @@ const PILOT: Record<string, (GrammarFixture | VocabularyFixture)[]> = {
     vocabulary('vocab-lampa', 'essential', 'ла́мпа', 'lamp', 'lámpa'),
     vocabulary('vocab-tikhiy', 'essential', 'ти́хий', 'quiet', 'tíkhiy'),
     vocabulary('vocab-koshka', 'optional', 'ко́шка', 'cat', 'kóshka'),
+    vocabulary('vocab-nozhka', 'optional', 'но́жка', 'little leg', 'nózhka'),
+    vocabulary('vocab-novyy', 'optional', 'но́вый', 'new', 'nóvyy'),
+    vocabulary('vocab-russkiy', 'optional', 'ру́сский', 'Russian', 'rússkiy'),
+    vocabulary('vocab-khoroshiy', 'optional', 'хоро́ший', 'good', 'khoróshiy'),
+    vocabulary('vocab-strogiy', 'optional', 'стро́гий', 'strict', 'strógiy'),
+    vocabulary('vocab-nozh', 'optional', 'нож', 'knife', 'nozh'),
+    vocabulary('vocab-karandash', 'optional', 'каранда́ш', 'pencil', 'karandásh'),
+    vocabulary('vocab-muzh', 'optional', 'муж', 'husband', 'muzh'),
+    vocabulary('vocab-ulitsa', 'optional', 'у́лица', 'street', 'úlitsa'),
+    vocabulary('vocab-tsaritsa', 'optional', 'цари́ца', 'tsarina', 'tsarítsa'),
+    vocabulary('vocab-ogurtsy', 'optional', 'огурцы́', 'cucumbers (plural)', 'ogurtsý'),
+    vocabulary('vocab-otets', 'optional', 'оте́ц', 'father', 'otéts'),
     vocabulary('vocab-pisat', 'optional', 'писа́ть', 'to write', "pisát'"),
     vocabulary('vocab-uchit', 'optional', 'учи́ть', 'to teach', "uchít'"),
     vocabulary('vocab-slyshat', 'optional', 'слы́шать', 'to hear', "slýshat'"),
     application('seven-letter-plural', 'essential',
-      'Хоро́шие ___ лежа́т на по́лке.', 'кни́ги'),
+      'Say that good books are on the shelf. Use the plural of кни́га: Хоро́шие ___ лежа́т на по́лке.', 'кни́ги'),
     concept('seven-letter-scope', 'essential',
-      'Which consonants trigger the seven-letter ы → и rule, and is ц one of them?',
+      'Which consonants trigger the seven-letter ы → и rule?',
       'к, г, х, ж, ш, щ, ч; ц is not in this set.'),
     {
       ...concept('seven-letter-mnemonic', 'optional',
-        'Recall the siskin mnemonic for the seven-letter spelling rule, including its meaning and the initials it encodes.',
-        'Где Же Шёл Чижик, Щипая Хлеб с Колбасой? — Where did the siskin walk, nibbling bread with sausage? The mnemonic initials are Г, Ж, Ш, Ч, Щ, Х, К.'),
-      explanation: 'Где → Г; Же → Ж; Шёл → Ш; Чижик → Ч; Щипая → Щ; Хлеб → Х; Колбасой → К. The connective с means with; it is not one of the mnemonic initials. These are the seven consonants к, г, х, ж, ш, щ, ч in a different order.',
+        'Which Russian sentence about a siskin helps you remember the seven-letter spelling rule?',
+        'Где Же Шёл Чижик, Щипая Хлеб с Колбасой?'),
+      explanation: '“Where did the siskin walk, nibbling bread with sausage?” Где → Г; Же → Ж; Шёл → Ш; Чижик → Ч; Щипая → Щ; Хлеб → Х; Колбасой → К. Skip с (“with”): it is not one of the seven initials.',
     },
     application('seven-letter-adjective', 'optional',
-      'A quiet house: ти́х___ дом. (-ый or -ий?)', 'ий'),
+      'Describe a quiet house: ти́х___ дом.', 'ий'),
     concept('five-letter-stress-condition', 'essential',
       'In the noun and adjective endings taught here, how do you choose о or е after ж, ш, ч, щ, ц?',
       'Write о when the ending vowel is stressed; write е when it is unstressed.'),
@@ -65,10 +77,16 @@ const PILOT: Record<string, (GrammarFixture | VocabularyFixture)[]> = {
     application('five-letter-ts-ending', 'optional', 'With a hare: за́йц___м.', 'е'),
     application('ts-u-application', 'essential',
       'To the father: отц___. (dative of оте́ц)', 'у́'),
-    application('ts-a-application', 'optional', 'Street: у́лиц___. (а or я?)', 'а'),
-    concept('ts-rule-exceptions', 'essential',
-      'What replaces ю and я after ц in ordinary Russian spelling, and why can Цю́рих still contain ю?',
-      'Use у and а; rare borrowed words and proper names such as Цю́рих and Цявло́вский can retain ю or я.'),
+    application('ts-a-application', 'optional', 'Finish the dictionary form for street: у́лиц___.', 'а'),
+    concept('rule-ts-u-a', 'optional',
+      'In ordinary Russian words, what do you write after ц instead of ю, and instead of я?',
+      'у instead of ю; а instead of я.'),
+    {
+      ...concept('ts-rule-exceptions', 'essential',
+        "You see Zurich written Цю́рих. Why isn't the ю a spelling mistake?",
+        'Borrowed names can keep ю after ц.'),
+      explanation: 'Ordinary Russian spellings use у and а after ц. A few borrowings and names keep ю or я, as in Цю́рих and Цявло́вский.',
+    },
     application('hushing-verb-u', 'optional', 'I write: я пиш___. (писа́ть)', 'у́'),
   ],
   'ja/taekim-verb-classification': [
@@ -327,6 +345,11 @@ for (const [lesson, fixtures] of Object.entries(PILOT)) {
 }
 
 describe('pilot lexical versus grammatical targets', () => {
+  it('offers precisely the reviewed spelling reference inventory, with no formatting spillover', () => {
+    const { items } = parseLessonReviewItems(LESSONS['../../public/content/grammar/ru/spelling-rules.md']);
+    expect(items.map((item) => item.id).sort()).toEqual(PILOT['ru/spelling-rules'].map((item) => item.id).sort());
+  });
+
   it('does not turn suffix applications or rejected Russian spellings into authored vocabulary', () => {
     const { items } = parseLessonReviewItems(
       LESSONS['../../public/content/grammar/ru/spelling-rules.md'],

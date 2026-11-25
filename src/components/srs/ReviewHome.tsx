@@ -4,6 +4,8 @@ import { useCurrentLanguage } from '../../hooks/useCurrentLanguage';
 import { getLanguageLabel } from '../../lib/languages';
 import { dueCards, getSavedCards, type SavedCard } from '../../lib/study-sets';
 import type { ReviewAttempt } from '../../lib/review-session';
+import { reviewedGrammarLessonId } from '../../lib/grammar-review-scope';
+import GrammarRefresh from './GrammarRefresh';
 import LanguagePicker from '../common/LanguagePicker';
 import StartingPoints from '../onboarding/StartingPoints';
 import StudySets from '../words/StudySets';
@@ -37,6 +39,7 @@ export default function ReviewHome({ onStart, showAll, onShowAll, focusSets }: P
 
   const scoped = cards?.filter(({ word }) => !language || word.language === language) ?? [];
   const due = dueCards(scoped).length;
+  const reviewedWords = scoped.map(({ word }) => word).filter((word) => reviewedGrammarLessonId(word));
   const label = language ? getLanguageLabel(language) : 'All saved languages';
   const primary = 'min-h-[44px] rounded-xl bg-indigo-600 px-5 py-2 font-semibold text-white hover:bg-indigo-700 disabled:cursor-not-allowed disabled:opacity-40';
   const secondary = 'min-h-[44px] rounded-xl border border-slate-300 dark:border-slate-600 px-5 py-2 font-medium text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-700 disabled:cursor-not-allowed disabled:opacity-40';
@@ -81,6 +84,7 @@ export default function ReviewHome({ onStart, showAll, onShowAll, focusSets }: P
           <p className="text-sm text-slate-500 dark:text-slate-400">Practice won't change your review dates. {scoped.length} saved card{scoped.length === 1 ? '' : 's'} available.</p>
         </section>
       )}
+      {reviewedWords.length > 0 && <GrammarRefresh words={reviewedWords} />}
       {cards && <StudySets language={language} onStart={onStart} />}
     </div>
   );

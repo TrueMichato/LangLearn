@@ -1,7 +1,5 @@
 import { useEffect } from 'react';
 
-const IGNORED_TAGS = new Set(['INPUT', 'TEXTAREA', 'SELECT']);
-
 export function useKeyboardShortcuts(
   shortcuts: Record<string, () => void>,
   enabled = true,
@@ -10,7 +8,12 @@ export function useKeyboardShortcuts(
     if (!enabled) return;
 
     function handler(e: KeyboardEvent) {
-      if (e.target instanceof HTMLElement && IGNORED_TAGS.has(e.target.tagName)) return;
+      if (e.defaultPrevented || e.isComposing || e.keyCode === 229 || e.repeat || e.ctrlKey || e.altKey || e.metaKey) return;
+      if (e.target instanceof HTMLElement) {
+        if (e.target.isContentEditable || e.target.closest('input, textarea, select')) return;
+        // Leave native activation (e.g. Space on a hint) to the focused control.
+        if ((e.key === ' ' || e.key === 'Enter') && e.target.closest('button, summary, a[href]')) return;
+      }
 
       const key = e.key === ' ' ? 'Space' : e.key;
       const normalised = key.length === 1 ? key.toLowerCase() : key;

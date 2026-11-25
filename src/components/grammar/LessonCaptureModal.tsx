@@ -4,6 +4,7 @@ import { findSavedLessonItems, saveLessonReviewItems } from '../../db/lesson-car
 import type { GrammarReviewItem, LessonReviewDiagnostic, LessonReviewItem, VocabularyReviewItem } from '../../lib/lesson-review';
 import { looksLikeSentence } from '../../lib/lesson-capture';
 import { getLanguageLabel } from '../../lib/languages';
+import { isReviewedGrammarLesson } from '../../lib/grammar-review-scope';
 import { rtlProps } from '../../lib/rtl';
 import { useXPStore } from '../../stores/xpStore';
 import WordLookupSheet from '../reader/WordLookupSheet';
@@ -42,6 +43,7 @@ export default function LessonCaptureModal({
   const panel = useRef<HTMLDivElement>(null);
   const opener = useRef<HTMLElement | null>(null);
   const id = useId();
+  const reviewedLesson = isReviewedGrammarLesson(language, lessonId);
 
   useEffect(() => {
     let active = true;
@@ -174,7 +176,7 @@ export default function LessonCaptureModal({
 
         <div className="flex-1 overflow-y-auto p-4">
           {mode === 'edit' && editorItem ? (
-            <LessonReviewEditor key={editorItem.id} item={editorItem} language={language}
+            <LessonReviewEditor key={editorItem.id} item={editorItem} language={language} lessonId={lessonId}
               onCancel={() => { setMode('choose'); setEditorItem(null); }}
               onCommit={(item) => {
                 rememberItem(item);
@@ -235,6 +237,9 @@ export default function LessonCaptureModal({
                   <h3 id={`${id}-${group}`} className="mb-1 font-semibold text-slate-800 dark:text-slate-100">
                     {group === 'vocabulary' ? 'Words and phrases' : 'Rules and concepts'}
                   </h3>
+                  {group === 'grammar' && reviewedLesson && members.some((item) => item.kind === 'concept') && (
+                    <p className="mb-1 text-xs text-slate-500 dark:text-slate-400">Rules to remember come back about half as often as other cards.</p>
+                  )}
                   <ul className="divide-y divide-slate-200/70 dark:divide-white/10">
                     {members.map((item) => {
                       const saved = savedIds?.has(item.id) ?? false;
@@ -256,14 +261,14 @@ export default function LessonCaptureModal({
                             <span className="mt-1 block text-xs text-slate-500 dark:text-slate-400">
                               {saved ? 'Already saved' : item.learnerEdited ? 'Your wording'
                                 : item.priority === 'essential' ? 'Essential' : 'Optional'}
-                              {' · '}{item.kind === 'vocabulary' ? 'Word or phrase' : item.kind === 'concept' ? 'Concept' : 'Rule application'}
+                              {' · '}{item.kind === 'vocabulary' ? 'Word or phrase' : item.kind === 'concept' ? (reviewedLesson ? 'Rule to remember' : 'Concept to remember') : 'Practice using a rule'}
                               {item.sourceSection && item.sourceSection !== lessonId && <> · {item.sourceSection}</>}
                             </span>
                           </span>
                         </label>
                         <details className="ml-7 mt-1">
                           <summary className="flex min-h-[44px] cursor-pointer items-center text-sm font-medium text-indigo-600 dark:text-indigo-400">Preview front and back</summary>
-                          <LessonReviewPreview item={item} language={language} />
+                          <LessonReviewPreview item={item} language={language} lessonId={lessonId} />
                         </details>
                         {!saved && <button type="button" disabled={saving || savedIds === null || checkError}
                           onClick={() => {

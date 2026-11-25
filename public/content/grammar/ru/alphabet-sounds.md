@@ -1,5 +1,7 @@
 # The Russian Alphabet & Sounds
 
+<!-- vocab-inventory: {"mode":"explicit"} -->
+
 The Russian alphabet, called the **Cyrillic alphabet** (кириллица), has **33 letters**. While some letters look familiar from Latin, many have completely different sounds — these "false friends" are the biggest trap for beginners. This lesson covers every letter, its sound, and the key distinctions you need to start reading Russian.
 
 ---
@@ -98,6 +100,8 @@ Each hard vowel has a soft counterpart: А↔Я, О↔Ё, У↔Ю, Э↔Е, Ы�
 
 <!-- quiz:{"type":"multiple-choice","question":"Which of these is a 'soft' vowel that palatizes the preceding consonant?","options":["А","О","Ю","Ы"],"answer":2} -->
 
+<!-- grammar-card: {"id":"rule-soft-vowel-partners","kind":"concept","format":"qa","priority":"optional","sourceSection":"Soft Vowels","rule":"Each hard vowel letter has a soft partner: а↔я, о↔ё, у↔ю, э↔е, ы↔и","example":"Hard and soft vowel letters come in pairs. Which soft letter is the partner of а, and which is the partner of у?","answer":"а → я; у → ю.","explanation":"Count it only if both partners are right. Яблоко and юбка begin with these soft letters."} -->
+
 ---
 
 ## 4. Consonants
@@ -134,8 +138,17 @@ Russian has two unique letters that produce **no sound** on their own but modify
 The soft sign makes the preceding consonant **soft** (palatalized). Compare:
 
 - **мат** *(mat)* — checkmate → **мать** *(mat')* — mother
-- **брат** *(brat)* — brother → **кровать** *(krovat')* — bed
+- **брат** *(brat)* — brother → **брать** *(brat')* — to take
 - **угол** *(ugol)* — corner → **уголь** *(ugol')* — coal
+
+<!-- vocab-card: {"id":"vocab-mat-checkmate","word":"мат","meaning":"checkmate","priority":"optional","sourceSection":"Мягкий знак (Ь) — Soft Sign"} -->
+<!-- vocab-card: {"id":"vocab-mat-mother","word":"мать","meaning":"mother","priority":"optional","sourceSection":"Мягкий знак (Ь) — Soft Sign"} -->
+<!-- vocab-card: {"id":"vocab-ugol-corner","word":"угол","meaning":"corner","priority":"optional","sourceSection":"Мягкий знак (Ь) — Soft Sign"} -->
+<!-- vocab-card: {"id":"vocab-ugol-coal","word":"уголь","meaning":"coal","priority":"optional","sourceSection":"Мягкий знак (Ь) — Soft Sign"} -->
+
+<!-- grammar-card: {"id":"soft-sign-sound","kind":"rule","format":"qa","priority":"essential","sourceSection":"Мягкий знак (Ь) — Soft Sign","rule":"A final ь can mark a soft consonant without adding a syllable","example":"Read мат (checkmate), then мать (mother). What changes in the final consonant sound?","answer":"The final т is hard in мат and soft in мать.","explanation":"In мать the tongue lifts toward the roof of the mouth for т. The ь adds no vowel of its own."} -->
+
+<!-- grammar-card: {"id":"rule-soft-sign-function","kind":"concept","format":"qa","priority":"essential","sourceSection":"Мягкий знак (Ь) — Soft Sign","rule":"The soft sign ь softens (palatalizes) the consonant before it and has no sound of its own","example":"What does ь do to the consonant written before it, and does it add a sound of its own?","answer":"It makes that consonant soft; it adds no sound.","explanation":"Count it if you say the consonant becomes soft (palatalized) and ь itself is silent. брат (brother) → брать (to take): only the т changes."} -->
 
 The soft sign is extremely common and can appear in the middle or end of a word.
 
@@ -151,7 +164,9 @@ Without the hard sign, the prefix consonant would merge with the vowel and be pa
 
 <!-- quiz:{"type":"multiple-choice","question":"What does the soft sign (Ь) do?","options":["It adds a vowel sound","It makes the preceding consonant soft (palatalized)","It makes the preceding consonant hard","It is silent and has no effect"],"answer":1} -->
 
-<!-- grammar-card: {"rule":"The hard sign Ъ separates a prefix from a following е, ё, ю or я","hint":"с + ел","example":"Он с___ел весь суп.","answer":"ъ","explanation":"Съел is the prefix с- plus ел, and the hard sign stops the ye-sound from merging into the prefix."} -->
+<!-- grammar-card: {"id":"rule-hard-sign-position","kind":"concept","format":"qa","priority":"optional","sourceSection":"Твёрдый знак (Ъ) — Hard Sign","rule":"The hard sign ъ is written between a consonant-ending prefix and a root that starts with е, ё, ю or я","example":"Where in a word is the hard sign ъ written?","answer":"Between a prefix ending in a consonant and a root starting with е, ё, ю or я.","explanation":"Count it if you name both the prefix boundary and the soft vowel after it. подъезд = под- + ъ + езд."} -->
+
+<!-- grammar-card: {"id":"prefix-hard-sign","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Твёрдый знак (Ъ) — Hard Sign","rule":"Write ъ between a consonant-ending prefix and е, ё, ю or я","example":"Join с- and ел to say he ate up all the soup: Он с___ел весь суп.","answer":"ъ","explanation":"In съел, ъ keeps the й sound at the start of ел after the prefix с-.","legacyAliases":[{"rule":"The hard sign Ъ separates a prefix from a following е, ё, ю or я","example":"Он с___ел весь суп."}]} -->
 
 ---
 

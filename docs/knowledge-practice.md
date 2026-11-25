@@ -287,6 +287,256 @@ guarantee that future prose is captured automatically. Human/model linguistic
 review is not native-speaker certification. This feature makes material
 reviewable; it is not measured proof of better long-term human retention.
 
+#### Russian pilot: audit the question before reading the answer
+
+Scope: Russian lessons 1–10 by index order. At `52dc334` their picker offered
+185 lexical and 35 grammar suggestions. These are **suggestions**, not cards
+saved, learners tested, or learning outcomes. For each candidate, hide the
+back. Ask a reviewer to answer, name the one decision being tested, and try to
+pass by copying the cue or giving an equally valid contrary answer. Then reveal:
+does the model answer the visible question, and does the reason explain *why
+this choice here*? Record the lesson/item ID, objective, acceptable alternatives
+and a decision: **keep, rewrite, make optional, or leave in the lesson**.
+Do not require an essential card or any lexical suggestions per lesson.
+
+| Lessons | What to check |
+| --- | --- |
+| 1 Alphabet; 2 Pronunciation; 3 Stress | Separate `мат` and `мать` and their meanings. Supplying written `б` in `хле___` is spelling; identifying the final [p] in `хлеб` is sound knowledge, not a recording of pronunciation. For stress, distinguish a castle (`за́мок`) from a lock (`замо́к`) by meaning; show `замок` without the mark on the front. Accept “first/second syllable” when placement is the target. |
+| 4 Spelling; 5 Cases | `ти́х___ дом` can test an ending; keep a mnemonic optional, not a second task. `У меня нет ___` + `кошка` elicits `кошки`. “Start with accusative and genitive” is advice, not vocabulary. |
+| 6 Aspect; 7 Gender | `Я ___ книгу` permits both `читал` and `прочитал`. Specify process or finished result **before** reveal. Retrieving `стол` for “table” does not demonstrate gender; `Это ___ комната` + `новый` elicits agreement (`новая`) without printing the answer. |
+| 8 Accusative; 9 Genitive; 10 Dative | Contrast `вижу стол` with `вижу брата`: copying `стол` alone is weak evidence. To test genitive, supply `нет` and elicit `машины`, not the reverse. Pair producing a recipient (`они` → `им`) with interpreting *who receives what*, rather than another paradigm to name. |
+
+**Why test both directions?** [Shintani, Li & Ellis](https://doi.org/10.1111/lang.12001)
+distinguish comprehension and production outcomes; neither is a proxy for the
+other. [Norris & Ortega](https://doi.org/10.1111/0023-8333.00136) inform focused
+instruction; [Kim & Webb](https://doi.org/10.1111/lang.12479) inform spaced
+practice. None establishes a typing advantage here. *The Language Learner’s
+Handbook* (§§9.3–9.5, 11.4–11.5, 11.6.3/11.6.6) and the archived community
+[natural methods](https://web.archive.org/web/20200303205501/https://www.reddit.com/r/languagelearning/comments/cgix54/learning_methods_101_natural_methods_xlong_post/),
+[linguistic methods](https://web.archive.org/web/20200303205457/https://www.reddit.com/r/languagelearning/comments/chsl3z/learning_methods_102_linguistic_methods_xlong_post/)
+and [wiki](https://web.archive.org/web/20201221080347/https://www.reddit.com/r/languagelearning/wiki/index)
+are practitioner references for meaningful context and focused recall, not
+controlled comparisons of these interfaces.
+
+#### Rule-recall cards
+
+**Why.** The pilot only practised *application* (produce or interpret a form).
+The rule itself appeared only after reveal, so learners never retrieved it.
+Rule cards add a compact explanation the learner can recall and then use to
+check and repair their own output. They supplement application cards; they
+don't replace them.
+
+**What.** A rule card is a `grammar-card` with an `id` prefixed `rule-`,
+`"kind":"concept"` and `"format":"qa"`. It uses the existing schema; there's
+no parser or DB change (spacing differs; see below). The front (`example`) asks one atomic
+question in one of three directions: trigger → rule (“After нет, which case?”
+→ genitive), example → reason (“Why is it воды in Здесь нет воды?”), or
+contrast (“Which past aspect leaves completion open?”). The answer is short
+and self-graded; `explanation` ties it to a real form and says what paraphrase
+counts. Where possible a card shares `sourceSection` with the application card
+that practises the same rule; that pairing is advisory, but `sourceSection` must
+be a real heading in the section that teaches the rule, not a summary or
+reference section. Aim for 2–4 per lesson, 1–2 `essential`. In reviewed
+lessons Review labels these cards “Recall the rule”, and the lesson picker
+separates *Rule to remember* from *Practice using a rule*. After this change,
+Russian lessons 1–10 offer 38 lexical suggestions and 75 grammar items
+(40 application, 35 rule recall), all authored and parsed with no diagnostics.
+`russian-grammar-pilot.test.ts` checks that every rule card is concept + qa,
+hides its own answer, sits under a real heading, and doesn't show on its front
+a one-word Russian answer of another card in the same lesson. Only
+`rule-hard-sign-position` (ъ) and `rule-final-devoicing` (б) are exempt.
+
+**Don't** put the answer, or a stress mark that gives it away, in the prompt
+or `hint`. Don't offer a two-way choice whose answer is one of the options
+(“present or future?”). Don't show a form that another card asks the learner
+to produce: ask trigger → rule instead (“Which aspect presents a past action as
+completed?”), or pick an example form no card targets. Don't ask for a recited paragraph, a whole table or an open set:
+split paradigms into cells. Don't test terminology the lesson doesn't treat as
+the point, or require the lesson's exact wording. Don't teach anything the
+lesson doesn't. Never reuse or edit an existing card's ID, wording or
+`legacyAliases`.
+
+**Evidence: empirical.** Meta-analyses find explicit instruction effective:
+[Norris & Ortega 2000](https://doi.org/10.1111/0023-8333.00136) (49 studies)
+and [Spada & Tomita 2010](https://doi.org/10.1111/j.1467-9922.2010.00562.x)
+(41 studies, controlled knowledge and spontaneous use). They study *teaching*,
+not memorizing rule cards, and mostly use controlled outcome measures. Skill
+acquisition theory, as summarized by Suzuki & DeKeyser (in press; preprint,
+read secondhand), treats declarative knowledge as the starting point that
+deliberate practice proceduralizes. Links between rule knowledge and
+proficiency are weak to moderate and correlational:
+[Alderson, Clapham & Steel 1997](https://doi.org/10.1177/136216889700100202)
+found a weak relationship; [Roehr 2008](https://doi.org/10.1093/applin/amm037)
+reports moderate correlations. Retrieval practice beats restudy at a delay
+([Roediger & Karpicke 2006](https://doi.org/10.1111/j.1467-9280.2006.01693.x)),
+recall beats recognition and feedback matters
+([Rowland 2014](https://doi.org/10.1037/a0037559)). Those materials were not
+grammar rules, so this supports remembering the statement, not using it.
+
+**Evidence: practitioner.** Wozniak's
+[Twenty rules of formulating knowledge](https://www.supermemo.com/en/blog/twenty-rules-of-formulating-knowledge)
+(understand before memorizing; minimum information; avoid sets and
+enumerations) is expert opinion, not controlled or L2-specific. *The Language
+Learner's Handbook* warns “Do not rely on memorising grammar rules” and treats
+rules as a stepping-stone to meaning in context. Its own grammar flashcards
+are application cards, which is why rule cards stay few and paired.
+
+**Spacing.** Rule-recall cards (`isRuleRecallCard`: concept cards from lessons
+that have passed the review contract) come back about half as often as other
+review cards. After a successful recall, the time until the next review is
+doubled (`RULE_CARD_INTERVAL_MULTIPLIER` in `src/db/reviews.ts`). The rationale
+is the weak link above between knowing a rule and using it: review time is
+better spent on application and comprehension. The factor of 2 is a design
+choice, not a value taken from a study. Failed recalls aren't stretched, so
+relearning runs at normal speed. Only the due date changes; the scheduler's
+stored interval, stability and difficulty stay unscaled, so spacing doesn't
+compound and the 21-day maturity thresholds count passes as before. Existing
+due dates aren't migrated: the new spacing applies from each card's next grade.
+Concept cards in lessons that haven't been reviewed keep normal spacing, because
+some of them are application questions. Schedule-free practice is unaffected.
+
+**Limitation.** Recalling a rule is not using it. There is no learner evidence
+yet that these cards help comprehension or production in this app.
+
+#### Facilitator sheet: does offering typing help on new sentences?
+
+Run this outside the app with individual volunteers who can read basic
+Cyrillic. Use slips or show one **prompt only** at a time. Keep models and the
+entire delayed check out of sight. Explain that the exercise compares practice
+methods, not people; no recording, account, or Cyrillic keyboard is needed.
+Learners may skip, stop, or decline notes. Do not collect names, raw attempts,
+keystrokes or audio; use anonymous local tally marks only.
+
+1. **Assign before practice.** Shuffle four slips: Say/Think + Aspect first,
+   Say/Think + Dative first, Type offered + Aspect first, Type offered + Dative
+   first. Deal without replacement; reshuffle for each four volunteers. Each
+   person stays in one mode and does **both** sets. The comparison is the offer
+   of typing, not self-selected typists versus non-typists.
+2. **Practise once per row.** In Say/Think, say or think the target, then reveal.
+   In Type offered, invite the learner to type the target in an offline,
+   non-saving field (no cloud keyboard or dictation) or say/think instead.
+   Leave their attempt beside the model for reveal,
+   then clear it. In both modes, show the same model and reason, let the learner
+   self-grade just the target, and move on without extra repetitions. Use the
+   same optional hints on request: “Result or process?” or “Who gets it?”
+   No forced typing, hints that print the answer, or automatic string grading.
+3. **Return after 48 hours** without rehearsing these items; note the actual
+   interval and any intervening practice. Give the unseen check below in the
+   assigned set order, with no hints, models or feedback until the end.
+   Test both groups the same way: invite a short spoken answer, or handwriting
+   if preferred (choose the accessible test method before assignment). English
+   or pointing to the person suffices for an interpretation. Do not require
+   anyone to type to demonstrate transfer.
+
+**Practice cards.** For aspect production, give both infinitives: `читать /
+прочитать` (read). For dative production, give the dictionary form in the cue.
+For aspect interpretation ask “Does this tell us they finished, or is that left
+open?” For dative interpretation ask “Who receives the object?”
+
+| Set / task | Prompt | Reveal and reason |
+| --- | --- | --- |
+| Aspect · produce | Vera finished the letter. `Вера ___ письмо.` | `прочитала` presents the reading as completed. |
+| Aspect · produce | Anton was reading when interrupted halfway through. `Антон ___ книгу.` | `читал` describes the ongoing reading. |
+| Aspect · interpret | `Ира читала статью.` (статья = article) | Left open: `читала` says she was reading, not that she reached the end. |
+| Aspect · interpret | `Павел прочитал рассказ.` (рассказ = story) | Finished: `прочитал` presents a completed reading. |
+| Dative · produce | Oleg gave his brother a map. `Олег дал ___ карту.` (брат) | `брату`: the brother receives the map. |
+| Dative · produce | Nina gave her sister a key. `Нина дала ___ ключ.` (сестра) | `сестре`: the sister receives the key. |
+| Dative · interpret | `Мише Лена дала билет.` (билет = ticket) | Misha: `Мише` marks the recipient, even at the start. |
+| Dative · interpret | `Игорь дал Оле книгу.` (книга = book) | Olya: `Оле` marks the recipient; Igor is the giver. |
+
+**Held-out check and key (facilitator only).** Use the same two interpretation
+questions as in practice. For production give the cues shown; do not show the
+key. Give `писать / написать` (write) on both aspect production items.
+
+| Set / task | Unseen prompt | Credit for |
+| --- | --- | --- |
+| Aspect · produce | Viktor was writing when interrupted halfway through. `Виктор ___ письмо.` | `писал`: ongoing writing, not `написал`. |
+| Aspect · produce | Katya finished writing the note. `Катя ___ записку.` | `написала`: completed writing, not `писала`. |
+| Aspect · interpret | `Максим написал отчёт.` (отчёт = report) | Finished / “he got it written.” |
+| Aspect · interpret | `Зоя писала объявление.` (объявление = notice) | Left open / “she was writing; we don't know if she finished.” Not “she definitely didn't finish.” |
+| Dative · produce | Natasha gave her friend a ticket. `Наташа дала ___ билет.` (подруга) | `подруге`, including `своей подруге`; not `подруга`. |
+| Dative · produce | Boris gave his neighbor a map. `Борис дал ___ карту.` (сосед) | `соседу`, including `своему соседу`; not `соседа`. |
+| Dative · interpret | `Соня дала Диме ручку.` (ручка = pen) | Dima / Dmitry / `Диме`; not Sonya. |
+| Dative · interpret | `Тане Роман дал журнал.` (журнал = magazine) | Tanya / Tatyana / `Тане`; not Roman. |
+
+**Score the target, not the transcript.** On each attempted item mark 1 for
+the stated distinction, 0 if absent or contrary; mark a skip/unobservable
+response separately. For production require an identifiable inflected attempt,
+not pointing to or copying an infinitive. On an aspect item `написал` for
+Katya earns aspect credit despite the agreement slip; on a case item `sosedu`
+is enough to identify the dative. Ignore stress, capitalization, unrelated
+words and spelling slips that leave the target clear. Accept equivalent meaning
+without terminology on interpretation. Apply the same rule in both groups;
+flag an ambiguous key for review rather than imposing exact match.
+
+**Tally and decision.** For each assigned mode and set order, record volunteers
+assigned/returned, test method and interval. Report **production and
+interpretation separately**: per person and condition, correct / attempted out
+of four offered for each skill, with skips and missing follow-ups visible.
+If you also ask a learner to state a rule (for example “after нет, which
+case?”), tally rule recall as a third, separate score; it earns no production
+or interpretation credit.
+Keep a separate practice tally: hints, skips, typing taken up/declined, and
+reported friction (none / manageable / blocked; e.g. keyboard or composition).
+Invite an optional comment about what got in the way; tally themes, not quotes.
+Ease, speed, self-grades, and practising a familiar sentence are not transfer.
+This is a protocol, not a result: a small voluntary sample and two objectives
+at one delay cannot establish fluency, pronunciation, long-term retention, or
+an effect in another language. Keep **say/think as the default, typing
+optional**. Only reconsider with a consistent held-out benefit across repeated
+balanced groups and orders, no meaningful loss on the other skill, and
+acceptable friction. If sparse, mixed, tied, or driven by who returned, report
+that rather than changing the default.
+
+#### Gates before extending the pilot
+
+A lesson gets the reviewed treatment (optional hints, rule-recall labels, the
+typed-attempt option, explicit wording refresh and offline precache) only once
+its ID is listed in `src/lib/grammar-reviewed/{lang}.ts`, checked by
+`isReviewedGrammarLesson` / `reviewedGrammarLessonId` in
+`src/lib/grammar-review-scope.ts`. Each language has its own list so rollouts
+don't conflict. Add a lesson only after it passes the authoring contract and
+the content checks below.
+
+**Rollout decision.** The maintainer chose to extend the reviewed treatment
+across all six languages without first running the learner comparison or
+getting qualified native-speaker sign-off. Gates 1–3 are therefore
+recommended checks, not completed ones. Listing a lesson means it was
+re-authored and checked against the contract and its tests; it doesn't mean a
+native speaker approved it or that learners did better. Say/think stays the
+default answer mode, with typing optional, because no evidence supports
+changing it.
+
+1. **Russian 1–10 first.** Have a qualified Russian reviewer assess the fronts,
+   valid alternatives and reveals against the audit above, including whether
+   each rule card is accurate, atomic and not given away. Report any learner
+   result for rule recall separately from comprehension and production.
+   Independently check
+   lexical inventories (including deliberate zero), stable IDs and exact old
+   aliases for unchanged targets. A new target must not inherit mastery. Verify
+   on clean and edited decks: explicit save, preview/Review agreement, offline
+   revisit, backup/restore, intact personal wording and schedules. Check touch,
+   keyboard, screen-reader access and non-Russian legacy cards. Passing tests
+   is not a learner result or a native-speaker certification.
+2. **Remaining 37 Russian lessons next**, in reviewed batches, only after the
+   content, deck-safety and learner-experience gates. Record which lessons and
+   objectives actually passed and what remains untested. Never delete old
+   learner-owned cards as catalog cleanup.
+3. **Sample beginners' lessons in each other language before expanding.** The
+   508 inventories above protect existing material; they do not certify this
+   pilot or justify a rewrite. Retain sound items. Start with the regression
+   samples below. Each batch needs language-qualified review, script/input and
+   legacy checks, and its own learner evidence for any change of default.
+   These are samples and rollout gates, not approval or completed rollout.
+
+| Source lesson / item ID | What must survive; what to try |
+| --- | --- |
+| [Japanese: particles](../public/content/grammar/ja/particles.md) · `topic-marker` | The particle is written は but pronounced *wa*. Distinguish selecting the written particle from giving its reading; composing and confirming kana/kanji with an IME must not reveal or grade the card. |
+| [Arabic: script](../public/content/grammar/ar/arabic-script.md) · `six-non-connectors` | In RTL text, ا، د، ذ، ر، ز، و break the connection to the next letter **on the left**. Check mixed-direction prompts and answers visually and when read aloud. In each sample, name the intended variety/dialect and decide whether vocalization is actually the target. |
+| [Spanish: present -ar](../public/content/grammar/es/present-ar.md) · `ar-vosotros` | With explicit `vosotros`, the form is `habláis`; `ustedes hablan` expresses the plural in other regional contexts, not in this blank. Preserve that cue; distinguish accent recall from difficulty entering an accent. |
+| [Portuguese: present -ar](../public/content/grammar/pt/present-ar.md) · `ar-singular` | `A gente fala` means “we speak” with singular agreement. Don't require the ending for `nós` after `a gente`. Check Brazilian/European usage in context and whether a phone keyboard makes accent entry the actual task. |
+| [Romanian: a fi and a avea](../public/content/grammar/ro/present-a-fi-avea.md) · `este-e-register` | Both `Ea e acasă` and `Ea este acasă` are valid; don't mark everyday `e` wrong for not matching `este`. Check entry of ă/â/î/ș/ț separately from recognition of register. |
+
 ## Coverage is vocabulary, not comprehension
 
 Reader and full song lyrics count both familiar **word occurrences** and

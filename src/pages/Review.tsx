@@ -1,6 +1,6 @@
 import { useEffect, useState, useCallback, useRef } from 'react';
 import { useNavigate, useSearchParams } from 'react-router-dom';
-import { useReviewStore, type PracticeMode } from '../stores/reviewStore';
+import { useReviewStore, type PracticeMode, type QueueItem } from '../stores/reviewStore';
 import { useTimerStore } from '../stores/timerStore';
 import { useSettingsStore } from '../stores/settingsStore';
 import { useStudySetsStore } from '../stores/studySetsStore';
@@ -20,6 +20,8 @@ import PracticeModeSelector from '../components/srs/PracticeModeSelector';
 import { SkeletonFlashcard } from '../components/common/Skeleton';
 import type { SM2Grade } from '../lib/sm2';
 import { useKeyboardShortcuts } from '../hooks/useKeyboardShortcuts';
+import { hasBlank } from '../lib/grammar-cards';
+import { isRuleRecallCard } from '../lib/grammar-review-scope';
 
 const MODE_KEY = 'langlearn-practice-mode';
 const MODES: PracticeMode[] = ['word-to-meaning', 'meaning-to-word', 'random', 'both'];
@@ -28,9 +30,24 @@ const MODE_LABELS: Record<PracticeMode, string> = {
 };
 const TYPE_LABELS = {
   classic: 'Classic', reverse: 'Reverse', listening: 'Listening', 'multiple-choice': 'Pick the meaning',
-  cloze: 'Fill in the blank', grammar: 'Grammar', study: 'Study',
+  cloze: 'Fill in the blank', study: 'Study',
 };
 const secondary = 'min-h-[44px] rounded-xl border border-slate-300 dark:border-slate-600 px-4 py-2 font-medium text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-700';
+
+export function ReviewCardDirection({ current, mode, disabled, onChange }: {
+  current: QueueItem; mode: PracticeMode | null; disabled: boolean; onChange: () => void;
+}) {
+  if (current.cardType === 'grammar') {
+    const { grammarFormat, grammarKind, contextSentence } = current.word;
+    return <span className="text-sm font-medium text-slate-600 dark:text-slate-300">
+      {grammarFormat !== 'qa' && hasBlank(contextSentence) ? 'Complete the blank' : grammarKind === 'concept' ? (isRuleRecallCard(current.word) ? 'Recall the rule' : 'Recall the concept') : 'Answer the question'}
+    </span>;
+  }
+  return <button disabled={disabled} onClick={onChange}
+    className="min-h-[44px] rounded-xl px-2 text-left text-xs font-medium text-indigo-600 dark:text-indigo-400 hover:bg-slate-100 dark:hover:bg-slate-700">
+    {MODE_LABELS[mode ?? 'word-to-meaning']} · Change direction
+  </button>;
+}
 
 function rememberedDirection(): PracticeMode {
   try {
@@ -52,6 +69,7 @@ export default function ReviewPage() {
   const [error, setError] = useState('');
   const [gradeError, setGradeError] = useState('');
   const [showDirection, setShowDirection] = useState(false);
+  const [writingGrammar, setWritingGrammar] = useState(false);
   const [changingDirection, setChangingDirection] = useState(false);
   const [showAll, setShowAll] = useState(false);
   const [retention, setRetention] = useState<{ percent: number; reviewCount: number } | null>(null);
@@ -67,6 +85,7 @@ export default function ReviewPage() {
     setError('');
     setGradeError('');
     setShowDirection(false);
+    setWritingGrammar(false);
     setChangingDirection(false);
     useReviewStore.getState().reset();
     try {
@@ -236,20 +255,20 @@ export default function ReviewPage() {
           className="min-h-[44px] shrink-0 rounded-xl px-3 text-sm text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-700">Exit</button>
       </header>
       <div className="mb-3 flex items-center justify-between gap-2">
-        <button disabled={isGrading || changingDirection} onClick={() => setShowDirection(true)}
-          className="min-h-[44px] rounded-xl px-2 text-left text-xs font-medium text-indigo-600 dark:text-indigo-400 hover:bg-slate-100 dark:hover:bg-slate-700">{MODE_LABELS[practiceMode ?? 'word-to-meaning']} · Change direction</button>
+        <ReviewCardDirection current={current} mode={practiceMode} disabled={isGrading || changingDirection} onChange={() => setShowDirection(true)} />
         <span className="shrink-0 text-sm text-slate-500 dark:text-slate-400">{currentIndex + 1} / {queue.length}</span>
       </div>
       <div aria-hidden="true" className="mb-4 h-2 overflow-hidden rounded-full bg-slate-200 dark:bg-slate-700">
         <div className="h-full rounded-full bg-indigo-600 dark:bg-indigo-400 transition-[width] duration-300" style={{ width: `${currentIndex / queue.length * 100}%` }} />
       </div>
-      <p className="mb-2 text-center text-xs text-slate-500 dark:text-slate-400">{TYPE_LABELS[current.cardType]}</p>
+      {current.cardType !== 'grammar' && <p className="mb-2 text-center text-xs text-slate-500 dark:text-slate-400">{TYPE_LABELS[current.cardType]}</p>}
       <div key={`${useReviewStore.getState().sessionId}-${currentIndex}-${practiceMode}`} inert={isGrading} aria-busy={isGrading}>
         {current.cardType === 'study' && <StudyCard word={current.word} />}
         {current.cardType === 'classic' && <Flashcard word={current.word} isFlipped={isFlipped} onFlip={useReviewStore.getState().flip} />}
         {current.cardType === 'reverse' && <ReverseCard word={current.word} isFlipped={isFlipped} onFlip={useReviewStore.getState().flip} />}
         {current.cardType === 'listening' && <ListeningCard word={current.word} isFlipped={isFlipped} onFlip={useReviewStore.getState().flip} />}
-        {current.cardType === 'grammar' && <GrammarCard word={current.word} isFlipped={isFlipped} onFlip={useReviewStore.getState().flip} />}
+        {current.cardType === 'grammar' && <GrammarCard word={current.word} isFlipped={isFlipped} onFlip={useReviewStore.getState().flip}
+          writing={writingGrammar} onWritingChange={setWritingGrammar} />}
         {current.cardType === 'multiple-choice' && <MultipleChoiceCard word={current.word} distractors={current.distractors!} onGrade={onGrade} />}
         {current.cardType === 'cloze' && <ClozeCard word={current.word} onGrade={onGrade} />}
         {canGrade && <GradeButtons onGrade={onGrade} />}

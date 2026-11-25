@@ -1,6 +1,29 @@
-import { db, type Review } from './schema';
+import { db, type Review, type Word } from './schema';
 import { sm2, type SM2Grade } from '../lib/sm2';
 import { fsrs, mapGradeToRating, type FSRSState } from '../lib/fsrs';
+import { isRuleRecallCard } from '../lib/grammar-review-scope';
+
+/**
+ * After a successful recall, rule-recall cards wait this many times longer than
+ * the scheduler's interval. A design choice, not a study-backed number: knowing a
+ * rule is only weakly linked to using it, so rule recall gets less review time
+ * than practice. LessonCaptureModal describes it as "about half as often".
+ */
+export const RULE_CARD_INTERVAL_MULTIPLIER = 2;
+
+function daysUntilNextReview(intervalDays: number, grade: SM2Grade, word: Word | undefined): number {
+  // Failures relearn at normal speed.
+  if (grade < 3 || !word || !isRuleRecallCard(word)) return intervalDays;
+  return Math.round(intervalDays * RULE_CARD_INTERVAL_MULTIPLIER);
+}
+
+/** Days between the last review and the next one, as actually scheduled. */
+export function scheduledGapDays(review: Review): number {
+  // Reset or never-graded cards keep an old/creation lastReviewDate; trust interval there.
+  if (review.interval <= 0 || !review.lastReviewDate) return review.interval;
+  const gap = Math.round((Date.parse(review.nextReviewDate) - Date.parse(review.lastReviewDate)) / 86_400_000);
+  return Number.isFinite(gap) ? Math.max(0, gap) : review.interval;
+}
 
 export interface ProcessReviewOptions {
   scheduler?: 'sm2' | 'fsrs';
@@ -23,8 +46,13 @@ export async function processReview(
 ): Promise<Review> {
   const review = await db.reviews.get(reviewId);
   if (!review) throw new Error(`Review ${reviewId} not found`);
+  const word = await db.words.get(review.wordId);
 
   const now = new Date();
+  // Rule-card stretching touches only nextReviewDate. `interval` (and FSRS
+  // stability/difficulty) stay the scheduler's own values: SM-2 multiplies the
+  // stored interval and FSRS warm-starts from it, so storing the stretched gap
+  // would compound every pass. FSRS reads real elapsed days, so it accounts for the later review.
   let updated: Review;
 
   if (opts.scheduler === 'fsrs') {
@@ -51,7 +79,7 @@ export async function processReview(
 
     const result = fsrs(prev, mapGradeToRating(grade), elapsedDays, opts.requestRetention);
     const nextDate = new Date(now);
-    nextDate.setDate(nextDate.getDate() + result.intervalDays);
+    nextDate.setDate(nextDate.getDate() + daysUntilNextReview(result.intervalDays, grade, word));
 
     updated = {
       ...review,
@@ -70,7 +98,7 @@ export async function processReview(
     );
 
     const nextDate = new Date(now);
-    nextDate.setDate(nextDate.getDate() + result.interval);
+    nextDate.setDate(nextDate.getDate() + daysUntilNextReview(result.interval, grade, word));
 
     updated = {
       ...review,
@@ -84,7 +112,6 @@ export async function processReview(
 
   await db.reviews.put(updated);
 
-  const word = await db.words.get(review.wordId);
   await db.reviewLog.add({
     reviewId,
     wordId: review.wordId,
