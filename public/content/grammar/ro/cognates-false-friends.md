@@ -128,7 +128,6 @@ Two common false friends involve personality.
 <!-- quiz: {"type":"multiple-choice","question":"How do you say 'a sensible idea' in Romanian?","options":["o idee sensibilă","o idee simpatică","o idee rezonabilă","o idee actuală"],"answer":2} -->
 
 <!-- vocab-card: {"id":"vocab-rezonabil","priority":"essential","sourceSection":"Simpatic and Sensibil","word":"rezonabil","meaning":"sensible; reasonable"} -->
-<!-- grammar-card: {"id":"personality-false-friend-contrast","priority":"essential","sourceSection":"Simpatic and Sensibil","kind":"rule","format":"qa","rule":"Simpatic, sensibil, and rezonabil express different qualities","example":"Which Romanian words mean likeable, sensitive, and sensible respectively?","answer":"simpatic = likeable; sensibil = sensitive; rezonabil = sensible or reasonable.","explanation":"Profesorul este simpatic (nice), Copilul este sensibil (sensitive), Este o idee rezonabilă (sensible). Sensibil never means sensible."} -->
 <!-- grammar-card: {"id":"sensible-idea-application","priority":"optional","sourceSection":"Simpatic and Sensibil","kind":"rule","format":"cloze","rule":"Rezonabil translates sensible in this context","example":"Este o idee ___. (It is a sensible idea.)","answer":"rezonabilă","explanation":"The feminine adjective rezonabilă agrees with idee. Sensibilă would mean sensitive, not sensible."} -->
 
 ## Strategy for Cognates

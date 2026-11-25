@@ -42,29 +42,29 @@ function mutate(markdown: string, id: string, patch: Record<string, unknown> | n
   return result;
 }
 
-it('can validate another language against exact shared frozen pairs without registering a retirement', () => {
+it('accepts only the frozen Romanian false-friend retirement and forbids transferring its identity', () => {
   const lessonKey = 'ro/cognates-false-friends';
   const itemId = 'personality-false-friend-contrast';
-  const baseline = legacy[lessonKey];
-  const identities = baseline.grammarPairs.filter((pair) => pair.authoredId === itemId)
-    .map(({ rule, example }) => ({ rule, example }));
   const key = `${lessonKey}/${itemId}`;
-  const records = {
-    [key]: {
-      reason: 'Mutation test for cross-language exact-pair support, not a registered source retirement.',
-      replacements: ['vocab-rezonabil'],
-      identities,
-    },
-  };
-  const modified = mutate(romanianLesson, itemId, null);
-  expect(validateLegacyLesson(modified, baseline, lessonKey, records)).toEqual([]);
-  expect(validateLegacyLesson(modified, baseline, lessonKey).join('\n')).toContain(`lost existing authored ID "${itemId}"`);
-  expect(validateLegacyLesson(modified, baseline, lessonKey, {
-    [key]: { ...records[key], identities: [{ rule: 'Invented rule', example: 'Invented example' }] },
+  const retirement = GRAMMAR_RETIREMENTS[key];
+  const check = (markdown: string, records?: GrammarRetirements) =>
+    validateLegacyLesson(markdown, legacy[lessonKey], lessonKey, records);
+
+  expect(check(romanianLesson)).toEqual([]);
+  const unapproved = check(romanianLesson, {}).join('\n');
+  expect(unapproved).toContain(`lost existing authored ID "${itemId}"`);
+  expect(unapproved).toContain(`lost legacy identity for "${itemId}"`);
+  expect(check(romanianLesson, {
+    [key]: { ...retirement, identities: [{ rule: 'Invented rule', example: 'Invented example' }] },
   }).join('\n')).toContain('retirement identities must match the exact frozen shipped pairs');
+
+  const replacement = 'sensible-idea-application';
+  const transferred = mutate(romanianLesson, replacement, { legacyAliases: retirement.identities });
+  expect(check(transferred)).toContain(`${itemId}: retired identity transferred to "${replacement}"`);
 });
 
-describe.each(Object.entries(GRAMMAR_RETIREMENTS))('exact source retirement %s', (key, retirement) => {
+const arabicRetirements = Object.entries(GRAMMAR_RETIREMENTS).filter(([key]) => key.startsWith('ar/'));
+describe.each(arabicRetirements)('exact source retirement %s', (key, retirement) => {
   const [, lessonId, retiredId] = key.split('/');
   const lessonKey = `ar/${lessonId}`;
   const source = MARKDOWN[`../../public/content/grammar/ar/${lessonId}.md`];

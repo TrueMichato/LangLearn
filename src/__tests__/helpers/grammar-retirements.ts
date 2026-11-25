@@ -60,6 +60,14 @@ export const GRAMMAR_RETIREMENTS: GrammarRetirements = {
       example: 'Which three abundance-pattern examples are listed here?',
     }],
   },
+  'ro/cognates-false-friends/personality-false-friend-contrast': {
+    reason: 'Three independent word cards and a contextual application make recalling the ordered triple redundant.',
+    replacements: ['vocab-simpatic', 'vocab-sensibil', 'vocab-rezonabil', 'sensible-idea-application'],
+    identities: [{
+      rule: 'Simpatic, sensibil, and rezonabil express different qualities',
+      example: 'Which Romanian words mean likeable, sensitive, and sensible respectively?',
+    }],
+  },
 };
 
 const snapshot = baselineJson as {
