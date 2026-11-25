@@ -1,2 +1,13 @@
 // Lessons are added once they pass the review contract in docs/knowledge-practice.md.
-export const reviewed: readonly string[] = [];
+export const reviewed: readonly string[] = [
+  'pronunciation',
+  'nouns-gender',
+  'definite-article',
+  'indefinite-article',
+  'plurals',
+  'present-a-fi-avea',
+  'present-group1',
+  'present-group4',
+  'present-groups-2-3',
+  'subject-pronouns',
+];

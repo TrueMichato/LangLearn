@@ -26,7 +26,9 @@ Neuter nouns use **un** in the singular because they behave like masculine singu
 <!-- vocab-card: {"id":"vocab-caiet","word":"caiet","meaning":"notebook (neuter; un caiet)","priority":"optional","sourceSection":"Singular: un and o"} -->
 <!-- quiz: {"type":"multiple-choice","question":"Which article fits 'fată' (girl)?","options":["un","o","niște","doi"],"answer":1} -->
 
-<!-- grammar-card: {"id":"singular-article-gender","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Singular: un and o","rule":"Un is used for masculine and neuter singular nouns; o is used for feminine singular nouns","example":"Văd ___ fată și ___ băiat.","answer":"o ... un","explanation":"The blanks contrast feminine o with masculine un."} -->
+<!-- grammar-card: {"id":"singular-article-gender","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Singular: un and o","rule":"Un is used for masculine and neuter singular nouns; o is used for feminine singular nouns","example":"Văd ___ fată și ___ băiat. (a girl and a boy)","answer":"o ... un","explanation":"The blanks contrast feminine o with masculine un.","legacyAliases":[{"rule":"Un is used for masculine and neuter singular nouns; o is used for feminine singular nouns","example":"Văd ___ fată și ___ băiat."}]} -->
+<!-- grammar-card: {"id":"rule-masc-neuter-article","kind":"concept","format":"qa","priority":"essential","sourceSection":"Singular: un and o","rule":"Masculine and neuter singular nouns share the indefinite article un","example":"Which singular indefinite article do masculine and neuter nouns share?","answer":"Un.","explanation":"Un băiat (masculine) and un scaun (neuter): neuter nouns behave like masculine nouns in the singular."} -->
+<!-- grammar-card: {"id":"rule-feminine-article","kind":"concept","format":"qa","priority":"essential","sourceSection":"Singular: un and o","rule":"Feminine singular nouns take the indefinite article o","example":"Which singular indefinite article goes with a feminine noun?","answer":"O.","explanation":"O fată, o pisică. Un is for masculine and neuter singular nouns."} -->
 
 ## Plural: niște
 
@@ -47,8 +49,9 @@ The general plural indefinite article is **niște**, meaning **some**. It can be
 - **Vreau niște apă.** (vrow NEESH-teh AH-puh) — I want some water.
 - **Avem niște pâine.** (ah-VEM NEESH-teh PUH-ee-neh) — We have some bread.
 
-<!-- grammar-card: {"id":"plural-niste","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Plural: niște","rule":"Use niște for an indefinite plural or amount","example":"Am cumpărat ___ mere.","answer":"niște","explanation":"Niște introduces an indefinite plural across all three genders."} -->
+<!-- grammar-card: {"id":"plural-niste","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Plural: niște","rule":"Use niște for an indefinite plural or amount","example":"Am cumpărat ___ mere. (some apples)","answer":"niște","explanation":"Niște introduces an indefinite plural across all three genders. Câteva (a few) is also natural, but niște is the plain indefinite plural for some.","legacyAliases":[{"rule":"Use niște for an indefinite plural or amount","example":"Am cumpărat ___ mere."}]} -->
 <!-- grammar-card: {"id":"mass-niste-use","kind":"concept","format":"qa","priority":"essential","sourceSection":"Plural: niște","rule":"Niște also introduces an indefinite amount of a mass noun","example":"Does niște always require a plural noun?","answer":"No. It can mean some with mass nouns, as in niște apă or niște pâine.","explanation":"Water and bread are indefinite amounts here, not countable plural objects."} -->
+<!-- grammar-card: {"id":"rule-plural-niste","kind":"concept","format":"qa","priority":"optional","sourceSection":"Plural: niște","rule":"Niște is the indefinite article for plural nouns of all three genders","example":"Which indefinite article introduces plural nouns of every gender?","answer":"Niște.","explanation":"Niște băieți, niște fete, niște scaune: the same word serves masculine, feminine and neuter plurals."} -->
 <!-- vocab-card: {"id":"vocab-niste","word":"niște","meaning":"some (indefinite plural or amount)","priority":"optional","sourceSection":"Plural: niște"} -->
 <!-- vocab-card: {"id":"vocab-paine","word":"pâine","meaning":"bread","priority":"optional","sourceSection":"Plural: niște"} -->
 

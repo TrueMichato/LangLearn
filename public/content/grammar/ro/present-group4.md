@@ -35,7 +35,7 @@ Notice that **eu dorm** and **ei dorm** are identical.
 
 <!-- grammar-card: {"id":"dormi-third-form","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Pattern 1: a dormi — simple forms","rule":"A dormi changes its stem in third singular doarme","example":"Copilul ___. (a dormi)","answer":"doarme","explanation":"Compare eu dorm with el/ea doarme."} -->
 <!-- grammar-card: {"id":"dormi-shared-form","kind":"concept","format":"qa","priority":"optional","sourceSection":"Pattern 1: a dormi — simple forms","rule":"First singular and third plural share dorm","example":"Which subjects share dorm in the present-tense table?","answer":"Eu and ei/ele.","explanation":"Context distinguishes I sleep from they sleep."} -->
-<!-- grammar-card: {"id":"dormi-noi-form","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Pattern 1: a dormi — simple forms","rule":"The noi form of a dormi is dormim","example":"Noi ___ opt ore.","answer":"dormim","explanation":"Noi takes the im ending in this pattern."} -->
+<!-- grammar-card: {"id":"dormi-noi-form","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Pattern 1: a dormi — simple forms","rule":"The noi form of a dormi is dormim","example":"Noi ___ opt ore. (a dormi)","answer":"dormim","explanation":"Noi takes the im ending in this pattern.","legacyAliases":[{"rule":"The noi form of a dormi is dormim","example":"Noi ___ opt ore."}]} -->
 <!-- quiz: {"type":"multiple-choice","question":"What is the 'el/ea' form of 'a dormi'?","options":["dorm","dormi","doarme","dormim"],"answer":2} -->
 
 ## Pattern 2: a citi — with -esc-
@@ -53,10 +53,11 @@ Notice that **eu dorm** and **ei dorm** are identical.
 - **Ea citește ziarul.** (yah chee-TESH-teh ZYAH-rool) — She reads the newspaper.
 - **Voi citiți repede.** (voy chee-TEETSʲ REH-peh-deh) — You all read quickly.
 
-<!-- grammar-card: {"id":"citi-eu-form","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Pattern 2: a citi — with -esc-","rule":"Many -i verbs use -esc- in eu and ei/ele forms","example":"Eu ___ o carte.","answer":"citesc","explanation":"Eu and ei/ele use citesc in this pattern."} -->
+<!-- grammar-card: {"id":"citi-eu-form","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Pattern 2: a citi — with -esc-","rule":"Many -i verbs use -esc- in eu and ei/ele forms","example":"Eu ___ o carte. (a citi)","answer":"citesc","explanation":"Eu and ei/ele use citesc in this pattern.","legacyAliases":[{"rule":"Many -i verbs use -esc- in eu and ei/ele forms","example":"Eu ___ o carte."}]} -->
 <!-- grammar-card: {"id":"citi-tu-form","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Pattern 2: a citi — with -esc-","rule":"The esc pattern has ești in the tu form","example":"Tu ___ ziarul. (a citi)","answer":"citești","explanation":"The extension changes shape: citesc, citești, citește."} -->
 <!-- grammar-card: {"id":"citi-third-form","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Pattern 2: a citi — with -esc-","rule":"A citi has third singular citește","example":"Ea ___ ziarul. (a citi)","answer":"citește","explanation":"Ea takes citește, not plural citesc."} -->
-<!-- grammar-card: {"id":"citi-extension-limits","kind":"concept","format":"qa","priority":"essential","sourceSection":"Pattern 2: a citi — with -esc-","rule":"Noi and voi omit the esc extension","example":"What are the noi and voi present forms of a citi?","answer":"Citim and citiți.","explanation":"These persons use the simple stem rather than citesc plus another ending."} -->
+<!-- grammar-card: {"id":"citi-extension-limits","kind":"rule","format":"qa","priority":"essential","sourceSection":"Pattern 2: a citi — with -esc-","rule":"Noi and voi omit the esc extension","example":"What are the noi and voi present forms of a citi?","answer":"Citim and citiți.","explanation":"These persons use the simple stem rather than citesc plus another ending."} -->
+<!-- grammar-card: {"id":"rule-esc-noi-voi","kind":"concept","format":"qa","priority":"essential","sourceSection":"Pattern 2: a citi — with -esc-","rule":"Noi and voi omit the esc extension","example":"In the esc pattern, which two persons use no esc extension?","answer":"Noi and voi.","explanation":"Eu and ei/ele citesc, tu citești, el/ea citește, but noi citim and voi citiți use the simple stem."} -->
 
 ## More -esc- Verbs
 
@@ -91,6 +92,7 @@ Verbs ending in **-î** are fewer but important. The letter **î** often becomes
 <!-- vocab-card: {"id":"vocab-a-hotari","word":"a hotărî","meaning":"to decide","priority":"optional","sourceSection":"Verbs Ending in -î"} -->
 <!-- grammar-card: {"id":"hotari-asc-extension","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Verbs Ending in -î","rule":"A hotărî has hotărăsc in first singular and third plural","example":"Ei ___ repede. (a hotărî)","answer":"hotărăsc","explanation":"This î verb uses the ăsc pattern; it is not simply hotăresc."} -->
 <!-- grammar-card: {"id":"cobori-third-form","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Verbs Ending in -î","rule":"A coborî has third singular coboară","example":"Ea ___ aici. (a coborî)","answer":"coboară","explanation":"The simple pattern has the vowel alternation cobor/coboară."} -->
+<!-- grammar-card: {"id":"rule-i-verbs-internal-a","kind":"concept","format":"qa","priority":"optional","sourceSection":"Verbs Ending in -î","rule":"Many -î verbs write â inside the word in the noi and voi forms","example":"In the noi and voi forms of many verbs ending in -î, which letter does î become inside the word?","answer":"Â.","explanation":"Coborî → coborâm, coborâți; hotărî → hotărâm, hotărâți. Naming a with a circumflex counts."} -->
 <!-- quiz: {"type":"multiple-choice","question":"Which form means 'we speak' from 'a vorbi'?","options":["vorbesc","vorbește","vorbim","vorbiți"],"answer":2} -->
 
 ## Negation and Useful Sentences

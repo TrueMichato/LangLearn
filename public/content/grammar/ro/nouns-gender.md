@@ -20,11 +20,11 @@ The special Romanian feature is **neuter**: it behaves like masculine in the sin
 <!-- vocab-card: {"id":"vocab-scaun","word":"scaun","meaning":"chair (neuter; plural scaune)","priority":"optional","sourceSection":"The Three Genders"} -->
 - **Un băiat citește.** (oon buh-YAHT chee-TESH-teh) — A boy is reading.
 - **O fată cântă.** (oh FAH-tuh KUHN-tuh) — A girl is singing.
-- **Un scaun este aici.** (oon skown YES-teh ah-CH) — A chair is here.
+- **Un scaun este aici.** (oon SKAH-oon YES-teh ah-EECH) — A chair is here.
 
 <!-- quiz: {"type":"multiple-choice","question":"Which pair shows a Romanian neuter noun?","options":["un băiat, doi băieți","o casă, două case","un scaun, două scaune","o fată, două fete"],"answer":2} -->
 
-<!-- grammar-card: {"id":"neuter-count-application","kind":"rule","format":"cloze","priority":"essential","sourceSection":"The Three Genders","rule":"Neuter nouns take masculine forms in the singular and feminine forms in the plural","example":"___ scaun, ___ scaune","answer":"un, două","explanation":"Only the counting words are missing: un scaun, două scaune."} -->
+<!-- grammar-card: {"id":"neuter-count-application","kind":"rule","format":"cloze","priority":"essential","sourceSection":"The Three Genders","rule":"Neuter nouns take masculine forms in the singular and feminine forms in the plural","example":"___ scaun, ___ scaune (a chair, two chairs)","answer":"un, două","explanation":"Only the counting words are missing: un scaun, două scaune.","legacyAliases":[{"rule":"Neuter nouns take masculine forms in the singular and feminine forms in the plural","example":"___ scaun, ___ scaune"}]} -->
 
 ## Natural Gender
 
@@ -99,6 +99,8 @@ Adjectives and some numbers change with the noun.
 - **Am două telefoane noi.** (ahm DOH-uh teh-leh-FOH-ah-neh noy) — I have two new phones.
 
 <!-- grammar-card: {"id":"neuter-adjective-agreement","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Agreement Depends on Gender","rule":"Neuter plural adjectives use feminine plural forms","example":"Scaune ___. (good chairs; bun)","answer":"bune","explanation":"Scaune is neuter plural, so use bune, not masculine plural buni."} -->
+<!-- grammar-card: {"id":"rule-neuter-plural-adjective","kind":"concept","format":"qa","priority":"essential","sourceSection":"Agreement Depends on Gender","rule":"Adjectives with neuter plural nouns take feminine plural endings","example":"When an adjective describes a neuter plural noun, which gender's plural ending does it take?","answer":"The feminine plural.","explanation":"Neuter nouns behave like feminine nouns in the plural: scaune bune, două telefoane noi."} -->
+<!-- grammar-card: {"id":"rule-neuter-singular-adjective","kind":"concept","format":"qa","priority":"optional","sourceSection":"Agreement Depends on Gender","rule":"Adjectives with neuter singular nouns take masculine singular endings","example":"When an adjective describes a neuter singular noun, which gender's singular ending does it take?","answer":"The masculine singular.","explanation":"Neuter nouns behave like masculine nouns in the singular: scaun bun, un telefon nou."} -->
 <!-- quiz: {"type":"multiple-choice","question":"Which article fits the feminine noun 'casă'?","options":["un","o","doi","niște"],"answer":1} -->
 
 ## Why Gender Matters
