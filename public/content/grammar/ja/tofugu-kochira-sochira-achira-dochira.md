@@ -77,7 +77,7 @@ Like nouns, these words can also be attached to another noun with the particle �
 
   - I'll go with **this** skirt.
 
-<!-- grammar-card: {"id":"polite-noun-link","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Patterns of Use","rule":"どちら is the polite word for 'which'","hint":"Politely ask which of these two skirts","example":"___スカートになさいますか。","answer":"どちらの","explanation":"の links the noun-like どちら to スカート. Unlike どの, どちら cannot directly modify the noun without の."} -->
+<!-- grammar-card: {"id":"polite-noun-link","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Patterns of Use","rule":"どちら is the polite word for 'which'","example":"A shop clerk politely asks which of the two skirts you'd like: ___スカートになさいますか。","answer":"どちらの","explanation":"の links the noun-like どちら to スカート. Unlike どの, どちら cannot directly modify the noun without の.","legacyAliases":[{"rule":"どちら is the polite word for 'which'","example":"___スカートになさいますか。"}]} -->
 
 ### こちら, そちら, あちら for Directions and Places
 
@@ -117,7 +117,7 @@ In this example, you use casual expressions because what you are saying is self-
 
 Here, the staff would usually use the more polite こちら to pay respect to you, the customer.
 
-<!-- grammar-card: {"id":"courteous-item","kind":"rule","format":"cloze","priority":"essential","sourceSection":"こちら, そちら, あちら for Things","rule":"こちら is the polite equivalent of これ and ここ","hint":"The cake near the staff member; use the courteous this one","example":"今ですと、___のピーチのケーキが旬でおいしいですよ。","answer":"こちら","explanation":"こちらの politely points out the cake near the speaker; this series also covers people, directions and sides."} -->
+<!-- grammar-card: {"id":"courteous-item","kind":"rule","format":"cloze","priority":"essential","sourceSection":"こちら, そちら, あちら for Things","rule":"こちら is the polite equivalent of これ and ここ","example":"A shop clerk politely points out the cake right by them: 今ですと、___のピーチのケーキが旬でおいしいですよ。","answer":"こちら","explanation":"こちらの politely points out the cake near the speaker; this series also covers people, directions and sides.","legacyAliases":[{"rule":"こちら is the polite equivalent of これ and ここ","example":"今ですと、___のピーチのケーキが旬でおいしいですよ。"}]} -->
 
 ### どちら for "Which One?" Out of Two Choices
 
@@ -171,7 +171,7 @@ In formal speaking or writing, you'd switch こっち, そっち, and あっち 
 <!-- vocab-card: {"id":"vocab-kocchi","priority":"optional","sourceSection":"こちら, そちら, あちら for People","word":"こっち","reading":"こっち","meaning":"this way; here; my or our side (casual)"} -->
 <!-- vocab-card: {"id":"vocab-socchi","priority":"optional","sourceSection":"こちら, そちら, あちら for People","word":"そっち","reading":"そっち","meaning":"that way; there; your side (casual)"} -->
 <!-- vocab-card: {"id":"vocab-acchi","priority":"optional","sourceSection":"こちら, そちら, あちら for People","word":"あっち","reading":"あっち","meaning":"over there; that side (casual)"} -->
-<!-- grammar-card: {"id":"distant-group","kind":"rule","format":"cloze","priority":"optional","sourceSection":"こちら, そちら, あちら for People","rule":"あっち is the casual form of あちら","hint":"A third group, not our side or your side; casual","example":"___もみんな元気にしてるみたいだよ。","answer":"あっち","explanation":"あっち can refer to that group even when they are out of sight. こっち and そっち can represent our and your side."} -->
+<!-- grammar-card: {"id":"distant-group","kind":"rule","format":"cloze","priority":"optional","sourceSection":"こちら, そちら, あちら for People","rule":"あっち is the casual form of あちら","example":"Casually on the phone, about a third group (not our side or yours): ___もみんな元気にしてるみたいだよ。","answer":"あっち","explanation":"あっち can refer to that group even when they are out of sight. こっち and そっち can represent our and your side.","legacyAliases":[{"rule":"あっち is the casual form of あちら","example":"___もみんな元気にしてるみたいだよ。"}]} -->
 
 ### どちら for "Who?" or "Where?"
 
@@ -199,7 +199,8 @@ However, only どちら can be used to directly ask "who?" or "where?" politely.
 
   - **Where** are you off to?
 
-<!-- grammar-card: {"id":"polite-identity","kind":"rule","format":"cloze","priority":"essential","sourceSection":"どちら for \"Who?\" or \"Where?\"","rule":"どちら様 politely asks identity, not a binary choice","example":"May I ask who this is? ___様ですか。","answer":"どちら","explanation":"This is a courteous who question. どっち様 is not the casual equivalent; どなた is another polite who word."} -->
+<!-- grammar-card: {"id":"polite-identity","kind":"rule","format":"cloze","priority":"essential","sourceSection":"どちら for \"Who?\" or \"Where?\"","rule":"どちら様 politely asks identity, not a binary choice","example":"May I ask who this is? (polite ちら-series question word) ___様ですか。","answer":"どちら","explanation":"This is a courteous who question. どっち様 is not the casual equivalent; どなた is another polite who word.","legacyAliases":[{"rule":"どちら様 politely asks identity, not a binary choice","example":"May I ask who this is? ___様ですか。"}]} -->
+<!-- grammar-card: {"id":"rule-dochira-who-where","kind":"concept","format":"qa","priority":"optional","sourceSection":"どちら for \"Who?\" or \"Where?\"","rule":"Only polite dochira can directly ask who or where; casual dotchi asks which of two or which way","example":"Besides \"which of two?\", what two questions can polite dochira ask that casual dotchi cannot?","answer":"\"Who?\" (as in dochira-sama) and \"where?\" (as in dochira made).","explanation":"どっち様 is not used; どなた is another polite who word. Either example counts."} -->
 
 ### こちら, そちら, あちら with 〜こそ
 
@@ -242,7 +243,7 @@ If someone says よろしくお願いします to you, you may say よろしく�
 You can also say こっちの方こそ or こちらの方こそ in a more formal conversation.
 
 <!-- vocab-card: {"id":"vocab-kochirakoso","priority":"optional","sourceSection":"こちら, そちら, あちら with 〜こそ","word":"こちらこそ","reading":"こちらこそ","meaning":"likewise; it is I who should say so (courteous response)"} -->
-<!-- grammar-card: {"id":"reciprocal-koso","kind":"concept","format":"qa","priority":"optional","sourceSection":"こちら, そちら, あちら with 〜こそ","rule":"こそ can redirect emphasis reciprocally rather than only disagree","example":"Does こちらこそ、ありがとうございます reject the other person's thanks?","answer":"No. It reciprocates them, emphasizing that I am the one who should be thanking you.","explanation":"そっちこそ can oppose a demand, but こちらこそ also supports kind reciprocal replies and よろしくお願いします."} -->
+<!-- grammar-card: {"id":"reciprocal-koso","kind":"concept","format":"qa","priority":"optional","sourceSection":"こちら, そちら, あちら with 〜こそ","rule":"こそ can redirect emphasis reciprocally rather than only disagree","example":"When someone thanks you and you reply こちらこそ、ありがとうございます, what does こちらこそ do?","answer":"It reciprocates the thanks, emphasizing that I am the one who should be thanking you (it does not reject them).","explanation":"そっちこそ can oppose a demand, but こちらこそ also supports kind reciprocal replies and よろしくお願いします.","legacyAliases":[{"rule":"こそ can redirect emphasis reciprocally rather than only disagree","example":"Does こちらこそ、ありがとうございます reject the other person's thanks?"}]} -->
 
 ### こちらのもの
 
@@ -263,7 +264,7 @@ I hope this announcement wasn't just a jōdan, or 冗談 (joke), and Michael Jor
 Finally, you can replace こちらのもの with こっちのもの in a casual conversation.
 
 <!-- vocab-card: {"id":"vocab-kochiranomono","priority":"optional","sourceSection":"こちらのもの","word":"こちらのもの","reading":"こちらのもの","meaning":"ours; in our hands (confident of success)"} -->
-<!-- grammar-card: {"id":"ours-success","kind":"concept","format":"qa","priority":"optional","sourceSection":"こちらのもの","rule":"こちらのもの can express confidence that success is on our side","example":"What does 勝負はこちらのものだ express beyond literal ownership?","answer":"Confidence that we will win or that the contest is as good as ours.","explanation":"Casual こっちのもの has the same idiomatic idea in a less formal register."} -->
+<!-- grammar-card: {"id":"ours-success","kind":"rule","format":"qa","priority":"optional","sourceSection":"こちらのもの","rule":"こちらのもの can express confidence that success is on our side","example":"What does 勝負はこちらのものだ express beyond literal ownership?","answer":"Confidence that we will win or that the contest is as good as ours.","explanation":"Casual こっちのもの has the same idiomatic idea in a less formal register."} -->
 
   
 

@@ -16,11 +16,12 @@ Phrase
 
 ## The Basics
 
-<!-- grammar-card: {"id":"casual-anmari","kind":"rule","format":"cloze","priority":"optional","sourceSection":"The Basics","rule":"あんまり is the casual spoken form of あまり","hint":"not many; use the casual spoken variant","example":"えっ、___の？","answer":"あんまりない","explanation":"あんまりない is the conversational variant of あまりない; the low-quantity meaning remains."} -->
+<!-- grammar-card: {"id":"casual-anmari","kind":"rule","format":"cloze","priority":"optional","sourceSection":"The Basics","rule":"あんまり is the casual spoken form of あまり","hint":"not many; use the casual spoken variant","example":"Wow, there aren't many? (casual spoken variant of the adverb + not exist): えっ、___の？","answer":"あんまりない","explanation":"あんまりない is the conversational variant of あまりない; the low-quantity meaning remains.","legacyAliases":[{"rule":"あんまり is the casual spoken form of あまり","example":"えっ、___の？"}]} -->
 
 <!-- vocab-card: {"id":"vocab-amari-noun","priority":"optional","sourceSection":"The Basics","word":"余り","reading":"あまり","meaning":"remainder; excess (noun)"} -->
 <!-- vocab-card: {"id":"vocab-konbini","priority":"optional","sourceSection":"The Basics","word":"コンビニ","reading":"コンビニ","meaning":"convenience store"} -->
 <!-- grammar-card: {"id":"low-not-zero","kind":"concept","format":"qa","priority":"essential","sourceSection":"The Basics","rule":"あまり with a negative expresses low quantity or degree rather than a categorical zero","example":"How does あまりコンビニがない differ from コンビニがない?","answer":"It says there are not many convenience stores rather than simply saying there are none.","explanation":"The pattern normally suggests a small amount; its main function is to soften an absolute negative into a low-degree statement."} -->
+<!-- grammar-card: {"id":"rule-amari-negative","kind":"concept","format":"qa","priority":"essential","sourceSection":"The Basics","rule":"あまり meaning 'not very / not much' pairs with a negative predicate","example":"When あまり means 'not very' or 'not much', what kind of predicate must it pair with?","answer":"A negative predicate.","explanation":"Any answer saying the verb/adjective must be negative counts: あまり難しくない, あまり飲まない."} -->
 
 Used on its own,  余(あま)り is a noun that indicates "excess" or "remainder." When it's paired with a negative statement, it's almost always written in kana, as in あまり〜ない, and works as an adverb that indicates "not many/much" of something exists. It's often translated as "not very" and can also conveniently be used to describe something you don't do "very often" or "very much."
 
@@ -72,7 +73,7 @@ But if you just don't go shopping **very often** because you mostly use online s
 #### あまり + Noun + がない
 
 <!-- vocab-card: {"id":"vocab-okane","priority":"optional","sourceSection":"あまり + Noun + がない","word":"お金","reading":"おかね","meaning":"money"} -->
-<!-- grammar-card: {"id":"noun-low-quantity","kind":"rule","format":"cloze","priority":"essential","sourceSection":"あまり + Noun + がない","rule":"A negative existence predicate expresses not having much of a noun","example":"I don't have much money: あまりお金が___。","answer":"ない","explanation":"あまり…がない expresses low availability or possession, not necessarily total absence."} -->
+<!-- grammar-card: {"id":"noun-low-quantity","kind":"rule","format":"cloze","priority":"essential","sourceSection":"あまり + Noun + がない","rule":"A negative existence predicate expresses not having much of a noun","example":"I don't have much money: あまりお金が___。","answer":"ない","explanation":"あまり…がない expresses low availability or possession, not necessarily total absence. Polite ありません also counts."} -->
 <!-- grammar-card: {"id":"past-negative","kind":"rule","format":"cloze","priority":"optional","sourceSection":"あまり + Noun + がない","rule":"なかった places the low-quantity negative in the past","example":"I didn't have much money: あまりお金が___。","answer":"なかった","explanation":"The past is carried by the negative predicate, not by あまり."} -->
 
 As you saw in the example あまりコンビニがない (There aren't many convenience stores), あまり〜ない can be used with a noun in the pattern あまり+noun+がない.
@@ -246,12 +247,13 @@ In this case, it's more natural to add ん between ない and です, like:
 
 Here, ん gives the statement an explanation-like feel and can help connect it to the conversation. It is often natural when offering relevant background, but it is not obligatory every time new information is introduced. If you want to learn more about how this works, check out its dedicated page.
 
-<!-- grammar-card: {"id":"explanatory-n","kind":"concept","format":"qa","priority":"optional","sourceSection":"Conversational あまり～ないんです","rule":"んです can present a negative habit as explanatory background","example":"What does ん add in 私、あまりコーヒー飲まないんです?","answer":"It presents the information as an explanation or relevant background; it does not change the low-frequency or low-quantity meaning.","explanation":"ないです is also possible. Choice of ん depends on discourse, not a rule that all new facts require it."} -->
+<!-- grammar-card: {"id":"explanatory-n","kind":"concept","format":"qa","priority":"optional","sourceSection":"Conversational あまり～ないんです","rule":"んです can present a negative habit as explanatory background","example":"What does adding ん (〜ないんです) contribute to a statement with amari + negative?","answer":"It presents the information as an explanation or relevant background; it does not change the low-frequency or low-quantity meaning.","explanation":"ないです is also possible. Choice of ん depends on discourse, not a rule that all new facts require it.","legacyAliases":[{"rule":"んです can present a negative habit as explanatory background","example":"What does ん add in 私、あまりコーヒー飲まないんです?"}]} -->
 
 #### Formal あまり～ありません
 
 <!-- grammar-card: {"id":"formal-noun-negative","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Formal あまり～ありません","rule":"A noun's negative existence predicate can use formal ありません","example":"Use the formal negative: あまりお金が___。","answer":"ありません","explanation":"ない can be replaced by ありません for existence; 静かではありません and 難しくありません follow their own adjectival frames."} -->
 <!-- grammar-card: {"id":"formal-verb-negative","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Formal あまり～ありません","rule":"A verb uses its ます stem plus ません, not a mechanical ない-to-ありません replacement","example":"Use 飲む in the formal negative: あまり飲___。","answer":"みません","explanation":"飲み is the ます stem; 飲みません is the negative. Do not write 飲まありません."} -->
+<!-- grammar-card: {"id":"rule-formal-verb-masen","kind":"concept","format":"qa","priority":"optional","sourceSection":"Formal あまり～ありません","rule":"In formal あまり…, a verb takes ません on its ます stem rather than swapping in ありません","example":"In formal amari + verb, which negative ending attaches to the verb's masu stem?","answer":"ません.","explanation":"飲む becomes 飲みません; only nouns and adjectives can take ありません as their formal negative."} -->
 
 Compared to 〜ない(ん)です, 〜ありません is more formal and may be reserved for polite explanation. This pattern is also a bit trickier grammatically, so that's something to watch out for with this expression.
 
@@ -293,7 +295,7 @@ You can use あまり〜ない with other verb forms, too. Let's take a look at 
 
 #### あまり〜ていない for "Haven't Done (It) Very Much/Often"
 
-<!-- grammar-card: {"id":"ongoing-negative","kind":"concept","format":"qa","priority":"optional","sourceSection":"あまり〜ていない for \"Haven't Done (It) Very Much/Often\"","rule":"あまり〜ていない evaluates activity over a relevant period","example":"During an illness, what does あまり食べていない describe?","answer":"Not having been eating much over the relevant period, rather than a statement of inability to eat.","explanation":"The casual form 食べてない can omit い; quantity or frequency depends on context."} -->
+<!-- grammar-card: {"id":"ongoing-negative","kind":"rule","format":"qa","priority":"optional","sourceSection":"あまり〜ていない for \"Haven't Done (It) Very Much/Often\"","rule":"あまり〜ていない evaluates activity over a relevant period","example":"During an illness, what does あまり食べていない describe?","answer":"Not having been eating much over the relevant period, rather than a statement of inability to eat.","explanation":"The casual form 食べてない can omit い; quantity or frequency depends on context."} -->
 
 You can use the 〜ている form of verb with あまり〜ない. For instance, if you have a flu and haven't had much of an appetite, you can say:
 

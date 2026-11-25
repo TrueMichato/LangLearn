@@ -102,8 +102,8 @@ Note that the particle に can sometimes be replaced with the particle と, as i
 
 と can give a result a more definitive, formal, or literary presentation; it does not mean that every change has reached an absolute final stage. に is the ordinary choice for casually marking a resultant state.
 
-<!-- grammar-card: {"id":"noun-endpoint","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Noun or な-adjective + に + なる","rule":"A noun takes に before なる","hint":"Use the ordinary change-of-state construction.","example":"ここはアイスクリーム屋さん___。","answer":"になる","explanation":"に marks the resultant identity: the place becomes an ice cream shop. A な-adjective also uses に."} -->
-<!-- grammar-card: {"id":"formal-outcome","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Noun or な-adjective + に + なる","rule":"となる marks a more formal or definitive change","hint":"Use the formal alternative to に with the plain past of the verb.","example":"このアイスクリーム屋さんは人気のお店___。","answer":"となった","explanation":"The と construction gives the outcome a more formal or literary presentation; casual change usually uses に."} -->
+<!-- grammar-card: {"id":"noun-endpoint","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Noun or な-adjective + に + なる","rule":"A noun takes に before なる","hint":"Use the ordinary change-of-state construction.","example":"This place will become an ice cream shop (ordinary, casual change): ここはアイスクリーム屋さん___。","answer":"になる","explanation":"に marks the resultant identity: the place becomes an ice cream shop. A な-adjective also uses に.","legacyAliases":[{"rule":"A noun takes に before なる","example":"ここはアイスクリーム屋さん___。"}]} -->
+<!-- grammar-card: {"id":"formal-outcome","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Noun or な-adjective + に + なる","rule":"となる marks a more formal or definitive change","hint":"Use the formal alternative to に with the plain past of the verb.","example":"This shop became a popular shop (formal particle, plain past): このアイスクリーム屋さんは人気のお店___。","answer":"となった","explanation":"The と construction gives the outcome a more formal or literary presentation; casual change usually uses に.","legacyAliases":[{"rule":"となる marks a more formal or definitive change","example":"このアイスクリーム屋さんは人気のお店___。"}]} -->
 <!-- vocab-card: {"id":"vocab-ninki","word":"人気","reading":"にんき","meaning":"popularity","priority":"optional","sourceSection":"Noun or な-adjective + に + なる"} -->
 
 #### い-adjective く + なる
@@ -121,6 +121,7 @@ For example, say you felt especially happy to learn that a new ice cream shop wi
 This く ending of い-adjectives allows us to hook something onto the end of them. So to show how your mood has improved, うれしい has to be changed to うれしく before you can add  なった (the past tense of なる) to the end.
 
 <!-- grammar-card: {"id":"i-adjective-change","kind":"rule","format":"cloze","priority":"essential","sourceSection":"い-adjective く + なる","rule":"An い-adjective replaces final い with く before なる","example":"うれしい → became happy: うれし___なった。","answer":"く","explanation":"Use the adjective's く-form, not に or an unchanged い."} -->
+<!-- grammar-card: {"id":"rule-naru-endpoint-forms","kind":"concept","format":"qa","priority":"essential","sourceSection":"い-adjective く + なる","rule":"An い-adjective takes its く form to mark the new state before なる","example":"Which form of an i-adjective marks the resulting state before naru?","answer":"The く form.","explanation":"Saying 'replace the final い with く' also counts: うれしい → うれしくなる, 'become happy.'"} -->
 <!-- vocab-card: {"id":"vocab-ureshii","word":"うれしい","reading":"うれしい","meaning":"happy; pleased","priority":"optional","sourceSection":"い-adjective く + なる"} -->
 
 #### 〜なく + なる
@@ -164,8 +165,9 @@ So if your child stopped eating broccoli again, you can say:
 I hope your child starts eating broccoli again soon!
 
 <!-- grammar-card: {"id":"new-habit","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Verb + よう + に + なる","rule":"A plain affirmative verb uses ように before なる for an acquired pattern","example":"He began to eat broccoli: ブロッコリーを食べる___なった。","answer":"ように","explanation":"The construction marks a change in behavior; the verb remains in its plain nonpast form before よう."} -->
-<!-- grammar-card: {"id":"ability-versus-habit","kind":"concept","format":"qa","priority":"optional","sourceSection":"Verb + よう + に + なる","rule":"Potential form distinguishes acquired ability from a new habit","example":"How does 食べられるようになった differ from 食べるようになった?","answer":"It says the person became able to eat it, rather than simply began eating it.","explanation":"The potential predicate contributes ability; ようになった supplies the change."} -->
+<!-- grammar-card: {"id":"ability-versus-habit","kind":"rule","format":"qa","priority":"optional","sourceSection":"Verb + よう + に + なる","rule":"Potential form distinguishes acquired ability from a new habit","example":"How does 食べられるようになった differ from 食べるようになった?","answer":"It says the person became able to eat it, rather than simply began eating it.","explanation":"The potential predicate contributes ability; ようになった supplies the change."} -->
 <!-- grammar-card: {"id":"stopped-action","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Verb + よう + に + なる","rule":"A verb's negative なく can mark ceasing an action without よう","example":"He stopped eating broccoli: ブロッコリーを食べ___なった。","answer":"なく","explanation":"The affirmative uses 食べるようになった; the negative change can directly use 食べなくなった."} -->
+<!-- grammar-card: {"id":"rule-naru-begin-stop","kind":"concept","format":"qa","priority":"essential","sourceSection":"Verb + よう + に + なる","rule":"Verb + ようになる = come to do; verb negative なく + なる = stop doing","example":"Which verb patterns with 'naru' express 'come to do (start doing)' and 'stop doing'?","answer":"Plain verb + ようになる (食べるようになった); negative なく + なる, without よう (食べなくなった).","explanation":"Both halves count. The potential form gives 'became able to' (食べられるようになった)."} -->
 
 #### Verb + そう + に + なる
 
@@ -183,7 +185,7 @@ Similarly, if you were almost late for a meeting but arrived in time, you can sa
 
   - I was almost late.
 
-<!-- grammar-card: {"id":"near-event","kind":"concept","format":"qa","priority":"optional","sourceSection":"Verb + そう + に + なる","rule":"そうになる can describe approaching an event rather than completing it","example":"Does 泣きそうになった assert that the speaker actually cried?","answer":"No. It says they reached the point of almost crying, without asserting completed crying.","explanation":"The usual near-event reading is distinct from acquiring a habit with ようになる."} -->
+<!-- grammar-card: {"id":"near-event","kind":"concept","format":"qa","priority":"optional","sourceSection":"Verb + そう + に + なる","rule":"そうになる can describe approaching an event rather than completing it","example":"What does verb-stem + そうになった (e.g. 泣きそうになった) say about whether the action actually happened?","answer":"It reached the point of almost happening; it does not assert the action was completed (\"almost cried\").","explanation":"'Almost' counts. The usual near-event reading is distinct from acquiring a habit with ようになる.","legacyAliases":[{"rule":"そうになる can describe approaching an event rather than completing it","example":"Does 泣きそうになった assert that the speaker actually cried?"}]} -->
 
 ### 〜ことになる For "It Was Decided That/Turned Out That…"
 
@@ -223,7 +225,7 @@ Let's take a look at another example. Say you lost your passport a day before yo
 
 Here, it's not that someone has decided for the situation to be bad — it just turned out that way and you've confirmed it. In the same way, 〜ことになる can also be used to describe the current state of a situation that you have confirmed.
 
-<!-- grammar-card: {"id":"arrangement-versus-choice","kind":"concept","format":"qa","priority":"essential","sourceSection":"〜ことになる For \"It Was Decided That/Turned Out That…\"","rule":"ことになる foregrounds an arrangement or outcome rather than personal choice","example":"How does 来月行くことになった differ in perspective from 来月行くことにした?","answer":"The first presents going next month as the resulting arrangement; the second foregrounds the speaker's decision to go.","explanation":"An arrangement can result from intentional decisions. ことになる does not prove that the outcome was accidental; casual speech can omit recoverable material, as in 来月になった."} -->
+<!-- grammar-card: {"id":"arrangement-versus-choice","kind":"rule","format":"qa","priority":"essential","sourceSection":"〜ことになる For \"It Was Decided That/Turned Out That…\"","rule":"ことになる foregrounds an arrangement or outcome rather than personal choice","example":"How does 来月行くことになった differ in perspective from 来月行くことにした?","answer":"The first presents going next month as the resulting arrangement; the second foregrounds the speaker's decision to go.","explanation":"An arrangement can result from intentional decisions. ことになる does not prove that the outcome was accidental; casual speech can omit recoverable material, as in 来月になった."} -->
 
 ## Beyond the Basics
 
@@ -243,7 +245,7 @@ Let's say you observed your friend's child assisting her mother in the kitchen. 
 
 に in this use can also be replaced with と, as in 〜ともなると, but this version sounds much more formal and literary.
 
-<!-- grammar-card: {"id":"reached-stage","kind":"rule","format":"cloze","priority":"optional","sourceSection":"〜にもなると〜 For Natural Consequences That Follow A Certain Change","rule":"にもなると means 'once it reaches as much as'","hint":"Emphasize reaching that age before drawing a natural consequence.","example":"六才___、こんなことも出来るんだね。","answer":"にもなると","explanation":"も emphasizes the reached stage. ともなると is a more formal literary alternative."} -->
+<!-- grammar-card: {"id":"reached-stage","kind":"rule","format":"cloze","priority":"optional","sourceSection":"〜にもなると〜 For Natural Consequences That Follow A Certain Change","rule":"にもなると means 'once it reaches as much as'","hint":"Emphasize reaching that age before drawing a natural consequence.","example":"Now that she's (as old as) six, she can do this kind of thing, huh?: 六才___、こんなことも出来るんだね。","answer":"にもなると","explanation":"も emphasizes the reached stage. ともなると is a more formal literary alternative.","legacyAliases":[{"rule":"にもなると means 'once it reaches as much as'","example":"六才___、こんなことも出来るんだね。"}]} -->
 
 ### となると〜 For "Based On That…"
 
@@ -285,7 +287,7 @@ Note 〜からなる often takes the て form without changing the meaning, as i
 
 Here, からなる simply states what the Diet is composed of as a rule. It sounds succinct, while からなっている sounds slightly more descriptive as it gives focus to the current state of the Diet.
 
-<!-- grammar-card: {"id":"composition","kind":"concept","format":"qa","priority":"optional","sourceSection":"〜からなる For \"To Be Composed Of…\"","rule":"からなる states composition in formal written Japanese","example":"Does 衆議院と参議院からなる describe the Diet transforming into those houses?","answer":"No. It states that the Diet is composed of those two houses.","explanation":"からなっている can describe the same composition with more focus on its current state."} -->
+<!-- grammar-card: {"id":"composition","kind":"concept","format":"qa","priority":"optional","sourceSection":"〜からなる For \"To Be Composed Of…\"","rule":"からなる states composition in formal written Japanese","example":"What does からなる express, as in 日本の議会は衆議院と参議院からなる?","answer":"Composition: the Diet is made up of those two houses (not changing into them).","explanation":"'Consists of / is composed of' counts. It is formal written style; からなっている describes the same composition with more focus on its current state.","legacyAliases":[{"rule":"からなる states composition in formal written Japanese","example":"Does 衆議院と参議院からなる describe the Diet transforming into those houses?"}]} -->
 
 ---
 

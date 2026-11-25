@@ -10,7 +10,7 @@
 
 <!-- vocab-card: {"id":"vocab-benri","priority":"optional","sourceSection":"Present Tense","word":"便利","reading":"べんり","meaning":"convenient"} -->
 <!-- vocab-card: {"id":"vocab-shizuka","priority":"essential","sourceSection":"Present Tense","word":"静か","reading":"しずか","meaning":"quiet"} -->
-<!-- grammar-card: {"id":"predicate-copula","kind":"concept","format":"qa","priority":"essential","sourceSection":"Present Tense","rule":"A な-adjective's stem stays stable while the copula carries tense and politeness","example":"Does the stem 便利 itself change when 便利だ becomes 便利です?","answer":"No. The copula changes to make the predicate polite; the adjective stem stays 便利.","explanation":"In casual speech the copula can be omitted, as in これは便利."} -->
+<!-- grammar-card: {"id":"predicate-copula","kind":"concept","format":"qa","priority":"essential","sourceSection":"Present Tense","rule":"A な-adjective's stem stays stable while the copula carries tense and politeness","example":"When 便利だ becomes 便利です, which part changes and which stays the same?","answer":"The copula changes to make the predicate polite; the adjective stem 便利 stays the same.","explanation":"In casual speech the copula can be omitted, as in これは便利.","legacyAliases":[{"rule":"A な-adjective's stem stays stable while the copula carries tense and politeness","example":"Does the stem 便利 itself change when 便利だ becomes 便利です?"}]} -->
 
 Use だ (plain) or です (polite):
 
@@ -20,7 +20,7 @@ Use だ (plain) or です (polite):
 Casual speech can drop the copula entirely:
 - これは便利。 — This is convenient.
 
-<!-- grammar-card: {"id":"quiet-predicate","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Present Tense","rule":"A な-adjective drops な before です","hint":"quiet","example":"この町(まち)は___です。","answer":"静か","explanation":"静か (しずか) directly precedes です; the attributive な is not used in 静かです."} -->
+<!-- grammar-card: {"id":"quiet-predicate","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Present Tense","rule":"A な-adjective drops な before です","hint":"quiet","example":"This town is quiet: この町(まち)は___です。","answer":"静か","explanation":"静か (しずか) directly precedes です; the attributive な is not used in 静かです. Kana しずか also counts.","legacyAliases":[{"rule":"A な-adjective drops な before です","example":"この町(まち)は___です。"}]} -->
 
 ## Past Tense
 
@@ -32,7 +32,7 @@ Use だった (plain) or でした (polite):
 - この街は静か**だった**。 — This town was quiet.
 - ディスコはすごく人気**でした**。 — Disco was super popular.
 
-<!-- grammar-card: {"id":"polite-past","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Past Tense","rule":"な-adjectives take でした in the polite past","hint":"polite past","example":"昔(むかし)、ここは有名(ゆうめい)___。","answer":"でした","explanation":"有名でした follows the nominal copula pattern, not the い-adjective past ending."} -->
+<!-- grammar-card: {"id":"polite-past","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Past Tense","rule":"な-adjectives take でした in the polite past","hint":"polite past","example":"Long ago, this place was famous (polite past): 昔(むかし)、ここは有名(ゆうめい)___。","answer":"でした","explanation":"有名でした follows the nominal copula pattern, not the い-adjective past ending.","legacyAliases":[{"rule":"な-adjectives take でした in the polite past","example":"昔(むかし)、ここは有名(ゆうめい)___。"}]} -->
 
 ## Negative
 
@@ -45,7 +45,8 @@ Use じゃない or ではない:
 - 字があまり綺麗**じゃない**ね。 — The handwriting isn't very neat.
 - チェスは上手**ではない**。 — I'm not good at chess.
 
-<!-- grammar-card: {"id":"polite-negative","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Negative","rule":"な-adjectives negate like nouns, with じゃありません","hint":"contracted polite negative with ありません","example":"この部屋(へや)はきれい___。","answer":"じゃありません","explanation":"きれいじゃありません negates the copula; きれくない wrongly treats きれい as an い-adjective."} -->
+<!-- grammar-card: {"id":"polite-negative","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Negative","rule":"な-adjectives negate like nouns, with じゃありません","hint":"contracted copula + the formal negative ending in ません","example":"This room isn't clean (contracted copula + formal negative ending in ません): この部屋(へや)はきれい___。","answer":"じゃありません","explanation":"きれいじゃありません negates the copula; きれくない wrongly treats きれい as an い-adjective. Uncontracted ではありません is also correct but not the contracted form asked for.","legacyAliases":[{"rule":"な-adjectives negate like nouns, with じゃありません","example":"この部屋(へや)はきれい___。"}]} -->
+<!-- grammar-card: {"id":"rule-na-negative","kind":"concept","format":"qa","priority":"essential","sourceSection":"Negative","rule":"A な-adjective negates with the negative copula, not the い-adjective ending","example":"How does a na-adjective form its plain negative, unlike an i-adjective's -kunai?","answer":"With the negative copula: ではない (conversational じゃない).","explanation":"上手ではない, not 上手くない. Polite: ではありません / じゃありません."} -->
 
 ## Position in a Sentence
 
@@ -54,7 +55,7 @@ Describes the subject:
 - 最近、猫のビデオが人気だよね。 — Cat videos are popular lately.
 
 ### Before a Noun
-<!-- grammar-card: {"id":"quiet-modifier","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Before a Noun","rule":"A な-adjective takes な when it modifies a noun","hint":"quiet, with the attributive linker","example":"___町(まち)に住(す)みたい。","answer":"静かな","explanation":"静かな町 (しずかなまち) uses な before the noun, unlike the predicate 静かです."} -->
+<!-- grammar-card: {"id":"quiet-modifier","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Before a Noun","rule":"A な-adjective takes な when it modifies a noun","hint":"quiet, with the attributive linker","example":"I want to live in a quiet town: ___町(まち)に住(す)みたい。","answer":"静かな","explanation":"静かな町 (しずかなまち) uses な before the noun, unlike the predicate 静かです. Kana しずかな also counts.","legacyAliases":[{"rule":"A な-adjective takes な when it modifies a noun","example":"___町(まち)に住(す)みたい。"}]} -->
 Use な to connect:
 - **安全な**場所 — a safe place
 - **有名な**人 — a famous person
@@ -62,13 +63,14 @@ Use な to connect:
 ### As a Noun
 <!-- vocab-card: {"id":"vocab-anzen","priority":"optional","sourceSection":"As a Noun","word":"安全","reading":"あんぜん","meaning":"safety; safe"} -->
 <!-- vocab-card: {"id":"vocab-jiyuu","priority":"optional","sourceSection":"As a Noun","word":"自由","reading":"じゆう","meaning":"freedom; free"} -->
-<!-- grammar-card: {"id":"nominal-use","kind":"concept","format":"qa","priority":"optional","sourceSection":"As a Noun","rule":"Some な-adjective stems also have noun uses","example":"What role does 自由 have in 自由を守りましょう?","answer":"It is the noun freedom, marked as the object of protecting by を.","explanation":"A word can have both noun and adjectival uses; this does not mean every な-adjective is freely a noun in every context."} -->
+<!-- grammar-card: {"id":"nominal-use","kind":"rule","format":"qa","priority":"optional","sourceSection":"As a Noun","rule":"Some な-adjective stems also have noun uses","example":"What role does 自由 have in 自由を守りましょう?","answer":"It is the noun freedom, marked as the object of protecting by を.","explanation":"A word can have both noun and adjectival uses; this does not mean every な-adjective is freely a noun in every context."} -->
 Some な-adjectives can function as nouns:
 - **安全**が第一だ。 — **Safety** comes first.
 - **自由**を守りましょう。 — Let's protect our **freedom**.
 
 ### As an Adverb
 <!-- grammar-card: {"id":"adverb-ni","kind":"rule","format":"cloze","priority":"essential","sourceSection":"As an Adverb","rule":"に makes a な-adjective adverbial","example":"I closed the door quietly: 静か___ドアを閉めた。","answer":"に","explanation":"静かに modifies how the closing happens; 静かな would modify a following noun."} -->
+<!-- grammar-card: {"id":"rule-na-ni-adverb","kind":"concept","format":"qa","priority":"essential","sourceSection":"As an Adverb","rule":"A な-adjective takes に to work as an adverb","example":"What does a na-adjective take after its stem to work as an adverb ('quietly')?","answer":"に.","explanation":"静かに閉めた means 'closed quietly'; before a noun the adjective takes な instead, and before です it takes neither."} -->
 Combine with に:
 - **静かに**ドアを閉めた。 — I closed the door **quietly**.
 - バラが**綺麗に**咲いていた。 — Roses were blooming **beautifully**.
@@ -80,7 +82,7 @@ Combine with に:
 <!-- vocab-card: {"id":"vocab-unique","priority":"optional","sourceSection":"Origins of な-adjectives","word":"ユニーク","reading":"ユニーク","meaning":"unique; distinctive"} -->
 <!-- vocab-card: {"id":"vocab-original","priority":"optional","sourceSection":"Origins of な-adjectives","word":"オリジナル","reading":"オリジナル","meaning":"original"} -->
 <!-- vocab-card: {"id":"vocab-crazy","priority":"optional","sourceSection":"Origins of な-adjectives","word":"クレージー","reading":"クレージー","meaning":"crazy"} -->
-<!-- grammar-card: {"id":"origin-not-class","kind":"concept","format":"qa","priority":"optional","sourceSection":"Origins of な-adjectives","rule":"な-adjectives have native, Sino-Japanese, and borrowed origins","example":"Does being written in katakana rule out a word being a な-adjective?","answer":"No. Loanwords such as ユニーク can be な-adjectives, alongside native 静か and Sino-Japanese 綺麗.","explanation":"Origin and script help describe the vocabulary but do not replace learning each word's grammatical behavior."} -->
+<!-- grammar-card: {"id":"origin-not-class","kind":"concept","format":"qa","priority":"optional","sourceSection":"Origins of な-adjectives","rule":"な-adjectives have native, Sino-Japanese, and borrowed origins","example":"What do ユニーク, 静か, and 綺麗 together show about the origins of な-adjectives?","answer":"な-adjectives can be loanwords (even in katakana), native words, or Sino-Japanese words; script or origin does not decide the class.","explanation":"Origin and script help describe the vocabulary but do not replace learning each word's grammatical behavior.","legacyAliases":[{"rule":"な-adjectives have native, Sino-Japanese, and borrowed origins","example":"Does being written in katakana rule out a word being a な-adjective?"}]} -->
 
 Three sources:
 1. **Native Japanese** — words with hiragana endings like 〜か, 〜やか: 静か, 賑やか
@@ -93,6 +95,7 @@ Three sources:
 <!-- vocab-card: {"id":"vocab-onaji","priority":"essential","sourceSection":"同じ (Same)","word":"同じ","reading":"おなじ","meaning":"same"} -->
 <!-- grammar-card: {"id":"onaji-before-noun","kind":"rule","format":"cloze","priority":"essential","sourceSection":"同じ (Same)","rule":"同じ directly modifies an ordinary noun without な","example":"The same shoes: ___靴。 (Use the exceptional adjective for same.)","answer":"同じ","explanation":"同じ靴 is the ordinary pattern; 同じだ is possible as a predicate, and 同じなのに restores な before の."} -->
 <!-- grammar-card: {"id":"onaji-nanoni","kind":"rule","format":"cloze","priority":"optional","sourceSection":"同じ (Same)","rule":"同じ takes な before の in なのに","example":"Even though it is the same: 同じ___のに。","answer":"な","explanation":"The special lack of な before an ordinary noun does not extend to 同じなのに."} -->
+<!-- grammar-card: {"id":"rule-onaji-exception","kind":"concept","format":"qa","priority":"optional","sourceSection":"同じ (Same)","rule":"同じ modifies an ordinary noun directly, without な","example":"Which common adjective meaning 'same' modifies a noun directly without na?","answer":"同じ (おなじ).","explanation":"同じ靴 has no linker, though 同じ still takes な before のに (同じなのに)."} -->
 - As predicate: 同じ**だ** ✓ (normal な-adjective behavior)
 - Before a noun: 同じ靴 ✓ (no な needed!)
 - Before の in なのに: 同じ**な**のに ✓ (な reappears)

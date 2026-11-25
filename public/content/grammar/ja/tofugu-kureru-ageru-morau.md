@@ -38,7 +38,7 @@ For these situations, あげる, くれる, and もらう are all used when you 
 
 #### Pattern of あげる
 
-<!-- grammar-card: {"id":"ageru-outward","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Pattern of あげる","rule":"あげる is giving that moves away from the speaker","example":"（私が）ジェニーにガムを___。","answer":"あげる","explanation":"The speaker gives to Jenny, so use あげる. More generally it can describe third-party giving from the giver's standpoint."} -->
+<!-- grammar-card: {"id":"ageru-outward","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Pattern of あげる","rule":"あげる is giving that moves away from the speaker","example":"（私が）ジェニーにガムを___。","answer":"あげる","explanation":"The speaker gives to Jenny, so use あげる (あげた / あげます also count). More generally it can describe third-party giving from the giver's standpoint."} -->
 
 In general, あげる is used in the following pattern.
 
@@ -54,7 +54,8 @@ In general, あげる is used in the following pattern.
 
 #### Pattern of くれる
 
-<!-- grammar-card: {"id":"kureru-inward","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Pattern of くれる","rule":"くれる is giving that moves towards the speaker","example":"ジェニーが（私に）ガムを___。","answer":"くれる","explanation":"Jenny is the giving subject and the speaker is the recipient, so use くれる."} -->
+<!-- grammar-card: {"id":"kureru-inward","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Pattern of くれる","rule":"くれる is giving that moves towards the speaker","example":"ジェニーが（私に）ガムを___。","answer":"くれる","explanation":"Jenny is the giving subject and the speaker is the recipient, so use くれる (くれた / くれます also count)."} -->
+<!-- grammar-card: {"id":"rule-kureru-subject","kind":"concept","format":"qa","priority":"optional","sourceSection":"Pattern of くれる","rule":"くれる always means 'give'; its subject is the giver even though the speaker's side receives","example":"In a sentence with the giving verb kureru, which participant is the grammatical subject?","answer":"The giver (the person doing the giving).","explanation":"Naming the giver counts. 友達が（私に）プレゼントをくれた; to make yourself the subject, use the receiving verb もらう instead."} -->
 
 In general, くれる is used in the following pattern.
 
@@ -99,6 +100,7 @@ But when the giver is a company or a government (for example) instead of a perso
 Note again that if you yourself are the receiver, 私が can often be omitted in Japanese. Hence, 私が is in parentheses in the above examples.
 
 <!-- grammar-card: {"id":"morau-receiver-subject","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Pattern of もらう","rule":"もらう makes the receiver the subject and に or から marks the giver","example":"Use the receiving verb: 私がジェニーからガムを___。","answer":"もらう","explanation":"私 receives, so 私 is the subject; くれる would instead make Jenny the giving subject."} -->
+<!-- grammar-card: {"id":"rule-morau-giver-particles","kind":"concept","format":"qa","priority":"essential","sourceSection":"Pattern of もらう","rule":"With もらう the giver is marked by に (direct contact) or から (source)","example":"With the receiving verb morau, which particles can mark the giver?","answer":"に or から; から suits a mere source such as a company.","explanation":"Both particles are needed for full credit. ジェニーに／からガムをもらう; 会社からお金をもらう."} -->
 <!-- grammar-card: {"id":"institution-source","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Pattern of もらう","rule":"から is the natural source marker with an institutional giver","example":"Receive money from a company: 会社___お金をもらう。","answer":"から","explanation":"に can suggest direct personal contact; から presents the company as the source."} -->
 
 ### Conjugations
@@ -158,7 +160,7 @@ The verbs あげる and くれる are ichidan verbs and もらう is a godan ver
     
   
 
-<!-- grammar-card: {"id":"verb-classes","kind":"concept","format":"qa","priority":"optional","sourceSection":"Conjugations","rule":"あげる and くれる are ichidan; もらう is godan","example":"Which giving/receiving verb here changes its final vowel across rows rather than simply dropping る?","answer":"もらう is godan; あげる and くれる are ichidan.","explanation":"Compare もらいます, もらわない, and もらった with くれます and あげます."} -->
+<!-- grammar-card: {"id":"verb-classes","kind":"rule","format":"qa","priority":"optional","sourceSection":"Conjugations","rule":"あげる and くれる are ichidan; もらう is godan","example":"Which of あげる, くれる, and もらう is a godan verb, and which are ichidan?","answer":"もらう is godan; あげる and くれる are ichidan.","explanation":"Compare もらいます, もらわない, and もらった with くれます and あげます.","legacyAliases":[{"rule":"あげる and くれる are ichidan; もらう is godan","example":"Which giving/receiving verb here changes its final vowel across rows rather than simply dropping る?"}]} -->
 
 ### Which Side of Giving and Receiving Are You On?
 
@@ -196,6 +198,7 @@ Here, you cannot use くれる because it adds a nuance that sounds like, "my fr
 Like in the above examples, you need to judge whether the people involved in the giving action are your *uchi* or *soto*, situation by situation. To learn more about *uchi* and *soto*, check out our article devoted to the concepts.
 
 <!-- grammar-card: {"id":"relative-in-group","kind":"concept","format":"qa","priority":"essential","sourceSection":"Two Ways to Say \"To Give\": あげる and くれる","rule":"くれる identifies the receiver with the speaker's side, not necessarily the speaker personally","example":"Why can you use くれる when a friend gives your brother a present, although you receive nothing yourself?","answer":"You identify with your brother as part of your in-group in that situation.","explanation":"In-group and out-group are relative. A friend can be your in-group when contrasted with strangers; kinship alone is not a fixed grammatical test."} -->
+<!-- grammar-card: {"id":"rule-kureru-direction","kind":"concept","format":"qa","priority":"essential","sourceSection":"Two Ways to Say \"To Give\": あげる and くれる","rule":"くれる is used when the receiver is the speaker or the speaker's in-group (uchi)","example":"What does choosing the giving verb kureru signal about the recipient's relation to the speaker?","answer":"The receiver is the speaker or someone in the speaker's in-group (uchi).","explanation":"Any answer naming me/my side/in-group counts. A neutral outsider cannot use くれる; an in-group giver or outsider-to-outsider giving uses あげる."} -->
 
 #### One Way to Say "To Receive": もらう
 
@@ -290,7 +293,7 @@ The way these words function when you're an outsider is also the same. When neit
 
 In this case, 〜てくれる can't be used for the same reason explained earlier.
 
-<!-- grammar-card: {"id":"favor-giving","kind":"rule","format":"cloze","priority":"optional","sourceSection":"〜てあげる, 〜てくれる, and 〜てもらう","rule":"てあげる frames an action as a favour done for someone","example":"（私が）友達に日本語を教え___。","answer":"てあげる","explanation":"教えてあげる presents teaching as a favor for the friend, not merely an action."} -->
+<!-- grammar-card: {"id":"favor-giving","kind":"rule","format":"cloze","priority":"optional","sourceSection":"〜てあげる, 〜てくれる, and 〜てもらう","rule":"てあげる frames an action as a favour done for someone","example":"Present teaching your friend as a favor you do for them: （私が）友達に日本語を教え___。","answer":"てあげる","explanation":"教えてあげる presents teaching as a favor for the friend, not merely an action. てあげた also counts; plain 教えた would drop the favor framing.","legacyAliases":[{"rule":"てあげる frames an action as a favour done for someone","example":"（私が）友達に日本語を教え___。"}]} -->
 <!-- grammar-card: {"id":"favor-inward","kind":"rule","format":"cloze","priority":"optional","sourceSection":"〜てあげる, 〜てくれる, and 〜てもらう","rule":"てくれる keeps the favor-doer as subject and aligns with the recipient","example":"A friend kindly teaches me: 友達が私に日本語を教えて___。","answer":"くれる","explanation":"The friend remains the subject; the action is appreciated from the speaker's receiving side."} -->
 <!-- grammar-card: {"id":"favor-receiving","kind":"rule","format":"cloze","priority":"optional","sourceSection":"〜てあげる, 〜てくれる, and 〜てもらう","rule":"てもらう makes the favor-recipient the subject","example":"I receive Japanese lessons from a friend: 私は友達に日本語を教えて___。","answer":"もらう","explanation":"The speaker receives the action. This framing can acknowledge indebtedness and is often suitable for a requested favor."} -->
 <!-- grammar-card: {"id":"favor-presumption","kind":"concept","format":"qa","priority":"essential","sourceSection":"〜てあげる, 〜てくれる, and 〜てもらう","rule":"Announcing a favor to its recipient can sound condescending","example":"Why can 遊んであげる sound odd when said directly to an equal friend?","answer":"It frames spending time with them as a favor you bestow, implying they should be grateful.","explanation":"Describing a favor to a third party and offering it to the recipient have different social effects."} -->
@@ -394,7 +397,7 @@ Since the formality of あげる has decreased, in formal situations you'll now 
 
 <!-- vocab-card: {"id":"vocab-yaru","priority":"optional","sourceSection":"やる, あげる, and 差し上げる","word":"やる","reading":"やる","meaning":"to give (blunt or very casual)"} -->
 <!-- vocab-card: {"id":"vocab-sashiageru","priority":"optional","sourceSection":"やる, あげる, and 差し上げる","word":"差し上げる","reading":"さしあげる","meaning":"to give (humble)"} -->
-<!-- grammar-card: {"id":"modern-giving-register","kind":"concept","format":"qa","priority":"optional","sourceSection":"やる, あげる, and 差し上げる","rule":"Modern あげる is ordinary giving; やる is blunter and 差し上げる humbler","example":"Does modern あげる require a recipient of higher status, as its historical origin might suggest?","answer":"No. It is ordinary giving even to friends or pets; やる is blunter, while 差し上げる is used for humble formal giving.","explanation":"Its origin in 上げる, raising something upward, explains the historical humility but is not a present-day rank restriction."} -->
+<!-- grammar-card: {"id":"modern-giving-register","kind":"concept","format":"qa","priority":"optional","sourceSection":"やる, あげる, and 差し上げる","rule":"Modern あげる is ordinary giving; やる is blunter and 差し上げる humbler","example":"How does the register of modern あげる compare with やる and 差し上げる?","answer":"Modern あげる is ordinary giving, even to friends or pets, with no higher-status requirement; やる is blunter, while 差し上げる is humble formal giving.","explanation":"Any answer placing あげる as the ordinary middle option counts. Its origin in 上げる, raising something upward, explains the historical humility but is not a present-day rank restriction.","legacyAliases":[{"rule":"Modern あげる is ordinary giving; やる is blunter and 差し上げる humbler","example":"Does modern あげる require a recipient of higher status, as its historical origin might suggest?"}]} -->
 
 #### くれる and くださる
 
@@ -428,7 +431,7 @@ For example, when a significant event in life is being celebrated, such as a bir
 <!-- vocab-card: {"id":"vocab-itadaku","priority":"optional","sourceSection":"もらう and いただく","word":"いただく","reading":"いただく","meaning":"to receive (humble)"} -->
 <!-- vocab-card: {"id":"vocab-oiwai","priority":"optional","sourceSection":"もらう and いただく","word":"お祝い","reading":"おいわい","meaning":"celebration; congratulatory gift"} -->
 <!-- vocab-card: {"id":"vocab-oiwai-gaeshi","priority":"optional","sourceSection":"もらう and いただく","word":"お祝い返し","reading":"おいわいがえし","meaning":"return gift in thanks for a congratulatory gift"} -->
-<!-- grammar-card: {"id":"honorific-humble-perspective","kind":"concept","format":"qa","priority":"optional","sourceSection":"もらう and いただく","rule":"Honorific giving and humble receiving preserve different subjects","example":"How does the subject change between 教授が本をくださる and 私が教授に本をいただく?","answer":"The professor is the giving subject in the first; I am the receiving subject in the second.","explanation":"Both respect the giver, but くださる honors their giving and いただく humbles the recipient's receiving. Gift reciprocity in this section explains a cultural context, not a required grammatical meaning."} -->
+<!-- grammar-card: {"id":"honorific-humble-perspective","kind":"rule","format":"qa","priority":"optional","sourceSection":"もらう and いただく","rule":"Honorific giving and humble receiving preserve different subjects","example":"How does the subject change between 教授が本をくださる and 私が教授に本をいただく?","answer":"The professor is the giving subject in the first; I am the receiving subject in the second.","explanation":"Both respect the giver, but くださる honors their giving and いただく humbles the recipient's receiving. Gift reciprocity in this section explains a cultural context, not a required grammatical meaning."} -->
 
   
 

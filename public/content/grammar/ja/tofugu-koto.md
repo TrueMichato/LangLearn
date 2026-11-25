@@ -84,9 +84,9 @@ Got it? In the examples we've seen so far 事 is basically serving the same func
 
 <!-- vocab-card: {"id":"vocab-ayamaru","word":"謝る","reading":"あやまる","meaning":"to apologize","priority":"optional","sourceSection":"〜事 for \"Thing(s)\""} -->
 <!-- grammar-card: {"id":"thing-modification","kind":"rule","format":"cloze","priority":"optional","sourceSection":"〜事 for \"Thing(s)\"","rule":"A な-adjective takes な before the noun 事","example":"Unpleasant things: 嫌___事。","answer":"な","explanation":"嫌な事 (いやなこと) describes an unpleasant matter. An い-adjective or plain verb can modify 事 directly."} -->
-<!-- grammar-card: {"id":"thing-number","kind":"concept","format":"qa","priority":"optional","sourceSection":"〜事 for \"Thing(s)\"","rule":"事 does not itself specify singular or plural","example":"Does 面白い事 necessarily mean several interesting things rather than one?","answer":"No. Context determines whether it refers to one thing or several treated together.","explanation":"Japanese 事 does not encode the English distinction between thing and things."} -->
+<!-- grammar-card: {"id":"thing-number","kind":"concept","format":"qa","priority":"optional","sourceSection":"〜事 for \"Thing(s)\"","rule":"事 does not itself specify singular or plural","example":"What decides whether 事 (as in 面白い事) refers to one thing or to several?","answer":"Context. 事 itself does not mark singular or plural; it can present one thing or several treated together.","explanation":"Japanese 事 does not encode the English distinction between thing and things.","legacyAliases":[{"rule":"事 does not itself specify singular or plural","example":"Does 面白い事 necessarily mean several interesting things rather than one?"}]} -->
 
-<!-- grammar-card: {"id":"matter-spelling","kind":"rule","format":"cloze","priority":"optional","sourceSection":"〜事 for \"Thing(s)\"","rule":"事 can denote a matter or issue, whether written in kanji or kana","hint":"Write the noun for an intangible matter in kanji.","example":"小さい___で、友達とケンカをした。","answer":"事","explanation":"小さい事 means a trivial matter. Writing 事 instead of こと does not make the referent physical or concrete.","legacyAliases":[{"rule":"事 written in kanji keeps its concrete meaning 'matter'","example":"小さい___で、友達とケンカをした。"}]} -->
+<!-- grammar-card: {"id":"matter-spelling","kind":"rule","format":"cloze","priority":"optional","sourceSection":"〜事 for \"Thing(s)\"","rule":"事 can denote a matter or issue, whether written in kanji or kana","hint":"Write the noun for an intangible matter in kanji.","example":"I fought with a friend over the littlest thing (write the noun in kanji): 小さい___で、友達とケンカをした。","answer":"事","explanation":"小さい事 means a trivial matter. The kana spelling こと is the same word; writing 事 instead of こと does not make the referent physical or concrete.","legacyAliases":[{"rule":"事 written in kanji keeps its concrete meaning 'matter'","example":"小さい___で、友達とケンカをした。"},{"rule":"事 can denote a matter or issue, whether written in kanji or kana","example":"小さい___で、友達とケンカをした。"}]} -->
 
 ### 〜事 for About "Activity/Action"
 
@@ -116,7 +116,7 @@ Did you notice that by attaching to a verb, 事 is sort of turning it into a nou
 
 While mostly interchangeable, there is a slight difference in nuance between 事 and の. While 事 is used to talk about broad, abstract concepts, の is used to talk about more concrete actions or something familiar to you. So using the particle の here sounds more casual because it indicates you're referring to something personal.
 
-<!-- grammar-card: {"id":"activity-nominalization","kind":"rule","format":"cloze","priority":"essential","sourceSection":"〜事 for About \"Activity/Action\"","rule":"こと turns a plain verb phrase into a noun phrase for a general activity","example":"Use the abstract nominalizer: 運動をする___は、大切だ。","answer":"こと","explanation":"運動をすること packages exercising as a general concept so it can be marked with は."} -->
+<!-- grammar-card: {"id":"activity-nominalization","kind":"rule","format":"cloze","priority":"essential","sourceSection":"〜事 for About \"Activity/Action\"","rule":"こと turns a plain verb phrase into a noun phrase for a general activity","example":"Use the abstract nominalizer: 運動をする___は、大切だ。","answer":"こと","explanation":"運動をすること packages exercising as a general concept so it can be marked with は. 事 in kanji also counts; の is grammatical too but is the more casual, concrete nominalizer."} -->
 
 <!-- grammar-card: {"id":"no-koto-contrast","kind":"concept","format":"qa","priority":"essential","sourceSection":"〜事 for About \"Activity/Action\"","rule":"こと tends toward abstract activity while の can present a concrete or familiar action","example":"When both nominalizers are possible, how does の differ in nuance from こと?","answer":"の tends to present a concrete or familiar action, while こと tends to package an abstract activity or fact.","explanation":"This is a tendency, not a rule that allows free substitution in every fixed construction.","legacyAliases":[{"rule":"の nominalises a verb into a concrete, everyday activity","example":"運動をする___は、大切だ。"}]} -->
 
@@ -163,7 +163,7 @@ When talking about something or someone, 〜の事 is often attached to the word
 
 "Why do you add 〜の事?" you might be wondering. You can also say 花子が好きなんだよね. Adding 〜の事 frames Hanako more broadly, as a person and what relates to her; it does not literally assert that you like every single trait or detail.
 
-<!-- grammar-card: {"id":"person-no-koto","kind":"concept","format":"qa","priority":"optional","sourceSection":"〜の事 To Talk About \"Someone/Something\" As A Whole Entity","rule":"Noun + のこと frames a person or matter and what relates to it","example":"Does 花子の事が好き literally guarantee liking every detail about Hanako?","answer":"No. の事 frames her more broadly as a person and what concerns her, without a literal every-detail claim.","explanation":"With an event, の事 can mean information about it; with a person it can also make the reference less direct."} -->
+<!-- grammar-card: {"id":"person-no-koto","kind":"concept","format":"qa","priority":"optional","sourceSection":"〜の事 To Talk About \"Someone/Something\" As A Whole Entity","rule":"Noun + のこと frames a person or matter and what relates to it","example":"What does adding の事 do in 花子の事が好き, compared with plain 花子が好き?","answer":"It frames her more broadly, as a person and what concerns her, without literally claiming to like every detail.","explanation":"Any answer about broader or less direct framing counts. With an event, の事 can mean information about it; with a person it can also make the reference less direct.","legacyAliases":[{"rule":"Noun + のこと frames a person or matter and what relates to it","example":"Does 花子の事が好き literally guarantee liking every detail about Hanako?"}]} -->
 
 Let's take a look at a different scenario. Let's say your friend is throwing a birthday party and you're curious whether Hanako has been invited. You might want to ask:
 
@@ -201,7 +201,8 @@ If you've been to Japan but never eaten sushi, you can say お寿司を食べた
 
 Earlier you learned that 事 can be replaced with the nominalizer の when talking about something of a more personal nature. However, using の like this, as in 日本に行った**の**がある or お寿司を食べた**の**がない doesn't work.
 
-<!-- grammar-card: {"id":"experience-construction","kind":"concept","format":"qa","priority":"essential","sourceSection":"〜た事がある To Talk About \"Past Experience\"","rule":"The experience construction requires たことがある, not たのがある","example":"Can 日本に行ったことがある use の in place of こと while retaining the experience meaning?","answer":"No. The fixed experience construction uses the plain past plus ことがある.","explanation":"The negative 食べたことがない means never having eaten it; this is not unrestricted nominalizer interchange."} -->
+<!-- grammar-card: {"id":"experience-construction","kind":"concept","format":"qa","priority":"essential","sourceSection":"〜た事がある To Talk About \"Past Experience\"","rule":"The experience construction requires たことがある, not たのがある","example":"Why can't の replace こと in 日本に行ったことがある?","answer":"〜たことがある is a fixed experience construction (plain past + ことがある); with の it loses the experience meaning.","explanation":"Any answer naming it as a fixed construction counts. The negative 食べたことがない means never having eaten it; this is not unrestricted nominalizer interchange.","legacyAliases":[{"rule":"The experience construction requires たことがある, not たのがある","example":"Can 日本に行ったことがある use の in place of こと while retaining the experience meaning?"}]} -->
+<!-- grammar-card: {"id":"rule-experience-past-form","kind":"concept","format":"qa","priority":"essential","sourceSection":"〜た事がある To Talk About \"Past Experience\"","rule":"Past experience is plain past (た-form) + ことがある","example":"To say you have had the experience of doing something (\"-koto ga aru\"), which form does the verb before koto take?","answer":"The plain past (た-form).","explanation":"Any answer naming the plain past or た-form counts: 行く → 行ったことがある. With the dictionary form, ことがある instead means something happens occasionally."} -->
 
 ### 〜事がある To Talk About "Occasional Experiences"
 
@@ -223,7 +224,7 @@ Here, the particle が in 〜事がある is replaced with the particle も (als
 
 Note that when used this way, you can't replace 事 with the nominalizer の.
 
-<!-- grammar-card: {"id":"occasional-versus-experiential","kind":"concept","format":"qa","priority":"optional","sourceSection":"〜事がある To Talk About \"Occasional Experiences\"","rule":"Nonpast + ことがある describes occasions, whereas past + ことがある describes experience","example":"How does ケンカをすることがある differ from ケンカをしたことがある?","answer":"The first means quarrels sometimes happen; the second means having had the experience of quarreling.","explanation":"A negative clause before こともある can likewise describe occasions when an action does not happen. の cannot replace こと in this construction."} -->
+<!-- grammar-card: {"id":"occasional-versus-experiential","kind":"rule","format":"qa","priority":"optional","sourceSection":"〜事がある To Talk About \"Occasional Experiences\"","rule":"Nonpast + ことがある describes occasions, whereas past + ことがある describes experience","example":"How does ケンカをすることがある differ from ケンカをしたことがある?","answer":"The first means quarrels sometimes happen; the second means having had the experience of quarreling.","explanation":"A negative clause before こともある can likewise describe occasions when an action does not happen. の cannot replace こと in this construction."} -->
 
 ### 〜事 for "Giving Rules or Directions"
 
@@ -251,7 +252,7 @@ It's also common to add something to wrap up your bullet points, such as:
 
   - Don't be mean to your friends. Be nice to them. Help each other out. **These things should be followed to the letter.**
 
-<!-- grammar-card: {"id":"instruction-ending","kind":"concept","format":"qa","priority":"optional","sourceSection":"〜事 for \"Giving Rules or Directions\"","rule":"Sentence-final plain clauses plus こと can state rules or directions","example":"What function does こと have in the teacher's 友達には、意地悪しないこと?","answer":"It presents a rule or instruction: do not be mean to your friends.","explanation":"This is list-like directive language, not a statement that an experience exists."} -->
+<!-- grammar-card: {"id":"instruction-ending","kind":"rule","format":"qa","priority":"optional","sourceSection":"〜事 for \"Giving Rules or Directions\"","rule":"Sentence-final plain clauses plus こと can state rules or directions","example":"What function does こと have in the teacher's 友達には、意地悪しないこと?","answer":"It presents a rule or instruction: do not be mean to your friends.","explanation":"This is list-like directive language, not a statement that an experience exists."} -->
 
 ### 〜事ができる To Talk About "Ability"
 
@@ -271,12 +272,13 @@ Hence, 〜事ができる is generally more appropriate in a formal setting, suc
 
 <!-- vocab-card: {"id":"vocab-utau","word":"歌う","reading":"うたう","meaning":"to sing","priority":"optional","sourceSection":"〜事ができる To Talk About \"Ability\""} -->
 <!-- grammar-card: {"id":"ability-construction","kind":"rule","format":"cloze","priority":"essential","sourceSection":"〜事ができる To Talk About \"Ability\"","rule":"Dictionary form + ことができる expresses ability; の cannot replace こと here","example":"I can sing in Japanese: 日本語で歌う___ができます。","answer":"こと","explanation":"こと nominalizes the activity before できる. The potential 歌える is often more compact in conversation; both forms can state ability."} -->
+<!-- grammar-card: {"id":"rule-ability-dictionary-form","kind":"concept","format":"qa","priority":"optional","sourceSection":"〜事ができる To Talk About \"Ability\"","rule":"Ability is dictionary form + ことができる","example":"In the ability pattern \"verb + koto ga dekiru\" (can do), which form does the verb take?","answer":"The dictionary (plain nonpast) form.","explanation":"Dictionary form or plain nonpast counts: 歌う → 歌うことができる. It sounds more objective or formal than the potential form."} -->
 
   - 私この曲、日本語で**歌える**よ！
 
   - I can sing this song in Japanese.
 
-<!-- grammar-card: {"id":"potential-alternative","kind":"rule","format":"cloze","priority":"optional","sourceSection":"〜事ができる To Talk About \"Ability\"","rule":"The potential form can replace ことができる","hint":"Use the potential of 歌う (うたう).","example":"私この曲、日本語で___よ！","answer":"歌える","explanation":"歌える (うたえる) is the compact potential counterpart of 歌うことができる and is common in conversation."} -->
+<!-- grammar-card: {"id":"potential-alternative","kind":"rule","format":"cloze","priority":"optional","sourceSection":"〜事ができる To Talk About \"Ability\"","rule":"The potential form can replace ことができる","hint":"Use the potential of 歌う (うたう).","example":"I can sing this song in Japanese (casual; use the potential form of 歌う): 私この曲、日本語で___よ！","answer":"歌える","explanation":"歌える (うたえる; kana also counts) is the compact potential counterpart of 歌うことができる and is common in conversation.","legacyAliases":[{"rule":"The potential form can replace ことができる","example":"私この曲、日本語で___よ！"}]} -->
 
 ---
 

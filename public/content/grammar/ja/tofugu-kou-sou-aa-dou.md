@@ -70,7 +70,7 @@ If you'd like to read scenarios that illustrate these concepts and learn more ab
 
   - Hot weather **like this** makes me want to do nothing.
 
-<!-- grammar-card: {"id":"current-degree","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Patterns of Use","rule":"こう means 'in this way', pointing at the present situation","hint":"Refer to the speaker's current heat: this hot","example":"___暑いと何もする気にならない。","answer":"こう","explanation":"こう can precede an adjective, not only an action verb. It can also stand with だ in こうだよ."} -->
+<!-- grammar-card: {"id":"current-degree","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Patterns of Use","rule":"こう means 'in this way', pointing at the present situation","example":"About the heat you are in right now (\"this hot\"): ___暑いと何もする気にならない。","answer":"こう","explanation":"こう can precede an adjective, not only an action verb. It can also stand with だ in こうだよ.","legacyAliases":[{"rule":"こう means 'in this way', pointing at the present situation","example":"___暑いと何もする気にならない。"}]} -->
 
 ### こう, そう, ああ for Describing "How"
 
@@ -106,7 +106,7 @@ The question word that goes with this set is どう, and it asks "how?" or "like
 
   - **How** should I roll it?
 
-<!-- grammar-card: {"id":"listener-method","kind":"rule","format":"cloze","priority":"essential","sourceSection":"こう, そう, ああ for Describing \"How\"","rule":"そう refers to the way the listener is doing something","hint":"Approve the listener's demonstrated rolling method","example":"うんうん！___巻けばいいよ！上手いじゃん！","answer":"そう","explanation":"そう points to the listener's method, while こう would present the speaker's own demonstration."} -->
+<!-- grammar-card: {"id":"listener-method","kind":"rule","format":"cloze","priority":"essential","sourceSection":"こう, そう, ああ for Describing \"How\"","rule":"そう refers to the way the listener is doing something","example":"Your friend copies your sushi rolling and does it well — approve their way: うんうん！___巻けばいいよ！上手いじゃん！","answer":"そう","explanation":"そう points to the listener's method, while こう would present the speaker's own demonstration.","legacyAliases":[{"rule":"そう refers to the way the listener is doing something","example":"うんうん！___巻けばいいよ！上手いじゃん！"}]} -->
 <!-- grammar-card: {"id":"how-question","kind":"rule","format":"cloze","priority":"essential","sourceSection":"こう, そう, ああ for Describing \"How\"","rule":"どう asks how to carry out an action","example":"How should I roll it? ___巻けばいいの？","answer":"どう","explanation":"どう asks for a manner; どんな normally describes the kind of a following noun."} -->
 <!-- grammar-card: {"id":"distant-manner-spelling","kind":"concept","format":"qa","priority":"optional","sourceSection":"こう, そう, ああ for Describing \"How\"","rule":"The distant member of this series is ああ, not あう","example":"Which manner word refers to a third person's method distant from both speaker and listener?","answer":"ああ.","explanation":"Its second vowel is あ, unlike the う in こう, そう and どう."} -->
 
@@ -164,7 +164,7 @@ This last example only applies to そうそう, but not to そういえば.
 
 <!-- vocab-card: {"id":"vocab-souieba","priority":"optional","sourceSection":"そうそう and そういえば","word":"そういえば","reading":"そういえば","meaning":"speaking of which; come to think of it"} -->
 <!-- vocab-card: {"id":"vocab-sousou","priority":"optional","sourceSection":"そうそう and そういえば","word":"そうそう","reading":"そうそう","meaning":"right, right; oh yes; that's it (casual)"} -->
-<!-- grammar-card: {"id":"encouragement-versus-recollection","kind":"concept","format":"qa","priority":"optional","sourceSection":"そうそう and そういえば","rule":"そうそう can encourage an ongoing action; そういえば does not","example":"Can そういえば replace そうそう in そうそう、その調子！ while coaching someone's action?","answer":"No. そうそう can mean That's it, keep going; そういえば introduces a recollection or related topic.","explanation":"Both can signal a newly remembered thought, but only そうそう has this encouragement use."} -->
+<!-- grammar-card: {"id":"encouragement-versus-recollection","kind":"concept","format":"qa","priority":"optional","sourceSection":"そうそう and そういえば","rule":"そうそう can encourage an ongoing action; そういえば does not","example":"While coaching someone's action (〜、その調子！), which fits — そうそう or そういえば — and why?","answer":"そうそう: it can mean \"That's it, keep going\"; そういえば only introduces a recollection or related topic.","explanation":"Both can signal a newly remembered thought, but only そうそう has this encouragement use.","legacyAliases":[{"rule":"そうそう can encourage an ongoing action; そういえば does not","example":"Can そういえば replace そうそう in そうそう、その調子！ while coaching someone's action?"}]} -->
 
 ### Common Combinations
 
@@ -184,7 +184,8 @@ In this case, 〜様 is the most formal of the three, 〜風 is an ordinary expr
 
   - I will be careful not to do anything **like this** in the future.
 
-<!-- grammar-card: {"id":"noun-kind-kouiu","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Common Combinations","rule":"こういう modifies a noun, meaning 'this kind of'","hint":"A shirt of the type right here; use the いう combination","example":"___シャツが欲しかったんだよね。","answer":"こういう","explanation":"こういう directly modifies シャツ, unlike adverbial こう by itself."} -->
+<!-- grammar-card: {"id":"noun-kind-kouiu","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Common Combinations","rule":"こういう modifies a noun, meaning 'this kind of'","example":"Holding exactly the shirt you wanted — \"a shirt like this\" (the いう combination): ___シャツが欲しかったんだよね。","answer":"こういう","explanation":"こういう directly modifies シャツ, unlike adverbial こう by itself.","legacyAliases":[{"rule":"こういう modifies a noun, meaning 'this kind of'","example":"___シャツが欲しかったんだよね。"}]} -->
+<!-- grammar-card: {"id":"rule-kouiu-before-noun","kind":"concept","format":"qa","priority":"essential","sourceSection":"Common Combinations","rule":"kou/sou/aa/dou describe the manner of verbs and adjectives; kouiu/souiu/aaiu/douiu modify nouns","example":"What does kou (like this) attach to, and what does kouiu (this kind of) attach to instead?","answer":"kou goes before a verb or adjective (manner); kouiu goes before a noun (this kind of + noun).","explanation":"E.g. こう巻く vs こういうシャツ. \"Verbs vs nouns\" counts."} -->
 <!-- grammar-card: {"id":"noun-link-feeling","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Common Combinations","rule":"感じ takes の before a following noun","example":"An event with that sort of feel: そういう感じ___こと。","answer":"の","explanation":"Use 感じの, compared with 様な and 風な; do not treat all three as な-adjectives."} -->
 <!-- grammar-card: {"id":"manner-formality","kind":"concept","format":"qa","priority":"optional","sourceSection":"Common Combinations","rule":"The choice of manner expression can change formality","example":"Which is more formal in these manner descriptions, 様 or 感じ?","answer":"様 (よう) is more formal; 感じ (かんじ) is casual, with 風 (ふう) more neutral.","explanation":"The register qualification applies to these expressions rather than every use of each word."} -->
 

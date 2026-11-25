@@ -87,9 +87,10 @@ The second point is for when the clause ends with a な-adjective in the present
 
 <!-- grammar-card: {"id":"nominalizer-plain-clause","kind":"concept","format":"qa","priority":"essential","sourceSection":"Relative Clause + の","rule":"A clause modifying nominalizer の normally uses plain forms","example":"Should the verb before nominalizer の normally use the plain form or the polite ます form?","answer":"The plain form.","explanation":"Use 買ったの rather than 買いましたの in the ordinary relative-clause pattern taught here."} -->
 <!-- grammar-card: {"id":"nominalizer-na-link","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Relative Clause + の","rule":"A present affirmative な-adjective needs な before nominalizer の","example":"大切___のはやさしさだ。","answer":"な","explanation":"大切 is a な-adjective, so it modifies noun-like の as 大切なの; do not attach だ here."} -->
+<!-- grammar-card: {"id":"rule-na-before-no","kind":"concept","format":"qa","priority":"essential","sourceSection":"Relative Clause + の","rule":"A present affirmative な-adjective keeps な before nominalizer の","example":"When a clause ending in a present affirmative な-adjective is nominalized with の, what must link the adjective to の?","answer":"な, as when it modifies a noun.","explanation":"Any answer naming な counts. 大切なのはやさしさだ, not 大切のは; だ is not attached here."} -->
 <!-- vocab-card: {"id":"vocab-koto","word":"事","reading":"こと","meaning":"non-physical thing; matter","priority":"essential","sourceSection":"Relative Clause + の"} -->
 <!-- vocab-card: {"id":"vocab-mono","word":"物","reading":"もの","meaning":"material thing; physical object","priority":"essential","sourceSection":"Relative Clause + の"} -->
-<!-- grammar-card: {"id":"nominalizer-activity","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Relative Clause + の","rule":"の turns a verb phrase into a noun","hint":"nominaliser","example":"映画(えいが)を見(み)る___が好(す)きです。","answer":"の","explanation":"見るの becomes the thing that is liked, which is why it can take が."} -->
+<!-- grammar-card: {"id":"nominalizer-activity","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Relative Clause + の","rule":"の turns a verb phrase into a noun","hint":"nominaliser","example":"映画(えいが)を見(み)る___が好(す)きです。","answer":"の","explanation":"見るの becomes the thing that is liked, which is why it can take が. 見ることが好きです is also correct; this card practises の."} -->
 
 #### こそあど Words + の
 
@@ -103,7 +104,7 @@ Nominalizer の can be modified by some of the こそあど words, aka Japanese 
 
   - Please let me know things like that in advance.
 
-<!-- grammar-card: {"id":"nominalizer-demonstrative","kind":"rule","format":"cloze","priority":"optional","sourceSection":"こそあど Words + の","rule":"こんな and そういう can modify noun-like の","example":"こんな___要らないよ。 (I don't need things like this.)","answer":"の","explanation":"こんなの means things like this; の supplies the noun-like head after the demonstrative."} -->
+<!-- grammar-card: {"id":"nominalizer-demonstrative","kind":"rule","format":"cloze","priority":"optional","sourceSection":"こそあど Words + の","rule":"こんな and そういう can modify noun-like の","example":"こんな___要らないよ。 (I don't need things like this.)","answer":"の","explanation":"こんなの means things like this; の supplies the noun-like head after the demonstrative. こんなもの is also natural, but this card practises の."} -->
 
 #### の At The End of Sentences
 
@@ -155,6 +156,7 @@ Meanings of nominalizer の change depending on the context because it acts like
 For direct perception of an event, use の: 彼が走るのを見た means “I saw him running.” In this direct-event sense, こと does not replace の.
 
 <!-- grammar-card: {"id":"nominalizer-direct-perception","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Non-Physical Things","rule":"Directly seeing an event uses の rather than こと in the event-object construction","hint":"I saw him running","example":"彼(かれ)が走(はし)る___を見(み)た。","answer":"の","explanation":"Here 見た describes direct perception of his running, not abstract knowledge of a fact, so the event is nominalized with の.","legacyAliases":[{"rule":"Verbs of direct perception take の, never こと","example":"彼(かれ)が走(はし)る___を見(み)た。"}]} -->
+<!-- grammar-card: {"id":"rule-direct-perception-no","kind":"concept","format":"qa","priority":"optional","sourceSection":"Non-Physical Things","rule":"Directly perceived events are nominalized with の, not こと","example":"When the object of 見る is an event you directly witness (seeing someone running), which nominalizer does the lesson use?","answer":"の; こと doesn't replace it here.","explanation":"The answer counts if it names の. 彼が走るのを見た = I saw him running."} -->
 
 #### Material Things
 
@@ -173,7 +175,7 @@ For direct perception of an event, use の: 彼が走るのを見た means “I 
   - Who's there?
 (*Literally*: Who is it that is there?)
 
-<!-- grammar-card: {"id":"nominalizer-material-referent","kind":"concept","format":"qa","priority":"optional","sourceSection":"Material Things","rule":"Nominalizer の can stand for physical objects and living beings","example":"In 甘いのが食べたい, what does の stand for?","answer":"Sweet things to eat.","explanation":"Here の refers to material things, not merely the abstract property of being sweet. It can also refer to a person or animal in an appropriate clause."} -->
+<!-- grammar-card: {"id":"nominalizer-material-referent","kind":"rule","format":"qa","priority":"optional","sourceSection":"Material Things","rule":"Nominalizer の can stand for physical objects and living beings","example":"In 甘いのが食べたい, what does の stand for?","answer":"Sweet things to eat.","explanation":"Here の refers to material things, not merely the abstract property of being sweet. It can also refer to a person or animal in an appropriate clause."} -->
 
 #### Time and Place
 
@@ -195,7 +197,7 @@ For direct perception of an event, use の: 彼が走るのを見た means “I 
 
   - Where I was born is New York.
 
-<!-- grammar-card: {"id":"nominalizer-time-place","kind":"concept","format":"qa","priority":"optional","sourceSection":"Time and Place","rule":"The predicate can identify a nominalized clause as a time or place","example":"What does の refer to in 生まれたのはニューヨークです?","answer":"The place where the speaker was born.","explanation":"ニューヨーク supplies a place interpretation. With 届くのは明日です, 明日 instead supplies a time interpretation."} -->
+<!-- grammar-card: {"id":"nominalizer-time-place","kind":"rule","format":"qa","priority":"optional","sourceSection":"Time and Place","rule":"The predicate can identify a nominalized clause as a time or place","example":"What does の refer to in 生まれたのはニューヨークです?","answer":"The place where the speaker was born.","explanation":"ニューヨーク supplies a place interpretation. With 届くのは明日です, 明日 instead supplies a time interpretation."} -->
 
 #### Reason
 
@@ -210,7 +212,7 @@ For direct perception of an event, use の: 彼が走るのを見た means “I 
   - Why did you think so?
 (*Literally*: What's the reason for thinking so?)
 
-<!-- grammar-card: {"id":"nominalizer-reason","kind":"concept","format":"qa","priority":"optional","sourceSection":"Reason","rule":"の can introduce the reason being explained or questioned","example":"What information is requested by そう思ったのは、なぜですか?","answer":"The reason for thinking that way.","explanation":"The nominalized clause is the topic, and なぜ asks for its reason rather than for a physical thing."} -->
+<!-- grammar-card: {"id":"nominalizer-reason","kind":"rule","format":"qa","priority":"optional","sourceSection":"Reason","rule":"の can introduce the reason being explained or questioned","example":"What information is requested by そう思ったのは、なぜですか?","answer":"The reason for thinking that way.","explanation":"The nominalized clause is the topic, and なぜ asks for its reason rather than for a physical thing."} -->
 
 ## Beyond The Basics
 
@@ -222,7 +224,7 @@ Nominalizer の can be used to list a couple of things that contrast with each o
 
   - We argued about whether to go to a restaurant or not.
 
-<!-- grammar-card: {"id":"nominalizer-listing-clauses","kind":"concept","format":"qa","priority":"optional","sourceSection":"Nominalizer の For Listing","rule":"の can list contrasting clauses as alternatives under discussion","example":"What alternatives are listed in レストランに行くの行かないのでもめた?","answer":"Going to the restaurant versus not going.","explanation":"The affirmative and negative clauses form a list of alternatives. This is the ordinary listing use, not the later idiom meaning extraordinarily delicious."} -->
+<!-- grammar-card: {"id":"nominalizer-listing-clauses","kind":"rule","format":"qa","priority":"optional","sourceSection":"Nominalizer の For Listing","rule":"の can list contrasting clauses as alternatives under discussion","example":"What alternatives are listed in レストランに行くの行かないのでもめた?","answer":"Going to the restaurant versus not going.","explanation":"The affirmative and negative clauses form a list of alternatives. This is the ordinary listing use, not the later idiom meaning extraordinarily delicious."} -->
 
 For nouns and な-adjectives, you'd need to add だ and say 〜だの〜だの.
 
@@ -232,7 +234,7 @@ For nouns and な-adjectives, you'd need to add だ and say 〜だの〜だの.
 
 This use of の often carries a negative connotation, and may sound like you're complaining. However, there is a special, idiomatic pattern used to enthusiastically say that something is extraordinary. This is achieved when you take the same adjective and repeat it twice, once in the positive and once in the negative, followed of course by our nominalizer の. For example, with the い-adjective 美味しい (delicious), you can say:
 
-<!-- grammar-card: {"id":"nominalizer-listing-nouns","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Nominalizer の For Listing","rule":"Listing nouns with の uses だの","example":"テスト勉強___部活だので忙しいよ。","answer":"だの","explanation":"Nouns and な-adjectives use だの in this listing construction. The list often sounds like a complaint, unlike a neutral noun list with と."} -->
+<!-- grammar-card: {"id":"nominalizer-listing-nouns","kind":"rule","format":"qa","priority":"optional","sourceSection":"Nominalizer の For Listing","rule":"Listing nouns with の uses だの","example":"You complain that you're busy with things like exam study (テスト勉強) and club activities (部活), using the の listing pattern. What follows each noun?","answer":"だの","explanation":"Nouns and な-adjectives use だの in this listing construction: テスト勉強だの部活だので忙しいよ。 The list often sounds like a complaint, unlike a neutral noun list with と.","legacyAliases":[{"rule":"Listing nouns with の uses だの","example":"テスト勉強___部活だので忙しいよ。"}]} -->
 
   - ポートランドのビール、そりゃ美味しいの、美味しくないのって！
 

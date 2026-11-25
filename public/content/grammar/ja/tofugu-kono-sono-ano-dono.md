@@ -68,8 +68,8 @@ You could even insert a whole string of words between その and the noun, to be
 
   - I like **that** [red frilly] skirt [on the right].
 
-<!-- grammar-card: {"id":"noun-required","kind":"concept","format":"qa","priority":"essential","sourceSection":"Patterns of Use","rule":"この-series words modify a following noun phrase","example":"Can この stand alone as the subject of このは何ですか when no noun is supplied?","answer":"No. Use これは何ですか, or supply a noun after この.","explanation":"Adjectives and longer modifiers may intervene before the head noun; these words are not the standalone これ series."} -->
-<!-- grammar-card: {"id":"listener-skirt","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Patterns of Use","rule":"その points at something near the listener","hint":"The red skirt is beside the listener","example":"___赤いスカートがいいな。","answer":"その","explanation":"その modifies the whole 赤いスカート noun phrase, without an extra の."} -->
+<!-- grammar-card: {"id":"noun-required","kind":"concept","format":"qa","priority":"essential","sourceSection":"Patterns of Use","rule":"この-series words modify a following noun phrase","example":"Unlike これ, what must follow この (and その/あの/どの) in a sentence?","answer":"A noun or noun phrase (e.g. この本; このは何ですか is wrong — use これは何ですか).","explanation":"Adjectives and longer modifiers may intervene before the head noun; these words are not the standalone これ series. \"A noun\" counts.","legacyAliases":[{"rule":"この-series words modify a following noun phrase","example":"Can この stand alone as the subject of このは何ですか when no noun is supplied?"}]} -->
+<!-- grammar-card: {"id":"listener-skirt","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Patterns of Use","rule":"その points at something near the listener","example":"Pointing at the red skirt beside your listener: ___赤いスカートがいいな。","answer":"その","explanation":"その modifies the whole 赤いスカート noun phrase, without an extra の.","legacyAliases":[{"rule":"その points at something near the listener","example":"___赤いスカートがいいな。"}]} -->
 
 ### この, その, and あの with Physical Objects
 
@@ -95,7 +95,7 @@ This time, you use その because this tomato is closer to your sibling, who is 
 
 In this example, あの is used because it's referring to the tomato that is far from both of you.
 
-<!-- grammar-card: {"id":"distant-tomato","kind":"rule","format":"cloze","priority":"essential","sourceSection":"この, その, and あの with Physical Objects","rule":"あの points at something away from both speakers","hint":"The tomato is far from both people","example":"やばっ！___トマト、さらにデカイよ。","answer":"あの","explanation":"あの directly modifies トマト for the object distant from both speaker and listener."} -->
+<!-- grammar-card: {"id":"distant-tomato","kind":"rule","format":"cloze","priority":"essential","sourceSection":"この, その, and あの with Physical Objects","rule":"あの points at something away from both speakers","example":"Spotting a tomato far from both you and your sibling: やばっ！___トマト、さらにデカイよ。","answer":"あの","explanation":"あの directly modifies トマト for the object distant from both speaker and listener.","legacyAliases":[{"rule":"あの points at something away from both speakers","example":"やばっ！___トマト、さらにデカイよ。"}]} -->
 
 ### どの For "Which…?" Out of Three or More Options
 
@@ -104,6 +104,7 @@ The question word どの is used with a noun to ask things like どのドア (wh
 When you only have a choice of two options, you'll use  どっち (or its polite version どちら) with the particle の instead, as in どっちのドア (which door?)
 
 <!-- grammar-card: {"id":"two-door-choice","kind":"rule","format":"cloze","priority":"optional","sourceSection":"どの For \"Which…?\" Out of Three or More Options","rule":"A two-way choice can use どちらの before a noun","example":"Which of the two doors, politely: ___ドアですか。","answer":"どちらの","explanation":"どちら needs の before ドア; どの is the ordinary choice question among three or more."} -->
+<!-- grammar-card: {"id":"rule-dono-count","kind":"concept","format":"qa","priority":"optional","sourceSection":"どの For \"Which…?\" Out of Three or More Options","rule":"どの asks which among three or more; a two-way choice uses どっち/どちら + の","example":"How many options does どの + noun (\"which …?\") normally presuppose?","answer":"Three or more.","explanation":"For two options, use どっちの or polite どちらの before the noun."} -->
 
 ### この, その, and あの with Multiple Objects
 
@@ -123,7 +124,7 @@ There are the plural versions of この, その, and あの, which are combinati
 
   - Grapes, blueberries, tomatoes… **these** fruits contain high levels of polyphenols.
 
-<!-- grammar-card: {"id":"number-neutral","kind":"concept","format":"qa","priority":"optional","sourceSection":"この, その, and あの with Multiple Objects","rule":"この can modify a noun denoting one or several things","example":"Must このトマト become これらのトマト when several tomatoes are meant?","answer":"No. このトマト can refer to several; これらの makes plurality explicit and tends to sound more explanatory or formal.","explanation":"There is no required singular/plural inflection, and どれらの is not the question form."} -->
+<!-- grammar-card: {"id":"number-neutral","kind":"concept","format":"qa","priority":"optional","sourceSection":"この, その, and あの with Multiple Objects","rule":"この can modify a noun denoting one or several things","example":"How is it normally marked that この + noun refers to several things rather than one?","answer":"Normally it is not marked: このトマト can mean these tomatoes. これらの makes plurality explicit and tends to sound explanatory or formal.","explanation":"There is no required singular/plural inflection, and どれらの is not the question form.","legacyAliases":[{"rule":"この can modify a noun denoting one or several things","example":"Must このトマト become これらのトマト when several tomatoes are meant?"}]} -->
 
 ## Beyond The Basics
 
@@ -181,7 +182,7 @@ You will rarely see someone talking about themselves that way in real life, but 
 
   - Who do you think ***I*** am?
 
-<!-- grammar-card: {"id":"emphatic-self","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Emphatic この","rule":"この before 私 adds a note of self-importance","hint":"Add the emphatic determiner meaning I, of all people","example":"お前は___私を誰だと思っているんだ？","answer":"この","explanation":"この私 sounds theatrical or self-important; it is not ordinary neutral self-reference."} -->
+<!-- grammar-card: {"id":"emphatic-self","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Emphatic この","rule":"この before 私 adds a note of self-importance","example":"An arrogant character stressing \"I, of all people\": お前は___私を誰だと思っているんだ？","answer":"この","explanation":"この私 sounds theatrical or self-important; it is not ordinary neutral self-reference.","legacyAliases":[{"rule":"この before 私 adds a note of self-importance","example":"お前は___私を誰だと思っているんだ？"}]} -->
 
 ### あの for Mutually Known Information
 

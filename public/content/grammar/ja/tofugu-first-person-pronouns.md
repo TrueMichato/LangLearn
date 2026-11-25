@@ -55,7 +55,8 @@ It also has a certain elegant, sophisticated feel to it — you can imagine a pr
 <!-- vocab-card: {"id":"vocab-watashi","word":"私","reading":"わたし","meaning":"I; me (gender-neutral in formal speech; often feminine-associated casually)","priority":"essential","sourceSection":"私 (わたし/わたくし)"} -->
 <!-- vocab-card: {"id":"vocab-watakushi","word":"わたくし","reading":"わたくし","meaning":"I; me (very formal; also written 私)","priority":"optional","sourceSection":"私 (わたし/わたくし)"} -->
 
-<!-- grammar-card: {"id":"watashi-register","kind":"concept","format":"qa","priority":"essential","sourceSection":"私 (わたし/わたくし)","rule":"私 read わたし is broadly gender-neutral formally but often feminine-associated casually","example":"Does textbook 私 have exactly the same social effect in formal introductions and casual talk with friends?","answer":"No. わたし is broadly gender-neutral formally, but often has feminine associations casually; わたくし is more formal still.","explanation":"Choice depends on context and desired self-presentation, not an all-purpose pronoun with no social nuance.","legacyAliases":[{"rule":"私 is the neutral, all-purpose 'I'","example":"___は日本語(にほんご)を勉強(べんきょう)しています。"}]} -->
+<!-- grammar-card: {"id":"watashi-register","kind":"concept","format":"qa","priority":"essential","sourceSection":"私 (わたし/わたくし)","rule":"私 read わたし is broadly gender-neutral formally but often feminine-associated casually","example":"How does the gender association of わたし differ between formal situations and casual talk with friends and family?","answer":"Formally it is gender-neutral, used by anyone; casually it has strong feminine associations.","explanation":"わたくし (same kanji 私) is more formal still, even stiff. Choice depends on context and desired self-presentation.","legacyAliases":[{"rule":"私 is the neutral, all-purpose 'I'","example":"___は日本語(にほんご)を勉強(べんきょう)しています。"},{"rule":"私 read わたし is broadly gender-neutral formally but often feminine-associated casually","example":"Does textbook 私 have exactly the same social effect in formal introductions and casual talk with friends?"}]} -->
+<!-- grammar-card: {"id":"rule-most-formal-i","kind":"concept","format":"qa","priority":"optional","sourceSection":"私 (わたし/わたくし)","rule":"watakushi is the most formal, rather stiff first-person pronoun","example":"Which first-person pronoun, written with the same kanji as \"watashi\", is the most formal and even stiff?","answer":"わたくし (私)","explanation":"It has an elegant, sophisticated feel, e.g. a butler or a formal apology: わたくし、明日は伺えないんです."} -->
 
 ### 僕 (ぼく)
 
@@ -73,7 +74,7 @@ Although it's commonly used by adult men, 僕 is also seen stereotypically as a 
 
 <!-- vocab-card: {"id":"vocab-boku","word":"僕","reading":"ぼく","meaning":"I; me (masculine-associated, softer than 俺)","priority":"optional","sourceSection":"僕 (ぼく)"} -->
 
-<!-- grammar-card: {"id":"boku-choice","kind":"rule","format":"cloze","priority":"optional","sourceSection":"僕 (ぼく)","rule":"僕 is a softer masculine 'I'","hint":"Use the softer masculine-associated pronoun, in kanji.","example":"___、ちょっと手伝(てつだ)おうか。","answer":"僕","explanation":"僕 (ぼく) is a possible softer self-presentation here; it does not mean only males can use it."} -->
+<!-- grammar-card: {"id":"boku-choice","kind":"rule","format":"cloze","priority":"optional","sourceSection":"僕 (ぼく)","rule":"僕 is a softer masculine 'I'","hint":"Use the softer masculine-associated pronoun, in kanji.","example":"A young man gently offers to help a friend (soft, earnest masculine \"I\", in kanji): ___、ちょっと手伝(てつだ)おうか。","answer":"僕","explanation":"僕 (ぼく) is a softer, earnest masculine-associated choice than 俺; it does not mean only males can use it.","legacyAliases":[{"rule":"僕 is a softer masculine 'I'","example":"___、ちょっと手伝(てつだ)おうか。"}]} -->
 
 ### 俺 (おれ)
 
@@ -86,9 +87,9 @@ Although it's commonly used by adult men, 僕 is also seen stereotypically as a 
 Some pronouns can take name-ending suffixes, and 俺 has a few variations with suffixes. For example, 俺様 is a combination of 俺 and 様, which is an honorific name ender. It's quite arrogant and egotistic to use 様 for yourself! So with 様, the masculine, aggressive vibe of 俺 is emphasized, and it becomes almost macho or sassy.
 
 <!-- vocab-card: {"id":"vocab-ore","word":"俺","reading":"おれ","meaning":"I; me (strongly masculine-associated and casual; can sound rough)","priority":"optional","sourceSection":"俺 (おれ)"} -->
-<!-- grammar-card: {"id":"self-honorific","kind":"concept","format":"qa","priority":"optional","sourceSection":"俺 (おれ)","rule":"Adding honorific 様 to self-reference can sound arrogant rather than respectful","example":"Does calling oneself 俺様 make one's self-reference politely humble?","answer":"No. Honoring oneself this way emphasizes an arrogant or swaggering persona.","explanation":"The effect is often theatrical or character-driven, not a recommended polite introduction."} -->
+<!-- grammar-card: {"id":"self-honorific","kind":"concept","format":"qa","priority":"optional","sourceSection":"俺 (おれ)","rule":"Adding honorific 様 to self-reference can sound arrogant rather than respectful","example":"What effect does calling oneself 俺様 (俺 + the honorific 様) have?","answer":"It sounds arrogant and egotistic, exaggerating 俺's macho, swaggering feel; honoring yourself is not polite.","explanation":"The effect is often theatrical or character-driven, not a polite self-reference.","legacyAliases":[{"rule":"Adding honorific 様 to self-reference can sound arrogant rather than respectful","example":"Does calling oneself 俺様 make one's self-reference politely humble?"}]} -->
 
-<!-- grammar-card: {"id":"ore-choice","kind":"rule","format":"cloze","priority":"optional","sourceSection":"俺 (おれ)","rule":"俺 is a blunt masculine 'I'","hint":"Use the strongly masculine-associated casual pronoun, in kanji.","example":"___に任(まか)せとけ！","answer":"俺","explanation":"俺 (おれ) matches this swaggering tone. It is not a default for formal work interactions, though colleagues may use it in informal settings."} -->
+<!-- grammar-card: {"id":"ore-choice","kind":"rule","format":"cloze","priority":"optional","sourceSection":"俺 (おれ)","rule":"俺 is a blunt masculine 'I'","hint":"Use the strongly masculine-associated casual pronoun, in kanji.","example":"A guy boasts to his buddy, \"Leave it to me!\" (rough, strongly masculine casual \"I\", in kanji): ___に任(まか)せとけ！","answer":"俺","explanation":"俺 (おれ) matches this swaggering tone. It is not a default for formal work interactions, though colleagues may use it in informal settings.","legacyAliases":[{"rule":"俺 is a blunt masculine 'I'","example":"___に任(まか)せとけ！"}]} -->
 
 ### うち
 
@@ -107,7 +108,7 @@ As the origin of the word — "inside" — suggests, うち also carries a feeli
   - Our teacher is so annoying, right?
 
 <!-- vocab-card: {"id":"vocab-uchi","word":"うち","reading":"うち","meaning":"I; me; our side (casual self-reference, originally associated with Kansai)","priority":"optional","sourceSection":"うち"} -->
-<!-- grammar-card: {"id":"uchi-variety","kind":"concept","format":"qa","priority":"optional","sourceSection":"うち","rule":"First-person うち varies by region and social group","example":"Is first-person うち restricted to Kansai or uniformly gender-neutral in every region?","answer":"Neither. It originated in Kansai and is used more widely; outside Kansai it often has youthful, feminine associations.","explanation":"うちら also conveys an in-group feeling. These are usage associations, not rules about who may use it."} -->
+<!-- grammar-card: {"id":"uchi-variety","kind":"concept","format":"qa","priority":"optional","sourceSection":"うち","rule":"First-person うち varies by region and social group","example":"Outside the Kansai region where it originated, what associations does first-person うち carry?","answer":"It is casual and youthful and sounds somewhat feminine, being especially popular with young female speakers such as high-school girls.","explanation":"うちら also conveys an in-group feeling. These are usage associations, not rules about who may use it.","legacyAliases":[{"rule":"First-person うち varies by region and social group","example":"Is first-person うち restricted to Kansai or uniformly gender-neutral in every region?"}]} -->
 ## Beyond The Basics
 
 ### Plural Forms of First-Person Pronouns
@@ -123,7 +124,7 @@ In the same way that 〜方 is not used with first-person pronouns, some pronoun
 To give you a clearer picture, below is a mix-and-match chart of common pronouns and suffixes!
 
 <!-- grammar-card: {"id":"humble-plural","kind":"concept","format":"qa","priority":"essential","sourceSection":"Plural Forms of First-Person Pronouns","rule":"A suffix's politeness effect changes with self-reference versus reference to others","example":"Why can 私ども be humble while adding 方 to one's own pronoun is generally unsuitable?","answer":"ども lowers one's own group, whereas 方 honors the people referred to, so it would honor oneself.","explanation":"Plural suffixes are not freely interchangeable politeness endings. 私たち is broadly neutral; 僕ら, 俺ら, and うちら are familiar combinations."} -->
-<!-- grammar-card: {"id":"we-formation","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Plural Forms of First-Person Pronouns","rule":"A common neutral first-person plural uses たち","example":"Use the neutral plural suffix: 私___。","answer":"たち","explanation":"私たち (わたしたち) means we or our group; うち more commonly pairs with ら."} -->
+<!-- grammar-card: {"id":"we-formation","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Plural Forms of First-Person Pronouns","rule":"A common neutral first-person plural uses たち","example":"We (neutral plural suffix): 私___。","answer":"たち","explanation":"私たち (わたしたち) means we or our group; うち more commonly pairs with ら.","legacyAliases":[{"rule":"A common neutral first-person plural uses たち","example":"Use the neutral plural suffix: 私___。"}]} -->
 
 Note: △ shows that the combination works okay, but isn't very common. ✖️ shows that the combination is rarely used.
 
@@ -235,6 +236,7 @@ So if you use 私 to say "my," it's going to look like:
 There are many more possible combinations of first-person pronouns and particles, but here's a short list of major ones to give you an idea!
 
 <!-- grammar-card: {"id":"possessive-particle","kind":"rule","format":"cloze","priority":"essential","sourceSection":"First-Person Pronouns and Particles","rule":"Japanese pronouns keep their form; particles such as の mark their grammatical role","example":"My book: 私___本。","answer":"の","explanation":"の marks possession. が marks subject, は topic, and を object; the pronoun itself does not change like I/my/me."} -->
+<!-- grammar-card: {"id":"rule-pronoun-particles","kind":"concept","format":"qa","priority":"essential","sourceSection":"First-Person Pronouns and Particles","rule":"Japanese pronouns never change form; particles mark their role","example":"English \"I\" changes to \"my\" or \"me\". What shows the grammatical role of a Japanese first-person pronoun instead?","answer":"The particle after it, since the pronoun itself never changes: が (subject), は (topic), の (possessive), を (object).","explanation":"Pronouns behave like ordinary nouns: 私が, 私は, 私の, 私を."} -->
 
   
    Subject
@@ -309,7 +311,7 @@ The above example works fine without the first person pronoun part — 私は.
 
 If someone says ベーコンが好きです, it's natural to assume that it's about the speaker themselves, as in "I like bacon," unless this was in the flow of conversation about someone else or something else. In this way, first-person pronouns can often be omitted in Japanese, unless you want to clarify that what you're saying is about yourself or comes from your point of view, or you want to change topics.
 
-<!-- grammar-card: {"id":"omit-self-reference","kind":"concept","format":"qa","priority":"essential","sourceSection":"First-Person Pronouns Can Be Omitted","rule":"Clear context often makes an explicit first-person pronoun unnecessary","example":"Must a speaker add 私は to ベーコンが好きです for it to mean I like bacon?","answer":"No. Context can identify the speaker; an explicit pronoun can clarify or contrast the topic when needed.","explanation":"An omitted subject is context-dependent, not automatically always I."} -->
+<!-- grammar-card: {"id":"omit-self-reference","kind":"rule","format":"qa","priority":"essential","sourceSection":"First-Person Pronouns Can Be Omitted","rule":"Clear context often makes an explicit first-person pronoun unnecessary","example":"When someone says just ベーコンが好きです with no pronoun, who is naturally understood to like bacon?","answer":"The speaker (I), unless the conversation is about someone else; 私は is added only to clarify or contrast.","explanation":"An omitted subject is context-dependent, not automatically always I.","legacyAliases":[{"rule":"Clear context often makes an explicit first-person pronoun unnecessary","example":"Must a speaker add 私は to ベーコンが好きです for it to mean I like bacon?"}]} -->
 
 ### First-Person Pronouns and Gender Expression
 
@@ -321,7 +323,7 @@ For example, especially if you're fond of anime or video games, you might have n
 
 While reasons and motivations may vary, the use of first-person pronouns — and the Japanese language in general — is changing, sometimes beyond traditional gender stereotypes.
 
-<!-- grammar-card: {"id":"gender-association","kind":"concept","format":"qa","priority":"essential","sourceSection":"First-Person Pronouns and Gender Expression","rule":"Gendered pronoun associations are social tendencies, not exclusive eligibility rules","example":"Does the masculine association of 僕 or 俺 mean women can never use them?","answer":"No. Dialect, identity, community, fiction, and individual self-presentation can differ from stereotypes.","explanation":"This lesson emphasizes modern usage, especially around Tokyo, rather than a universal rule for all regions or speakers."} -->
+<!-- grammar-card: {"id":"gender-association","kind":"concept","format":"qa","priority":"essential","sourceSection":"First-Person Pronouns and Gender Expression","rule":"Gendered pronoun associations are social tendencies, not exclusive eligibility rules","example":"Besides men, who may use 僕 or 俺 according to this lesson?","answer":"Women and others too: e.g. 俺 among women in Tohoku, in LGBTQ communities, \"masculine\" female characters in anime and games, and people stepping away from gender stereotypes.","explanation":"The masculine association comes from usage, not a rule. This lesson emphasizes modern usage, especially around Tokyo.","legacyAliases":[{"rule":"Gendered pronoun associations are social tendencies, not exclusive eligibility rules","example":"Does the masculine association of 僕 or 俺 mean women can never use them?"}]} -->
 
 To learn more about these changes, check out our article *Beyond the Binary: A Queer Take on Gendered Japanese* and our podcast episode about First-Person Pronouns: When Female Speakers Use 僕 or 俺.
 

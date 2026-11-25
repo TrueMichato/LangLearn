@@ -156,6 +156,7 @@ For example, suppose your boss asks if you are the one who left a surprise prese
 Here, 〜じゃないです is probably the most commonly used of the three because the では versions are formal polite, which might seem a little stiff in ordinary settings. Between the two では variants, 〜ではありません is more polite than 〜ではないです and may be reserved for explaining things in a formal and courteous manner or in storytelling.
 
 <!-- grammar-card: {"id":"janai-formality-politeness","kind":"concept","format":"qa","priority":"essential","sourceSection":"Politeness of 〜じゃない and 〜ではない","rule":"Formal style and addressee politeness are separate dimensions","example":"Does choosing ではない rather than じゃない automatically make the predicate polite to the listener?","answer":"No. Both are plain; ではない is stylistically more formal.","explanation":"です adds politeness to either form. ではありません is a more formal courteous negative, not merely a long spelling of plain ではない."} -->
+<!-- grammar-card: {"id":"rule-negative-copula-grid","kind":"concept","format":"qa","priority":"optional","sourceSection":"Politeness of 〜じゃない and 〜ではない","rule":"Contracted forms are informal; では forms are formal; adding politeness gives polite versions","example":"Which negative copula form is both polite and the most formal and courteous of the options?","answer":"ではありません","explanation":"じゃない = casual informal; ではない = casual formal; じゃないです = polite informal; ではないです / ではありません = polite formal, with ではありません the most courteous."} -->
 <!-- grammar-card: {"id":"janai-polite-negative","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Politeness of 〜じゃない and 〜ではない","rule":"じゃないです is a common conversational polite negative","example":"私じゃない___。 (add politeness)","answer":"です","explanation":"The negative remains in じゃない; です makes the response polite. ではないです and ではありません are stiffer alternatives."} -->
 
 #### Past Tense of 〜じゃないです, 〜ではないです, and 〜ではありません
@@ -172,6 +173,7 @@ On the contrary, none of the elements in 〜ではありません can further co
 
 <!-- grammar-card: {"id":"janai-polite-past","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Past Tense of 〜じゃないです, 〜ではないです, and 〜ではありません","rule":"With ないです, past tense belongs on ない rather than です","example":"ネコじゃ___です。 (It wasn't a cat.)","answer":"なかった","explanation":"Use じゃなかったです, not じゃないでした. This applies equally to ではなかったです."} -->
 <!-- grammar-card: {"id":"dewaarimasen-past","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Past Tense of 〜じゃないです, 〜ではないです, and 〜ではありません","rule":"ではありません forms its past by adding でした","example":"ネコではありません___。 (past)","answer":"でした","explanation":"The ありません pattern takes でした for past tense, unlike the adjective-like なかったです pattern."} -->
+<!-- grammar-card: {"id":"rule-polite-negative-past","kind":"concept","format":"qa","priority":"essential","sourceSection":"Past Tense of 〜じゃないです, 〜ではないです, and 〜ではありません","rule":"Past tense goes on ない in the ないです pattern, but is added as でした after ありません","example":"In a polite negative made by adding the politeness marker after ない, where is past tense marked — and how does the ありません pattern differ?","answer":"On ない (→ なかったです), leaving the politeness marker unchanged; ありません can't inflect, so it adds でした.","explanation":"Counts if both halves are right. じゃなかったです / ではなかったです vs ではありませんでした; never じゃないでした."} -->
 
 ### 〜ではない For Emphatic Rejection in Conversation
 
@@ -228,7 +230,7 @@ The key point here is the pitch accent of the denial word, ない. It goes ↑�
 So far, so good?
 
 <!-- vocab-card: {"id":"vocab-osake","word":"お酒","reading":"おさけ","meaning":"alcohol; alcoholic drink","priority":"optional","sourceSection":"～じゃない And Pitch Accent"} -->
-<!-- grammar-card: {"id":"janai-denial-intonation","kind":"concept","format":"qa","priority":"optional","sourceSection":"～じゃない And Pitch Accent","rule":"The illustrated flat denial has a steep fall on ない","example":"In the lesson's お酒じゃない denial, what does the steep fall on ない signal?","answer":"A flat denial that it is alcohol.","explanation":"This is the illustrated intonation, not a universal pitch transcription for every dialect. Other contours can make the same written form affirmative or questioning."} -->
+<!-- grammar-card: {"id":"janai-denial-intonation","kind":"rule","format":"qa","priority":"optional","sourceSection":"～じゃない And Pitch Accent","rule":"The illustrated flat denial has a steep fall on ない","example":"In the lesson's お酒じゃない denial, what does the steep fall on ない signal?","answer":"A flat denial that it is alcohol.","explanation":"This is the illustrated intonation, not a universal pitch transcription for every dialect. Other contours can make the same written form affirmative or questioning."} -->
 
 With that in mind, let's see how 〜じゃない is used with different intonations!
 
@@ -266,7 +268,7 @@ You can also express your doubt and surprise by swapping out the extended vowel 
 
 Although the ending gets switched up a little here, the intonation remains the same. The ない still goes down steeply, indicating a denial, while the の at the end is pronounced with rising intonation.
 
-<!-- grammar-card: {"id":"janai-doubt-echo","kind":"concept","format":"qa","priority":"optional","sourceSection":"〜じゃないぃ？！ and 〜じゃないの？ For Expressing Doubt or Surprise","rule":"A final rise after the denial contour can question a negative claim","example":"After hearing that a drink is not alcohol, what does the surprised echo お酒じゃないぃ？！ question?","answer":"The claim that it is not alcohol: Really, it isn't alcohol?!","explanation":"The fall on ない remains the denial contour, followed by a rise. Adding rising の can express curious doubt rather than the same strength of surprise."} -->
+<!-- grammar-card: {"id":"janai-doubt-echo","kind":"rule","format":"qa","priority":"optional","sourceSection":"〜じゃないぃ？！ and 〜じゃないの？ For Expressing Doubt or Surprise","rule":"A final rise after the denial contour can question a negative claim","example":"After hearing that a drink is not alcohol, what does the surprised echo お酒じゃないぃ？！ question?","answer":"The claim that it is not alcohol: Really, it isn't alcohol?!","explanation":"The fall on ない remains the denial contour, followed by a rise. Adding rising の can express curious doubt rather than the same strength of surprise."} -->
 
 #### 〜じゃない？ For Seeking Agreement
 
@@ -329,7 +331,7 @@ Hence, this line reads as a simple, self-directed affirmation of what you have j
 
 Note that this ない can also be pronounced as one mora, like なぃ, especially when the utterance is directed more towards yourself.
 
-<!-- grammar-card: {"id":"janai-unexpected-realization","kind":"concept","format":"qa","priority":"optional","sourceSection":"〜じゃない！ For Expressing Unexpected Realization","rule":"Low-level ない without a question rise can affirm an unexpected discovery","example":"After mistaking alcohol for water, what can the realization-use お酒じゃない！ mean?","answer":"Oh, it is alcohol!","explanation":"The low-level ending expresses a self-directed realization, not a literal denial and not a request for another person's agreement."} -->
+<!-- grammar-card: {"id":"janai-unexpected-realization","kind":"rule","format":"qa","priority":"optional","sourceSection":"〜じゃない！ For Expressing Unexpected Realization","rule":"Low-level ない without a question rise can affirm an unexpected discovery","example":"After mistaking alcohol for water, what can the realization-use お酒じゃない！ mean?","answer":"Oh, it is alcohol!","explanation":"The low-level ending expresses a self-directed realization, not a literal denial and not a request for another person's agreement."} -->
 
 #### 〜じゃない！！ For Reminding
 
@@ -351,7 +353,7 @@ In other words, it is used to point out that something that was supposed to be a
 
 Finally, notice that the subject 私 (I) is omitted in Japanese? This is because in Japanese subjects or objects tend to be omitted when they're clear from the context. So keep in mind that depening on the context, this exact same sentence, それ、お酒だって言った**じゃない** can mean, "Hey, you said it was alcohol!," with the same implication of "I'm not letting you agree that it isn't the case."
 
-<!-- grammar-card: {"id":"janai-reminder","kind":"rule","format":"cloze","priority":"optional","sourceSection":"〜じゃない！！ For Reminding","rule":"Low-pitched じゃない can remind someone of an already established claim","hint":"Remind the listener of what was said","example":"それ、お酒だって言った___。","answer":"じゃない","explanation":"The low-pitched ending insists that the statement was already made: I told you, or you said so, depending on the omitted subject. It is not a denial that anyone said it.","legacyAliases":[{"rule":"じゃない can seek agreement rather than negate","example":"それ、お酒だって言った___。"}]} -->
+<!-- grammar-card: {"id":"janai-reminder","kind":"rule","format":"cloze","priority":"optional","sourceSection":"〜じゃない！！ For Reminding","rule":"Low-pitched じゃない can remind someone of an already established claim","hint":"Remind the listener of what was said","example":"それ、お酒だって言った___。 (Casual, said low and flat: Hey, I told you it's alcohol!)","answer":"じゃない","explanation":"The low-pitched ending insists that the statement was already made: I told you, or you said so, depending on the omitted subject. It is not a denial that anyone said it.","legacyAliases":[{"rule":"じゃない can seek agreement rather than negate","example":"それ、お酒だって言った___。"},{"rule":"Low-pitched じゃない can remind someone of an already established claim","example":"それ、お酒だって言った___。"}]} -->
 
 Footnotes:
 

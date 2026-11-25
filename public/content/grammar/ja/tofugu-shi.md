@@ -42,7 +42,8 @@ This is because with し you can list as many things as you like. You'll often h
 
 So far, so good? Up to this point, we've only looked at examples using い-adjectives such as 優しい, but し can also follow other types of words. So let's move on to the patterns of use and check out how し is used!
 
-<!-- grammar-card: {"id":"emphatic-list","kind":"rule","format":"cloze","priority":"essential","sourceSection":"The Basics","rule":"し lists reasons or qualities and implies there are more","hint":"Use the emphatic list connector taught here.","example":"花子は優しい___、かしこい。","answer":"し","explanation":"し presents kindness as one of several related qualities and adds emphasis beyond a neutral て-form list."} -->
+<!-- grammar-card: {"id":"emphatic-list","kind":"rule","format":"cloze","priority":"essential","sourceSection":"The Basics","rule":"し lists reasons or qualities and implies there are more","hint":"Use the emphatic list connector taught here.","example":"Emphatic \"and what's more\" list: 花子は優しい___、かしこい。 (Hanako is kind, and smart too.)","answer":"し","explanation":"し presents kindness as one of several related qualities and adds emphasis beyond a neutral て-form list (優しくて、かしこい).","legacyAliases":[{"rule":"し lists reasons or qualities and implies there are more","example":"花子は優しい___、かしこい。"}]} -->
+<!-- grammar-card: {"id":"rule-shi-vs-te","kind":"concept","format":"qa","priority":"essential","sourceSection":"The Basics","rule":"し lists related points emphatically and implies more, unlike a neutral て-form list","example":"Both 'shi' and the te-form can list qualities. What does 'shi' add?","answer":"Emphasis that you are piling up related points (\"and what's more\"), implying there may be more.","explanation":"Emphasis or 'there's more' counts. 優しいし、かしこい stresses her good qualities; 優しくて、かしこい just lists them."} -->
 <!-- vocab-card: {"id":"vocab-kashikoi","word":"かしこい","reading":"かしこい","meaning":"clever; intelligent","priority":"optional","sourceSection":"The Basics"} -->
 <!-- vocab-card: {"id":"vocab-kawairashii","word":"かわいらしい","reading":"かわいらしい","meaning":"charming; adorable","priority":"optional","sourceSection":"The Basics"} -->
 
@@ -74,7 +75,7 @@ To state that the street used to be a dark and dangerous place, you can use the 
 
 Although in the instance of Verb + し you transform *both* verbs into the past tense, in the case of  Adjective + し it's fairly common to merely conjugate the final adjective into the past tense.
 
-<!-- grammar-card: {"id":"negative-adjective-list","kind":"rule","format":"cloze","priority":"optional","sourceSection":"い-adjective + し","rule":"An い-adjective can be negated before the list connector","example":"Neither dark nor dangerous: この道は暗___し、危なくない。","answer":"くない","explanation":"Conjugate the adjective before し. A past description can use 暗かったし、危なかった; context may also let the final adjective supply the retrospective time frame."} -->
+<!-- grammar-card: {"id":"negative-adjective-list","kind":"rule","format":"cloze","priority":"optional","sourceSection":"い-adjective + し","rule":"An い-adjective can be negated before the list connector","example":"Neither dark nor dangerous (negate 暗い before the list connector): この道は暗___し、[not dangerous]。","answer":"くない","explanation":"Conjugate the adjective before し: 暗くないし、危なくない. A past description can use 暗かったし、危なかった; context may also let the final adjective supply the retrospective time frame.","legacyAliases":[{"rule":"An い-adjective can be negated before the list connector","example":"Neither dark nor dangerous: この道は暗___し、危なくない。"}]} -->
 <!-- vocab-card: {"id":"vocab-kurai","word":"暗い","reading":"くらい","meaning":"dark; gloomy","priority":"optional","sourceSection":"い-adjective + し"} -->
 <!-- vocab-card: {"id":"vocab-abunai","word":"危ない","reading":"あぶない","meaning":"dangerous","priority":"optional","sourceSection":"い-adjective + し"} -->
 
@@ -95,6 +96,7 @@ And if he's no longer any of these things and you want to say that he *was* famo
 In these examples, 有名 is a な-adjective, モデル is a noun, and かっこいい is an い-adjective. Just like that, you can connect different types of words with し, as long as the information is related (in the case of this example, all positive traits describing your boyfriend).
 
 <!-- grammar-card: {"id":"nominal-copula","kind":"rule","format":"cloze","priority":"essential","sourceSection":"な-adjective or Noun + だ + し","rule":"Present affirmative nouns and な-adjectives keep だ before し","example":"My boyfriend is famous and a model: 有名___し、モデルだ。","answer":"だ","explanation":"Use 有名だし and モデルだし, not attributive な; past descriptions use だったし."} -->
+<!-- grammar-card: {"id":"rule-shi-copula","kind":"concept","format":"qa","priority":"essential","sourceSection":"な-adjective or Noun + だ + し","rule":"Present nouns and な-adjectives take だ (not な) before し","example":"What must a present-tense noun or na-adjective take before 'shi' (instead of attributive na)?","answer":"Da (だ): 有名だし, モデルだし.","explanation":"Not attributive な; the past uses だったし."} -->
 <!-- vocab-card: {"id":"vocab-yuumei","word":"有名","reading":"ゆうめい","meaning":"famous","priority":"optional","sourceSection":"な-adjective or Noun + だ + し"} -->
 
 #### Verb + し
@@ -107,7 +109,7 @@ To talk about all the things someone normally does, simply add し to the dictio
 
   - Our dog watches TV and reads the newspaper.
 
-<!-- grammar-card: {"id":"verb-politeness","kind":"concept","format":"qa","priority":"optional","sourceSection":"Verb + し","rule":"Politeness can be marked on both linked verbs or only the final one","example":"Must every verb before し be in ます form if the final predicate is polite?","answer":"No. Both 見ますし、読みます and 見るし、読みます are possible.","explanation":"The preceding verb can remain plain; tense and meaning still need to fit the intended sequence."} -->
+<!-- grammar-card: {"id":"verb-politeness","kind":"concept","format":"qa","priority":"optional","sourceSection":"Verb + し","rule":"Politeness can be marked on both linked verbs or only the final one","example":"In a list of verbs joined by し, if only the final verb is in polite masu form, what forms can the earlier verb take?","answer":"Either the ます form or the plain form: 見ますし、読みます or 見るし、読みます.","explanation":"Either answer counts as long as both options are named. The preceding verb can remain plain; tense and meaning still need to fit the intended sequence.","legacyAliases":[{"rule":"Politeness can be marked on both linked verbs or only the final one","example":"Must every verb before し be in ます form if the final predicate is polite?"}]} -->
 
 To express that your dog *can* perform certain tasks, simply conjugate the verb into the potential form and then add し. Like this:
 
@@ -123,7 +125,7 @@ And if your dog *could* do them, but for whatever reason can't anymore, you can 
 
 The potential forms 見れる and 見れた here are common colloquial ら抜き forms; the standard full forms are 見られる and 見られた.
 
-<!-- grammar-card: {"id":"colloquial-potential","kind":"concept","format":"qa","priority":"optional","sourceSection":"Verb + し","rule":"見れる is a colloquial potential rather than the standard full form","example":"What standard full potential corresponds to 見れる in the dog's abilities example?","answer":"見られる.","explanation":"The shortened ら抜き form is common in conversation; し does not itself cause that shortening."} -->
+<!-- grammar-card: {"id":"colloquial-potential","kind":"rule","format":"qa","priority":"optional","sourceSection":"Verb + し","rule":"見れる is a colloquial potential rather than the standard full form","example":"What standard full potential corresponds to 見れる in the dog's abilities example?","answer":"見られる.","explanation":"The shortened ら抜き form is common in conversation; し does not itself cause that shortening."} -->
 As you can see, the verb forms in two separate sentences connected by し generally match. However, to add politeness you can either conjugate both verbs into the ます form or just keep everything in the plain form with the exception of the final verb.
 
   - うちの犬は、テレビも**見ますし**、新聞も**読みます**。
@@ -154,7 +156,7 @@ You can also use も with し when listing negative traits. For example, if you'
 
 Here, both お金 (money) and 才能 (talent) are characteristics belonging to a category, which can be characterized as "things he lacks."
 
-<!-- grammar-card: {"id":"mo-grouping","kind":"concept","format":"qa","priority":"optional","sourceSection":"〜し and the Particle も","rule":"Repeated も groups parallel points in an emphatic list","example":"What does the repeated も contribute in デザインも可愛いし、値段も安い?","answer":"It groups the design and price as parallel advantages of the same shoes.","explanation":"も works with し for positive or negative lists; it is not restricted to praise."} -->
+<!-- grammar-card: {"id":"mo-grouping","kind":"rule","format":"qa","priority":"optional","sourceSection":"〜し and the Particle も","rule":"Repeated も groups parallel points in an emphatic list","example":"What does the repeated も contribute in デザインも可愛いし、値段も安い?","answer":"It groups the design and price as parallel advantages of the same shoes.","explanation":"も works with し for positive or negative lists; it is not restricted to praise."} -->
 <!-- vocab-card: {"id":"vocab-nedan","word":"値段","reading":"ねだん","meaning":"price","priority":"optional","sourceSection":"〜し and the Particle も"} -->
 <!-- vocab-card: {"id":"vocab-sainou","word":"才能","reading":"さいのう","meaning":"talent; ability","priority":"optional","sourceSection":"〜し and the Particle も"} -->
 
@@ -194,8 +196,9 @@ This doesn't mean you'd need to pick one or the other — し and から/ので 
 
 Note that から and ので are conjunctive particles that indicate a reason or cause, like “so” in English, whereas し functions essentially like “and.” While it can appear after an explanation, its nature is simply to indicate additional information, meaning it lacks the nuance of から and ので. In cases where they are used in combination, し can be used to list reasons and から/ので can follow it.
 
-<!-- grammar-card: {"id":"explicit-causal-connector","kind":"rule","format":"cloze","priority":"optional","sourceSection":"〜し For Indicating Reasons/Causes","rule":"から explicitly marks a reason rather than merely adding information","hint":"Choose the casual causal connector contrasted with the list connector.","example":"雨が降るみたいだ___、違う日にしない？","answer":"から","explanation":"から explicitly links reason and suggestion. It does not imply that this is the only possible reason.","legacyAliases":[{"rule":"から gives a single, direct reason","example":"雨が降るみたいだ___、違う日にしない？"}]} -->
-<!-- grammar-card: {"id":"nonexhaustive-reason","kind":"concept","format":"qa","priority":"essential","sourceSection":"〜し For Indicating Reasons/Causes","rule":"し can offer one reason while leaving others implicit","example":"What does 天気もいいし suggest when inviting someone on a picnic?","answer":"The nice weather is one favorable factor, with other reasons possibly left unstated.","explanation":"し adds information; から or ので can explicitly mark the final causal link in a combined list."} -->
+<!-- grammar-card: {"id":"explicit-causal-connector","kind":"rule","format":"cloze","priority":"optional","sourceSection":"〜し For Indicating Reasons/Causes","rule":"から explicitly marks a reason rather than merely adding information","hint":"Choose the casual causal connector contrasted with the list connector.","example":"Casual, stating the reason explicitly rather than just adding it: 雨が降るみたいだ___、違う日にしない？","answer":"から","explanation":"から explicitly links reason and suggestion. It does not imply that this is the only possible reason. The formal equivalent is みたいなので.","legacyAliases":[{"rule":"から gives a single, direct reason","example":"雨が降るみたいだ___、違う日にしない？"},{"rule":"から explicitly marks a reason rather than merely adding information","example":"雨が降るみたいだ___、違う日にしない？"}]} -->
+<!-- grammar-card: {"id":"nonexhaustive-reason","kind":"rule","format":"qa","priority":"essential","sourceSection":"〜し For Indicating Reasons/Causes","rule":"し can offer one reason while leaving others implicit","example":"What does 天気もいいし suggest when inviting someone on a picnic?","answer":"The nice weather is one favorable factor, with other reasons possibly left unstated.","explanation":"し adds information; から or ので can explicitly mark the final causal link in a combined list."} -->
+<!-- grammar-card: {"id":"rule-shi-reason-vs-kara","kind":"concept","format":"qa","priority":"optional","sourceSection":"〜し For Indicating Reasons/Causes","rule":"A し reason is one of several and sounds softer than から/ので","example":"When 'shi' gives a reason instead of 'kara', what does it imply?","answer":"That this is just one reason among others, leaving things less direct and softer.","explanation":"'One of several reasons' counts. から/ので mark the reason explicitly; they can follow a し list."} -->
 
 ## Beyond the Basics
 
@@ -221,7 +224,7 @@ For instance, if you agreed to your mother's above suggestion and believe you ne
 
 〜んだし does the same thing here, except you're telling yourself that you're approaching an age where you should be more disciplined.
 
-<!-- grammar-card: {"id":"explanatory-advice","kind":"rule","format":"cloze","priority":"optional","sourceSection":"〜んだし For Giving Explanatory Reasons","rule":"んだし adds explanatory weight before a suggestion","hint":"Combine the contracted explanatory form with the list connector.","example":"もうすぐ二十歳になる___、もう少ししっかりしたら？","answer":"んだし","explanation":"The approaching age is framed as an explanatory ground for advice; it can sound like a lecture or self-encouragement."} -->
+<!-- grammar-card: {"id":"explanatory-advice","kind":"rule","format":"cloze","priority":"optional","sourceSection":"〜んだし For Giving Explanatory Reasons","rule":"んだし adds explanatory weight before a suggestion","hint":"Combine the contracted explanatory form with the list connector.","example":"Mom's explanatory advice (\"you know, since…\"): もうすぐ二十歳になる___、もう少ししっかりしたら？ (Now that you're almost twenty…)","answer":"んだし","explanation":"The approaching age is framed as an explanatory ground for advice; it can sound like a lecture or self-encouragement. から would state the reason but lose the explanatory, one-of-several feel.","legacyAliases":[{"rule":"んだし adds explanatory weight before a suggestion","example":"もうすぐ二十歳になる___、もう少ししっかりしたら？"}]} -->
 
 ### 〜し、〜しで For Emphasizing the Cause of a Negative Situation
 
@@ -247,7 +250,7 @@ In this example, で serves the same function — emphasizing the list of reason
 
 As a quick refresher, the particle も indicates the も-marked items are part of a set. It expresses that you're bringing up a couple examples from a list rather than contrasting two significant reasons. As a result, it would sound slightly less emphatic than using は.
 
-<!-- grammar-card: {"id":"shide-background","kind":"concept","format":"qa","priority":"optional","sourceSection":"〜し、〜しで For Emphasizing the Cause of a Negative Situation","rule":"で after a し-list emphasizes the grounds of a resulting situation","example":"What does で add in 長いし、面白くないしで、帰りたかった?","answer":"It presents the accumulated complaints as emphatic background for wanting to leave.","explanation":"は can contrast the listed subjects, while も groups them as examples in a set. The で is not required for every し-list."} -->
+<!-- grammar-card: {"id":"shide-background","kind":"rule","format":"qa","priority":"optional","sourceSection":"〜し、〜しで For Emphasizing the Cause of a Negative Situation","rule":"で after a し-list emphasizes the grounds of a resulting situation","example":"What does で add in 長いし、面白くないしで、帰りたかった?","answer":"It presents the accumulated complaints as emphatic background for wanting to leave.","explanation":"は can contrast the listed subjects, while も groups them as examples in a set. The で is not required for every し-list."} -->
 
 ### Sentence Ends with し For Weakening/Stressing The Statement
 
@@ -283,7 +286,7 @@ Used this way, し implies that you are overcome by how cute this baby is and yo
 
 As you can see, the sentence-ending particle し can be very nuanced, and because of that, it's often used in casual settings to share your personal stance, and can sound a bit slang-y.
 
-<!-- grammar-card: {"id":"final-shi-context","kind":"concept","format":"qa","priority":"optional","sourceSection":"Sentence Ends with し For Weakening/Stressing The Statement","rule":"Final し can leave an implication or intensify a stance depending on delivery","example":"Does sentence-final し always soften a statement or always express something negative?","answer":"No. It can imply an unfinished reason, soften a stance, or intensify positive or negative feelings depending on tone and context.","explanation":"次の日試験があるし… can hint at a refusal, while 可愛いし！ can express being overwhelmed by cuteness; these are casual uses."} -->
+<!-- grammar-card: {"id":"final-shi-context","kind":"concept","format":"qa","priority":"optional","sourceSection":"Sentence Ends with し For Weakening/Stressing The Statement","rule":"Final し can leave an implication or intensify a stance depending on delivery","example":"Besides softening a refusal, what else can a sentence-final し do?","answer":"It can intensify a feeling, negative or positive (マジで嫌だし！, 可愛いし！), or hint that the listener should infer the rest.","explanation":"Intensifying or stressing a feeling counts; noting it can be positive is a bonus. These are casual uses.","legacyAliases":[{"rule":"Final し can leave an implication or intensify a stance depending on delivery","example":"Does sentence-final し always soften a statement or always express something negative?"}]} -->
 
   
 

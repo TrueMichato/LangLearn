@@ -78,8 +78,9 @@ For godan verbs, take a look at the ending of the verb in plain form, which alwa
 > 
 
 <!-- vocab-card: {"id":"vocab-tatsu","priority":"optional","sourceSection":"Godan Verbs","word":"立つ","reading":"たつ","meaning":"to stand"} -->
-<!-- grammar-card: {"id":"godan-command","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Godan Verbs","rule":"Godan verbs shift the final う sound to え","hint":"頑張る → command","example":"もっと頑張(がんば)___。","answer":"れ","explanation":"頑張る is godan despite ending in る; 頑張れ can encourage someone."} -->
-<!-- grammar-card: {"id":"tsu-command","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Godan Verbs","rule":"Final つ becomes て in the godan command form","example":"立つ → direct command: ___.","answer":"立て","explanation":"This is a command-form vowel shift, not the connective 立って."} -->
+<!-- grammar-card: {"id":"godan-command","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Godan Verbs","rule":"Godan verbs shift the final う sound to え","hint":"頑張る → command","example":"Blunt, encouraging: “Try harder!” もっと頑張(がんば)___。","answer":"れ","explanation":"頑張る is godan despite ending in る; 頑張れ can encourage someone. Writing the full 頑張れ also counts.","legacyAliases":[{"rule":"Godan verbs shift the final う sound to え","example":"もっと頑張(がんば)___。"}]} -->
+<!-- grammar-card: {"id":"tsu-command","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Godan Verbs","rule":"Final つ becomes て in the godan command form","example":"立つ → direct command: ___.","answer":"立て","explanation":"This is a command-form vowel shift, not the connective 立って. Kana たて also counts."} -->
+<!-- grammar-card: {"id":"rule-command-godan","kind":"concept","format":"qa","priority":"essential","sourceSection":"Godan Verbs","rule":"Godan verbs shift the final u-row kana to the え-row","example":"How does a godan verb form its command form?","answer":"Change the final u-row kana to its え-row equivalent (romaji -u → -e).","explanation":"Either wording counts: 会う → 会え, 立つ → 立て."} -->
 
 #### Ichidan Verbs
 
@@ -95,7 +96,8 @@ For ichidan verbs, you simply remove the 〜る from the plain form verb and add
 
 <!-- vocab-card: {"id":"vocab-taberu","priority":"optional","sourceSection":"Ichidan Verbs","word":"食べる","reading":"たべる","meaning":"to eat"} -->
 <!-- vocab-card: {"id":"vocab-miru","priority":"optional","sourceSection":"Ichidan Verbs","word":"見る","reading":"みる","meaning":"to see; to look"} -->
-<!-- grammar-card: {"id":"ichidan-command","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Ichidan Verbs","rule":"Ichidan verbs form the command by replacing る with ろ","hint":"食べる → command","example":"早(はや)く___！","answer":"食べろ","explanation":"This is a blunt order to eat, not a polite request."} -->
+<!-- grammar-card: {"id":"ichidan-command","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Ichidan Verbs","rule":"Ichidan verbs form the command by replacing る with ろ","hint":"食べる → command","example":"Blunt order: “Eat, quick!” 早(はや)く___！","answer":"食べろ","explanation":"This is a blunt order to eat, not a polite request. Kana たべろ also counts.","legacyAliases":[{"rule":"Ichidan verbs form the command by replacing る with ろ","example":"早(はや)く___！"}]} -->
+<!-- grammar-card: {"id":"rule-command-ichidan","kind":"concept","format":"qa","priority":"optional","sourceSection":"Ichidan Verbs","rule":"Ichidan verbs replace final る with ろ","example":"How does an ichidan verb form its command form?","answer":"Drop the final る and add ろ.","explanation":"見る → 見ろ. くれる is the exception (くれ)."} -->
 
 #### Irregular verbs
 
@@ -168,10 +170,10 @@ Ok, so what if they keep on smiling at you? This time, you can put a different e
 
 Some older or more traditional learning materials will tell you that the command form is a feature of "male speech," and women do not use it. This is total BS though. If you're mad or wanna be a bit aggressive, you should go for it, no matter who you are!
 
-<!-- grammar-card: {"id":"command-not-gender-exclusive","kind":"concept","format":"qa","priority":"optional","sourceSection":"Softening the Command Form with Particles","rule":"The forceful command form is not restricted to male speakers","example":"Is the direct command form grammatically available only to men?","answer":"No. Speakers of any gender can use it; appropriateness depends on tone, relationship, and situation.","explanation":"A traditional masculine association is not a categorical restriction on who can speak."} -->
+<!-- grammar-card: {"id":"command-not-gender-exclusive","kind":"rule","format":"qa","priority":"optional","sourceSection":"Softening the Command Form with Particles","rule":"The forceful command form is not restricted to male speakers","example":"Is the direct command form grammatically available only to men?","answer":"No. Speakers of any gender can use it; appropriateness depends on tone, relationship, and situation.","explanation":"A traditional masculine association is not a categorical restriction on who can speak."} -->
 
-<!-- grammar-card: {"id":"command-particle-nuance","kind":"concept","format":"qa","priority":"optional","sourceSection":"Softening the Command Form with Particles","rule":"Particles and closeness can affect the tone of a command without making it polite","example":"Does adding よ to やめろ automatically turn it into a polite request for a superior?","answer":"No. It may soften or reshape the tone between close people, but it remains a command.","explanation":"Intonation and relationship matter; the form is not restricted to men."} -->
-<!-- grammar-card: {"id":"repeated-command","kind":"concept","format":"qa","priority":"optional","sourceSection":"Softening the Command Form with Particles","rule":"って and ってば can mark an insistently repeated command","example":"What does やめろってば convey beyond simply ordering someone to stop?","answer":"The speaker is repeating or insisting on the order: “I said stop it!”","explanation":"It often conveys frustration; it is not a general-purpose politeness marker."} -->
+<!-- grammar-card: {"id":"command-particle-nuance","kind":"rule","format":"qa","priority":"optional","sourceSection":"Softening the Command Form with Particles","rule":"Particles and closeness can affect the tone of a command without making it polite","example":"Does adding よ to やめろ automatically turn it into a polite request for a superior?","answer":"No. It may soften or reshape the tone between close people, but it remains a command.","explanation":"Intonation and relationship matter; the form is not restricted to men."} -->
+<!-- grammar-card: {"id":"repeated-command","kind":"concept","format":"qa","priority":"optional","sourceSection":"Softening the Command Form with Particles","rule":"って and ってば can mark an insistently repeated command","example":"What does adding って or ってば to a command convey, as in やめろってば？","answer":"The speaker is repeating or insisting on the order, often with frustration: “I said stop it!”","explanation":"It often conveys frustration; it is not a general-purpose politeness marker.","legacyAliases":[{"rule":"って and ってば can mark an insistently repeated command","example":"What does やめろってば convey beyond simply ordering someone to stop?"}]} -->
 
 ### The Command Form for Motivation
 
@@ -222,6 +224,7 @@ One common situation where this form of speech is used is when the speaker has a
 Wow sis, get with the times. Boys can cry too!
 
 <!-- grammar-card: {"id":"negative-command","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Commanding NOT To Do Something","rule":"Add な to dictionary form to make a strong prohibition","example":"Don't worry: 心配する___。","answer":"な","explanation":"Use dictionary form する before な, not positive command しろ."} -->
+<!-- grammar-card: {"id":"rule-negative-command","kind":"concept","format":"qa","priority":"essential","sourceSection":"Commanding NOT To Do Something","rule":"A strong prohibition is the plain dictionary form + な","example":"How do you bluntly command someone NOT to do something?","answer":"Plain dictionary form + な.","explanation":"泣くな！ (“Don’t cry!”). Don’t attach な to the command form."} -->
 
 ---
 

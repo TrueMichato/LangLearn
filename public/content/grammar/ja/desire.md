@@ -37,7 +37,7 @@ The たい form expresses your desire to perform an action. It is formed from th
 
 <!-- quiz:{"type":"multiple-choice","question":"How do you say 'I want to eat sushi'?","options":["寿司を食べるたいです","寿司が食べたいです","寿司にたべたいです","寿司は食べますたい"],"answer":1} -->
 
-<!-- grammar-card: {"id":"tai-object","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Basic Usage","rule":"たい often replaces を with が","hint":"Use the state-like object marker common with desire","example":"コーヒー___飲みたいです。","answer":"が","explanation":"が can mark the desired object with たい; を is also correct and is not categorically replaced."} -->
+<!-- grammar-card: {"id":"tai-object","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Basic Usage","rule":"たい often replaces を with が","hint":"Use the state-like object marker common with desire","example":"I want to drink coffee (the state-like object marker often used with たい): コーヒー___飲みたいです。","answer":"が","explanation":"が can mark the desired object with たい; を is also correct and is not categorically replaced.","legacyAliases":[{"rule":"たい often replaces を with が","example":"コーヒー___飲みたいです。"}]} -->
 
 ## たい Conjugation
 
@@ -59,6 +59,7 @@ The たい form expresses your desire to perform an action. It is formed from th
 <!-- grammar-card: {"id":"tai-negative","kind":"rule","format":"cloze","priority":"essential","sourceSection":"たい Conjugation","rule":"たい conjugates like an い-adjective","example":"食べたい → do not want to eat: 食べ___.","answer":"たくない","explanation":"Final い changes to くない: 食べたくない."} -->
 <!-- grammar-card: {"id":"tai-past","kind":"rule","format":"cloze","priority":"optional","sourceSection":"たい Conjugation","rule":"The past of たい is たかった","example":"食べたい → wanted to eat: 食べ___.","answer":"たかった","explanation":"たい follows the adjective past pattern, not たいだった."} -->
 <!-- grammar-card: {"id":"tai-past-negative","kind":"rule","format":"cloze","priority":"optional","sourceSection":"たい Conjugation","rule":"The past negative of たい is たくなかった","example":"見たい → did not want to watch: 見___.","answer":"たくなかった","explanation":"見たい becomes 見たくなかった."} -->
+<!-- grammar-card: {"id":"rule-tai-adjective","kind":"concept","format":"qa","priority":"optional","sourceSection":"たい Conjugation","rule":"たい conjugates like an い-adjective","example":"Which word class does たい conjugate like, and so how does it make its negative and past?","answer":"An い-adjective: final い → くない (negative) and かった (past).","explanation":"Saying い-adjective counts. Avoid forms like たいじゃない or たいだった."} -->
 
 ## たい — Important Rule: Whose Desire?
 
@@ -95,6 +96,7 @@ Use one of these strategies:
 <!-- grammar-card: {"id":"tagatte-iru","kind":"rule","format":"cloze","priority":"essential","sourceSection":"How to express other people's desires","rule":"たがっている reports observed signs of wanting to do something","example":"Tanaka shows signs of wanting to go to Japan: 田中さんは日本に行き___。","answer":"たがっています","explanation":"Attach たがっている to the ます-stem 行き, rather than asserting Tanaka's unqualified inner desire."} -->
 <!-- grammar-card: {"id":"quoted-desire","kind":"rule","format":"cloze","priority":"optional","sourceSection":"How to express other people's desires","rule":"たいと言っている attributes desire to someone's own words","example":"My sister says she wants to study abroad: 妹は留学したい___。","answer":"と言っています","explanation":"The quotation gives the source for the other person's desire."} -->
 <!-- grammar-card: {"id":"hearsay-desire","kind":"rule","format":"cloze","priority":"optional","sourceSection":"How to express other people's desires","rule":"たいそうだ reports a desire heard from another source","example":"I heard Yamada wants to change jobs: 山田さんは転職したい___。","answer":"そうです","explanation":"This is hearsay そうだ after the full たい form."} -->
+<!-- grammar-card: {"id":"rule-other-desire","kind":"concept","format":"qa","priority":"essential","sourceSection":"How to express other people's desires","rule":"Another person's desire needs an evidence source such as observed signs, their words, or hearsay","example":"How can you naturally state that a third person wants to do something, without asserting their private feelings directly?","answer":"Give an evidence source: たがっている (observed signs), たいと言っている (their words), or たいそうだ (hearsay).","explanation":"Any one of these strategies counts. Asking the listener directly (何が食べたいですか) is also natural."} -->
 <!-- vocab-card: {"id":"vocab-ryuugaku","word":"留学","reading":"りゅうがく","meaning":"study abroad","priority":"optional","sourceSection":"How to express other people's desires"} -->
 <!-- vocab-card: {"id":"vocab-tenshoku","word":"転職","reading":"てんしょく","meaning":"changing jobs","priority":"optional","sourceSection":"How to express other people's desires"} -->
 <!-- quiz:{"type":"multiple-choice","question":"How do you express that Tanaka 'seems to want to go' to Japan?","options":["田中さんは日本に行きたいです","田中さんは日本に行きたがっています","田中さんは日本に行くたいです","田中さんは日本に行きたいだ"],"answer":1} -->
@@ -115,6 +117,7 @@ While たい is for actions (want **to do**), ほしい is for objects (want **t
 
 <!-- vocab-card: {"id":"vocab-hoshii","word":"ほしい","reading":"ほしい","meaning":"wanted; desired (wanting to have something)","priority":"essential","sourceSection":"ほしい — \"Want Something\""} -->
 <!-- grammar-card: {"id":"hoshii-object","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Basic Usage","rule":"ほしい takes the desired thing with が","example":"I want a new computer: 新しいパソコン___ほしいです。","answer":"が","explanation":"ほしい describes wanting an object; たい attaches to a verb to describe wanting an action."} -->
+<!-- grammar-card: {"id":"rule-tai-vs-hoshii","kind":"concept","format":"qa","priority":"essential","sourceSection":"ほしい — \"Want Something\"","rule":"たい expresses wanting to do an action; ほしい expresses wanting a thing","example":"What is the difference between wanting with たい and wanting with ほしい?","answer":"たい attaches to a verb stem for wanting to do an action; ほしい is an adjective for wanting a thing (marked with が).","explanation":"Any answer contrasting action vs object counts: 寿司が食べたい vs カメラがほしい."} -->
 
 ### ほしい Conjugation
 

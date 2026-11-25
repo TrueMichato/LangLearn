@@ -32,14 +32,14 @@ const INVENTORY: LessonInventory = {
       id: 'ichidan-polite', kind: 'rule', format: 'cloze', priority: 'essential',
       sourceSection: 'る-Verbs (Ichidan / One-Row Verbs)',
       objective: 'Apply the drop-る operation before adding the polite ending to an ichidan verb.',
-      prompt: '毎日(まいにち)朝(あさ)ごはんを食(た)べ___。', answer: 'ます',
+      prompt: 'Polite: "I eat breakfast every day." 毎日(まいにち)朝(あさ)ごはんを食(た)べ___。', answer: 'ます',
     },
     {
       id: 'classification-heuristic', kind: 'concept', format: 'qa', priority: 'essential',
       sourceSection: 'How to Tell Them Apart',
       objective: 'Treat /i/ or /e/ before る as a clue rather than a guarantee of ichidan membership.',
-      prompt: 'After setting aside する and 来る, does an /i/ or /e/ sound before る guarantee an ichidan verb?',
-      answer: 'No. It suggests ichidan, but godan exceptions such as 帰る (かえる) and 走る (はしる) must be learned with their verb type.',
+      prompt: "After setting aside する and 来る, what does an /i/ or /e/ sound before る tell you about a verb's class, and what is its limit?",
+      answer: 'It suggests ichidan but does not guarantee it; godan exceptions such as 帰る (かえる) and 走る (はしる) must be learned with their verb type.',
     },
     {
       id: 'vocab-nomu', kind: 'vocabulary', priority: 'essential',
@@ -215,7 +215,7 @@ describe('semantic grammar retention validator using real Japanese pilot blocks'
   });
 
   it('rejects corrupt whole-sentence cloze reconstruction even if its answer contract is also changed', () => {
-    const answer = '毎日(まいにち)朝(あさ)ごはんを食(た)べます。';
+    const answer = 'Polite: "I eat breakfast every day." 毎日(まいにち)朝(あさ)ごはんを食(た)べます。';
     const mutated = changeBlock(SOURCE, 'ichidan-polite', { answer });
     expect(validateRetentionLesson(mutated, changedInventory('ichidan-polite', { answer }), BASELINE).join('\n'))
       .toContain('answer repeats the complete cloze frame');
@@ -241,7 +241,9 @@ describe('semantic grammar retention validator using real Japanese pilot blocks'
 
 describe('exact legacy identity and assessment mutation protection', () => {
   it('rejects a lost legacy pair even when the authored ID survives', () => {
-    const mutated = changeBlock(SOURCE, 'ichidan-polite', { rule: 'A wording repair without its old identity' });
+    const mutated = changeBlock(SOURCE, 'ichidan-polite', {
+      rule: 'A wording repair without its old identity', legacyAliases: [],
+    });
     expect(validateLegacyLesson(mutated, BASELINE).join('\n')).toContain('lost legacy identity for "ichidan-polite"');
   });
 

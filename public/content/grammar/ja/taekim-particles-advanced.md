@@ -18,7 +18,7 @@ In these direct-object constructions, を marks the object of a transitive verb.
 
 <!-- vocab-card: {"id":"vocab-hon","word":"本","reading":"ほん","meaning":"book","priority":"optional","sourceSection":"を (wo) — Direct Object Marker"} -->
 <!-- vocab-card: {"id":"vocab-ongaku","word":"音楽","reading":"おんがく","meaning":"music","priority":"optional","sourceSection":"を (wo) — Direct Object Marker"} -->
-<!-- grammar-card: {"id":"direct-object","kind":"rule","format":"cloze","priority":"essential","sourceSection":"を (wo) — Direct Object Marker","rule":"を marks the direct object of a verb","hint":"Breakfast is what was eaten.","example":"朝ご飯___食べた。","answer":"を","explanation":"朝ご飯 is what was eaten, so it takes the object marker を."} -->
+<!-- grammar-card: {"id":"direct-object","kind":"rule","format":"cloze","priority":"essential","sourceSection":"を (wo) — Direct Object Marker","rule":"を marks the direct object of a verb","example":"朝ご飯___食べた。 (I ate breakfast; mark what was eaten.)","answer":"を","explanation":"朝ご飯 is what was eaten, so it takes the object marker を.","legacyAliases":[{"rule":"を marks the direct object of a verb","example":"朝ご飯___食べた。"}]} -->
 <!-- grammar-card: {"id":"object-particle-reading","kind":"concept","format":"qa","priority":"optional","sourceSection":"を (wo) — Direct Object Marker","rule":"The object particle を is normally pronounced o","example":"How do you pronounce the particle written を in ordinary speech?","answer":"お (o).","explanation":"The spelling is を even though the usual modern pronunciation is o."} -->
 
 ## に (ni) — The Multi-Purpose Particle
@@ -73,6 +73,7 @@ Used with いる and ある to indicate where something **exists**:
 <!-- vocab-card: {"id":"vocab-hashi","word":"箸","reading":"はし","meaning":"chopsticks","priority":"optional","sourceSection":"Means / Method"} -->
 <!-- grammar-card: {"id":"de-instrument","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Means / Method","rule":"で marks the instrument or means of an action","example":"箸___食べる。","answer":"で","explanation":"Chopsticks are the instrument used to eat."} -->
 <!-- grammar-card: {"id":"de-language","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Means / Method","rule":"で can mark the language used as a means of communication","example":"日本語___話す。 (I speak in Japanese.)","answer":"で","explanation":"The language is the means, not a physical destination."} -->
+<!-- grammar-card: {"id":"rule-de-two-roles","kind":"concept","format":"qa","priority":"essential","sourceSection":"で (de) — Location of Action / Means","rule":"で marks where an action happens and the means used to do it","example":"What two kinds of information does で mark in this lesson?","answer":"The place where an action happens, and the means or method (tool, language, transport) used.","explanation":"Both roles are needed; any example of means (chopsticks, a language) counts."} -->
 
 <!-- quiz:{"type":"multiple-choice","question":"'レストランで食べる' — What role does で play here?","options":["Direction","Direct object","Location of action","Time"],"answer":2} -->
 
@@ -90,7 +91,7 @@ Compare:
 For the locations in these examples, いる/ある (exist) and 住む (live) use に; activities such as 遊ぶ and 勉強する use で. This is a distinction between these location roles, not a universal rule that every state takes に.
 
 <!-- grammar-card: {"id":"ni-existence-place","kind":"rule","format":"cloze","priority":"essential","sourceSection":"に vs で — A Key Distinction","rule":"に marks the place where something exists","example":"公園___猫がいる。","answer":"に","explanation":"いる states existence rather than an action, so the location takes に and not で."} -->
-<!-- grammar-card: {"id":"location-role-contrast","kind":"concept","format":"qa","priority":"essential","sourceSection":"に vs で — A Key Distinction","rule":"Existence location and activity location take different particles","example":"Why do 公園に猫がいる and 公園で遊ぶ use different location particles?","answer":"The first locates an existing cat; the second locates the activity of playing.","explanation":"Choose by the noun's role with the predicate, not by whether the same place is mentioned."} -->
+<!-- grammar-card: {"id":"location-role-contrast","kind":"rule","format":"qa","priority":"essential","sourceSection":"に vs で — A Key Distinction","rule":"Existence location and activity location take different particles","example":"Why do 公園に猫がいる and 公園で遊ぶ use different location particles?","answer":"The first locates an existing cat; the second locates the activity of playing.","explanation":"Choose by the noun's role with the predicate, not by whether the same place is mentioned."} -->
 
 ## へ (e) — Direction
 
@@ -100,8 +101,8 @@ The particle **へ** (pronounced "e") indicates direction of movement. It is sim
 
 In most everyday situations, に and へ are interchangeable for direction. Use へ when you want to emphasize the journey rather than the arrival.
 
-<!-- grammar-card: {"id":"he-direction","kind":"rule","format":"cloze","priority":"optional","sourceSection":"へ (e) — Direction","rule":"へ emphasizes movement direction and is pronounced e","example":"東京___行く。 (Use the direction particle pronounced e.)","answer":"へ","explanation":"The spelling is へ, pronounced え as a particle. に can instead present Tokyo as the destination."} -->
-<!-- grammar-card: {"id":"ni-he-scope","kind":"concept","format":"qa","priority":"optional","sourceSection":"へ (e) — Direction","rule":"に and へ overlap for movement, not every function of に","example":"Does interchangeability in 学校に行く and 学校へ行く mean that へ can replace に for a clock time?","answer":"No. The overlap concerns movement direction or destination, not the time-marking use.","explanation":"Keep the qualification for movement rather than generalizing the substitution to every に."} -->
+<!-- grammar-card: {"id":"he-direction","kind":"rule","format":"cloze","priority":"optional","sourceSection":"へ (e) — Direction","rule":"へ emphasizes movement direction and is pronounced e","example":"東京___行く。 (I head toward Tokyo; use the particle that stresses direction over arrival.)","answer":"へ","explanation":"The spelling is へ, pronounced え as a particle. に can instead present Tokyo as the destination.","legacyAliases":[{"rule":"へ emphasizes movement direction and is pronounced e","example":"東京___行く。 (Use the direction particle pronounced e.)"}]} -->
+<!-- grammar-card: {"id":"ni-he-scope","kind":"concept","format":"qa","priority":"optional","sourceSection":"へ (e) — Direction","rule":"に and へ overlap for movement, not every function of に","example":"When can へ stand in for に?","answer":"Only when marking the direction or destination of movement; its other uses, such as clock time, stay に.","explanation":"Keep the qualification for movement rather than generalizing the substitution to every に.","legacyAliases":[{"rule":"に and へ overlap for movement, not every function of に","example":"Does interchangeability in 学校に行く and 学校へ行く mean that へ can replace に for a clock time?"}]} -->
 
 ## から (kara) and まで (made) — From / Until
 
@@ -134,7 +135,8 @@ You can chain multiple の:
 
 <!-- grammar-card: {"id":"no-possession","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Possession","rule":"の connects a possessor to the following noun","example":"私___本。 (My book.)","answer":"の","explanation":"The first noun modifies the second; the book remains the head noun."} -->
 <!-- grammar-card: {"id":"no-classification","kind":"rule","format":"cloze","priority":"optional","sourceSection":"Noun Modification","rule":"の links nouns for a relationship other than ownership too","example":"日本語___先生。 (A Japanese language teacher.)","answer":"の","explanation":"The relation is subject taught, not literal ownership by a language."} -->
-<!-- grammar-card: {"id":"no-chain-head","kind":"concept","format":"qa","priority":"optional","sourceSection":"Noun Modification","rule":"The last noun remains the head of a の chain","example":"In 私の大学の友達, what is the final phrase referring to?","answer":"A friend, specifically my university friend.","explanation":"The earlier nouns narrow the relationship; the expression does not refer primarily to a university."} -->
+<!-- grammar-card: {"id":"no-chain-head","kind":"rule","format":"qa","priority":"optional","sourceSection":"Noun Modification","rule":"The last noun remains the head of a の chain","example":"In 私の大学の友達, what is the final phrase referring to?","answer":"A friend, specifically my university friend.","explanation":"The earlier nouns narrow the relationship; the expression does not refer primarily to a university."} -->
+<!-- grammar-card: {"id":"rule-no-head","kind":"concept","format":"qa","priority":"optional","sourceSection":"Noun Modification","rule":"In a chain of nouns joined by の, the final noun is the head","example":"In a chain of nouns joined by の, which noun is the head being described?","answer":"The last noun; each earlier noun modifies what follows it.","explanation":"Last, final, or rightmost noun all count."} -->
 
 <!-- quiz:{"type":"multiple-choice","question":"How do you say 'the teacher's cat'?","options":["先生が猫","先生の猫","先生に猫","先生で猫"],"answer":1} -->
 

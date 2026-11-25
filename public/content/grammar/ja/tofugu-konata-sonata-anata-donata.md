@@ -25,7 +25,7 @@ Demonstrative
 
 ### Conceptualizing こそあど
 
-<!-- grammar-card: {"id":"modern-not-literal-distance","kind":"concept","format":"qa","priority":"essential","sourceSection":"Conceptualizing こそあど","rule":"Modern あなた is a second-person pronoun, not simply the distant member of a spatial chart","example":"Does the あ in modern あなた mean it refers to a third person far from both speakers?","answer":"No. Modern あなた addresses the listener as you; the spatial pattern helps explain older uses, not the modern referent.","explanation":"Do not mechanically transfer the distance rules of これ or あそこ to this historically changed pronoun."} -->
+<!-- grammar-card: {"id":"modern-not-literal-distance","kind":"concept","format":"qa","priority":"essential","sourceSection":"Conceptualizing こそあど","rule":"Modern あなた is a second-person pronoun, not simply the distant member of a spatial chart","example":"Despite its あ (the \"far from both\" syllable), whom does modern あなた refer to?","answer":"The listener — it is a second-person \"you\"; the spatial pattern helps explain older uses, not the modern referent.","explanation":"Do not mechanically transfer the distance rules of これ or あそこ to this historically changed pronoun.","legacyAliases":[{"rule":"Modern あなた is a second-person pronoun, not simply the distant member of a spatial chart","example":"Does the あ in modern あなた mean it refers to a third person far from both speakers?"}]} -->
 
 There are nine basic sets of words in Japanese that begin with こ, そ, あ, and ど. They have different meanings and functions depending on the endings that come after こそあど.
 
@@ -74,8 +74,8 @@ In modern Japanese, あなた is the only one that is still used to mean "you," 
 
 Unlike English “you,” あなた is not an all-purpose polite form of address. Depending on the relationship it can sound distant, intimate, or confrontational; a known name or title, or omitting the pronoun, is often more natural.
 
-<!-- grammar-card: {"id":"anata-social-context","kind":"concept","format":"qa","priority":"essential","sourceSection":"こなた, そなた, あなた for \"You\"","rule":"Modern あなた is not universally polite","example":"Is replacing every English you with あなた a safe politeness strategy?","answer":"No. Its nuance depends on the relationship; a name or title, or omitting the pronoun, is often more natural.","explanation":"Historical respectful use does not guarantee modern deference; intimate or confrontational uses are also possible."} -->
-<!-- grammar-card: {"id":"historical-address-register","kind":"concept","format":"qa","priority":"optional","sourceSection":"こなた, そなた, あなた for \"You\"","rule":"The old address forms had historically variable levels of respect","example":"Should the older contrast between casual こなた, neutral そなた and respectful あなた be treated as a timeless modern politeness chart?","answer":"No. Those are historical tendencies whose respect levels varied over time; こなた and そなた are now archaic.","explanation":"Modern あなた has changed socially as well as semantically."} -->
+<!-- grammar-card: {"id":"anata-social-context","kind":"concept","format":"qa","priority":"essential","sourceSection":"こなた, そなた, あなた for \"You\"","rule":"Modern あなた is not universally polite","example":"Why isn't replacing every English \"you\" with あなた a safe politeness strategy, and what is often more natural?","answer":"Its nuance depends on the relationship (it can sound distant, intimate or confrontational); using a name or title, or omitting the pronoun, is often more natural.","explanation":"Historical respectful use does not guarantee modern deference; intimate or confrontational uses are also possible.","legacyAliases":[{"rule":"Modern あなた is not universally polite","example":"Is replacing every English you with あなた a safe politeness strategy?"}]} -->
+<!-- grammar-card: {"id":"historical-address-register","kind":"concept","format":"qa","priority":"optional","sourceSection":"こなた, そなた, あなた for \"You\"","rule":"The old address forms had historically variable levels of respect","example":"How reliable is the old contrast \"casual こなた, neutral そなた, respectful あなた\" as a guide to politeness today?","answer":"Not reliable: those are historical tendencies whose respect levels varied over time, and こなた and そなた are now archaic.","explanation":"Modern あなた has changed socially as well as semantically.","legacyAliases":[{"rule":"The old address forms had historically variable levels of respect","example":"Should the older contrast between casual こなた, neutral そなた and respectful あなた be treated as a timeless modern politeness chart?"}]} -->
 
 That being said, you may still come across こなた and そなた in period pieces, classical writing, manga, or the like. For example, the following is a common way to ask someone's name in writing set to a long time ago, and is often used by characters who have an old-fashioned way of speaking:
 
@@ -83,7 +83,7 @@ That being said, you may still come across こなた and そなた in period pie
 
   - **You**, what is your name?
 
-<!-- grammar-card: {"id":"sonata-period-fiction","kind":"concept","format":"qa","priority":"optional","sourceSection":"こなた, そなた, あなた for \"You\"","rule":"そなた as you belongs chiefly to historical or stylized speech","example":"What register does そなた、名を何と言う？ evoke today?","answer":"Archaic or period-fiction speech, not ordinary modern conversation.","explanation":"Recognition is useful in manga, drama and classical writing without making it a default form of address."} -->
+<!-- grammar-card: {"id":"sonata-period-fiction","kind":"rule","format":"qa","priority":"optional","sourceSection":"こなた, そなた, あなた for \"You\"","rule":"そなた as you belongs chiefly to historical or stylized speech","example":"What register does そなた、名を何と言う？ evoke today?","answer":"Archaic or period-fiction speech, not ordinary modern conversation.","explanation":"Recognition is useful in manga, drama and classical writing without making it a default form of address."} -->
 
 ### どなた for "Who?"
 
@@ -101,8 +101,8 @@ That being said, you may still come across こなた and そなた in period pie
 
 In this case, 様 can add extra politeness, but polite language generally increases the distance between you and the person you are addressing. So some people may intentionally choose to use 様 to emphasize this distance while sarcastically implying, "I don't know you, who are you?" in a polite manner.
 
-<!-- grammar-card: {"id":"polite-who-sama","kind":"rule","format":"cloze","priority":"essential","sourceSection":"どなた for \"Who?\"","rule":"どなた is the polite word for 'who'","hint":"Ask who politely, adding the honorific suffix for extra deference","example":"失礼ですが、___でしょうか？","answer":"どなた様","explanation":"どなた様 (どなたさま) adds 様 to polite どなた. Context and tone can still make the extra distance sound pointed or sarcastic."} -->
-<!-- grammar-card: {"id":"third-person-who","kind":"concept","format":"qa","priority":"essential","sourceSection":"どなた for \"Who?\"","rule":"どなた can ask about a third person's identity","example":"In この方はどなたですか, is the question necessarily asking the listener's own name?","answer":"No. It asks who this person is and can refer to a third person.","explanation":"Polite who is not restricted to directly addressing an unknown caller or visitor."} -->
+<!-- grammar-card: {"id":"polite-who-sama","kind":"rule","format":"cloze","priority":"essential","sourceSection":"どなた for \"Who?\"","rule":"どなた is the polite word for 'who'","example":"Politely asking who someone is, adding the honorific suffix for extra deference: 失礼ですが、___でしょうか？","answer":"どなた様","explanation":"どなた様 (どなたさま) adds 様 to polite どなた. Context and tone can still make the extra distance sound pointed or sarcastic.","legacyAliases":[{"rule":"どなた is the polite word for 'who'","example":"失礼ですが、___でしょうか？"}]} -->
+<!-- grammar-card: {"id":"third-person-who","kind":"rule","format":"qa","priority":"essential","sourceSection":"どなた for \"Who?\"","rule":"どなた can ask about a third person's identity","example":"Whose identity does この方はどなたですか ask about?","answer":"This person's — a third person present, not necessarily the listener's own name.","explanation":"Polite who is not restricted to directly addressing an unknown caller or visitor.","legacyAliases":[{"rule":"どなた can ask about a third person's identity","example":"In この方はどなたですか, is the question necessarily asking the listener's own name?"}]} -->
 
 ## Beyond the Basics
 
@@ -117,7 +117,7 @@ For a place that is far away, there is also the word  彼方(かなた). 彼方 
   - I saw a light **far in the distance** across the sand dunes.
 
 <!-- vocab-card: {"id":"vocab-kanata","priority":"optional","sourceSection":"こなた, そなた, あなた for Places and Directions","word":"彼方","reading":"かなた","meaning":"beyond; the distance; the far side (often literary)"} -->
-<!-- grammar-card: {"id":"poetic-distance","kind":"rule","format":"cloze","priority":"optional","sourceSection":"こなた, そなた, あなた for Places and Directions","rule":"彼方 preserves the original spatial meaning of あなた","hint":"The distance beyond the dunes; give the kanji read かなた","example":"砂丘のはるか___に明かりが見えた。","answer":"彼方","explanation":"彼方 (かなた) retains a distant spatial sense and can sound poetic; it is not modern second-person あなた."} -->
+<!-- grammar-card: {"id":"poetic-distance","kind":"rule","format":"cloze","priority":"optional","sourceSection":"こなた, そなた, あなた for Places and Directions","rule":"彼方 preserves the original spatial meaning of あなた","example":"Literary word (in kanji) for \"the far distance\", the old spatial form behind あなた: 砂丘のはるか___に明かりが見えた。","answer":"彼方","explanation":"彼方 (かなた) retains a distant spatial sense and can sound poetic; it is not modern second-person あなた.","legacyAliases":[{"rule":"彼方 preserves the original spatial meaning of あなた","example":"砂丘のはるか___に明かりが見えた。"}]} -->
 <!-- grammar-card: {"id":"historical-spatial-series","kind":"concept","format":"qa","priority":"optional","sourceSection":"こなた, そなた, あなた for Places and Directions","rule":"Classical spatial uses follow the older proximity pattern","example":"How do the old spatial uses of こなた, そなた and あなた map to modern directional words?","answer":"Roughly こちら for this side, そちら for that or your side, and あちら for the distant side.","explanation":"These are classical place/direction uses, not instructions to use modern あなた for over there."} -->
 
 ### こなた for "This Person"
@@ -130,7 +130,7 @@ In classical Japanese, こなた can also mean "this person." For example, in th
 
 This use is similar to こちら (and its formal version この方) in modern Japanese.
 
-<!-- grammar-card: {"id":"classical-this-person","kind":"concept","format":"qa","priority":"optional","sourceSection":"こなた for \"This Person\"","rule":"Classical こなた can refer to a nearby person","example":"What person-reference meaning can こなた have in the cited Tale of Genji passage?","answer":"This person, comparable to modern こちら or この方.","explanation":"The classical referent is determined by context, so こなた does not always mean you."} -->
+<!-- grammar-card: {"id":"classical-this-person","kind":"rule","format":"qa","priority":"optional","sourceSection":"こなた for \"This Person\"","rule":"Classical こなた can refer to a nearby person","example":"What person-reference meaning can こなた have in the cited Tale of Genji passage?","answer":"This person, comparable to modern こちら or この方.","explanation":"The classical referent is determined by context, so こなた does not always mean you."} -->
 
 ### こなた for "Me"
 
@@ -142,7 +142,7 @@ In classical Japanese, こなた can also mean "I" or "me." For example, in the 
 
 This use is also similar to こちら in modern Japanese, and in this case, you are referring to yourself as "this side" (my side).
 
-<!-- grammar-card: {"id":"classical-self-side","kind":"concept","format":"qa","priority":"optional","sourceSection":"こなた for \"Me\"","rule":"Classical this-side reference can denote the speaker","example":"How can こなた mean me in the Noh example rather than a person being addressed?","answer":"It refers to the speaker's own side, comparable to self-reference with こちら.","explanation":"This historical contextual use is distinct from modern everyday first-person pronouns."} -->
+<!-- grammar-card: {"id":"classical-self-side","kind":"rule","format":"qa","priority":"optional","sourceSection":"こなた for \"Me\"","rule":"Classical this-side reference can denote the speaker","example":"How can こなた mean me in the Noh example rather than a person being addressed?","answer":"It refers to the speaker's own side, comparable to self-reference with こちら.","explanation":"This historical contextual use is distinct from modern everyday first-person pronouns."} -->
 
   
 

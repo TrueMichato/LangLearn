@@ -14,8 +14,9 @@ The particle **は** marks the **topic** of a sentence — what you are talking 
 Think of は as saying "As for X, ..."
 
 <!-- vocab-card: {"id":"vocab-gakusei","word":"学生","reading":"がくせい","meaning":"student","priority":"optional","sourceSection":"は (wa) — Topic Marker"} -->
-<!-- grammar-card: {"id":"topic-marker","kind":"rule","format":"cloze","priority":"essential","sourceSection":"は (wa) — Topic Marker","rule":"は (topic marker)","hint":"Mark the topic of a sentence","example":"私＿＿学生です。","answer":"は","explanation":"は marks the topic: as for me, I am a student. The particle is written は but pronounced わ (wa)."} -->
+<!-- grammar-card: {"id":"topic-marker","kind":"rule","format":"cloze","priority":"essential","sourceSection":"は (wa) — Topic Marker","rule":"は (topic marker)","hint":"Mark the topic of a sentence","example":"Introduce yourself (“As for me, I am a student”): 私＿＿学生です。","answer":"は","explanation":"は marks the topic: as for me, I am a student. Write the particle は; it is pronounced わ (wa), but its reading is a separate question. が would single out 私 as the one who is a student, which the “as for me” framing rules out.","legacyAliases":[{"rule":"は (topic marker)","example":"私＿＿学生です。"}]} -->
 <!-- grammar-card: {"id":"topic-reading-cue","kind":"concept","format":"qa","priority":"optional","sourceSection":"は (wa) — Topic Marker","rule":"The cue As for X identifies the topic, not necessarily the grammatical subject","example":"What does the cue “As for X, …” help you remember about は?","answer":"は sets X as the topic of discussion, not necessarily as the grammatical subject.","explanation":"The cue introduces what the sentence is about. The particle is written は but pronounced わ (wa)."} -->
+<!-- grammar-card: {"id":"rule-wa-reading","kind":"concept","format":"qa","priority":"optional","sourceSection":"は (wa) — Topic Marker","rule":"The topic particle is written は but pronounced wa","example":"How is the topic particle は pronounced?","answer":"wa (わ), not ha.","explanation":"Answering wa or わ counts. 私は学生です is read watashi wa gakusei desu; in ordinary words such as はな (flower) the kana keeps its ha sound."} -->
 
 ## が (ga) — Subject Marker
 
@@ -27,7 +28,7 @@ The particle **が** marks the **subject** — specifically who or what performs
 **は vs が:** Use は for known/contrasted topics, and が for new information or emphasis.
 
 <!-- vocab-card: {"id":"vocab-neko","word":"猫","reading":"ねこ","meaning":"cat","priority":"optional","sourceSection":"が (ga) — Subject Marker"} -->
-<!-- grammar-card: {"id":"subject-marker","kind":"rule","format":"cloze","priority":"essential","sourceSection":"が (ga) — Subject Marker","rule":"が (subject marker)","hint":"Introduce the presence of a cat","example":"猫＿＿います。","answer":"が","explanation":"が introduces 猫 as the subject of います, presenting its presence as new information."} -->
+<!-- grammar-card: {"id":"subject-marker","kind":"rule","format":"cloze","priority":"essential","sourceSection":"が (ga) — Subject Marker","rule":"が (subject marker)","hint":"Introduce the presence of a cat","example":"You suddenly notice a cat (“There's a cat!”): 猫＿＿います。","answer":"が","explanation":"が introduces 猫 as the subject of います, presenting its presence as new information. 猫はいます would talk about a cat already under discussion.","legacyAliases":[{"rule":"が (subject marker)","example":"猫＿＿います。"}]} -->
 <!-- grammar-card: {"id":"topic-subject-contrast","kind":"concept","format":"qa","priority":"essential","sourceSection":"が (ga) — Subject Marker","rule":"は frames a topic while が identifies a subject","example":"Why does 誰が来ましたか use が rather than treating 誰 as an established topic?","answer":"It asks which person is the subject who came; that identity is new information, not an established topic.","explanation":"は often frames known or contrasted topics. が identifies the subject, including the unknown person in this question."} -->
 
 ## を (wo/o) — Direct Object Marker
@@ -64,6 +65,7 @@ The particle **で** indicates where an action takes place or the means by which
 - **バスで行きます。** (Basu de ikimasu.) — I go by bus. *(means)*
 
 <!-- grammar-card: {"id":"action-location","kind":"rule","format":"cloze","priority":"essential","sourceSection":"で (de) — Location of Action / Means","rule":"で (location/means marker)","hint":"Indicate where studying happens","example":"図書館＿＿勉強します。","answer":"で","explanation":"で marks the library as the place where the action of studying takes place."} -->
+<!-- grammar-card: {"id":"rule-de-action-place","kind":"concept","format":"qa","priority":"essential","sourceSection":"で (de) — Location of Action / Means","rule":"で marks the place where an action is performed; に marks where something exists","example":"Which particle marks the place where an action is performed, as opposed to where something merely exists?","answer":"で (に marks the place of existence).","explanation":"Naming で counts. 図書館で勉強します (study at the library) uses で; 学校に猫がいます (a cat is at school) uses に."} -->
 <!-- grammar-card: {"id":"de-means","kind":"rule","format":"cloze","priority":"optional","sourceSection":"で (de) — Location of Action / Means","rule":"で marks a means of transport","example":"バス___行きます。 (I go by bus.)","answer":"で","explanation":"バスで identifies the means used to travel, not the destination."} -->
 <!-- vocab-card: {"id":"vocab-toshokan","word":"図書館","reading":"としょかん","meaning":"library","priority":"optional","sourceSection":"で (de) — Location of Action / Means"} -->
 

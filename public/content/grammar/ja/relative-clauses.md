@@ -13,7 +13,7 @@ In Japanese, anything that describes a noun goes **before** it:
 
 The relative clause works just like a long adjective placed before the noun.
 
-<!-- grammar-card: {"id":"relative-order","kind":"concept","format":"qa","priority":"essential","sourceSection":"Basic Concept","rule":"A Japanese relative clause directly precedes its head noun without a relative pronoun","example":"Where does “my friend gave me” go in “the book my friend gave me,” and is a word for “that” required?","answer":"Before 本: 友達がくれた本. No relative pronoun is required.","explanation":"The whole clause modifies the noun like a long adjective."} -->
+<!-- grammar-card: {"id":"relative-order","kind":"concept","format":"qa","priority":"essential","sourceSection":"Basic Concept","rule":"A Japanese relative clause directly precedes its head noun without a relative pronoun","example":"Where does a Japanese relative clause such as “my friend gave me” go relative to its noun, and does it need a word for “that”?","answer":"Before 本: 友達がくれた本. No relative pronoun is required.","explanation":"The whole clause modifies the noun like a long adjective.","legacyAliases":[{"rule":"A Japanese relative clause directly precedes its head noun without a relative pronoun","example":"Where does “my friend gave me” go in “the book my friend gave me,” and is a word for “that” required?"}]} -->
 
 ## Simple Examples
 
@@ -132,7 +132,8 @@ The particle **の** can replace the noun in some relative clause patterns:
 - **あそこに立(た)っているのは誰ですか。** — Who is the one standing over there?
 - **一番(いちばん)安いのはどれですか。** — Which one is the cheapest?
 
-<!-- grammar-card: {"id":"nominal-no","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Relative Clauses with の","rule":"の stands in for a noun that is already obvious","hint":"the red one","example":"赤(あか)い___をください。","answer":"の","explanation":"の stands for the contextually understood thing, as in English the red one."} -->
+<!-- grammar-card: {"id":"nominal-no","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Relative Clauses with の","rule":"の stands in for a noun that is already obvious","hint":"the red one","example":"Please give me the red one (stand in for the obvious noun): 赤(あか)い___をください。","answer":"の","explanation":"の stands for the contextually understood thing, as in English the red one.","legacyAliases":[{"rule":"の stands in for a noun that is already obvious","example":"赤(あか)い___をください。"}]} -->
+<!-- grammar-card: {"id":"rule-nominal-no","kind":"concept","format":"qa","priority":"optional","sourceSection":"Relative Clauses with の","rule":"の can replace a noun that is clear from context","example":"Which particle can stand in for a noun already clear from context, like English “the red one”?","answer":"の.","explanation":"Naming の counts: 赤いのをください, 昨日買ったのはこれです."} -->
 
 ## Common Patterns with Relative Clauses
 
@@ -148,7 +149,7 @@ The particle **の** can replace the noun in some relative clause patterns:
 - **今住んでいるところは静かです。** — The place where I live now is quiet.
 - **食べているところを写真に撮られました。** — Someone took a photo of me while I was eating.
 
-<!-- grammar-card: {"id":"tokoro-moment","kind":"concept","format":"qa","priority":"optional","sourceSection":"〜ところ (the place/moment where)","rule":"ところ can refer to a moment in an action, not just a physical place","example":"What does 食べているところ refer to when someone takes a photo of it?","answer":"The moment or scene of someone eating, not a place named eating.","explanation":"The modifying clause gives ところ its temporal or situational meaning."} -->
+<!-- grammar-card: {"id":"tokoro-moment","kind":"rule","format":"qa","priority":"optional","sourceSection":"〜ところ (the place/moment where)","rule":"ところ can refer to a moment in an action, not just a physical place","example":"What does 食べているところ refer to when someone takes a photo of it?","answer":"The moment or scene of someone eating, not a place named eating.","explanation":"The modifying clause gives ところ its temporal or situational meaning."} -->
 <!-- quiz:{"type":"multiple-choice","question":"'昨日買ったのはこれです' — what does の replace?","options":["A person","A place","A thing (the item bought)","A time"],"answer":2} -->
 
 ## Summary
@@ -159,7 +160,8 @@ The particle **の** can replace the noun in some relative clause patterns:
 - の can replace the noun when the context is clear
 - Clauses can be as long as needed — just keep them before the noun
 
-<!-- grammar-card: {"id":"relative-plain-form","kind":"concept","format":"qa","priority":"essential","sourceSection":"Summary","rule":"Ordinary relative clauses use plain rather than polite predicate forms","example":"For “the book I bought,” should an ordinary relative clause use 買った本 or 買いました本?","answer":"買った本.","explanation":"The main sentence may end politely, but the noun-modifying clause normally uses plain form."} -->
+<!-- grammar-card: {"id":"relative-plain-form","kind":"rule","format":"qa","priority":"essential","sourceSection":"Summary","rule":"Ordinary relative clauses use plain rather than polite predicate forms","example":"For “the book I bought,” should an ordinary relative clause use 買った本 or 買いました本?","answer":"買った本.","explanation":"The main sentence may end politely, but the noun-modifying clause normally uses plain form."} -->
+<!-- grammar-card: {"id":"rule-relative-plain","kind":"concept","format":"qa","priority":"essential","sourceSection":"Verbs modifying nouns","rule":"Ordinary relative clauses use plain predicate forms","example":"What predicate form normally appears inside an ordinary Japanese relative clause, even in a polite sentence?","answer":"The plain form (e.g. 買った, 知らない), not です/ます.","explanation":"Saying plain form counts. Politeness is shown at the end of the main sentence instead."} -->
 
 Practice by describing things around you: "the coffee I'm drinking," "the chair I'm sitting on," "the friend who called me." Think of the Japanese clause and put it before the noun!
 

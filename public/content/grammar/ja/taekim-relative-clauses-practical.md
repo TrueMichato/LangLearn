@@ -19,7 +19,7 @@ Think of it as stacking a description in front of the noun, just like an adjecti
 <!-- vocab-card: {"id":"vocab-hon","word":"本","reading":"ほん","meaning":"book","priority":"optional","sourceSection":"The Core Idea"} -->
 <!-- vocab-card: {"id":"vocab-hito","word":"人","reading":"ひと","meaning":"person","priority":"optional","sourceSection":"The Core Idea"} -->
 <!-- vocab-card: {"id":"vocab-inu","word":"犬","reading":"いぬ","meaning":"dog","priority":"optional","sourceSection":"The Core Idea"} -->
-<!-- grammar-card: {"id":"clause-before-noun","kind":"rule","format":"cloze","priority":"essential","sourceSection":"The Core Idea","rule":"A clause modifies a noun by sitting directly in front of it","hint":"見る, plain past","example":"昨日(きのう)___映画(えいが)は面白(おもしろ)かった。","answer":"見た","explanation":"見た (みた) modifies 映画 with no relative pronoun — the plain form does all the work."} -->
+<!-- grammar-card: {"id":"clause-before-noun","kind":"rule","format":"cloze","priority":"essential","sourceSection":"The Core Idea","rule":"A clause modifies a noun by sitting directly in front of it","example":"昨日(きのう)___映画(えいが)は面白(おもしろ)かった。 (The movie I watched yesterday was interesting.)","answer":"見た","explanation":"見た (みた) modifies 映画 with no relative pronoun — the plain form does all the work.","legacyAliases":[{"rule":"A clause modifies a noun by sitting directly in front of it","example":"昨日(きのう)___映画(えいが)は面白(おもしろ)かった。"}]} -->
 <!-- grammar-card: {"id":"relative-clause-order","kind":"concept","format":"qa","priority":"essential","sourceSection":"The Core Idea","rule":"Japanese places the modifying clause before its head noun without a relative pronoun","example":"Where does the clause go in the Japanese equivalent of the book that I bought, and is a word for that required?","answer":"Before the noun: 買った本. No relative pronoun is required.","explanation":"This follows the same modifier-before-noun arrangement as an adjective."} -->
 
 ## Building Longer Modifications
@@ -36,7 +36,7 @@ Notice how particles work normally inside the clause. The clause is essentially 
 <!-- vocab-card: {"id":"vocab-ryouri","word":"料理","reading":"りょうり","meaning":"food; cooking; dish","priority":"optional","sourceSection":"Building Longer Modifications"} -->
 <!-- vocab-card: {"id":"vocab-kutsu","word":"靴","reading":"くつ","meaning":"shoes","priority":"optional","sourceSection":"Building Longer Modifications"} -->
 <!-- vocab-card: {"id":"vocab-kotoba","word":"言葉","reading":"ことば","meaning":"word; language","priority":"optional","sourceSection":"Building Longer Modifications"} -->
-<!-- grammar-card: {"id":"long-clause-meaning","kind":"concept","format":"qa","priority":"optional","sourceSection":"Building Longer Modifications","rule":"Internal particles retain their roles inside a longer modifier","example":"What does 去年東京で会った人 refer to?","answer":"The person I met in Tokyo last year.","explanation":"去年 sets the time and 東京で marks where the meeting happened inside the description of 人."} -->
+<!-- grammar-card: {"id":"long-clause-meaning","kind":"rule","format":"qa","priority":"optional","sourceSection":"Building Longer Modifications","rule":"Internal particles retain their roles inside a longer modifier","example":"What does 去年東京で会った人 refer to?","answer":"The person I met in Tokyo last year.","explanation":"去年 sets the time and 東京で marks where the meeting happened inside the description of 人."} -->
 
 <!-- quiz:{"type":"multiple-choice","question":"What does '昨日友達と見た映画' mean?","options":["Yesterday my friend watched a movie","The movie I watched with a friend yesterday","A friend who watched movies yesterday","Yesterday's movie about friends"],"answer":1} -->
 
@@ -54,8 +54,9 @@ When the modified noun is the **object**, the object disappears instead:
 - **私が読んでいる本** (watashi ga yondeiru hon) — the book that I'm reading
 
 <!-- grammar-card: {"id":"clause-internal-subject","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Subject Inside the Clause","rule":"A neutral subject inside this relative clause takes が","example":"友達(ともだち)___作(つく)ったケーキを食(た)べた。","answer":"が","explanation":"が marks the friend as the maker inside the clause. A topic or contrast requires its own context, so this is not an absolute ban on は in every modifying clause.","legacyAliases":[{"rule":"The subject inside a relative clause takes が, not は","example":"友達(ともだち)___作(つく)ったケーキを食(た)べた。"}]} -->
-<!-- grammar-card: {"id":"subject-gap","kind":"concept","format":"qa","priority":"essential","sourceSection":"Subject Inside the Clause","rule":"The head noun can supply the missing subject role","example":"In 走っている犬, what role does 犬 have in the running event?","answer":"It is the subject: the dog is running.","explanation":"Do not repeat 犬が inside the modifying clause; the noun itself supplies that role."} -->
-<!-- grammar-card: {"id":"object-gap","kind":"concept","format":"qa","priority":"optional","sourceSection":"Subject Inside the Clause","rule":"The head noun can instead supply a missing object role","example":"In 母が作った料理, who did the making and what was made?","answer":"Mother did the making; the food was made.","explanation":"母が remains the clause's subject, while the head noun 料理 supplies the unspoken object role."} -->
+<!-- grammar-card: {"id":"subject-gap","kind":"rule","format":"qa","priority":"essential","sourceSection":"Subject Inside the Clause","rule":"The head noun can supply the missing subject role","example":"In 走っている犬, what role does 犬 have in the running event?","answer":"It is the subject: the dog is running.","explanation":"Do not repeat 犬が inside the modifying clause; the noun itself supplies that role."} -->
+<!-- grammar-card: {"id":"object-gap","kind":"rule","format":"qa","priority":"optional","sourceSection":"Subject Inside the Clause","rule":"The head noun can instead supply a missing object role","example":"In 母が作った料理, who did the making and what was made?","answer":"Mother did the making; the food was made.","explanation":"母が remains the clause's subject, while the head noun 料理 supplies the unspoken object role."} -->
+<!-- grammar-card: {"id":"rule-head-role-gap","kind":"concept","format":"qa","priority":"essential","sourceSection":"Subject Inside the Clause","rule":"The modified noun's own role is left out of the clause; the head noun supplies it","example":"When a clause modifies a noun, what happens to that noun's own role (subject or object) inside the clause?","answer":"It is left out of the clause; the head noun itself fills that role.","explanation":"Any answer saying the noun is omitted or not repeated inside the clause counts."} -->
 
 ## Using の to Replace the Noun
 
@@ -69,7 +70,8 @@ This の acts as a pronoun, standing in for the understood noun.
 
 <!-- quiz:{"type":"multiple-choice","question":"'昨日買ったのはこれです' — what does の replace?","options":["A person","A verb","An understood noun (the thing bought)","A particle"],"answer":2} -->
 
-<!-- grammar-card: {"id":"understood-one","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Using の to Replace the Noun","rule":"の stands in for a noun that is obvious from context","hint":"The red one, with the thing understood.","example":"赤(あか)い___をください。","answer":"の","explanation":"赤いの means 'the red one', with の taking the place of the noun itself."} -->
+<!-- grammar-card: {"id":"understood-one","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Using の to Replace the Noun","rule":"の stands in for a noun that is obvious from context","example":"赤(あか)い___をください。 (Please give me the red one.)","answer":"の","explanation":"赤いの means 'the red one', with の taking the place of the noun itself.","legacyAliases":[{"rule":"の stands in for a noun that is obvious from context","example":"赤(あか)い___をください。"}]} -->
+<!-- grammar-card: {"id":"rule-no-replaces-noun","kind":"concept","format":"qa","priority":"optional","sourceSection":"Using の to Replace the Noun","rule":"の can stand in for a noun that is obvious from context","example":"When the modified noun is obvious from context, what can stand in for it after the modifier?","answer":"の (the one).","explanation":"の counts; an example such as the red one is optional."} -->
 
 ## Stacking Modifications
 
@@ -80,7 +82,7 @@ You can even stack multiple modifying clauses. Each clause modifies the final no
 
 Read from left to right, grouping the clauses and adjectives that belong to the head noun. Do not sweep unrelated main-clause material into the modifier.
 
-<!-- grammar-card: {"id":"stacked-modifiers-head","kind":"concept","format":"qa","priority":"optional","sourceSection":"Stacking Modifications","rule":"A clause and an adjective can both modify the same final head noun","example":"In 駅の前にある小さいカフェ, what is the head noun and what describes it?","answer":"The head is カフェ; 駅の前にある gives its location and 小さい describes its size.","explanation":"The location clause and adjective both precede the café they describe."} -->
+<!-- grammar-card: {"id":"stacked-modifiers-head","kind":"rule","format":"qa","priority":"optional","sourceSection":"Stacking Modifications","rule":"A clause and an adjective can both modify the same final head noun","example":"In 駅の前にある小さいカフェ, what is the head noun and what describes it?","answer":"The head is カフェ; 駅の前にある gives its location and 小さい describes its size.","explanation":"The location clause and adjective both precede the café they describe."} -->
 
 ## Why This Feels Natural
 
@@ -91,7 +93,7 @@ English speakers initially find this backwards, but it is actually very consiste
 - **私が毎朝コーヒーを飲むカフェは駅の近くにあります。** (Watashi ga maiasa koohii wo nomu kafe wa eki no chikaku ni arimasu.) — The café where I drink coffee every morning is near the station.
 
 <!-- grammar-card: {"id":"modifier-memory-cue","kind":"concept","format":"qa","priority":"optional","sourceSection":"Why This Feels Natural","rule":"Modifier before modified unifies short adjectives and longer noun descriptions","example":"What does the cue modifier before modified help you remember about 大きい犬 and 走っている犬?","answer":"Both place the description before 犬: first an adjective, then a whole clause in the second phrase.","explanation":"Treating a clause as a longer modifier helps recall the order without importing English who/which/that."} -->
-<!-- grammar-card: {"id":"location-head-relation","kind":"concept","format":"qa","priority":"optional","sourceSection":"Why This Feels Natural","rule":"A modified noun can name the place associated with the clause","example":"In 私が毎朝コーヒーを飲むカフェ, is the café what I drink?","answer":"No. It is the place where I drink coffee every morning.","explanation":"The head noun's relation is recovered from meaning; it need not be the subject or direct object."} -->
+<!-- grammar-card: {"id":"location-head-relation","kind":"rule","format":"qa","priority":"optional","sourceSection":"Why This Feels Natural","rule":"A modified noun can name the place associated with the clause","example":"In 私が毎朝コーヒーを飲むカフェ, is the café what I drink?","answer":"No. It is the place where I drink coffee every morning.","explanation":"The head noun's relation is recovered from meaning; it need not be the subject or direct object."} -->
 
 <!-- quiz:{"type":"multiple-choice","question":"In Japanese relative clauses, where does the modifying clause go?","options":["After the noun, like English","Before the noun","It can go either place","Inside a special bracket"],"answer":1} -->
 

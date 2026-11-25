@@ -6,7 +6,7 @@
 
 Nouns (名詞/めいし) are words used to identify things — people, places, objects, and abstract concepts. Japanese nouns don't change form for plural, gender, or grammatical case.
 
-<!-- grammar-card: {"id":"noun-invariance","kind":"concept","format":"qa","priority":"essential","sourceSection":"Nouns — Overview","rule":"Ordinary Japanese nouns do not inflect for case, grammatical gender, or number","example":"Does changing a noun from subject to object require a new case ending on the noun?","answer":"No. The noun stays the same; particles indicate its role.","explanation":"Number is usually contextual or quantified; restricted plural expressions do not create an English-style noun inflection system."} -->
+<!-- grammar-card: {"id":"noun-invariance","kind":"concept","format":"qa","priority":"essential","sourceSection":"Nouns — Overview","rule":"Ordinary Japanese nouns do not inflect for case, grammatical gender, or number","example":"When a Japanese noun changes from subject to object, what changes in the sentence?","answer":"Only the particle after it; the noun itself stays the same, with no case ending.","explanation":"Number is usually contextual or quantified; restricted plural expressions do not create an English-style noun inflection system.","legacyAliases":[{"rule":"Ordinary Japanese nouns do not inflect for case, grammatical gender, or number","example":"Does changing a noun from subject to object require a new case ending on the noun?"}]} -->
 
 ## Types of Nouns
 
@@ -34,7 +34,7 @@ Nouns that become verbs when combined with する:
 ### Personal Pronouns
 Words like 私, 僕, 彼 function as nouns in Japanese. See the dedicated pronouns page.
 
-<!-- grammar-card: {"id":"pronoun-noun-behavior","kind":"concept","format":"qa","priority":"optional","sourceSection":"Personal Pronouns","rule":"Personal pronouns share noun-like particle behavior","example":"In 私を and 私の, does 私 change its own form to express me versus my?","answer":"No. を and の express the different relations while 私 stays unchanged.","explanation":"This is why the lesson includes personal pronouns among noun types."} -->
+<!-- grammar-card: {"id":"pronoun-noun-behavior","kind":"concept","format":"qa","priority":"optional","sourceSection":"Personal Pronouns","rule":"Personal pronouns share noun-like particle behavior","example":"In 私を and 私の, what expresses the difference between me and my?","answer":"The particles を and の; 私 itself stays unchanged.","explanation":"This is why the lesson includes personal pronouns among noun types.","legacyAliases":[{"rule":"Personal pronouns share noun-like particle behavior","example":"In 私を and 私の, does 私 change its own form to express me versus my?"}]} -->
 ### Demonstrative Pronouns (こそあど Words)
 Words like これ (this), それ (that), あれ (that over there), どれ (which).
 
@@ -74,7 +74,8 @@ Particles give nouns their grammatical role:
 | で | Means/location | **電車で**行く (Go by train) |
 | の | Possession | **私の**本 (My book) |
 
-<!-- grammar-card: {"id":"object-particle","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Nouns and Particles","rule":"A noun's role in the sentence is shown by the particle after it","hint":"object particle","example":"毎朝(まいあさ)パン___食(た)べます。","answer":"を","explanation":"を marks パン as the thing being eaten without changing the noun."} -->
+<!-- grammar-card: {"id":"object-particle","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Nouns and Particles","rule":"A noun's role in the sentence is shown by the particle after it","hint":"object particle","example":"I eat bread every morning: 毎朝(まいあさ)パン___食(た)べます。","answer":"を","explanation":"を marks パン as the thing being eaten without changing the noun.","legacyAliases":[{"rule":"A noun's role in the sentence is shown by the particle after it","example":"毎朝(まいあさ)パン___食(た)べます。"}]} -->
+<!-- grammar-card: {"id":"rule-particles-show-role","kind":"concept","format":"qa","priority":"essential","sourceSection":"Nouns and Particles","rule":"A noun's role is shown by the particle after it, not by inflection","example":"Japanese nouns never change form for case. What shows whether a noun is the subject, topic, object, or place?","answer":"The particle that follows it.","explanation":"猫がいる, 今日は暑い, パンを食べる, 東京に住む — the noun stays the same."} -->
 
 ## Nouns as Predicates
 
@@ -83,7 +84,8 @@ Nouns can serve as the predicate (main info) of a sentence:
 - これは**犬**だ。 — This is a **dog**.
 - あの人は**先生**です。 — That person is a **teacher**.
 
-<!-- grammar-card: {"id":"noun-polite-predicate","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Nouns as Predicates","rule":"A noun becomes a predicate with です or だ","hint":"polite copula","example":"私は学生(がくせい)___。","answer":"です","explanation":"です makes the nominal predicate polite; だ is the plain copula. This is not a claim that Japanese lacks existence verbs such as ある and いる."} -->
+<!-- grammar-card: {"id":"noun-polite-predicate","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Nouns as Predicates","rule":"A noun becomes a predicate with です or だ","hint":"polite copula","example":"I am a student (polite): 私は学生(がくせい)___。","answer":"です","explanation":"です makes the nominal predicate polite; だ is the plain copula. This is not a claim that Japanese lacks existence verbs such as ある and いる.","legacyAliases":[{"rule":"A noun becomes a predicate with です or だ","example":"私は学生(がくせい)___。"}]} -->
+<!-- grammar-card: {"id":"rule-noun-copula","kind":"concept","format":"qa","priority":"essential","sourceSection":"Nouns as Predicates","rule":"A noun becomes a plain predicate with だ (polite: です)","example":"Which plain copula turns a noun into a predicate ('X is a student')?","answer":"だ.","explanation":"The noun itself never changes; the copula after it carries the predicate, and です is its polite counterpart."} -->
 
 ## Politeness with Nouns
 
@@ -96,7 +98,7 @@ These are tendencies, not a way to prefix any noun mechanically: established exc
 
 <!-- vocab-card: {"id":"vocab-mizu","priority":"optional","sourceSection":"Polite Prefixes: 御〜","word":"お水","reading":"おみず","meaning":"water (polite or beautified expression)"} -->
 <!-- vocab-card: {"id":"vocab-gohan","priority":"optional","sourceSection":"Polite Prefixes: 御〜","word":"ご飯","reading":"ごはん","meaning":"meal; cooked rice"} -->
-<!-- grammar-card: {"id":"polite-prefix-tendency","kind":"concept","format":"qa","priority":"optional","sourceSection":"Polite Prefixes: 御〜","rule":"お and ご follow established lexical preferences with broad origin tendencies","example":"Can you choose お versus ご solely from a word's native or Chinese origin?","answer":"No. お often pairs with native words and ご with Sino-Japanese words, but established combinations and exceptions must be learned.","explanation":"お寿司 is a useful counterexample to treating the tendency as an exception-free algorithm."} -->
+<!-- grammar-card: {"id":"polite-prefix-tendency","kind":"concept","format":"qa","priority":"optional","sourceSection":"Polite Prefixes: 御〜","rule":"お and ご follow established lexical preferences with broad origin tendencies","example":"What tendency guides choosing お versus ご, and why can't you rely on it alone?","answer":"お often pairs with native words and ご with Sino-Japanese words, but established combinations and exceptions must be learned word by word.","explanation":"お寿司 is a useful counterexample to treating the tendency as an exception-free algorithm.","legacyAliases":[{"rule":"お and ご follow established lexical preferences with broad origin tendencies","example":"Can you choose お versus ご solely from a word's native or Chinese origin?"}]} -->
 
 ### Polite Suffixes (Name Enders)
 
@@ -124,13 +126,13 @@ Use な to connect:
 - **静かな**部屋 — a quiet room
 
 ### With Particle の
-<!-- grammar-card: {"id":"noun-no-link","kind":"rule","format":"cloze","priority":"essential","sourceSection":"With Particle の","rule":"の joins one noun to another","hint":"noun + noun","example":"彼(かれ)は日本語(にほんご)___先生(せんせい)です。","answer":"の","explanation":"日本語の先生 identifies a teacher of Japanese, linking the nouns with の."} -->
-<!-- grammar-card: {"id":"no-material","kind":"concept","format":"qa","priority":"optional","sourceSection":"With Particle の","rule":"の can express a material relation as well as possession","example":"In 木のテーブル, does の mean a tree personally owns the table?","answer":"No. It marks the material relation: a wooden table.","explanation":"Noun-to-noun の has several relations, including possession, origin, subject area, and material."} -->
+<!-- grammar-card: {"id":"noun-no-link","kind":"rule","format":"cloze","priority":"essential","sourceSection":"With Particle の","rule":"の joins one noun to another","hint":"noun + noun","example":"He is a Japanese-language teacher: 彼(かれ)は日本語(にほんご)___先生(せんせい)です。","answer":"の","explanation":"日本語の先生 identifies a teacher of Japanese, linking the nouns with の.","legacyAliases":[{"rule":"の joins one noun to another","example":"彼(かれ)は日本語(にほんご)___先生(せんせい)です。"}]} -->
+<!-- grammar-card: {"id":"no-material","kind":"rule","format":"qa","priority":"optional","sourceSection":"With Particle の","rule":"の can express a material relation as well as possession","example":"In 木のテーブル, what relation does の express?","answer":"Material: a wooden table, not a table owned by a tree.","explanation":"Noun-to-noun の has several relations, including possession, origin, subject area, and material.","legacyAliases":[{"rule":"の can express a material relation as well as possession","example":"In 木のテーブル, does の mean a tree personally owns the table?"}]} -->
 - **日本の**文化 — Japanese culture
 - **木の**テーブル — a wooden table
 
 ### With Clauses
-<!-- grammar-card: {"id":"clause-modifier","kind":"concept","format":"qa","priority":"essential","sourceSection":"With Clauses","rule":"A whole clause precedes the noun it modifies","example":"What does 昨日買った modify in 昨日買った本?","answer":"本; it identifies the book as the one bought yesterday.","explanation":"No English-style relative pronoun is required between the modifier and noun."} -->
+<!-- grammar-card: {"id":"clause-modifier","kind":"rule","format":"qa","priority":"essential","sourceSection":"With Clauses","rule":"A whole clause precedes the noun it modifies","example":"What does 昨日買った modify in 昨日買った本?","answer":"本; it identifies the book as the one bought yesterday.","explanation":"No English-style relative pronoun is required between the modifier and noun."} -->
 Entire clauses can modify nouns (always placed before):
 - **昨日買った**本 — the book **I bought yesterday**
 

@@ -20,6 +20,7 @@ The primary function of い-adjectives is to describe nouns. For example, a **bi
 
 <!-- vocab-card: {"id":"vocab-ookii","priority":"optional","sourceSection":"The Basics","word":"大きい","reading":"おおきい","meaning":"big"} -->
 <!-- vocab-card: {"id":"vocab-utsukushii","priority":"optional","sourceSection":"The Basics","word":"美しい","reading":"うつくしい","meaning":"beautiful"} -->
+<!-- grammar-card: {"id":"rule-ending-carries-tense","kind":"concept","format":"qa","priority":"essential","sourceSection":"The Basics","rule":"い-adjectives show tense and positive/negative by changing their own ending, not with an added だ/です","example":"Unlike な-adjectives, how do い-adjectives mark tense (present/past) and positive/negative?","answer":"By changing their own ending; they don't rely on a separate だ/です for that information.","explanation":"E.g. 安い → past 安かった, negative 安くない. Any answer saying \"the adjective's ending changes\" counts."} -->
 
 ### い-Adjective Stem Form
 
@@ -120,7 +121,7 @@ To show the past tense, い-adjectives end in 〜かった. For example, 寒**�
   - Yesterday was cold.
 
 <!-- vocab-card: {"id":"vocab-samui","priority":"optional","sourceSection":"Past Tense 〜かった","word":"寒い","reading":"さむい","meaning":"cold (weather; feeling cold)"} -->
-<!-- grammar-card: {"id":"past-formation","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Past Tense 〜かった","rule":"い-adjectives form their past with かった","hint":"難しい, plain past","example":"昨日(きのう)のテストは難(むずか)___。","answer":"しかった","explanation":"難しい (むずかしい) replaces its final い with かった: 難しかった. No past copula is needed."} -->
+<!-- grammar-card: {"id":"past-formation","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Past Tense 〜かった","rule":"い-adjectives form their past with かった","hint":"難しい, plain past","example":"昨日(きのう)のテストは難(むずか)___。","answer":"しかった","explanation":"難しい (むずかしい) replaces its final い with かった: 難しかった. No past copula is needed. Polite しかったです also counts; 難しいでした is wrong."} -->
 
 ## The Position of い-Adjectives in a Sentence
 
@@ -144,7 +145,7 @@ It’s very common in Japanese for the subject to be left out of the sentence if
 
 <!-- vocab-card: {"id":"vocab-oishii","priority":"optional","sourceSection":"At the End of a Sentence","word":"おいしい","reading":"おいしい","meaning":"delicious"} -->
 <!-- vocab-card: {"id":"vocab-omoshiroi","priority":"optional","sourceSection":"At the End of a Sentence","word":"面白い","reading":"おもしろい","meaning":"interesting; funny"} -->
-<!-- grammar-card: {"id":"independent-predicate","kind":"rule","format":"cloze","priority":"essential","sourceSection":"At the End of a Sentence","rule":"An い-adjective can end a sentence by itself","hint":"interesting","example":"この本(ほん)は___。","answer":"面白(おもしろ)い","explanation":"面白い is a complete predicate, with no だ after it. The subject can also be omitted when context makes it clear."} -->
+<!-- grammar-card: {"id":"independent-predicate","kind":"rule","format":"cloze","priority":"essential","sourceSection":"At the End of a Sentence","rule":"An い-adjective can end a sentence by itself","hint":"interesting","example":"Say \"This book is interesting\" in plain style: この本(ほん)は___。","answer":"面白(おもしろ)い","explanation":"面白い is a complete predicate, with no だ after it (面白いだ is wrong). The subject can also be omitted when context makes it clear. Kana おもしろい counts.","legacyAliases":[{"rule":"An い-adjective can end a sentence by itself","example":"この本(ほん)は___。"}]} -->
 
 Perhaps you’ve just taken the first bite of your mother’s cooking, and you say this to let her know how much you like it. There’s no need to say what is delicious, because it is clear from the situation. While English requires a dummy subject like "this" or "it" in similar situations, Japanese does not require a subject for a sentence to be grammatical.
 
@@ -171,7 +172,8 @@ These words joined together can be used anywhere that a noun can be used, such a
   - My father drives an old car.
 
 <!-- vocab-card: {"id":"vocab-furui","priority":"optional","sourceSection":"Before a Noun","word":"古い","reading":"ふるい","meaning":"old (things)"} -->
-<!-- grammar-card: {"id":"direct-noun-modifier","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Before a Noun","rule":"An い-adjective sits directly before the noun it modifies","hint":"old","example":"___映画(えいが)を見(み)ました。","answer":"古(ふる)い","explanation":"古い映画 needs no linking な or の. The whole noun phrase can serve as a subject or object."} -->
+<!-- grammar-card: {"id":"rule-direct-before-noun","kind":"concept","format":"qa","priority":"optional","sourceSection":"Before a Noun","rule":"An い-adjective modifies a noun directly, with no linking particle","example":"What has to go between an い-adjective and the noun it modifies, unlike with a な-adjective?","answer":"Nothing: the い-adjective sits directly before the noun (no な or の).","explanation":"古い車, not 古いな車. \"Nothing / no particle\" counts."} -->
+<!-- grammar-card: {"id":"direct-noun-modifier","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Before a Noun","rule":"An い-adjective sits directly before the noun it modifies","hint":"old","example":"I watched an old movie: ___映画(えいが)を見(み)ました。","answer":"古(ふる)い","explanation":"古い映画 needs no linking な or の. The whole noun phrase can serve as a subject or object. Kana ふるい counts.","legacyAliases":[{"rule":"An い-adjective sits directly before the noun it modifies","example":"___映画(えいが)を見(み)ました。"}]} -->
 
 ## Beyond the Basics
 
@@ -192,7 +194,7 @@ Whether they are shortened versions of existing い-adjectives or brand new ones
 <!-- vocab-card: {"id":"vocab-muzukashii","priority":"optional","sourceSection":"Fun (and Useful) Facts about い-Adjectives","word":"難しい","reading":"むずかしい","meaning":"difficult"} -->
 <!-- vocab-card: {"id":"vocab-hazui","priority":"optional","sourceSection":"Fun (and Useful) Facts about い-Adjectives","word":"ハズい","reading":"はずい","meaning":"embarrassing; embarrassed (slang)"} -->
 <!-- vocab-card: {"id":"vocab-hazukashii","priority":"optional","sourceSection":"Fun (and Useful) Facts about い-Adjectives","word":"恥ずかしい","reading":"はずかしい","meaning":"embarrassing; embarrassed"} -->
-<!-- grammar-card: {"id":"new-adjective-register","kind":"concept","format":"qa","priority":"optional","sourceSection":"Fun (and Useful) Facts about い-Adjectives","rule":"New and shortened い-adjectives are generally colloquial","example":"Are newer adjectives such as エモい and ムズい neutral choices for formal writing?","answer":"No. They are colloquial or slang; い-adjectives are mostly native words and new members are relatively rare.","explanation":"Their productive-looking ending does not make their register formal."} -->
+<!-- grammar-card: {"id":"new-adjective-register","kind":"concept","format":"qa","priority":"optional","sourceSection":"Fun (and Useful) Facts about い-Adjectives","rule":"New and shortened い-adjectives are generally colloquial","example":"What register do newer or shortened い-adjectives such as エモい and ムズい usually have?","answer":"Colloquial or slang, not formal; new い-adjectives are relatively rare and mostly come from shortenings or loanwords.","explanation":"Their productive-looking ending does not make their register formal. \"Casual/informal\" counts.","legacyAliases":[{"rule":"New and shortened い-adjectives are generally colloquial","example":"Are newer adjectives such as エモい and ムズい neutral choices for formal writing?"}]} -->
 
 ### The Difference Between い-adjectives Ending in 〜い and 〜しい
 
@@ -202,7 +204,7 @@ Whether they are shortened versions of existing い-adjectives or brand new ones
 
 Some 〜しい adjectives, like 美しい (beautiful), do describe more external characteristics, but their original meaning is generally a personal emotion. In the case of 美しい, it originally described the tender emotion we feel towards someone or something cute, and the word later developed into its modern meaning of "beautiful."
 
-<!-- grammar-card: {"id":"shii-tendency","kind":"concept","format":"qa","priority":"optional","sourceSection":"The Difference Between い-adjectives Ending in 〜い and 〜しい","rule":"The physical versus emotive grouping is a tendency, not a conjugation split","example":"Does the ending しい prove an adjective describes only an internal emotion?","answer":"No. It is a tendency; 美しい can describe external beauty, and both groups follow い-adjective conjugation.","explanation":"Do not turn this semantic observation into an absolute classification rule."} -->
+<!-- grammar-card: {"id":"shii-tendency","kind":"concept","format":"qa","priority":"optional","sourceSection":"The Difference Between い-adjectives Ending in 〜い and 〜しい","rule":"The physical versus emotive grouping is a tendency, not a conjugation split","example":"How reliable is a しい ending as a sign that an adjective describes an inner emotion?","answer":"It is only a tendency: 美しい can describe external beauty, and both groups follow the same い-adjective conjugation.","explanation":"Do not turn this semantic observation into an absolute classification rule. Any answer saying \"a tendency, not a rule\" counts.","legacyAliases":[{"rule":"The physical versus emotive grouping is a tendency, not a conjugation split","example":"Does the ending しい prove an adjective describes only an internal emotion?"}]} -->
 
 <!-- vocab-card: {"id":"vocab-takai","priority":"optional","sourceSection":"The Difference Between い-adjectives Ending in 〜い and 〜しい","word":"高い","reading":"たかい","meaning":"high; expensive"} -->
 <!-- vocab-card: {"id":"vocab-aoi","priority":"optional","sourceSection":"The Difference Between い-adjectives Ending in 〜い and 〜しい","word":"青い","reading":"あおい","meaning":"blue"} -->

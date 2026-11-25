@@ -27,7 +27,8 @@ You can also put より first:
 <!-- quiz:{"type":"multiple-choice","question":"How do you say 'Japanese is more difficult than English'?","options":["日本語は英語から難しいです","日本語は英語と難しいです","日本語は英語より難しいです","日本語は英語で難しいです"],"answer":2} -->
 
 <!-- grammar-card: {"id":"comparison-standard","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Comparing Two Things with より","rule":"より marks the standard something is compared against","hint":"than","example":"東京(とうきょう)は大阪(おおさか)___大(おお)きいです。","answer":"より","explanation":"大阪 is the comparison standard; the sentence attributes greater size to 東京."} -->
-<!-- grammar-card: {"id":"reversed-comparison","kind":"concept","format":"qa","priority":"optional","sourceSection":"Reversed word order","rule":"Particle marking, not mention order, determines the sides of a comparison","example":"In 大阪より東京の方が大きいです, which city is described as bigger?","answer":"Tokyo.","explanation":"大阪より is the standard and 東京の方が is the larger side, even though Osaka is mentioned first."} -->
+<!-- grammar-card: {"id":"rule-yori-standard","kind":"concept","format":"qa","priority":"essential","sourceSection":"Comparing Two Things with より","rule":"より marks the standard of comparison, like English “than”","example":"In a Japanese comparison, which particle marks the thing being compared against (English “than”)?","answer":"より, placed after the standard: A は B より + adjective.","explanation":"Naming より counts. The side that has more of the quality takes は or の方が."} -->
+<!-- grammar-card: {"id":"reversed-comparison","kind":"rule","format":"qa","priority":"optional","sourceSection":"Reversed word order","rule":"Particle marking, not mention order, determines the sides of a comparison","example":"In 大阪より東京の方が大きいです, which city is described as bigger?","answer":"Tokyo.","explanation":"大阪より is the standard and 東京の方が is the larger side, even though Osaka is mentioned first."} -->
 
 ## の方(ほう)が — "More So"
 
@@ -58,7 +59,7 @@ Answering:
 
 <!-- quiz:{"type":"multiple-choice","question":"'犬の方が猫より好きです' means:","options":["Cats are more liked than dogs","I like cats more than dogs","I like dogs more than cats","Dogs and cats are equally liked"],"answer":2} -->
 
-<!-- grammar-card: {"id":"preferred-side","kind":"rule","format":"cloze","priority":"essential","sourceSection":"の方(ほう)が — \"More So\"","rule":"の方が highlights the preferred side of a comparison","hint":"犬 ___ 猫より","example":"犬(いぬ)___猫(ねこ)より好(す)きです。","answer":"の方が","explanation":"の方が follows the noun 犬 and marks dogs as preferred over cats."} -->
+<!-- grammar-card: {"id":"preferred-side","kind":"rule","format":"cloze","priority":"essential","sourceSection":"の方(ほう)が — \"More So\"","rule":"の方が highlights the preferred side of a comparison","hint":"犬 ___ 猫より","example":"I like dogs more than cats (highlight the preferred side): 犬(いぬ)___猫(ねこ)より好(す)きです。","answer":"の方が","explanation":"の方が follows the noun 犬 and marks dogs as preferred over cats. 犬は猫より好きです is also grammatical, but the cue asks for the highlighting pattern.","legacyAliases":[{"rule":"の方が highlights the preferred side of a comparison","example":"犬(いぬ)___猫(ねこ)より好(す)きです。"}]} -->
 <!-- grammar-card: {"id":"verb-before-hou","kind":"rule","format":"cloze","priority":"optional","sourceSection":"の方(ほう)が — \"More So\"","rule":"A plain verb directly precedes 方 without の","example":"Walking is healthier: 歩く___がバスに乗るより健康にいいです。","answer":"方","explanation":"Nouns use の方, but plain verbs modify 方 directly: 歩く方 (あるくほう)."} -->
 <!-- grammar-card: {"id":"two-way-question","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Asking for a comparison","rule":"どちら asks which of two alternatives is preferred","example":"Coffee or tea, which do you prefer? コーヒーと紅茶と、___の方が好きですか。","answer":"どちら","explanation":"The answer can name one side with の方が, or say どちらも好きです for both."} -->
 <!-- vocab-card: {"id":"vocab-dochira-mo","word":"どちらも","reading":"どちらも","meaning":"both (of two alternatives)","priority":"optional","sourceSection":"Asking for a comparison"} -->
@@ -75,7 +76,8 @@ Answering:
 - **この映画はあの映画ほどおもしろくなかったです。** — This movie wasn't as interesting as that one.
 - **日本語は中国語ほど難しくないと思(おも)います。** — I think Japanese isn't as difficult as Chinese.
 
-<!-- grammar-card: {"id":"not-as-comparison","kind":"rule","format":"cloze","priority":"essential","sourceSection":"ほど〜ない — \"Not as... as\"","rule":"ほど with a negative means 'not as … as'","hint":"as … as","example":"大阪は東京___大きくないです。","answer":"ほど","explanation":"The comparison is negative: Osaka does not reach Tokyo's degree of size, not that Osaka is absolutely small."} -->
+<!-- grammar-card: {"id":"not-as-comparison","kind":"rule","format":"cloze","priority":"essential","sourceSection":"ほど〜ない — \"Not as... as\"","rule":"ほど with a negative means 'not as … as'","hint":"as … as","example":"Osaka is not as big as Tokyo: 大阪は東京___大きくないです。","answer":"ほど","explanation":"The comparison is negative: Osaka does not reach Tokyo's degree of size, not that Osaka is absolutely small.","legacyAliases":[{"rule":"ほど with a negative means 'not as … as'","example":"大阪は東京___大きくないです。"}]} -->
+<!-- grammar-card: {"id":"rule-not-as","kind":"concept","format":"qa","priority":"optional","sourceSection":"ほど〜ない — \"Not as... as\"","rule":"ほど with a negative predicate expresses “not as … as”","example":"Which particle, used with a negative predicate, expresses “not as … as”?","answer":"ほど (A は B ほど + negative).","explanation":"Naming ほど counts. It needs a negative predicate such as 大きくない."} -->
 
 ## 一番(いちばん) — Superlative ("The Most")
 
@@ -128,7 +130,7 @@ Answering:
 - **彼(かれ)は私よりずっと上手です。** — He is much better than me.
 
 <!-- vocab-card: {"id":"vocab-zutto","word":"ずっと","reading":"ずっと","meaning":"much; by far (in a comparison)","priority":"optional","sourceSection":"ずっと — \"by far / much more\""} -->
-<!-- grammar-card: {"id":"zutto-degree","kind":"concept","format":"qa","priority":"essential","sourceSection":"ずっと — \"by far / much more\"","rule":"ずっと intensifies the degree of a comparison","example":"What does ずっと add in 東京は私の町よりずっと大きいです?","answer":"Tokyo is much or far bigger than my town, not just a little bigger.","explanation":"This is the comparative use of ずっと, not its separate duration meaning."} -->
+<!-- grammar-card: {"id":"zutto-degree","kind":"rule","format":"qa","priority":"essential","sourceSection":"ずっと — \"by far / much more\"","rule":"ずっと intensifies the degree of a comparison","example":"What does ずっと add in 東京は私の町よりずっと大きいです?","answer":"Tokyo is much or far bigger than my town, not just a little bigger.","explanation":"This is the comparative use of ずっと, not its separate duration meaning."} -->
 
 ## 同(おな)じくらい — "About the Same"
 

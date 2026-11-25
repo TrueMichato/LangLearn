@@ -26,7 +26,7 @@ Now that you know how to classify verbs (from the previous lesson), it is time t
 <!-- vocab-card: {"id":"vocab-okiru","word":"起きる","reading":"おきる","meaning":"to wake up","priority":"optional","sourceSection":"る-Verbs: Drop る, Add ない"} -->
 <!-- vocab-card: {"id":"vocab-neru","word":"寝る","reading":"ねる","meaning":"to sleep","priority":"optional","sourceSection":"る-Verbs: Drop る, Add ない"} -->
 <!-- vocab-card: {"id":"vocab-deru","word":"出る","reading":"でる","meaning":"to go out","priority":"optional","sourceSection":"る-Verbs: Drop る, Add ない"} -->
-<!-- grammar-card: {"id":"ichidan-negative","kind":"rule","format":"cloze","priority":"essential","sourceSection":"る-Verbs: Drop る, Add ない","rule":"る-verbs drop る and add ない","hint":"食べる, plain negative","example":"朝ご飯を食べ___。","answer":"ない","explanation":"食べる loses its る and takes ない, giving 食べない."} -->
+<!-- grammar-card: {"id":"ichidan-negative","kind":"rule","format":"cloze","priority":"essential","sourceSection":"る-Verbs: Drop る, Add ない","rule":"る-verbs drop る and add ない","example":"朝ご飯を食べ___。 (I don't eat breakfast; plain negative.)","answer":"ない","explanation":"食べる loses its る and takes ない, giving 食べない.","legacyAliases":[{"rule":"る-verbs drop る and add ない","example":"朝ご飯を食べ___。"}]} -->
 
 ## う-Verbs: Change to あ-Row + ない
 
@@ -63,6 +63,7 @@ For う-verbs, take the last kana and shift it to the corresponding **あ-row** 
 <!-- grammar-card: {"id":"godan-bu-negative","kind":"rule","format":"cloze","priority":"optional","sourceSection":"う-Verbs: Change to あ-Row + ない","rule":"Final ぶ becomes ば before ない","example":"遊ぶ → plain negative: 遊___.","answer":"ばない","explanation":"Preserve the voiced consonant while shifting to あ: 遊ばない."} -->
 <!-- grammar-card: {"id":"godan-ru-negative","kind":"rule","format":"cloze","priority":"optional","sourceSection":"う-Verbs: Change to あ-Row + ない","rule":"Godan る becomes ら before ない","example":"帰る → plain negative: 帰___.","answer":"らない","explanation":"帰る is godan, not ichidan, so it becomes 帰らない rather than dropping る."} -->
 <!-- grammar-card: {"id":"godan-gu-negative","kind":"rule","format":"cloze","priority":"optional","sourceSection":"う-Verbs: Change to あ-Row + ない","rule":"Final ぐ becomes が before ない","example":"泳ぐ → plain negative: 泳___.","answer":"がない","explanation":"Keep the voiced g sound while moving to the あ-row."} -->
+<!-- grammar-card: {"id":"rule-ichidan-vs-godan-negative","kind":"concept","format":"qa","priority":"essential","sourceSection":"う-Verbs: Change to あ-Row + ない","rule":"る-verbs drop る before ない; godan verbs shift the final kana to the あ-row first","example":"How does forming the plain negative of a godan verb differ from a る-verb?","answer":"A る-verb drops る and adds ない; a godan verb changes its final kana to the あ-row before adding ない.","explanation":"Any equivalent description of drop る versus あ-row shift counts."} -->
 
 <!-- quiz:{"type":"multiple-choice","question":"What is the negative form of 飲む (nomu — to drink)?","options":["飲むない","飲みない","飲まない","飲もない"],"answer":2} -->
 
@@ -88,7 +89,8 @@ Verbs ending in **う** are a special case. Instead of changing う to あ (whic
 <!-- vocab-card: {"id":"vocab-au","word":"会う","reading":"あう","meaning":"to meet","priority":"optional","sourceSection":"Special Case: う Ending → わない"} -->
 <!-- vocab-card: {"id":"vocab-tsukau","word":"使う","reading":"つかう","meaning":"to use","priority":"optional","sourceSection":"Special Case: う Ending → わない"} -->
 <!-- vocab-card: {"id":"vocab-iu","word":"言う","reading":"いう","meaning":"to say","priority":"optional","sourceSection":"Special Case: う Ending → わない"} -->
-<!-- grammar-card: {"id":"u-ending-negative","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Special Case: う Ending → わない","rule":"Verbs ending in う take わない, never あない","hint":"買う, plain negative","example":"新しい服を買___。","answer":"わない","explanation":"買う is the exception in the う-row: its negative is 買わない."} -->
+<!-- grammar-card: {"id":"u-ending-negative","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Special Case: う Ending → わない","rule":"Verbs ending in う take わない, never あない","example":"新しい服を買___。 (買う, plain negative: I won't buy new clothes.)","answer":"わない","explanation":"買う is the exception in the う-row: its negative is 買わない.","legacyAliases":[{"rule":"Verbs ending in う take わない, never あない","example":"新しい服を買___。"}]} -->
+<!-- grammar-card: {"id":"rule-u-wa","kind":"concept","format":"qa","priority":"essential","sourceSection":"Special Case: う Ending → わない","rule":"A final う becomes わ, not あ, before the negative ending","example":"A godan verb ends in the kana う. Which kana replaces it before the negative ending?","answer":"わ (not あ).","explanation":"わ or wa counts; あ is the common mistake."} -->
 
 ## Irregular Verbs
 
@@ -106,7 +108,7 @@ Note that 来ない is read as **こない**, not くない. The kanji stays the
 
 <!-- vocab-card: {"id":"vocab-suru","word":"する","reading":"する","meaning":"to do","priority":"optional","sourceSection":"Irregular Verbs"} -->
 <!-- vocab-card: {"id":"vocab-kuru","word":"来る","reading":"くる","meaning":"to come","priority":"optional","sourceSection":"Irregular Verbs"} -->
-<!-- grammar-card: {"id":"suru-negative","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Irregular Verbs","rule":"する is irregular and becomes しない","hint":"勉強する, plain negative","example":"今日は勉強___。","answer":"しない","explanation":"勉強する is built on the irregular する, whose negative form is しない."} -->
+<!-- grammar-card: {"id":"suru-negative","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Irregular Verbs","rule":"する is irregular and becomes しない","example":"今日は勉強___。 (勉強する, plain negative: I won't study today.)","answer":"しない","explanation":"勉強する is built on the irregular する, whose negative form is しない.","legacyAliases":[{"rule":"する is irregular and becomes しない","example":"今日は勉強___。"}]} -->
 <!-- grammar-card: {"id":"kuru-negative-reading","kind":"rule","format":"qa","priority":"essential","sourceSection":"Irregular Verbs","rule":"来る changes to the こ reading in its negative","example":"Give the plain negative of 来る, including its kana reading.","answer":"来ない (こない).","explanation":"The kanji stays 来, but its reading changes from く to こ before ない."} -->
 
 ## Special: ある → ない
@@ -121,6 +123,7 @@ This is the only verb where the negative form has no visible connection to the o
 <!-- vocab-card: {"id":"vocab-aru","word":"ある","reading":"ある","meaning":"to exist (inanimate things); to have","priority":"essential","sourceSection":"Special: ある → ない"} -->
 <!-- vocab-card: {"id":"vocab-jikan","word":"時間","reading":"じかん","meaning":"time","priority":"optional","sourceSection":"Special: ある → ない"} -->
 <!-- grammar-card: {"id":"aru-negative","kind":"rule","format":"cloze","priority":"essential","sourceSection":"Special: ある → ない","rule":"ある has the exceptional plain negative ない","example":"時間が___。 (There is no time; negate ある.)","answer":"ない","explanation":"ある is replaced entirely by ない, not conjugated as あらない."} -->
+<!-- grammar-card: {"id":"rule-aru-negative","kind":"concept","format":"qa","priority":"optional","sourceSection":"Special: ある → ない","rule":"The plain negative of ある is simply ない","example":"Why is the plain negative of ある unusual?","answer":"It is just ない, not the expected regular form あらない.","explanation":"Any answer naming ない and rejecting あらない counts."} -->
 
 ## Complete Conjugation Chart
 
