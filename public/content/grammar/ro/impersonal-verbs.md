@@ -55,6 +55,7 @@ Romanian also uses **e** or **este** with weather nouns and adjectives.
 <!-- vocab-card: {"id":"vocab-e-ceata","priority":"optional","sourceSection":"Weather with e / este","word":"E ceață.","meaning":"It is foggy."} -->
 <!-- vocab-card: {"id":"vocab-e-vant","priority":"optional","sourceSection":"Weather with e / este","word":"E vânt.","meaning":"It is windy."} -->
 <!-- vocab-card: {"id":"vocab-bate-vantul","priority":"optional","sourceSection":"Weather with e / este","word":"Bate vântul.","meaning":"The wind is blowing."} -->
+<!-- grammar-card: {"id":"rule-weather-e-este","priority":"optional","sourceSection":"Weather with e / este","kind":"concept","format":"qa","rule":"Weather nouns and adjectives combine with e or este","example":"To say it is cold, sunny, or foggy, which verb does Romanian use with the weather noun or adjective?","answer":"A fi: e or este.","explanation":"E frig, E soare, E ceață. Both e (everyday) and este (fuller form) are correct; naming a fi counts too."} -->
 
 ## trebuie, se poate, se pare
 
@@ -107,6 +108,7 @@ With **a plăcea**, the thing liked controls the verb: **Îmi place cartea** (si
 <!-- vocab-card: {"id":"vocab-mi-e-dor","priority":"optional","sourceSection":"Dative Experiencers","word":"Mi-e dor de tine.","meaning":"I miss you."} -->
 <!-- vocab-card: {"id":"vocab-le-e-frica","priority":"optional","sourceSection":"Dative Experiencers","word":"Le e frică.","meaning":"They are afraid."} -->
 <!-- grammar-card: {"id":"need-like-agreement","priority":"optional","sourceSection":"Dative Experiencers","kind":"concept","format":"qa","rule":"Place alternates with plac; everyday present trebuie usually remains unchanged","example":"Must plural tickets force the same verb change in Ne trebuie două bilete as plural books do in Îmi plac cărțile?","answer":"No. A plăcea agrees as place/plac, but present trebuie usually remains unchanged in the everyday need construction.","explanation":"No. A plăcea agrees as place/plac, but present trebuie usually remains unchanged in the everyday need construction."} -->
+<!-- grammar-card: {"id":"rule-dative-experiencer","priority":"essential","sourceSection":"Dative Experiencers","kind":"concept","format":"qa","rule":"Many experience expressions put the experiencer in the dative","example":"In expressions for liking, needing, or feeling hungry or cold, which case marks the person who has the experience?","answer":"The dative.","explanation":"Îmi place cafeaua; Mi-e foame: îmi and mi- are dative, where English makes that person the subject. Any answer naming the dative counts."} -->
 
 ## Body and Feeling Expressions
 
@@ -120,6 +122,7 @@ Notice the verb agrees with the body part: **capul doare** (singular), **ochii d
 
 <!-- vocab-card: {"id":"vocab-a-durea","priority":"optional","sourceSection":"Body and Feeling Expressions","word":"a durea","meaning":"to hurt; to ache"} -->
 <!-- grammar-card: {"id":"pain-plural-body","priority":"essential","sourceSection":"Body and Feeling Expressions","kind":"rule","format":"cloze","rule":"A durea agrees with the body part while the sufferer is an accusative clitic","example":"Îl ___ ochii. (His eyes hurt.)","answer":"dor","explanation":"Ochii is plural, so use dor; the experiencer is îl, not dative îi."} -->
+<!-- grammar-card: {"id":"rule-durea-agreement","priority":"optional","sourceSection":"Body and Feeling Expressions","kind":"concept","format":"qa","rule":"A durea agrees with the body part that hurts","example":"With a durea (to hurt), what does the verb agree with?","answer":"The body part that hurts.","explanation":"Mă doare capul (singular capul); Îl dor ochii (plural ochii). Any answer naming the body part or the thing that hurts counts."} -->
 
 ## Sources
 
