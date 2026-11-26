@@ -4,7 +4,7 @@ import { BADGES, type BadgeDefinition } from '../data/badges';
  * Which badges a given learner is actually playing for.
  *
  * Roughly a third of the catalogue is language-locked — Portuguese letter
- * badges, per-language vocabulary tiers, proficiency tests. Counting those
+ * badges, per-language vocabulary tiers, practice checks. Counting those
  * against someone studying Japanese and Russian turns a full set into a
  * permanent 74%, which is exactly the quiet punishment this app refuses.
  *

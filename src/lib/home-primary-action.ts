@@ -88,7 +88,10 @@ export function resolveHomePrimaryAction({
     .find((node) => node.id === path.recommendedNodeId && node.state === 'available');
   if (next) {
     return {
-      kind: 'path', title: `Next: ${next.title}`, description: `${label} · Your next guided learning step`,
+      kind: 'path', title: `Next: ${next.title}`,
+      description: next.requirement === 'preparation'
+        ? `${label} · Recommended script preparation. You can also continue into words from your learning path.`
+        : `${label} · Your next guided learning step`,
       route: next.route, label: 'Start this step',
     };
   }
@@ -97,7 +100,9 @@ export function resolveHomePrimaryAction({
   }
   return {
     kind: 'complete', title: 'Your guided path is complete',
-    description: `${label} · Your progress is saved. Revisit a lesson or choose optional practice whenever you like.`,
+    description: path.scriptPreparation
+      ? `${label} · Your required steps are complete. Revisit lessons, script preparation, or optional practice whenever you like.`
+      : `${label} · Your progress is saved. Revisit a lesson or choose optional practice whenever you like.`,
     route: ROUTES.learn, label: 'Explore learning',
   };
 }

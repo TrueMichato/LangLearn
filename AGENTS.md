@@ -35,7 +35,7 @@ LangLearn is a local-first Progressive Web App for learning languages (Japanese,
 |-------|------|-------|
 | Framework | React 19 + TypeScript 6 | Vite 8 bundler |
 | Styling | Tailwind CSS v4 | Class-based dark mode |
-| Database | Dexie.js v4 (IndexedDB) | Schema v8, 10 tables |
+| Database | Dexie.js v4 (IndexedDB) | Schema v13, 14 backed-up data tables + snapshots |
 | State | Zustand | localStorage persistence |
 | Routing | react-router-dom HashRouter | Required for GitHub Pages |
 | PWA | vite-plugin-pwa | registerType: 'prompt' |
@@ -75,15 +75,15 @@ src/
 │   ├── Dashboard.tsx    # Home — stats, vocab size widget, streak, badges, heat map
 │   ├── Review.tsx       # Review home, scheduled reviews, schedule-free practice, manual/tag study sets
 │   ├── Words.tsx        # Vocabulary browser/editor — search, filter, CSV import; Review sets shortcut
-│   ├── Reader.tsx       # Immersion reader — furigana, word status highlighting, word mining
+│   ├── Reader.tsx       # Reader — purpose, paragraph continuation, optional highlighting, word mining
 │   ├── Learn.tsx        # Hub → Grammar, Letters, Vocab, Dialects, Sentences, Conjugations, Listening, Music, Translation, Minimal Pairs, Numbers, Tests
-│   ├── Grammar.tsx      # Grammar lesson browser + LessonView (auto-creates SRS grammar cards)
+│   ├── Grammar.tsx      # Grammar lesson browser + LessonView (explicit opt-in review material)
 │   ├── VocabLessons.tsx # Vocabulary lesson browser
 │   ├── LetterPractice.tsx # Letter chart/draw/quiz per alphabet
-│   ├── Tests.tsx        # Proficiency tests (vocab/grammar/mixed/full)
+│   ├── Tests.tsx        # Sample-based practice checks (vocab/grammar/mixed/full), not proficiency levels
 │   ├── Conjugations.tsx # Verb conjugation & noun declension drills
 │   ├── SentenceBuilder.tsx # Tile/typing sentence practice
-│   ├── Listening.tsx    # TTS passages + comprehension + dictation mode
+│   ├── Listening.tsx    # Supported listening: replay/stop/transcript + comprehension; dictation mode
 │   ├── Lyrics.tsx       # Song lyrics learning (anime openings, popular songs)
 │   ├── TranslationPractice.tsx # English→target language translation with self-assessment
 │   ├── DailyChallenge.tsx # Daily mixed challenge (1.5x XP)
@@ -105,7 +105,7 @@ public/content/          # Runtime-fetched lesson content
 └── dict/                # Kuromoji dictionary files
 ```
 
-## Database Schema (v8) — Indexed Fields
+## Database Schema (v13) — Indexed Fields
 
 ```
 words:             ++id, [language+createdAt], [word+language], language, word, createdAt, *tags, type
@@ -118,13 +118,26 @@ lessonProgress:    id, language, lessonId
 characterProgress: id, language, mastery
 testHistory:       ++id, language, type, score, date
 badges:            id, unlockedAt
+reviewLog:         ++id, reviewId, wordId, isLapse, [language+date], date
+guidedActivityProgress: id, language, milestoneId, activity, completedAt
+skillProgress:     id, language, [language+activity]
+readingProgress:   id, language, updatedAt
+snapshots:         ++id, createdAt
 ```
 
 Key interfaces: `Word` (id, language, word, reading, meaning, contextSentence, tags, type:'word'|'letter'|'grammar'), `Review` (wordId, ease, interval, repetitions, nextReviewDate), `LessonProgress` (id='{lang}/{lessonId}', completed, quizScore, attempts), `CharacterProgress` (id='{lang}/{alphabet}/{char}', mastery:'new'|'learning'|'mastered'), `TestHistory` (language, type, score, level), `DailyActivity` (date, studySeconds, cardsReviewed, goalMet, challengeComplete).
 
+`ReadingProgress` (`src/db/reading-progress.ts`) preserves source identity,
+exact retained content, a semantic paragraph offset, purpose, highlighting and
+optional reflection. Saved-text identities include creation time; curated
+identities include language and content ID. Full exports carry all 14 data
+tables; `snapshots` is deliberately not backed up recursively. Compact recovery
+capsules include reading progress but still omit `reviewLog`. Older payloads
+without reading progress remain supported.
+
 ## SRS System
 
-SM-2 algorithm in `src/lib/sm2.ts`. Grade 0-2 resets card; grade 3-5 advances interval. 6 card types: classic (rep 0+), reverse/cloze (rep 2+), listening/MC (rep 4+), grammar (always for type='grammar'). MC and cloze auto-grade; others show manual grade buttons. Failed cards re-queue to end. Grammar cards auto-created from `<!-- grammar-card: {...} -->` blocks in lessons on completion.
+SM-2 algorithm in `src/lib/sm2.ts` (or the selected FSRS scheduler). Grade 0-2 resets an SM-2 card; grade 3-5 advances interval. 6 card types: classic (rep 0+), reverse/cloze (rep 2+), listening/MC (rep 4+), grammar (always for type='grammar'). MC and cloze auto-grade; others show manual grade buttons. Failed cards re-queue to end. Grammar lesson completion unlocks an explicit review-material picker; it never automatically saves cards.
 
 Reviewed grammar lessons are listed per language in `src/lib/grammar-reviewed/{lang}.ts`. For saved cards, `isRuleRecallCard` checks both the saved concept kind and the authored language/lesson/item identity against the current reviewed concepts (`virtual:grammar-rule-ids`, generated by Vite). Tags or an ID prefix are not proof. A pass doubles only the next due date (`RULE_CARD_INTERVAL_MULTIPLIER`, `src/db/reviews.ts`); stored interval/stability stay unscaled so spacing doesn't compound. See `docs/knowledge-practice.md`.
 
@@ -136,6 +149,32 @@ Legacy set links stay due-only, and mistake/topic links retain curated schedulin
 semantics unless `session=practice` is explicit. Sets persist in
 `langlearn-study-sets` v2 with manual word IDs or AND tag rules; missing IDs are
 not replaced. Smart Due Today is always due-only.
+
+## Supported learning boundaries
+
+- **Practice checks:** `/tests` reports only its sampled questions. New history
+  uses the `practice-check-v1` marker in the existing `level` string; preserve
+  old labels as visibly qualified legacy estimates. History keeps aggregates,
+  not question-level diagnoses. Source links require actual question metadata.
+- **Listening:** comprehension uses `playListeningPassage` with observable
+  native-browser playback completion/failure. Do not silently use the legacy
+  remote short-text fallback. Transcript support is available before answers,
+  labeled within the attempt, and has no XP penalty. Dictation and other
+  legacy TTS callers retain their own contracts.
+- **Script preparation:** `guided-script-deferred-v1/<language>` in `db.settings`
+  stores the string `'true'` separately from completion. Home/path honor the
+  preference; it creates no mastery, quiz passes or XP. Russian
+  `alphabet-sounds` is preparation too. Normal lesson/checkpoint gates remain.
+- **Comparison/retry:** translation remains self-assessed; constrained sentence
+  checks remain deterministic. Same-attempt retries retain the first rating or
+  check and do not duplicate XP or guided evidence. `PracticeSentence.context`
+  and `reviewedFeedback` are optional authored guidance, never generated claims.
+- **Next steps:** `getInputRecommendation` and `getPathRecommendations` reuse
+  accessible, same-language guided input routes without changing their scope.
+  Unit placement is not a lesson-vocabulary match. Without a usable unit route,
+  offer a clearly generic supported-language Listening/Reader destination and
+  tell learners to select Easy there. Do not invent ignored query parameters,
+  switch language, infer timer-based study ratios or change review schedules.
 
 ## XP Constants (src/lib/xp.ts)
 

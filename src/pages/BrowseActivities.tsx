@@ -138,7 +138,7 @@ function getBrowseSections(language?: string): CardSection[] {
     },
     {
       label: 'More ways to learn',
-      description: 'Explore music or check your current level.',
+      description: 'Explore music or revisit what you have practised.',
       cards: [
         {
           to: ROUTES.lyrics,
@@ -149,8 +149,8 @@ function getBrowseSections(language?: string): CardSection[] {
         {
           to: ROUTES.tests,
           emoji: '📊',
-          title: 'Tests',
-          subtitle: 'Track your level',
+          title: 'Practice checks',
+          subtitle: 'Check a sample and revisit missed answers',
         },
       ],
     },
@@ -252,7 +252,7 @@ export default function BrowseActivitiesPage() {
   const { language, setLanguage } = useCurrentLanguage();
   const { path } = useLearningPath(language);
   const sections = getBrowseSections(language);
-  const recommendations = getPathRecommendations(path);
+  const recommendations = getPathRecommendations(path, language);
   const allCards = sections.flatMap((section) => section.cards);
   const recentCard = readRecentLearnActivities()
     .map((recent) =>
@@ -306,11 +306,11 @@ export default function BrowseActivitiesPage() {
             id="recommended-activity-heading"
             className="mb-2 text-sm font-semibold text-slate-800 dark:text-slate-100"
           >
-            Recommended for your path
+            Your next step and other options
           </h3>
-          <div className="space-y-3">
-            {recommended.slice(0, 2).map((card) => (
-              <ActivityCardLink key={card.to} card={card} featured />
+          <div className="overflow-hidden rounded-2xl border border-slate-200/70 bg-white dark:border-white/10 dark:bg-slate-800">
+            {recommended.map((card, index) => (
+              <ActivityCardLink key={card.to} card={card} divided={index > 0} />
             ))}
           </div>
         </section>

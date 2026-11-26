@@ -6,6 +6,7 @@ import { analyzeReaderText } from '../lib/reader-coverage';
 import { loadReaderSegments, segmentReaderText, type ReaderSegment } from '../lib/reader-segments';
 import { findSentenceAt, splitSentences } from '../lib/sentences';
 import { tokenizeJapanese, type Token } from '../lib/tokenizer';
+import ReadingPurpose from '../components/reader/ReadingPurpose';
 
 const arabicStories = import.meta.glob<string>(
   '../../public/content/reading/ar/self-intro-ar.txt',
@@ -47,6 +48,20 @@ function expectSource(source: string, segments: ReaderSegment[], language: strin
 }
 
 describe('Reader source fidelity', () => {
+  it.each(['main-idea', 'close-study'] as const)('keeps source text and lookup intact while offering %s guidance and a saved paragraph', (purpose) => {
+    const source = '🐈 ¡Hola!\n\n  Otro párrafo.';
+    const segments = segmentReaderText(source, 'es');
+    const guidance = renderToStaticMarkup(<ReadingPurpose purpose={purpose} onChange={() => {}} />);
+    expect(guidance).toContain('Word lookup and saving are always available');
+    expect(guidance).toContain('Highlighting is optional');
+    expect(guidance).toContain(purpose === 'main-idea' ? 'Follow the meaning first' : 'Take a short passage slowly');
+    const html = renderToStaticMarkup(<FuriganaText segments={segments} selectedWord={null} language="es"
+      highlightKnown={purpose === 'close-study'} knownWords={new Set(['hola'])} onWordClick={() => {}}
+      resumePosition={{ offset: source.indexOf('Otro'), revision: 1 }} onPositionChange={() => {}} />);
+    expect(surfaceText(html)).toBe(source);
+    expect(html).toContain(`data-reader-paragraph="${source.indexOf('Otro')}"`);
+    expect(html.match(/aria-haspopup="dialog"/gu)).toHaveLength(3);
+  });
   it.each([
     ['es', '  ¡Hola,  mundo!\n\n¿Café\t o té? <sí> & "no".\r\n'],
     ['ar', 'أُحِبُّ  القراءة،\n\nوَأَتَعَلَّمُ\tكُلَّ يومٍ؟\r\n'],

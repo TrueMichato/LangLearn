@@ -1,9 +1,10 @@
-import { useMemo, useRef, useState, type KeyboardEvent } from 'react';
+import { useEffect, useMemo, useRef, useState, type KeyboardEvent } from 'react';
 import { getReaderNavigationIndex, type ReaderSegment } from '../../lib/reader-segments';
 import type { WordStatusMap } from '../../lib/word-status';
 import { getStatusColor, getStatusLabel } from '../../lib/word-status';
 import { applyStress } from '../../lib/russian-stress';
 import { isRTL } from '../../lib/rtl';
+import { readingParagraphPositions } from '../../db/reading-progress';
 
 interface FuriganaTextProps {
   segments: readonly ReaderSegment[];
@@ -16,6 +17,8 @@ interface FuriganaTextProps {
   language?: string;
   showStressMarks?: boolean;
   instructionsId?: string;
+  resumePosition?: { offset: number; revision: number };
+  onPositionChange?: (offset: number) => void;
 }
 
 export default function FuriganaText({
@@ -29,11 +32,48 @@ export default function FuriganaText({
   language,
   showStressMarks = false,
   instructionsId,
+  resumePosition,
+  onPositionChange,
 }: FuriganaTextProps) {
   const wordIndices = useMemo(() => segments.flatMap((segment, index) => segment.token ? [index] : []), [segments]);
   const [activeIndex, setActiveIndex] = useState(() => wordIndices[0] ?? -1);
   const currentIndex = wordIndices.includes(activeIndex) ? activeIndex : wordIndices[0];
   const wordRefs = useRef(new Map<number, HTMLElement>());
+  const paragraphRefs = useRef(new Map<number, HTMLElement>());
+  const paragraphStarts = useMemo(() => {
+    const positions = readingParagraphPositions(segments.map((segment) => segment.surface).join(''));
+    const starts = new Map<number, number>();
+    let paragraph = 0;
+    for (const index of wordIndices) {
+      if (paragraph >= positions.length) break;
+      if (segments[index].start >= positions[paragraph]) {
+        // Empty/punctuation-only lines do not need a separate focus target.
+        while (paragraph + 1 < positions.length && positions[paragraph + 1] <= segments[index].start) paragraph++;
+        starts.set(index, positions[paragraph++]);
+      }
+    }
+    return starts;
+  }, [segments, wordIndices]);
+
+  useEffect(() => {
+    if (!resumePosition) return;
+    const entry = [...paragraphStarts].find(([, offset]) => offset >= resumePosition.offset);
+    const target = entry ? wordRefs.current.get(entry[0]) : undefined;
+    target?.scrollIntoView?.({ block: 'center', behavior: 'instant' });
+    target?.focus({ preventScroll: true });
+  }, [resumePosition, paragraphStarts]);
+
+  useEffect(() => {
+    if (!onPositionChange || typeof IntersectionObserver === 'undefined') return;
+    let active = true;
+    const observer = new IntersectionObserver((entries) => {
+      if (!active) return;
+      const visible = entries.filter((entry) => entry.isIntersecting).sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top);
+      if (visible[0]) onPositionChange(Number((visible[0].target as HTMLElement).dataset.readerParagraph));
+    }, { rootMargin: '-15% 0px -65% 0px' });
+    paragraphRefs.current.forEach((element) => observer.observe(element));
+    return () => { active = false; observer.disconnect(); };
+  }, [onPositionChange, paragraphStarts]);
 
   function handleKeyDown(event: KeyboardEvent<HTMLElement>, index: number) {
     if (event.altKey || event.ctrlKey || event.metaKey || event.shiftKey) return;
@@ -74,6 +114,7 @@ export default function FuriganaText({
           'inline-block min-h-[44px] cursor-pointer align-baseline transition-colors hover:bg-indigo-100 dark:hover:bg-indigo-900 rounded focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 dark:focus-visible:outline-indigo-400';
         const selectedClass = isSelected ? 'bg-indigo-200 dark:bg-indigo-800' : '';
         const knownClass = !isSelected && isKnown ? 'bg-green-50 dark:bg-green-900/20' : '';
+        const paragraph = paragraphStarts.get(i);
         const interaction = {
           role: 'button',
           tabIndex: i === currentIndex ? 0 : -1,
@@ -83,8 +124,12 @@ export default function FuriganaText({
           ref: (element: HTMLElement | null) => {
             if (element) wordRefs.current.set(i, element);
             else wordRefs.current.delete(i);
+            if (paragraph !== undefined) {
+              if (element) paragraphRefs.current.set(paragraph, element);
+              else paragraphRefs.current.delete(paragraph);
+            }
           },
-          onFocus: () => setActiveIndex(i),
+          onFocus: () => { setActiveIndex(i); onPositionChange?.(segment.start); },
           onKeyDown: (event: KeyboardEvent<HTMLElement>) => handleKeyDown(event, i),
           onClick: () => {
             setActiveIndex(i);
@@ -96,6 +141,7 @@ export default function FuriganaText({
         return (
           <button
             key={i}
+            data-reader-paragraph={paragraph}
             type="button"
             {...interaction}
             className={`${baseClass} ${selectedClass} ${knownClass} ${statusClass}`}

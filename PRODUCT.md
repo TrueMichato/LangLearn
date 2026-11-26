@@ -19,7 +19,7 @@ web
 
 A **kind, local-first Progressive Web App for language learning.** Six languages ship full grammar, vocabulary and graded reading content today (Japanese, Russian, Arabic, Spanish, Portuguese, Romanian), and the app is extensible to any language via a registry entry plus content.
 
-Core surfaces: a spaced-repetition **Review** loop (SM-2), a personal **Words** vocabulary, an immersion **Reader**, and a **Learn** hub (grammar, letters, listening, sentences, conjugations, music, tests, more), tied together by a **Dashboard** (XP, streaks, badges, goals).
+Core surfaces: a spaced-repetition **Review** loop (SM-2 or FSRS), a personal **Words** vocabulary, an immersion **Reader**, and a **Learn** hub (grammar, letters, listening, sentences, conjugations, music, practice checks, more), tied together by a **Dashboard** (XP, streaks, badges, goals).
 
 Success is a learner who finishes something real in their first session and knows what to do tomorrow — and who is still coming back in a month without having been pressured into it.
 
@@ -45,6 +45,7 @@ The app owes a beginner a **sequence, not an inventory**: every first-run surfac
 
 - Onboarding **hands off into content** — its last step is "pick your starting point" and its button navigates into a lesson. It never ends on the Dashboard.
 - The recommendation is derived, not guessed: languages with an unfamiliar script (`ja`, `ru`, `ar`) start at **Letters**; Latin-script languages start at **First words**. The logic lives in `src/lib/starting-points.ts` and is the single source used by onboarding, the zero-data Dashboard, and the Learn hub — so the app never gives three different answers.
+- Script preparation is a recommendation, not an admission test. From the guided path, learners can continue into words and return to unfinished preparation later, including Russian's alphabet-and-sounds lesson. This choice never claims script mastery.
 - Entry opens an existing teaching card or the full authored vocabulary lesson, not another catalog. Lessons keep their complete workload and saved place; no unmeasured duration is promised. Saving words for review remains an explicit choice.
 - **Zero words is the design centre, not an edge case.** Instrumentation (stats, forecasts, heat maps, badges) stays hidden until there is something to instrument.
 - Adding a word manually is an *expert* action. Never make a beginner type 食べる before they have been taught it.
@@ -55,6 +56,10 @@ The app owes a beginner a **sequence, not an inventory**: every first-run surfac
 - **A surface may support a subset of languages.** When it cannot offer the learner's language it says so by name and offers the ones it has; it never silently substitutes a different language.
 - **No network dependency at runtime.** Content is fetched from the app's own origin under `import.meta.env.BASE_URL`, and every feature must degrade gracefully offline. No webfonts.
 - **Terminology:** learner-facing copy avoids jargon. "SM-2", "SRS" and raw activity keys are internal; the UI says "reviews", "your stats", "Review".
+- **Practice feedback is not proficiency certification.** Practice checks describe the sampled vocabulary/grammar questions, attempted and unanswered items, and actual source lessons. Neither a score, effort XP nor a legacy level estimate establishes a CEFR/JLPT level or broad communicative ability.
+- **Support is a choice, not a penalty.** Listening permits transcript support, replay and stop before or after an answer, and labels supported attempts without reducing XP. Native browser voices can be missing or fail; text support remains available. Translation uses self-comparison rather than an automatic judgment of arbitrary wording; retries preserve the first rating/check.
+- **Reading can be for meaning or close study.** Optional highlighting, lookup, rereading and an unscored reflection serve that choice. Local reading continuity retains a paragraph position and the exact source copy; changed/deleted sources are handled explicitly rather than restoring a misleading cursor.
+- **Review is available, never compulsory.** Home keeps due reviews and unfinished lessons visible alongside a quieter input alternative. Suggestions distinguish existing path-unit destinations from generic beginner-friendly options; they do not claim a lesson-vocabulary match or infer a study-balance prescription.
 - **Undecided:** whether languages will ever be offered as downloadable packs rather than bundled content.
 
 ## Brand Commitments

@@ -1,4 +1,4 @@
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { useCurrentLanguage } from '../hooks/useCurrentLanguage';
 import LanguagePicker from '../components/common/LanguagePicker';
@@ -19,6 +19,7 @@ import {
 } from '../components/learn/GuidedPractice';
 import { useAdaptivePractice } from '../hooks/useAdaptivePractice';
 import AdaptivePracticeNotice from '../components/common/AdaptivePracticeNotice';
+import InputActivityLink from '../components/learn/InputActivityLink';
 
 type Mode = 'tiles' | 'type';
 type Difficulty = 'easy' | 'medium' | 'hard' | 'all';
@@ -51,6 +52,7 @@ export function SentenceBuilderSession({ current: languageState }: { current: Re
   const [sessionSentences, setSessionSentences] = useState<PracticeSentence[]>([]);
   const [currentIdx, setCurrentIdx] = useState(0);
   const [score, setScore] = useState(0);
+  const completedItems = useRef(new Set<number>());
 
   const allSentences = useMemo(() => getPracticeSentences(language), [language]);
   const guided = useGuidedPractice('sentence', language);
@@ -77,10 +79,13 @@ export function SentenceBuilderSession({ current: languageState }: { current: Re
     setSessionSentences(selected);
     setCurrentIdx(0);
     setScore(0);
+    completedItems.current.clear();
     setPhase('session');
   };
 
   const handleResult = (correct: boolean) => {
+    if (phase !== 'session' || completedItems.current.has(currentIdx)) return;
+    completedItems.current.add(currentIdx);
     if (correct) setScore((s) => s + 1);
     const next = currentIdx + 1;
     if (next >= sessionSentences.length) {
@@ -193,7 +198,7 @@ export function SentenceBuilderSession({ current: languageState }: { current: Re
         <button
           onClick={startSession}
           disabled={!isSupported || adaptive.status === 'loading'}
-          className="w-full py-3 bg-indigo-600 text-white rounded-xl font-semibold hover:bg-indigo-700 press-feedback transition-colors disabled:opacity-40"
+          className="w-full min-h-[44px] py-3 bg-indigo-600 text-white rounded-xl font-semibold hover:bg-indigo-700 press-feedback transition-colors disabled:opacity-40"
         >
           Start Practice
         </button>
@@ -209,21 +214,23 @@ export function SentenceBuilderSession({ current: languageState }: { current: Re
         <h2 className="text-2xl font-bold text-slate-800 dark:text-slate-100">Session Complete!</h2>
         <p className="text-5xl">🎉</p>
         <p className="text-lg text-slate-700 dark:text-slate-300">
-          Score: <span className="font-bold text-indigo-600 dark:text-indigo-400">{score}</span> / {sessionSentences.length}
+          First-check matches: <span className="font-bold text-indigo-600 dark:text-indigo-400">{score}</span> / {sessionSentences.length}
         </p>
+        <p className="text-sm text-slate-500 dark:text-slate-400">Retries are for practice and do not change your first-check score or completion XP.</p>
         <p className="text-sm text-slate-500 dark:text-slate-400">+{xp} XP earned</p>
 
         <GuidedCompletionActions guided={guided} onPracticeAgain={restart} />
         {!guided.isGuided && (
           <div className="flex flex-col gap-3">
-            <button onClick={restart} className="w-full py-3 bg-indigo-600 text-white rounded-xl font-semibold hover:bg-indigo-700 press-feedback transition-colors">
+            <button onClick={restart} className="w-full min-h-[44px] py-3 bg-indigo-600 text-white rounded-xl font-semibold hover:bg-indigo-700 press-feedback transition-colors">
               Practice Again
             </button>
-            <Link to="/learn" className="w-full py-3 bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-300 rounded-xl font-semibold hover:bg-slate-300 dark:hover:bg-slate-600 press-feedback transition-colors inline-block">
+            <Link to="/learn" className="w-full min-h-[44px] py-3 bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-300 rounded-xl font-semibold hover:bg-slate-300 dark:hover:bg-slate-600 press-feedback transition-colors inline-block">
               ← Back
             </Link>
           </div>
         )}
+        <InputActivityLink language={language} />
       </div>
     );
   }
@@ -239,7 +246,7 @@ export function SentenceBuilderSession({ current: languageState }: { current: Re
         <span>
           Question {currentIdx + 1} / {sessionSentences.length}
         </span>
-        <span>Score: {score}</span>
+        <span>First-check matches: {score}</span>
       </div>
       <div className="w-full bg-slate-200 dark:bg-slate-700 rounded-full h-2">
         <div className="bg-indigo-600 h-2 rounded-full transition-all" style={{ width: `${((currentIdx + 1) / sessionSentences.length) * 100}%` }} />

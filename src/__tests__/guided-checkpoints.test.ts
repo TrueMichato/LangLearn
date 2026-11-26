@@ -88,7 +88,8 @@ describe('foundation checkpoints v2', () => {
       catchUp: true, state: 'available',
     });
     expect(current.recommendedNodeId).toBe('vocab:days-months');
-    expect(current.completedCount).toBe(5); // Two scripts + three lessons, no fabricated practice.
+    expect(current.completedCount).toBe(3); // Preparation is separate from required course steps.
+    expect(current.units[0].nodes.every((node) => node.state === 'completed')).toBe(true);
   });
 
   it('does not convert later progress into retroactive catch-up', () => {

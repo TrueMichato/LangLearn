@@ -7,6 +7,7 @@ import { useXPStore } from '../stores/xpStore';
 import { useBadgeStore } from '../stores/badgeStore';
 import { useStudySetsStore } from '../stores/studySetsStore';
 import { isAssessmentDraft } from '../lib/lesson-assessment-draft';
+import { isReadingProgress } from './reading-progress';
 
 export interface IndependentBackupPayload {
   version: 1;
@@ -53,6 +54,7 @@ const rowFields: Record<BackupTableName, Record<string, Check>> = {
     completedAt: (v) => v === null || text(v), attempts: isSafeCount, itemsCompleted: isSafeCount },
   skillProgress: { language: text, activity: (v) => ['minimal-pairs', 'numbers'].includes(v as string),
     skill: text, attempts: isSafeCount, correct: isSafeCount },
+  readingProgress: {},
 };
 
 function validFields(value: unknown, required: Record<string, Check>, optional: Record<string, Check> = {}): boolean {
@@ -194,17 +196,18 @@ function validateStorage(key: string, raw: string): void {
   }
 }
 
-/** Unlike legacy import, this never normalizes, drops unknown tables, or fills absent history. */
+/** Validate the original checkpoint before any explicitly supported schema upgrade. */
 export function validateIndependentPayload(raw: unknown): IndependentBackupPayload {
-  if (!isRecord(raw) || raw.version !== 1 || raw.schemaVersion !== CURRENT_SCHEMA_VERSION) {
+  if (!isRecord(raw) || raw.version !== 1 || (raw.schemaVersion !== CURRENT_SCHEMA_VERSION && raw.schemaVersion !== 12)) {
     throw new BackupError('unsupported-payload', 'This checkpoint needs a different app/schema version. Update LangLearn; keep the checkpoint unchanged.');
   }
+  const tableNames = BACKUP_TABLE_NAMES.filter((name) => name !== 'readingProgress' || raw.schemaVersion !== 12);
   if (Object.keys(raw).sort().join() !== ['version', 'schemaVersion', 'capturedAt', 'tables', 'localStorage'].sort().join() ||
     !isISO(raw.capturedAt) || !isRecord(raw.tables) || !isRecord(raw.localStorage) ||
-    Object.keys(raw.tables).sort().join() !== [...BACKUP_TABLE_NAMES].sort().join()) invalid('The full backup is incomplete or has unknown tables.');
+    Object.keys(raw.tables).sort().join() !== [...tableNames].sort().join()) invalid('The full backup is incomplete or has unknown tables.');
   if (BACKUP_STORAGE_KEYS.some((key) => !Object.hasOwn(raw.localStorage as object, key))) invalid('The full backup is missing a persisted learning store.');
   assertSafeJSON(raw);
-  for (const name of BACKUP_TABLE_NAMES) {
+  for (const name of tableNames) {
     const rows = raw.tables[name];
     if (!Array.isArray(rows) || rows.length > 500_000) invalid('A backup table is missing or too large.');
     const keys = new Set<unknown>();
@@ -216,6 +219,8 @@ export function validateIndependentPayload(raw: unknown): IndependentBackupPaylo
       keys.add(key);
       if (Object.entries(rowFields[name]).some(([field, check]) => !check(row[field]))) invalid(`The ${name} table contains malformed data.`);
       if (name === 'words' && !validFields(row, {}, wordOptionalFields)) invalid('A saved card contains malformed lesson metadata.');
+      if (name === 'readingProgress' && !isReadingProgress(row)) invalid('A saved reading place or reflection is malformed.');
+      if (name === 'texts' && !validFields(row, {}, { translation: text })) invalid('A saved translation is malformed.');
       if (name === 'reviews' && !validFields(row, {}, { stability: finite, difficulty: finite })) invalid('A saved review contains malformed scheduling metadata.');
       if (name === 'settings' && DEVICE_ONLY_SETTINGS.has(row.key as string)) invalid('The checkpoint contains device-only push credentials.');
     }
@@ -231,6 +236,13 @@ export function validateIndependentPayload(raw: unknown): IndependentBackupPaylo
     validateStorage(key, value);
   }
   return raw as unknown as IndependentBackupPayload;
+}
+
+/** v12 had no reading places. Do this only after checking its encrypted metadata. */
+export function upgradeIndependentPayload(payload: IndependentBackupPayload): IndependentBackupPayload {
+  return payload.schemaVersion === 12
+    ? { ...payload, schemaVersion: CURRENT_SCHEMA_VERSION, tables: { ...payload.tables, readingProgress: [] } }
+    : payload;
 }
 
 export function readIndependentStorage(storage: Storage, includeDefaults = true): Record<string, string> {
@@ -264,7 +276,7 @@ export async function readIndependentPayload(storage: Storage): Promise<Independ
 }
 
 function canonicalTables(payload: IndependentBackupPayload) {
-  return Object.fromEntries(BACKUP_TABLE_NAMES.map((name) => {
+  return Object.fromEntries(BACKUP_TABLE_NAMES.filter((name) => payload.tables[name] !== undefined).map((name) => {
     const key = name === 'settings' ? 'key' : name === 'dailyActivity' ? 'date' : 'id';
     const rows = [...payload.tables[name]].sort((a, b) => typeof a[key] === 'number'
       ? (a[key] as number) - (b[key] as number) : String(a[key]) < String(b[key]) ? -1 : String(a[key]) > String(b[key]) ? 1 : 0);

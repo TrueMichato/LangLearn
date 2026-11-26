@@ -177,6 +177,99 @@ export async function speakWithSpeed(text: string, language: string, rate: numbe
   });
 }
 
+export type ListeningPlaybackResult =
+  | { status: 'ended' | 'cancelled' }
+  | { status: 'unavailable'; reason: 'unsupported' | 'no-voice' }
+  | { status: 'error'; reason: string };
+
+export interface ListeningPlayback {
+  finished: Promise<ListeningPlaybackResult>;
+  stop: () => void;
+}
+
+let activeListeningPlayback: ListeningPlayback | null = null;
+
+/**
+ * Observable playback for full listening passages. Unlike the legacy helpers,
+ * this never silently falls back to the remote, 200-character audio endpoint:
+ * missing voices and failures let the learner choose transcript support instead.
+ * The existing speak/speakWithSpeed void-returning contracts remain unchanged.
+ */
+export function playListeningPassage(text: string, language: string, rate: number): ListeningPlayback {
+  activeListeningPlayback?.stop();
+  let resolve!: (result: ListeningPlaybackResult) => void;
+  const finished = new Promise<ListeningPlaybackResult>((done) => { resolve = done; });
+  let settled = false;
+  let synth: SpeechSynthesis | undefined;
+  let utterance: SpeechSynthesisUtterance | undefined;
+  let timeout: ReturnType<typeof setTimeout> | undefined;
+
+  function settle(result: ListeningPlaybackResult, cancel = false) {
+    if (settled) return;
+    settled = true;
+    clearTimeout(timeout);
+    if (utterance) {
+      utterance.onstart = null;
+      utterance.onend = null;
+      utterance.onerror = null;
+    }
+    if (activeListeningPlayback === playback) activeListeningPlayback = null;
+    resolve(result);
+    if (cancel && utterance) {
+      try { synth?.cancel(); } catch { /* The result is already settled if the device cannot stop. */ }
+    }
+  }
+
+  const playback: ListeningPlayback = {
+    finished,
+    stop: () => settle({ status: 'cancelled' }, true),
+  };
+  activeListeningPlayback = playback;
+
+  async function start() {
+    try {
+      if (typeof window === 'undefined' || !window.speechSynthesis ||
+          typeof SpeechSynthesisUtterance === 'undefined') {
+        settle({ status: 'unavailable', reason: 'unsupported' });
+        return;
+      }
+      synth = window.speechSynthesis;
+      await ensureVoices();
+      if (settled) return;
+      const prefix = language.slice(0, 2).toLowerCase();
+      const voice = synth.getVoices().find((candidate) =>
+        candidate.lang.toLowerCase().split(/[-_]/)[0] === prefix);
+      if (!voice) {
+        settle({ status: 'unavailable', reason: 'no-voice' });
+        return;
+      }
+      if (synth.speaking || synth.pending) synth.cancel();
+      utterance = new SpeechSynthesisUtterance(text);
+      utterance.lang = LANG_VOICE_MAP[language] ?? language;
+      utterance.voice = voice;
+      utterance.rate = rate;
+      const failTimeout = () => settle({ status: 'error', reason: 'timeout' }, true);
+      utterance.onstart = () => {
+        clearTimeout(timeout);
+        // Long, slow passages must not be reported complete after a fixed eight seconds.
+        timeout = setTimeout(failTimeout, Math.max(60_000, text.length * 1000 / Math.max(0.5, rate)));
+      };
+      utterance.onend = () => settle({ status: 'ended' });
+      utterance.onerror = (event) => {
+        settle(event.error === 'canceled' || event.error === 'interrupted'
+          ? { status: 'cancelled' }
+          : { status: 'error', reason: event.error });
+      };
+      timeout = setTimeout(failTimeout, 10_000);
+      synth.speak(utterance);
+    } catch {
+      settle({ status: 'error', reason: 'playback-failed' }, true);
+    }
+  }
+  void start();
+  return playback;
+}
+
 export const TTS_SPEEDS = [
   { label: '0.5×', value: 0.5 },
   { label: '0.75×', value: 0.75 },

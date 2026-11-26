@@ -56,7 +56,7 @@ Safety and coverage:
   Four isolated desktop Chrome contexts use a 390x844 mobile viewport.
   Covers consent/kit gates, real encrypted uploads, held read-back confirmation,
   a lost response AFTER a real Worker commit and exact idempotent retry,
-  wrong-key/no-write recovery, existing-data refusal, all 13 table families,
+  wrong-key/no-write recovery, existing-data refusal, all 14 table families,
   references, manual sets, XP attempt tokens, guided-column-only progress,
   frozen drafts, and network-disabled kit + encrypted-file recovery.
   A native IndexedDB journal fault injects a durable late XP award: restoration
@@ -213,7 +213,7 @@ async function verify({ app, endpoint, enrollment, chrome }) {
     });
     const page = await pageFor(original);
 
-    stage = 'seeding all 13 tables and browser progress, including valid optional undefined fields';
+    stage = 'seeding all 14 tables and browser progress, including valid optional undefined fields';
     await seed(page);
     await page.goto(`${app}#/settings`, { waitUntil: 'networkidle' });
     await page.reload({ waitUntil: 'networkidle' });
@@ -411,7 +411,7 @@ async function verify({ app, endpoint, enrollment, chrome }) {
     assertRestored(await readRestored(recovery));
     await recovery.goto(`${app}#/review`, { waitUntil: 'networkidle' });
     await recovery.getByText('Synthetic manual set', { exact: true }).waitFor();
-    checks.push('Fresh remote recovery survives reload: 13 tables, original references, manual sets, XP attempt token, guided-column-only progress and frozen draft; optional undefined fields capture safely.');
+    checks.push('Fresh remote recovery survives reload: 14 tables, original references, reading places, manual sets, XP attempt token, guided-column-only progress and frozen draft; optional undefined fields capture safely.');
     await fresh.close();
 
     stage = 'network-disabled kit and encrypted-file recovery in a third isolated profile';
@@ -612,7 +612,7 @@ async function databaseFor(page, action, argument) {
       const tableNames = [
         'words', 'reviews', 'texts', 'studySessions', 'settings', 'dailyActivity',
         'lessonProgress', 'characterProgress', 'testHistory', 'badges', 'reviewLog',
-        'guidedActivityProgress', 'skillProgress',
+        'guidedActivityProgress', 'skillProgress', 'readingProgress',
       ];
       const tables = await new Promise((resolve, reject) => {
         const transaction = database.transaction(tableNames);
@@ -640,7 +640,7 @@ function readRestored(page) { return databaseFor(page, 'read', null); }
 function existingRecord(page, present) { return databaseFor(page, 'existing', present); }
 
 function assertRestored(value) {
-  assert.equal(Object.keys(value.tables).length, 13);
+  assert.equal(Object.keys(value.tables).length, 14);
   assert.equal(value.tables.words.find((word) => word.id === 41)?.sourceTextId, 91);
   assert.equal(value.tables.words.find((word) => word.id === 41)?.meaning, 'synthetic-private-cat-updated');
   assert.equal(value.tables.reviews.find((review) => review.id === 17)?.wordId, 41);
@@ -655,6 +655,7 @@ function assertRestored(value) {
   assert.equal(value.tables.reviewLog.find((row) => row.id === 301)?.wordId, 41);
   assert.equal(value.tables.guidedActivityProgress.find((row) => row.id === 'ja/foundation')?.itemsCompleted, 10);
   assert.equal(value.tables.skillProgress.find((row) => row.id === 'ja/numbers/basic')?.correct, 2);
+  assert.equal(value.tables.readingProgress.find((row) => row.id === 'curated/es/synthetic')?.reflection, 'Synthetic reflection.');
   assert.ok(value.tables.settings.some((setting) => setting.key === 'synthetic-pref' && setting.value === 'retained'));
   assert.equal(value.tables.settings.some((setting) => setting.key === 'push-endpoint'), false);
   assert.equal(value.xp.state.bonusXP, 175);
@@ -691,6 +692,10 @@ async function seed(page) {
         activity: 'grammar', completedAt: time, attempts: 1, itemsCompleted: 10, bestScore: 90 }],
       skillProgress: [{ id: 'ja/numbers/basic', language: 'ja', activity: 'numbers',
         skill: 'basic', attempts: 3, correct: 2 }],
+      readingProgress: [{ id: 'curated/es/synthetic', language: 'es',
+        source: { kind: 'curated', language: 'es', curatedId: 'synthetic' },
+        title: 'Synthetic story', content: 'Hola.\n\nOtro día.', position: 7,
+        purpose: 'main-idea', highlight: false, reflection: 'Synthetic reflection.', updatedAt: time }],
     };
     const database = await new Promise((resolve, reject) => {
       const request = indexedDB.open('LangLearnDB');

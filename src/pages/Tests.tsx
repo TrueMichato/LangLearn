@@ -2,9 +2,10 @@ import { useState, useEffect, useRef, useCallback } from 'react';
 import { Link } from 'react-router-dom';
 import { useCurrentLanguage } from '../hooks/useCurrentLanguage';
 import LanguagePicker from '../components/common/LanguagePicker';
+import LanguageUnavailable from '../components/common/LanguageUnavailable';
 import { useXPStore } from '../stores/xpStore';
-import { generateTestQuestions, type Question, type TestType } from '../lib/test-questions';
-import { getTestLevel, calculateXP } from '../lib/test-scoring';
+import { generateTestQuestions, QUESTION_COUNTS, type Question, type TestType } from '../lib/test-questions';
+import { summarizePracticeResult, PRACTICE_RESULT_MARKER, calculateXP } from '../lib/test-scoring';
 import { db, type TestHistory } from '../db/schema';
 import { useGuidedPractice } from '../hooks/useGuidedPractice';
 import {
@@ -15,16 +16,32 @@ import {
 import { createSeededRandom } from '../lib/guided-practice';
 import PracticeWordCapture from '../components/common/PracticeWordCapture';
 import { assessmentVocabulary } from '../lib/assessment-vocabulary';
+import { getLanguageLabel } from '../lib/languages';
+import { isRTL } from '../lib/rtl';
+import { grammarLessonRoute, vocabLessonRoute, ROUTES } from '../lib/routes';
+import { ACTIVITY_CAPABILITIES } from '../lib/activity-capabilities';
 
 type Phase = 'setup' | 'loading' | 'active' | 'results' | 'guided-error';
 type TimeLimit = 0 | 5 | 10 | 15;
 
+interface CompletedPractice {
+  entry: TestHistory;
+  itemsCompleted: number;
+  xp: number;
+  historySaved: boolean;
+  rewardAttempted: boolean;
+  pathAttempted: boolean;
+}
+
 const TEST_LABELS: Record<TestType, string> = {
   vocabulary: 'Vocabulary',
   grammar: 'Grammar',
-  mixed: 'Mixed',
-  full: 'Full Proficiency',
+  mixed: 'Mixed practice',
+  full: 'Extended mixed practice',
 };
+
+const CATEGORY_LABELS = { vocabulary: 'Vocabulary', grammar: 'Grammar' };
+const TEST_LANGUAGES = Object.keys(ACTIVITY_CAPABILITIES);
 
 const TIME_OPTIONS: { value: TimeLimit; label: string }[] = [
   { value: 0, label: 'Untimed' },
@@ -34,8 +51,8 @@ const TIME_OPTIONS: { value: TimeLimit; label: string }[] = [
 ];
 
 export default function TestsPage() {
-  const { language: currentLanguage, setLanguage, options: activeLanguages } = useCurrentLanguage();
-  const language = currentLanguage ?? 'ja';
+  const { language: currentLanguage, requested, setLanguage, options: activeLanguages } = useCurrentLanguage(TEST_LANGUAGES);
+  const language = currentLanguage ?? '';
   const [testType, setTestType] = useState<TestType>('mixed');
   const [timeLimit, setTimeLimit] = useState<TimeLimit>(10);
   const [phase, setPhase] = useState<Phase>('setup');
@@ -54,13 +71,23 @@ export default function TestsPage() {
   const [xpEarned, setXpEarned] = useState(0);
   const [history, setHistory] = useState<TestHistory[]>([]);
   const [guidedLoadError, setGuidedLoadError] = useState('');
+  const [loadError, setLoadError] = useState('');
+  const [contentLimits, setContentLimits] = useState<string[]>([]);
+  const [savePending, setSavePending] = useState(false);
+  const [saveError, setSaveError] = useState('');
+  const [xpWarning, setXPWarning] = useState('');
+  const [pathSaveError, setPathSaveError] = useState('');
 
   const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
+  const advanceRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const finishingRef = useRef(false);
+  const savingRef = useRef(false);
+  const completedPracticeRef = useRef<CompletedPractice | null>(null);
   const guided = useGuidedPractice('tests', language);
 
   // Load history
   useEffect(() => {
+    if (!language) return;
     db.testHistory
       .where('language')
       .equals(language)
@@ -68,6 +95,10 @@ export default function TestsPage() {
       .sortBy('date')
       .then((rows) => setHistory(rows.slice(0, 5)));
   }, [language, phase]);
+
+  useEffect(() => () => {
+    if (advanceRef.current) clearTimeout(advanceRef.current);
+  }, []);
 
   // Timer countdown
   useEffect(() => {
@@ -86,48 +117,85 @@ export default function TestsPage() {
     };
   }, [phase, timeLimit]);
 
+  const saveCompletedPractice = useCallback(async () => {
+    const completed = completedPracticeRef.current;
+    if (!completed || savingRef.current) return;
+    savingRef.current = true;
+    setSavePending(true);
+    setSaveError('');
+    try {
+      if (!completed.historySaved) {
+        try {
+          await db.testHistory.add(completed.entry);
+          completed.historySaved = true;
+        } catch {
+          setSaveError('Your result could not be saved on this device. Keep this page open, free some device storage, then retry. No XP or path progress has been recorded for this check.');
+          return;
+        }
+      }
+      if (!completed.rewardAttempted) {
+        // addXP can update memory before its localStorage write throws. Never
+        // blindly replay an award whose persistence could not be confirmed.
+        completed.rewardAttempted = true;
+        try {
+          useXPStore.getState().addXP(completed.xp);
+          setXpEarned(completed.xp);
+        } catch {
+          setXPWarning('Your result is saved, but XP could not be confirmed on this device. It will not be awarded again for this check to avoid counting it twice.');
+        }
+      }
+      if (!completed.pathAttempted) {
+        completed.pathAttempted = true;
+        try {
+          await guided.complete({
+            itemsCompleted: completed.itemsCompleted,
+            score: completed.entry.score,
+          });
+        } catch {
+          // The hook normally reports failures through completionError. An
+          // unexpected rejection can follow a partial write, so do not replay it.
+          setPathSaveError('Your result is saved, but path progress could not be confirmed. Return to your learning path to check this step before starting another session.');
+        }
+      }
+    } finally {
+      savingRef.current = false;
+      setSavePending(false);
+    }
+  }, [guided]);
+
   const finishTest = useCallback(
-    async (finalAnswers: (number | null)[]) => {
+    (finalAnswers: (number | null)[]) => {
       if (finishingRef.current) return;
       finishingRef.current = true;
       if (timerRef.current) clearInterval(timerRef.current);
+      if (advanceRef.current) clearTimeout(advanceRef.current);
 
-      const correctAnswers = questions.reduce(
-        (sum, q, i) => sum + (finalAnswers[i] === q.correctIndex ? 1 : 0),
-        0
-      );
-      const totalQuestions = questions.length;
-      const score = totalQuestions > 0 ? Math.round((correctAnswers / totalQuestions) * 100) : 0;
+      const { correctAnswers, totalQuestions, score, attemptedQuestions } =
+        summarizePracticeResult(questions, finalAnswers);
       const durationSeconds = Math.round((Date.now() - startTime) / 1000);
-      const testLevel = getTestLevel(score);
       const xp = calculateXP(correctAnswers);
 
       const entry: TestHistory = {
         language,
         type: testType,
         score,
-        level: testLevel.level,
+        level: PRACTICE_RESULT_MARKER,
         totalQuestions,
         correctAnswers,
         durationSeconds,
         date: new Date().toISOString(),
       };
 
-      try {
-        await db.testHistory.add(entry);
-        useXPStore.getState().addXP(xp);
-        await guided.complete({
-          itemsCompleted: finalAnswers.filter((answer) => answer != null).length,
-          score,
-        });
-        setResult(entry);
-        setXpEarned(xp);
-        setPhase('results');
-      } finally {
-        finishingRef.current = false;
-      }
+      completedPracticeRef.current = {
+        entry, itemsCompleted: attemptedQuestions, xp,
+        historySaved: false, rewardAttempted: false, pathAttempted: false,
+      };
+      setAnswers([...finalAnswers]);
+      setResult(entry);
+      setPhase('results');
+      void saveCompletedPractice();
     },
-    [guided, questions, startTime, language, testType]
+    [questions, startTime, language, testType, saveCompletedPractice]
   );
 
   // Auto-finish when time runs out
@@ -138,7 +206,15 @@ export default function TestsPage() {
   }, [secondsLeft, phase, timeLimit, startTime, answers, finishTest]);
 
   const handleStart = useCallback(async () => {
+    if (!language || savingRef.current) return;
     setPhase('loading');
+    setLoadError('');
+    setContentLimits([]);
+    setSaveError('');
+    setXPWarning('');
+    setPathSaveError('');
+    completedPracticeRef.current = null;
+    finishingRef.current = false;
     const effectiveType = guided.descriptor ? 'mixed' : testType;
     const random = guided.descriptor
       ? createSeededRandom(guided.descriptor.seed)
@@ -152,16 +228,25 @@ export default function TestsPage() {
       qs.length < guided.descriptor.session.minItems
     ) {
       setGuidedLoadError(
-        'This guided test could not load enough lesson content. Return to your learning path and try again when the content is available.',
+        'This guided practice check could not load enough lesson content. Return to your learning path and try again when the content is available.',
       );
       setPhase('guided-error');
       return;
     }
     if (qs.length === 0) {
-      alert('No content available for this language and test type. Try another combination.');
+      setLoadError(`No questions could be loaded for ${getLanguageLabel(language)} in this check. Try again when the lesson content is available, or choose another practice type.`);
       setPhase('setup');
       return;
     }
+    if (!guided.descriptor) {
+      const requested = QUESTION_COUNTS[effectiveType];
+      setContentLimits((['vocabulary', 'grammar'] as const).flatMap((category) => {
+        const target = category === 'vocabulary' ? requested.vocab : requested.grammar;
+        const available = qs.filter((question) => question.category === category).length;
+        return available < target ? [`${CATEGORY_LABELS[category]}: ${available} of ${target} requested`] : [];
+      }));
+    }
+    setTestType(effectiveType);
     setQuestions(qs);
     setAnswers(new Array(qs.length).fill(null));
     setCurrentIndex(0);
@@ -178,7 +263,7 @@ export default function TestsPage() {
   }, [guided.descriptor, handleStart, phase]);
 
   function handleAnswer(optionIndex: number) {
-    if (showFeedback) return;
+    if (showFeedback || finishingRef.current) return;
     setSelectedOption(optionIndex);
     setShowFeedback(true);
 
@@ -186,7 +271,7 @@ export default function TestsPage() {
     newAnswers[currentIndex] = optionIndex;
     setAnswers(newAnswers);
 
-    setTimeout(() => {
+    advanceRef.current = setTimeout(() => {
       if (currentIndex < questions.length - 1) {
         setCurrentIndex(currentIndex + 1);
         setSelectedOption(null);
@@ -198,6 +283,8 @@ export default function TestsPage() {
   }
 
   function handleRestart() {
+    if (savingRef.current) return;
+    if (advanceRef.current) clearTimeout(advanceRef.current);
     setPhase('setup');
     setResult(null);
     setXpEarned(0);
@@ -206,6 +293,8 @@ export default function TestsPage() {
     setCurrentIndex(0);
     setSelectedOption(null);
     setShowFeedback(false);
+    setContentLimits([]);
+    setLoadError('');
   }
 
   function formatTime(s: number) {
@@ -217,6 +306,9 @@ export default function TestsPage() {
   if (guided.invalidMessage) {
     return <GuidedPracticeError message={guided.invalidMessage} />;
   }
+  if (!currentLanguage) {
+    return <LanguageUnavailable requested={requested} options={activeLanguages} onChange={setLanguage} feature="Practice checks" plural />;
+  }
   if (phase === 'guided-error') {
     return <GuidedPracticeError message={guidedLoadError} />;
   }
@@ -225,34 +317,34 @@ export default function TestsPage() {
   if (phase === 'setup') {
     return (
       <div className="page-enter">
-        <Link to="/learn" className="inline-flex min-h-[44px] items-center text-indigo-600 dark:text-indigo-400 text-sm font-medium mb-3 hover:underline press-feedback inline-block">
+        <Link to={ROUTES.learn} className="inline-flex min-h-[44px] items-center text-indigo-600 dark:text-indigo-400 text-sm font-medium mb-3 hover:underline press-feedback">
           ← Back to Learn
         </Link>
-        <h2 className="text-lg font-semibold text-slate-700 dark:text-slate-200 mb-4">Proficiency Tests</h2>
+        <h2 className="text-lg font-semibold text-slate-800 dark:text-slate-100 mb-2">Practice checks</h2>
+        <p className="text-sm text-slate-500 dark:text-slate-400 mb-4">
+          Revisit a sample of vocabulary and grammar from this language&apos;s lessons, including material you may not have studied yet.
+          {' '}Not a language-level assessment or a lesson test-out.
+        </p>
         <GuidedPracticeNotice guided={guided} />
 
         <div className="space-y-4">
           {/* Language selector */}
-          <div className="bg-white dark:bg-slate-800 rounded-2xl shadow p-4">
-            <label className="block text-sm font-medium text-slate-600 dark:text-slate-300 mb-2">Language</label>
-            <div className="flex flex-wrap gap-2">
-              <LanguagePicker
-                options={activeLanguages}
-                value={language}
-                onChange={setLanguage}
-                label="Test language"
-              />
-            </div>
-          </div>
+          <LanguagePicker
+            options={activeLanguages}
+            value={language}
+            onChange={setLanguage}
+            label="Practice check language"
+          />
 
           {/* Test type */}
-          <div className="bg-white dark:bg-slate-800 rounded-2xl shadow p-4">
-            <label className="block text-sm font-medium text-slate-600 dark:text-slate-300 mb-2">Test Type</label>
-            <div className="grid grid-cols-2 gap-2">
+          <div className="bg-white dark:bg-slate-800 rounded-2xl border border-slate-200/70 dark:border-white/10 p-4">
+            <h3 id="practice-type-label" className="text-sm font-medium text-slate-600 dark:text-slate-300 mb-2">Practice type</h3>
+            <div role="group" aria-labelledby="practice-type-label" className="grid grid-cols-2 gap-2">
               {(Object.keys(TEST_LABELS) as TestType[]).map((t) => (
                 <button
                   key={t}
                   onClick={() => setTestType(t)}
+                  aria-pressed={testType === t}
                   className={`px-4 py-2 min-h-[44px] rounded-xl text-sm font-medium transition-colors ${
                     testType === t
                       ? 'bg-indigo-600 text-white'
@@ -263,17 +355,22 @@ export default function TestsPage() {
                 </button>
               ))}
             </div>
+            <p className="text-sm text-slate-500 dark:text-slate-400 mt-3">
+              Up to {QUESTION_COUNTS[testType].vocab + QUESTION_COUNTS[testType].grammar} questions,
+              {' '}depending on available lesson content. Review missed answers after the check.
+            </p>
           </div>
 
           {/* Time limit */}
-          <div className="bg-white dark:bg-slate-800 rounded-2xl shadow p-4">
-            <label className="block text-sm font-medium text-slate-600 dark:text-slate-300 mb-2">Time Limit</label>
-            <div className="flex gap-2">
+          <div className="bg-white dark:bg-slate-800 rounded-2xl border border-slate-200/70 dark:border-white/10 p-4">
+            <h3 id="practice-time-label" className="text-sm font-medium text-slate-600 dark:text-slate-300 mb-2">Time limit</h3>
+            <div role="group" aria-labelledby="practice-time-label" className="flex gap-2 overflow-x-auto">
               {TIME_OPTIONS.map((opt) => (
                 <button
                   key={opt.value}
                   onClick={() => setTimeLimit(opt.value)}
-                  className={`px-4 py-2 min-h-[44px] rounded-xl text-sm font-medium transition-colors ${
+                  aria-pressed={timeLimit === opt.value}
+                  className={`shrink-0 px-4 py-2 min-h-[44px] rounded-xl text-sm font-medium transition-colors ${
                     timeLimit === opt.value
                       ? 'bg-indigo-600 text-white'
                       : 'bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-600'
@@ -285,31 +382,39 @@ export default function TestsPage() {
             </div>
           </div>
 
+          {loadError && (
+            <p role="status" className="text-sm text-slate-700 dark:text-slate-200">{loadError}</p>
+          )}
           <button
             onClick={handleStart}
-            className="w-full bg-indigo-600 text-white px-5 py-3 rounded-xl hover:bg-indigo-700 font-semibold text-lg press-feedback transition-colors"
+            className="w-full min-h-[44px] bg-indigo-600 text-white px-5 py-3 rounded-xl hover:bg-indigo-700 font-semibold press-feedback transition-colors"
           >
-            Start Test
+            Start practice check
           </button>
 
           {/* History */}
           {history.length > 0 && (
-            <div className="bg-white dark:bg-slate-800 rounded-2xl shadow p-4">
-              <h3 className="text-sm font-semibold text-slate-700 dark:text-slate-200 mb-3">Recent Results</h3>
-              <div className="space-y-2">
+            <div className="bg-white dark:bg-slate-800 rounded-2xl border border-slate-200/70 dark:border-white/10 p-4">
+              <h3 className="text-sm font-semibold text-slate-800 dark:text-slate-100 mb-3">Recent practice results</h3>
+              <p className="text-sm text-slate-500 dark:text-slate-400 mb-3">
+                Question and answer details were not saved. These records show the requested practice type and aggregate sample score, not a language level.
+              </p>
+              <div className="divide-y divide-slate-200 dark:divide-white/10">
                 {history.map((h) => (
-                  <div key={h.id} className="flex items-center justify-between text-sm">
-                    <div className="text-slate-600 dark:text-slate-400">
-                      <span className="capitalize">{h.type}</span>
+                  <div key={h.id} className="py-3 text-sm">
+                    <div className="text-slate-700 dark:text-slate-200">
+                      <span>{TEST_LABELS[h.type]}</span>
                       <span className="mx-1">·</span>
                       <span>{new Date(h.date).toLocaleDateString()}</span>
                     </div>
-                    <div className="flex items-center gap-2">
-                      <span className="font-medium text-slate-800 dark:text-slate-100">{h.score}%</span>
-                      <span className={`text-xs px-2 py-0.5 rounded-full capitalize ${levelColor(h.level)}`}>
-                        {h.level}
-                      </span>
-                    </div>
+                    <p className="text-slate-800 dark:text-slate-100">
+                      {h.correctAnswers}/{h.totalQuestions} correct in the sampled set · {h.score}%
+                    </p>
+                    {h.level !== PRACTICE_RESULT_MARKER && (
+                      <p className="text-slate-500 dark:text-slate-400">
+                        Legacy estimate: {h.level || 'not recorded'}. This old label was derived from a practice score, not an assessed language level.
+                      </p>
+                    )}
                   </div>
                 ))}
               </div>
@@ -348,13 +453,22 @@ export default function TestsPage() {
 
     return (
       <div className="page-enter">
+        <h2 className="text-lg font-semibold text-slate-800 dark:text-slate-100 mb-2">
+          {getLanguageLabel(language)} practice check
+        </h2>
+        {contentLimits.length > 0 && (
+          <div role="status" className="text-sm text-slate-500 dark:text-slate-400 mb-4">
+            <p>A smaller sample is available. Results will describe only the questions loaded.</p>
+            <ul>{contentLimits.map((limit) => <li key={limit}>{limit}</li>)}</ul>
+          </div>
+        )}
         {/* Header bar */}
         <div className="flex items-center justify-between mb-4">
           <span className="text-sm font-medium text-slate-500 dark:text-slate-400">
             {currentIndex + 1} / {questions.length}
           </span>
           {timeLimit > 0 && (
-            <span className={`text-sm font-mono font-medium ${secondsLeft < 60 ? 'text-red-500' : 'text-slate-600 dark:text-slate-300'}`}>
+            <span className={`text-sm font-mono font-medium ${secondsLeft < 60 ? 'text-amber-700 dark:text-amber-300' : 'text-slate-600 dark:text-slate-300'}`}>
               ⏱ {formatTime(secondsLeft)}
             </span>
           )}
@@ -366,21 +480,21 @@ export default function TestsPage() {
         </div>
 
         {/* Question card */}
-        <div className="bg-white dark:bg-slate-800 rounded-2xl shadow p-6 mb-4">
+        <div className="bg-white dark:bg-slate-800 rounded-2xl border border-slate-200/70 dark:border-white/10 p-4 mb-4">
           <span className="text-xs font-medium text-indigo-600 dark:text-indigo-400 mb-2 block">
-            {q.category}
+            {CATEGORY_LABELS[q.category]}
           </span>
-          <p className="text-lg font-semibold text-slate-800 dark:text-slate-100 mb-6">{q.question}</p>
+          <p dir={q.questionDirection === 'target' && isRTL(language) ? 'rtl' : 'ltr'} className="text-lg font-semibold text-slate-800 dark:text-slate-100 mb-6">{q.question}</p>
 
           <div className="space-y-3">
             {q.options.map((opt, i) => {
               let btnClass =
-                'w-full text-left px-4 py-3 rounded-xl border-2 transition-colors font-medium ';
+                'w-full min-h-[44px] text-start px-4 py-3 rounded-xl border-2 transition-colors font-medium ';
               if (showFeedback) {
                 if (i === q.correctIndex) {
-                  btnClass += 'border-green-500 bg-green-50 dark:bg-green-900/30 text-green-700 dark:text-green-300';
+                  btnClass += 'border-green-500 dark:border-green-400 bg-green-50 dark:bg-green-900/30 text-green-700 dark:text-green-300';
                 } else if (i === selectedOption && i !== q.correctIndex) {
-                  btnClass += 'border-red-500 bg-red-50 dark:bg-red-900/30 text-red-700 dark:text-red-300';
+                  btnClass += 'border-amber-500 dark:border-amber-400 bg-amber-50 dark:bg-amber-900/30 text-amber-700 dark:text-amber-300';
                 } else {
                   btnClass += 'border-slate-200 dark:border-white/10 text-slate-500 dark:text-slate-400';
                 }
@@ -390,12 +504,17 @@ export default function TestsPage() {
               }
 
               return (
-                <button key={i} onClick={() => handleAnswer(i)} className={btnClass} disabled={showFeedback}>
+                <button key={i} dir={q.targetOptionIndices?.includes(i) && isRTL(language) ? 'rtl' : 'auto'} onClick={() => handleAnswer(i)} className={btnClass} disabled={showFeedback}>
                   {opt}
                 </button>
               );
             })}
           </div>
+          {showFeedback && (
+            <p role="status" className="mt-3 text-sm text-slate-700 dark:text-slate-200">
+              {selectedOption === q.correctIndex ? 'Correct.' : 'You can revisit this answer after the check.'}
+            </p>
+          )}
         </div>
       </div>
     );
@@ -403,64 +522,159 @@ export default function TestsPage() {
 
   // ─── RESULTS ──────────────────────────────────────────
   if (phase === 'results' && result) {
-    const testLevel = getTestLevel(result.score);
+    const summary = summarizePracticeResult(questions, answers);
+    const sources = [...new Map(questions.filter((question) => question.lessonId).map((question) => [
+      `${question.category}/${question.lessonId}`,
+      question,
+    ])).values()];
+    const missed = questions.flatMap((question, index) =>
+      answers[index] != null && answers[index] !== question.correctIndex ? [{ question, index }] : []);
+    const unattempted = questions.flatMap((question, index) =>
+      answers[index] == null ? [{ question, index }] : []);
+    const reviewGroups = [
+      { label: 'Review missed questions', items: missed },
+      { label: 'Not attempted', items: unattempted },
+    ];
 
     return (
       <div className="page-enter">
-        <h2 className="text-lg font-semibold text-slate-700 dark:text-slate-200 mb-4">Test Complete!</h2>
+        <h2 className="text-lg font-semibold text-slate-800 dark:text-slate-100 mb-4">Practice check complete</h2>
+        {savePending && (
+          <p role="status" className="mb-4 text-sm text-slate-500 dark:text-slate-400">Saving your result…</p>
+        )}
+        {saveError && (
+          <div role="alert" className="mb-4 space-y-3">
+            <p className="text-sm text-slate-700 dark:text-slate-200">{saveError}</p>
+            <button
+              onClick={saveCompletedPractice}
+              disabled={savePending}
+              className="min-h-[44px] rounded-xl bg-indigo-600 px-5 py-3 font-semibold text-white transition-colors hover:bg-indigo-700 disabled:opacity-40"
+            >
+              Retry saving result
+            </button>
+          </div>
+        )}
+        {xpWarning && (
+          <p role="status" className="mb-4 text-sm text-slate-700 dark:text-slate-200">{xpWarning}</p>
+        )}
+        {pathSaveError && !guided.isGuided && (
+          <p role="alert" className="mb-4 text-sm text-slate-700 dark:text-slate-200">{pathSaveError}</p>
+        )}
 
-        <div className="bg-white dark:bg-slate-800 rounded-2xl shadow p-6 mb-4 text-center">
-          <div className="mb-2 text-5xl font-bold text-slate-800 dark:text-slate-100">{result.score}%</div>
-          <div className={`inline-block text-sm font-semibold px-3 py-1 rounded-full capitalize mb-4 ${levelColor(testLevel.level)}`}>
-            {testLevel.label}
-          </div>
-          <div className="text-sm text-slate-500 dark:text-slate-400 mb-1">
-            JLPT {testLevel.jlpt} · CEFR {testLevel.cefr}
-          </div>
+        <div className="bg-white dark:bg-slate-800 rounded-2xl border border-slate-200/70 dark:border-white/10 p-4 mb-4">
+          <p className="text-sm text-slate-500 dark:text-slate-400">{getLanguageLabel(result.language)}</p>
+          <p className="text-xl font-semibold text-slate-800 dark:text-slate-100 my-2">
+            {summary.attemptedQuestions > 0
+              ? `${summary.correctAnswers}/${summary.attemptedQuestions} correct among attempted questions`
+              : 'No questions answered'}
+          </p>
+          <p className="text-sm text-slate-500 dark:text-slate-400">
+            {summary.attemptedQuestions} attempted · {summary.unansweredQuestions} not attempted · {summary.totalQuestions} sampled
+          </p>
+          <p className="text-sm text-slate-500 dark:text-slate-400 mt-2">
+            {result.score}% of the full sample was correct. Only these questions were checked — not your overall language level.
+          </p>
+          <p className="text-sm text-slate-500 dark:text-slate-400 mt-2">
+            {timeLimit > 0 ? `${timeLimit}-minute time limit` : 'Untimed'} · {formatTime(result.durationSeconds)} spent
+            {' '}· {xpWarning ? 'XP not confirmed' : savePending || saveError ? 'XP pending' : `+${xpEarned} XP`}
+          </p>
         </div>
 
-        <div className="grid grid-cols-3 gap-3 mb-4">
-          <div className="bg-white dark:bg-slate-800 rounded-2xl shadow p-4 text-center">
-            <div className="text-2xl font-bold text-slate-800 dark:text-slate-100">
-              {result.correctAnswers}/{result.totalQuestions}
-            </div>
-            <div className="text-xs text-slate-500 dark:text-slate-400">Correct</div>
-          </div>
-          <div className="bg-white dark:bg-slate-800 rounded-2xl shadow p-4 text-center">
-            <div className="text-2xl font-bold text-slate-800 dark:text-slate-100">
-              {formatTime(result.durationSeconds)}
-            </div>
-            <div className="text-xs text-slate-500 dark:text-slate-400">Time</div>
-          </div>
-          <div className="bg-white dark:bg-slate-800 rounded-2xl shadow p-4 text-center">
-            <div className="text-2xl font-bold text-amber-500">+{xpEarned}</div>
-            <div className="text-xs text-slate-500 dark:text-slate-400">XP</div>
-          </div>
-        </div>
+        <section className="mb-4 text-sm">
+          <h3 className="font-semibold text-slate-800 dark:text-slate-100 mb-2">What this check covered</h3>
+          <ul className="space-y-2 text-slate-700 dark:text-slate-200">
+            {summary.categories.map((category) => (
+              <li key={category.category}>
+                {CATEGORY_LABELS[category.category]}: {category.attempted > 0
+                  ? `${category.correct}/${category.attempted} correct`
+                  : 'no questions attempted'}
+                {' '}· {category.attempted} attempted · {category.sampled} sampled
+              </li>
+            ))}
+          </ul>
+          {contentLimits.length > 0 && (
+            <p className="text-slate-500 dark:text-slate-400 mt-2">Content available: {contentLimits.join('; ')}.</p>
+          )}
+          {sources.length > 0 && (
+            <details className="mt-2">
+              <summary className="min-h-[44px] flex items-center cursor-pointer font-medium text-indigo-600 dark:text-indigo-400">
+                Sampled lessons ({sources.length})
+              </summary>
+              <ul>
+                {sources.map((question) => (
+                  <li key={`${question.category}/${question.lessonId}`}>
+                    <Link
+                      to={question.category === 'grammar' ? grammarLessonRoute(question.lessonId!) : vocabLessonRoute(question.lessonId!)}
+                      className="inline-flex min-h-[44px] items-center text-indigo-600 dark:text-indigo-400 hover:underline"
+                    >
+                      {CATEGORY_LABELS[question.category]} · {question.lessonTitle || question.lessonId}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </details>
+          )}
+          {questions.some((question) => !question.lessonId) && (
+            <p className="text-slate-500 dark:text-slate-400 mt-2">Some source lessons were not recorded for this sample.</p>
+          )}
+        </section>
 
-        {guided.isGuided ? (
-          <GuidedCompletionActions guided={guided} onPracticeAgain={handleRestart} />
+        <section className="mb-4">
+          <h3 className="font-semibold text-slate-800 dark:text-slate-100 mb-2">A useful next step</h3>
+          <p className="text-sm text-slate-700 dark:text-slate-200 mb-2">
+            {missed.length > 0
+              ? 'Revisit a missed prompt, compare your choice with the reference, then open its lesson if you want more context.'
+              : unattempted.length > 0
+                ? 'Explore an unattempted prompt below, or try an untimed check when you have more time.'
+                : 'You answered this sample correctly. Revisit a source lesson in context, or try a different sample when you are ready.'}
+          </p>
+          {reviewGroups.filter((group) => group.items.length > 0).map((group) => (
+            <details key={group.label} className="border-t border-slate-200 dark:border-white/10">
+              <summary className="min-h-[44px] flex items-center cursor-pointer font-medium text-indigo-600 dark:text-indigo-400">
+                {group.label} ({group.items.length})
+              </summary>
+              <ol className="divide-y divide-slate-200 dark:divide-white/10">
+                {group.items.map(({ question, index }) => (
+                  <li key={question.id} className="py-3 space-y-2 text-sm text-slate-700 dark:text-slate-200">
+                    <p dir={question.questionDirection === 'target' && isRTL(result.language) ? 'rtl' : 'ltr'} className="font-medium">
+                      {question.question}
+                    </p>
+                    {answers[index] != null && (
+                      <p>Your choice: <bdi dir={question.targetOptionIndices?.includes(answers[index]!) && isRTL(result.language) ? 'rtl' : 'auto'}>{question.options[answers[index]!]}</bdi></p>
+                    )}
+                    <p>Reference answer: <bdi dir={question.targetOptionIndices?.includes(question.correctIndex) && isRTL(result.language) ? 'rtl' : 'auto'}>{question.options[question.correctIndex]}</bdi></p>
+                    {question.lessonId && (
+                      <Link
+                        to={question.category === 'grammar' ? grammarLessonRoute(question.lessonId) : vocabLessonRoute(question.lessonId)}
+                        className="inline-flex min-h-[44px] items-center text-indigo-600 dark:text-indigo-400 hover:underline"
+                      >
+                        Open lesson: {question.lessonTitle || question.lessonId}
+                      </Link>
+                    )}
+                  </li>
+                ))}
+              </ol>
+            </details>
+          ))}
+          <p className="text-sm text-slate-500 dark:text-slate-400 mt-2">
+            These question details are available until you leave this result. Once saved, history keeps only the aggregate sample score.
+          </p>
+        </section>
+
+        {!savePending && !saveError && (guided.isGuided ? (
+          <GuidedCompletionActions guided={pathSaveError ? { ...guided, completionError: pathSaveError } : guided} onPracticeAgain={handleRestart} />
         ) : (
           <button
             onClick={handleRestart}
-            className="w-full bg-indigo-600 text-white px-5 py-3 rounded-xl hover:bg-indigo-700 font-semibold press-feedback transition-colors"
+            className="w-full min-h-[44px] bg-indigo-600 text-white px-5 py-3 rounded-xl hover:bg-indigo-700 font-semibold press-feedback transition-colors"
           >
-            Take Another Test
+            Try another practice check
           </button>
-        )}
-        <PracticeWordCapture language={result.language} words={assessmentVocabulary(questions)} source="proficiency-results" />
+        ))}
+        <PracticeWordCapture language={result.language} words={assessmentVocabulary(questions)} source="practice-check-results" />
       </div>
     );
   }
 
   return null;
-}
-
-function levelColor(level: string): string {
-  switch (level) {
-    case 'advanced': return 'bg-purple-100 dark:bg-purple-900/40 text-purple-700 dark:text-purple-300';
-    case 'intermediate': return 'bg-blue-100 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300';
-    case 'elementary': return 'bg-green-100 dark:bg-green-900/40 text-green-700 dark:text-green-300';
-    default: return 'bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300';
-  }
 }

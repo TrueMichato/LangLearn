@@ -11,7 +11,10 @@ export async function getAllTexts(language?: string): Promise<Text[]> {
 }
 
 export async function deleteText(id: number): Promise<void> {
-  await db.texts.delete(id);
+  await db.transaction('rw', db.texts, db.readingProgress, async () => {
+    await db.readingProgress.filter((row) => row.source?.kind === 'saved' && row.source.textId === id).delete();
+    await db.texts.delete(id);
+  });
 }
 
 export async function getTextCount(): Promise<number> {

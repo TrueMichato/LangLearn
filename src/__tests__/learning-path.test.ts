@@ -88,6 +88,73 @@ const CURRICULUM_BRANCHES = [
   ['ro', 'everyday-expression', ['Everyday actions', 'Your social world']],
 ] as const;
 
+describe('advisory script preparation', () => {
+  it.each(['ja', 'ru', 'ar'])('%s recommends scripts without locking first words', (language) => {
+    const manifest = LEARNING_PATHS[language];
+    const content = {
+      grammar: indexFor(GRAMMAR_INDEXES, language),
+      vocab: indexFor(VOCAB_INDEXES, language),
+    };
+    const path = resolvePath(manifest, content, {
+      progress: [], completedLetters: new Set(),
+    });
+    expect(path.recommendedNodeId).toBe(`letters:${manifest.letterPrerequisites[0]}`);
+    expect(path.units[0].nodes.every((node) => node.requirement === 'preparation')).toBe(true);
+    expect(path.units[1].nodes[0]).toMatchObject({ kind: 'vocab', state: 'available' });
+    expect(path.units[1].nodes[1].state).toBe('locked');
+
+    const continued = resolvePath(manifest, content, {
+      progress: [], completedLetters: new Set(), scriptPreparationDeferred: true,
+    });
+    expect(continued.recommendedNodeId).toBe(path.units[1].nodes[0].id);
+    expect(continued.units[0].nodes).toEqual(path.units[0].nodes);
+    expect(continued.completedCount).toBe(0);
+    expect(continued.units[0].nodes.every((node) => node.state !== 'completed')).toBe(true);
+  });
+
+  it('keeps Russian regular grammar gates and test-out independent of alphabet sounds', () => {
+    const path = resolvePath(LEARNING_PATHS.ru, {
+      grammar: indexFor(GRAMMAR_INDEXES, 'ru'),
+      vocab: indexFor(VOCAB_INDEXES, 'ru'),
+    }, {
+      progress: [progress('vocab/greetings', 'ru')],
+      completedLetters: new Set(), scriptPreparationDeferred: true,
+    });
+    expect(path.recommendedNodeId).toBe('grammar:pronunciation-rules');
+    expect(path.units[0].nodes.find((node) => node.id === 'grammar:alphabet-sounds'))
+      .toMatchObject({ state: 'available', requirement: 'preparation' });
+    expect(path.units[1].nodes.find((node) => node.id === 'vocab:numbers')?.state).toBe('locked');
+    expect(path.units[0].checkpoints[0]).toMatchObject({ lessonIds: ['alphabet-sounds'], state: 'available' });
+    expect(path.units[1].checkpoints.find((option) => option.kind === 'grammar'))
+      .toMatchObject({ lessonIds: ['pronunciation-rules'], state: 'available' });
+  });
+
+  it.each(['es', 'pt', 'ro'])('%s does not change when script preparation is deferred', (language) => {
+    const manifest = LEARNING_PATHS[language];
+    const content = {
+      grammar: indexFor(GRAMMAR_INDEXES, language),
+      vocab: indexFor(VOCAB_INDEXES, language),
+    };
+    const resolution = { progress: [], completedLetters: new Set<string>() };
+    const path = resolvePath(manifest, content, resolution);
+    expect(resolvePath(manifest, content, { ...resolution, scriptPreparationDeferred: true })).toEqual(path);
+    expect(path.scriptPreparation).toBeUndefined();
+  });
+
+  it('does not count optional script work as completed course work ahead of the current lesson', () => {
+    const path = resolvePath(LEARNING_PATHS.ja, {
+      grammar: indexFor(GRAMMAR_INDEXES, 'ja'),
+      vocab: indexFor(VOCAB_INDEXES, 'ja'),
+    }, {
+      progress: [], completedLetters: new Set(['Katakana']), scriptPreparationDeferred: true,
+    });
+    expect(path.units[0].nodes[1].state).toBe('completed');
+    expect(path.completedCount).toBe(0);
+    expect(path.completedAheadCount).toBe(0);
+    expect(path.recommendedNodeId).toBe('vocab:greetings');
+  });
+});
+
 describe('learning path manifests', () => {
   it.each(Object.entries(LEARNING_PATHS))(
     '%s references real, non-duplicated lessons and alphabets',

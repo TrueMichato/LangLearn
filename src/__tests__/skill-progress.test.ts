@@ -1,7 +1,7 @@
 import 'fake-indexeddb/auto';
 import Dexie from 'dexie';
 import { beforeEach, describe, expect, it } from 'vitest';
-import { db, DB_NAME } from '../db/schema';
+import { db, DB_NAME, CURRENT_SCHEMA_VERSION } from '../db/schema';
 import { buildBackupPayload, importAllData } from '../db/backup';
 import { loadSkillProgress, recordSkillAnswer } from '../db/skill-progress';
 
@@ -38,8 +38,8 @@ describe('local skill counters', () => {
     expect((await loadSkillProgress('es', 'minimal-pairs'))[0]).toMatchObject({ attempts: 2, correct: 1 });
   });
 
-  it('adds one schema upgrade and freezes pre-upgrade evidence before resolving new gates', async () => {
-    const stores = Object.fromEntries(db.tables.filter((table) => table.name !== 'skillProgress')
+  it('preserves the v12 evidence freeze through the additive reading-progress upgrade', async () => {
+    const stores = Object.fromEntries(db.tables.filter((table) => !['skillProgress', 'readingProgress'].includes(table.name))
       .map((table) => [table.name, [table.schema.primKey.src, ...table.schema.indexes.map((index) => index.src)].join(', ')]));
     await db.delete();
     const legacy = new Dexie(DB_NAME);
@@ -52,8 +52,9 @@ describe('local skill counters', () => {
 
     legacy.close();
     await db.open();
-    expect(db.verno).toBe(12);
+    expect(db.verno).toBe(CURRENT_SCHEMA_VERSION);
     expect(await db.skillProgress.count()).toBe(0);
+    expect(await db.readingProgress.count()).toBe(0);
     const frozen = JSON.parse((await db.settings.get('guided-path-source-v1/ja'))!.value);
     expect(frozen.progress).toHaveLength(1);
     await db.lessonProgress.clear();

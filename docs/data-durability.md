@@ -150,7 +150,7 @@ point-in-time replacement. These distinctions must remain understandable.
 
 1. Total origin clearing removes database, snapshots, capsules, local keys,
    preferences, and any pending upload together.
-2. The current “all data” format covers 13 live tables and four localStorage
+2. The pinned baseline “all data” format covers 13 live tables and four localStorage
    stores, not every persisted key or in-progress activity.
 3. localStorage settings/XP/set writes are not atomic with IndexedDB writes.
    Vocabulary receipts bridge one reward case, not every side effect.
@@ -171,11 +171,25 @@ These are design inputs, not changes silently included in PR #49.
 
 ## 3. Complete persistence inventory
 
-The current database is **`LangLearnDB`, schema v12**, not the v8/ten-table
-description still present in some developer material:
+The pinned baseline database is **`LangLearnDB`, schema v12**, not the older
+v8/ten-table description:
 [constants](https://github.com/truemichato/langlearn/blob/4a6965917943138189366fa1a3a9ddf6ce967fea/src/db/constants.ts#L1-L4),
 [all entity declarations](https://github.com/truemichato/langlearn/blob/4a6965917943138189366fa1a3a9ddf6ce967fea/src/db/schema.ts#L24-L206),
 [v12 stores](https://github.com/truemichato/langlearn/blob/4a6965917943138189366fa1a3a9ddf6ce967fea/src/db/schema.ts#L372-L417).
+
+**Current learning-flow update:** schema **v13** adds `readingProgress`, making
+14 full-export data tables plus the non-recursively-exported `snapshots` table.
+It retains exact text/source identity, paragraph position, purpose,
+highlighting and optional reflection. Current full backups, independent
+encrypted payloads and local capsules include it; older schema payloads remain
+supported. Compact capsules still omit `reviewLog`. Reading-only progress now
+counts as recoverable history. Saved-text merges remap its text references;
+conflicting nonempty reflections are rejected instead of overwritten.
+Script-preparation deferral is the settings record
+`guided-script-deferred-v1/<language>` with string value `'true'`, not a
+completion record. These are additions to the historical inventory below,
+not claims that the pinned commit already contained them. See
+[reading continuity](./knowledge-practice.md#reading-purpose-and-continuation).
 
 ### 3.1 Every Dexie table
 
@@ -201,8 +215,8 @@ The [actual export registry](https://github.com/truemichato/langlearn/blob/4a696
 | `guidedActivityProgress`; language/milestone string ID | Activity/completion/attempts/items/best score | Yes / yes | Authoritative |
 | `skillProgress`; string ID | Language, numbers/minimal-pair activity, skill, attempts/correct | Yes / yes | Authoritative |
 
-The current full export intentionally excludes `snapshots` to prevent recursive
-growth. The capsule includes 12 table families, excludes `reviewLog` and
+The full export intentionally excludes `snapshots` to prevent recursive
+growth. The pinned baseline capsule includes 12 table families, excludes `reviewLog` and
 `snapshots`, includes **only XP** from localStorage, and refuses payloads above
 2,500,000 encoded bytes
 ([limits/shape](https://github.com/truemichato/langlearn/blob/4a6965917943138189366fa1a3a9ddf6ce967fea/src/db/recovery-capsule.ts#L11-L40),

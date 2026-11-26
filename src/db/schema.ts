@@ -1,6 +1,7 @@
 import type { StudyActivity } from '../lib/activities';
 import Dexie, { type EntityTable } from 'dexie';
-import { CURRENT_SCHEMA_VERSION, DB_NAME } from './constants';
+import { DB_NAME } from './constants';
+import type { ReadingProgress } from './reading-progress';
 import type { LearningPathActivityKind } from '../types/learning-path';
 
 export interface LessonItemSource {
@@ -62,6 +63,7 @@ export interface Text {
   title: string;
   content: string;
   createdAt: string;
+  translation?: string;
 }
 
 export interface StudySession {
@@ -128,7 +130,7 @@ export interface TestHistory {
   language: string;
   type: 'vocabulary' | 'grammar' | 'mixed' | 'full';
   score: number;         // 0-100
-  level: string;         // 'beginner' | 'elementary' | 'intermediate' | 'advanced'
+  level: string;         // Legacy estimate, or 'practice-check-v1' for scoped practice results.
   totalQuestions: number;
   correctAnswers: number;
   durationSeconds: number;
@@ -203,6 +205,7 @@ const db = new Dexie(DB_NAME) as Dexie & {
   snapshots: EntityTable<Snapshot, 'id'>;
   guidedActivityProgress: EntityTable<GuidedActivityProgress, 'id'>;
   skillProgress: EntityTable<SkillProgress, 'id'>;
+  readingProgress: EntityTable<ReadingProgress, 'id'>;
 };
 
 db.version(1).stores({
@@ -369,7 +372,7 @@ db.version(11).stores({
   guidedActivityProgress: 'id, language, milestoneId, activity, completedAt',
 });
 
-db.version(CURRENT_SCHEMA_VERSION).stores({
+db.version(12).stores({
   words: '++id, [language+createdAt], [word+language], language, word, createdAt, *tags, type',
   reviews: '++id, [wordId+nextReviewDate], wordId, nextReviewDate',
   texts: '++id, language, createdAt',
@@ -412,6 +415,10 @@ db.version(CURRENT_SCHEMA_VERSION).stores({
       }),
     });
   }
+});
+
+db.version(13).stores({
+  readingProgress: 'id, language, updatedAt',
 });
 
 /** Schema version the running bundle expects. Snapshots record it so a restore

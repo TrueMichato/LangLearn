@@ -1,5 +1,5 @@
 import { independentBackupStore, type IndependentBackupStore } from '../db/independent-backup-store';
-import { payloadContent, readIndependentPayload, stableBackupJSON, validateIndependentPayload } from '../db/independent-backup-payload';
+import { payloadContent, readIndependentPayload, stableBackupJSON, upgradeIndependentPayload, validateIndependentPayload } from '../db/independent-backup-payload';
 import { useSettingsStore } from '../stores/settingsStore';
 import { useXPStore } from '../stores/xpStore';
 import { useBadgeStore } from '../stores/badgeStore';
@@ -15,7 +15,8 @@ export async function finishIndependentRestore(
   if (!journal || journal.phase !== 'verified') {
     throw new BackupError('restore-incomplete', 'Recovery has not passed verification. Retry the original checkpoint before continuing study.');
   }
-  const { payload } = await decodeBackupCheckpoint(journal.envelope, journal.kit);
+  const decoded = await decodeBackupCheckpoint(journal.envelope, journal.kit);
+  const payload = upgradeIndependentPayload(decoded.payload);
   const current = validateIndependentPayload(await readIndependentPayload(storage));
   if (payloadContent(current) !== payloadContent(payload)) {
     throw new BackupError('restore-changed', 'Saved data changed after recovery verification. Keep this profile and its safety copy; normal study remains paused rather than hiding a conflict.');

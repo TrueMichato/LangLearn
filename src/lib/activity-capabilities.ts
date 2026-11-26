@@ -87,7 +87,7 @@ const DEFINITIONS: Record<
     session: { minItems: 1, targetItems: 1, maxItems: 3 },
   },
   tests: {
-    label: 'Tests',
+    label: 'Practice checks',
     route: ROUTES.tests,
     session: { minItems: 10, targetItems: 20, maxItems: 50 },
   },

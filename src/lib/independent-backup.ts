@@ -4,7 +4,7 @@ import {
   assertFreshRestoreTarget, captureIndependentPayload, independentProgressRows,
   isIndependentStorageKey, payloadContent, readIndependentPayload, validateIndependentPayload,
   independentTablesContent, readIndependentStorage,
-  stableBackupJSON,
+  stableBackupJSON, upgradeIndependentPayload,
   type IndependentBackupPayload,
 } from '../db/independent-backup-payload';
 import { independentBackupStore, type BackupClientState, type IndependentBackupStore, type RestoreJournal } from '../db/independent-backup-store';
@@ -308,9 +308,10 @@ function assertRetryUnchanged(
 ): void {
   // Main IDB installation is all-or-nothing. A mixture/subset is not an interrupted
   // installation; it is an external edit or deletion, which recovery must preserve.
+  const comparableSafety = upgradeIndependentPayload(validateIndependentPayload(safety));
   const tables = independentTablesContent(current);
   if (tables !== independentTablesContent(incoming) &&
-    (phase !== 'prepared' || tables !== independentTablesContent(safety))) {
+    (phase !== 'prepared' || tables !== independentTablesContent(comparableSafety))) {
     throw new BackupError('restore-conflict', 'Local data was changed or deleted during recovery. It was preserved. Export the safety copy and recover in a fresh profile instead of replacing it.');
   }
   if (safetyStorageKeys.some((key) => Object.hasOwn(incoming.localStorage, key) && !currentStorageKeys.includes(key))) {
@@ -402,7 +403,8 @@ export async function restoreIndependentCheckpoint(
   options: { store?: IndependentBackupStore; storage?: Storage; retry?: boolean } = {},
 ): Promise<void> {
   const kit = parseRecoveryKit(kitValue);
-  const { payload } = await decodeBackupCheckpoint(envelope, kit);
+  const decoded = await decodeBackupCheckpoint(envelope, kit);
+  const payload = upgradeIndependentPayload(decoded.payload);
   const store = options.store ?? independentBackupStore;
   const storage = options.storage ?? localStorage;
   const restoreWithFence = async (fence: ReturnType<typeof observeRestoreStorageWrites>) => {

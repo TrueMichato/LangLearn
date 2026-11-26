@@ -85,6 +85,8 @@ import { esClozeSentences } from '../data/cloze';
 import TypeBuilder from '../components/sentences/TypeBuilder';
 import TileBuilder from '../components/sentences/TileBuilder';
 import PracticeWordCapture from '../components/common/PracticeWordCapture';
+import SentenceComparison from '../components/sentences/SentenceComparison';
+import InputActivityLink from '../components/learn/InputActivityLink';
 
 const SentenceBuilder = () => SentenceBuilderSession({ current: useCurrentLanguage() });
 const ClozePractice = () => ClozePracticeSession({ current: useCurrentLanguage() });
@@ -235,13 +237,93 @@ describe('page and reveal regressions', () => {
     expect(elements(tree).some((element) => element.type === PracticeWordCapture)).toBe(false);
     elements(tree).find((element) => element.type === 'textarea')!.props.onChange!({ target: { value: 'attempt' } });
     tree = hooks.render(TranslationPractice);
-    button(tree, 'Check')();
+    button(tree, 'Compare answers')();
     tree = hooks.render(TranslationPractice);
     expect(elements(tree).some((element) => element.type === PracticeWordCapture)).toBe(true);
     const grade = elements(tree).find((element) => element.type === 'button' && text(element).includes('Got it'))!;
     grade.props.onClick!();
+    expect(mocks.addXP).not.toHaveBeenCalled();
+    tree = hooks.render(TranslationPractice);
+    button(tree, 'Finish session')();
     expect(mocks.addXP).toHaveBeenCalledWith(25);
     expect(mocks.complete).toHaveBeenCalledWith({ itemsCompleted: 1, score: 100 });
+  });
+  it('accepts a self-rated equivalent translation without automatically calling it incorrect', async () => {
+    mocks.descriptor = { seed: 'guided', language: 'es', session: bounds, scope: { itemIds: ['es-e01'] } };
+    let tree = hooks.render(TranslationPractice);
+    await button(tree, 'Start Practice')();
+    tree = hooks.render(TranslationPractice);
+    elements(tree).find((element) => element.type === 'textarea')!.props.onChange!({ target: { value: 'Hola, ¿qué tal?' } });
+    tree = hooks.render(TranslationPractice);
+    button(tree, 'Compare answers')();
+    tree = hooks.render(TranslationPractice);
+    expect(text(tree)).not.toMatch(/incorrect|wrong answer/i);
+    expect(mocks.addXP).not.toHaveBeenCalled();
+    const grade = elements(tree).find((element) => element.type === 'button' && text(element).includes('Got it'))!;
+    grade.props.onClick!();
+    tree = hooks.render(TranslationPractice);
+    button(tree, 'Finish session')();
+    expect(mocks.addXP).toHaveBeenCalledWith(25);
+    expect(mocks.complete).toHaveBeenCalledWith({ itemsCompleted: 1, score: 100 });
+  });
+  it('translation retries preserve the first rating and only finish once', async () => {
+    mocks.descriptor = { seed: 'guided', language: 'es', session: bounds, scope: { itemIds: ['es-e01'] } };
+    const render = () => hooks.render(TranslationPractice);
+    let tree = render();
+    await button(tree, 'Start Practice')();
+    tree = render();
+    elements(tree).find((element) => element.type === 'textarea')!.props.onChange!({ target: { value: 'an attempt' } });
+    tree = render();
+    button(tree, 'Compare answers')();
+    tree = render();
+    elements(tree).find((element) => element.type === 'button' && text(element).includes('Partially'))!.props.onClick!();
+    tree = render();
+    button(tree, 'Retry this sentence')();
+    tree = render();
+    expect(elements(tree).some((element) => element.type === PracticeWordCapture)).toBe(false);
+    expect(text(tree)).toContain('Retry practice');
+    expect(mocks.addXP).not.toHaveBeenCalled();
+    expect(mocks.complete).not.toHaveBeenCalled();
+    elements(tree).find((element) => element.type === 'textarea')!.props.onChange!({ target: { value: 'Hola ¿cómo estás?' } });
+    tree = render();
+    button(tree, 'Compare answers')();
+    tree = render();
+    expect(elements(tree).some((element) => element.type === 'button' && text(element).includes('Got it'))).toBe(false);
+    const finish = button(tree, 'Finish session');
+    finish();
+    finish();
+    expect(mocks.addXP).toHaveBeenCalledExactlyOnceWith(22);
+    expect(mocks.complete).toHaveBeenCalledExactlyOnceWith({ itemsCompleted: 1, score: 33 });
+    expect(mocks.load).toHaveBeenCalledTimes(1);
+  });
+  it('translation advances once per sentence and starts the next with a fresh first rating', async () => {
+    mocks.descriptor = {
+      seed: 'guided', language: 'es', session: { minItems: 2, targetItems: 2, maxItems: 2 },
+      scope: { itemIds: ['es-e01', 'es-e02'] },
+    };
+    const render = () => hooks.render(TranslationPractice);
+    let tree = render();
+    await button(tree, 'Start Practice')();
+    for (const [index, label] of ['Partially', 'Got it'].entries()) {
+      tree = render();
+      expect(text(tree)).not.toContain('Retry practice');
+      elements(tree).find((element) => element.type === 'textarea')!.props.onChange!({ target: { value: 'my answer' } });
+      tree = render();
+      button(tree, 'Compare answers')();
+      tree = render();
+      const rate = elements(tree).find((element) => element.type === 'button' && text(element).includes(label))!.props.onClick!;
+      rate();
+      rate();
+      tree = render();
+      const advance = button(tree, index === 0 ? 'Next sentence' : 'Finish session');
+      advance();
+      advance();
+      if (index === 0) expect(mocks.addXP).not.toHaveBeenCalled();
+    }
+    expect(mocks.addXP).toHaveBeenCalledExactlyOnceWith(27);
+    expect(mocks.complete).toHaveBeenCalledExactlyOnceWith({ itemsCompleted: 2, score: 67 });
+    expect(elements(render()).find((element) => element.type === InputActivityLink)?.props)
+      .toMatchObject({ language: 'es' });
   });
   it('cloze reveals metadata only after answering and keeps a wrong answer in the frozen attempt', async () => {
     mocks.descriptor = { seed: 'guided', language: 'es', session: bounds, scope: { difficulty: 'beginner' } };
@@ -273,6 +355,95 @@ describe('page and reveal regressions', () => {
     expect(elements(tree).some((element) => element.type === PracticeWordCapture)).toBe(true);
     button(tree, 'Next →')();
     expect(result).toHaveBeenCalledWith(true);
+  });
+  it.each([
+    { first: 'wrong', retry: 'AGUA', firstCorrect: false, feedback: 'Matches the practice target' },
+    { first: 'agua', retry: 'wrong', firstCorrect: true, feedback: 'Not a match yet' },
+  ])('typing retry preserves $firstCorrect first-check result without duplicating completion', ({ first, retry, firstCorrect, feedback }) => {
+    const sentence: PracticeSentence = { id: 'one', english: 'Water', target: 'agua', targetWords: ['agua'], reading: '', difficulty: 'easy' };
+    const result = vi.fn();
+    const render = () => hooks.render(() => TypeBuilder({ sentence, language: 'es', onResult: result }));
+    let tree = render();
+    elements(tree).find((element) => element.type === 'input')!.props.onChange!({ target: { value: first } });
+    tree = render();
+    button(tree, 'Check')();
+    tree = render();
+    button(tree, 'Compare answers')();
+    tree = render();
+    const comparison = elements(tree).find((element) => element.type === SentenceComparison)!;
+    expect(comparison.props.answer).toBe(first);
+    expect(comparison.props.mode).toBe('constrained');
+    button(tree, 'Retry this sentence')();
+    tree = render();
+    expect(text(tree)).toContain('Retry practice');
+    expect(elements(tree).some((element) => element.type === PracticeWordCapture)).toBe(false);
+    elements(tree).find((element) => element.type === 'input')!.props.onChange!({ target: { value: retry } });
+    tree = render();
+    button(tree, 'Check')();
+    tree = render();
+    expect(text(tree)).toContain(feedback);
+    expect(result).not.toHaveBeenCalled();
+    const next = button(tree, 'Next →');
+    next();
+    next();
+    expect(result).toHaveBeenCalledExactlyOnceWith(firstCorrect);
+  });
+  it('optional translation alternatives do not broaden constrained typing grading', () => {
+    const sentence: PracticeSentence = {
+      id: 'one', english: 'Hello, how are you?', target: 'Hola ¿cómo estás?',
+      targetWords: ['Hola', '¿cómo', 'estás?'], reading: '', difficulty: 'easy',
+      reviewedFeedback: { alternatives: [{ target: 'Hola, ¿qué tal?' }] },
+    };
+    const result = vi.fn();
+    const render = () => hooks.render(() => TypeBuilder({ sentence, language: 'es', onResult: result }));
+    let tree = render();
+    elements(tree).find((element) => element.type === 'input')!.props.onChange!({ target: { value: 'Hola, ¿qué tal?' } });
+    tree = render();
+    button(tree, 'Check')();
+    tree = render();
+    expect(text(tree)).toContain('Not a match yet');
+    button(tree, 'Next →')();
+    expect(result).toHaveBeenCalledExactlyOnceWith(false);
+  });
+  it('a correct tile retry preserves the missed first check and restores all tiles', () => {
+    const sentence: PracticeSentence = { id: 'one', english: 'Cold water', target: 'agua fría', targetWords: ['agua', 'fría'], reading: '', difficulty: 'easy' };
+    const result = vi.fn();
+    const render = () => hooks.render(() => TileBuilder({ sentence, language: 'es', allSentences: [sentence], onResult: result }));
+    let tree = render();
+    button(tree, 'fría')();
+    tree = render();
+    button(tree, 'agua')();
+    tree = render();
+    button(tree, 'Check')();
+    tree = render();
+    button(tree, 'Retry this sentence')();
+    tree = render();
+    expect(text(tree)).toContain('Retry practice');
+    button(tree, 'agua')();
+    tree = render();
+    button(tree, 'fría')();
+    tree = render();
+    button(tree, 'Check')();
+    tree = render();
+    expect(text(tree)).toContain('Matches the practice target');
+    const next = button(tree, 'Next →');
+    next();
+    next();
+    expect(result).toHaveBeenCalledExactlyOnceWith(false);
+  });
+  it('sentence completion cannot double-award XP or guided progress from a repeated result', async () => {
+    mocks.descriptor = { seed: 'guided', language: 'es', session: bounds, scope: { itemIds: ['es-e01'] } };
+    let tree = hooks.render(SentenceBuilder);
+    await button(tree, 'Start Practice')();
+    tree = hooks.render(SentenceBuilder);
+    const builder = elements(tree).find((element) => element.type === TileBuilder)!;
+    const result = builder.props.onResult as (correct: boolean) => void;
+    result(false);
+    result(true);
+    expect(mocks.addXP).toHaveBeenCalledExactlyOnceWith(20);
+    expect(mocks.complete).toHaveBeenCalledExactlyOnceWith({ itemsCompleted: 1, score: 0 });
+    expect(elements(hooks.render(SentenceBuilder)).find((element) => element.type === InputActivityLink)?.props)
+      .toMatchObject({ language: 'es' });
   });
   it('conjugation candidates preserve selected forms and real lemma metadata, not English prompt tokens', () => {
     let tree = hooks.render(Conjugations);

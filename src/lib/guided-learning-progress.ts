@@ -1,4 +1,5 @@
 import { markLessonComplete } from '../db/lessons';
+import { db } from '../db/schema';
 import { NEXT_GUIDED_GROUP } from './routes';
 import { notifyBackupSourceChanged } from './backup-source';
 
@@ -23,6 +24,20 @@ const GROUP_ORDER = [
 
 function storageKey(alphabetName: string, language: string): string {
   return `langlearn-guided-${language}-${alphabetName}`;
+}
+
+function scriptDeferralKey(language: string): string {
+  return `guided-script-deferred-v1/${language}`;
+}
+
+export async function loadScriptPreparationDeferred(language: string): Promise<boolean> {
+  return (await db.settings.get(scriptDeferralKey(language)))?.value === 'true';
+}
+
+/** Choosing lessons changes recommendations, never script progress or evidence. */
+export async function deferScriptPreparation(language: string): Promise<void> {
+  await db.settings.put({ key: scriptDeferralKey(language), value: 'true' });
+  notifyBackupSourceChanged();
 }
 
 export function guidedLessonId(alphabetName: string): string {

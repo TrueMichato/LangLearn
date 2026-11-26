@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { loadHomeLearningState, resolveHomePrimaryAction, type HomeLearningState } from '../../lib/home-primary-action';
+import { getInputRecommendation } from '../../lib/learn-activity-recommendations';
 
 interface Props {
   dueCards: number;
@@ -13,6 +14,7 @@ export function HomeActionPanel({ dueCards, language, learning, onRetry }: Props
 }) {
   const action = resolveHomePrimaryAction({ dueCards, language, learning });
   const saved = dueCards > 0 ? resolveHomePrimaryAction({ dueCards: 0, language, learning }) : null;
+  const input = getInputRecommendation(language, learning.status === 'ready' ? learning.path : null);
   const secondary = 'min-h-[44px] rounded-xl px-2 py-2 text-sm font-medium text-indigo-600 dark:text-indigo-400 hover:bg-slate-100 dark:hover:bg-slate-700';
 
   return (
@@ -40,6 +42,15 @@ export function HomeActionPanel({ dueCards, language, learning, onRetry }: Props
       </div>}
       {dueCards === 0 && action.kind !== 'loading' && action.kind !== 'error' && (
         <p className="mt-3 text-xs text-slate-500 dark:text-slate-400">No reviews are due right now.</p>
+      )}
+      {input && (
+        <div className="mt-4 border-t border-slate-200/70 pt-3 dark:border-white/10">
+          <p className="text-sm text-slate-500 dark:text-slate-400">
+            {dueCards > 0 ? 'Reviews can wait if you would rather read or listen.' : 'Prefer something different?'}
+          </p>
+          <Link to={input.to} className={`${secondary} inline-flex items-center`}>{input.title}</Link>
+          <p className="text-xs text-slate-500 dark:text-slate-400">{input.subtitle}</p>
+        </div>
       )}
     </section>
   );

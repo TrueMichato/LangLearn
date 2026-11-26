@@ -8,6 +8,7 @@ import { loadLatestVocabAttemptSummary, type VocabAttemptSummary } from '../lib/
 import { loadLearningPath } from '../lib/learning-path';
 import type { LearningPath } from '../types/learning-path';
 import type { DashboardActivity } from '../lib/dashboard-gates';
+import { getLanguageLabel } from '../lib/languages';
 
 vi.mock('../lib/vocab-lesson-attempt', () => ({ loadLatestVocabAttemptSummary: vi.fn() }));
 vi.mock('../lib/learning-path', () => ({ loadLearningPath: vi.fn() }));
@@ -58,6 +59,21 @@ describe('Home primary action', () => {
     expect(html).not.toContain('Everyday words');
   });
 
+  it('offers input without clearing due reviews or abandoning a saved lesson', () => {
+    const html = renderPanel(ready, 120);
+    expect(html).toContain('120 cards ready for review');
+    expect(html).toContain('Reviews can wait');
+    expect(html).toContain('href="/listening"');
+    expect(html).toContain(`Try listening in ${getLanguageLabel('es')}`);
+    expect(html).toContain('A beginner-friendly option: choose Easy');
+    expect(html.indexOf('Open due reviews')).toBeLessThan(html.indexOf('Resume lesson'));
+    expect(html.indexOf('Resume lesson')).toBeLessThan(html.indexOf('Try listening'));
+    expect(renderPanel(ready, 2, 'ar')).toContain(`Try listening in ${getLanguageLabel('ar')}`);
+    expect(renderPanel(ready, 2, 'ar')).not.toContain(`Try listening in ${getLanguageLabel('es')}`);
+    expect(renderPanel({ status: 'ready', attempt: null, path: null }, 2, 'xx'))
+      .not.toContain('href="/listening"');
+  });
+
   it('uses the canonical recommended node and its direct instructional route, not a catalog', () => {
     const action = resolveHomePrimaryAction({ dueCards: 0, language: 'es', learning: { status: 'ready', attempt: null, path } });
     expect(action).toMatchObject({ kind: 'path', title: 'Next: Everyday words', route: '/vocab-lessons?lesson=next-lesson' });
@@ -70,6 +86,40 @@ describe('Home primary action', () => {
     };
     expect(resolveHomePrimaryAction({ dueCards: 0, language: 'ar', learning: { status: 'ready', attempt: null, path: scriptPath } }))
       .toMatchObject({ kind: 'path', route: '/letters/ar?mode=learn&alphabet=Arabic&group=next' });
+  });
+
+  it('honors lesson continuation while optional scripts remain unfinished', () => {
+    const continued: LearningPath = {
+      ...path, language: 'ja',
+      scriptPreparation: {
+        deferred: true, continueRoute: path.units[0].nodes[1].route,
+        returnRoute: '/letters/ja?mode=learn&alphabet=Hiragana&group=next',
+      },
+      units: [{
+        id: 'letters', title: 'Learn the script', description: '', strands: [], checkpoints: [],
+        nodes: [{
+          id: 'letters:Hiragana', kind: 'letters', lessonId: 'letters/Hiragana',
+          title: 'Hiragana', route: '/letters/ja?mode=learn&alphabet=Hiragana&group=next',
+          requirement: 'preparation', state: 'available', unitId: 'letters',
+        }],
+      }, ...path.units],
+    };
+    const learning: HomeLearningState = { status: 'ready', attempt: null, path: continued };
+    expect(resolveHomePrimaryAction({ dueCards: 0, language: 'ja', learning }))
+      .toMatchObject({ kind: 'path', title: 'Next: Everyday words' });
+    expect(resolveHomePrimaryAction({ dueCards: 3, language: 'ja', learning }).kind).toBe('due');
+    expect(resolveHomePrimaryAction({
+      dueCards: 0, language: 'ja',
+      learning: { ...learning, attempt: { ...saved, language: 'ja' } },
+    })).toMatchObject({ kind: 'resume', route: saved.route });
+
+    const complete = resolveHomePrimaryAction({
+      dueCards: 0, language: 'ja',
+      learning: { ...learning, path: { ...continued, recommendedNodeId: null, completedCount: continued.totalCount } },
+    });
+    expect(complete.kind).toBe('complete');
+    expect(complete.description).toContain('required steps are complete');
+    expect(complete.description).toContain('script preparation');
   });
 
   it('labels unconfirmed completion as finishing rather than starting another lesson', () => {

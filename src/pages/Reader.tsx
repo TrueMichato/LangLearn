@@ -1,13 +1,19 @@
 import { useState, useEffect, useCallback, useRef, useId } from 'react';
 import { db, type Text as TextRecord } from '../db/schema';
 import { saveWordsToVocabulary } from '../db/words';
-import { getTextCount } from '../db/texts';
+import {
+  isReadingProgress, matchesSavedReading, openReadingProgress, paragraphPositionAt,
+  readingProgressId, ReadingReflectionConflict, savedReadingSource, saveReadingProgress,
+  type ReadingProgress, type ReadingProgressChanges, type ReadingSource, type ReadingPurpose as Purpose,
+} from '../db/reading-progress';
 import { useTimerStore } from '../stores/timerStore';
 import { useSettingsStore } from '../stores/settingsStore';
 import { useCurrentLanguage } from '../hooks/useCurrentLanguage';
 import LanguagePicker from '../components/common/LanguagePicker';
 import WordLookupSheet from '../components/reader/WordLookupSheet';
 import TextLibrary from '../components/reader/TextLibrary';
+import ReadingPurpose from '../components/reader/ReadingPurpose';
+import ContinueReading from '../components/reader/ContinueReading';
 import { loadReaderSegments, type ReaderSegment } from '../lib/reader-segments';
 import FuriganaText from '../components/reader/FuriganaText';
 import { splitSentences, findSentenceAt, type SentenceSpan } from '../lib/sentences';
@@ -31,6 +37,11 @@ import { loadReaderStory } from '../lib/reader-coverage';
 import type { WordLookupDraft } from '../lib/word-lookup';
 
 type Tab = 'import' | 'library';
+interface ReadingSaveSession {
+  confirmed: ReadingProgress;
+  pending: ReadingProgressChanges;
+  queue: Promise<void>;
+}
 
 export default function ReaderPage() {
   const [tab, setTab] = useState<Tab>('import');
@@ -69,6 +80,14 @@ export default function ReaderPage() {
   const [ichiMoeOpen, setIchiMoeOpen] = useState(false);
   const [translation, setTranslation] = useState('');
   const [showBilingual, setShowBilingual] = useState(false);
+  const [readingProgress, setReadingProgress] = useState<ReadingProgress | null>(null);
+  const [purpose, setPurpose] = useState<Purpose>('main-idea');
+  const progressRef = useRef<ReadingProgress | null>(null);
+  const saveSessionRef = useRef<ReadingSaveSession | null>(null);
+  const [reflectionConflict, setReflectionConflict] = useState<ReadingProgress | null>(null);
+  const [progressError, setProgressError] = useState('');
+  const [progressNotice, setProgressNotice] = useState('');
+  const [resumePosition, setResumePosition] = useState<{ offset: number; revision: number }>();
   const [guidedReadingFinished, setGuidedReadingFinished] = useState(false);
   const [guidedReadySeed, setGuidedReadySeed] = useState('');
   const [guidedLoadError, setGuidedLoadError] = useState<{
@@ -132,6 +151,83 @@ export default function ReaderPage() {
     setTabReady(true);
   }, []);
 
+  const flushProgress = useCallback(() => {
+    const session = saveSessionRef.current;
+    if (!session) return;
+    session.queue = session.queue.then(async () => {
+      const changes = { ...session.pending };
+      if (Object.keys(changes).length === 0) return;
+      try {
+        const saved = await saveReadingProgress(session.confirmed, changes);
+        session.confirmed = saved;
+        for (const key of Object.keys(changes) as Array<keyof ReadingProgressChanges>) {
+          if (session.pending[key] === changes[key]) delete session.pending[key];
+        }
+        if (saveSessionRef.current !== session) return;
+        const next = { ...saved, ...session.pending };
+        progressRef.current = next;
+        setReadingProgress(next);
+        setPurpose(next.purpose);
+        setHighlightKnown(next.highlight);
+        setReflectionConflict(null);
+        setProgressError('');
+      } catch (error) {
+        if (saveSessionRef.current !== session) return;
+        setReflectionConflict(error instanceof ReadingReflectionConflict ? error.current : null);
+        setProgressError(error instanceof ReadingReflectionConflict ? error.message :
+          'Your latest place or reflection could not be saved. Keep this page open and retry. If the text changed or was deleted, reopen it from the library.');
+      }
+    });
+  }, []);
+
+  const updateProgress = useCallback((changes: ReadingProgressChanges) => {
+    const previous = progressRef.current;
+    const session = saveSessionRef.current;
+    if (!previous || !session || Object.entries(changes).every(([key, value]) => previous[key as keyof ReadingProgress] === value)) return;
+    session.pending = { ...session.pending, ...changes };
+    const next = { ...previous, ...changes };
+    progressRef.current = next;
+    setReadingProgress(next);
+    flushProgress();
+  }, [flushProgress]);
+
+  const recordPosition = useCallback((offset: number) => {
+    const progress = progressRef.current;
+    if (progress) updateProgress({ position: paragraphPositionAt(progress.content, offset) });
+  }, [updateProgress]);
+
+  const prepareProgress = useCallback(async (source: ReadingSource, readingTitle: string, content: string, request: number) => {
+    try {
+      const { progress: next, reason } = await openReadingProgress(source, readingTitle, content);
+      if (request !== openRequest.current) return;
+      saveSessionRef.current = { confirmed: next, pending: {}, queue: Promise.resolve() };
+      progressRef.current = next;
+      setReadingProgress(next);
+      setHighlightKnown(next.highlight);
+      setPurpose(next.purpose);
+      if (reason === 'changed') setProgressNotice('This text has changed. Opened at the beginning; your reflection is kept.');
+      else if (reason === 'restored') setProgressNotice('Your saved paragraph is ready. Reread or start over whenever you like.');
+      setResumePosition({ offset: next.position, revision: request });
+    } catch {
+      if (request === openRequest.current) setProgressError('Your reading place could not be loaded or saved. Reopen this text to retry; existing progress is unchanged.');
+    }
+  }, []);
+
+  function resolveReflectionConflict(keepDraft: boolean) {
+    const session = saveSessionRef.current;
+    if (!session || !reflectionConflict) return;
+    session.confirmed = reflectionConflict;
+    if (!keepDraft) delete session.pending.reflection;
+    const next = { ...reflectionConflict, ...session.pending };
+    progressRef.current = next;
+    setReadingProgress(next);
+    setPurpose(next.purpose);
+    setHighlightKnown(next.highlight);
+    setReflectionConflict(null);
+    setProgressError('');
+    flushProgress();
+  }
+
   const resetReadingState = useCallback(() => {
     openRequest.current++;
     setIsTokenizing(false);
@@ -155,6 +251,14 @@ export default function ReaderPage() {
     setIchiMoeOpen(false);
     setTranslation('');
     setShowBilingual(false);
+    progressRef.current = null;
+    saveSessionRef.current = null;
+    setReadingProgress(null);
+    setReflectionConflict(null);
+    setPurpose('main-idea');
+    setProgressError('');
+    setProgressNotice('');
+    setResumePosition(undefined);
     setGuidedReadingFinished(false);
   }, [logReadingSession]);
 
@@ -191,7 +295,10 @@ export default function ReaderPage() {
     setTitle(record.title);
     setLanguage(record.language);
     setSavedTextId(record.id ?? null);
+    setTranslation(record.translation ?? '');
     setSentences(splitSentences(record.content));
+    if (record.id !== undefined) await prepareProgress(savedReadingSource({ ...record, id: record.id }), record.title, record.content, request);
+    if (request !== openRequest.current) return;
 
     // Start tracking reading session
     const wordCount = record.content.split(/\s+/).filter(Boolean).length;
@@ -214,7 +321,17 @@ export default function ReaderPage() {
     setTitle(curatedTitle);
 
     try {
-      const content = await loadReaderStory(id, lang);
+      const source: ReadingSource = { kind: 'curated', language: lang, curatedId: id };
+      let retainedCopy = false;
+      let content: string;
+      try {
+        content = await loadReaderStory(id, lang);
+      } catch {
+        const previous = await db.readingProgress.get(readingProgressId(source));
+        if (!isReadingProgress(previous)) throw new Error('No retained story');
+        content = previous.content;
+        retainedCopy = true;
+      }
       if (request !== openRequest.current) return false;
       if (!content.trim()) {
         setReadingError('This story is empty. Please choose another text to read.');
@@ -222,6 +339,9 @@ export default function ReaderPage() {
       }
       setText(content);
       setSentences(splitSentences(content));
+      await prepareProgress(source, curatedTitle, content, request);
+      if (request !== openRequest.current) return false;
+      if (retainedCopy) setProgressNotice('The current story is unavailable. Reading your saved copy; its original wording and place are kept.');
 
       // Start tracking reading session
       const wordCount = content.split(/\s+/).filter(Boolean).length;
@@ -237,7 +357,30 @@ export default function ReaderPage() {
     } finally {
       if (request === openRequest.current) setIsTokenizing(false);
     }
-  }, [prepareReadingText, resetReadingState, setLanguage]);
+  }, [prepareReadingText, prepareProgress, resetReadingState, setLanguage]);
+
+  async function continueReading(progress: ReadingProgress) {
+    if (progress.source.kind === 'curated') {
+      await openCuratedText(progress.source.curatedId, progress.language, progress.title);
+      return;
+    }
+    try {
+      const record = await db.texts.get(progress.source.textId);
+      if (!matchesSavedReading(progress, record)) {
+        setReadingError('This saved text is missing or belongs to a different import. Its reading place and reflection are kept in your backup; no other text was opened.');
+        return;
+      }
+      await openTextFromLibrary(record!);
+    } catch {
+      setReadingError('This saved text could not be loaded. Your reading place is kept; please try again.');
+    }
+  }
+
+  function startOver() {
+    updateProgress({ position: 0 });
+    setResumePosition((previous) => ({ offset: 0, revision: (previous?.revision ?? 0) + 1 }));
+    setProgressNotice('Back at the beginning. Your reflection is kept; rereading is optional and is not scored.');
+  }
 
   useEffect(() => {
     if (!guided.descriptor) return;
@@ -291,21 +434,27 @@ export default function ReaderPage() {
     readingStartRef.current = Date.now();
     readingMetaRef.current = { language, wordCount, title: title || 'Reading' };
     setGuidedReadingFinished(false);
-  }, [language, text, title]);
+    updateProgress({ position: 0 });
+    setResumePosition((previous) => ({ offset: 0, revision: (previous?.revision ?? 0) + 1 }));
+  }, [language, text, title, updateProgress]);
 
   const handleImport = async () => {
     if (!text.trim()) return;
     const request = ++openRequest.current;
     textLanguage.current = language;
 
+    const createdAt = new Date().toISOString();
     const id = await db.texts.add({
       language,
       title: title || 'Untitled',
       content: text,
-      createdAt: new Date().toISOString(),
+      createdAt,
+      ...(translation ? { translation } : {}),
     }) as number;
     if (request !== openRequest.current) return;
     setSavedTextId(id);
+    await prepareProgress({ kind: 'saved', language, textId: id, createdAt }, title || 'Untitled', text, request);
+    if (request !== openRequest.current) return;
 
     setSentences(splitSentences(text));
 
@@ -429,7 +578,7 @@ export default function ReaderPage() {
             d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"
           />
         </svg>
-        <p className="text-slate-500 dark:text-slate-400 text-sm">Parsing Japanese text…</p>
+        <p className="text-slate-500 dark:text-slate-400 text-sm">{language === 'ja' ? 'Parsing Japanese text…' : 'Opening text…'}</p>
       </div>
       <SkeletonCard />
       <SkeletonList count={2} />
@@ -440,6 +589,7 @@ export default function ReaderPage() {
         Immersion Reader
       </h2>
       <GuidedPracticeNotice guided={guided} />
+      {!guided.isGuided && <ContinueReading language={language} onContinue={(progress) => void continueReading(progress)} />}
       {tabToggle}
       {readingError && <p role="status" className="mb-3 text-sm text-slate-500 dark:text-slate-400">{readingError}</p>}
       {tab === 'library' ? (
@@ -523,13 +673,13 @@ export default function ReaderPage() {
     <div>
       <GuidedPracticeNotice guided={guided} />
       <div className="flex justify-between items-center mb-4">
-        <h2 className="text-lg font-semibold text-slate-700 dark:text-slate-200">
+        <h2 dir={isRTL(language) ? 'rtl' : 'ltr'} className="text-lg font-semibold text-slate-700 dark:text-slate-200">
           {title || 'Reading'}
         </h2>
         <button
           onClick={() => {
             resetReadingState();
-            getTextCount().then((count) => setTab(count > 0 ? 'library' : 'import'));
+            setTab('library');
           }}
           className="inline-flex min-h-[44px] items-center text-sm text-indigo-600 dark:text-indigo-400 hover:underline press-feedback"
         >
@@ -537,11 +687,35 @@ export default function ReaderPage() {
         </button>
       </div>
 
+      <ReadingPurpose purpose={purpose} onChange={(nextPurpose) => {
+        setPurpose(nextPurpose);
+        updateProgress({ purpose: nextPurpose });
+      }} />
+      {progressNotice && <p role="status" className="mb-3 text-sm text-slate-500 dark:text-slate-400">{progressNotice}</p>}
+      {progressError && <div role="status" className="mb-3 text-sm text-slate-500 dark:text-slate-400">
+        <p>{progressError}</p>
+        {reflectionConflict && <div>
+          <p className="mt-2">Saved in the other tab:</p>
+          <p className="whitespace-pre-wrap">{reflectionConflict.reflection || '(Blank reflection)'}</p>
+          <div className="flex flex-wrap gap-2">
+            <button type="button" onClick={() => resolveReflectionConflict(false)}
+              className="min-h-[44px] text-indigo-600 dark:text-indigo-400">Use saved reflection</button>
+            <button type="button" onClick={() => resolveReflectionConflict(true)}
+              className="min-h-[44px] text-indigo-600 dark:text-indigo-400">Replace saved reflection with my draft</button>
+          </div>
+        </div>}
+        {readingProgress && !reflectionConflict && <button type="button" onClick={flushProgress}
+          className="min-h-[44px] text-indigo-600 dark:text-indigo-400">Retry saving reading place</button>}
+      </div>}
+
       <ComprehensionIndicator
         text={text}
         language={language}
         highlightEnabled={highlightKnown}
-        onToggleHighlight={() => setHighlightKnown((v) => !v)}
+        onToggleHighlight={() => {
+          setHighlightKnown(!highlightKnown);
+          updateProgress({ highlight: !highlightKnown });
+        }}
         wordStatusMap={wordStatusMap ?? undefined}
         knowledge={knowledge}
       />
@@ -563,7 +737,7 @@ export default function ReaderPage() {
         Select a word for its meaning. Keyboard: use Left/Right to move between words, then Enter or Space to open.
         {isRTL(language) ? ' Left moves to the next word in reading order.' : ''}
       </p>
-      <div className="bg-white dark:bg-slate-800 rounded-2xl shadow p-4 leading-relaxed whitespace-pre-wrap text-[1.1rem] dark:text-slate-100" style={{ fontSize: 'var(--app-font-size)' }} dir={isRTL(language) ? 'rtl' : undefined}>
+      <div className="bg-white dark:bg-slate-800 rounded-2xl border border-slate-200/70 dark:border-white/10 shadow-sm p-4 leading-relaxed whitespace-pre-wrap text-[1.1rem] text-slate-800 dark:text-slate-100" style={{ fontSize: 'var(--app-font-size)' }} dir={isRTL(language) ? 'rtl' : undefined}>
         <FuriganaText
           segments={segments}
           selectedWord={selectedWord}
@@ -582,7 +756,23 @@ export default function ReaderPage() {
           language={language}
           showStressMarks={showStressMarks}
           instructionsId={readerInstructionsId}
+          resumePosition={resumePosition}
+          onPositionChange={recordPosition}
         />
+      </div>
+
+      <div className="mt-4">
+        <button type="button" onClick={startOver}
+          className="min-h-[44px] text-sm font-medium text-indigo-600 dark:text-indigo-400">Start over / reread</button>
+        <details className="mt-2 text-sm text-slate-700 dark:text-slate-200">
+          <summary className="min-h-[44px] cursor-pointer py-3">Optional reflection</summary>
+          <label htmlFor="reading-reflection" className="block mb-2">What was the main idea? What would you like to notice on a reread?</label>
+          <textarea id="reading-reflection" value={readingProgress?.reflection ?? ''} maxLength={4000} rows={3}
+            disabled={!readingProgress}
+            onChange={(event) => updateProgress({ reflection: event.target.value })}
+            className="w-full min-h-[44px] rounded-lg border border-slate-300 bg-white p-3 text-slate-800 dark:border-slate-600 dark:bg-slate-800 dark:text-slate-100" />
+          <p className="mt-1 text-xs text-slate-500 dark:text-slate-400">Saved on this device with your reading place and included in backups. Not scored or treated as mastery. You can leave it blank.</p>
+        </details>
       </div>
 
       {/* Bilingual translation panel */}

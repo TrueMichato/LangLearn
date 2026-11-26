@@ -26,6 +26,7 @@ export default function CoverageSummary({ state, onRetry, errorMessage }: {
   return <div className="text-xs text-slate-600 dark:text-slate-300">
     <p>{approximate ? 'Approximate vocabulary coverage' : 'Vocabulary coverage'}{!coverage.complete ? ' · incomplete evidence' : ''}</p>
     <p>Word occurrences: {percent(coverage.occurrences.familiarPercentage)} familiar · Distinct vocabulary: {percent(coverage.distinct.familiarPercentage)} familiar</p>
+    {coverage.occurrences.familiar === 0 && <p>No familiarity evidence was found for this text. You may know words not recorded in this app.</p>}
     <details>
       <summary className="min-h-[44px] flex items-center cursor-pointer text-indigo-600 dark:text-indigo-400">About this estimate</summary>
       <div className="space-y-2 pb-2">

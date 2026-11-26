@@ -19,6 +19,7 @@ const storage = vi.hoisted(() => {
 
 import { BACKUP_TABLE_NAMES, buildBackupPayload } from '../db/backup';
 import { db, CURRENT_SCHEMA_VERSION } from '../db/schema';
+import { createReadingProgress } from '../db/reading-progress';
 import { IndependentBackupStore } from '../db/independent-backup-store';
 import {
   captureIndependentPayload, independentProgressRows, payloadContent, readIndependentPayload,
@@ -622,6 +623,99 @@ describe('durable upload protocol', () => {
 });
 
 describe('capture coverage and fresh recovery', () => {
+  async function preparedV12Restore() {
+    const legacy = (payload: IndependentBackupPayload) => {
+      const copy = { ...payload, schemaVersion: 12, tables: { ...payload.tables } };
+      delete (copy.tables as Partial<typeof copy.tables>).readingProgress;
+      return copy;
+    };
+    const safety = legacy(await captureIndependentPayload(storage, () => 0));
+    await seedWord();
+    const incoming = legacy(await captureIndependentPayload(storage, () => 0));
+    const checkpoint = await encrypted(incoming);
+    await db.words.clear();
+    const journal = {
+      id: 'restore' as const, phase: 'prepared' as const, checkpointId: checkpoint.id, kit, envelope: checkpoint,
+      safetyCopy: safety, safetyStorageKeys: Object.keys(safety.localStorage), sourceState: null, startedAt: date,
+    };
+    await store.journal.put(journal);
+    await store.safetyCopies.add({ createdAt: date, checkpointId: checkpoint.id, payload: safety });
+    return { checkpoint, journal };
+  }
+
+  it('resumes a prepared v12 journal before database installation after the additive v13 upgrade', async () => {
+    const { checkpoint, journal } = await preparedV12Restore();
+    await restoreIndependentCheckpoint(kit, checkpoint, { store, storage, retry: true });
+    expect(await db.words.count()).toBe(1);
+    expect(await db.readingProgress.count()).toBe(0);
+    expect(await store.journal.get('restore')).toMatchObject({
+      phase: 'verified', safetyCopy: journal.safetyCopy, envelope: checkpoint,
+    });
+    expect((await store.safetyCopies.toArray())[0].payload).toEqual(journal.safetyCopy);
+    expect((await store.journal.get('restore'))?.safetyCopy.schemaVersion).toBe(12);
+    await finishIndependentRestore(store, storage);
+    expect(await store.journal.count()).toBe(0);
+    expect((await store.safetyCopies.toArray())[0].payload).toEqual(journal.safetyCopy);
+  });
+
+  it('still rejects actual concurrent changes when retrying a prepared v12 restore', async () => {
+    const { checkpoint, journal } = await preparedV12Restore();
+    await seedWord(19);
+    const before = payloadContent(await readIndependentPayload(storage));
+    await expect(restoreIndependentCheckpoint(kit, checkpoint, { store, storage, retry: true }))
+      .rejects.toMatchObject({ code: 'restore-conflict' });
+    expect(payloadContent(await readIndependentPayload(storage))).toBe(before);
+    expect(await db.words.get(7)).toBeUndefined();
+    expect(await store.journal.get('restore')).toMatchObject({
+      phase: 'prepared', safetyCopy: journal.safetyCopy, envelope: checkpoint,
+    });
+  });
+
+  it('validates a v12 safety copy before upgrading it for comparison', async () => {
+    const { checkpoint, journal } = await preparedV12Restore();
+    const malformed = { ...journal.safetyCopy, tables: { ...journal.safetyCopy.tables } };
+    delete (malformed.tables as Partial<typeof malformed.tables>).words;
+    await store.journal.put({ ...journal, safetyCopy: malformed });
+    const before = payloadContent(await readIndependentPayload(storage));
+    await expect(restoreIndependentCheckpoint(kit, checkpoint, { store, storage, retry: true }))
+      .rejects.toMatchObject({ code: 'invalid-payload' });
+    expect(payloadContent(await readIndependentPayload(storage))).toBe(before);
+    expect((await store.journal.get('restore'))?.safetyCopy).toEqual(malformed);
+  });
+
+  it('restores a schema-12 checkpoint with an explicitly empty new reading table, without changing its authenticated header', async () => {
+    await seedWord();
+    const current = await captureIndependentPayload(storage, () => 0);
+    const legacy = { ...current, schemaVersion: 12, tables: { ...current.tables } };
+    delete (legacy.tables as Partial<typeof legacy.tables>).readingProgress;
+    const checkpoint = await encrypted(legacy);
+    expect((await decodeBackupCheckpoint(checkpoint, kit)).payload.schemaVersion).toBe(12);
+    await Promise.all(db.tables.map((table) => table.clear()));
+    persistedDefaults();
+    await restoreIndependentCheckpoint(kit, checkpoint, { store, storage });
+    expect(await db.words.count()).toBe(1);
+    expect(await db.readingProgress.count()).toBe(0);
+    expect((await store.journal.get('restore'))?.phase).toBe('verified');
+  });
+
+  it('round-trips reading snapshots and rejects invalid positions without writing', async () => {
+    const place = createReadingProgress({ kind: 'curated', language: 'es', curatedId: 'story' }, 'Story', 'Hola.\n\nOtro día.');
+    place.position = place.content.indexOf('Otro');
+    place.purpose = 'close-study';
+    place.reflection = 'A new day.';
+    await db.readingProgress.put(place);
+    const payload = await captureIndependentPayload(storage, () => 0);
+    const checkpoint = await encrypted(payload);
+    await Promise.all(db.tables.map((table) => table.clear()));
+    persistedDefaults();
+    const invalid = { ...payload, tables: { ...payload.tables, readingProgress: [{ ...place, position: 99 }] } };
+    await expect(restoreIndependentCheckpoint(kit, await encrypted(invalid), { store, storage }))
+      .rejects.toMatchObject({ code: 'invalid-payload' });
+    expect(await db.readingProgress.count()).toBe(0);
+    await restoreIndependentCheckpoint(kit, checkpoint, { store, storage });
+    expect(await db.readingProgress.toArray()).toEqual([place]);
+  });
+
   it('omits captured optional undefined object properties without rewriting source records', async () => {
     await seedWord();
     await db.table('words').put({
@@ -815,7 +909,7 @@ describe('capture coverage and fresh recovery', () => {
     });
     storage.setItem('langlearn-recovery-capsule-v1', 'do not recursively capture');
     const payload = await captureIndependentPayload(storage, () => 0);
-    expect(Object.keys(payload.tables)).toHaveLength(13);
+    expect(Object.keys(payload.tables)).toHaveLength(14);
     expect(payload.tables.settings.some((row) => String(row.key).startsWith('push-'))).toBe(false);
     expect(Object.keys(payload.localStorage)).toHaveLength(6);
     const cp = await encrypted(payload);

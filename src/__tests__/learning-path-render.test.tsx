@@ -4,6 +4,61 @@ import { describe, expect, it } from 'vitest';
 import LearningPath from '../components/learn/LearningPath';
 import { shouldCompactContinuationUnit } from '../lib/path-unit-presentation';
 import type { LearningPath as LearningPathModel } from '../types/learning-path';
+import { LEARNING_PATHS } from '../data/learning-paths';
+import { resolveLearningPath } from '../lib/learning-path';
+import CurriculumOutline from '../components/learn/CurriculumOutline';
+
+const indexes = import.meta.glob('../../public/content/{grammar,vocab}/*/index.json',
+  { eager: true, import: 'default' }) as Record<string, Array<{ id: string; title: string }>>;
+function scriptPath(language: string, deferred = false) {
+  return resolveLearningPath(LEARNING_PATHS[language], {
+    grammar: indexes[`../../public/content/grammar/${language}/index.json`],
+    vocab: indexes[`../../public/content/vocab/${language}/index.json`],
+  }, { progress: [], completedLetters: new Set(), scriptPreparationDeferred: deferred });
+}
+
+describe('optional script preparation', () => {
+  it.each(['ja', 'ru', 'ar'])('%s offers an honest continuation and return route', (language) => {
+    const initial = scriptPath(language);
+    const html = renderToStaticMarkup(<MemoryRouter><LearningPath path={initial} /></MemoryRouter>);
+    expect(html).toContain('Continue into words');
+    expect(html).toContain('Your script progress stays unfinished');
+    expect(html).toContain('Optional script preparation.');
+    expect(html).not.toContain('before lessons begin');
+    expect(html).not.toContain('Both tracks rejoin before the next unit.');
+    expect(html).not.toContain('Finish both to unlock');
+    expect(html).not.toContain('to unlock the next lesson.');
+
+    const continued = scriptPath(language, true);
+    const after = renderToStaticMarkup(<MemoryRouter><LearningPath path={continued} /></MemoryRouter>);
+    expect(after).toContain('Return to script practice');
+    expect(after).toContain('Script preparation is optional and still unfinished.');
+    expect(after).not.toContain('earlier unit');
+    expect(after).toContain('aria-current="step"');
+    expect(after).toContain('0 of ');
+    expect(after).toContain(continued.scriptPreparation!.returnRoute.replaceAll('&', '&amp;'));
+    expect(after).toContain('to unlock the next lesson.');
+  });
+
+  it('keeps preparation visible and separate from main-path completion in the course outline', () => {
+    const path = scriptPath('ru');
+    const html = renderToStaticMarkup(<MemoryRouter><CurriculumOutline path={path} /></MemoryRouter>);
+    expect(html).toContain('Script preparation is optional.');
+    expect(html).toContain('0 of 3 optional preparation steps');
+    expect(html).toContain('The Russian Alphabet &amp; Sounds');
+  });
+
+  it('keeps unfinished preparation reachable after completing the required course', () => {
+    const path = scriptPath('ja', true);
+    const html = renderToStaticMarkup(<MemoryRouter><LearningPath path={{
+      ...path, completedCount: path.totalCount, recommendedNodeId: null,
+    }} /></MemoryRouter>);
+    expect(html).toContain('Every required path step is complete.');
+    expect(html).toContain('Script preparation is optional and still unfinished.');
+    expect(html).toContain('Return to script practice');
+    expect(html).not.toContain('earlier units');
+  });
+});
 
 const PATH: LearningPathModel = {
   language: 'ja',

@@ -20,7 +20,7 @@ export const PATH_KIND_DETAILS: Record<
   numbers: { emoji: '🔢', label: 'Number practice' },
   reading: { emoji: '📚', label: 'Reading' },
   lyrics: { emoji: '🎵', label: 'Lyrics' },
-  tests: { emoji: '✅', label: 'Proficiency test' },
+  tests: { emoji: '✅', label: 'Practice check' },
 };
 
 export function pathNodeStatus(
@@ -43,6 +43,7 @@ export function pathNodeAccessibleLabel(
 ): string {
   const kind = PATH_KIND_DETAILS[node.kind].label;
   const requirement =
-    node.requirement === 'enrichment' ? 'Optional enrichment. ' : '';
+    node.requirement === 'preparation' ? 'Optional script preparation. '
+      : node.requirement === 'enrichment' ? 'Optional enrichment. ' : '';
   return `${node.title}. ${kind}. ${requirement}${pathNodeStatus(node, recommended)}.`;
 }

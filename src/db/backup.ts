@@ -21,6 +21,10 @@
 
 import { db, CURRENT_SCHEMA_VERSION, type Word } from './schema';
 import { mergeStoredCardMetadata, sameStoredCard, storedCardKey, storedWordType } from '../lib/card-identity';
+import {
+  assertReadingProgressRows, matchesSavedReading, mergeReadingProgress, readingProgressId,
+  type ReadingProgress,
+} from './reading-progress';
 
 /** Table name → whether Dexie assigns its primary key (`++id`). */
 const TABLES = {
@@ -37,6 +41,7 @@ const TABLES = {
   reviewLog: { autoIncrement: true },
   guidedActivityProgress: { autoIncrement: false },
   skillProgress: { autoIncrement: false },
+  readingProgress: { autoIncrement: false },
 } as const;
 
 export type BackupTableName = keyof typeof TABLES;
@@ -174,6 +179,7 @@ export function normalizePayload(raw: unknown): BackupPayload {
   }
 
   const source = obj.tables as Record<string, unknown>;
+  if (Object.hasOwn(source, 'readingProgress')) assertReadingProgressRows(source.readingProgress);
   const tables: Partial<Record<BackupTableName, unknown[]>> = {};
   for (const name of BACKUP_TABLE_NAMES) {
     if (Array.isArray(source[name])) tables[name] = source[name] as unknown[];
@@ -268,6 +274,7 @@ export function mergeKey(table: BackupTableName, row: Row): string | null {
     case 'badges':
     case 'guidedActivityProgress':
     case 'skillProgress':
+    case 'readingProgress':
       return row.id != null ? String(row.id) : null;
     case 'studySessions':
       return row.startTime != null ? String(row.startTime) : null;
@@ -275,7 +282,7 @@ export function mergeKey(table: BackupTableName, row: Row): string | null {
       return row.date != null ? `${row.language}\u0000${row.date}` : null;
     case 'texts':
       return row.title != null && row.createdAt != null
-        ? `${row.title}\u0000${row.createdAt}`
+        ? JSON.stringify([row.language, row.title, row.createdAt, row.content, row.translation ?? ''])
         : null;
     // reviews and reviewLog are keyed off their parent word rather than
     // identified in their own right; they are handled during the word merge.
@@ -448,6 +455,10 @@ export async function importRecoveryData(
             }
           } else if (name === 'guidedActivityProgress') {
             byId.set(row[keyField], mergeGuidedActivityProgress(previous, row));
+          } else if (name === 'readingProgress') {
+            byId.set(row[keyField], mergeReadingProgress(
+              previous as unknown as ReadingProgress, row as unknown as ReadingProgress,
+            ) as unknown as Row);
           } else if (name === 'dailyActivity' || name === 'lessonProgress' ||
             name === 'characterProgress' || name === 'skillProgress') {
             const merged = { ...row, ...previous };
@@ -502,11 +513,51 @@ async function importMerge(payload: BackupPayload): Promise<ImportResult> {
   const skipped: Partial<Record<BackupTableName, number>> = {};
 
   // Words, reviews and reviewLog move together so ids stay consistent.
-  const relational: BackupTableName[] = ['words', 'reviews', 'reviewLog'];
+  const relational: BackupTableName[] = ['texts', 'readingProgress', 'words', 'reviews', 'reviewLog'];
   const standalone = present.filter((n) => !relational.includes(n));
   const tablesToLock = Array.from(new Set([...present, ...relational]));
 
   await db.transaction('rw', tablesToLock.map((n) => db.table(n)), async () => {
+    // Text IDs are local to each installation. Match the complete source, not a title,
+    // before remapping its places and captured words.
+    const textIdRemap = new Map<number, number>();
+    if (payload.tables.texts) {
+      const byKey = new Map((await db.texts.toArray()).map((row) => [mergeKey('texts', row as unknown as Row), row.id!]));
+      let added = 0;
+      let dupes = 0;
+      for (const row of payload.tables.texts as Row[]) {
+        const key = mergeKey('texts', row);
+        let id = key === null ? undefined : byKey.get(key);
+        if (id === undefined) {
+          id = await db.texts.add(stripId(row) as never) as number;
+          if (key !== null) byKey.set(key, id);
+          added++;
+        } else dupes++;
+        if (typeof row.id === 'number') textIdRemap.set(row.id, id);
+      }
+      written.texts = added;
+      skipped.texts = dupes;
+    }
+    if (payload.tables.readingProgress) {
+      for (const original of payload.tables.readingProgress as ReadingProgress[]) {
+        let row = original;
+        if (original.source.kind === 'saved') {
+          const textId = textIdRemap.get(original.source.textId);
+          if (textId === undefined) {
+            throw new Error('A saved reading place has no matching text in this backup. Nothing was merged. Keep the file; restore it separately rather than guessing a text ID.');
+          }
+          const source = { ...original.source, textId };
+          row = { ...original, source, id: readingProgressId(source) };
+          if (!matchesSavedReading(row, await db.texts.get(textId))) {
+            throw new Error('A reading place refers to a different saved text. Nothing was merged. Keep the original backup.');
+          }
+        }
+        const current = await db.readingProgress.get(row.id);
+        await db.readingProgress.put(current ? mergeReadingProgress(current, row) : row);
+      }
+      written.readingProgress = payload.tables.readingProgress.length;
+      skipped.readingProgress = 0;
+    }
     // ─ Words (and everything hanging off them) ─
     const wordIdRemap = new Map<number, number>();
     const reviewIdRemap = new Map<number, number>();
@@ -539,7 +590,11 @@ async function importMerge(payload: BackupPayload): Promise<ImportResult> {
           continue;
         }
         const oldId = typeof row.id === 'number' ? row.id : null;
-        const newId = (await db.words.add(stripId(row) as never)) as number;
+        const newId = (await db.words.add({
+          ...stripId(row),
+          ...(payload.tables.texts && typeof row.sourceTextId === 'number'
+            ? { sourceTextId: textIdRemap.get(row.sourceTextId) ?? null } : {}),
+        } as never)) as number;
         if (oldId !== null) wordIdRemap.set(oldId, newId);
         const imported = { ...incomingWord, id: newId };
         if (key !== null) byKey.set(key, imported);

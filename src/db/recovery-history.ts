@@ -77,7 +77,7 @@ export function hasMissingRecoveryHistory(live: Tables, previous: Tables): boole
       (word.createdAt && current?.createdAt === word.createdAt);
   })) return true;
 
-  return (['lessonProgress', 'characterProgress', 'guidedActivityProgress', 'skillProgress'] as const)
+  return (['lessonProgress', 'characterProgress', 'guidedActivityProgress', 'skillProgress', 'readingProgress'] as const)
     .some((name) => {
       if (!live[name] || meaningfulRows(name, previous[name]) === 0) return false;
       const currentIds = new Set((live[name] as Row[]).map((row) => row.id));

@@ -6,6 +6,12 @@ export interface PracticeSentence {
   reading: string;
   difficulty: 'easy' | 'medium' | 'hard';
   hint?: string;
+  context?: string;
+  /** Authored, reviewed guidance only; alternatives do not change constrained-drill grading. */
+  reviewedFeedback?: {
+    note?: string;
+    alternatives?: { target: string; reading?: string; note?: string }[];
+  };
 }
 
 export const jaSentences: PracticeSentence[] = [

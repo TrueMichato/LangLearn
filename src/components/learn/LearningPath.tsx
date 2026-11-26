@@ -5,12 +5,13 @@ import {
   useRef,
   useState,
 } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import type { LearningPath as LearningPathModel } from '../../types/learning-path';
 import { isRTL } from '../../lib/rtl';
 import { ROUTES } from '../../lib/routes';
 import { shouldCompactContinuationUnit } from '../../lib/path-unit-presentation';
 import { activePathUnitId } from '../../lib/path-scroll-context';
+import { deferScriptPreparation } from '../../lib/guided-learning-progress';
 import PathNode from './PathNode';
 import PathTestOutPanel from './PathTestOutPanel';
 
@@ -24,23 +25,30 @@ const FULL_PATH_GUIDE_DISMISSED_KEY =
   'langlearn-full-path-guide-dismissed';
 const VIEW_CONTEXT_OFFSET = 64;
 
-function requiredNodes(
+function unitProgressNodes(
   unit: LearningPathModel['units'][number],
 ): LearningPathModel['units'][number]['nodes'] {
   return unit.nodes.filter(
-    (node) => (node.requirement ?? 'required') === 'required',
+    (node) => node.requirement !== 'enrichment',
   );
 }
 
 function requiredUnitComplete(
   unit: LearningPathModel['units'][number],
 ): boolean {
-  const nodes = requiredNodes(unit);
+  const nodes = unitProgressNodes(unit);
   return nodes.length > 0 && nodes.every((node) => node.state === 'completed');
 }
 
 export default function LearningPath({ path, focusCurrent = false }: Props) {
+  const navigate = useNavigate();
+  const [savingContinuation, setSavingContinuation] = useState(false);
+  const [continuationError, setContinuationError] = useState('');
   const complete = path.completedCount === path.totalCount;
+  const scriptPreparation = path.scriptPreparation;
+  const preparationIncomplete = path.units.some((unit) =>
+    unit.nodes.some((node) => node.requirement === 'preparation' && node.state !== 'completed'),
+  );
   const catchUpCount = path.units.flatMap((unit) => unit.nodes).filter((node) => node.catchUp).length;
   const rtl = isRTL(path.language);
   const sectionRef = useRef<HTMLElement>(null);
@@ -71,7 +79,7 @@ export default function LearningPath({ path, focusCurrent = false }: Props) {
   const showFullPath = view === 'full';
   const requiredUnits = path.units.filter((unit) =>
     unit.nodes.some(
-      (node) => (node.requirement ?? 'required') === 'required',
+      (node) => node.requirement !== 'enrichment',
     ),
   );
   const phases =
@@ -119,7 +127,7 @@ export default function LearningPath({ path, focusCurrent = false }: Props) {
   const nextPhase = phases[viewedPhaseIndex + 1];
   const previousUnits =
     currentUnitIndex > 0
-      ? requiredUnits.slice(0, currentUnitIndex)
+      ? requiredUnits.slice(0, currentUnitIndex).filter(requiredUnitComplete)
       : complete
         ? requiredUnits
         : [];
@@ -132,10 +140,7 @@ export default function LearningPath({ path, focusCurrent = false }: Props) {
     currentUnitIndex >= 0
       ? requiredUnits.slice(currentUnitIndex + 1)
       : [];
-  const currentRequiredNodes =
-    currentUnit?.nodes.filter(
-      (node) => (node.requirement ?? 'required') === 'required',
-    ) ?? [];
+  const currentRequiredNodes = currentUnit ? unitProgressNodes(currentUnit) : [];
   const currentUnitCompleted =
     currentRequiredNodes.filter((node) => node.state === 'completed').length;
   const testOutOptions = path.testOutOptions.filter(
@@ -335,13 +340,28 @@ export default function LearningPath({ path, focusCurrent = false }: Props) {
     window.localStorage.setItem(FULL_PATH_GUIDE_DISMISSED_KEY, 'true');
   }
 
+  async function continueIntoLessons() {
+    if (!scriptPreparation || savingContinuation) return;
+    setSavingContinuation(true);
+    setContinuationError('');
+    try {
+      await deferScriptPreparation(path.language);
+      navigate(scriptPreparation.continueRoute);
+    } catch {
+      setContinuationError("We couldn't save your choice. Please try again; your progress hasn't changed.");
+    } finally {
+      setSavingContinuation(false);
+    }
+  }
+
   function renderUnit(
     unit: LearningPathModel['units'][number],
     unitIndex: number,
   ) {
     const UnitHeading = showFullPath ? 'h5' : 'h4';
     const StrandHeading = showFullPath ? 'h6' : 'h5';
-    const requiredNodesInUnit = requiredNodes(unit);
+    const requiredNodesInUnit = unitProgressNodes(unit);
+    const preparationUnit = unit.nodes.some((node) => node.requirement === 'preparation');
     const recommendedNode = unit.nodes.find(
       (node) => node.id === path.recommendedNodeId,
     );
@@ -494,6 +514,26 @@ export default function LearningPath({ path, focusCurrent = false }: Props) {
         >
           {compactContinuation ? continuationSummary : unit.description}
         </p>
+        {preparationUnit && !unitComplete && scriptPreparation && (
+          <div className="mt-3">
+            <p className="text-sm text-slate-500 dark:text-slate-400">
+              Optional preparation · Your script progress stays unfinished until you complete it.
+            </p>
+            <button
+              type="button"
+              onClick={() => void continueIntoLessons()}
+              disabled={savingContinuation}
+              className="mt-2 min-h-[44px] rounded-xl border border-slate-300 px-3 py-2 text-sm font-medium text-indigo-600 hover:bg-slate-50 disabled:opacity-50 dark:border-slate-600 dark:text-indigo-300 dark:hover:bg-slate-700"
+            >
+              {savingContinuation ? 'Saving your choice…' : 'Continue into words'}
+            </button>
+            {continuationError && (
+              <p role="alert" className="mt-2 text-sm text-amber-800 dark:text-amber-200">
+                {continuationError}
+              </p>
+            )}
+          </div>
+        )}
         {parallel ? (
           <div
             className={compactContinuation ? 'mt-2' : 'mt-4'}
@@ -503,7 +543,9 @@ export default function LearningPath({ path, focusCurrent = false }: Props) {
           >
             {!compactContinuation && (
               <p className="text-sm text-slate-600 dark:text-slate-300">
-                {requiredStrands.length > 1
+                {preparationUnit
+                  ? 'Explore letters and sounds side by side. Neither track blocks your word lessons.'
+                  : requiredStrands.length > 1
                   ? 'Both tracks are open. Finish both to unlock the next unit.'
                   : 'Follow the main strand, and explore the optional strand whenever you like.'}
               </p>
@@ -592,6 +634,7 @@ export default function LearningPath({ path, focusCurrent = false }: Props) {
               </svg>
             )}
             {!compactContinuation &&
+              !preparationUnit &&
               unit.id === currentUnitId &&
               !unitComplete && (
                 <p className="mt-1 text-center text-xs leading-relaxed text-slate-500 dark:text-slate-400">
@@ -611,6 +654,7 @@ export default function LearningPath({ path, focusCurrent = false }: Props) {
           />
         )}
         {unit.id === currentUnitId &&
+          !preparationUnit &&
           !parallel &&
           recommendedNode &&
           hasLockedSteps && (
@@ -638,7 +682,9 @@ export default function LearningPath({ path, focusCurrent = false }: Props) {
           </h3>
           <p className="mt-1 text-sm text-slate-500 dark:text-slate-400">
             {complete
-              ? 'Every path step is complete. Optional practice stays open.'
+              ? scriptPreparation
+                ? 'Every required path step is complete. Optional preparation and practice stay open.'
+                : 'Every path step is complete. Optional practice stays open.'
               : `${landmarkPhase.title} · ${currentUnit?.title ?? 'Current unit'} · ${currentUnitCompleted} of ${
                   currentRequiredNodes.length
                 } steps complete`}
@@ -657,6 +703,19 @@ export default function LearningPath({ path, focusCurrent = false }: Props) {
         )}
       </div>
 
+      {scriptPreparation && preparationIncomplete && currentUnitId !== 'letters' && (
+        <div className="mb-3">
+          <p className="text-sm text-slate-500 dark:text-slate-400">
+            Script preparation is optional and still unfinished. You can practise it alongside your lessons.
+          </p>
+          <Link
+            to={scriptPreparation.returnRoute}
+            className="mt-1 inline-flex min-h-[44px] items-center rounded-xl px-2 text-sm font-medium text-indigo-600 hover:bg-slate-100 dark:text-indigo-300 dark:hover:bg-slate-800"
+          >
+            Return to script practice
+          </Link>
+        </div>
+      )}
       {catchUpCount > 0 && (
         <p className="mb-4 text-sm text-slate-500 dark:text-slate-400">
           Your earlier access is kept. {catchUpCount} new practice {catchUpCount === 1 ? 'step is' : 'steps are'} available

@@ -6,6 +6,7 @@ import BrowseActivitiesPage from '../pages/BrowseActivities';
 import LearnPage from '../pages/Learn';
 import ListeningPage from '../pages/Listening';
 import { ROUTES } from '../lib/routes';
+import { getLanguageLabel } from '../lib/languages';
 import type { LearningPath } from '../types/learning-path';
 
 const mockActiveLanguages = ['ja', 'ar'] as const;
@@ -182,7 +183,7 @@ describe('Learn and Browse activities pages', () => {
     );
   });
 
-  it('derives no more than two recommendations from the current path step', () => {
+  it('keeps the path step and practice with an honestly generic input alternative', () => {
     const path: LearningPath = {
       language: 'ja',
       completedCount: 0,
@@ -229,6 +230,11 @@ describe('Learn and Browse activities pages', () => {
       expect.objectContaining({
         to: ROUTES.sentenceBuilder,
         title: 'Use the words',
+      }),
+      expect.objectContaining({
+        to: ROUTES.listening,
+        title: `Try listening in ${getLanguageLabel('ja')}`,
+        subtitle: expect.stringContaining('choose Easy'),
       }),
     ]);
   });

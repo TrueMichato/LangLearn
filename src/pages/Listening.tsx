@@ -1,4 +1,4 @@
-import { useState, useCallback, useEffect } from 'react';
+import { useState, useCallback, useEffect, useRef } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
 import { useCurrentLanguage } from '../hooks/useCurrentLanguage';
 import LanguagePicker from '../components/common/LanguagePicker';
@@ -12,7 +12,7 @@ import { esPassages } from '../data/listening/es-passages';
 import { arPassages } from '../data/listening/ar-passages';
 import { roPassages } from '../data/listening/ro-passages';
 import DictationDrill from '../components/drills/DictationDrill';
-import { speakWithSpeed } from '../lib/tts';
+import { playListeningPassage, type ListeningPlayback, type ListeningPlaybackResult } from '../lib/tts';
 import type { ListeningPassage, ListeningQuestion } from '../data/listening/ja-passages';
 import { useGuidedPractice } from '../hooks/useGuidedPractice';
 import {
@@ -25,6 +25,8 @@ import AdaptivePracticeNotice from '../components/common/AdaptivePracticeNotice'
 import PracticeWordCapture from '../components/common/PracticeWordCapture';
 import LexicalCoverageNote from '../components/common/LexicalCoverageNote';
 import { isRTL } from '../lib/rtl';
+import { getLanguageName } from '../lib/languages';
+import InputActivityLink from '../components/learn/InputActivityLink';
 
 // ── helpers ─────────────────────────────────────────────
 
@@ -79,9 +81,12 @@ function ListeningAttempt({ current }: { current: ReturnType<typeof useCurrentLa
 
   // practice
   const [speed, setSpeed] = useState(1.0);
-  const [playsLeft, setPlaysLeft] = useState(3);
   const [hasPlayed, setHasPlayed] = useState(false);
   const [isPlaying, setIsPlaying] = useState(false);
+  const playback = useRef<ListeningPlayback | null>(null);
+  const [playbackResult, setPlaybackResult] = useState<ListeningPlaybackResult | null>(null);
+  const [transcriptOpen, setTranscriptOpen] = useState(false);
+  const [transcriptSupported, setTranscriptSupported] = useState(false);
 
   // questions
   const [qIndex, setQIndex] = useState(0);
@@ -100,26 +105,40 @@ function ListeningAttempt({ current }: { current: ReturnType<typeof useCurrentLa
 
   // Cancel any ongoing speech when leaving the page
   useEffect(() => {
-    return () => { window.speechSynthesis?.cancel(); };
+    return () => {
+      const active = playback.current;
+      playback.current = null;
+      active?.stop();
+      window.speechSynthesis?.cancel();
+    };
   }, []);
 
   // ── passage selection ─────────────────────────────────
 
   // ── handlers ──────────────────────────────────────────
 
+  const stopPlayback = useCallback(() => {
+    const active = playback.current;
+    playback.current = null;
+    active?.stop();
+    setIsPlaying(false);
+  }, []);
+
   const beginPassage = useCallback((nextPassage: ListeningPassage) => {
+    stopPlayback();
     setPassage(nextPassage);
     setUsedIds((prev) => new Set(prev).add(nextPassage.id));
-    setPlaysLeft(3);
     setHasPlayed(false);
-    setIsPlaying(false);
+    setPlaybackResult(null);
+    setTranscriptOpen(false);
+    setTranscriptSupported(false);
     setSpeed(1.0);
     setQIndex(0);
     setAnswers(nextPassage.questions.map(() => null));
     setRevealed(false);
     setXpAwarded(0);
     setScreen('practice');
-  }, []);
+  }, [stopPlayback]);
 
   const startPractice = async () => {
     // Records listening time under its own activity so the study balance and
@@ -154,20 +173,29 @@ function ListeningAttempt({ current }: { current: ReturnType<typeof useCurrentLa
     beginPassage(selected[0]);
   };
 
-  async function handlePlay() {
-    if (!passage || isPlaying) return;
+  function handlePlay() {
+    if (!passage) return;
+    stopPlayback();
+    setPlaybackResult(null);
     setIsPlaying(true);
-    await speakWithSpeed(passage.text, language, speed);
-    setIsPlaying(false);
-    setHasPlayed(true);
-    setPlaysLeft((n) => Math.max(0, n - 1));
+    const active = playListeningPassage(passage.text, language, speed);
+    playback.current = active;
+    void active.finished.then((result) => {
+      if (playback.current !== active) return;
+      playback.current = null;
+      setIsPlaying(false);
+      setPlaybackResult(result);
+      if (result.status === 'ended') setHasPlayed(true);
+    });
   }
 
-  function handleReplay() {
-    handlePlay();
+  function handleStop() {
+    stopPlayback();
+    setPlaybackResult({ status: 'cancelled' });
   }
 
   function goToQuestions() {
+    stopPlayback();
     setScreen('questions');
   }
 
@@ -183,6 +211,7 @@ function ListeningAttempt({ current }: { current: ReturnType<typeof useCurrentLa
 
   function nextQuestion() {
     if (!passage) return;
+    stopPlayback();
     if (qIndex + 1 < passage.questions.length) {
       setQIndex((i) => i + 1);
       setRevealed(false);
@@ -209,6 +238,7 @@ function ListeningAttempt({ current }: { current: ReturnType<typeof useCurrentLa
   }
 
   function handleNextPassage() {
+    stopPlayback();
     if (
       guided.descriptor &&
       guidedPassageIndex + 1 < guidedPassages.length
@@ -222,9 +252,92 @@ function ListeningAttempt({ current }: { current: ReturnType<typeof useCurrentLa
   }
 
   function handleBack() {
+    stopPlayback();
     window.speechSynthesis?.cancel();
     setScreen('setup');
   }
+
+  const supportedAttempt = transcriptSupported && (
+    <p className="text-sm text-slate-600 dark:text-slate-300">
+      Transcript-supported attempt — using support does not reduce XP.
+    </p>
+  );
+  const playbackMessage = playbackResult?.status === 'unavailable'
+    ? playbackResult.reason === 'no-voice'
+      ? `No ${getLanguageName(language)} speech voice is available on this device. Enable a voice in your device settings and try again, or use the transcript.`
+      : 'Speech playback is not available in this browser. You can use the transcript, or try a browser with speech support.'
+    : playbackResult?.status === 'error'
+      ? 'Speech playback could not finish. Try replaying or use the transcript. Check your device audio; some voices need a connection.'
+      : playbackResult?.status === 'cancelled'
+        ? 'Playback stopped. Replay whenever helpful.'
+        : '';
+  const playLabel = isPlaying ? 'Stop playback'
+    : hasPlayed || screen !== 'practice' ? 'Replay passage' : 'Play passage';
+  const passageSupport = passage && (
+    <section aria-label="Passage support" className="space-y-3 text-left">
+      <div className="flex flex-wrap items-center gap-3">
+        <button
+          onClick={isPlaying ? handleStop : handlePlay}
+          aria-label={playLabel}
+          className={`min-h-[44px] px-4 py-2 rounded-xl font-medium press-feedback transition-colors ${
+            screen === 'practice' && !hasPlayed && !transcriptSupported
+              ? 'bg-indigo-600 text-white hover:bg-indigo-700'
+              : 'border border-slate-300 dark:border-slate-600 text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-700'
+          }`}
+        >
+          <span aria-hidden="true">{isPlaying ? '⏹' : '▶'}</span> {playLabel}
+        </button>
+        {isPlaying && (
+          <button
+            onClick={handlePlay}
+            className="min-h-[44px] px-3 text-sm text-indigo-600 dark:text-indigo-400"
+          >
+            Replay from start
+          </button>
+        )}
+      </div>
+      <div role="group" aria-label="Playback speed" className="flex flex-wrap items-center gap-2">
+        {SPEED_OPTIONS.map((s) => (
+          <button
+            key={s}
+            onClick={() => setSpeed(s)}
+            aria-pressed={speed === s}
+            className={`min-h-[44px] px-3 py-1 rounded-lg text-sm font-medium transition-colors ${
+              speed === s
+                ? 'bg-indigo-600 text-white'
+                : 'bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-200'
+            }`}
+          >
+            {s}x
+          </button>
+        ))}
+      </div>
+      <p className="text-sm text-slate-500 dark:text-slate-400">
+        Repeating is optional. Replay as often as you like; speed changes apply to the next playback.
+      </p>
+      <p role="status" className="text-sm text-slate-600 dark:text-slate-300">{playbackMessage}</p>
+      {screen !== 'summary' && (
+        <button
+          onClick={() => {
+            if (!transcriptOpen) setTranscriptSupported(true);
+            setTranscriptOpen((open) => !open);
+          }}
+          aria-expanded={transcriptOpen}
+          aria-controls="listening-transcript"
+          className="min-h-[44px] px-3 py-2 rounded-xl border border-slate-300 dark:border-slate-600 text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-700"
+        >
+          {transcriptOpen ? 'Hide transcript' : 'Show transcript'}
+        </button>
+      )}
+      <div id="listening-transcript" hidden={!transcriptOpen && screen !== 'summary'}>
+        {(transcriptOpen || screen === 'summary') && (
+          <p lang={language} dir={isRTL(language) ? 'rtl' : undefined} className="whitespace-pre-wrap text-slate-800 dark:text-slate-100">
+            {passage.text}
+          </p>
+        )}
+      </div>
+    </section>
+  );
 
   if (guided.invalidMessage) {
     return <GuidedPracticeError message={guided.invalidMessage} />;
@@ -352,7 +465,7 @@ function ListeningAttempt({ current }: { current: ReturnType<typeof useCurrentLa
       <div className="page-enter space-y-4">
         <GuidedPracticeNotice guided={guided} />
         <AdaptivePracticeNotice {...adaptive} />
-        <button onClick={handleBack} className="text-sm text-indigo-600 dark:text-indigo-400 mb-4">
+        <button onClick={handleBack} className="min-h-[44px] text-sm text-indigo-600 dark:text-indigo-400 mb-4">
           ← Back
         </button>
 
@@ -363,52 +476,16 @@ function ListeningAttempt({ current }: { current: ReturnType<typeof useCurrentLa
           {passage.difficulty}
         </span>
 
-        {/* Play / Pause */}
-        <div className="flex flex-col items-center gap-4 mb-6">
-          <button
-            onClick={handlePlay}
-            disabled={isPlaying}
-            className="w-16 h-16 rounded-full bg-indigo-600 text-white flex items-center justify-center text-2xl shadow-lg hover:bg-indigo-700 disabled:opacity-60 press-feedback transition-colors"
-          >
-            {isPlaying ? '⏸️' : '▶️'}
-          </button>
+        <p className="text-sm text-slate-500 dark:text-slate-400">
+          Try listening first, or open the transcript whenever you need it — even before answering.
+        </p>
+        {supportedAttempt}
+        {passageSupport}
 
-          <button
-            onClick={handleReplay}
-            disabled={isPlaying}
-            className="text-sm text-indigo-600 dark:text-indigo-400 disabled:opacity-40"
-          >
-            🔄 Replay
-          </button>
-
-          {playsLeft > 0 && (
-            <p className="text-xs text-slate-500 dark:text-slate-400">
-              Listen {playsLeft} more {playsLeft === 1 ? 'time' : 'times'}
-            </p>
-          )}
-        </div>
-
-        {/* Speed */}
-        <div className="flex items-center justify-center gap-2 mb-8">
-          {SPEED_OPTIONS.map((s) => (
-            <button
-              key={s}
-              onClick={() => setSpeed(s)}
-              className={`px-3 py-1 rounded-lg text-sm font-medium transition-colors ${
-                speed === s
-                  ? 'bg-indigo-600 text-white'
-                  : 'bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-200'
-              }`}
-            >
-              {s}x
-            </button>
-          ))}
-        </div>
-
-        {hasPlayed && (
+        {(hasPlayed || transcriptSupported) && (
           <button
             onClick={goToQuestions}
-            className="w-full py-3 rounded-2xl bg-indigo-600 text-white font-semibold hover:bg-indigo-700 press-feedback transition-colors"
+            className="min-h-[44px] w-full py-3 rounded-2xl bg-indigo-600 text-white font-semibold hover:bg-indigo-700 press-feedback transition-colors"
           >
             Answer Questions →
           </button>
@@ -424,7 +501,11 @@ function ListeningAttempt({ current }: { current: ReturnType<typeof useCurrentLa
     const selected = answers[qIndex];
 
     return (
-      <div className="page-enter">
+      <div className="page-enter space-y-4">
+        <button onClick={handleBack} className="min-h-[44px] text-sm text-indigo-600 dark:text-indigo-400">
+          ← Back
+        </button>
+        {supportedAttempt}
         <p className="text-xs text-slate-500 dark:text-slate-400 mb-2">
           Question {qIndex + 1} / {passage.questions.length}
         </p>
@@ -439,9 +520,9 @@ function ListeningAttempt({ current }: { current: ReturnType<typeof useCurrentLa
               'bg-white dark:bg-slate-800 border border-slate-200 dark:border-white/10 text-slate-800 dark:text-slate-100';
             if (revealed) {
               if (i === q.correctIndex) {
-                style = 'bg-green-100 dark:bg-green-900 border border-green-500 text-green-800 dark:text-green-200';
+                style = 'bg-green-50 dark:bg-green-900/30 border border-green-200 dark:border-green-800 text-green-800 dark:text-green-200';
               } else if (i === selected && i !== q.correctIndex) {
-                style = 'bg-red-100 dark:bg-red-900 border border-red-500 text-red-800 dark:text-red-200';
+                style = 'bg-amber-50 dark:bg-amber-900/30 border border-amber-200 dark:border-amber-800 text-amber-800 dark:text-amber-200';
               }
             } else if (i === selected) {
               style = 'bg-indigo-100 dark:bg-indigo-900 border border-indigo-500 text-indigo-800 dark:text-indigo-200';
@@ -452,7 +533,7 @@ function ListeningAttempt({ current }: { current: ReturnType<typeof useCurrentLa
                 key={i}
                 onClick={() => selectAnswer(i)}
                 disabled={revealed}
-                className={`w-full text-left px-4 py-3 rounded-xl font-medium transition-colors ${style}`}
+                className={`min-h-[44px] w-full text-left px-4 py-3 rounded-xl font-medium transition-colors ${style}`}
               >
                 {opt}
               </button>
@@ -461,9 +542,20 @@ function ListeningAttempt({ current }: { current: ReturnType<typeof useCurrentLa
         </div>
 
         {revealed && (
+          <div role="status" className="space-y-2 text-sm text-slate-700 dark:text-slate-200">
+            <p className="font-semibold">{selected === q.correctIndex ? 'Correct.' : 'Not quite — keep exploring the passage.'}</p>
+            <p>Your answer: {selected == null ? 'No answer selected' : q.options[selected]}</p>
+            <p>Correct answer: {q.options[q.correctIndex]}</p>
+            <p className="text-slate-500 dark:text-slate-400">
+              Replay or use the full transcript to revisit the answer in context.
+            </p>
+          </div>
+        )}
+        {passageSupport}
+        {revealed && (
           <button
             onClick={nextQuestion}
-            className="w-full py-3 rounded-2xl bg-indigo-600 text-white font-semibold hover:bg-indigo-700 press-feedback transition-colors"
+            className="min-h-[44px] w-full py-3 rounded-2xl bg-indigo-600 text-white font-semibold hover:bg-indigo-700 press-feedback transition-colors"
           >
             {qIndex + 1 < passage.questions.length ? 'Next Question →' : 'See Results'}
           </button>
@@ -490,12 +582,13 @@ function ListeningAttempt({ current }: { current: ReturnType<typeof useCurrentLa
           Practice Complete!
         </h3>
         <p className="text-slate-600 dark:text-slate-300 mb-1">
-          Score: {correct} / {passage.questions.length} correct
+          Passage questions: {correct} / {passage.questions.length} correct
         </p>
+        {supportedAttempt}
         <p className="text-indigo-600 dark:text-indigo-400 font-semibold mb-8">
           +{xpAwarded} XP earned
         </p>
-        <p dir={isRTL(language) ? 'rtl' : undefined} className="mb-3 text-slate-800 dark:text-slate-100">{passage.text}</p>
+        <div className="mb-6">{passageSupport}</div>
         {adaptive.selection?.items.find((item) => item.id === passage.id)?.coverage && (
           <LexicalCoverageNote coverage={adaptive.selection.items.find((item) => item.id === passage.id)!.coverage!} />
         )}
@@ -519,6 +612,7 @@ function ListeningAttempt({ current }: { current: ReturnType<typeof useCurrentLa
             </button>
           </div>
         )}
+        {(!guided.isGuided || guidedFinished) && <InputActivityLink language={language} after="listening" />}
       </div>
     );
   }

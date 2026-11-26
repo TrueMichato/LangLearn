@@ -22,6 +22,7 @@ import type {
 import {
   guidedLessonId,
   isGuidedAlphabetComplete,
+  loadScriptPreparationDeferred,
 } from './guided-learning-progress';
 import {
   grammarLessonRoute,
@@ -53,6 +54,7 @@ export interface LearningPathResolution {
   arabicPolicy?: ArabicLearningPathPolicy;
   pathVersion?: number;
   baseline?: LearningPathBaseline;
+  scriptPreparationDeferred?: boolean;
 }
 
 export interface LearningPathBaseline {
@@ -126,6 +128,8 @@ export function resolveLearningPath(
   content: LearningPathContent,
   resolution: LearningPathResolution,
 ): LearningPath {
+  // Keep the historical gate when deriving existing learners' v1 access baseline.
+  const advisoryPreparation = resolution.pathVersion !== 1;
   manifest = composeComprehensiveLearningPath(
     manifest,
     content,
@@ -383,7 +387,15 @@ export function resolveLearningPath(
     parallelLetterUnit || lettersComplete,
   );
 
-  let previousUnitComplete = prerequisitesComplete;
+  if (advisoryPreparation) {
+    for (const node of letterUnitNodes) node.requirement = 'preparation';
+    completedAheadCount = 0;
+    // Prep keeps its own test-out, but is not part of regular grammar test-outs.
+    encounteredLessons.grammar = [];
+    encounteredLessons.vocab = [];
+  }
+  const coursePrerequisitesComplete = advisoryPreparation || prerequisitesComplete;
+  let previousUnitComplete = coursePrerequisitesComplete;
   const units: LearningPathUnit[] = manifest.units.map((unit) => {
     const phase = phaseForUnit(unit.phaseId);
     const strands: LearningPathStrand[] = unit.strands
@@ -407,7 +419,7 @@ export function resolveLearningPath(
       unit.id,
       unit.title,
       phase.title,
-      prerequisitesComplete,
+      coursePrerequisitesComplete,
     );
 
     const resolvedUnit: LearningPathUnit = {
@@ -434,7 +446,9 @@ export function resolveLearningPath(
           {
             id: 'letters',
             title: 'Learn the script',
-            description: parallelLetterUnit
+            description: advisoryPreparation
+              ? 'Recommended preparation: learn the shapes and sounds, or start using words and return whenever you like.'
+              : parallelLetterUnit
               ? 'Learn the shapes and sounds side by side before lessons begin.'
               : letterLessonNodes.length > 0
                 ? 'Get comfortable with the writing system and its sounds before lessons begin.'
@@ -449,12 +463,17 @@ export function resolveLearningPath(
         ]
       : units;
   const nodes = allUnits.flatMap((unit) => unit.nodes);
-  const recommendedNodeId =
+  const nextCourseNode =
     nodes.find(
       (node) => nodeIsRequired(node) && node.state === 'available' && !node.catchUp,
-    )?.id ?? nodes.find((node) => node.catchUp && node.state === 'available')?.id ?? null;
+    ) ?? nodes.find((node) => node.catchUp && node.state === 'available');
+  const nextPreparationNode = advisoryPreparation && !resolution.scriptPreparationDeferred && nextCourseNode
+    ? letterUnitNodes.find((node) => node.state === 'available')
+    : undefined;
+  const recommendedNodeId = (nextPreparationNode ?? nextCourseNode)?.id ?? null;
   const requiredNodes = nodes.filter(nodeIsRequired);
-  const enrichmentNodes = nodes.filter((node) => !nodeIsRequired(node));
+  const enrichmentNodes = nodes.filter((node) => node.requirement === 'enrichment');
+  const firstWordNode = units.flatMap((unit) => unit.nodes).find((node) => node.kind === 'vocab');
 
   return {
     language: manifest.language,
@@ -471,6 +490,13 @@ export function resolveLearningPath(
     enrichmentTotalCount: enrichmentNodes.length,
     completedAheadCount,
     recommendedNodeId,
+    ...(advisoryPreparation && letterUnitNodes.length > 0 && firstWordNode ? {
+      scriptPreparation: {
+        deferred: resolution.scriptPreparationDeferred === true,
+        continueRoute: nextCourseNode?.route ?? firstWordNode.route,
+        returnRoute: (letterUnitNodes.find((node) => node.state === 'available') ?? letterUnitNodes[0]).route,
+      },
+    } : {}),
   };
 }
 
@@ -493,11 +519,12 @@ export async function loadLearningPath(
   const manifest = getLearningPathManifest(language);
   if (!manifest) return null;
 
-  const [grammar, vocab, progress, activityProgress] = await Promise.all([
+  const [grammar, vocab, progress, activityProgress, scriptPreparationDeferred] = await Promise.all([
     fetchLessonIndex(language, 'grammar'),
     fetchLessonIndex(language, 'vocab'),
     getLessonProgress(language),
     loadGuidedActivityProgress(language),
+    loadScriptPreparationDeferred(language),
   ]);
   const alphabets = getAlphabetsForLanguage(language);
   const settings = useSettingsStore.getState();
@@ -564,6 +591,6 @@ export async function loadLearningPath(
   return resolveLearningPath(
     manifest,
     { grammar, vocab },
-    { progress, completedLetters, activityProgress, arabicPolicy, baseline },
+    { progress, completedLetters, activityProgress, arabicPolicy, baseline, scriptPreparationDeferred },
   );
 }

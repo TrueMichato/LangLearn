@@ -26,7 +26,7 @@ interface ExpansionState {
 function isInScope(node: LearningPathNode, scope: CurriculumScope): boolean {
   const requirement = node.requirement ?? 'required';
   return scope === 'core'
-    ? requirement === 'required'
+    ? requirement === 'required' || requirement === 'preparation'
     : requirement === 'enrichment';
 }
 
@@ -236,13 +236,16 @@ export default function CurriculumOutline({ path }: Props) {
 
       <p className="mb-3 text-sm text-slate-500 dark:text-slate-400">
         {scope === 'core'
-          ? 'Main path units unlock in order.'
+          ? path.scriptPreparation
+            ? 'Script preparation is optional. Main path lessons unlock in order.'
+            : 'Main path units unlock in order.'
           : 'Optional lessons are always open and never block your main path.'}
       </p>
 
       <div className="overflow-hidden rounded-2xl border border-slate-200/70 bg-white shadow-sm dark:border-white/10 dark:bg-slate-800">
         {units.map((unit, unitIndex) => {
           const nodes = unit.nodes.filter((node) => isInScope(node, scope));
+          const preparation = nodes.some((node) => node.requirement === 'preparation');
           const completed = nodes.filter(
             (node) => node.state === 'completed',
           ).length;
@@ -287,11 +290,13 @@ export default function CurriculumOutline({ path }: Props) {
                     <span className="mt-0.5 block text-xs text-slate-500 dark:text-slate-400">
                       {current ? 'Current unit · ' : ''}
                       {completed === nodes.length
-                        ? scope === 'core'
+                        ? preparation
+                          ? 'Preparation complete'
+                          : scope === 'core'
                           ? 'Main path complete'
                           : 'Explored'
                         : `${completed} of ${nodes.length} ${
-                            scope === 'core' ? 'path steps' : 'optional lessons'
+                            preparation ? 'optional preparation steps' : scope === 'core' ? 'path steps' : 'optional lessons'
                           }`}
                     </span>
                   </span>

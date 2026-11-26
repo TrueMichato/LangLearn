@@ -691,6 +691,32 @@ Reader retains a separate draft per source word while that text is open, includi
 across closing details or selecting another word; opening a new text clears them.
 The shared modal focus contract contains focus and restores the opener.
 
+### Reading purpose and continuation
+
+Reader offers **main idea** and **close study** guidance without rewriting the
+source or imposing lookup quotas. Highlighting remains optional and does not
+become a comprehension score. No recorded lexical evidence means an incomplete
+estimate, not proof that the learner knows no words. Rereading, starting over and
+an optional main-idea reflection are not graded and do not establish mastery.
+
+Schema v13 adds `readingProgress`, indexed by `id`, `language`, and `updatedAt`.
+Each record retains the exact read source, a source-paragraph UTF-16 offset
+(not a pixel scroll position), purpose, highlighting and reflection. Curated
+identity is language + content ID; a saved text also includes its ID and creation
+time. Changing source wording resets the cursor with an explanation and keeps
+the reflection. An unavailable curated source can use the retained copy with
+an explicit notice. Deleted saved texts cannot silently return as a new text,
+and deleting a saved text deletes its associated progress.
+
+Full backup, replacement/merge, snapshots and recovery capsules carry this
+table (14 data tables in total, excluding the snapshot table itself). Imports
+validate positions and identities; merges remap saved-text references.
+Conflicting nonempty reflections fail rather than silently discarding either
+one. Older payloads without reading progress remain supported. Unsaved reading
+progress errors remain visible; do not claim a position or reflection is durable
+until its write succeeds. This is Reader continuity, not an all-activity resume
+service.
+
 ## Practice and assessment boundaries
 
 - Review home separates scheduled reviews from explicit optional practice.
@@ -714,9 +740,20 @@ The shared modal focus contract contains focus and restores the opener.
   Beginners receive available introductory content, not an empty knowledge gate.
 - Listening selects passages by full-text vocabulary at attempt start.
   Dictation selects full reference sentences within the chosen passage
-  difficulty. The attempt does not reroll after a word save. Listening transcript
-  capture is available only after **all** passage questions; a transcript could
-  otherwise answer later questions. Dictation capture appears after submission.
+  difficulty. The attempt does not reroll after a word save. The transcript
+  itself is now available on request before, during and after questions.
+  Revealing it labels the attempt **transcript-supported**; the result is not
+  represented as unaided listening and effort XP is unchanged. Word capture
+  still waits until **all** passage questions; dictation capture appears after
+  submission. Replay/stop remain available during answers and feedback.
+  Feedback names the selected and correct answers and offers the full transcript,
+  rather than inventing a passage-specific explanation.
+- Comprehension playback uses native browser speech with observable start,
+  completion, cancellation and failure through `playListeningPassage`.
+  Unavailable voices or failed playback offer transcript-supported practice;
+  they do not silently substitute the legacy remote short-text fallback.
+  Browser voice availability is device-dependent, including offline. This does
+  not change legacy TTS or dictation behavior.
 - Song browsing ranks full lyric text within the selected language, search, and
   difficulty. It never replaces a manually selected song. Existing song
   vocabulary saving remains the sole song save flow, now editable and
@@ -730,12 +767,31 @@ The shared modal focus contract contains focus and restores the opener.
   English rule prose is not guessed into vocabulary; Latin-script grammar
   content without explicit lexical metadata may therefore have no capture
   candidates.
-- **Proficiency tests and lesson test-outs are not adaptive.** Generation,
-  distribution, scoring, timing, and test-out's no-XP policy are unchanged.
+- **Practice checks and lesson test-outs are not adaptive.** Question sampling,
+  timing and test-out's no-XP policy remain separate from lexical adaptation.
+  `/tests` reports the number sampled, attempted, correct and unanswered,
+  and only categories present in that sample. Unanswered questions are not
+  described as attempted mistakes. The stored percentage still uses the full
+  sample denominator; rewards retain the existing formula.
+  A result is not a CEFR/JLPT level or a measure of speaking, open writing,
+  broad listening, or general proficiency. Revisit links use actual source
+  lesson metadata; missing metadata produces no guessed topic link.
+  Question details are available on the current result only. History preserves
+  aggregate scores, using `practice-check-v1` in its existing `level` string for
+  new records. Older labels are retained as qualified **legacy estimates**,
+  never converted into new mastery claims or fabricated per-question history.
   Capture is offered only on final results. Assessment capture recognizes
   existing vocabulary prompt templates and explicit target-option direction
   metadata; it intentionally omits ambiguous English grammar prose and unmarked
   target material. It is not a new question-generation pipeline.
+- Translation compares the learner's response with **one possible answer**:
+  intended meaning, key form and context/register are a self-check rubric,
+  not an automatic judge of equivalent wording. Optional authored alternatives,
+  hints, `context` and `reviewedFeedback` appear only when supplied. Missing
+  notes receive generic comparison guidance, not invented explanations.
+  Sentence tile/typing checks keep their constrained deterministic scoring.
+  Voluntary same-attempt retries preserve the first check/rating, and do not
+  duplicate XP, scheduled reviews or guided completion evidence.
 
 ## Daily Challenge
 
@@ -856,6 +912,43 @@ path state, including retained access; a failed check offers retry rather than
 silently opening a locked alphabet. Omitting `group`, or choosing Back to
 columns, preserves independent browsing, charts and quizzes. Unsupported
 languages are named explicitly; another language is never silently substituted.
+
+Script-first remains the starting recommendation, not a barrier to first words.
+Japanese, Russian and Arabic paths offer continuation while unfinished script
+preparation stays visibly incomplete and reachable. Russian's attached
+`alphabet-sounds` lesson is part of that optional preparation. Choosing to
+continue stores `'true'` under `guided-script-deferred-v1/<language>` in
+`db.settings`, included in the existing backup/recovery flow. It changes Home's
+and the path's next recommendation, never completion, character mastery,
+knowledge evidence or XP. Normal lesson sequencing, checkpoints and retained
+legacy access remain independent of this preference.
+
+## Connecting activities without compulsory review
+
+Home keeps due reviews as its primary action when cards are due, and retains
+the unfinished vocabulary lesson's exact resume/finishing link. A quieter
+listening/reading alternative remains available without clearing the queue.
+The path recommendation remains the first item in Browse; practice and input
+alternatives share a compact group rather than another equal-weight card stack.
+Sentence and translation completion offer listening; completed listening offers
+Reader, including its existing continuation flow.
+
+`src/lib/learn-activity-recommendations.ts` reuses an unlocked/completed input
+node in the current path unit when available, preserving its guided route,
+language and any real content scope. **Unit placement is not a semantic match
+to the current lesson**, and the copy explicitly says so. There is no newly
+authored lesson-to-passage catalog or inferred vocabulary match.
+Otherwise the link is a generic beginner-friendly option: `/listening` asks
+the learner to choose Easy, and `/reader` asks them to choose an Easy Library
+text or continue reading. These unscoped destinations use the app's current
+language; unsupported/unselected languages receive no invented input
+suggestion. No ignored `textId`, `passageId`, language or difficulty parameters
+are appended. Saved-lesson loading/error recovery remains separate from this
+generic alternative.
+
+These are navigational choices and practical learning supports, not proven
+learning outcomes. They introduce no time ratios, daily card caps, automatic
+leech suspension, due-date changes or timer-derived study-balance advice.
 
 ## Guided checkpoints and nonlexical evidence
 

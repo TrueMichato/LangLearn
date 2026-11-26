@@ -45,7 +45,9 @@ vi.mock('../stores/xpStore', () => ({
   useXPStore: Object.assign((select: (state: { addXP: typeof mocks.addXP }) => unknown) =>
     select({ addXP: mocks.addXP }), { getState: () => ({ addXP: mocks.addXP }) }),
 }));
-vi.mock('../lib/test-questions', () => ({ generateTestQuestions: mocks.tests }));
+vi.mock('../lib/test-questions', async (original) => ({
+  ...await original<typeof import('../lib/test-questions')>(), generateTestQuestions: mocks.tests,
+}));
 vi.mock('../lib/daily-challenge', () => ({ loadDailyChallengeAttempt: mocks.daily }));
 vi.mock('../hooks/useAdaptivePractice', () => ({
   useAdaptivePractice: () => ({ start: mocks.adapt, selection: null, status: 'ready', error: '' }),
@@ -54,7 +56,10 @@ vi.mock('../stores/timerStore', () => ({
   useTimerStore: (select: (state: { start: () => void; isRunning: boolean }) => unknown) =>
     select({ start: () => {}, isRunning: true }),
 }));
-vi.mock('../lib/tts', () => ({ speakWithSpeed: async () => {} }));
+vi.mock('../lib/tts', () => ({
+  speakWithSpeed: async () => {},
+  playListeningPassage: () => ({ finished: Promise.resolve({ status: 'ended' }), stop: () => {} }),
+}));
 vi.mock('react-router-dom', async (original) => ({
   ...await original<typeof import('react-router-dom')>(),
   useSearchParams: () => [new URLSearchParams()],
@@ -167,7 +172,7 @@ describe('practice page reveal boundaries and unchanged assessment semantics', (
     expect(pool.length).toBeGreaterThan(0);
     expect(pool.every((item) => item.difficulty === 'easy')).toBe(true);
     expect(captures(tree)).toHaveLength(0);
-    await click(tree, '▶️');
+    await click(tree, '▶ Play passage');
     tree = render();
     click(tree, 'Answer Questions →');
     tree = render();
@@ -187,7 +192,7 @@ describe('practice page reveal boundaries and unchanged assessment semantics', (
     expect(mocks.addXP).toHaveBeenCalledExactlyOnceWith(35);
   });
 
-  it('passes the unchanged proficiency pool through all questions; saves only on final results', async () => {
+  it('passes the unchanged practice pool through all questions; saves only on final results', async () => {
     const questions = Array.from({ length: 20 }, (_, index) => ({
       id: index, category: index < 10 ? 'vocabulary' : 'grammar',
       question: `What does "語${index}" (reading) mean?`, options: [`answer${index}`, `other${index}`], correctIndex: 0,
@@ -197,7 +202,7 @@ describe('practice page reveal boundaries and unchanged assessment semantics', (
     let tree = render();
     click(tree, 'Untimed');
     tree = render();
-    await click(tree, 'Start Test');
+    await click(tree, 'Start practice check');
     tree = render();
     for (let index = 0; index < questions.length; index++) {
       expect(captures(tree)).toHaveLength(0);

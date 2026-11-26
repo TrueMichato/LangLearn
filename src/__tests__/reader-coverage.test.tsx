@@ -50,6 +50,15 @@ describe('Reader full-text coverage', () => {
     expect(html).toContain('Surface-form matching only');
   });
 
+  it('describes absent local familiarity evidence without claiming the learner knows no words', async () => {
+    const coverage = await analyzeReaderText('Hola, mundo.', buildKnowledgeSnapshot({ language: 'es' }));
+    const html = renderToStaticMarkup(<CoverageSummary state={{ status: 'ready', coverage }} />);
+    expect(html).toContain('No familiarity evidence was found');
+    expect(html).toContain('You may know words not recorded in this app');
+    expect(html).toContain('not a guarantee of comprehension');
+    expect(html).not.toContain('comprehension score');
+  });
+
   it('distinguishes empty text, pending analysis, failure and approximate Japanese segmentation', async () => {
     const empty = await analyzeReaderText('123 …', snapshot);
     const emptyHtml = renderToStaticMarkup(<CoverageSummary state={{ status: 'ready', coverage: empty }} />);

@@ -61,8 +61,8 @@ const LESSON_LANG_THRESHOLDS: Array<{ n: number; name: string; icon: string }> =
 ];
 
 const TEST_LANG_THRESHOLDS: Array<{ n: number; name: string; icon: string }> = [
-  { n: 1, name: 'Test Passed', icon: '✅' },
-  { n: 5, name: 'Test Veteran', icon: '🏅' },
+  { n: 1, name: 'Practice Check', icon: '✅' },
+  { n: 5, name: 'Practice Explorer', icon: '🏅' },
 ];
 
 function perLanguageBadges(): BadgeDefinition[] {
@@ -98,8 +98,8 @@ function perLanguageBadges(): BadgeDefinition[] {
         name: `${flag} ${t.name}`,
         description:
           t.n === 1
-            ? `Pass a ${name} proficiency test (≥70%)`
-            : `Pass ${t.n} ${name} proficiency tests (≥70%)`,
+            ? `Answer at least 70% of a ${name} practice sample correctly`
+            : `Answer at least 70% correctly in ${t.n} ${name} practice samples`,
         icon: t.icon,
         category: 'tests-lang',
         language: code,
@@ -192,5 +192,5 @@ export const BADGES: BadgeDefinition[] = [
 
 export const BADGE_MAP = new Map(BADGES.map((b) => [b.id, b]));
 
-/** Threshold (0–100) at which a proficiency test counts as "passed". */
+/** Sample-score threshold (0–100) for practice-check badges. Not a proficiency level. */
 export const TEST_PASS_SCORE = 70;

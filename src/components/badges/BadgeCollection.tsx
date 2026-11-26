@@ -18,7 +18,7 @@ const CATEGORY_LABELS: Record<BadgeCategory, string> = {
   reading: '📖 Reading',
   'vocabulary-lang': '🗂️ Vocabulary by Language',
   'lessons-lang': '🎓 Lessons by Language',
-  'tests-lang': '🏅 Proficiency Tests',
+  'tests-lang': '🏅 Practice Checks',
 };
 
 const CATEGORY_ORDER: BadgeCategory[] = [

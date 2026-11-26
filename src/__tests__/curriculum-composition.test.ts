@@ -440,9 +440,11 @@ describe('comprehensive curriculum composition', () => {
       expect(path.enrichmentTotalCount).toBe(enrichment.length);
       expect(recommended).toHaveLength(1);
       expect(recommended[0]).toMatchObject({
-        requirement: 'required',
+        requirement: LEARNING_PATHS[language].letterPrerequisites.length > 0 ? 'preparation' : 'required',
         state: 'available',
       });
+      expect(nodes.filter((node) => node.requirement === 'preparation')
+        .every((node) => node.unitId === 'letters')).toBe(true);
       expect(enrichment.every((node) => node.state === 'available')).toBe(true);
     },
   );

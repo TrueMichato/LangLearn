@@ -109,6 +109,7 @@ export type LearningPathUnitManifest =
 
 export interface LearningPathManifest {
   language: string;
+  /** Script-first recommendations; only the legacy v1 resolver gates lessons on them. */
   letterPrerequisites: string[];
   /** Lessons that belong in the generated "Learn the script" unit. */
   letterUnitLessons?: LearningPathLessonRef[];
@@ -129,7 +130,7 @@ export interface LearningPathNode {
   state: LearningPathNodeState;
   unitId: string;
   strandId?: string;
-  requirement?: LearningPathRequirement;
+  requirement?: LearningPathRequirement | 'preparation';
   session?: LearningPathSessionBounds;
   catchUp?: boolean;
 }
@@ -181,6 +182,12 @@ export interface LearningPath {
   completedAheadCount: number;
   /** The single available node highlighted as the calm next recommendation. */
   recommendedNodeId: string | null;
+  /** Navigation preference only; unfinished preparation remains incomplete. */
+  scriptPreparation?: {
+    deferred: boolean;
+    continueRoute: string;
+    returnRoute: string;
+  };
 }
 
 export interface ArabicLearningPathPolicy {

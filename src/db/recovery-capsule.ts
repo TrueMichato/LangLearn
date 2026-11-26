@@ -31,6 +31,7 @@ export const RECOVERY_CAPSULE_TABLES = [
   'badges',
   'guidedActivityProgress',
   'skillProgress',
+  'readingProgress',
 ] as const satisfies readonly BackupTableName[];
 
 export interface RecoveryCapsule {
@@ -108,7 +109,8 @@ export function parseRecoveryCapsule(
     const schemaVersion = raw.schemaVersion;
     const requiredTables = RECOVERY_CAPSULE_TABLES.filter((name) =>
       (name !== 'guidedActivityProgress' || schemaVersion >= 11) &&
-      (name !== 'skillProgress' || schemaVersion >= 12));
+      (name !== 'skillProgress' || schemaVersion >= 12) &&
+      (name !== 'readingProgress' || schemaVersion >= 13));
     if (
       payload.schemaVersion !== raw.schemaVersion ||
       requiredTables.some(
