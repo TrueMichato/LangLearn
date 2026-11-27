@@ -125,22 +125,26 @@
         {
           "sentence": "___ الطَّبَّاخُ الْخَضْرَوَاتِ قَبْلَ الطَّهْيِ.",
           "answer": "يَغْسِلُ",
-          "hint": "to wash"
+          "hint": "to wash",
+          "translation": "The cook washes the vegetables before cooking."
         },
         {
           "sentence": "___ أَخِي الْبَطَاطِسَ بِسِكِّينٍ صَغِيرٍ.",
           "answer": "يُقَشِّرُ",
-          "hint": "to peel"
+          "hint": "to peel",
+          "translation": "My brother peels the potatoes with a small knife."
         },
         {
           "sentence": "___ الطَّبَّاخُ الْجَزَرَ إِلَى مُكَعَّبَاتٍ.",
           "answer": "يُقَطِّعُ",
-          "hint": "to cut / chop"
+          "hint": "to cut / chop",
+          "translation": "The cook cuts the carrots into cubes."
         },
         {
           "sentence": "___ الْمُسَاعِدُ الْبَصَلَ نَاعِمًا.",
           "answer": "يَفْرُمُ",
-          "hint": "to mince / finely chop"
+          "hint": "to mince / finely chop",
+          "translation": "The assistant finely chops the onion."
         }
       ]
     },

@@ -125,22 +125,26 @@
         {
           "sentence": "___ بَلَدٌ عَرَبِيٌّ عَرِيقٌ.",
           "answer": "مِصْرُ",
-          "hint": "Egypt"
+          "hint": "Egypt",
+          "translation": "Egypt is an ancient Arab country."
         },
         {
           "sentence": "___ مَعْرُوفَةٌ بِتَارِيخِهَا الْقَدِيمِ.",
           "answer": "سُورِيَا",
-          "hint": "Syria"
+          "hint": "Syria",
+          "translation": "Syria is known for its ancient history."
         },
         {
           "sentence": "___ تَقَعُ فِي شِبْهِ الْجَزِيرَةِ الْعَرَبِيَّةِ.",
           "answer": "السُّعُودِيَّةُ",
-          "hint": "Saudi Arabia"
+          "hint": "Saudi Arabia",
+          "translation": "Saudi Arabia is located in the Arabian Peninsula."
         },
         {
           "sentence": "___ يَطِلُّ عَلَى الْمُحِيطِ الْأَطْلَسِيِّ.",
           "answer": "الْمَغْرِبُ",
-          "hint": "Morocco"
+          "hint": "Morocco",
+          "translation": "Morocco overlooks the Atlantic Ocean."
         }
       ]
     },

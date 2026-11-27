@@ -125,17 +125,20 @@
         {
           "sentence": "Schimb ___ în fiecare lună.",
           "answer": "parolă",
-          "hint": "password"
+          "hint": "password",
+          "translation": "I change the password every month."
         },
         {
           "sentence": "Salvez ___ în cloud.",
           "answer": "fișier",
-          "hint": "file"
+          "hint": "file",
+          "translation": "I save the file in the cloud."
         },
         {
           "sentence": "Vorbim despre ___ online.",
           "answer": "securitate",
-          "hint": "security"
+          "hint": "security",
+          "translation": "We talk about online security."
         }
       ]
     },

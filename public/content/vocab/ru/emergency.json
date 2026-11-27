@@ -21,11 +21,11 @@
   "exercises": [
     { "type": "match", "pairs": 6 },
     { "type": "fill-blank", "items": [
-      { "sentence": "Вызовите ___!", "answer": "Скорую помощь", "hint": "Ambulance (accusative)" },
-      { "sentence": "___ потушили за два часа.", "answer": "Пожар", "hint": "Fire" },
-      { "sentence": "___ приехала через пять минут.", "answer": "Полиция", "hint": "Police" },
-      { "sentence": "___ висит в коридоре.", "answer": "Огнетушитель", "hint": "Fire extinguisher" },
-      { "sentence": "___ пассажиров — наш приоритет.", "answer": "Безопасность", "hint": "Safety" }
+      { "sentence": "Вызовите ___!", "answer": "Скорую помощь", "hint": "Ambulance (accusative)", "translation": "Call an ambulance!" },
+      { "sentence": "___ потушили за два часа.", "answer": "Пожар", "hint": "Fire", "translation": "The fire was put out in two hours." },
+      { "sentence": "___ приехала через пять минут.", "answer": "Полиция", "hint": "Police", "translation": "The police arrived in five minutes." },
+      { "sentence": "___ висит в коридоре.", "answer": "Огнетушитель", "hint": "Fire extinguisher", "translation": "The fire extinguisher is hanging in the hallway." },
+      { "sentence": "___ пассажиров — наш приоритет.", "answer": "Безопасность", "hint": "Safety", "translation": "Passenger safety is our priority." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "What does 'Землетрясение' mean?", "options": ["Earthquake", "Thunderstorm", "Flood", "Tornado"], "answer": 0 },

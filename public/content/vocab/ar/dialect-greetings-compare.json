@@ -125,22 +125,26 @@
         {
           "sentence": "___، سُرِرْتُ بِزِيَارَتِكَ.",
           "answer": "مَرْحَبًا",
-          "hint": "hello — MSA marḥaban; Egyptian ahlan; Levantine marḥaba/ahlēn; Gulf marḥaba"
+          "hint": "hello — MSA marḥaban; Egyptian ahlan; Levantine marḥaba/ahlēn; Gulf marḥaba",
+          "translation": "Hello, I was pleased by your visit."
         },
         {
           "sentence": "___ فِي مَدِينَتِنَا.",
           "answer": "أَهْلًا وَسَهْلًا",
-          "hint": "welcome — MSA ʾahlan wa-sahlan; Egyptian ahlan wa-sahlan; Levantine ahla w-sahla; Gulf ḥayyāk Allāh"
+          "hint": "welcome — MSA ʾahlan wa-sahlan; Egyptian ahlan wa-sahlan; Levantine ahla w-sahla; Gulf ḥayyāk Allāh",
+          "translation": "Welcome to our city."
         },
         {
           "sentence": "___، هَلْ نَبْدَأُ الْجَوْلَةَ؟",
           "answer": "صَبَاحُ الْخَيْرِ",
-          "hint": "good morning — MSA ṣabāḥu l-khayr; Egyptian ṣabāḥ el-khēr; Levantine ṣabāḥ el-khēr; Gulf ṣabāḥ el-khēr"
+          "hint": "good morning — MSA ṣabāḥu l-khayr; Egyptian ṣabāḥ el-khēr; Levantine ṣabāḥ el-khēr; Gulf ṣabāḥ el-khēr",
+          "translation": "Good morning, shall we begin the tour?"
         },
         {
           "sentence": "___، كَيْفَ كَانَ يَوْمُكَ؟",
           "answer": "مَسَاءُ الْخَيْرِ",
-          "hint": "good evening — MSA masāʾu l-khayr; Egyptian masā el-khēr; Levantine masa el-khēr; Gulf masā el-khēr"
+          "hint": "good evening — MSA masāʾu l-khayr; Egyptian masā el-khēr; Levantine masa el-khēr; Gulf masā el-khēr",
+          "translation": "Good evening, how was your day?"
         }
       ]
     },

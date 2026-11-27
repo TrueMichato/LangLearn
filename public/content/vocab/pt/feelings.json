@@ -119,9 +119,9 @@
     {
       "type": "fill-blank",
       "items": [
-        { "sentence": "Sinto muita ___ da minha família.", "answer": "saudade", "hint": "uniquely Portuguese word for missing someone" },
-        { "sentence": "Nunca perca a ___.", "answer": "esperança", "hint": "belief that good things will happen" },
-        { "sentence": "Tenha ___, vai dar certo.", "answer": "paciência", "hint": "ability to wait calmly" }
+        { "sentence": "Sinto muita ___ da minha família.", "answer": "saudade", "hint": "uniquely Portuguese word for missing someone", "translation": "I miss my family a lot." },
+        { "sentence": "Nunca perca a ___.", "answer": "esperança", "hint": "belief that good things will happen", "translation": "Never lose hope." },
+        { "sentence": "Tenha ___, vai dar certo.", "answer": "paciência", "hint": "ability to wait calmly", "translation": "Have patience, it will work out." }
       ]
     },
     {

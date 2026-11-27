@@ -125,22 +125,26 @@
         {
           "sentence": "___ عِنْدْكُمْ الْيَوْمْ؟",
           "answer": "شُو الْجَوّ",
-          "hint": "how is the weather?"
+          "hint": "how is the weather?",
+          "translation": "How is the weather at your place today?"
         },
         {
           "sentence": "فِي ___ فَوْقِ الْجَبَلْ.",
           "answer": "غَيْمْ",
-          "hint": "clouds"
+          "hint": "clouds",
+          "translation": "There are clouds above the mountain."
         },
         {
           "sentence": "___ بِاللَّيْلْ، سَكِّرِ الشَّبَابِيكْ.",
           "answer": "جَاي عَاصِفَةْ",
-          "hint": "a storm is coming"
+          "hint": "a storm is coming",
+          "translation": "A storm is coming at night; close the windows."
         },
         {
           "sentence": "___ إِيدَيْكْ قَبْلَ مَا نِطْلَعْ.",
           "answer": "دَفِّي",
-          "hint": "warm up"
+          "hint": "warm up",
+          "translation": "Warm your hands before we go out."
         }
       ]
     },

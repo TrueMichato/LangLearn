@@ -125,17 +125,20 @@
         {
           "sentence": "___ înseamnă că graba produce greșeli.",
           "answer": "graba strică treaba",
-          "hint": "rushing leads to mistakes"
+          "hint": "rushing leads to mistakes",
+          "translation": "\"Haste spoils the job\" (haste makes waste) means that rushing causes mistakes."
         },
         {
           "sentence": "___ înseamnă că oamenii buni schimbă locul.",
           "answer": "omul sfințește locul",
-          "hint": "a good person improves any place"
+          "hint": "a good person improves any place",
+          "translation": "\"The person sanctifies the place\" means that good people change the place they're in."
         },
         {
           "sentence": "___ înseamnă că un lucru sigur valorează mult.",
           "answer": "ce-i în mână nu-i minciună",
-          "hint": "a sure thing is valuable"
+          "hint": "a sure thing is valuable",
+          "translation": "\"What's in your hand is no lie\" (a bird in the hand is worth two in the bush) means that a sure thing is worth a lot."
         }
       ]
     },

@@ -125,22 +125,26 @@
         {
           "sentence": "وَصَلْنَا إِلَى ___ صَبَاحًا.",
           "answer": "الْمُسْتَشْفَى",
-          "hint": "hospital"
+          "hint": "hospital",
+          "translation": "We arrived at the hospital in the morning."
         },
         {
           "sentence": "نَنْتَظِرُ فِي ___.",
           "answer": "قِسْمُ الطَّوَارِئِ",
-          "hint": "emergency department"
+          "hint": "emergency department",
+          "translation": "We are waiting in the emergency department."
         },
         {
           "sentence": "دَخَلَ الْمَرِيضُ ___.",
           "answer": "غُرْفَةُ الْفَحْصِ",
-          "hint": "examination room"
+          "hint": "examination room",
+          "translation": "The patient entered the examination room."
         },
         {
           "sentence": "سَأَلَنَا ___ عَنِ الأَعْرَاضِ.",
           "answer": "طَبِيبٌ مُقِيمٌ",
-          "hint": "resident doctor"
+          "hint": "resident doctor",
+          "translation": "A resident doctor asked us about the symptoms."
         }
       ]
     },

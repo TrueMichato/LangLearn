@@ -125,22 +125,26 @@
         {
           "sentence": "___، الْحِسَابْ.",
           "answer": "لَوْ سَمَحْت",
-          "hint": "please / excuse me (Egyptian; MSA: min faḍlik)"
+          "hint": "please / excuse me (Egyptian; MSA: min faḍlik)",
+          "translation": "Excuse me, the bill."
         },
         {
           "sentence": "أَنَا ___ شَايْ بِالنَّعْنَاع.",
           "answer": "عَايِزْ",
-          "hint": "I want / he wants (Egyptian; MSA: urīdu / yurīdu)"
+          "hint": "I want / he wants (Egyptian; MSA: urīdu / yurīdu)",
+          "translation": "I want mint tea."
         },
         {
           "sentence": "___ لَوْ سَمَحْت.",
           "answer": "الْحِسَابْ",
-          "hint": "the bill (Egyptian; MSA: al-fātūra)"
+          "hint": "the bill (Egyptian; MSA: al-fātūra)",
+          "translation": "The bill, please."
         },
         {
           "sentence": "مُمْكِنْ ___؟",
           "answer": "مِنْيُو",
-          "hint": "menu (Egyptian; MSA: qāʾimat al-ṭaʿām)"
+          "hint": "menu (Egyptian; MSA: qāʾimat al-ṭaʿām)",
+          "translation": "Can I have a menu?"
         }
       ]
     },

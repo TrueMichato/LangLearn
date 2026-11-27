@@ -21,11 +21,11 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "夏に___に行きました。", "answer": "祭り", "hint": "Festival" },
-      { "sentence": "春に___をしましょう。", "answer": "花見", "hint": "Cherry blossom viewing" },
-      { "sentence": "___に願い事を書きます。", "answer": "七夕", "hint": "Star Festival" },
-      { "sentence": "神社で___を買いました。", "answer": "お守り", "hint": "Charm" },
-      { "sentence": "正月に___を食べます。", "answer": "餅", "hint": "Rice cake" }
+      { "sentence": "夏に___に行きました。", "answer": "祭り", "hint": "Festival", "translation": "I went to a festival in summer." },
+      { "sentence": "春に___をしましょう。", "answer": "花見", "hint": "Cherry blossom viewing", "translation": "Let's go cherry blossom viewing in spring." },
+      { "sentence": "___に願い事を書きます。", "answer": "七夕", "hint": "Star Festival", "translation": "We write wishes on Tanabata." },
+      { "sentence": "神社で___を買いました。", "answer": "お守り", "hint": "Charm", "translation": "I bought a charm at the shrine." },
+      { "sentence": "正月に___を食べます。", "answer": "餅", "hint": "Rice cake", "translation": "We eat rice cakes on New Year." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "一月一日に神社に行くことを何と言いますか。", "options": ["花見", "お盆", "初詣", "成人式"], "answer": 2 },

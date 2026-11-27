@@ -125,22 +125,26 @@
         {
           "sentence": "___ سَاكْنِينْ قَرِيبْ مِنْ بَيْتِي.",
           "answer": "أَهْلِي",
-          "hint": "my family"
+          "hint": "my family",
+          "translation": "My family lives near my house."
         },
         {
           "sentence": "عِنَّا ___ كْبِيرَةْ يَوْمِ السَّبْتْ.",
           "answer": "عِزِيمَة",
-          "hint": "family meal"
+          "hint": "family meal",
+          "translation": "We have a big family meal on Saturday."
         },
         {
           "sentence": "___ بَسْ تُوصَلْ عَ الْبَيْتْ.",
           "answer": "طَمِّنِّي",
-          "hint": "let me know you are okay"
+          "hint": "let me know you are okay",
+          "translation": "Let me know you are okay when you get home."
         },
         {
           "sentence": "___ أَزُورْكُمِ الْيَوْمْ.",
           "answer": "مَا بْقَدَرْش",
-          "hint": "I cannot"
+          "hint": "I cannot",
+          "translation": "I cannot visit you today."
         }
       ]
     },

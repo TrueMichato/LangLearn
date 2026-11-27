@@ -125,22 +125,26 @@
         {
           "sentence": "___ مَطْلُوبَةٌ عِنْدَ الْبَوَّابَةِ.",
           "answer": "بَطَاقَةُ الصُّعُودِ",
-          "hint": "boarding pass"
+          "hint": "boarding pass",
+          "translation": "The boarding pass is required at the gate."
         },
         {
           "sentence": "___ فِي الْحَقِيبَةِ الصَّغِيرَةِ.",
           "answer": "جَوَازُ السَّفَرِ",
-          "hint": "passport"
+          "hint": "passport",
+          "translation": "The passport is in the small bag."
         },
         {
           "sentence": "___ صَالِحَةٌ لِشَهْرَيْنِ.",
           "answer": "تَأْشِيرَةُ الدُّخُولِ",
-          "hint": "entry visa"
+          "hint": "entry visa",
+          "translation": "The entry visa is valid for two months."
         },
         {
           "sentence": "___ مُزْدَحِمٌ صَبَاحًا.",
           "answer": "مَكْتَبُ الْجَوَازَاتِ",
-          "hint": "passport-control office"
+          "hint": "passport-control office",
+          "translation": "The passport-control office is crowded in the morning."
         }
       ]
     },

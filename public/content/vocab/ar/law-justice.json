@@ -125,22 +125,26 @@
         {
           "sentence": "___ عَادِلٌ يَحْمِي الضَّعِيفَ وَالْقَوِيَّ.",
           "answer": "قَانُونٌ",
-          "hint": "law"
+          "hint": "law",
+          "translation": "A just law protects the weak and the strong."
         },
         {
           "sentence": "___ مُسْتَقِلَّةٌ تَضْمَنُ سَيْرَ الْعَدَالَةِ.",
           "answer": "مَحْكَمَةٌ",
-          "hint": "court"
+          "hint": "court",
+          "translation": "An independent court ensures the course of justice."
         },
         {
           "sentence": "___ عَادِلٌ يَسْتَمِعُ إِلَى الطَّرَفَيْنِ.",
           "answer": "قَاضٍ",
-          "hint": "judge"
+          "hint": "judge",
+          "translation": "A fair judge listens to both parties."
         },
         {
           "sentence": "___ خَبِيرٌ يُدَافِعُ عَنِ الْمُتَّهَمِ.",
           "answer": "مُحَامٍ",
-          "hint": "lawyer"
+          "hint": "lawyer",
+          "translation": "An experienced lawyer defends the accused."
         }
       ]
     },

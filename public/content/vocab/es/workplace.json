@@ -125,22 +125,26 @@
         {
           "sentence": "Firmé el ___ ayer.",
           "answer": "contrato",
-          "hint": "employment agreement"
+          "hint": "employment agreement",
+          "translation": "I signed the contract yesterday."
         },
         {
           "sentence": "El ___ está bien.",
           "answer": "sueldo",
-          "hint": "monthly pay"
+          "hint": "monthly pay",
+          "translation": "The salary is good."
         },
         {
           "sentence": "Tomo ___ en julio.",
           "answer": "vacaciones",
-          "hint": "time off"
+          "hint": "time off",
+          "translation": "I take vacation in July."
         },
         {
           "sentence": "Hablé con el ___.",
           "answer": "gerente",
-          "hint": "department head"
+          "hint": "department head",
+          "translation": "I spoke with the manager."
         }
       ]
     },

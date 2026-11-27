@@ -188,7 +188,7 @@ Time: 10 XP/5min | Review: 2/card | Word added: 5 | Vocab lesson: 25 | Test: 30+
 
 **Song lyrics** (`src/data/lyrics/`): TypeScript data files with `Song` interface: id, title, titleRomanized, artist, context, language, difficulty, lines (original/reading/translation), vocab (word/reading/meaning).
 
-**Vocab lessons** (`.json`): `{ id, words: [{word, reading, meaning, example, exampleMeaning}], exercises: [{type:'match'|'fill-blank'|'multiple-choice', ...}] }`
+**Vocab lessons** (`.json`): `{ id, words: [{word, reading, meaning, example, exampleMeaning}], exercises: [{type:'match'|'fill-blank'|'multiple-choice', ...}] }` Fill-blank items are `{sentence, answer, hint, translation?}`: `translation` is the full English translation of the completed sentence, shown as the cue before answering (falls back to `hint`, the English meaning of the missing word); Show Hint reveals the answer's first letter (`src/lib/fill-blank-cue.ts`).
 
 **Alphabets** (`src/data/alphabets/`): `{ char, romanji, group, strokes?, meaning? }` — Hiragana(81), Katakana(80), Kanji(403 N5+N4+N3), Cyrillic(33), Arabic(28 letters + harakat + hamza/special forms + numerals)
 

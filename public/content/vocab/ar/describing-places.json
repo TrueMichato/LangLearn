@@ -125,22 +125,26 @@
         {
           "sentence": "الْبَهْوُ ___ وَمُشْرِقٌ.",
           "answer": "وَاسِعٌ",
-          "hint": "spacious / wide"
+          "hint": "spacious / wide",
+          "translation": "The lobby is spacious and bright."
         },
         {
           "sentence": "الْمَمَرُّ ___ بَيْنَ الْغُرَفِ.",
           "answer": "ضَيِّقٌ",
-          "hint": "narrow / cramped"
+          "hint": "narrow / cramped",
+          "translation": "The hallway is narrow between the rooms."
         },
         {
           "sentence": "الْمَيْدَانُ ___ فِي الْمَسَاءِ.",
           "answer": "مُزْدَحِمٌ",
-          "hint": "crowded"
+          "hint": "crowded",
+          "translation": "The square is crowded in the evening."
         },
         {
           "sentence": "الْحَيُّ ___ لَيْلًا.",
           "answer": "هَادِئٌ",
-          "hint": "quiet"
+          "hint": "quiet",
+          "translation": "The neighborhood is quiet at night."
         }
       ]
     },

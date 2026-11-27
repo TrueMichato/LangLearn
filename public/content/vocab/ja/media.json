@@ -21,11 +21,11 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "毎朝___を読みます。", "answer": "新聞", "hint": "Newspaper" },
-      { "sentence": "面白い___を見つけました。", "answer": "記事", "hint": "Article" },
-      { "sentence": "好きな___は何ですか。", "answer": "番組", "hint": "Program" },
-      { "sentence": "正しい___を探しています。", "answer": "情報", "hint": "Information" },
-      { "sentence": "新しい本が___されました。", "answer": "出版", "hint": "Published" }
+      { "sentence": "毎朝___を読みます。", "answer": "新聞", "hint": "Newspaper", "translation": "I read the newspaper every morning." },
+      { "sentence": "面白い___を見つけました。", "answer": "記事", "hint": "Article", "translation": "I found an interesting article." },
+      { "sentence": "好きな___は何ですか。", "answer": "番組", "hint": "Program", "translation": "What's your favorite program?" },
+      { "sentence": "正しい___を探しています。", "answer": "情報", "hint": "Information", "translation": "I'm looking for accurate information." },
+      { "sentence": "新しい本が___されました。", "answer": "出版", "hint": "Published", "translation": "A new book was published." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "ニュースを伝える仕事の人を何と言いますか。", "options": ["視聴者", "記者", "広告", "出版"], "answer": 1 },

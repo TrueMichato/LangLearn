@@ -125,17 +125,20 @@
         {
           "sentence": "Am ___ pentru două nopți.",
           "answer": "rezervare",
-          "hint": "reservation"
+          "hint": "reservation",
+          "translation": "I have a reservation for two nights."
         },
         {
           "sentence": "Vizitez un ___ de artă.",
           "answer": "muzeu",
-          "hint": "museum"
+          "hint": "museum",
+          "translation": "I visit an art museum."
         },
         {
           "sentence": "Un ___ cere indicații.",
           "answer": "străin",
-          "hint": "foreigner"
+          "hint": "foreigner",
+          "translation": "A foreigner asks for directions."
         }
       ]
     },

@@ -119,9 +119,9 @@
     {
       "type": "fill-blank",
       "items": [
-        { "sentence": "O ___ é muito difícil no Brasil.", "answer": "vestibular", "hint": "exam to enter university" },
-        { "sentence": "Consegui uma ___ de estudos.", "answer": "bolsa", "hint": "financial aid for students" },
-        { "sentence": "Vou estudar na ___ esta tarde.", "answer": "biblioteca", "hint": "place with books for reading and study" }
+        { "sentence": "O ___ é muito difícil no Brasil.", "answer": "vestibular", "hint": "exam to enter university", "translation": "The entrance exam is very difficult in Brazil." },
+        { "sentence": "Consegui uma ___ de estudos.", "answer": "bolsa", "hint": "financial aid for students", "translation": "I got a scholarship." },
+        { "sentence": "Vou estudar na ___ esta tarde.", "answer": "biblioteca", "hint": "place with books for reading and study", "translation": "I'm going to study at the library this afternoon." }
       ]
     },
     {

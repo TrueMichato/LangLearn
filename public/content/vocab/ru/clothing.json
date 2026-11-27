@@ -21,11 +21,11 @@
   "exercises": [
     { "type": "match", "pairs": 6 },
     { "type": "fill-blank", "items": [
-      { "sentence": "Надень ___, на улице холодно.", "answer": "Куртку", "hint": "Jacket (accusative)" },
-      { "sentence": "Эта ___ тебе идёт.", "answer": "Рубашка", "hint": "Shirt" },
-      { "sentence": "Зимой нужно носить ___.", "answer": "Шапку", "hint": "Hat (accusative)" },
-      { "sentence": "Я потерял свои ___.", "answer": "Перчатки", "hint": "Gloves" },
-      { "sentence": "Она купила красивое ___.", "answer": "Платье", "hint": "Dress" }
+      { "sentence": "Надень ___, на улице холодно.", "answer": "Куртку", "hint": "Jacket (accusative)", "translation": "Put on a jacket, it's cold outside." },
+      { "sentence": "Эта ___ тебе идёт.", "answer": "Рубашка", "hint": "Shirt", "translation": "This shirt suits you." },
+      { "sentence": "Зимой нужно носить ___.", "answer": "Шапку", "hint": "Hat (accusative)", "translation": "In winter you need to wear a hat." },
+      { "sentence": "Я потерял свои ___.", "answer": "Перчатки", "hint": "Gloves", "translation": "I lost my gloves." },
+      { "sentence": "Она купила красивое ___.", "answer": "Платье", "hint": "Dress", "translation": "She bought a beautiful dress." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "What does 'Брюки' mean?", "options": ["Trousers / Pants", "Shirt", "Skirt", "Jacket"], "answer": 0 },

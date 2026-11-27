@@ -125,22 +125,26 @@
         {
           "sentence": "Estoy muy ___ hoy.",
           "answer": "feliz",
-          "hint": "positive emotion"
+          "hint": "positive emotion",
+          "translation": "I am very happy today."
         },
         {
           "sentence": "Le tengo ___ a las alturas.",
           "answer": "miedo",
-          "hint": "fear"
+          "hint": "fear",
+          "translation": "I’m afraid of heights."
         },
         {
           "sentence": "___ mucho a mi familia.",
           "answer": "Extraño",
-          "hint": "to miss someone"
+          "hint": "to miss someone",
+          "translation": "I miss my family a lot."
         },
         {
           "sentence": "Estoy ___ por el examen.",
           "answer": "nervioso",
-          "hint": "before a test"
+          "hint": "before a test",
+          "translation": "I’m nervous about the exam."
         }
       ]
     },

@@ -125,22 +125,26 @@
         {
           "sentence": "___ خَفِيفٌ ظَهَرَ عَلَى وَجْهِ الطَّالِبِ.",
           "answer": "قَلَقٌ",
-          "hint": "anxiety / worry"
+          "hint": "anxiety / worry",
+          "translation": "Slight anxiety appeared on the student’s face."
         },
         {
           "sentence": "___ عَمِيقٌ مَلَأَ قَلْبَ الْأُمِّ.",
           "answer": "اِطْمِئْنَانٌ",
-          "hint": "reassurance / peace of mind"
+          "hint": "reassurance / peace of mind",
+          "translation": "Deep reassurance filled the mother’s heart."
         },
         {
           "sentence": "___ قَدِيمٌ أَعَادَهُ صَوْتُ الْمَطَرِ.",
           "answer": "حَنِينٌ",
-          "hint": "longing / nostalgia"
+          "hint": "longing / nostalgia",
+          "translation": "An old longing was brought back by the sound of rain."
         },
         {
           "sentence": "___ لَاحَتْ بَعْدَ إِلْغَاءِ الرِّحْلَةِ.",
           "answer": "خَيْبَةُ أَمَلٍ",
-          "hint": "disappointment"
+          "hint": "disappointment",
+          "translation": "Disappointment appeared after the trip was canceled."
         }
       ]
     },

@@ -125,22 +125,26 @@
         {
           "sentence": "عِنْدِي ___ فِي كُفُرْ وَاحِدْ.",
           "answer": "بَنْشَرْ",
-          "hint": "flat tire"
+          "hint": "flat tire",
+          "translation": "I have a flat tire in one tire."
         },
         {
           "sentence": "___ مَا يَبَرِّدْ زَيْنْ.",
           "answer": "مُكَيِّفْ السَّيَّارَةْ",
-          "hint": "car air-conditioner"
+          "hint": "car air-conditioner",
+          "translation": "The car air-conditioner is not cooling well."
         },
         {
           "sentence": "نَحْتَاجْ ___ لِلْبَطَّارِيَّةْ.",
           "answer": "تَبْدِيلْ",
-          "hint": "replacement"
+          "hint": "replacement",
+          "translation": "We need a battery replacement."
         },
         {
           "sentence": "___ لِينْ تِخْلَصْ.",
           "answer": "أَسْتَنَّى هِنَا",
-          "hint": "I will wait here"
+          "hint": "I will wait here",
+          "translation": "I will wait here until you finish."
         }
       ]
     },

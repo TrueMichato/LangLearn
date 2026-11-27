@@ -21,11 +21,11 @@
   "exercises": [
     { "type": "match", "pairs": 6 },
     { "type": "fill-blank", "items": [
-      { "sentence": "___ — моё любимое время года.", "answer": "Весна", "hint": "Spring" },
-      { "sentence": "Мы отдыхали на ___.", "answer": "Море", "hint": "Sea (prepositional)" },
-      { "sentence": "___ течёт через город.", "answer": "Река", "hint": "River" },
-      { "sentence": "___ сегодня голубое.", "answer": "Небо", "hint": "Sky" },
-      { "sentence": "В ___ много грибов.", "answer": "Лесу", "hint": "Forest (prepositional)" }
+      { "sentence": "___ — моё любимое время года.", "answer": "Весна", "hint": "Spring", "translation": "Spring is my favorite season." },
+      { "sentence": "Мы отдыхали на ___.", "answer": "Море", "hint": "Sea (prepositional)", "translation": "We vacationed at the sea." },
+      { "sentence": "___ течёт через город.", "answer": "Река", "hint": "River", "translation": "The river flows through the city." },
+      { "sentence": "___ сегодня голубое.", "answer": "Небо", "hint": "Sky", "translation": "The sky is blue today." },
+      { "sentence": "В ___ много грибов.", "answer": "Лесу", "hint": "Forest (prepositional)", "translation": "There are a lot of mushrooms in the forest." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "What does 'Осень' mean?", "options": ["Autumn / Fall", "Spring", "Summer", "Winter"], "answer": 0 },

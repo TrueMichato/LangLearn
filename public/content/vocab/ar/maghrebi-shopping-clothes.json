@@ -125,22 +125,26 @@
         {
           "sentence": "___ الصَّبَّاطْ عَافَاكْ؟",
           "answer": "شْحَالْ هَادَا",
-          "hint": "how much is this?"
+          "hint": "how much is this?",
+          "translation": "How much are these shoes, please?"
         },
         {
           "sentence": "عَنْدْكْ ___ أَكْبَرْ مِنْ هَادَا؟",
           "answer": "قِيَاسْ",
-          "hint": "size"
+          "hint": "size",
+          "translation": "Do you have a larger size than this?"
         },
         {
           "sentence": "كَايْنْ ___ عَلَى الْجَاكِيطَاتْ.",
           "answer": "تْخْفِيضْ",
-          "hint": "discount"
+          "hint": "discount",
+          "translation": "There is a discount on jackets."
         },
         {
           "sentence": "هَادَا ___، بْغِيتْ قِيَاسْ صْغِيرْ.",
           "answer": "كْبِيرْ عَلِيَّ",
-          "hint": "too big for me"
+          "hint": "too big for me",
+          "translation": "This is too big for me; I want a small size."
         }
       ]
     },

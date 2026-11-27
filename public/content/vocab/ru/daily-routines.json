@@ -21,11 +21,11 @@
   "exercises": [
     { "type": "match", "pairs": 6 },
     { "type": "fill-blank", "items": [
-      { "sentence": "Я ___ в семь утра.", "answer": "Просыпаюсь", "hint": "To wake up (1st person)" },
-      { "sentence": "Нужно ___ два раза в день.", "answer": "Чистить зубы", "hint": "To brush teeth" },
-      { "sentence": "Мы ___ в восемь часов.", "answer": "Завтракаем", "hint": "To have breakfast (1st person plural)" },
-      { "sentence": "Дети ___ в девять.", "answer": "Ложатся спать", "hint": "To go to bed (3rd person plural)" },
-      { "sentence": "___ звонит в шесть утра.", "answer": "Будильник", "hint": "Alarm clock" }
+      { "sentence": "Я ___ в семь утра.", "answer": "Просыпаюсь", "hint": "To wake up (1st person)", "translation": "I wake up at seven in the morning." },
+      { "sentence": "Нужно ___ два раза в день.", "answer": "Чистить зубы", "hint": "To brush teeth", "translation": "You should brush your teeth twice a day." },
+      { "sentence": "Мы ___ в восемь часов.", "answer": "Завтракаем", "hint": "To have breakfast (1st person plural)", "translation": "We have breakfast at eight o'clock." },
+      { "sentence": "Дети ___ в девять.", "answer": "Ложатся спать", "hint": "To go to bed (3rd person plural)", "translation": "The children go to bed at nine." },
+      { "sentence": "___ звонит в шесть утра.", "answer": "Будильник", "hint": "Alarm clock", "translation": "The alarm clock rings at six in the morning." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "What does 'Умываться' mean?", "options": ["To wash one's face", "To swim", "To shower", "To clean"], "answer": 0 },

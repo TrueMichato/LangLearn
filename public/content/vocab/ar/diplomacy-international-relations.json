@@ -125,22 +125,26 @@
         {
           "sentence": "___ هَادِئَةٌ تَفْتَحُ بَابَ التَّفَاهُمِ.",
           "answer": "دِبْلُومَاسِيَّةٌ",
-          "hint": "diplomacy"
+          "hint": "diplomacy",
+          "translation": "Quiet diplomacy opens the door to understanding."
         },
         {
           "sentence": "يُمَثِّلُ ___ بَلَدَهُ فِي الْخَارِجِ.",
           "answer": "سَفِيرٌ",
-          "hint": "ambassador"
+          "hint": "ambassador",
+          "translation": "An ambassador represents his country abroad."
         },
         {
           "sentence": "___ طَوِيلَةٌ تَنْتَهِي بِاتِّفَاقٍ.",
           "answer": "مُفَاوَضَاتٌ",
-          "hint": "negotiations"
+          "hint": "negotiations",
+          "translation": "Long negotiations end with an agreement."
         },
         {
           "sentence": "___ يُعْلَنُ بَعْدَ الْقِمَّةِ.",
           "answer": "بَيَانٌ مُشْتَرَكٌ",
-          "hint": "joint statement"
+          "hint": "joint statement",
+          "translation": "A joint statement is announced after the summit."
         }
       ]
     },

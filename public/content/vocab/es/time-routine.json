@@ -125,22 +125,26 @@
         {
           "sentence": "¿Qué ___ es?",
           "answer": "hora",
-          "hint": "time of day"
+          "hint": "time of day",
+          "translation": "What time is it?"
         },
         {
           "sentence": "Me ___ a las seis.",
           "answer": "despierto",
-          "hint": "to wake up (1st person)"
+          "hint": "to wake up (1st person)",
+          "translation": "I wake up at six."
         },
         {
           "sentence": "___ fui al cine.",
           "answer": "Ayer",
-          "hint": "the day before today"
+          "hint": "the day before today",
+          "translation": "Yesterday I went to the movies."
         },
         {
           "sentence": "Llegué ___ al trabajo.",
           "answer": "tarde",
-          "hint": "not early"
+          "hint": "not early",
+          "translation": "I got to work late."
         }
       ]
     },

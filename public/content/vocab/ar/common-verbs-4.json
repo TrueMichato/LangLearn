@@ -125,22 +125,26 @@
         {
           "sentence": "___ الْفَرِيقُ مَوْعِدَ اللِّقَاءِ.",
           "answer": "يُقَرِّرُ",
-          "hint": "to decide"
+          "hint": "to decide",
+          "translation": "The team decides the meeting time."
         },
         {
           "sentence": "___ الطَّالِبُ فِكْرَةً جَدِيدَةً.",
           "answer": "يَقْتَرِحُ",
-          "hint": "to suggest"
+          "hint": "to suggest",
+          "translation": "The student suggests a new idea."
         },
         {
           "sentence": "___ الْمُدِيرُ الْخُطَّةَ مَعَ الْفَرِيقِ.",
           "answer": "يُنَاقِشُ",
-          "hint": "to discuss"
+          "hint": "to discuss",
+          "translation": "The manager discusses the plan with the team."
         },
         {
           "sentence": "___ الْمُهَنْدِسُ لِلْمَشْرُوعِ بِعِنَايَةٍ.",
           "answer": "يُخَطِّطُ",
-          "hint": "to plan"
+          "hint": "to plan",
+          "translation": "The engineer plans the project carefully."
         }
       ]
     },

@@ -21,11 +21,11 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "___ плавает в реке.", "answer": "Рыба", "hint": "Fish" },
-      { "sentence": "Красная ___ — символ праздника.", "answer": "Икра", "hint": "Caviar" },
-      { "sentence": "___ под шубой — русский салат.", "answer": "Сельдь", "hint": "Herring" },
-      { "sentence": "___ — дорогая рыба.", "answer": "Лосось", "hint": "Salmon" },
-      { "sentence": "___ подают с лимоном.", "answer": "Креветки", "hint": "Shrimp (plural)" }
+      { "sentence": "___ плавает в реке.", "answer": "Рыба", "hint": "Fish", "translation": "The fish swims in the river." },
+      { "sentence": "Красная ___ — символ праздника.", "answer": "Икра", "hint": "Caviar", "translation": "Red caviar is a symbol of celebration." },
+      { "sentence": "___ под шубой — русский салат.", "answer": "Сельдь", "hint": "Herring", "translation": "Herring under a fur coat is a Russian salad." },
+      { "sentence": "___ — дорогая рыба.", "answer": "Лосось", "hint": "Salmon", "translation": "Salmon is an expensive fish." },
+      { "sentence": "___ подают с лимоном.", "answer": "Креветки", "hint": "Shrimp (plural)", "translation": "Shrimp is served with lemon." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "What does 'Кальмар' mean?", "options": ["Squid", "Octopus", "Shrimp", "Crab"], "answer": 0 },

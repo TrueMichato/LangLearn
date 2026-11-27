@@ -21,11 +21,11 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "午後三時から___があります。", "answer": "会議", "hint": "Meeting" },
-      { "sentence": "大きい___で働いています。", "answer": "会社", "hint": "Company" },
-      { "sentence": "___を交換しましょう。", "answer": "名刺", "hint": "Business card" },
-      { "sentence": "今日は___しなければなりません。", "answer": "残業", "hint": "Overtime" },
-      { "sentence": "___は金曜日です。", "answer": "締め切り", "hint": "Deadline" }
+      { "sentence": "午後三時から___があります。", "answer": "会議", "hint": "Meeting", "translation": "There's a meeting from 3 PM." },
+      { "sentence": "大きい___で働いています。", "answer": "会社", "hint": "Company", "translation": "I work at a big company." },
+      { "sentence": "___を交換しましょう。", "answer": "名刺", "hint": "Business card", "translation": "Let's exchange business cards." },
+      { "sentence": "今日は___しなければなりません。", "answer": "残業", "hint": "Overtime", "translation": "I have to work overtime today." },
+      { "sentence": "___は金曜日です。", "answer": "締め切り", "hint": "Deadline", "translation": "The deadline is Friday." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "会社の一番上の人を何と言いますか。", "options": ["社員", "同僚", "上司", "社長"], "answer": 3 },

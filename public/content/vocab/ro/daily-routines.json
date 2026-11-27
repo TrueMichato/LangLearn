@@ -125,17 +125,20 @@
         {
           "sentence": "Fac ___ sâmbătă.",
           "answer": "curățenie",
-          "hint": "cleaning"
+          "hint": "cleaning",
+          "translation": "I do cleaning on Saturday."
         },
         {
           "sentence": "Merg la ___ cu autobuzul.",
           "answer": "serviciu",
-          "hint": "work"
+          "hint": "work",
+          "translation": "I go to work by bus."
         },
         {
           "sentence": "Exersez ___ zece minute.",
           "answer": "zilnic",
-          "hint": "daily"
+          "hint": "daily",
+          "translation": "I practice daily for ten minutes."
         }
       ]
     },

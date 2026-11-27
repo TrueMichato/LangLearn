@@ -21,11 +21,11 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "___を引いてしまいました。", "answer": "風邪", "hint": "Cold (illness)" },
-      { "sentence": "毎日___を飲んでいます。", "answer": "薬", "hint": "Medicine" },
-      { "sentence": "___に診てもらいました。", "answer": "医者", "hint": "Doctor" },
-      { "sentence": "お腹が___です。", "answer": "痛い", "hint": "Painful" },
-      { "sentence": "___のために運動しています。", "answer": "健康", "hint": "Health" }
+      { "sentence": "___を引いてしまいました。", "answer": "風邪", "hint": "Cold (illness)", "translation": "I caught a cold." },
+      { "sentence": "毎日___を飲んでいます。", "answer": "薬", "hint": "Medicine", "translation": "I take medicine every day." },
+      { "sentence": "___に診てもらいました。", "answer": "医者", "hint": "Doctor", "translation": "I was examined by a doctor." },
+      { "sentence": "お腹が___です。", "answer": "痛い", "hint": "Painful", "translation": "My stomach hurts." },
+      { "sentence": "___のために運動しています。", "answer": "健康", "hint": "Health", "translation": "I exercise for my health." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "歯が痛い時、どこに行きますか。", "options": ["病院", "歯医者", "薬局", "学校"], "answer": 1 },

@@ -125,22 +125,26 @@
         {
           "sentence": "وَقَفَ الْمُمَثِّلُ عَلَى ___ بِثِقَةٍ.",
           "answer": "خَشَبَةُ الْمَسْرَحِ",
-          "hint": "stage"
+          "hint": "stage",
+          "translation": "The actor stood on the stage with confidence."
         },
         {
           "sentence": "يَبْدَأُ ___ قَبْلَ الْعَرْضِ بِسَاعَةٍ.",
           "answer": "تَمْرِينٌ",
-          "hint": "rehearsal"
+          "hint": "rehearsal",
+          "translation": "The rehearsal begins an hour before the show."
         },
         {
           "sentence": "صَفَّقَ ___ طَوِيلًا فِي النِّهَايَةِ.",
           "answer": "جُمْهُورٌ",
-          "hint": "audience"
+          "hint": "audience",
+          "translation": "The audience applauded for a long time at the end."
         },
         {
           "sentence": "غَيَّرَتِ ___ جَوَّ الْمَشْهَدِ.",
           "answer": "إِضَاءَةٌ",
-          "hint": "lighting"
+          "hint": "lighting",
+          "translation": "The lighting changed the mood of the scene."
         }
       ]
     },

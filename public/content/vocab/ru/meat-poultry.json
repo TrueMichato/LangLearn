@@ -21,10 +21,10 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "___ жарится на сковороде.", "answer": "Мясо", "hint": "Meat" },
-      { "sentence": "Мы жарим ___ на природе.", "answer": "Шашлык", "hint": "Kebab" },
-      { "sentence": "Из ___ лепят котлеты.", "answer": "Фарша", "hint": "Ground meat (genitive)" },
-      { "sentence": "___ варится в кастрюле.", "answer": "Курица", "hint": "Chicken" }
+      { "sentence": "___ жарится на сковороде.", "answer": "Мясо", "hint": "Meat", "translation": "The meat is frying in the pan." },
+      { "sentence": "Мы жарим ___ на природе.", "answer": "Шашлык", "hint": "Kebab", "translation": "We grill shashlik (kebabs) outdoors." },
+      { "sentence": "Из ___ лепят котлеты.", "answer": "Фарша", "hint": "Ground meat (genitive)", "translation": "Cutlets are shaped from ground meat." },
+      { "sentence": "___ варится в кастрюле.", "answer": "Курица", "hint": "Chicken", "translation": "The chicken is boiling in the pot." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "What does 'Говядина' mean?", "options": ["Beef", "Pork", "Lamb", "Veal"], "answer": 0 },

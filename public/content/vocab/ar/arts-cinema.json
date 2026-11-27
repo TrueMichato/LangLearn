@@ -125,22 +125,26 @@
         {
           "sentence": "___ يُعَبِّرُ عَنِ الْمَشَاعِرِ.",
           "answer": "فَنٌّ",
-          "hint": "art"
+          "hint": "art",
+          "translation": "Art expresses feelings."
         },
         {
           "sentence": "___ جَمِيلَةٌ فِي الْمُتْحَفِ.",
           "answer": "لَوْحَةٌ",
-          "hint": "painting"
+          "hint": "painting",
+          "translation": "There's a beautiful painting in the museum."
         },
         {
           "sentence": "___ جَدِيدٌ لِلْفَنِّ الْحَدِيثِ.",
           "answer": "مَعْرِضٌ",
-          "hint": "exhibition"
+          "hint": "exhibition",
+          "translation": "There's a new exhibition of modern art."
         },
         {
           "sentence": "___ هَادِئَةٌ فِي الْمَقْهَى.",
           "answer": "مُوسِيقَى",
-          "hint": "music"
+          "hint": "music",
+          "translation": "There's calm music in the café."
         }
       ]
     },

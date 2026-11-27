@@ -125,22 +125,26 @@
         {
           "sentence": "___ سِعْر هَالْكِتَاب؟",
           "answer": "قَدَّيْش؟",
-          "hint": "how much?"
+          "hint": "how much?",
+          "translation": "How much is this book?"
         },
         {
           "sentence": "أَنْتَ ___",
           "answer": "مِنْ وَيْن؟",
-          "hint": "from where?"
+          "hint": "from where?",
+          "translation": "Where are you from?"
         },
         {
           "sentence": "بَدِّي ___ مَيّ.",
           "answer": "شْوِي",
-          "hint": "a little"
+          "hint": "a little",
+          "translation": "I want a little water."
         },
         {
           "sentence": "تَعَالَ ___ قَبْلَ الْمَطَرْ.",
           "answer": "بِسُرْعَة",
-          "hint": "quickly"
+          "hint": "quickly",
+          "translation": "Come quickly before the rain."
         }
       ]
     },

@@ -119,9 +119,9 @@
     {
       "type": "fill-blank",
       "items": [
-        { "sentence": "O ___ para entregar o relatório é sexta.", "answer": "prazo", "hint": "time limit for completing something" },
-        { "sentence": "Tenho uma ___ de emprego amanhã.", "answer": "entrevista", "hint": "formal meeting for a job application" },
-        { "sentence": "Minhas ___ começam em dezembro.", "answer": "férias", "hint": "time off from work" }
+        { "sentence": "O ___ para entregar o relatório é sexta.", "answer": "prazo", "hint": "time limit for completing something", "translation": "The deadline to submit the report is Friday." },
+        { "sentence": "Tenho uma ___ de emprego amanhã.", "answer": "entrevista", "hint": "formal meeting for a job application", "translation": "I have a job interview tomorrow." },
+        { "sentence": "Minhas ___ começam em dezembro.", "answer": "férias", "hint": "time off from work", "translation": "My vacation starts in December." }
       ]
     },
     {

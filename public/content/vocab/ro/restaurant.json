@@ -125,17 +125,20 @@
         {
           "sentence": "Citesc ___ înainte să comand.",
           "answer": "meniu",
-          "hint": "menu"
+          "hint": "menu",
+          "translation": "I read the menu before I order."
         },
         {
           "sentence": "Cer ___ după cină.",
           "answer": "notă",
-          "hint": "bill"
+          "hint": "bill",
+          "translation": "I ask for the bill after dinner."
         },
         {
           "sentence": "Avem ___ la ora opt.",
           "answer": "rezervare",
-          "hint": "reservation"
+          "hint": "reservation",
+          "translation": "We have a reservation at eight o’clock."
         }
       ]
     },

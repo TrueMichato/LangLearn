@@ -21,9 +21,9 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "Я ___ в школу каждый день. (go on foot, repeated)", "answer": "хожу", "hint": "multidirectional, on foot" },
-      { "sentence": "Самолёт ___ в Москву. (fly, right now, one direction)", "answer": "летит", "hint": "unidirectional, flying" },
-      { "sentence": "Она хорошо ___ машину. (drives, habitual)", "answer": "водит", "hint": "multidirectional, to drive" }
+      { "sentence": "Я ___ в школу каждый день. (go on foot, repeated)", "answer": "хожу", "hint": "multidirectional, on foot", "translation": "I walk to school every day." },
+      { "sentence": "Самолёт ___ в Москву. (fly, right now, one direction)", "answer": "летит", "hint": "unidirectional, flying", "translation": "The plane is flying to Moscow." },
+      { "sentence": "Она хорошо ___ машину. (drives, habitual)", "answer": "водит", "hint": "multidirectional, to drive", "translation": "She drives a car well." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "Which verb means 'going on foot right now in one direction'?", "options": ["идти", "ходить", "ехать", "ездить"], "answer": 0 },

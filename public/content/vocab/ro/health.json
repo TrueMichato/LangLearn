@@ -125,17 +125,20 @@
         {
           "sentence": "Iau un ___ după masă.",
           "answer": "medicament",
-          "hint": "medicine"
+          "hint": "medicine",
+          "translation": "I take a medicine after the meal."
         },
         {
           "sentence": "Caut o ___ deschisă.",
           "answer": "farmacie",
-          "hint": "pharmacy"
+          "hint": "pharmacy",
+          "translation": "I'm looking for an open pharmacy."
         },
         {
           "sentence": "Un ___ ascultă pacientul.",
           "answer": "medic",
-          "hint": "doctor"
+          "hint": "doctor",
+          "translation": "A doctor listens to the patient."
         }
       ]
     },

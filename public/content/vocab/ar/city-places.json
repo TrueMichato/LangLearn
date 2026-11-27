@@ -125,22 +125,26 @@
         {
           "sentence": "___ كَبِيرَةٌ عَلَى السَّاحِلِ.",
           "answer": "مَدِينَةٌ",
-          "hint": "city"
+          "hint": "city",
+          "translation": "A large city is on the coast."
         },
         {
           "sentence": "___ صَغِيرَةٌ بَيْنَ الْجِبَالِ.",
           "answer": "قَرْيَةٌ",
-          "hint": "village"
+          "hint": "village",
+          "translation": "A small village is between the mountains."
         },
         {
           "sentence": "___ طَوِيلٌ أَمَامَ الْبَيْتِ.",
           "answer": "شَارِعٌ",
-          "hint": "street"
+          "hint": "street",
+          "translation": "A long street is in front of the house."
         },
         {
           "sentence": "___ قَدِيمٌ فِي الْمَرْكَزِ.",
           "answer": "سُوقٌ",
-          "hint": "market"
+          "hint": "market",
+          "translation": "An old market is in the center."
         }
       ]
     },

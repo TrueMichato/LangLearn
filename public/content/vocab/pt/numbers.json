@@ -23,9 +23,9 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "Eu tenho ___ irmãos.", "answer": "dois", "hint": "two" },
-      { "sentence": "A semana tem ___ dias.", "answer": "sete", "hint": "seven" },
-      { "sentence": "Ela tem ___ anos.", "answer": "vinte", "hint": "twenty" }
+      { "sentence": "Eu tenho ___ irmãos.", "answer": "dois", "hint": "two", "translation": "I have two siblings." },
+      { "sentence": "A semana tem ___ dias.", "answer": "sete", "hint": "seven", "translation": "The week has seven days." },
+      { "sentence": "Ela tem ___ anos.", "answer": "vinte", "hint": "twenty", "translation": "She is twenty years old." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "What number is 'cinco'?", "options": ["three", "four", "five", "six"], "answer": 2 },

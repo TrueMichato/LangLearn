@@ -21,10 +21,10 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "Мы забронировали ___ на двоих.", "answer": "Номер", "hint": "Room" },
-      { "sentence": "Возьмите ___ от номера.", "answer": "Ключ", "hint": "Key" },
-      { "sentence": "___ включён в стоимость.", "answer": "Завтрак", "hint": "Breakfast" },
-      { "sentence": "___ до двенадцати часов.", "answer": "Выселение", "hint": "Check-out" }
+      { "sentence": "Мы забронировали ___ на двоих.", "answer": "Номер", "hint": "Room", "translation": "We booked a room for two." },
+      { "sentence": "Возьмите ___ от номера.", "answer": "Ключ", "hint": "Key", "translation": "Take the room key." },
+      { "sentence": "___ включён в стоимость.", "answer": "Завтрак", "hint": "Breakfast", "translation": "Breakfast is included in the price." },
+      { "sentence": "___ до двенадцати часов.", "answer": "Выселение", "hint": "Check-out", "translation": "Check-out is before twelve o'clock." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "What does 'Бронирование' mean?", "options": ["Reservation", "Registration", "Renovation", "Payment"], "answer": 0 },

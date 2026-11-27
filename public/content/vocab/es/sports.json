@@ -125,22 +125,26 @@
         {
           "sentence": "Voy al ___ tres veces por semana.",
           "answer": "gimnasio",
-          "hint": "place to work out"
+          "hint": "place to work out",
+          "translation": "I go to the gym three times a week."
         },
         {
           "sentence": "Mi ___ ganó el partido.",
           "answer": "equipo",
-          "hint": "group of players"
+          "hint": "group of players",
+          "translation": "My team won the game."
         },
         {
           "sentence": "___ cinco kilómetros al día.",
           "answer": "Corro",
-          "hint": "I run"
+          "hint": "I run",
+          "translation": "I run five kilometers a day."
         },
         {
           "sentence": "El ___ es muy estricto.",
           "answer": "entrenador",
-          "hint": "team leader/teacher"
+          "hint": "team leader/teacher",
+          "translation": "The coach is very strict."
         }
       ]
     },

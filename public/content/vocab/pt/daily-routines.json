@@ -119,10 +119,10 @@
     {
       "type": "fill-blank",
       "items": [
-        { "sentence": "O ___ é a refeição mais importante.", "answer": "café da manhã", "hint": "first meal of the day" },
-        { "sentence": "___ às seis da manhã todos os dias.", "answer": "Acordo", "hint": "to open your eyes and start the day" },
-        { "sentence": "Preciso ___ um pouco depois do trabalho.", "answer": "descansar", "hint": "to relax and recover energy" },
-        { "sentence": "___ às onze da noite.", "answer": "Durmo", "hint": "to close your eyes at night" }
+        { "sentence": "O ___ é a refeição mais importante.", "answer": "café da manhã", "hint": "first meal of the day", "translation": "Breakfast is the most important meal." },
+        { "sentence": "___ às seis da manhã todos os dias.", "answer": "Acordo", "hint": "to open your eyes and start the day", "translation": "I wake up at six in the morning every day." },
+        { "sentence": "Preciso ___ um pouco depois do trabalho.", "answer": "descansar", "hint": "to relax and recover energy", "translation": "I need to rest a bit after work." },
+        { "sentence": "___ às onze da noite.", "answer": "Durmo", "hint": "to close your eyes at night", "translation": "I go to sleep at eleven at night." }
       ]
     },
     {

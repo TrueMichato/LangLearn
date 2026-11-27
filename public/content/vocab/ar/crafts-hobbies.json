@@ -125,22 +125,26 @@
         {
           "sentence": "هٰذِهِ ___ جَدِيدَةٌ.",
           "answer": "حِرْفَةٌ",
-          "hint": "craft"
+          "hint": "craft",
+          "translation": "This is a new craft."
         },
         {
           "sentence": "___ هَوَايَةٌ هَادِئَةٌ.",
           "answer": "خِيَاطَةٌ",
-          "hint": "sewing"
+          "hint": "sewing",
+          "translation": "Sewing is a calm hobby."
         },
         {
           "sentence": "هٰذَا ___ صَغِيرٌ.",
           "answer": "مِقَصٌّ",
-          "hint": "scissors"
+          "hint": "scissors",
+          "translation": "This is a small pair of scissors."
         },
         {
           "sentence": "فِي الصَّفِّ ___ كَبِيرَةٌ.",
           "answer": "فُرْشَاةٌ",
-          "hint": "brush"
+          "hint": "brush",
+          "translation": "In the classroom there's a big brush."
         }
       ]
     },

@@ -21,9 +21,9 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "Учёные провели важное ___. (research)", "answer": "исследование", "hint": "research / study" },
-      { "sentence": "Какова ___ вашего опоздания? (reason)", "answer": "причина", "hint": "reason / cause" },
-      { "sentence": "Мы приняли важное ___. (decision)", "answer": "решение", "hint": "decision / solution" }
+      { "sentence": "Учёные провели важное ___. (research)", "answer": "исследование", "hint": "research / study", "translation": "The scientists conducted an important study." },
+      { "sentence": "Какова ___ вашего опоздания? (reason)", "answer": "причина", "hint": "reason / cause", "translation": "What is the reason for your being late?" },
+      { "sentence": "Мы приняли важное ___. (decision)", "answer": "решение", "hint": "decision / solution", "translation": "We made an important decision." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "What does 'образование' mean?", "options": ["Education", "Society", "Development", "Research"], "answer": 0 },

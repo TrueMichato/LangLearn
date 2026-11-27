@@ -125,17 +125,20 @@
         {
           "sentence": "Scriu tema în ___.",
           "answer": "caiet",
-          "hint": "notebook"
+          "hint": "notebook",
+          "translation": "I write the homework in the notebook."
         },
         {
           "sentence": "Lucrez la ___ azi.",
           "answer": "birou",
-          "hint": "office"
+          "hint": "office",
+          "translation": "I work at the office today."
         },
         {
           "sentence": "Luăm ___ la ora zece.",
           "answer": "pauză",
-          "hint": "break"
+          "hint": "break",
+          "translation": "We take a break at ten o’clock."
         }
       ]
     },

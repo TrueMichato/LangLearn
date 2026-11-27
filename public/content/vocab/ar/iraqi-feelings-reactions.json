@@ -125,22 +125,26 @@
         {
           "sentence": "أَنَا ___ بِنَتِيجَتَكْ.",
           "answer": "فَرْحَانْ",
-          "hint": "happy"
+          "hint": "happy",
+          "translation": "I am happy with your result."
         },
         {
           "sentence": "___؟ مَا كُنْتْ أَعْرِفْ.",
           "answer": "وَاللَّهْ",
-          "hint": "really?"
+          "hint": "really?",
+          "translation": "Really? I did not know."
         },
         {
           "sentence": "___، شُغْلَكْ حِلُوْ.",
           "answer": "عَافِيَةْ عَلَيْكْ",
-          "hint": "well done"
+          "hint": "well done",
+          "translation": "Well done; your work is nice."
         },
         {
           "sentence": "___، بَعْدَ شْوَيَّةْ تِتْحَسَّنْ.",
           "answer": "تْهَوَّنْ",
-          "hint": "cheer up"
+          "hint": "cheer up",
+          "translation": "Cheer up; it will get better in a little while."
         }
       ]
     },

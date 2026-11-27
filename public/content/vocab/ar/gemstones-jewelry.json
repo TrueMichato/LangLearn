@@ -125,22 +125,26 @@
         {
           "sentence": "يَحْمِلُ ___ لَوْنًا أَخْضَرَ عَمِيقًا.",
           "answer": "الزُّمُرُّدُ",
-          "hint": "emerald"
+          "hint": "emerald",
+          "translation": "The emerald carries a deep green color."
         },
         {
           "sentence": "يَلْمَعُ ___ تَحْتَ الضَّوْءِ.",
           "answer": "الأَلْمَاسُ",
-          "hint": "diamond"
+          "hint": "diamond",
+          "translation": "The diamond sparkles under the light."
         },
         {
           "sentence": "تَتَطَلَّبُ ___ صَبْرًا وَدِقَّةً.",
           "answer": "الصِّيَاغَةُ",
-          "hint": "jewelry making"
+          "hint": "jewelry making",
+          "translation": "Jewelry making requires patience and precision."
         },
         {
           "sentence": "يَقِيسُ ___ وَزْنَ الْحَجَرِ الْكَرِيمِ.",
           "answer": "الْقِيرَاطُ",
-          "hint": "carat"
+          "hint": "carat",
+          "translation": "The carat measures the weight of the gemstone."
         }
       ]
     },

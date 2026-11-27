@@ -21,9 +21,9 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "Дети прыгают от ___.", "answer": "Радости", "hint": "Joy (genitive)" },
-      { "sentence": "Не ___, всё хорошо.", "answer": "Волнуйся", "hint": "To worry (imperative)" },
-      { "sentence": "Почему ты такой ___?", "answer": "Грустный", "hint": "Sad" }
+      { "sentence": "Дети прыгают от ___.", "answer": "Радости", "hint": "Joy (genitive)", "translation": "The children are jumping for joy." },
+      { "sentence": "Не ___, всё хорошо.", "answer": "Волнуйся", "hint": "To worry (imperative)", "translation": "Don't worry, everything is fine." },
+      { "sentence": "Почему ты такой ___?", "answer": "Грустный", "hint": "Sad", "translation": "Why are you so sad?" }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "What does 'Любовь' mean?", "options": ["Love", "Joy", "Fear", "Hope"], "answer": 0 },

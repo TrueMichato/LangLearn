@@ -125,22 +125,26 @@
         {
           "sentence": "___ صَغِيرَةٌ قُرْبَ النَّافِذَةِ.",
           "answer": "طَاوِلَةٌ",
-          "hint": "table"
+          "hint": "table",
+          "translation": "A small table is near the window."
         },
         {
           "sentence": "___ جَدِيدَةٌ عَلَى الطَّاوِلَةِ.",
           "answer": "قَائِمَةٌ",
-          "hint": "menu"
+          "hint": "menu",
+          "translation": "A new menu is on the table."
         },
         {
           "sentence": "___ لَذِيذٌ فِي الْمَطْعَمِ.",
           "answer": "طَعَامٌ",
-          "hint": "food"
+          "hint": "food",
+          "translation": "Delicious food is in the restaurant."
         },
         {
           "sentence": "___ بَارِدٌ مَعَ الْغَدَاءِ.",
           "answer": "شَرَابٌ",
-          "hint": "drink"
+          "hint": "drink",
+          "translation": "A cold drink is with lunch."
         }
       ]
     },

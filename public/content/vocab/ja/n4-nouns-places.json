@@ -21,9 +21,9 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "___を右に曲がってください。", "answer": "交差点", "hint": "intersection" },
-      { "sentence": "京都の___を見学した。", "answer": "寺", "hint": "temple" },
-      { "sentence": "___が満車だった。", "answer": "駐車場", "hint": "parking lot" }
+      { "sentence": "___を右に曲がってください。", "answer": "交差点", "hint": "intersection", "translation": "Please turn right at the intersection." },
+      { "sentence": "京都の___を見学した。", "answer": "寺", "hint": "temple", "translation": "I visited a temple in Kyoto." },
+      { "sentence": "___が満車だった。", "answer": "駐車場", "hint": "parking lot", "translation": "The parking lot was full." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "「信号」はどういう意味ですか？", "options": ["bridge", "intersection", "traffic light", "harbor"], "answer": 2 },

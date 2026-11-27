@@ -125,22 +125,26 @@
         {
           "sentence": "___، نَوَّرْتَنَا.",
           "answer": "هَلَّا وَاللّٰه",
-          "hint": "hello there"
+          "hint": "hello there",
+          "translation": "Hello there, you brightened our place."
         },
         {
           "sentence": "___ فِي بَيْتْنَا.",
           "answer": "حَيَّاك اللّٰه",
-          "hint": "welcome"
+          "hint": "welcome",
+          "translation": "Welcome to our home."
         },
         {
           "sentence": "___ مَا شُفْنَاكْ مِنْ زَمَانْ.",
           "answer": "عَسَاك طَيِّب؟",
-          "hint": "hope you are well"
+          "hint": "hope you are well",
+          "translation": "Hope you are well? We have not seen you for a while."
         },
         {
           "sentence": "___ نِقْدَرْ نِسَاعِدَكْ؟",
           "answer": "أُمُورَك طَيِّبَة؟",
-          "hint": "are things okay?"
+          "hint": "are things okay?",
+          "translation": "Are things okay? Can we help you?"
         }
       ]
     },

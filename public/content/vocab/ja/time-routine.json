@@ -22,9 +22,9 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "毎朝六時に___ます。", "answer": "起き", "hint": "to wake up" },
-      { "sentence": "___に友達と会います。", "answer": "昼", "hint": "noon" },
-      { "sentence": "___日本語を勉強します。", "answer": "毎日", "hint": "every day" }
+      { "sentence": "毎朝六時に___ます。", "answer": "起き", "hint": "to wake up", "translation": "I wake up at 6 every morning." },
+      { "sentence": "___に友達と会います。", "answer": "昼", "hint": "noon", "translation": "I will meet a friend at noon." },
+      { "sentence": "___日本語を勉強します。", "answer": "毎日", "hint": "every day", "translation": "I study Japanese every day." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "「午前」はどういう意味ですか。", "options": ["PM", "AM", "noon", "midnight"], "answer": 1 },

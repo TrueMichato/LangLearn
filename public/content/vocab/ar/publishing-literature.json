@@ -125,22 +125,26 @@
         {
           "sentence": "تَفْتَحُ ___ بَابًا إِلَى عَالَمٍ خَيَالِيٍّ.",
           "answer": "رِوَايَةٌ",
-          "hint": "novel"
+          "hint": "novel",
+          "translation": "A novel opens a door to an imaginary world."
         },
         {
           "sentence": "___ دَقِيقَةٌ تَنْقُلُ النَّصَّ إِلَى لُغَةٍ أُخْرَى.",
           "answer": "تَرْجَمَةٌ",
-          "hint": "translation"
+          "hint": "translation",
+          "translation": "An accurate translation moves the text into another language."
         },
         {
           "sentence": "___ جَذَّابٌ يَجْذِبُ الْقُرَّاءَ.",
           "answer": "غِلَافٌ",
-          "hint": "cover"
+          "hint": "cover",
+          "translation": "An attractive cover draws readers."
         },
         {
           "sentence": "___ جَدِيدٌ يُبَدِّلُ مَسَارَ الْحِكَايَةِ.",
           "answer": "فَصْلٌ",
-          "hint": "chapter"
+          "hint": "chapter",
+          "translation": "A new chapter changes the course of the story."
         }
       ]
     },

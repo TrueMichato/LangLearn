@@ -125,22 +125,26 @@
         {
           "sentence": "___ تُدَرِّبُ العَقْلَ عَلَى المَنْطِقِ.",
           "answer": "الرِّيَاضِيَّاتُ",
-          "hint": "mathematics"
+          "hint": "mathematics",
+          "translation": "Mathematics trains the mind in logic."
         },
         {
           "sentence": "___ تَشْرَحُ حَرَكَةَ الأَجْسَامِ.",
           "answer": "الفِيزِيَاءُ",
-          "hint": "physics"
+          "hint": "physics",
+          "translation": "Physics explains the motion of bodies."
         },
         {
           "sentence": "___ تَدْرُسُ تَفَاعُلَ المَوَادِّ.",
           "answer": "الكِيمِيَاءُ",
-          "hint": "chemistry"
+          "hint": "chemistry",
+          "translation": "Chemistry studies the reaction of substances."
         },
         {
           "sentence": "___ تَبْحَثُ فِي الكَائِنَاتِ الحَيَّةِ.",
           "answer": "الأَحْيَاءُ",
-          "hint": "biology"
+          "hint": "biology",
+          "translation": "Biology researches living organisms."
         }
       ]
     },

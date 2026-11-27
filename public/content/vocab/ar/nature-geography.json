@@ -125,22 +125,26 @@
         {
           "sentence": "___ وَاسِعٌ أَمَامَنَا.",
           "answer": "عَالَمٌ",
-          "hint": "world"
+          "hint": "world",
+          "translation": "A wide world is before us."
         },
         {
           "sentence": "___ جَمِيلٌ عَلَى الْبَحْرِ.",
           "answer": "بَلَدٌ",
-          "hint": "country / town"
+          "hint": "country / town",
+          "translation": "A beautiful country is on the sea."
         },
         {
           "sentence": "___ عَرَبِيَّةٌ فِي الْخَلِيجِ.",
           "answer": "دَوْلَةٌ",
-          "hint": "state / country"
+          "hint": "state / country",
+          "translation": "An Arab state is in the Gulf."
         },
         {
           "sentence": "___ قَدِيمَةٌ فِي الْمِنْطَقَةِ.",
           "answer": "عَاصِمَةٌ",
-          "hint": "capital city"
+          "hint": "capital city",
+          "translation": "An old capital is in the region."
         }
       ]
     },

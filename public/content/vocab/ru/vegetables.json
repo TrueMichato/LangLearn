@@ -21,10 +21,10 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "___ — основа русской кухни.", "answer": "Картофель", "hint": "Potato" },
-      { "sentence": "От ___ текут слёзы.", "answer": "Лука", "hint": "Onion (genitive)" },
-      { "sentence": "Из ___ готовят борщ.", "answer": "Свёклы", "hint": "Beetroot (genitive)" },
-      { "sentence": "Осенью собирают ___.", "answer": "Тыкву", "hint": "Pumpkin (accusative)" }
+      { "sentence": "___ — основа русской кухни.", "answer": "Картофель", "hint": "Potato", "translation": "Potato is the basis of Russian cuisine." },
+      { "sentence": "От ___ текут слёзы.", "answer": "Лука", "hint": "Onion (genitive)", "translation": "Onions make your eyes water. (literally: tears flow from onion)" },
+      { "sentence": "Из ___ готовят борщ.", "answer": "Свёклы", "hint": "Beetroot (genitive)", "translation": "Borscht is made from beets." },
+      { "sentence": "Осенью собирают ___.", "answer": "Тыкву", "hint": "Pumpkin (accusative)", "translation": "In autumn, pumpkins are harvested." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "What does 'Огурец' mean?", "options": ["Cucumber", "Zucchini", "Celery", "Lettuce"], "answer": 0 },

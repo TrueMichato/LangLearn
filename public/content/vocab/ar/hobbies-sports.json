@@ -125,22 +125,26 @@
         {
           "sentence": "___ جَمِيلَةٌ تُسْعِدُنِي.",
           "answer": "هِوَايَةٌ",
-          "hint": "hobby"
+          "hint": "hobby",
+          "translation": "A beautiful hobby makes me happy."
         },
         {
           "sentence": "___ خَفِيفَةٌ كُلَّ صَبَاحٍ.",
           "answer": "رِيَاضَةٌ",
-          "hint": "sport / exercise"
+          "hint": "sport / exercise",
+          "translation": "Light exercise every morning."
         },
         {
           "sentence": "___ هَادِئَةٌ قَبْلَ النَّوْمِ.",
           "answer": "قِرَاءَةٌ",
-          "hint": "reading"
+          "hint": "reading",
+          "translation": "Quiet reading before sleep."
         },
         {
           "sentence": "___ يَوْمِيَّةٌ فِي الدَّفْتَرِ.",
           "answer": "كِتَابَةٌ",
-          "hint": "writing"
+          "hint": "writing",
+          "translation": "Daily writing in the notebook."
         }
       ]
     },

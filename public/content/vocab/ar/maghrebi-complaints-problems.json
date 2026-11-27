@@ -125,22 +125,26 @@
         {
           "sentence": "___ فْالْحْسَابْ.",
           "answer": "كَايَنْ مُشْكِلْ",
-          "hint": "there is a problem"
+          "hint": "there is a problem",
+          "translation": "There is a problem with the bill."
         },
         {
           "sentence": "التِّلِيفُونْ ___ الْيَوْمْ.",
           "answer": "مَا خَدَّامْشْ",
-          "hint": "not working"
+          "hint": "not working",
+          "translation": "The phone is not working today."
         },
         {
           "sentence": "___ دَابَا، مَا نْقْدَرْشْ نْتْسَنَّى.",
           "answer": "خَاصّْنِي حَلّْ",
-          "hint": "I need a solution"
+          "hint": "I need a solution",
+          "translation": "I need a solution now; I cannot wait."
         },
         {
           "sentence": "فَاتُورَةْ الْمَحَلّْ فِيهَا ___.",
           "answer": "سُومَةْ غَالْطَةْ",
-          "hint": "wrong price"
+          "hint": "wrong price",
+          "translation": "The shop receipt has a wrong price."
         }
       ]
     },

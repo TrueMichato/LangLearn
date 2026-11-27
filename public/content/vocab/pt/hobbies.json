@@ -21,9 +21,9 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "O ___ é o esporte mais popular do Brasil.", "answer": "futebol", "hint": "soccer" },
-      { "sentence": "Ela ___ samba muito bem.", "answer": "dança", "hint": "to dance (3rd person)" },
-      { "sentence": "Eu gosto de ___ filmes à noite.", "answer": "assistir", "hint": "to watch" }
+      { "sentence": "O ___ é o esporte mais popular do Brasil.", "answer": "futebol", "hint": "soccer", "translation": "Soccer is the most popular sport in Brazil." },
+      { "sentence": "Ela ___ samba muito bem.", "answer": "dança", "hint": "to dance (3rd person)", "translation": "She dances samba very well." },
+      { "sentence": "Eu gosto de ___ filmes à noite.", "answer": "assistir", "hint": "to watch", "translation": "I like to watch movies at night." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "What does 'nadar' mean?", "options": ["to run", "to swim", "to dance", "to sing"], "answer": 1 },

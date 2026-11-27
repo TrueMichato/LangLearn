@@ -21,9 +21,9 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "Не забудь сменить ___. (password)", "answer": "пароль", "hint": "password" },
-      { "sentence": "Все файлы хранятся в ___. (the cloud)", "answer": "облаке", "hint": "cloud (prepositional)" },
-      { "sentence": "Отправь мне ___ на статью. (link)", "answer": "ссылку", "hint": "link (accusative)" }
+      { "sentence": "Не забудь сменить ___. (password)", "answer": "пароль", "hint": "password", "translation": "Don't forget to change your password." },
+      { "sentence": "Все файлы хранятся в ___. (the cloud)", "answer": "облаке", "hint": "cloud (prepositional)", "translation": "All the files are stored in the cloud." },
+      { "sentence": "Отправь мне ___ на статью. (link)", "answer": "ссылку", "hint": "link (accusative)", "translation": "Send me the link to the article." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "What does 'скачать' mean?", "options": ["To download", "To upload", "To delete", "To search"], "answer": 0 },

@@ -125,17 +125,20 @@
         {
           "sentence": "Înainte de ___, verific cheile.",
           "answer": "a pleca",
-          "hint": "to leave"
+          "hint": "to leave",
+          "translation": "Before leaving, I check the keys."
         },
         {
           "sentence": "Pentru ___ în clădire, arăt cardul.",
           "answer": "a intra",
-          "hint": "to enter"
+          "hint": "to enter",
+          "translation": "To enter the building, I show my card."
         },
         {
           "sentence": "___ cu avionul este rapid.",
           "answer": "a zbura",
-          "hint": "to fly"
+          "hint": "to fly",
+          "translation": "Flying by plane is fast."
         }
       ]
     },

@@ -21,9 +21,9 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "Завтра экзамен? ___!", "answer": "Ни пуха ни пера", "hint": "Good luck (idiom)" },
-      { "sentence": "Обед готов. ___!", "answer": "Приятного аппетита", "hint": "Enjoy your meal" },
-      { "sentence": "Ты сдал экзамен? ___!", "answer": "Молодец", "hint": "Well done" }
+      { "sentence": "Завтра экзамен? ___!", "answer": "Ни пуха ни пера", "hint": "Good luck (idiom)", "translation": "Exam tomorrow? Good luck!" },
+      { "sentence": "Обед готов. ___!", "answer": "Приятного аппетита", "hint": "Enjoy your meal", "translation": "Lunch is ready. Enjoy your meal!" },
+      { "sentence": "Ты сдал экзамен? ___!", "answer": "Молодец", "hint": "Well done", "translation": "You passed the exam? Well done!" }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "What does 'Ни пуха ни пера' mean?", "options": ["Good luck", "Goodbye", "Happy birthday", "Well done"], "answer": 0 },

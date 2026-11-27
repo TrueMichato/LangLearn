@@ -125,22 +125,26 @@
         {
           "sentence": "___، الْبَابْ مَفْتُوحْ.",
           "answer": "تِفَضَّلْ",
-          "hint": "please come in"
+          "hint": "please come in",
+          "translation": "Please come in, the door is open."
         },
         {
           "sentence": "أُرِيدْ ___ قَلِيلْ بِالچَايْ.",
           "answer": "سُكَّرْ",
-          "hint": "sugar"
+          "hint": "sugar",
+          "translation": "I want a little sugar in the tea."
         },
         {
           "sentence": "___، أَجِيبْ لَكْ چَايْ.",
           "answer": "عَالْعَيْنْ",
-          "hint": "gladly"
+          "hint": "gladly",
+          "translation": "Gladly, I will bring you tea."
         },
         {
           "sentence": "___ وَنِسْوِي غَدَا سَوِيَّةْ.",
           "answer": "تَعَالْ بَاكِرْ",
-          "hint": "come tomorrow"
+          "hint": "come tomorrow",
+          "translation": "Come tomorrow and we will make lunch together."
         }
       ]
     },

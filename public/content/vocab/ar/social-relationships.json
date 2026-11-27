@@ -125,22 +125,26 @@
         {
           "sentence": "بَدَأَتْ ___ قَوِيَّةٌ بَيْنَ الطَّالِبَيْنِ.",
           "answer": "صَدَاقَةٌ",
-          "hint": "friendship"
+          "hint": "friendship",
+          "translation": "A strong friendship began between the two students."
         },
         {
           "sentence": "___ جَدِيدٌ يَعْمَلُ مَعَنَا.",
           "answer": "زَمِيلٌ",
-          "hint": "colleague"
+          "hint": "colleague",
+          "translation": "A new colleague is working with us."
         },
         {
           "sentence": "سَاعَدَنَا ___ كَرِيمٌ فِي النَّقْلِ.",
           "answer": "جَارٌ",
-          "hint": "neighbor"
+          "hint": "neighbor",
+          "translation": "A generous neighbor helped us with moving."
         },
         {
           "sentence": "هِيَ ___ قَدِيمَةٌ مِنَ الْجَامِعَةِ.",
           "answer": "مَعْرِفَةٌ",
-          "hint": "acquaintance"
+          "hint": "acquaintance",
+          "translation": "She is an old acquaintance from the university."
         }
       ]
     },

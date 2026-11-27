@@ -125,22 +125,26 @@
         {
           "sentence": "___ يَلْعَبُونْ فِي الْحَوْشْ.",
           "answer": "الْيَهَالْ",
-          "hint": "the kids"
+          "hint": "the kids",
+          "translation": "The kids are playing in the yard."
         },
         {
           "sentence": "___ تْسَوِّي قَهْوَةْ لِلضُّيُوفْ.",
           "answer": "يَدَّتِي",
-          "hint": "my grandmother"
+          "hint": "my grandmother",
+          "translation": "My grandmother makes coffee for the guests."
         },
         {
           "sentence": "الصَّغِيرْ ___ قَبْلَ النَّوْمْ.",
           "answer": "يَبِي حَلِيبْ",
-          "hint": "he wants milk"
+          "hint": "he wants milk",
+          "translation": "The little one wants milk before sleep."
         },
         {
           "sentence": "___ بَعْدَ الْمَدْرَسَةْ؟",
           "answer": "شْلُونْ عِيَالِكْ",
-          "hint": "how are your children?"
+          "hint": "how are your children?",
+          "translation": "How are your children after school?"
         }
       ]
     },

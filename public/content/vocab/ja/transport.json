@@ -22,9 +22,9 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "___で会社に行きます。", "answer": "電車", "hint": "train" },
-      { "sentence": "___に曲がってください。", "answer": "右", "hint": "right" },
-      { "sentence": "___を買います。", "answer": "切符", "hint": "ticket" }
+      { "sentence": "___で会社に行きます。", "answer": "電車", "hint": "train", "translation": "I go to work by train." },
+      { "sentence": "___に曲がってください。", "answer": "右", "hint": "right", "translation": "Please turn right." },
+      { "sentence": "___を買います。", "answer": "切符", "hint": "ticket", "translation": "I buy a ticket." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "「飛行機」はどういう意味ですか？", "options": ["train", "airplane", "bicycle", "car"], "answer": 1 },

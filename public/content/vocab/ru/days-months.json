@@ -23,9 +23,9 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "___ — первый день недели.", "answer": "Понедельник", "hint": "Monday" },
-      { "sentence": "___ хорошая погода.", "answer": "Сегодня", "hint": "Today" },
-      { "sentence": "В ___ начинается весна.", "answer": "Марте", "hint": "March (prepositional)" }
+      { "sentence": "___ — первый день недели.", "answer": "Понедельник", "hint": "Monday", "translation": "Monday is the first day of the week." },
+      { "sentence": "___ хорошая погода.", "answer": "Сегодня", "hint": "Today", "translation": "Today the weather is good." },
+      { "sentence": "В ___ начинается весна.", "answer": "Марте", "hint": "March (prepositional)", "translation": "Spring begins in March." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "What day is 'Пятница'?", "options": ["Friday", "Thursday", "Saturday", "Wednesday"], "answer": 0 },

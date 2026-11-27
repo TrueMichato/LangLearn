@@ -125,22 +125,26 @@
         {
           "sentence": "تَرْسُو ___ فِي الْمِينَاءِ عِنْدَ الْفَجْرِ.",
           "answer": "سَفِينَةٌ",
-          "hint": "ship"
+          "hint": "ship",
+          "translation": "A ship anchors in the port at dawn."
         },
         {
           "sentence": "يَقُودُ ___ السَّفِينَةَ بِحِكْمَةٍ.",
           "answer": "قُبْطَانٌ",
-          "hint": "captain"
+          "hint": "captain",
+          "translation": "A captain steers the ship wisely."
         },
         {
           "sentence": "___ أَبْيَضُ يَمْلَؤُهُ الْهَوَاءُ.",
           "answer": "شِرَاعٌ",
-          "hint": "sail"
+          "hint": "sail",
+          "translation": "A white sail is filled by the air."
         },
         {
           "sentence": "___ عَالِيَةٌ تَضْرِبُ السَّاحِلَ.",
           "answer": "مَوْجَةٌ",
-          "hint": "wave"
+          "hint": "wave",
+          "translation": "A high wave hits the coast."
         }
       ]
     },

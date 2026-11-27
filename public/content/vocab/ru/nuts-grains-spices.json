@@ -21,11 +21,11 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "___ — любимая крупа в России.", "answer": "Гречка", "hint": "Buckwheat" },
-      { "sentence": "Из ___ пекут хлеб.", "answer": "Муки", "hint": "Flour (genitive)" },
-      { "sentence": "Чай с ___ согревает.", "answer": "Имбирём", "hint": "Ginger (instrumental)" },
-      { "sentence": "___ пахнет приятно.", "answer": "Корица", "hint": "Cinnamon" },
-      { "sentence": "___ полезны для мозга.", "answer": "Орехи", "hint": "Nuts" }
+      { "sentence": "___ — любимая крупа в России.", "answer": "Гречка", "hint": "Buckwheat", "translation": "Buckwheat is the favorite grain in Russia." },
+      { "sentence": "Из ___ пекут хлеб.", "answer": "Муки", "hint": "Flour (genitive)", "translation": "Bread is baked from flour." },
+      { "sentence": "Чай с ___ согревает.", "answer": "Имбирём", "hint": "Ginger (instrumental)", "translation": "Tea with ginger warms you up." },
+      { "sentence": "___ пахнет приятно.", "answer": "Корица", "hint": "Cinnamon", "translation": "Cinnamon smells pleasant." },
+      { "sentence": "___ полезны для мозга.", "answer": "Орехи", "hint": "Nuts", "translation": "Nuts are good for the brain." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "What does 'Гречка' mean?", "options": ["Buckwheat", "Barley", "Wheat", "Oats"], "answer": 0 },

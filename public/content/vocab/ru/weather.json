@@ -21,9 +21,9 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "Какая сегодня ___?", "answer": "Погода", "hint": "Weather" },
-      { "sentence": "На улице идёт ___.", "answer": "Дождь", "hint": "Rain" },
-      { "sentence": "___ очень холодно.", "answer": "Зимой", "hint": "In winter" }
+      { "sentence": "Какая сегодня ___?", "answer": "Погода", "hint": "Weather", "translation": "What's the weather like today?" },
+      { "sentence": "На улице идёт ___.", "answer": "Дождь", "hint": "Rain", "translation": "It's raining outside." },
+      { "sentence": "___ очень холодно.", "answer": "Зимой", "hint": "In winter", "translation": "In winter it is very cold." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "What does 'Снег' mean?", "options": ["Snow", "Rain", "Wind", "Sun"], "answer": 0 },

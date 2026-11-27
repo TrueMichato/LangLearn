@@ -15,7 +15,7 @@ export const arClozeSentences: ClozeSentence[] = [
   { id: 'ar-c008', target: 'الطَّقْس جَمِيل اليَوْم', english: 'The weather is beautiful today', blankedWord: 'اليَوْم', blankedReading: 'al-yawm', frequencyRank: 24, difficulty: 'beginner' },
   { id: 'ar-c009', target: 'أُمِّي مُعَلِّمة', english: 'My mother is a teacher', blankedWord: 'مُعَلِّمة', blankedReading: 'muʿallima', frequencyRank: 99, difficulty: 'beginner' },
   { id: 'ar-c010', target: 'نَذْهَبُ إلى السُّوق', english: 'We go to the market', blankedWord: 'إلى', blankedReading: 'ilā', frequencyRank: 5, difficulty: 'beginner' },
-  { id: 'ar-c011', target: 'عِنْدي أخٌ وأُخْت', english: 'I have a brother and a sister', blankedWord: 'أُخْت', blankedReading: 'ukht', frequencyRank: 129, difficulty: 'beginner' },
+  { id: 'ar-c011', target: 'عِنْدي أُخْتٌ وأخ', english: 'I have a sister and a brother', blankedWord: 'أُخْت', blankedReading: 'ukht', frequencyRank: 129, difficulty: 'beginner' },
   { id: 'ar-c012', target: 'الوَلَد يَأْكُلُ الخُبْز', english: 'The boy eats the bread', blankedWord: 'يَأْكُلُ', blankedReading: 'yaʾkulu', frequencyRank: 175, difficulty: 'beginner' },
   { id: 'ar-c013', target: 'السَّيّارة أمامَ البَيْت', english: 'The car is in front of the house', blankedWord: 'السَّيّارة', blankedReading: 'as-sayyāra', frequencyRank: 104, difficulty: 'beginner' },
   { id: 'ar-c014', target: 'أنا سَعِيد جِدًّا', english: 'I am very happy', blankedWord: 'سَعِيد', blankedReading: 'saʿīd', frequencyRank: 150, difficulty: 'beginner' },
@@ -114,7 +114,7 @@ export const arClozeSentences: ClozeSentence[] = [
   { id: 'ar-c085', target: 'كُلَّما زادَ العِلْمُ، اتَّسَعَت المَسْؤُوليّة', english: 'The more knowledge grows, the greater the responsibility', blankedWord: 'اتَّسَعَت', blankedReading: 'ittasaʿat', frequencyRank: 300, difficulty: 'advanced' },
 
   // ── Beginner (batch 5) ──
-  { id: 'ar-c086', target: 'كَتَبْتُ اسْمي بِالهَمْزة', english: 'I wrote my name with a hamza', blankedWord: 'الهَمْزة', blankedReading: 'al-hamza', frequencyRank: 300, difficulty: 'beginner' },
+  { id: 'ar-c086', target: 'كَتَبْتُ الهَمْزة فَوْقَ الألِف', english: 'I wrote the hamza above the alif', blankedWord: 'الهَمْزة', blankedReading: 'al-hamza', frequencyRank: 300, difficulty: 'beginner' },
   { id: 'ar-c087', target: 'المَدْرَسةُ قَرِيبةٌ مِن البَيْت', english: 'The school is near the house', blankedWord: 'المَدْرَسةُ', blankedReading: 'al-madrasa', frequencyRank: 95, difficulty: 'beginner' },
   { id: 'ar-c088', target: 'أُحِبُّ القَهْوةَ بِدُونِ سُكَّر', english: 'I like coffee without sugar', blankedWord: 'بِدُونِ', blankedReading: 'bidūni', frequencyRank: 51, difficulty: 'beginner' },
   { id: 'ar-c089', target: 'الشَّمْسُ تُشْرِقُ مِن الشَّرْق', english: 'The sun rises from the east', blankedWord: 'تُشْرِقُ', blankedReading: 'tushriqu', frequencyRank: 227, difficulty: 'beginner' },

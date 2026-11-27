@@ -22,10 +22,10 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "Eu ___ português e inglês.", "answer": "falo", "hint": "to speak (1st person)" },
-      { "sentence": "Eu ___ ao supermercado agora.", "answer": "vou", "hint": "to go (1st person)" },
-      { "sentence": "Você ___ me ajudar?", "answer": "pode", "hint": "to be able to (3rd person)" },
-      { "sentence": "Eu ___ comprar comida.", "answer": "preciso", "hint": "to need (1st person)" }
+      { "sentence": "Eu ___ português e inglês.", "answer": "falo", "hint": "to speak (1st person)", "translation": "I speak Portuguese and English." },
+      { "sentence": "Eu ___ ao supermercado agora.", "answer": "vou", "hint": "to go (1st person)", "translation": "I'm going to the supermarket now." },
+      { "sentence": "Você ___ me ajudar?", "answer": "pode", "hint": "to be able to (3rd person)", "translation": "Can you help me?" },
+      { "sentence": "Eu ___ comprar comida.", "answer": "preciso", "hint": "to need (1st person)", "translation": "I need to buy food." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "What does 'comer' mean?", "options": ["to drink", "to eat", "to sleep", "to work"], "answer": 1 },

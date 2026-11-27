@@ -21,9 +21,9 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "運動しながら音楽を聞くのは___です。", "answer": "一石二鳥", "hint": "killing two birds with one stone" },
-      { "sentence": "日記を始めたけど___で終わった。", "answer": "三日坊主", "hint": "a quitter" },
-      { "sentence": "彼に注意しても___だ。", "answer": "馬の耳に念仏", "hint": "preaching to deaf ears" }
+      { "sentence": "運動しながら音楽を聞くのは___です。", "answer": "一石二鳥", "hint": "killing two birds with one stone", "translation": "Listening to music while exercising is killing two birds with one stone." },
+      { "sentence": "日記を始めたけど___で終わった。", "answer": "三日坊主", "hint": "a quitter", "translation": "I started a diary but gave up after three days." },
+      { "sentence": "彼に注意しても___だ。", "answer": "馬の耳に念仏", "hint": "preaching to deaf ears", "translation": "Warning him is like preaching to deaf ears." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "What does 猿も木から落ちる mean?", "options": ["monkeys are clumsy", "even experts make mistakes", "practice makes perfect", "be careful of heights"], "answer": 1 },

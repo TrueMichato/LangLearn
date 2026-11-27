@@ -21,9 +21,9 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "インターネットで___。", "answer": "調べる", "hint": "to look up / investigate" },
-      { "sentence": "旅行の日程を___。", "answer": "決める", "hint": "to decide" },
-      { "sentence": "日本の生活に___。", "answer": "慣れる", "hint": "to get used to" }
+      { "sentence": "インターネットで___。", "answer": "調べる", "hint": "to look up / investigate", "translation": "I look it up on the internet." },
+      { "sentence": "旅行の日程を___。", "answer": "決める", "hint": "to decide", "translation": "I decide the travel schedule." },
+      { "sentence": "日本の生活に___。", "answer": "慣れる", "hint": "to get used to", "translation": "I get used to life in Japan." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "「届ける」はどういう意味ですか？", "options": ["to arrive", "to deliver", "to collect", "to compare"], "answer": 1 },

@@ -125,17 +125,20 @@
         {
           "sentence": "O ___ oferă cărți gratuite.",
           "answer": "bibliotecă",
-          "hint": "library"
+          "hint": "library",
+          "translation": "A library offers free books."
         },
         {
           "sentence": "O ___ bună mă motivează.",
           "answer": "notă",
-          "hint": "grade"
+          "hint": "grade",
+          "translation": "A good grade motivates me."
         },
         {
           "sentence": "O ___ cere date precise.",
           "answer": "cercetare",
-          "hint": "research"
+          "hint": "research",
+          "translation": "Research requires precise data."
         }
       ]
     },

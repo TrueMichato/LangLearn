@@ -125,22 +125,26 @@
         {
           "sentence": "Me ___ a las seis.",
           "answer": "despierto",
-          "hint": "to wake up (yo)"
+          "hint": "to wake up (yo)",
+          "translation": "I wake up at six."
         },
         {
           "sentence": "Me ___ los dientes después.",
           "answer": "cepillo",
-          "hint": "to brush (yo)"
+          "hint": "to brush (yo)",
+          "translation": "I brush my teeth afterward."
         },
         {
           "sentence": "Me ___ a las once.",
           "answer": "acuesto",
-          "hint": "to go to bed (yo)"
+          "hint": "to go to bed (yo)",
+          "translation": "I go to bed at eleven."
         },
         {
           "sentence": "___ ocho horas.",
           "answer": "Duermo",
-          "hint": "I sleep"
+          "hint": "I sleep",
+          "translation": "I sleep eight hours."
         }
       ]
     },

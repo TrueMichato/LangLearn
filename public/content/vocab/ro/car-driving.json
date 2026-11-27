@@ -125,17 +125,20 @@
         {
           "sentence": "Oprim la ___ când lumina este roșie.",
           "answer": "semafor",
-          "hint": "traffic light"
+          "hint": "traffic light",
+          "translation": "We stop at the traffic light when the light is red."
         },
         {
           "sentence": "Am găsit ___ lângă bloc.",
           "answer": "parcare",
-          "hint": "parking"
+          "hint": "parking",
+          "translation": "I found parking next to the apartment building."
         },
         {
           "sentence": "Port ___ pe autostradă.",
           "answer": "centura de siguranță",
-          "hint": "seat belt"
+          "hint": "seat belt",
+          "translation": "I wear a seat belt on the highway."
         }
       ]
     },

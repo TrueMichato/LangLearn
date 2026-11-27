@@ -118,17 +118,20 @@
         {
           "sentence": "Îți ___ pentru ajutor.",
           "answer": "mulțumesc",
-          "hint": "thank you"
+          "hint": "thank you",
+          "translation": "Thank you for the help."
         },
         {
           "sentence": "Dă-mi apa, ___.",
           "answer": "te rog",
-          "hint": "please"
+          "hint": "please",
+          "translation": "Give me the water, please."
         },
         {
           "sentence": "Spun ___ înainte să plec.",
           "answer": "la revedere",
-          "hint": "goodbye"
+          "hint": "goodbye",
+          "translation": "I say goodbye before I leave."
         }
       ]
     },

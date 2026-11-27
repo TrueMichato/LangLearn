@@ -125,22 +125,26 @@
         {
           "sentence": "Hoy es mi ___.",
           "answer": "cumpleaños",
-          "hint": "annual personal celebration"
+          "hint": "annual personal celebration",
+          "translation": "Today is my birthday."
         },
         {
           "sentence": "Sopla las ___.",
           "answer": "velas",
-          "hint": "candles on a cake"
+          "hint": "candles on a cake",
+          "translation": "Blow out the candles."
         },
         {
           "sentence": "Es nuestro ___ hoy.",
           "answer": "aniversario",
-          "hint": "anniversary"
+          "hint": "anniversary",
+          "translation": "Today is our anniversary."
         },
         {
           "sentence": "¡___ por tu boda!",
           "answer": "Felicidades",
-          "hint": "congratulations"
+          "hint": "congratulations",
+          "translation": "Congratulations on your wedding!"
         }
       ]
     },

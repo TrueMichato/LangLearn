@@ -123,24 +123,28 @@
       "type": "fill-blank",
       "items": [
         {
-          "sentence": "إِنْتَ ___؟ بَدْنَا نِحْكِي شْوَيّْ.",
+          "sentence": "إِنْتَ ___ بَدْنَا نِحْكِي شْوَيّْ.",
           "answer": "فَاضِي؟",
-          "hint": "are you free?"
+          "hint": "are you free?",
+          "translation": "Are you free? We want to talk a bit."
         },
         {
           "sentence": "خَلِّينَا نِتْقَابَلْ ___.",
           "answer": "عَالسَّاعَةْ سَبْعَةْ",
-          "hint": "at seven o'clock"
+          "hint": "at seven o'clock",
+          "translation": "Let's meet at seven o'clock."
         },
         {
           "sentence": "___ الْمَشْوَارْ لِبُكْرَا.",
           "answer": "بِنْأَجِّلْ",
-          "hint": "we postpone"
+          "hint": "we postpone",
+          "translation": "We postpone the errand until tomorrow."
         },
         {
           "sentence": "___ عَلَى الْبَحْرْ بَكِيرْ.",
           "answer": "خَلِّينَا نِرُوحْ",
-          "hint": "let's go"
+          "hint": "let's go",
+          "translation": "Let's go to the sea early."
         }
       ]
     },

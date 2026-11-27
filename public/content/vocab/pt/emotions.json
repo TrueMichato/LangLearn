@@ -21,9 +21,9 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "Eu estou muito ___ com a notícia.", "answer": "feliz", "hint": "happy" },
-      { "sentence": "Fique ___, vai dar tudo certo.", "answer": "calmo", "hint": "calm" },
-      { "sentence": "Estou muito ___ depois do trabalho.", "answer": "cansado", "hint": "tired" }
+      { "sentence": "Eu estou muito ___ com a notícia.", "answer": "feliz", "hint": "happy", "translation": "I am very happy with the news." },
+      { "sentence": "Fique ___, vai dar tudo certo.", "answer": "calmo", "hint": "calm", "translation": "Stay calm, everything will be fine." },
+      { "sentence": "Estou muito ___ depois do trabalho.", "answer": "cansado", "hint": "tired", "translation": "I'm very tired after work." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "What does 'triste' mean?", "options": ["happy", "sad", "angry", "tired"], "answer": 1 },

@@ -21,9 +21,9 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "На ___ все пекут блины. (Maslenitsa)", "answer": "Масленицу", "hint": "Butter Week (accusative)" },
-      { "sentence": "___ приносит подарки на Новый год. (Grandfather Frost)", "answer": "Дед Мороз", "hint": "Russian Santa Claus" },
-      { "sentence": "Мама варит ___ каждую неделю. (borscht)", "answer": "борщ", "hint": "beetroot soup" }
+      { "sentence": "На ___ все пекут блины. (Maslenitsa)", "answer": "Масленицу", "hint": "Butter Week (accusative)", "translation": "At Maslenitsa everyone bakes bliny (pancakes)." },
+      { "sentence": "___ приносит подарки на Новый год. (Grandfather Frost)", "answer": "Дед Мороз", "hint": "Russian Santa Claus", "translation": "Grandfather Frost brings presents for New Year's." },
+      { "sentence": "Мама варит ___ каждую неделю. (borscht)", "answer": "борщ", "hint": "beetroot soup", "translation": "Mom makes borscht every week." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "What is a 'дача'?", "options": ["A country house for weekends", "A type of soup", "A musical instrument", "A winter hat"], "answer": 0 },

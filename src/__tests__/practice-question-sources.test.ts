@@ -11,12 +11,12 @@ describe('practice question source identity', () => {
         ? [{ id: 'real-lesson', title: 'The authored title' }]
         : { id: 'not-the-requested-id',
           words: ['بيت', 'كتاب', 'قلم', 'باب'].map((word, i) => ({ word, reading: '', meaning: `meaning${i}`, example: '', exampleMeaning: '' })),
-          exercises: [{ type: 'fill-blank', items: [{ sentence: 'هذا ___', answer: 'بيت', hint: 'house' }] }] },
+          exercises: [{ type: 'fill-blank', items: [{ sentence: 'هذا ___', answer: 'بيت', hint: 'house', translation: 'This is a house.' }] }] },
       text: async () => '<!-- quiz: {"type":"multiple-choice","question":"ما هذا؟","options":["بيت","كتاب","قلم","باب"],"answer":0} -->',
     })));
     const questions = await generateTestQuestions('ar', 'mixed', () => 0.9);
     expect(questions.length).toBeGreaterThan(1);
-    expect(questions.some((q) => q.question.startsWith('Fill in the blank:'))).toBe(true);
+    expect(questions.some((q) => q.question === 'Fill in the blank: هذا ___ (“This is a house.”)')).toBe(true);
     for (const question of questions) {
       expect(question.lessonId).toBe('real-lesson');
       expect(question.lessonTitle).toBe('The authored title');

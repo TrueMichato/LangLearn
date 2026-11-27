@@ -119,9 +119,9 @@
     {
       "type": "fill-blank",
       "items": [
-        { "sentence": "Estou aprendendo a tocar ___.", "answer": "violão", "hint": "stringed instrument, acoustic" },
-        { "sentence": "Fomos ao ___ assistir uma peça.", "answer": "teatro", "hint": "place for live performances" },
-        { "sentence": "Visitamos o ___ de arte moderna.", "answer": "museu", "hint": "place that displays art and history" }
+        { "sentence": "Estou aprendendo a tocar ___.", "answer": "violão", "hint": "stringed instrument, acoustic", "translation": "I'm learning to play acoustic guitar." },
+        { "sentence": "Fomos ao ___ assistir uma peça.", "answer": "teatro", "hint": "place for live performances", "translation": "We went to the theater to watch a play." },
+        { "sentence": "Visitamos o ___ de arte moderna.", "answer": "museu", "hint": "place that displays art and history", "translation": "We visited the modern art museum." }
       ]
     },
     {

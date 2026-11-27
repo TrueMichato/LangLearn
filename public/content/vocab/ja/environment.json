@@ -21,11 +21,11 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "___を守ることが大切です。", "answer": "環境", "hint": "Environment" },
-      { "sentence": "___が問題になっています。", "answer": "温暖化", "hint": "Global warming" },
-      { "sentence": "ペットボトルを___します。", "answer": "リサイクル", "hint": "Recycling" },
-      { "sentence": "ゴミを___してください。", "answer": "分別", "hint": "Sort" },
-      { "sentence": "水を___しましょう。", "answer": "節約", "hint": "Conserve" }
+      { "sentence": "___を守ることが大切です。", "answer": "環境", "hint": "Environment", "translation": "It's important to protect the environment." },
+      { "sentence": "___が問題になっています。", "answer": "温暖化", "hint": "Global warming", "translation": "Global warming has become a problem." },
+      { "sentence": "ペットボトルを___します。", "answer": "リサイクル", "hint": "Recycling", "translation": "I recycle plastic bottles." },
+      { "sentence": "ゴミを___してください。", "answer": "分別", "hint": "Sort", "translation": "Please sort your garbage." },
+      { "sentence": "水を___しましょう。", "answer": "節約", "hint": "Conserve", "translation": "Let's conserve water." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "私たちが住んでいる星を何と言いますか。", "options": ["自然", "環境", "地球", "森林"], "answer": 2 },

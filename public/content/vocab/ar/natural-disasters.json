@@ -125,22 +125,26 @@
         {
           "sentence": "هٰذَا ___ قَوِيٌّ.",
           "answer": "زِلْزَالٌ",
-          "hint": "earthquake"
+          "hint": "earthquake",
+          "translation": "This is a strong earthquake."
         },
         {
           "sentence": "هٰذِهِ ___ طَوِيلَةٌ.",
           "answer": "مَوْجَةُ حَرٍّ",
-          "hint": "heat wave"
+          "hint": "heat wave",
+          "translation": "This is a long heat wave."
         },
         {
           "sentence": "هٰذَا ___ سَرِيعٌ.",
           "answer": "إِخْلَاءٌ",
-          "hint": "evacuation"
+          "hint": "evacuation",
+          "translation": "This is a quick evacuation."
         },
         {
           "sentence": "هٰذَا ___ قَرِيبٌ.",
           "answer": "مَلْجَأٌ",
-          "hint": "shelter"
+          "hint": "shelter",
+          "translation": "This is a nearby shelter."
         }
       ]
     },

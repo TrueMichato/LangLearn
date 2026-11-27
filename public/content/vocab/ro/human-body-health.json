@@ -125,17 +125,20 @@
         {
           "sentence": "Am ___ de câteva zile și beau ceai cald.",
           "answer": "tuse",
-          "hint": "cough"
+          "hint": "cough",
+          "translation": "I've had a cough for a few days and I'm drinking warm tea."
         },
         {
           "sentence": "Medicul scrie o ___ pentru antibiotic.",
           "answer": "rețetă",
-          "hint": "prescription"
+          "hint": "prescription",
+          "translation": "The doctor writes a prescription for an antibiotic."
         },
         {
           "sentence": "Merg la ___ să cumpăr medicamentul.",
           "answer": "farmacie",
-          "hint": "pharmacy"
+          "hint": "pharmacy",
+          "translation": "I go to the pharmacy to buy the medicine."
         }
       ]
     },

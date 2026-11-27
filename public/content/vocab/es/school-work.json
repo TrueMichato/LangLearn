@@ -125,22 +125,26 @@
         {
           "sentence": "Tengo mucha ___ esta noche.",
           "answer": "tarea",
-          "hint": "what students do at home"
+          "hint": "what students do at home",
+          "translation": "I have a lot of homework tonight."
         },
         {
           "sentence": "Trabajo en la ___.",
           "answer": "computadora",
-          "hint": "LatAm word for computer"
+          "hint": "LatAm word for computer",
+          "translation": "I work on the computer."
         },
         {
           "sentence": "Mi ___ es muy exigente.",
           "answer": "jefe",
-          "hint": "person in charge at work"
+          "hint": "person in charge at work",
+          "translation": "My boss is very demanding."
         },
         {
           "sentence": "El ___ es el viernes.",
           "answer": "examen",
-          "hint": "test"
+          "hint": "test",
+          "translation": "The exam is on Friday."
         }
       ]
     },

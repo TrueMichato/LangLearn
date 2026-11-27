@@ -119,9 +119,9 @@
     {
       "type": "fill-blank",
       "items": [
-        { "sentence": "Vire à ___ no próximo semáforo.", "answer": "direita", "hint": "opposite of left" },
-        { "sentence": "Siga ___ por duas quadras.", "answer": "reto", "hint": "continue without turning" },
-        { "sentence": "Qual é o seu ___?", "answer": "endereço", "hint": "where you live, street and number" }
+        { "sentence": "Vire à ___ no próximo semáforo.", "answer": "direita", "hint": "opposite of left", "translation": "Turn right at the next traffic light." },
+        { "sentence": "Siga ___ por duas quadras.", "answer": "reto", "hint": "continue without turning", "translation": "Go straight for two blocks." },
+        { "sentence": "Qual é o seu ___?", "answer": "endereço", "hint": "where you live, street and number", "translation": "What is your address?" }
       ]
     },
     {

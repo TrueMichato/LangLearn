@@ -125,22 +125,26 @@
         {
           "sentence": "___ وَاحِدَةٌ تَكْفِي.",
           "answer": "سَاعَةٌ",
-          "hint": "hour / clock"
+          "hint": "hour / clock",
+          "translation": "One hour is enough."
         },
         {
           "sentence": "___ وَاحِدَةٌ بَاقِيَةٌ.",
           "answer": "دَقِيقَةٌ",
-          "hint": "minute"
+          "hint": "minute",
+          "translation": "One minute remains."
         },
         {
           "sentence": "___ وَاحِدَةٌ سَرِيعَةٌ.",
           "answer": "ثَانِيَةٌ",
-          "hint": "second"
+          "hint": "second",
+          "translation": "One second is quick."
         },
         {
           "sentence": "___ مُهِمٌّ عِنْدِي.",
           "answer": "مَوْعِدٌ",
-          "hint": "appointment"
+          "hint": "appointment",
+          "translation": "I have an important appointment."
         }
       ]
     },

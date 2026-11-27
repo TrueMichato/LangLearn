@@ -125,22 +125,26 @@
         {
           "sentence": "___ صَمَّمَ المَكْتَبَ الجَدِيدَ.",
           "answer": "المُهَنْدِسُ المِعْمَارِيُّ",
-          "hint": "architect"
+          "hint": "architect",
+          "translation": "The architect designed the new office."
         },
         {
           "sentence": "___ يُرَاجِعُ الفَوَاتِيرَ كُلَّ صَبَاحٍ.",
           "answer": "المُحَاسِبُ",
-          "hint": "accountant"
+          "hint": "accountant",
+          "translation": "The accountant reviews the invoices every morning."
         },
         {
           "sentence": "___ يَشْرَحُ العَقْدَ لِلْعَمِيلِ.",
           "answer": "المُحَامِي",
-          "hint": "lawyer"
+          "hint": "lawyer",
+          "translation": "The lawyer explains the contract to the client."
         },
         {
           "sentence": "___ يَكْتُبُ تَقْرِيرًا عَنِ الاِقْتِصَادِ.",
           "answer": "الصَّحَفِيُّ",
-          "hint": "journalist"
+          "hint": "journalist",
+          "translation": "The journalist writes a report about the economy."
         }
       ]
     },

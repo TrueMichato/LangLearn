@@ -21,11 +21,11 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "魚を___ました。", "answer": "焼き", "hint": "Grilled" },
-      { "sentence": "野菜を小さく___てください。", "answer": "切っ", "hint": "Cut" },
-      { "sentence": "___を全部準備しました。", "answer": "材料", "hint": "Ingredients" },
-      { "sentence": "牛乳を___に入れてください。", "answer": "冷蔵庫", "hint": "Refrigerator" },
-      { "sentence": "よく___てください。", "answer": "混ぜ", "hint": "Mix" }
+      { "sentence": "魚を___ました。", "answer": "焼き", "hint": "Grilled", "translation": "I grilled the fish." },
+      { "sentence": "野菜を小さく___てください。", "answer": "切っ", "hint": "Cut", "translation": "Please cut the vegetables into small pieces." },
+      { "sentence": "___を全部準備しました。", "answer": "材料", "hint": "Ingredients", "translation": "I prepared all the ingredients." },
+      { "sentence": "牛乳を___に入れてください。", "answer": "冷蔵庫", "hint": "Refrigerator", "translation": "Please put the milk in the refrigerator." },
+      { "sentence": "よく___てください。", "answer": "混ぜ", "hint": "Mix", "translation": "Please mix well." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "食べ物を油の中で料理することを何と言いますか。", "options": ["焼く", "煮る", "揚げる", "蒸す"], "answer": 2 },

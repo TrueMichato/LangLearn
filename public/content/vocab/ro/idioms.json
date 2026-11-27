@@ -125,17 +125,20 @@
         {
           "sentence": "Expresia ___ înseamnă să înțelegi brusc.",
           "answer": "a-i pica fisa",
-          "hint": "to suddenly get it"
+          "hint": "to suddenly get it",
+          "translation": "The expression \"the coin drops for someone\" (the penny drops) means to suddenly understand."
         },
         {
           "sentence": "Expresia ___ înseamnă să exagerezi.",
           "answer": "a face din țânțar armăsar",
-          "hint": "to exaggerate"
+          "hint": "to exaggerate",
+          "translation": "The expression \"to make a stallion out of a mosquito\" (to make a mountain out of a molehill) means to exaggerate."
         },
         {
           "sentence": "Expresia ___ înseamnă să adaugi tensiune.",
           "answer": "a pune paie pe foc",
-          "hint": "to add fuel to the fire"
+          "hint": "to add fuel to the fire",
+          "translation": "The expression \"to put straw on the fire\" (to add fuel to the fire) means to add tension."
         }
       ]
     },

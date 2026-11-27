@@ -125,22 +125,26 @@
         {
           "sentence": "___ جُزْءٌ مُهِمٌّ مِنْ حَيَاةِ كَثِيرِينَ.",
           "answer": "الْعِبَادَةُ",
-          "hint": "worship"
+          "hint": "worship",
+          "translation": "Worship is an important part of many people’s lives."
         },
         {
           "sentence": "تَحْمِلُ ___ مَعْنًى رُوحِيًّا عَمِيقًا.",
           "answer": "الشَّعِيرَةُ",
-          "hint": "religious rite"
+          "hint": "religious rite",
+          "translation": "The rite carries a deep spiritual meaning."
         },
         {
           "sentence": "___ قَصِيرَةٌ وَمُفِيدَةٌ.",
           "answer": "الْخُطْبَةُ",
-          "hint": "sermon"
+          "hint": "sermon",
+          "translation": "The sermon is short and useful."
         },
         {
           "sentence": "تَرْتَفِعُ ___ فَوْقَ أَسْطُحِ الْبَلْدَةِ.",
           "answer": "الْمَأْذَنَةُ",
-          "hint": "minaret"
+          "hint": "minaret",
+          "translation": "The minaret rises above the town’s roofs."
         }
       ]
     },

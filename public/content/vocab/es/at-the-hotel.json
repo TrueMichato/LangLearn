@@ -21,10 +21,10 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "Tengo una ___ a nombre de López.", "answer": "reserva", "hint": "booking" },
-      { "sentence": "¿Cuál es la contraseña del ___?", "answer": "wifi", "hint": "internet" },
-      { "sentence": "Debo dejar la ___ antes del mediodía.", "answer": "habitación", "hint": "room" },
-      { "sentence": "Pregunte en la ___.", "answer": "recepción", "hint": "front desk" }
+      { "sentence": "Tengo una ___ a nombre de López.", "answer": "reserva", "hint": "booking", "translation": "I have a reservation under López." },
+      { "sentence": "¿Cuál es la contraseña del ___?", "answer": "wifi", "hint": "internet", "translation": "What's the Wi-Fi password?" },
+      { "sentence": "Debo dejar la ___ antes del mediodía.", "answer": "habitación", "hint": "room", "translation": "I must check out before noon." },
+      { "sentence": "Pregunte en la ___.", "answer": "recepción", "hint": "front desk", "translation": "Ask at the reception." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "What does 'registrarse' mean?", "options": ["to check out", "to check in", "to reserve", "to pay"], "answer": 1 },

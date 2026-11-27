@@ -21,11 +21,11 @@
   "exercises": [
     { "type": "match", "pairs": 6 },
     { "type": "fill-blank", "items": [
-      { "sentence": "Мама ___ ужин на кухне.", "answer": "Готовит", "hint": "To cook / To prepare" },
-      { "sentence": "Он ___ картошку на сковороде.", "answer": "Жарит", "hint": "To fry" },
-      { "sentence": "Нужно ___ яйца десять минут.", "answer": "Варить", "hint": "To boil" },
-      { "sentence": "Поставь пирог в ___.", "answer": "Духовку", "hint": "Oven (accusative)" },
-      { "sentence": "Бабушка любит ___ пироги.", "answer": "Печь", "hint": "To bake" }
+      { "sentence": "Мама ___ ужин на кухне.", "answer": "Готовит", "hint": "To cook / To prepare", "translation": "Mom is cooking dinner in the kitchen." },
+      { "sentence": "Он ___ картошку на сковороде.", "answer": "Жарит", "hint": "To fry", "translation": "He is frying potatoes in a frying pan." },
+      { "sentence": "Нужно ___ яйца десять минут.", "answer": "Варить", "hint": "To boil", "translation": "The eggs need to be boiled for ten minutes." },
+      { "sentence": "Поставь пирог в ___.", "answer": "Духовку", "hint": "Oven (accusative)", "translation": "Put the pie in the oven." },
+      { "sentence": "Бабушка любит ___ пироги.", "answer": "Печь", "hint": "To bake", "translation": "Grandma loves baking pies." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "What does 'Сковорода' mean?", "options": ["Frying pan", "Pot", "Oven", "Plate"], "answer": 0 },

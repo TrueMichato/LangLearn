@@ -125,22 +125,26 @@
         {
           "sentence": "___ طَوِيلٌ يَحْتَاجُ إِلَى خُطَّةٍ.",
           "answer": "سَفَرٌ",
-          "hint": "travel"
+          "hint": "travel",
+          "translation": "Long travel needs a plan."
         },
         {
           "sentence": "___ جَدِيدٌ فِي حَقِيبَتِي.",
           "answer": "جَوَازُ سَفَرٍ",
-          "hint": "passport"
+          "hint": "passport",
+          "translation": "A new passport is in my bag."
         },
         {
           "sentence": "___ صَالِحَةٌ ضَرُورِيَّةٌ.",
           "answer": "تَأْشِيرَةٌ",
-          "hint": "visa"
+          "hint": "visa",
+          "translation": "A valid visa is necessary."
         },
         {
           "sentence": "___ كَبِيرَةٌ مَعِي.",
           "answer": "حَقِيبَةُ سَفَرٍ",
-          "hint": "suitcase"
+          "hint": "suitcase",
+          "translation": "A large suitcase is with me."
         }
       ]
     },

@@ -125,22 +125,26 @@
         {
           "sentence": "___ مُنَظَّمٌ يَبْدَأُ بِسُؤَالٍ وَاضِحٍ.",
           "answer": "بَحْثٌ",
-          "hint": "research"
+          "hint": "research",
+          "translation": "Organized research begins with a clear question."
         },
         {
           "sentence": "___ جَيِّدَةٌ فِكْرَةٌ قَابِلَةٌ لِلْقِيَاسِ.",
           "answer": "فَرَضِيَّةٌ",
-          "hint": "hypothesis"
+          "hint": "hypothesis",
+          "translation": "A good hypothesis is a measurable idea."
         },
         {
           "sentence": "يَجْمَعُ ___ آرَاءَ الْمُشَارِكِينَ.",
           "answer": "اِسْتِبْيَانٌ",
-          "hint": "questionnaire"
+          "hint": "questionnaire",
+          "translation": "A questionnaire collects participants' opinions."
         },
         {
           "sentence": "___ دَقِيقٌ يُظْهِرُ الْعَلَاقَاتِ بَيْنَ الْأَرْقَامِ.",
           "answer": "تَحْلِيلٌ",
-          "hint": "analysis"
+          "hint": "analysis",
+          "translation": "Precise analysis shows relationships among numbers."
         }
       ]
     },

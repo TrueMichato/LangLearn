@@ -125,22 +125,26 @@
         {
           "sentence": "تُوَفِّرُ ___ مَاءً وَظِلًّا.",
           "answer": "الْوَاحَةُ",
-          "hint": "oasis"
+          "hint": "oasis",
+          "translation": "The oasis provides water and shade."
         },
         {
           "sentence": "يُسَبِّبُ ___ تَعَرِّيَ الأَرْضِ.",
           "answer": "الرَّعْيُ الْجَائِرُ",
-          "hint": "overgrazing"
+          "hint": "overgrazing",
+          "translation": "Overgrazing causes the land to become bare."
         },
         {
           "sentence": "يَتَسَارَعُ ___ عِنْدَ غِيَابِ الْمَطَرِ.",
           "answer": "التَّصَحُّرُ",
-          "hint": "desertification"
+          "hint": "desertification",
+          "translation": "Desertification accelerates when rain is absent."
         },
         {
           "sentence": "تَرْتَفِعُ ___ بَعْدَ الظَّهِيرَةِ.",
           "answer": "دَرَجَةُ الْحَرَارَةِ",
-          "hint": "temperature"
+          "hint": "temperature",
+          "translation": "The temperature rises after noon."
         }
       ]
     },

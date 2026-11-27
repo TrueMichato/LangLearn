@@ -125,22 +125,26 @@
         {
           "sentence": "___ أَتْعَلَّمْ عَرَبِي.",
           "answer": "بَدِّي",
-          "hint": "I want"
+          "hint": "I want",
+          "translation": "I want to learn Arabic."
         },
         {
           "sentence": "___ أَشْرَبْ قَهْوَة.",
           "answer": "عَايِزْ",
-          "hint": "I want / wanting"
+          "hint": "I want / wanting",
+          "translation": "I want to drink coffee."
         },
         {
           "sentence": "___ أَرُوحْ الْمَكْتَبْ.",
           "answer": "أَبِي",
-          "hint": "I want"
+          "hint": "I want",
+          "translation": "I want to go to the office."
         },
         {
           "sentence": "___ عَ الْبَيْتْ هَلَّق.",
           "answer": "رَايِحْ",
-          "hint": "going"
+          "hint": "going",
+          "translation": "I am going home now."
         }
       ]
     },

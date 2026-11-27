@@ -132,17 +132,20 @@
         {
           "sentence": "Cumpăr ___ proaspătă dimineața.",
           "answer": "pâine",
-          "hint": "bread"
+          "hint": "bread",
+          "translation": "I buy fresh bread in the morning."
         },
         {
           "sentence": "Nu pun ___ în ceai.",
           "answer": "zahăr",
-          "hint": "sugar"
+          "hint": "sugar",
+          "translation": "I do not put sugar in tea."
         },
         {
           "sentence": "Pun un ___ în supă.",
           "answer": "cartof",
-          "hint": "potato"
+          "hint": "potato",
+          "translation": "I put a potato in the soup."
         }
       ]
     },

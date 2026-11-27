@@ -125,17 +125,20 @@
         {
           "sentence": "Scriu ___ pentru director.",
           "answer": "raport",
-          "hint": "report"
+          "hint": "report",
+          "translation": "I write a report for the director."
         },
         {
           "sentence": "Semnez ___ după interviu.",
           "answer": "contract",
-          "hint": "contract"
+          "hint": "contract",
+          "translation": "I sign the contract after the interview."
         },
         {
           "sentence": "O ___ clară ajută vânzările.",
           "answer": "strategie",
-          "hint": "strategy"
+          "hint": "strategy",
+          "translation": "A clear strategy helps sales."
         }
       ]
     },

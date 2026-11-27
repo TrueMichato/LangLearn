@@ -125,22 +125,26 @@
         {
           "sentence": "___ هَدَفٌ أَسَاسِيٌّ لِلْمَدِينَةِ.",
           "answer": "الاِسْتِدَامَةُ",
-          "hint": "sustainability"
+          "hint": "sustainability",
+          "translation": "Sustainability is a basic goal for the city."
         },
         {
           "sentence": "___ تُقَلِّلُ النُّفَايَاتِ فِي الحَيِّ.",
           "answer": "إِعَادَةُ التَّدْوِيرِ",
-          "hint": "recycling"
+          "hint": "recycling",
+          "translation": "Recycling reduces waste in the neighborhood."
         },
         {
           "sentence": "___ تَدْعَمُ المُسْتَقْبَلَ النَّظِيفَ.",
           "answer": "الطَّاقَةُ المُتَجَدِّدَةُ",
-          "hint": "renewable energy"
+          "hint": "renewable energy",
+          "translation": "Renewable energy supports a clean future."
         },
         {
           "sentence": "___ تَنْخَفِضُ مَعَ النَّقْلِ العَامِّ.",
           "answer": "البَصْمَةُ الكَرْبُونِيَّةُ",
-          "hint": "carbon footprint"
+          "hint": "carbon footprint",
+          "translation": "The carbon footprint decreases with public transport."
         }
       ]
     },

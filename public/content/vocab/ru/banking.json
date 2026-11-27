@@ -21,11 +21,11 @@
   "exercises": [
     { "type": "match", "pairs": 6 },
     { "type": "fill-blank", "items": [
-      { "sentence": "Я открыл новый банковский ___.", "answer": "Счёт", "hint": "Account" },
-      { "sentence": "Они взяли ___ на квартиру.", "answer": "Кредит", "hint": "Loan / Credit" },
-      { "sentence": "Снимите деньги в ___.", "answer": "Банкомате", "hint": "ATM (prepositional)" },
-      { "sentence": "Нужно вернуть ___ до конца месяца.", "answer": "Долг", "hint": "Debt" },
-      { "sentence": "Где можно сделать ___ валюты?", "answer": "Обмен", "hint": "Exchange" }
+      { "sentence": "Я открыл новый банковский ___.", "answer": "Счёт", "hint": "Account", "translation": "I opened a new bank account." },
+      { "sentence": "Они взяли ___ на квартиру.", "answer": "Кредит", "hint": "Loan / Credit", "translation": "They took out a loan for an apartment." },
+      { "sentence": "Снимите деньги в ___.", "answer": "Банкомате", "hint": "ATM (prepositional)", "translation": "Withdraw money at the ATM." },
+      { "sentence": "Нужно вернуть ___ до конца месяца.", "answer": "Долг", "hint": "Debt", "translation": "The debt must be repaid by the end of the month." },
+      { "sentence": "Где можно сделать ___ валюты?", "answer": "Обмен", "hint": "Exchange", "translation": "Where can I exchange currency? (literally: do a currency exchange)" }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "What does 'Сбережения' mean?", "options": ["Savings", "Spending", "Salary", "Shopping"], "answer": 0 },

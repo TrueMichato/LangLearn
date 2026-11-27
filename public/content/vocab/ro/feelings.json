@@ -125,17 +125,20 @@
         {
           "sentence": "Sunt ___ pentru sprijin.",
           "answer": "recunoscător",
-          "hint": "grateful"
+          "hint": "grateful",
+          "translation": "I am grateful for the support."
         },
         {
           "sentence": "Un prieten ___ spune adevărul.",
           "answer": "sincer",
-          "hint": "honest"
+          "hint": "honest",
+          "translation": "An honest friend tells the truth."
         },
         {
           "sentence": "Sunt ___ înainte de examen.",
           "answer": "încrezător",
-          "hint": "confident"
+          "hint": "confident",
+          "translation": "I am confident before the exam."
         }
       ]
     },

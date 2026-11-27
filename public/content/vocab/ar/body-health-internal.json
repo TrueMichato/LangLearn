@@ -125,22 +125,26 @@
         {
           "sentence": "هٰذَا ___ قَوِيٌّ.",
           "answer": "قَلْبٌ",
-          "hint": "heart"
+          "hint": "heart",
+          "translation": "This is a strong heart."
         },
         {
           "sentence": "هٰذِهِ ___ صِحِّيَّةٌ.",
           "answer": "رِئَةٌ",
-          "hint": "lung"
+          "hint": "lung",
+          "translation": "This is a healthy lung."
         },
         {
           "sentence": "هٰذَا ___ الطَّبِيعِيُّ.",
           "answer": "ضَغْطُ الدَّمِ",
-          "hint": "blood pressure"
+          "hint": "blood pressure",
+          "translation": "This is normal blood pressure."
         },
         {
           "sentence": "هٰذِهِ ___ قَوِيَّةٌ.",
           "answer": "مَنَاعَةٌ",
-          "hint": "immunity"
+          "hint": "immunity",
+          "translation": "This is strong immunity."
         }
       ]
     },

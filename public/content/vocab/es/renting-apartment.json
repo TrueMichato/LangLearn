@@ -21,10 +21,10 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "El ___ es muy caro en esta zona.", "answer": "alquiler", "hint": "monthly housing fee" },
-      { "sentence": "Tienes que ___ aquí.", "answer": "firmar", "hint": "put your signature" },
-      { "sentence": "Nos vamos a ___ en junio.", "answer": "mudar", "hint": "change homes" },
-      { "sentence": "Busco un piso ___.", "answer": "amueblado", "hint": "with furniture" }
+      { "sentence": "El ___ es muy caro en esta zona.", "answer": "alquiler", "hint": "monthly housing fee", "translation": "Rent is very expensive in this area." },
+      { "sentence": "Tienes que ___ aquí.", "answer": "firmar", "hint": "put your signature", "translation": "You have to sign here." },
+      { "sentence": "Nos vamos a ___ en junio.", "answer": "mudar", "hint": "change homes", "translation": "We're going to move in June." },
+      { "sentence": "Busco un piso ___.", "answer": "amueblado", "hint": "with furniture", "translation": "I'm looking for a furnished flat." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "What is 'el inquilino'?", "options": ["the owner", "the tenant", "the neighbor", "the agent"], "answer": 1 },

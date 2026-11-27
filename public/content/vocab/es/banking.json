@@ -125,22 +125,26 @@
         {
           "sentence": "Abrí una ___ de ahorros.",
           "answer": "cuenta",
-          "hint": "bank account"
+          "hint": "bank account",
+          "translation": "I opened a savings account."
         },
         {
           "sentence": "Pedí un ___ al banco.",
           "answer": "préstamo",
-          "hint": "borrowed money"
+          "hint": "borrowed money",
+          "translation": "I asked the bank for a loan."
         },
         {
           "sentence": "Hay que pagar los ___.",
           "answer": "impuestos",
-          "hint": "government fees"
+          "hint": "government fees",
+          "translation": "We have to pay taxes."
         },
         {
           "sentence": "Trato de ___ cada mes.",
           "answer": "ahorrar",
-          "hint": "to put money aside"
+          "hint": "to put money aside",
+          "translation": "I try to save every month."
         }
       ]
     },

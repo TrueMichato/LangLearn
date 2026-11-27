@@ -21,9 +21,9 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "___を見せてください。", "answer": "パスポート", "hint": "passport" },
-      { "sentence": "ホテルの___をした。", "answer": "予約", "hint": "reservation" },
-      { "sentence": "空港で___した。", "answer": "両替", "hint": "currency exchange" }
+      { "sentence": "___を見せてください。", "answer": "パスポート", "hint": "passport", "translation": "Please show your passport." },
+      { "sentence": "ホテルの___をした。", "answer": "予約", "hint": "reservation", "translation": "I made a hotel reservation." },
+      { "sentence": "空港で___した。", "answer": "両替", "hint": "currency exchange", "translation": "I exchanged currency at the airport." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "「搭乗券」はどういう意味ですか？", "options": ["passport", "customs", "boarding pass", "luggage"], "answer": 2 },

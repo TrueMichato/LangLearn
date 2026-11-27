@@ -125,22 +125,26 @@
         {
           "sentence": "___ أَنَا بْخِيرْ.",
           "answer": "كِيفْ دَايِر؟",
-          "hint": "how are you?"
+          "hint": "how are you?",
+          "translation": "How are you? I am fine."
         },
         {
           "sentence": "___ كُلْشِي مْزْيَانْ.",
           "answer": "لَابَاس؟",
-          "hint": "all good?"
+          "hint": "all good?",
+          "translation": "All good? Everything is fine."
         },
         {
           "sentence": "أَنَا ___ الْيُومْ.",
           "answer": "بْخِيرْ",
-          "hint": "fine / well"
+          "hint": "fine / well",
+          "translation": "I am fine today."
         },
         {
           "sentence": "___ بْغِيتْ تَاكُلْ؟",
           "answer": "شْنُو؟",
-          "hint": "what?"
+          "hint": "what?",
+          "translation": "What do you want to eat?"
         }
       ]
     },

@@ -125,22 +125,26 @@
         {
           "sentence": "___ حَمْرَاءُ فِي الْحَقِيبَةِ.",
           "answer": "تُفَّاحَةٌ",
-          "hint": "apple"
+          "hint": "apple",
+          "translation": "A red apple is in the bag."
         },
         {
           "sentence": "___ أَصْفَرُ عَلَى الطَّاوِلَةِ.",
           "answer": "مَوْزٌ",
-          "hint": "banana"
+          "hint": "banana",
+          "translation": "A yellow banana is on the table."
         },
         {
           "sentence": "___ لَذِيذٌ فِي الصَّحْنِ.",
           "answer": "بُرْتُقَالٌ",
-          "hint": "orange"
+          "hint": "orange",
+          "translation": "A delicious orange is on the plate."
         },
         {
           "sentence": "___ حُلْوٌ فِي السُّوقِ.",
           "answer": "عِنَبٌ",
-          "hint": "grapes"
+          "hint": "grapes",
+          "translation": "Sweet grapes are in the market."
         }
       ]
     },

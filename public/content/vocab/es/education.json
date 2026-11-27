@@ -125,22 +125,26 @@
         {
           "sentence": "Estudio en la ___ pública.",
           "answer": "universidad",
-          "hint": "higher education place"
+          "hint": "higher education place",
+          "translation": "I study at the public university."
         },
         {
           "sentence": "Gané una ___ completa.",
           "answer": "beca",
-          "hint": "financial aid"
+          "hint": "financial aid",
+          "translation": "I won a full scholarship."
         },
         {
           "sentence": "Saqué buena ___ en el examen.",
           "answer": "nota",
-          "hint": "grade"
+          "hint": "grade",
+          "translation": "I got a good grade on the test."
         },
         {
           "sentence": "Me ___ el próximo año.",
           "answer": "gradúo",
-          "hint": "to graduate (1st person)"
+          "hint": "to graduate (1st person)",
+          "translation": "I graduate next year."
         }
       ]
     },

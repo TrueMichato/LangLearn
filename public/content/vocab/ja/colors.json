@@ -21,9 +21,9 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "空は___です。", "answer": "青い", "hint": "Blue" },
-      { "sentence": "何___が好きですか？", "answer": "色", "hint": "Color" },
-      { "sentence": "___のおにぎりを作りました。", "answer": "三角", "hint": "Triangle" }
+      { "sentence": "空は___です。", "answer": "青い", "hint": "Blue", "translation": "The sky is blue." },
+      { "sentence": "何___が好きですか？", "answer": "色", "hint": "Color", "translation": "What color do you like?" },
+      { "sentence": "___のおにぎりを作りました。", "answer": "三角", "hint": "Triangle", "translation": "I made a triangular rice ball." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "How do you say 'red' in Japanese?", "options": ["赤い", "青い", "白い", "黒い"], "answer": 0 },

@@ -21,10 +21,10 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "___! Eu estou bem, e você?", "answer": "Tudo bem", "hint": "all good / how are you" },
-      { "sentence": "___ eu estou aprendendo português.", "answer": "Aos poucos", "hint": "little by little" },
-      { "sentence": "___, eu prefiro ficar em casa.", "answer": "Na verdade", "hint": "actually" },
-      { "sentence": "Vou desistir? ___!", "answer": "De jeito nenhum", "hint": "no way" }
+      { "sentence": "___! Eu estou bem, e você?", "answer": "Tudo bem", "hint": "all good / how are you", "translation": "All good! I'm fine, and you?" },
+      { "sentence": "___ eu estou aprendendo português.", "answer": "Aos poucos", "hint": "little by little", "translation": "Little by little I'm learning Portuguese." },
+      { "sentence": "___, eu prefiro ficar em casa.", "answer": "Na verdade", "hint": "actually", "translation": "Actually, I prefer to stay at home." },
+      { "sentence": "Vou desistir? ___!", "answer": "De jeito nenhum", "hint": "no way", "translation": "Am I going to give up? No way!" }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "What does 'com certeza' mean?", "options": ["maybe", "for sure", "no way", "I don't know"], "answer": 1 },

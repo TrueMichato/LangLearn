@@ -125,22 +125,26 @@
         {
           "sentence": "Cuidemos el ___ ambiente.",
           "answer": "medio",
-          "hint": "environment"
+          "hint": "environment",
+          "translation": "Let’s take care of the environment."
         },
         {
           "sentence": "Hay que ___ el plástico.",
           "answer": "reciclar",
-          "hint": "to recycle"
+          "hint": "to recycle",
+          "translation": "We have to recycle plastic."
         },
         {
           "sentence": "La ___ del aire es grave.",
           "answer": "contaminación",
-          "hint": "pollution"
+          "hint": "pollution",
+          "translation": "Air pollution is serious."
         },
         {
           "sentence": "El ___ climático es real.",
           "answer": "cambio",
-          "hint": "change"
+          "hint": "change",
+          "translation": "Climate change is real."
         }
       ]
     },

@@ -125,22 +125,26 @@
         {
           "sentence": "___ فِي بَيْتِنَا أَيَّ وَقْتْ.",
           "answer": "حَيَّاكْ",
-          "hint": "welcome"
+          "hint": "welcome",
+          "translation": "Welcome to our house anytime."
         },
         {
           "sentence": "تِبِي ___ وَيَّا التَّمْرْ؟",
           "answer": "قَهْوَةْ",
-          "hint": "coffee"
+          "hint": "coffee",
+          "translation": "Do you want coffee with dates?"
         },
         {
           "sentence": "لَا تِمْشِي، ___.",
           "answer": "تَوَّ النَّاسْ",
-          "hint": "it is still early"
+          "hint": "it is still early",
+          "translation": "Do not leave; it is still early."
         },
         {
           "sentence": "اِرْتَاحْ، ___.",
           "answer": "بَيْتَكْ بَيْتِنَا",
-          "hint": "make yourself at home"
+          "hint": "make yourself at home",
+          "translation": "Relax; make yourself at home."
         }
       ]
     },

@@ -125,22 +125,26 @@
         {
           "sentence": "___ تَبْدَأُ فِي السَّاعَةِ الثَّامِنَةِ.",
           "answer": "النَّشْرَةُ الْجَوِّيَّةُ",
-          "hint": "weather bulletin"
+          "hint": "weather bulletin",
+          "translation": "The weather bulletin starts at eight o'clock."
         },
         {
           "sentence": "___ تُشِيرُ إِلَى الْمَطَرِ.",
           "answer": "تَوَقُّعَاتُ الطَّقْسِ",
-          "hint": "weather forecast"
+          "hint": "weather forecast",
+          "translation": "The weather forecast points to rain."
         },
         {
           "sentence": "___ مُرْتَفِعَةٌ الْيَوْمَ.",
           "answer": "دَرَجَةُ الْحَرَارَةِ",
-          "hint": "temperature"
+          "hint": "temperature",
+          "translation": "The temperature is high today."
         },
         {
           "sentence": "تَهُبُّ ___ عَلَى السَّاحِلِ.",
           "answer": "رِيَاحٌ شَمَالِيَّةٌ",
-          "hint": "northern winds"
+          "hint": "northern winds",
+          "translation": "Northern winds are blowing on the coast."
         }
       ]
     },

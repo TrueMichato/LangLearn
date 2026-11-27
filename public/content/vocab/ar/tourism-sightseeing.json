@@ -125,22 +125,26 @@
         {
           "sentence": "___ تَارِيخِيٌّ يَجْذِبُ الزُّوَّارَ.",
           "answer": "مَعْلَمٌ",
-          "hint": "landmark"
+          "hint": "landmark",
+          "translation": "A historical landmark attracts visitors."
         },
         {
           "sentence": "___ قَدِيمٌ يَعْرِضُ لَوْحَاتٍ نَادِرَةً.",
           "answer": "مَتْحَفٌ",
-          "hint": "museum"
+          "hint": "museum",
+          "translation": "An old museum displays rare paintings."
         },
         {
           "sentence": "___ يَشْرَحُ تَارِيخَ الْقَلْعَةِ.",
           "answer": "دَلِيلٌ سِيَاحِيٌّ",
-          "hint": "tour guide"
+          "hint": "tour guide",
+          "translation": "A tour guide explains the history of the castle."
         },
         {
           "sentence": "___ قَصِيرَةٌ تَبْدَأُ عِنْدَ الْمَيْدَانِ.",
           "answer": "جَوْلَةٌ",
-          "hint": "tour"
+          "hint": "tour",
+          "translation": "A short tour begins at the square."
         }
       ]
     },

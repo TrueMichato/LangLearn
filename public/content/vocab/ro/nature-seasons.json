@@ -125,17 +125,20 @@
         {
           "sentence": "Un ___ curge prin oraș.",
           "answer": "râu",
-          "hint": "river"
+          "hint": "river",
+          "translation": "A river flows through the city."
         },
         {
           "sentence": "O ___ cade pe bancă.",
           "answer": "frunză",
-          "hint": "leaf"
+          "hint": "leaf",
+          "translation": "A leaf falls on the bench."
         },
         {
           "sentence": "Respir ___ curat la munte.",
           "answer": "aer",
-          "hint": "air"
+          "hint": "air",
+          "translation": "I breathe clean air in the mountains."
         }
       ]
     },

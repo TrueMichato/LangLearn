@@ -125,22 +125,26 @@
         {
           "sentence": "___ صَغِيرٌ يَنْتَظِرُ عِنْدَ الْبَابِ.",
           "answer": "طَرْدٌ",
-          "hint": "package"
+          "hint": "package",
+          "translation": "A small package is waiting at the door."
         },
         {
           "sentence": "___ وَاضِحٌ يُسَرِّعُ التَّوْصِيلَ.",
           "answer": "عُنْوَانٌ",
-          "hint": "address"
+          "hint": "address",
+          "translation": "A clear address speeds up delivery."
         },
         {
           "sentence": "___ دَقِيقٌ يُظْهِرُ مَكَانَ الطَّرْدِ.",
           "answer": "تَتَبُّعٌ",
-          "hint": "tracking"
+          "hint": "tracking",
+          "translation": "Accurate tracking shows the package location."
         },
         {
           "sentence": "___ مَطْبُوعٌ يُثْبِتُ الدَّفْعَ.",
           "answer": "إِيصَالٌ",
-          "hint": "receipt"
+          "hint": "receipt",
+          "translation": "A printed receipt proves payment."
         }
       ]
     },

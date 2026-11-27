@@ -125,22 +125,26 @@
         {
           "sentence": "___ خَاصّْنَا نْمْشِيوْ.",
           "answer": "شْحَالْ السَّاعَة؟",
-          "hint": "what time is it?"
+          "hint": "what time is it?",
+          "translation": "What time is it? We need to go."
         },
         {
           "sentence": "إِلَا جَاتِ ___، نْبَدْلُو الْخُطَّةْ.",
           "answer": "الشِّتَا",
-          "hint": "rain"
+          "hint": "rain",
+          "translation": "If rain comes, we will change the plan."
         },
         {
           "sentence": "___ قُدَّامَ الْقَهْوَةْ.",
           "answer": "نْتْلَاقَاوْ",
-          "hint": "we will meet"
+          "hint": "we will meet",
+          "translation": "We will meet in front of the café."
         },
         {
           "sentence": "___ نْجِي مَعَ الشِّتَا.",
           "answer": "مَا نْقْدْرْش",
-          "hint": "I cannot"
+          "hint": "I cannot",
+          "translation": "I cannot come with the rain."
         }
       ]
     },

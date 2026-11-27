@@ -125,22 +125,26 @@
         {
           "sentence": "___ نَزِيهَةٌ تَبْنِي ثِقَةَ الزَّبَائِنِ.",
           "answer": "تِجَارَةٌ",
-          "hint": "commerce / trade"
+          "hint": "commerce / trade",
+          "translation": "Honest commerce builds customers’ trust."
         },
         {
           "sentence": "___ نَاجِحَةٌ زَادَتْ أَرْبَاحَ الشَّرِكَةِ.",
           "answer": "صَفْقَةٌ",
-          "hint": "deal"
+          "hint": "deal",
+          "translation": "A successful deal increased the company’s profits."
         },
         {
           "sentence": "___ طَوِيلُ الْأَمَدِ يَحْتَاجُ إِلَى صَبْرٍ.",
           "answer": "اِسْتِثْمَارٌ",
-          "hint": "investment"
+          "hint": "investment",
+          "translation": "A long-term investment needs patience."
         },
         {
           "sentence": "___ مُسْتَقِرٌّ يَسْمَحُ بِتَوْسِيعِ الْمَتْجَرِ.",
           "answer": "رِبْحٌ",
-          "hint": "profit"
+          "hint": "profit",
+          "translation": "Stable profit allows the store to expand."
         }
       ]
     },

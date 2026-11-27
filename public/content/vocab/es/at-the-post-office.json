@@ -22,10 +22,10 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "Necesito un ___ para enviar la carta.", "answer": "sello", "hint": "stamp" },
-      { "sentence": "Escribe la dirección en el ___.", "answer": "sobre", "hint": "envelope" },
-      { "sentence": "Voy a ___ el paquete para saber la tarifa.", "answer": "pesar", "hint": "to weigh" },
-      { "sentence": "Llene este ___, por favor.", "answer": "formulario", "hint": "form to complete" }
+      { "sentence": "Necesito un ___ para enviar la carta.", "answer": "sello", "hint": "stamp", "translation": "I need a stamp to send the letter." },
+      { "sentence": "Escribe la dirección en el ___.", "answer": "sobre", "hint": "envelope", "translation": "Write the address on the envelope." },
+      { "sentence": "Voy a ___ el paquete para saber la tarifa.", "answer": "pesar", "hint": "to weigh", "translation": "I'm going to weigh the package to find out the rate." },
+      { "sentence": "Llene este ___, por favor.", "answer": "formulario", "hint": "form to complete", "translation": "Please fill out this form." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "What is 'el remitente'?", "options": ["the sender", "the recipient", "the stamp", "the package"], "answer": 0 },

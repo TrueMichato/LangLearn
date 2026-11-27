@@ -125,22 +125,26 @@
         {
           "sentence": "El cielo está ___.",
           "answer": "azul",
-          "hint": "color of the sky"
+          "hint": "color of the sky",
+          "translation": "The sky is blue."
         },
         {
           "sentence": "La nieve es ___.",
           "answer": "blanca",
-          "hint": "color of snow"
+          "hint": "color of snow",
+          "translation": "Snow is white."
         },
         {
           "sentence": "El triángulo tiene tres ___.",
           "answer": "lados",
-          "hint": "sides"
+          "hint": "sides",
+          "translation": "The triangle has three sides."
         },
         {
           "sentence": "Tengo un gato ___.",
           "answer": "negro",
-          "hint": "dark color"
+          "hint": "dark color",
+          "translation": "I have a black cat."
         }
       ]
     },

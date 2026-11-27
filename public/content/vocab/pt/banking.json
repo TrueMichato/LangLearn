@@ -119,9 +119,9 @@
     {
       "type": "fill-blank",
       "items": [
-        { "sentence": "Guardo dinheiro na ___ todo mês.", "answer": "poupança", "hint": "type of account for saving money" },
-        { "sentence": "Dividi a compra em doze ___.", "answer": "parcelas", "hint": "monthly payment portions" },
-        { "sentence": "O ___ do dólar está alto.", "answer": "câmbio", "hint": "rate for converting currencies" }
+        { "sentence": "Guardo dinheiro na ___ todo mês.", "answer": "poupança", "hint": "type of account for saving money", "translation": "I save money in my savings account every month." },
+        { "sentence": "Dividi a compra em doze ___.", "answer": "parcelas", "hint": "monthly payment portions", "translation": "I split the purchase into twelve installments." },
+        { "sentence": "O ___ do dólar está alto.", "answer": "câmbio", "hint": "rate for converting currencies", "translation": "The dollar exchange rate is high." }
       ]
     },
     {

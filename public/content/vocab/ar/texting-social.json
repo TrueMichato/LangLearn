@@ -125,22 +125,26 @@
         {
           "sentence": "___، وَصَلْت الْبَيْتْ.",
           "answer": "سَلَامْ",
-          "hint": "hi / peace"
+          "hint": "hi / peace",
+          "translation": "Hi, I arrived home."
         },
         {
           "sentence": "___، كِيفَك الْيَوْمْ؟",
           "answer": "صَبَاحُو",
-          "hint": "morning!"
+          "hint": "morning!",
+          "translation": "Morning! How are you today?"
         },
         {
           "sentence": "___ عَلَى الرِّسَالَة.",
           "answer": "مَرْسِي",
-          "hint": "thanks"
+          "hint": "thanks",
+          "translation": "Thanks for the message."
         },
         {
           "sentence": "___، نِتْكَلَّمْ بَعْدَيْنْ.",
           "answer": "تَمَامْ",
-          "hint": "OK / all good"
+          "hint": "OK / all good",
+          "translation": "OK, we will talk later."
         }
       ]
     },

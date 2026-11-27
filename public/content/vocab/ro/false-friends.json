@@ -21,9 +21,9 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "Am cumpărat un roman de la ___.", "answer": "librărie", "hint": "bookstore" },
-      { "sentence": "El ___ că e cel mai bun.", "answer": "pretinde", "hint": "claims" },
-      { "sentence": "Citesc o ___ de modă.", "answer": "revistă", "hint": "magazine" }
+      { "sentence": "Am cumpărat un roman de la ___.", "answer": "librărie", "hint": "bookstore", "translation": "I bought a novel from the bookstore." },
+      { "sentence": "El ___ că e cel mai bun.", "answer": "pretinde", "hint": "claims", "translation": "He claims that he is the best." },
+      { "sentence": "Citesc o ___ de modă.", "answer": "revistă", "hint": "magazine", "translation": "I'm reading a fashion magazine." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "What does 'librărie' actually mean?", "options": ["library", "bookstore", "fabric", "factory"], "answer": 1 },

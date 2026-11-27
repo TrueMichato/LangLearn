@@ -125,22 +125,26 @@
         {
           "sentence": "هٰذَا ___ لِلرَّاتِبِ.",
           "answer": "حِسَابٌ جَارٍ",
-          "hint": "checking account"
+          "hint": "checking account",
+          "translation": "This is a checking account for the salary."
         },
         {
           "sentence": "هٰذَا ___ إِلَى شَرِيكِهِ.",
           "answer": "تَحْوِيلٌ مَصْرِفِيٌّ",
-          "hint": "transfer"
+          "hint": "transfer",
+          "translation": "This is a bank transfer to his partner."
         },
         {
           "sentence": "يَظْهَرُ ___ فِي التَّطْبِيقِ.",
           "answer": "رَصِيدٌ",
-          "hint": "balance"
+          "hint": "balance",
+          "translation": "The balance appears in the app."
         },
         {
           "sentence": "هٰذَا ___ لِلْمَصْرِفِ.",
           "answer": "ضَمَانٌ",
-          "hint": "guarantee / collateral"
+          "hint": "guarantee / collateral",
+          "translation": "This is collateral for the bank."
         }
       ]
     },

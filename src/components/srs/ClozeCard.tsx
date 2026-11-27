@@ -2,6 +2,7 @@ import { useState, useRef, useEffect } from 'react';
 import type { Word } from '../../db/schema';
 import type { SM2Grade } from '../../lib/sm2';
 import { rtlProps } from '../../lib/rtl';
+import { findClozeSpan } from '../../lib/cloze-match';
 
 interface ClozeCardProps {
   word: Word;
@@ -18,15 +19,13 @@ export default function ClozeCard({ word, onGrade }: ClozeCardProps) {
     inputRef.current?.focus();
   }, []);
 
-  const sentenceIndex = word.contextSentence
-    ? word.contextSentence.toLowerCase().indexOf(word.word.toLowerCase())
-    : -1;
+  const span = word.contextSentence
+    ? findClozeSpan(word.contextSentence, word.word, word.language)
+    : null;
 
-  const hasCloze = word.contextSentence && sentenceIndex !== -1;
-  const beforeBlank = hasCloze ? word.contextSentence.slice(0, sentenceIndex) : '';
-  const afterBlank = hasCloze
-    ? word.contextSentence.slice(sentenceIndex + word.word.length)
-    : '';
+  const hasCloze = span !== null;
+  const beforeBlank = span ? word.contextSentence.slice(0, span.start) : '';
+  const afterBlank = span ? word.contextSentence.slice(span.end) : '';
 
   const handleSubmit = () => {
     if (answered || !input.trim()) return;

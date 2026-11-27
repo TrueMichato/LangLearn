@@ -23,10 +23,10 @@
   "exercises": [
     { "type": "match", "pairs": 6 },
     { "type": "fill-blank", "items": [
-      { "sentence": "Compré un libro en la ___.", "answer": "librería", "hint": "bookstore" },
-      { "sentence": "Voy a ___ a la conferencia.", "answer": "asistir", "hint": "attend" },
-      { "sentence": "No puedo ___ su nombre.", "answer": "recordar", "hint": "remember" },
-      { "sentence": "___ vivo en Madrid.", "answer": "Actualmente", "hint": "currently" }
+      { "sentence": "Compré un libro en la ___.", "answer": "librería", "hint": "bookstore", "translation": "I bought a book at the bookstore." },
+      { "sentence": "Voy a ___ a la conferencia.", "answer": "asistir", "hint": "attend", "translation": "I'm going to attend the conference." },
+      { "sentence": "No puedo ___ su nombre.", "answer": "recordar", "hint": "remember", "translation": "I can't remember his name." },
+      { "sentence": "___ vivo en Madrid.", "answer": "Actualmente", "hint": "currently", "translation": "I currently live in Madrid." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "'Embarazada' means…", "options": ["embarrassed", "pregnant", "tired", "lost"], "answer": 1 },

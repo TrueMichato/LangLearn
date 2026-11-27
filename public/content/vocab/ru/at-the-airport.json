@@ -21,11 +21,11 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "Мой ___ потерялся.", "answer": "Багаж", "hint": "Luggage" },
-      { "sentence": "___ на рейс уже открыта.", "answer": "Регистрация", "hint": "Check-in" },
-      { "sentence": "У нас ___ в Москве.", "answer": "Пересадка", "hint": "Transfer" },
-      { "sentence": "Покажите ваш ___.", "answer": "Паспорт", "hint": "Passport" },
-      { "sentence": "___ начинается через полчаса.", "answer": "Посадка", "hint": "Boarding" }
+      { "sentence": "Мой ___ потерялся.", "answer": "Багаж", "hint": "Luggage", "translation": "My luggage got lost." },
+      { "sentence": "___ на рейс уже открыта.", "answer": "Регистрация", "hint": "Check-in", "translation": "Check-in for the flight is already open." },
+      { "sentence": "У нас ___ в Москве.", "answer": "Пересадка", "hint": "Transfer", "translation": "We have a connecting flight in Moscow." },
+      { "sentence": "Покажите ваш ___.", "answer": "Паспорт", "hint": "Passport", "translation": "Show me your passport." },
+      { "sentence": "___ начинается через полчаса.", "answer": "Посадка", "hint": "Boarding", "translation": "Boarding begins in half an hour." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "What does 'Таможня' mean?", "options": ["Customs", "Gate", "Terminal", "Counter"], "answer": 0 },

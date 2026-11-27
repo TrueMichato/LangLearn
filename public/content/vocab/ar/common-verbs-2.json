@@ -125,22 +125,26 @@
         {
           "sentence": "___ أَبِي فِي مَكْتَبٍ.",
           "answer": "يَعْمَلُ",
-          "hint": "to work"
+          "hint": "to work",
+          "translation": "My father works in an office."
         },
         {
           "sentence": "___ الطَّالِبُ الْعَرَبِيَّةَ.",
           "answer": "يَدْرُسُ",
-          "hint": "to study"
+          "hint": "to study",
+          "translation": "The student studies Arabic."
         },
         {
           "sentence": "___ صَدِيقِي فِي عَمَّانَ.",
           "answer": "يَسْكُنُ",
-          "hint": "to live / reside"
+          "hint": "to live / reside",
+          "translation": "My friend lives in Amman."
         },
         {
           "sentence": "___ الطِّفْلُ سُؤَالًا.",
           "answer": "يَسْأَلُ",
-          "hint": "to ask"
+          "hint": "to ask",
+          "translation": "The child asks a question."
         }
       ]
     },

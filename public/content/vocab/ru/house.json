@@ -21,9 +21,9 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "Книга лежит на ___.", "answer": "Столе", "hint": "Table (prepositional)" },
-      { "sentence": "Откройте ___, пожалуйста.", "answer": "Окно", "hint": "Window" },
-      { "sentence": "Мама готовит на ___.", "answer": "Кухне", "hint": "Kitchen (prepositional)" }
+      { "sentence": "Книга лежит на ___.", "answer": "Столе", "hint": "Table (prepositional)", "translation": "The book is lying on the table." },
+      { "sentence": "Откройте ___, пожалуйста.", "answer": "Окно", "hint": "Window", "translation": "Open the window, please." },
+      { "sentence": "Мама готовит на ___.", "answer": "Кухне", "hint": "Kitchen (prepositional)", "translation": "Mom is cooking in the kitchen." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "What does 'Кровать' mean?", "options": ["Bed", "Table", "Chair", "Sofa"], "answer": 0 },

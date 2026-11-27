@@ -125,22 +125,26 @@
         {
           "sentence": "___ الْغْدَا لِلْعَائِلَةْ.",
           "answer": "كَنْطَيَّبْ",
-          "hint": "I cook"
+          "hint": "I cook",
+          "translation": "I cook lunch for the family."
         },
         {
           "sentence": "نَاكْلُوا ___ نْهَارِ الْجُمْعَةْ.",
           "answer": "كُسْكُسُو",
-          "hint": "couscous"
+          "hint": "couscous",
+          "translation": "We eat couscous on Friday."
         },
         {
           "sentence": "___ الْعْشَا بَكْرِي.",
           "answer": "غَادِي نْوَجَّدْ",
-          "hint": "I am going to prepare"
+          "hint": "I am going to prepare",
+          "translation": "I am going to prepare dinner early."
         },
         {
           "sentence": "___ الصُّوصْ قَبْلَ مَا تْقَدَّمْ.",
           "answer": "بْغِيتْ نْذُوقْ",
-          "hint": "I want to taste"
+          "hint": "I want to taste",
+          "translation": "I want to taste the sauce before it is served."
         }
       ]
     },

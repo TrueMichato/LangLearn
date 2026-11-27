@@ -21,9 +21,9 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "Я еду на ___.", "answer": "Машине", "hint": "Car (prepositional)" },
-      { "sentence": "Поверните ___ на светофоре.", "answer": "Направо", "hint": "To the right" },
-      { "sentence": "___ отправляется в шесть.", "answer": "Поезд", "hint": "Train" }
+      { "sentence": "Я еду на ___.", "answer": "Машине", "hint": "Car (prepositional)", "translation": "I'm going by car." },
+      { "sentence": "Поверните ___ на светофоре.", "answer": "Направо", "hint": "To the right", "translation": "Turn right at the traffic light." },
+      { "sentence": "___ отправляется в шесть.", "answer": "Поезд", "hint": "Train", "translation": "The train departs at six." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "What does 'Автобус' mean?", "options": ["Bus", "Car", "Taxi", "Train"], "answer": 0 },

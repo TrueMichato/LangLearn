@@ -1,5 +1,6 @@
 import { getDueReviews, getRandomWords } from '../db/words';
 import { composeAdaptiveBatch } from './adaptive';
+import { findClozeSpan } from './cloze-match';
 import { assignCardType, selectDistractors, shuffle } from './card-types';
 import { getFilteredReviewQueue } from './filtered-review';
 import { getTopicDeck } from './grammar-topics';
@@ -67,7 +68,9 @@ export async function prepareReviewCards(
     } else if (leeches.has(item.word.id!) && (cardType === 'classic' || cardType === 'reverse')) {
       cardType = 'multiple-choice';
     }
-    if (cardType === 'cloze' && !item.word.contextSentence && item.word.word.length <= 2) {
+    // Never show a cloze unless the saved form can actually be blanked.
+    if (cardType === 'cloze'
+      && (!item.word.contextSentence || !findClozeSpan(item.word.contextSentence, item.word.word, item.word.language))) {
       cardType = 'classic';
     }
     let distractors: string[] | undefined;

@@ -23,9 +23,9 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "りんごが___つあります。", "answer": "一", "hint": "One" },
-      { "sentence": "この本は___円です。", "answer": "千", "hint": "One thousand" },
-      { "sentence": "私は___歳です。", "answer": "二十", "hint": "Twenty" }
+      { "sentence": "りんごが___つあります。", "answer": "一", "hint": "One", "translation": "There is one apple." },
+      { "sentence": "この本は___円です。", "answer": "千", "hint": "One thousand", "translation": "This book is 1,000 yen." },
+      { "sentence": "私は___歳です。", "answer": "二十", "hint": "Twenty", "translation": "I am twenty years old." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "How do you say 'seven' in Japanese?", "options": ["七", "九", "四", "六"], "answer": 0 },

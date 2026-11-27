@@ -125,22 +125,26 @@
         {
           "sentence": "هٰذِهِ ___ خَطِيرَةٌ.",
           "answer": "حَالَةٌ طَارِئَةٌ",
-          "hint": "emergency"
+          "hint": "emergency",
+          "translation": "This is a dangerous emergency."
         },
         {
           "sentence": "هٰذَا ___ إِلَى الشَّارِعِ.",
           "answer": "مَخْرَجُ طَوَارِئَ",
-          "hint": "emergency exit"
+          "hint": "emergency exit",
+          "translation": "This is an emergency exit to the street."
         },
         {
           "sentence": "هٰذَا ___ قَوِيٌّ.",
           "answer": "إِنْذَارٌ",
-          "hint": "alarm"
+          "hint": "alarm",
+          "translation": "This is a loud alarm."
         },
         {
           "sentence": "الطَّرِيقُ ___ بَعْدَ الْإِصْلَاحِ.",
           "answer": "آمِنٌ",
-          "hint": "safe"
+          "hint": "safe",
+          "translation": "The road is safe after the repair."
         }
       ]
     },

@@ -25,9 +25,9 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "___は五人です。", "answer": "家族", "hint": "Family" },
-      { "sentence": "___がかわいいです。", "answer": "赤ちゃん", "hint": "Baby" },
-      { "sentence": "___はサッカーが好きです。", "answer": "弟", "hint": "Younger brother" }
+      { "sentence": "___は五人です。", "answer": "家族", "hint": "Family", "translation": "There are five people in my family." },
+      { "sentence": "___がかわいいです。", "answer": "赤ちゃん", "hint": "Baby", "translation": "The baby is cute." },
+      { "sentence": "___はサッカーが好きです。", "answer": "弟", "hint": "Younger brother", "translation": "My younger brother likes soccer." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "How do you say 'mother' politely in Japanese?", "options": ["お母さん", "母", "お姉さん", "妻"], "answer": 0 },

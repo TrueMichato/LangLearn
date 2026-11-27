@@ -125,22 +125,26 @@
         {
           "sentence": "جَاءَ الطَّالِبُ ___ إِلَى الصَّفِّ.",
           "answer": "الأَوَّلُ",
-          "hint": "first"
+          "hint": "first",
+          "translation": "The first student came to class."
         },
         {
           "sentence": "قَرَأْتُ الفَصْلَ ___ مِنَ الكِتَابِ.",
           "answer": "الثَّانِي",
-          "hint": "second"
+          "hint": "second",
+          "translation": "I read the second chapter of the book."
         },
         {
           "sentence": "فَازَ الفَرِيقُ ___ بِالجَائِزَةِ.",
           "answer": "الثَّالِثُ",
-          "hint": "third"
+          "hint": "third",
+          "translation": "The third team won the prize."
         },
         {
           "sentence": "هَذَا هُوَ ___ فِي القَائِمَةِ.",
           "answer": "الرَّابِعُ",
-          "hint": "fourth"
+          "hint": "fourth",
+          "translation": "This is the fourth one on the list."
         }
       ]
     },

@@ -21,11 +21,11 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "彼女はとても___人です。", "answer": "優しい", "hint": "Kind" },
-      { "sentence": "一人で___です。", "answer": "寂しい", "hint": "Lonely" },
-      { "sentence": "___を出して話しかけました。", "answer": "勇気", "hint": "Courage" },
-      { "sentence": "面接の前に___しました。", "answer": "緊張", "hint": "Nervous" },
-      { "sentence": "もう少し___してください。", "answer": "我慢", "hint": "Patience" }
+      { "sentence": "彼女はとても___人です。", "answer": "優しい", "hint": "Kind", "translation": "She is a very kind person." },
+      { "sentence": "一人で___です。", "answer": "寂しい", "hint": "Lonely", "translation": "I'm lonely being alone." },
+      { "sentence": "___を出して話しかけました。", "answer": "勇気", "hint": "Courage", "translation": "I gathered my courage and spoke to them." },
+      { "sentence": "面接の前に___しました。", "answer": "緊張", "hint": "Nervous", "translation": "I was nervous before the interview." },
+      { "sentence": "もう少し___してください。", "answer": "我慢", "hint": "Patience", "translation": "Please be patient a little longer." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "「やさしい」はどれですか。", "options": ["厳しい", "優しい", "寂しい", "恥ずかしい"], "answer": 1 },

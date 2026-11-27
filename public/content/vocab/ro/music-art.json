@@ -125,17 +125,20 @@
         {
           "sentence": "Ascult ___ clasică pentru relaxare.",
           "answer": "muzică",
-          "hint": "music"
+          "hint": "music",
+          "translation": "I listen to classical music for relaxation."
         },
         {
           "sentence": "Un ___ mare atârnă pe perete.",
           "answer": "tablou",
-          "hint": "painting"
+          "hint": "painting",
+          "translation": "A large painting hangs on the wall."
         },
         {
           "sentence": "Actorii intră pe ___.",
           "answer": "scenă",
-          "hint": "stage"
+          "hint": "stage",
+          "translation": "The actors enter the stage."
         }
       ]
     },

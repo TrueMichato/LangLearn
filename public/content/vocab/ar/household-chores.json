@@ -125,22 +125,26 @@
         {
           "sentence": "___ الْأَبُ الْمَطْبَخَ كُلَّ مَسَاءٍ.",
           "answer": "يُنَظِّفُ",
-          "hint": "to clean"
+          "hint": "to clean",
+          "translation": "The father cleans the kitchen every evening."
         },
         {
           "sentence": "___ الْوَلَدُ الصُّحُونَ بَعْدَ الْعَشَاءِ.",
           "answer": "يَغْسِلُ",
-          "hint": "to wash"
+          "hint": "to wash",
+          "translation": "The boy washes the dishes after dinner."
         },
         {
           "sentence": "___ الْجَدُّ الْفِنَاءَ فِي الصَّبَاحِ.",
           "answer": "يَكْنُسُ",
-          "hint": "to sweep"
+          "hint": "to sweep",
+          "translation": "The grandfather sweeps the courtyard in the morning."
         },
         {
           "sentence": "___ الْأَخُ الْأَرْضَ بِمِنْشَفَةٍ.",
           "answer": "يَمْسَحُ",
-          "hint": "to wipe / mop"
+          "hint": "to wipe / mop",
+          "translation": "The brother wipes the floor with a towel."
         }
       ]
     },

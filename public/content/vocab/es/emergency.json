@@ -125,22 +125,26 @@
         {
           "sentence": "¡Necesito ___!",
           "answer": "ayuda",
-          "hint": "help"
+          "hint": "help",
+          "translation": "I need help!"
         },
         {
           "sentence": "Llamé a la ___.",
           "answer": "policía",
-          "hint": "law enforcement"
+          "hint": "law enforcement",
+          "translation": "I called the police."
         },
         {
           "sentence": "Hubo un ___ en la calle.",
           "answer": "accidente",
-          "hint": "crash"
+          "hint": "crash",
+          "translation": "There was an accident on the street."
         },
         {
           "sentence": "Es un mensaje ___.",
           "answer": "urgente",
-          "hint": "urgent"
+          "hint": "urgent",
+          "translation": "It’s an urgent message."
         }
       ]
     },

@@ -125,22 +125,26 @@
         {
           "sentence": "___ جَدِيدٌ يَبْدَأُ غَدًا.",
           "answer": "عَمَلٌ",
-          "hint": "work"
+          "hint": "work",
+          "translation": "A new job begins tomorrow."
         },
         {
           "sentence": "___ مُنَاسِبَةٌ لِي.",
           "answer": "وَظِيفَةٌ",
-          "hint": "job"
+          "hint": "job",
+          "translation": "A suitable job for me."
         },
         {
           "sentence": "___ نَظِيفٌ فِي الشَّرِكَةِ.",
           "answer": "مَكْتَبٌ",
-          "hint": "office / desk"
+          "hint": "office / desk",
+          "translation": "A clean office is in the company."
         },
         {
           "sentence": "___ عَادِلٌ يَسْمَعُ الْجَمِيعَ.",
           "answer": "مُدِيرٌ",
-          "hint": "manager"
+          "hint": "manager",
+          "translation": "A fair manager listens to everyone."
         }
       ]
     },

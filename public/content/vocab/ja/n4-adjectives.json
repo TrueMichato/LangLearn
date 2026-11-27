@@ -21,9 +21,9 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "今日は___日です。", "answer": "特別な", "hint": "special" },
-      { "sentence": "パスポートが___です。", "answer": "必要", "hint": "necessary" },
-      { "sentence": "先生はとても___。", "answer": "厳しい", "hint": "strict" }
+      { "sentence": "今日は___日です。", "answer": "特別な", "hint": "special", "translation": "Today is a special day." },
+      { "sentence": "パスポートが___です。", "answer": "必要", "hint": "necessary", "translation": "A passport is necessary." },
+      { "sentence": "先生はとても___。", "answer": "厳しい", "hint": "strict", "translation": "The teacher is very strict." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "「素晴らしい」はどういう意味ですか？", "options": ["strict", "wonderful", "rare", "embarrassing"], "answer": 1 },

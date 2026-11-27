@@ -125,22 +125,26 @@
         {
           "sentence": "___ هٰذَا الْمَشْهَدُ جَمِيلٌ.",
           "answer": "وَاو!",
-          "hint": "wow!"
+          "hint": "wow!",
+          "translation": "Wow! This view is beautiful."
         },
         {
           "sentence": "___ الْبَابُ مَفْتُوحٌ.",
           "answer": "يَا لَلْعَجَبِ!",
-          "hint": "how surprising!"
+          "hint": "how surprising!",
+          "translation": "How surprising! The door is open."
         },
         {
           "sentence": "___ سَتُسَافِرُ غَدًا؟",
           "answer": "حَقًّا؟",
-          "hint": "really?"
+          "hint": "really?",
+          "translation": "Really? Will you travel tomorrow?"
         },
         {
           "sentence": "___ انْتَهَى الدَّرْسُ سَرِيعًا؟",
           "answer": "مَعْقُولٌ؟",
-          "hint": "is that possible?"
+          "hint": "is that possible?",
+          "translation": "Is that possible? Did the lesson end quickly?"
         }
       ]
     },

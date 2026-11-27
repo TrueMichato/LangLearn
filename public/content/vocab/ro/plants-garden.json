@@ -125,17 +125,20 @@
         {
           "sentence": "O ___ miroase frumos.",
           "answer": "floare",
-          "hint": "flower"
+          "hint": "flower",
+          "translation": "A flower smells lovely."
         },
         {
           "sentence": "Pun planta într-un ___.",
           "answer": "ghiveci",
-          "hint": "flowerpot"
+          "hint": "flowerpot",
+          "translation": "I put the plant in a flowerpot."
         },
         {
           "sentence": "Folosesc o ___ pentru frunze.",
           "answer": "greblă",
-          "hint": "rake"
+          "hint": "rake",
+          "translation": "I use a rake for the leaves."
         }
       ]
     },

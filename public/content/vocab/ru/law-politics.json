@@ -21,11 +21,11 @@
   "exercises": [
     { "type": "match", "pairs": 6 },
     { "type": "fill-blank", "items": [
-      { "sentence": "Все граждане должны соблюдать ___.", "answer": "Закон", "hint": "Law" },
-      { "sentence": "___ пройдут в марте.", "answer": "Выборы", "hint": "Elections" },
-      { "sentence": "___ приняло новый закон.", "answer": "Правительство", "hint": "Government" },
-      { "sentence": "Дело рассматривается в ___.", "answer": "Суде", "hint": "Court (prepositional)" },
-      { "sentence": "___ слова — важное право.", "answer": "Свобода", "hint": "Freedom" }
+      { "sentence": "Все граждане должны соблюдать ___.", "answer": "Закон", "hint": "Law", "translation": "All citizens must obey the law." },
+      { "sentence": "___ пройдут в марте.", "answer": "Выборы", "hint": "Elections", "translation": "The elections will be held in March." },
+      { "sentence": "___ приняло новый закон.", "answer": "Правительство", "hint": "Government", "translation": "The government passed a new law." },
+      { "sentence": "Дело рассматривается в ___.", "answer": "Суде", "hint": "Court (prepositional)", "translation": "The case is being heard in court." },
+      { "sentence": "___ слова — важное право.", "answer": "Свобода", "hint": "Freedom", "translation": "Freedom of speech is an important right." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "What does 'Выборы' mean?", "options": ["Elections", "Choice", "Selection", "Exam"], "answer": 0 },

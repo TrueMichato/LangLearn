@@ -125,17 +125,20 @@
         {
           "sentence": "Nu am mult ___ dimineața.",
           "answer": "timp",
-          "hint": "time"
+          "hint": "time",
+          "translation": "I do not have much time in the morning."
         },
         {
           "sentence": "Mă trezesc ___ luni.",
           "answer": "devreme",
-          "hint": "early"
+          "hint": "early",
+          "translation": "I wake up early on Monday."
         },
         {
           "sentence": "Mă întorc ___ seara.",
           "answer": "acasă",
-          "hint": "home"
+          "hint": "home",
+          "translation": "I return home in the evening."
         }
       ]
     },

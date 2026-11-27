@@ -125,17 +125,20 @@
         {
           "sentence": "Spun ___ după o greșeală.",
           "answer": "îmi pare rău",
-          "hint": "I am sorry"
+          "hint": "I am sorry",
+          "translation": "I say I am sorry after a mistake."
         },
         {
           "sentence": "Întreb ___ acest bilet.",
           "answer": "cât costă",
-          "hint": "how much does it cost"
+          "hint": "how much does it cost",
+          "translation": "I ask how much this ticket costs."
         },
         {
           "sentence": "Spun ___ înainte de plecare.",
           "answer": "drum bun",
-          "hint": "safe trip"
+          "hint": "safe trip",
+          "translation": "I say safe trip before departure."
         }
       ]
     },

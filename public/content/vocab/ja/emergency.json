@@ -21,11 +21,11 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "昨日大きい___がありました。", "answer": "地震", "hint": "Earthquake" },
-      { "sentence": "___を呼んでください。", "answer": "救急車", "hint": "Ambulance" },
-      { "sentence": "___に連絡しました。", "answer": "警察", "hint": "Police" },
-      { "sentence": "___の場所を確認してください。", "answer": "非常口", "hint": "Emergency exit" },
-      { "sentence": "___な場所に移動してください。", "answer": "安全", "hint": "Safe" }
+      { "sentence": "昨日大きい___がありました。", "answer": "地震", "hint": "Earthquake", "translation": "There was a big earthquake yesterday." },
+      { "sentence": "___を呼んでください。", "answer": "救急車", "hint": "Ambulance", "translation": "Please call an ambulance." },
+      { "sentence": "___に連絡しました。", "answer": "警察", "hint": "Police", "translation": "I contacted the police." },
+      { "sentence": "___の場所を確認してください。", "answer": "非常口", "hint": "Emergency exit", "translation": "Please check the location of the emergency exit." },
+      { "sentence": "___な場所に移動してください。", "answer": "安全", "hint": "Safe", "translation": "Please move to a safe place." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "地震の後に海から来る大きい波を何と言いますか。", "options": ["台風", "火事", "津波", "停電"], "answer": 2 },

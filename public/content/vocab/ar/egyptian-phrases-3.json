@@ -125,22 +125,26 @@
         {
           "sentence": "___، كُلّ حَاجَة هَتِبْقَى تَمَامْ.",
           "answer": "مَا تِقْلَقْش",
-          "hint": "do not worry"
+          "hint": "do not worry",
+          "translation": "Do not worry; everything will be fine."
         },
         {
           "sentence": "___، الْمَطْعَمْ قَرِيبْ مِنْ هِنَا.",
           "answer": "عَلَى فِكْرَة",
-          "hint": "by the way"
+          "hint": "by the way",
+          "translation": "By the way, the restaurant is near here."
         },
         {
           "sentence": "___، الْفِيلْمْ عَجَبْنِي جِدًّا.",
           "answer": "بَصْرَاحَة",
-          "hint": "honestly / frankly"
+          "hint": "honestly / frankly",
+          "translation": "Honestly, I liked the film very much."
         },
         {
           "sentence": "___ مِنَ الشَّارِعْ وَأَنْتَ مَاشِي.",
           "answer": "خُد بَالَك",
-          "hint": "take care / pay attention"
+          "hint": "take care / pay attention",
+          "translation": "Pay attention to the street while you are walking."
         }
       ]
     },

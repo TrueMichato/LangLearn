@@ -21,11 +21,11 @@
   "exercises": [
     { "type": "match", "pairs": 6 },
     { "type": "fill-blank", "items": [
-      { "sentence": "___ — самый любимый праздник.", "answer": "Новый год", "hint": "New Year" },
-      { "sentence": "___ состоится в июне.", "answer": "Свадьба", "hint": "Wedding" },
-      { "sentence": "Спасибо за замечательный ___.", "answer": "Подарок", "hint": "Gift / Present" },
-      { "sentence": "Дети украшают ___ игрушками.", "answer": "Ёлку", "hint": "New Year tree (accusative)" },
-      { "sentence": "Я получил ___ на свадьбу.", "answer": "Приглашение", "hint": "Invitation" }
+      { "sentence": "___ — самый любимый праздник.", "answer": "Новый год", "hint": "New Year", "translation": "New Year is the most beloved holiday." },
+      { "sentence": "___ состоится в июне.", "answer": "Свадьба", "hint": "Wedding", "translation": "The wedding will take place in June." },
+      { "sentence": "Спасибо за замечательный ___.", "answer": "Подарок", "hint": "Gift / Present", "translation": "Thank you for the wonderful present." },
+      { "sentence": "Дети украшают ___ игрушками.", "answer": "Ёлку", "hint": "New Year tree (accusative)", "translation": "The children decorate the New Year tree with ornaments." },
+      { "sentence": "Я получил ___ на свадьбу.", "answer": "Приглашение", "hint": "Invitation", "translation": "I received a wedding invitation." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "What does 'Фейерверк' mean?", "options": ["Fireworks", "Fireplace", "Festival", "Fairy tale"], "answer": 0 },

@@ -21,9 +21,9 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "O céu está ___ hoje.", "answer": "azul", "hint": "blue" },
-      { "sentence": "Eu gosto de café ___.", "answer": "preto", "hint": "black" },
-      { "sentence": "As bananas são ___.", "answer": "amarelas", "hint": "yellow (feminine plural)" }
+      { "sentence": "O céu está ___ hoje.", "answer": "azul", "hint": "blue", "translation": "The sky is blue today." },
+      { "sentence": "Eu gosto de café ___.", "answer": "preto", "hint": "black", "translation": "I like black coffee." },
+      { "sentence": "As bananas são ___.", "answer": "amarelas", "hint": "yellow (feminine plural)", "translation": "The bananas are yellow." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "What color is 'vermelho'?", "options": ["blue", "green", "red", "yellow"], "answer": 2 },

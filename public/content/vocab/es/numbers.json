@@ -139,22 +139,26 @@
         {
           "sentence": "Tengo ___ hermanos. (2)",
           "answer": "dos",
-          "hint": "number 2"
+          "hint": "number 2",
+          "translation": "I have two siblings."
         },
         {
           "sentence": "Son las ___ de la tarde. (3)",
           "answer": "tres",
-          "hint": "number 3"
+          "hint": "number 3",
+          "translation": "It's three in the afternoon."
         },
         {
           "sentence": "Necesito ___ dólares. (100)",
           "answer": "cien",
-          "hint": "number 100"
+          "hint": "number 100",
+          "translation": "I need a hundred dollars."
         },
         {
           "sentence": "Mi abuelo tiene ___ años. (70)",
           "answer": "setenta",
-          "hint": "number 70"
+          "hint": "number 70",
+          "translation": "My grandfather is seventy years old."
         }
       ]
     },

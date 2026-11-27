@@ -125,22 +125,26 @@
         {
           "sentence": "___ شْنُو الأَخْبَارْ؟",
           "answer": "لَا بَاس؟",
-          "hint": "how are you?"
+          "hint": "how are you?",
+          "translation": "How are you? What is the news?"
         },
         {
           "sentence": "___، كُلّ شِي مْزْيَانْ.",
           "answer": "لَا بَاس، الْحَمْدُ لِلّٰه",
-          "hint": "I am fine, praise God"
+          "hint": "I am fine, praise God",
+          "translation": "I am fine, praise God; everything is good."
         },
         {
           "sentence": "___ فَوْقْ الطَّاوْلَة؟",
           "answer": "شْنُو هَادَا؟",
-          "hint": "what is this?"
+          "hint": "what is this?",
+          "translation": "What is this on the table?"
         },
         {
           "sentence": "___ الْمَحَلّ؟",
           "answer": "فِينْ كَايْن؟",
-          "hint": "where is it?"
+          "hint": "where is it?",
+          "translation": "Where is the shop?"
         }
       ]
     },

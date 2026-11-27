@@ -21,10 +21,10 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "La ___ empieza a las diez.", "answer": "reunión", "hint": "meeting" },
-      { "sentence": "El ___ vence el viernes.", "answer": "plazo", "hint": "deadline" },
-      { "sentence": "Tenemos que ___ el precio.", "answer": "negociar", "hint": "discuss terms" },
-      { "sentence": "El ___ es limitado.", "answer": "presupuesto", "hint": "money available" }
+      { "sentence": "La ___ empieza a las diez.", "answer": "reunión", "hint": "meeting", "translation": "The meeting starts at ten." },
+      { "sentence": "El ___ vence el viernes.", "answer": "plazo", "hint": "deadline", "translation": "The deadline is Friday." },
+      { "sentence": "Tenemos que ___ el precio.", "answer": "negociar", "hint": "discuss terms", "translation": "We need to negotiate the price." },
+      { "sentence": "El ___ es limitado.", "answer": "presupuesto", "hint": "money available", "translation": "The budget is limited." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "What is 'la propuesta'?", "options": ["the report", "the proposal", "the project", "the price"], "answer": 1 },

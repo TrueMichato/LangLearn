@@ -125,17 +125,20 @@
         {
           "sentence": "Semnăm un ___ după negociere.",
           "answer": "contract",
-          "hint": "contract"
+          "hint": "contract",
+          "translation": "We sign a contract after the negotiation."
         },
         {
           "sentence": "Echipa lucrează la un ___ nou.",
           "answer": "proiect",
-          "hint": "project"
+          "hint": "project",
+          "translation": "The team is working on a new project."
         },
         {
           "sentence": "Avem un ___ vineri.",
           "answer": "termen-limită",
-          "hint": "deadline"
+          "hint": "deadline",
+          "translation": "We have a deadline on Friday."
         }
       ]
     },

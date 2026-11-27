@@ -125,22 +125,26 @@
         {
           "sentence": "Veo las ___ por la noche.",
           "answer": "noticias",
-          "hint": "TV news"
+          "hint": "TV news",
+          "translation": "I watch the news at night."
         },
         {
           "sentence": "Cambia al ___ cinco.",
           "answer": "canal",
-          "hint": "TV station number"
+          "hint": "TV station number",
+          "translation": "Switch to channel five."
         },
         {
           "sentence": "Escucho un ___ cada mañana.",
           "answer": "podcast",
-          "hint": "audio program"
+          "hint": "audio program",
+          "translation": "I listen to a podcast every morning."
         },
         {
           "sentence": "Compro el ___ todos los días.",
           "answer": "periódico",
-          "hint": "daily print news"
+          "hint": "daily print news",
+          "translation": "I buy the newspaper every day."
         }
       ]
     },

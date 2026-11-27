@@ -21,11 +21,11 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "___で調べました。", "answer": "インターネット", "hint": "Internet" },
-      { "sentence": "友達に___をかけました。", "answer": "電話", "hint": "Phone" },
-      { "sentence": "新しい___をダウンロードしました。", "answer": "アプリ", "hint": "App" },
-      { "sentence": "___を忘れないでください。", "answer": "パスワード", "hint": "Password" },
-      { "sentence": "携帯電話で___を撮りました。", "answer": "写真", "hint": "Photo" }
+      { "sentence": "___で調べました。", "answer": "インターネット", "hint": "Internet", "translation": "I looked it up on the internet." },
+      { "sentence": "友達に___をかけました。", "answer": "電話", "hint": "Phone", "translation": "I called my friend on the phone." },
+      { "sentence": "新しい___をダウンロードしました。", "answer": "アプリ", "hint": "App", "translation": "I downloaded a new app." },
+      { "sentence": "___を忘れないでください。", "answer": "パスワード", "hint": "Password", "translation": "Please don't forget your password." },
+      { "sentence": "携帯電話で___を撮りました。", "answer": "写真", "hint": "Photo", "translation": "I took a photo with my phone." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "インターネットで情報を探すことを何と言いますか。", "options": ["接続", "検索", "ダウンロード", "データ"], "answer": 1 },

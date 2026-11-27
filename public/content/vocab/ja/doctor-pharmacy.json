@@ -21,9 +21,9 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "___で薬を買った。", "answer": "薬局", "hint": "pharmacy" },
-      { "sentence": "___を医者に伝えた。", "answer": "症状", "hint": "symptoms" },
-      { "sentence": "すぐに___を呼んでください。", "answer": "救急車", "hint": "ambulance" }
+      { "sentence": "___で薬を買った。", "answer": "薬局", "hint": "pharmacy", "translation": "I bought medicine at the pharmacy." },
+      { "sentence": "___を医者に伝えた。", "answer": "症状", "hint": "symptoms", "translation": "I described my symptoms to the doctor." },
+      { "sentence": "すぐに___を呼んでください。", "answer": "救急車", "hint": "ambulance", "translation": "Please call an ambulance immediately." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "「処方箋」はどういう意味ですか？", "options": ["pharmacy", "prescription", "insurance card", "blood test"], "answer": 1 },

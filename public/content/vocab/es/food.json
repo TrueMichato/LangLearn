@@ -132,22 +132,26 @@
         {
           "sentence": "Quiero un vaso de ___.",
           "answer": "agua",
-          "hint": "clear liquid drink"
+          "hint": "clear liquid drink",
+          "translation": "I want a glass of water."
         },
         {
           "sentence": "Un ___ de naranja, por favor.",
           "answer": "jugo",
-          "hint": "fruit drink"
+          "hint": "fruit drink",
+          "translation": "An orange juice, please."
         },
         {
           "sentence": "Me encantan las ___ fritas.",
           "answer": "papas",
-          "hint": "LatAm word for potatoes"
+          "hint": "LatAm word for potatoes",
+          "translation": "I love french fries."
         },
         {
           "sentence": "Compré ___ en la panadería.",
           "answer": "pan",
-          "hint": "bakery item"
+          "hint": "bakery item",
+          "translation": "I bought bread at the bakery."
         }
       ]
     },

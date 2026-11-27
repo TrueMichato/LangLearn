@@ -160,3 +160,20 @@ describe('authored vocabulary loader compatibility', () => {
     }
   });
 });
+
+describe('authored fill-blank cues', () => {
+  it('gives every fill-blank item an English translation of the completed sentence', () => {
+    const missing: string[] = [];
+    for (const [path, source] of Object.entries(sources)) {
+      if (path.endsWith('/index.json')) continue;
+      const lesson = JSON.parse(source) as AuthoredLesson;
+      for (const exercise of lesson.exercises ?? []) {
+        if (exercise.type !== 'fill-blank') continue;
+        (exercise.items as Array<{ sentence: string; translation?: string }>).forEach((item, index) => {
+          if (!item.translation?.trim()) missing.push(`${path}#${index}: ${item.sentence}`);
+        });
+      }
+    }
+    expect(missing).toEqual([]);
+  });
+});

@@ -125,22 +125,26 @@
         {
           "sentence": "Aprendo a tocar la ___.",
           "answer": "guitarra",
-          "hint": "stringed instrument"
+          "hint": "stringed instrument",
+          "translation": "I’m learning to play guitar."
         },
         {
           "sentence": "Fuimos al ___ de Shakira.",
           "answer": "concierto",
-          "hint": "live music event"
+          "hint": "live music event",
+          "translation": "We went to the Shakira concert."
         },
         {
           "sentence": "Esa ___ es de Frida.",
           "answer": "pintura",
-          "hint": "painting"
+          "hint": "painting",
+          "translation": "That painting is by Frida."
         },
         {
           "sentence": "El ___ abre los domingos.",
           "answer": "museo",
-          "hint": "place with art exhibits"
+          "hint": "place with art exhibits",
+          "translation": "The museum is open on Sundays."
         }
       ]
     },

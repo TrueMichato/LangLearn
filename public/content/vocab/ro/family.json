@@ -125,17 +125,20 @@
         {
           "sentence": "Am un ___ mai mare.",
           "answer": "frate",
-          "hint": "brother"
+          "hint": "brother",
+          "translation": "I have an older brother."
         },
         {
           "sentence": "Am o ___ mai mică.",
           "answer": "soră",
-          "hint": "sister"
+          "hint": "sister",
+          "translation": "I have a younger sister."
         },
         {
           "sentence": "Ea are un ___ de zece ani.",
           "answer": "fiu",
-          "hint": "son"
+          "hint": "son",
+          "translation": "She has a ten-year-old son."
         }
       ]
     },

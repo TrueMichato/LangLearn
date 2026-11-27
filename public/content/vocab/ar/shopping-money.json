@@ -125,22 +125,26 @@
         {
           "sentence": "___ قَلِيلٌ فِي جَيْبِي.",
           "answer": "مَالٌ",
-          "hint": "money"
+          "hint": "money",
+          "translation": "A little money is in my pocket."
         },
         {
           "sentence": "___ أَفْضَلُ فِي هٰذَا الْمَتْجَرِ.",
           "answer": "نَقْدٌ",
-          "hint": "cash"
+          "hint": "cash",
+          "translation": "Cash is better in this store."
         },
         {
           "sentence": "___ جَدِيدَةٌ فِي الْمَحْفَظَةِ.",
           "answer": "بِطَاقَةٌ",
-          "hint": "card"
+          "hint": "card",
+          "translation": "A new card is in the wallet."
         },
         {
           "sentence": "___ مُنَاسِبٌ لِلْكِتَابِ.",
           "answer": "سِعْرٌ",
-          "hint": "price"
+          "hint": "price",
+          "translation": "A suitable price for the book."
         }
       ]
     },

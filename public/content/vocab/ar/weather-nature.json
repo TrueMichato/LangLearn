@@ -125,22 +125,26 @@
         {
           "sentence": "___ دَافِئَةٌ تُشْرِقُ.",
           "answer": "شَمْسٌ",
-          "hint": "sun"
+          "hint": "sun",
+          "translation": "A warm sun is shining."
         },
         {
           "sentence": "___ جَمِيلٌ فِي السَّمَاءِ.",
           "answer": "قَمَرٌ",
-          "hint": "moon"
+          "hint": "moon",
+          "translation": "A beautiful moon is in the sky."
         },
         {
           "sentence": "___ صَافِيَةٌ فَوْقَنَا.",
           "answer": "سَمَاءٌ",
-          "hint": "sky"
+          "hint": "sky",
+          "translation": "A clear sky is above us."
         },
         {
           "sentence": "___ خَفِيفٌ يَنْزِلُ.",
           "answer": "مَطَرٌ",
-          "hint": "rain"
+          "hint": "rain",
+          "translation": "Light rain is falling."
         }
       ]
     },

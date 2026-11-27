@@ -125,22 +125,26 @@
         {
           "sentence": "الْبَيْتُ ___ وَمُرِيحٌ.",
           "answer": "وَاسِعٌ",
-          "hint": "spacious / wide"
+          "hint": "spacious / wide",
+          "translation": "The house is spacious and comfortable."
         },
         {
           "sentence": "الشَّارِعُ ___ فِي الْحَيِّ الْقَدِيمِ.",
           "answer": "ضَيِّقٌ",
-          "hint": "narrow / tight"
+          "hint": "narrow / tight",
+          "translation": "The street is narrow in the old neighborhood."
         },
         {
           "sentence": "الْبِئْرُ ___ جِدًّا.",
           "answer": "عَمِيقٌ",
-          "hint": "deep"
+          "hint": "deep",
+          "translation": "The well is very deep."
         },
         {
           "sentence": "الْجُرْحُ ___ وَلَا خَطَرَ فِيهِ.",
           "answer": "سَطْحِيٌّ",
-          "hint": "shallow / superficial"
+          "hint": "shallow / superficial",
+          "translation": "The wound is shallow and not dangerous."
         }
       ]
     },

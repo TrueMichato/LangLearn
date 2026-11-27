@@ -125,22 +125,26 @@
         {
           "sentence": "___ هٰذَا الرَّجُلُ؟",
           "answer": "مَنْ",
-          "hint": "who"
+          "hint": "who",
+          "translation": "Who is this man?"
         },
         {
           "sentence": "___ هٰذَا الشَّيْءُ؟",
           "answer": "مَا",
-          "hint": "what"
+          "hint": "what",
+          "translation": "What is this thing?"
         },
         {
           "sentence": "___ تُرِيدُ؟",
           "answer": "مَاذَا",
-          "hint": "what / what exactly"
+          "hint": "what / what exactly",
+          "translation": "What do you want?"
         },
         {
           "sentence": "___ الْمَكْتَبَةُ؟",
           "answer": "أَيْنَ",
-          "hint": "where"
+          "hint": "where",
+          "translation": "Where is the library?"
         }
       ]
     },

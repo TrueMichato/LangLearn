@@ -21,11 +21,11 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "___を聴くのが好きです。", "answer": "音楽", "hint": "Music" },
-      { "sentence": "カラオケで___ましょう。", "answer": "歌い", "hint": "To sing" },
-      { "sentence": "五歳から___を弾いています。", "answer": "ピアノ", "hint": "Piano" },
-      { "sentence": "週末に___に行きました。", "answer": "美術館", "hint": "Art museum" },
-      { "sentence": "子供が花の___を描きました。", "answer": "絵", "hint": "Picture" }
+      { "sentence": "___を聴くのが好きです。", "answer": "音楽", "hint": "Music", "translation": "I like listening to music." },
+      { "sentence": "カラオケで___ましょう。", "answer": "歌い", "hint": "To sing", "translation": "Let's sing karaoke." },
+      { "sentence": "五歳から___を弾いています。", "answer": "ピアノ", "hint": "Piano", "translation": "I've been playing piano since I was five." },
+      { "sentence": "週末に___に行きました。", "answer": "美術館", "hint": "Art museum", "translation": "I went to the art museum on the weekend." },
+      { "sentence": "子供が花の___を描きました。", "answer": "絵", "hint": "Picture", "translation": "The child drew a picture of a flower." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "ピアノやギターは何ですか。", "options": ["音楽", "楽器", "歌", "演奏"], "answer": 1 },

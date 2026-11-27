@@ -125,22 +125,26 @@
         {
           "sentence": "___ أَنْ يَعُودَ مَا فَاتَ.",
           "answer": "هَيْهَاتَ",
-          "hint": "far from possible"
+          "hint": "far from possible",
+          "translation": "Far be it that what has passed should return."
         },
         {
           "sentence": "___ الْوَعْدِ وَالْفِعْلِ.",
           "answer": "شَتَّانَ بَيْنَ",
-          "hint": "what a difference between"
+          "hint": "what a difference between",
+          "translation": "What a difference there is between promise and action."
         },
         {
           "sentence": "___، إِنَّ الْحَقَّ أَوْلَى بِأَنْ يُتَّبَعَ.",
           "answer": "لَعَمْرِي",
-          "hint": "indeed / by my life"
+          "hint": "indeed / by my life",
+          "translation": "Indeed, truth is more worthy of being followed."
         },
         {
           "sentence": "___ عَمَلٌ يُصَاحِبُهُ إِخْلَاصٌ.",
           "answer": "حَبَّذَا",
-          "hint": "how excellent / would that"
+          "hint": "how excellent / would that",
+          "translation": "How excellent is work accompanied by sincerity."
         }
       ]
     },

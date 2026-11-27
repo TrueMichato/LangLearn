@@ -21,9 +21,9 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "___, я забыл телефон! (Darn)", "answer": "Блин", "hint": "mild expletive" },
-      { "sentence": "___ сходим в кино! (Let's)", "answer": "Давай", "hint": "let's / come on" },
-      { "sentence": "— Как дела? — ___. (Fine, casual)", "answer": "Нормально", "hint": "fine / normal" }
+      { "sentence": "___, я забыл телефон! (Darn)", "answer": "Блин", "hint": "mild expletive", "translation": "Darn, I forgot my phone!" },
+      { "sentence": "___ сходим в кино! (Let's)", "answer": "Давай", "hint": "let's / come on", "translation": "Let's go to the movies!" },
+      { "sentence": "— Как дела? — ___. (Fine, casual)", "answer": "Нормально", "hint": "fine / normal", "translation": "— How are you? — Fine." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "What does 'ничего себе' express?", "options": ["Surprise (wow / no way)", "Anger", "Sadness", "Agreement"], "answer": 0 },

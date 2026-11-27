@@ -125,22 +125,26 @@
         {
           "sentence": "تَنْمو ___ فِي مَاءٍ دَافِئٍ.",
           "answer": "الشُّعْبَةُ الْمَرْجَانِيَّةُ",
-          "hint": "coral reef"
+          "hint": "coral reef",
+          "translation": "The coral reef grows in warm water."
         },
         {
           "sentence": "يُهَدِّدُ ___ حَيَاةَ الشُّعَبِ.",
           "answer": "التَّلَوُّثُ الْبَحْرِيُّ",
-          "hint": "marine pollution"
+          "hint": "marine pollution",
+          "translation": "Marine pollution threatens reef life."
         },
         {
           "sentence": "أُعْلِنَتِ ___ لِحِمَايَةِ الدَّلَافِينِ.",
           "answer": "الْمَحْمِيَّةُ الْبَحْرِيَّةُ",
-          "hint": "marine reserve"
+          "hint": "marine reserve",
+          "translation": "The marine reserve was declared to protect dolphins."
         },
         {
           "sentence": "يَنْقُلُ ___ الْمَاءَ الْبَارِدَ.",
           "answer": "التَّيَّارُ الْبَحْرِيُّ",
-          "hint": "ocean current"
+          "hint": "ocean current",
+          "translation": "The ocean current carries cold water."
         }
       ]
     },

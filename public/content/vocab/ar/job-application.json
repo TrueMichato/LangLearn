@@ -125,22 +125,26 @@
         {
           "sentence": "قَدَّمْتُ ___ عَبْرَ الْمَوْقِعِ.",
           "answer": "طَلَبُ تَوْظِيفٍ",
-          "hint": "job application"
+          "hint": "job application",
+          "translation": "I submitted a job application through the website."
         },
         {
           "sentence": "حَدَّثْتُ ___ الْيَوْمَ.",
           "answer": "السِّيرَةُ الذَّاتِيَّةُ",
-          "hint": "CV / résumé"
+          "hint": "CV / résumé",
+          "translation": "I updated the CV today."
         },
         {
           "sentence": "أَرْفَقْتُ ___ مَعَ الطَّلَبِ.",
           "answer": "خِطَابُ التَّغْطِيَةِ",
-          "hint": "cover letter"
+          "hint": "cover letter",
+          "translation": "I attached the cover letter with the application."
         },
         {
           "sentence": "يَتَطَلَّبُ الْعَمَلُ ___ عَالِيًا.",
           "answer": "مُؤَهِّلٌ عِلْمِيٌّ",
-          "hint": "academic qualification"
+          "hint": "academic qualification",
+          "translation": "The job requires a high academic qualification."
         }
       ]
     },

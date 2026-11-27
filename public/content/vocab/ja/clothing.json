@@ -21,11 +21,11 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "白い___を着ています。", "answer": "シャツ", "hint": "Shirt" },
-      { "sentence": "新しい___を履いています。", "answer": "靴", "hint": "Shoes" },
-      { "sentence": "寒いので___をしています。", "answer": "手袋", "hint": "Gloves" },
-      { "sentence": "雨なので___を持って行きます。", "answer": "傘", "hint": "Umbrella" },
-      { "sentence": "暑いので___をかぶりました。", "answer": "帽子", "hint": "Hat" }
+      { "sentence": "白い___を着ています。", "answer": "シャツ", "hint": "Shirt", "translation": "I am wearing a white shirt." },
+      { "sentence": "新しい___を履いています。", "answer": "靴", "hint": "Shoes", "translation": "I am wearing new shoes." },
+      { "sentence": "寒いので___をしています。", "answer": "手袋", "hint": "Gloves", "translation": "I'm wearing gloves because it's cold." },
+      { "sentence": "雨なので___を持って行きます。", "answer": "傘", "hint": "Umbrella", "translation": "It's raining so I'll take an umbrella." },
+      { "sentence": "暑いので___をかぶりました。", "answer": "帽子", "hint": "Hat", "translation": "I wore a hat because it's hot." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "足に身につけるものはどれですか。", "options": ["帽子", "ネクタイ", "靴", "手袋"], "answer": 2 },

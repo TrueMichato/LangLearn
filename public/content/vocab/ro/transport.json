@@ -125,17 +125,20 @@
         {
           "sentence": "Cumpăr un ___ online.",
           "answer": "bilet",
-          "hint": "ticket"
+          "hint": "ticket",
+          "translation": "I buy a ticket online."
         },
         {
           "sentence": "La semafor merg la ___.",
           "answer": "stânga",
-          "hint": "left"
+          "hint": "left",
+          "translation": "At the traffic light I go left."
         },
         {
           "sentence": "Verific o ___ pe telefon.",
           "answer": "hartă",
-          "hint": "map"
+          "hint": "map",
+          "translation": "I check a map on the phone."
         }
       ]
     },

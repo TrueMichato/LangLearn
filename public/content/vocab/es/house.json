@@ -125,22 +125,26 @@
         {
           "sentence": "Cierra la ___, por favor.",
           "answer": "puerta",
-          "hint": "entrance to room"
+          "hint": "entrance to room",
+          "translation": "Close the door, please."
         },
         {
           "sentence": "Mi mamá está en la ___.",
           "answer": "cocina",
-          "hint": "where food is prepared"
+          "hint": "where food is prepared",
+          "translation": "My mom is in the kitchen."
         },
         {
           "sentence": "Perdí las ___ del carro.",
           "answer": "llaves",
-          "hint": "what opens locks"
+          "hint": "what opens locks",
+          "translation": "I lost my car keys."
         },
         {
           "sentence": "La ___ es muy suave.",
           "answer": "cama",
-          "hint": "where you sleep"
+          "hint": "where you sleep",
+          "translation": "The bed is very soft."
         }
       ]
     },

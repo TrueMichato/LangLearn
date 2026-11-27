@@ -21,11 +21,11 @@
   "exercises": [
     { "type": "match", "pairs": 6 },
     { "type": "fill-blank", "items": [
-      { "sentence": "___ начнётся в два часа.", "answer": "Совещание", "hint": "Meeting" },
-      { "sentence": "Я нашёл хорошую ___.", "answer": "Работу", "hint": "Work / Job (accusative)" },
-      { "sentence": "Мы подписали ___.", "answer": "Договор", "hint": "Contract / Agreement" },
-      { "sentence": "У меня ___ завтра.", "answer": "Собеседование", "hint": "Job interview" },
-      { "sentence": "Подготовьте ___ к понедельнику.", "answer": "Отчёт", "hint": "Report" }
+      { "sentence": "___ начнётся в два часа.", "answer": "Совещание", "hint": "Meeting", "translation": "The meeting will start at two o'clock." },
+      { "sentence": "Я нашёл хорошую ___.", "answer": "Работу", "hint": "Work / Job (accusative)", "translation": "I found a good job." },
+      { "sentence": "Мы подписали ___.", "answer": "Договор", "hint": "Contract / Agreement", "translation": "We signed a contract." },
+      { "sentence": "У меня ___ завтра.", "answer": "Собеседование", "hint": "Job interview", "translation": "I have a job interview tomorrow." },
+      { "sentence": "Подготовьте ___ к понедельнику.", "answer": "Отчёт", "hint": "Report", "translation": "Prepare the report by Monday." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "What does 'Начальник' mean?", "options": ["Boss / Manager", "Teacher", "Director", "President"], "answer": 0 },

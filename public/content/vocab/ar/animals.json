@@ -125,22 +125,26 @@
         {
           "sentence": "___ صَغِيرٌ يَنَامُ.",
           "answer": "قِطٌّ",
-          "hint": "cat"
+          "hint": "cat",
+          "translation": "A small cat is sleeping."
         },
         {
           "sentence": "___ وَفِيٌّ يَحْرُسُ الْبَيْتَ.",
           "answer": "كَلْبٌ",
-          "hint": "dog"
+          "hint": "dog",
+          "translation": "A loyal dog guards the house."
         },
         {
           "sentence": "___ جَمِيلٌ فَوْقَ الشَّجَرَةِ.",
           "answer": "طَائِرٌ",
-          "hint": "bird"
+          "hint": "bird",
+          "translation": "A beautiful bird is above the tree."
         },
         {
           "sentence": "___ صَغِيرَةٌ فِي الْمَاءِ.",
           "answer": "سَمَكَةٌ",
-          "hint": "fish"
+          "hint": "fish",
+          "translation": "A small fish is in the water."
         }
       ]
     },

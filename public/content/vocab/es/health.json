@@ -125,22 +125,26 @@
         {
           "sentence": "Tengo ___ de cabeza.",
           "answer": "dolor",
-          "hint": "aching feeling"
+          "hint": "aching feeling",
+          "translation": "I have a headache."
         },
         {
           "sentence": "Mi hija tiene ___.",
           "answer": "fiebre",
-          "hint": "high body temperature"
+          "hint": "high body temperature",
+          "translation": "My daughter has a fever."
         },
         {
           "sentence": "Necesito una ___ médica.",
           "answer": "receta",
-          "hint": "doctor’s order for medicine"
+          "hint": "doctor’s order for medicine",
+          "translation": "I need a prescription."
         },
         {
           "sentence": "Tengo ___ con el dentista.",
           "answer": "cita",
-          "hint": "appointment"
+          "hint": "appointment",
+          "translation": "I have a dental appointment."
         }
       ]
     },

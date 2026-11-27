@@ -125,17 +125,20 @@
         {
           "sentence": "___ se află la vest de România.",
           "answer": "Ungaria",
-          "hint": "Hungary"
+          "hint": "Hungary",
+          "translation": "Hungary is west of Romania."
         },
         {
           "sentence": "Un ___ trece prin sat.",
           "answer": "râu",
-          "hint": "river"
+          "hint": "river",
+          "translation": "A river passes through the village."
         },
         {
           "sentence": "___ ajunge la Marea Neagră.",
           "answer": "Dunărea",
-          "hint": "the Danube"
+          "hint": "the Danube",
+          "translation": "The Danube reaches the Black Sea."
         }
       ]
     },

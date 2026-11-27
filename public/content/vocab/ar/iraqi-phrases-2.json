@@ -125,22 +125,26 @@
         {
           "sentence": "___ مَا سْمِعْتَك زِين.",
           "answer": "شِنُو؟",
-          "hint": "what? (Iraqi; MSA: mādhā?)"
+          "hint": "what? (Iraqi; MSA: mādhā?)",
+          "translation": "What? I did not hear you well."
         },
         {
           "sentence": "___ الْبَاصْ تَأَخَّرْ الْيَوْمْ؟",
           "answer": "لِيش؟",
-          "hint": "why? (Iraqi; MSA: limādhā?)"
+          "hint": "why? (Iraqi; MSA: limādhā?)",
+          "translation": "Why was the bus late today?"
         },
         {
           "sentence": "___ دَ يِدُقّْ الْبَابْ؟",
           "answer": "مَنْو؟",
-          "hint": "who? (Iraqi; MSA: man?)"
+          "hint": "who? (Iraqi; MSA: man?)",
+          "translation": "Who's knocking on the door?"
         },
         {
           "sentence": "___ نِمْشِي قَبْلَ الزَّحْمَة.",
           "answer": "يَلَّا",
-          "hint": "come on / let's go (Iraqi; MSA: hayyā)"
+          "hint": "come on / let's go (Iraqi; MSA: hayyā)",
+          "translation": "Come on, let's walk before the traffic."
         }
       ]
     },

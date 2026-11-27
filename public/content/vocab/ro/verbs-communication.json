@@ -125,17 +125,20 @@
         {
           "sentence": "Vreau să ___ o întâmplare.",
           "answer": "povestesc",
-          "hint": "tell a story"
+          "hint": "tell a story",
+          "translation": "I want to tell (you about) something that happened."
         },
         {
           "sentence": "Poți să ___ regula?",
           "answer": "explici",
-          "hint": "explain"
+          "hint": "explain",
+          "translation": "Can you explain the rule?"
         },
         {
           "sentence": "Te rog să ___ cuvintele.",
           "answer": "repeți",
-          "hint": "repeat"
+          "hint": "repeat",
+          "translation": "Please repeat the words."
         }
       ]
     },

@@ -125,22 +125,26 @@
         {
           "sentence": "El ___ pasa por el pueblo.",
           "answer": "río",
-          "hint": "flowing water"
+          "hint": "flowing water",
+          "translation": "The river runs through the town."
         },
         {
           "sentence": "La ___ llena es hermosa.",
           "answer": "luna",
-          "hint": "satellite in the sky"
+          "hint": "satellite in the sky",
+          "translation": "The full moon is beautiful."
         },
         {
           "sentence": "Los niños juegan en la ___.",
           "answer": "arena",
-          "hint": "beach material"
+          "hint": "beach material",
+          "translation": "The kids play in the sand."
         },
         {
           "sentence": "Me encanta la ___.",
           "answer": "naturaleza",
-          "hint": "outdoors"
+          "hint": "outdoors",
+          "translation": "I love nature."
         }
       ]
     },

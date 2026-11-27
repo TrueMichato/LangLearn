@@ -125,22 +125,26 @@
         {
           "sentence": "هٰذَا ___ جَدِيدٌ.",
           "answer": "حَاسُوبٌ",
-          "hint": "computer"
+          "hint": "computer",
+          "translation": "This is a new computer."
         },
         {
           "sentence": "هٰذِهِ ___ صَعْبَةٌ.",
           "answer": "خَوَارِزْمِيَّةٌ",
-          "hint": "algorithm"
+          "hint": "algorithm",
+          "translation": "This is a difficult algorithm."
         },
         {
           "sentence": "هٰذِهِ ___ نَظِيفَةٌ.",
           "answer": "شِفْرَةٌ",
-          "hint": "code"
+          "hint": "code",
+          "translation": "This is clean code."
         },
         {
           "sentence": "يَحْمِي ___ الْمَلَفَّاتِ.",
           "answer": "تَشْفِيرٌ",
-          "hint": "encryption"
+          "hint": "encryption",
+          "translation": "Encryption protects the files."
         }
       ]
     },

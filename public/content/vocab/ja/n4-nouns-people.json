@@ -21,9 +21,9 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "___に道を聞いた。", "answer": "警察官", "hint": "police officer" },
-      { "sentence": "___にアドバイスをもらった。", "answer": "先輩", "hint": "senior" },
-      { "sentence": "お正月に___が集まる。", "answer": "親戚", "hint": "relative(s)" }
+      { "sentence": "___に道を聞いた。", "answer": "警察官", "hint": "police officer", "translation": "I asked a police officer for directions." },
+      { "sentence": "___にアドバイスをもらった。", "answer": "先輩", "hint": "senior", "translation": "I got advice from my senior." },
+      { "sentence": "お正月に___が集まる。", "answer": "親戚", "hint": "relative(s)", "translation": "Relatives gather on New Year's." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "「社長」はどういう意味ですか？", "options": ["section chief", "department head", "company president", "employee"], "answer": 2 },

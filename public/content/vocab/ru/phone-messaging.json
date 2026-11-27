@@ -21,11 +21,11 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "Я пропустил ваш ___.", "answer": "Звонок", "hint": "Call" },
-      { "sentence": "___ почти разряжена.", "answer": "Батарея", "hint": "Battery" },
-      { "sentence": "Здесь плохая ___.", "answer": "Связь", "hint": "Connection" },
-      { "sentence": "Скачай это ___.", "answer": "Приложение", "hint": "App" },
-      { "sentence": "Я ___ вам через час.", "answer": "Перезвоню", "hint": "Will call back" }
+      { "sentence": "Я пропустил ваш ___.", "answer": "Звонок", "hint": "Call", "translation": "I missed your call." },
+      { "sentence": "___ почти разряжена.", "answer": "Батарея", "hint": "Battery", "translation": "The battery is almost dead." },
+      { "sentence": "Здесь плохая ___.", "answer": "Связь", "hint": "Connection", "translation": "The signal is bad here. (literally: the connection is bad)" },
+      { "sentence": "Скачай это ___.", "answer": "Приложение", "hint": "App", "translation": "Download this app." },
+      { "sentence": "Я ___ вам через час.", "answer": "Перезвоню", "hint": "Will call back", "translation": "I'll call you back in an hour." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "What does 'Абонент' mean?", "options": ["Subscriber", "Operator", "Manager", "Assistant"], "answer": 0 },

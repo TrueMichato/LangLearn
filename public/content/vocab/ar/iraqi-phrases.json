@@ -125,22 +125,26 @@
         {
           "sentence": "___ إِنْ شَاءَ الله زِين.",
           "answer": "شْلُونَك؟",
-          "hint": "how are you? (Iraqi; MSA: kayfa ḥāluka?)"
+          "hint": "how are you? (Iraqi; MSA: kayfa ḥāluka?)",
+          "translation": "How are you? Hopefully well."
         },
         {
           "sentence": "___ سَأَلَتْهَا الصَّدِيقَةُ بِاللَّهْجَةِ العِرَاقِيَّةِ.",
           "answer": "شْلُونِچ؟",
-          "hint": "how are you? to a woman (Iraqi; MSA: kayfa ḥāluki?)"
+          "hint": "how are you? to a woman (Iraqi; MSA: kayfa ḥāluki?)",
+          "translation": "How are you? the friend asked her in Iraqi dialect."
         },
         {
           "sentence": "___ مَطْعَمْ قَرِيبْ مِنْ هْنَا.",
           "answer": "أَكُو",
-          "hint": "there is / there are (Iraqi; MSA: yūjadu)"
+          "hint": "there is / there are (Iraqi; MSA: yūjadu)",
+          "translation": "There is a restaurant near here."
         },
         {
           "sentence": "___ وَقِتْ كَافِي هَسَّه.",
           "answer": "مَاكُو",
-          "hint": "there is not / there are not (Iraqi; MSA: lā yūjadu)"
+          "hint": "there is not / there are not (Iraqi; MSA: lā yūjadu)",
+          "translation": "There is not enough time now."
         }
       ]
     },

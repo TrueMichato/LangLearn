@@ -22,9 +22,9 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "Купи ___ в магазине.", "answer": "Хлеб", "hint": "Bread" },
-      { "sentence": "Хотите ___ с сахаром?", "answer": "Чай", "hint": "Tea" },
-      { "sentence": "___ полезны для здоровья.", "answer": "Овощи", "hint": "Vegetables" }
+      { "sentence": "Купи ___ в магазине.", "answer": "Хлеб", "hint": "Bread", "translation": "Buy bread at the store." },
+      { "sentence": "Хотите ___ с сахаром?", "answer": "Чай", "hint": "Tea", "translation": "Would you like tea with sugar?" },
+      { "sentence": "___ полезны для здоровья.", "answer": "Овощи", "hint": "Vegetables", "translation": "Vegetables are good for health." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "What does 'Молоко' mean?", "options": ["Milk", "Water", "Juice", "Tea"], "answer": 0 },

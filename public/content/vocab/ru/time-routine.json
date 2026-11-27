@@ -21,9 +21,9 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "Я встаю в семь ___.", "answer": "Утра", "hint": "Morning (genitive)" },
-      { "sentence": "Сколько сейчас ___?", "answer": "Времени", "hint": "Time (genitive)" },
-      { "sentence": "Уже ___, пора спать.", "answer": "Поздно", "hint": "Late" }
+      { "sentence": "Я встаю в семь ___.", "answer": "Утра", "hint": "Morning (genitive)", "translation": "I get up at seven in the morning." },
+      { "sentence": "Сколько сейчас ___?", "answer": "Времени", "hint": "Time (genitive)", "translation": "What time is it now?" },
+      { "sentence": "Уже ___, пора спать.", "answer": "Поздно", "hint": "Late", "translation": "It's already late, time for bed." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "What does 'Вставать' mean?", "options": ["To get up", "To sit down", "To lie down", "To run"], "answer": 0 },

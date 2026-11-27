@@ -21,10 +21,10 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "La ___ es el sábado.", "answer": "boda", "hint": "wedding" },
-      { "sentence": "El ___ es de oro blanco.", "answer": "anillo", "hint": "ring" },
-      { "sentence": "Hagamos un ___ por los novios.", "answer": "brindis", "hint": "toast" },
-      { "sentence": "Se van de ___ de miel a México.", "answer": "luna", "hint": "honey___" }
+      { "sentence": "La ___ es el sábado.", "answer": "boda", "hint": "wedding", "translation": "The wedding is on Saturday." },
+      { "sentence": "El ___ es de oro blanco.", "answer": "anillo", "hint": "ring", "translation": "The ring is white gold." },
+      { "sentence": "Hagamos un ___ por los novios.", "answer": "brindis", "hint": "toast", "translation": "Let's make a toast to the bride and groom." },
+      { "sentence": "Se van de ___ de miel a México.", "answer": "luna", "hint": "honey___", "translation": "They're going on their honeymoon to Mexico." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "What is 'la madrina'?", "options": ["the maid of honor", "the bride", "the priest", "the groom"], "answer": 0 },

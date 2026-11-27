@@ -125,22 +125,26 @@
         {
           "sentence": "___ مَكْتُوبٌ فِي أَعْلَى الصَّفْحَةِ.",
           "answer": "التَّارِيخُ",
-          "hint": "date"
+          "hint": "date",
+          "translation": "The date is written at the top of the page."
         },
         {
           "sentence": "___ مُعَلَّقٌ عَلَى الحَائِطِ.",
           "answer": "التَّقْوِيمُ",
-          "hint": "calendar"
+          "hint": "calendar",
+          "translation": "The calendar is hanging on the wall."
         },
         {
           "sentence": "___ مُنَاسِبٌ لِلزِّيَارَةِ.",
           "answer": "اليَوْمُ",
-          "hint": "day / today"
+          "hint": "day / today",
+          "translation": "Today is suitable for a visit."
         },
         {
           "sentence": "___ يَبْدَأُ يَوْمَ الِاثْنَيْنِ.",
           "answer": "الأُسْبُوعُ",
-          "hint": "week"
+          "hint": "week",
+          "translation": "The week begins on Monday."
         }
       ]
     },

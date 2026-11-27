@@ -125,22 +125,26 @@
         {
           "sentence": "Hace mucho ___ en verano.",
           "answer": "calor",
-          "hint": "high temperature"
+          "hint": "high temperature",
+          "translation": "It’s very hot in summer."
         },
         {
           "sentence": "Lleva un ___, va a llover.",
           "answer": "paraguas",
-          "hint": "protects from rain"
+          "hint": "protects from rain",
+          "translation": "Take an umbrella, it’s going to rain."
         },
         {
           "sentence": "La ___ cubre las montañas.",
           "answer": "nieve",
-          "hint": "frozen white precipitation"
+          "hint": "frozen white precipitation",
+          "translation": "Snow covers the mountains."
         },
         {
           "sentence": "Las hojas caen en ___.",
           "answer": "otoño",
-          "hint": "fall season"
+          "hint": "fall season",
+          "translation": "Leaves fall in autumn."
         }
       ]
     },

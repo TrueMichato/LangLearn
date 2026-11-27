@@ -21,9 +21,9 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "Зимой снег ___.", "answer": "Белый", "hint": "White" },
-      { "sentence": "___ свет — можно идти.", "answer": "Зелёный", "hint": "Green" },
-      { "sentence": "Какой твой любимый ___?", "answer": "Цвет", "hint": "Color" }
+      { "sentence": "Зимой снег ___.", "answer": "Белый", "hint": "White", "translation": "In winter the snow is white." },
+      { "sentence": "___ свет — можно идти.", "answer": "Зелёный", "hint": "Green", "translation": "Green light — you can go." },
+      { "sentence": "Какой твой любимый ___?", "answer": "Цвет", "hint": "Color", "translation": "What is your favorite color?" }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "What does 'Красный' mean?", "options": ["Red", "Beautiful", "Big", "Orange"], "answer": 0 },

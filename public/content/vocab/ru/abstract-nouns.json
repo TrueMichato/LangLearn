@@ -21,9 +21,9 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "___ — сила. (Knowledge)", "answer": "Знание", "hint": "knowledge" },
-      { "sentence": "Скажи мне ___. (the truth)", "answer": "правду", "hint": "truth (accusative)" },
-      { "sentence": "Желаю тебе ___! (good luck)", "answer": "удачи", "hint": "luck (genitive)" }
+      { "sentence": "___ — сила. (Knowledge)", "answer": "Знание", "hint": "knowledge", "translation": "Knowledge is power." },
+      { "sentence": "Скажи мне ___. (the truth)", "answer": "правду", "hint": "truth (accusative)", "translation": "Tell me the truth." },
+      { "sentence": "Желаю тебе ___! (good luck)", "answer": "удачи", "hint": "luck (genitive)", "translation": "I wish you good luck!" }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "What does 'мечта' mean?", "options": ["Dream (aspiration)", "Memory", "Hope", "Happiness"], "answer": 0 },

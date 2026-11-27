@@ -21,9 +21,9 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "Я вернусь ___ два часа. (in, after a period)", "answer": "через", "hint": "in (time)" },
-      { "sentence": "___ зазвонил телефон. (Suddenly)", "answer": "Вдруг", "hint": "suddenly" },
-      { "sentence": "Мы встретились три года ___. (ago)", "answer": "назад", "hint": "ago" }
+      { "sentence": "Я вернусь ___ два часа. (in, after a period)", "answer": "через", "hint": "in (time)", "translation": "I'll be back in two hours." },
+      { "sentence": "___ зазвонил телефон. (Suddenly)", "answer": "Вдруг", "hint": "suddenly", "translation": "Suddenly the phone rang." },
+      { "sentence": "Мы встретились три года ___. (ago)", "answer": "назад", "hint": "ago", "translation": "We met three years ago." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "What does 'до сих пор' mean?", "options": ["Until now / still", "Since then", "Long ago", "Meanwhile"], "answer": 0 },

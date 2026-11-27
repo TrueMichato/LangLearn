@@ -125,22 +125,26 @@
         {
           "sentence": "___ جَدِيدٌ يَبْدَأُ الآنَ.",
           "answer": "يَوْمٌ",
-          "hint": "day"
+          "hint": "day",
+          "translation": "A new day begins now."
         },
         {
           "sentence": "___ وَاحِدٌ فِي الْخُطَّةِ.",
           "answer": "أُسْبُوعٌ",
-          "hint": "week"
+          "hint": "week",
+          "translation": "One week is in the plan."
         },
         {
           "sentence": "___ طَوِيلٌ يَنْتَهِي الْيَوْمَ.",
           "answer": "شَهْرٌ",
-          "hint": "month"
+          "hint": "month",
+          "translation": "A long month ends today."
         },
         {
           "sentence": "___ جَدِيدَةٌ تَبْدَأُ قَرِيبًا.",
           "answer": "سَنَةٌ",
-          "hint": "year"
+          "hint": "year",
+          "translation": "A new year begins soon."
         }
       ]
     },

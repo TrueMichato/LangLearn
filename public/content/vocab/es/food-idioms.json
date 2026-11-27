@@ -125,22 +125,26 @@
         {
           "sentence": "El examen fue ___ comido.",
           "answer": "pan",
-          "hint": "bread — 'eaten ___' = piece of cake"
+          "hint": "bread — 'eaten ___' = piece of cake",
+          "translation": "The exam was a piece of cake."
         },
         {
           "sentence": "Cuando ella le habló se puso rojo como un ___.",
           "answer": "tomate",
-          "hint": "the red salad vegetable"
+          "hint": "the red salad vegetable",
+          "translation": "When she spoke to him he turned red as a tomato."
         },
         {
           "sentence": "Me importa un ___ lo que piense.",
           "answer": "pimiento",
-          "hint": "a pepper — 'I care a ___' (sarcastic)"
+          "hint": "a pepper — 'I care a ___' (sarcastic)",
+          "translation": "I don't care at all what he thinks."
         },
         {
           "sentence": "Pedirle puntualidad es como pedir ___ al olmo.",
           "answer": "peras",
-          "hint": "the fruit you can't ask an elm tree for"
+          "hint": "the fruit you can't ask an elm tree for",
+          "translation": "Asking him to be punctual is asking the impossible."
         }
       ]
     },

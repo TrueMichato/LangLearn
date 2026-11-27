@@ -20,9 +20,9 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "家に帰った時、___と言います。", "answer": "ただいま", "hint": "I'm home" },
-      { "sentence": "ご飯の前に___と言います。", "answer": "いただきます", "hint": "Let's eat/I humbly receive" },
-      { "sentence": "試験の前に友達に___と言いました。", "answer": "頑張って", "hint": "Do your best" }
+      { "sentence": "家に帰った時、___と言います。", "answer": "ただいま", "hint": "I'm home", "translation": "When I get home, I say 'tadaima'." },
+      { "sentence": "ご飯の前に___と言います。", "answer": "いただきます", "hint": "Let's eat/I humbly receive", "translation": "We say 'itadakimasu' before eating." },
+      { "sentence": "試験の前に友達に___と言いました。", "answer": "頑張って", "hint": "Do your best", "translation": "I said 'do your best' to my friend before the exam." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "「ただいま」の返事は何ですか。", "options": ["いってらっしゃい", "おかえりなさい", "お疲れ様です", "お大事に"], "answer": 1 },

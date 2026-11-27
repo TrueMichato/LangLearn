@@ -22,9 +22,9 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "___をください。", "answer": "水", "hint": "Water" },
-      { "sentence": "このラーメンは___です。", "answer": "おいしい", "hint": "Delicious" },
-      { "sentence": "コーヒーに___を入れますか？", "answer": "砂糖", "hint": "Sugar" }
+      { "sentence": "___をください。", "answer": "水", "hint": "Water", "translation": "Water, please." },
+      { "sentence": "このラーメンは___です。", "answer": "おいしい", "hint": "Delicious", "translation": "This ramen is delicious." },
+      { "sentence": "コーヒーに___を入れますか？", "answer": "砂糖", "hint": "Sugar", "translation": "Do you put sugar in your coffee?" }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "How do you say 'vegetables' in Japanese?", "options": ["野菜", "果物", "肉", "魚"], "answer": 0 },

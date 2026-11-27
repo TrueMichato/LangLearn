@@ -125,22 +125,26 @@
         {
           "sentence": "___ يَدْرُسُ تَارِيخَ الصُّخُورِ.",
           "answer": "عِلْمُ الْأَرْضِ",
-          "hint": "geology"
+          "hint": "geology",
+          "translation": "Geology studies the history of rocks."
         },
         {
           "sentence": "___ يَلْمَعُ دَاخِلَ الصَّخْرَةِ.",
           "answer": "مَعْدِنٌ",
-          "hint": "mineral"
+          "hint": "mineral",
+          "translation": "A mineral glitters inside the rock."
         },
         {
           "sentence": "___ يَمْتَدُّ تَحْتَ السَّهْلِ.",
           "answer": "صَدْعٌ",
-          "hint": "fault"
+          "hint": "fault",
+          "translation": "A fault runs beneath the plain."
         },
         {
           "sentence": "___ جَمِيلَةٌ تَنْمُو دَاخِلَ الْكَهْفِ.",
           "answer": "بِلَّوْرَةٌ",
-          "hint": "crystal"
+          "hint": "crystal",
+          "translation": "A beautiful crystal grows inside the cave."
         }
       ]
     },

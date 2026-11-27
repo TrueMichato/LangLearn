@@ -120,7 +120,10 @@ function validExercise(value: unknown, wordCount: number): value is VocabExercis
   return value.items.every((item: unknown) => {
     if (!record(item)) return false;
     if (value.type === 'typing') return strings(item, ['prompt', 'answer', 'hint']);
-    if (value.type === 'fill-blank') return strings(item, ['sentence', 'answer', 'hint']);
+    if (value.type === 'fill-blank') {
+      return strings(item, ['sentence', 'answer', 'hint']) &&
+        (item.translation === undefined || typeof item.translation === 'string');
+    }
     if (value.type !== 'multiple-choice' && value.type !== 'listening') return false;
     return strings(item, [value.type === 'listening' ? 'word' : 'question']) &&
       Array.isArray(item.options) && item.options.length >= 2 &&

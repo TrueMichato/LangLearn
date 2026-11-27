@@ -125,17 +125,20 @@
         {
           "sentence": "Cer ___ când sunt în pericol.",
           "answer": "ajutor",
-          "hint": "help"
+          "hint": "help",
+          "translation": "I ask for help when I am in danger."
         },
         {
           "sentence": "Pun ___ pe genunchi.",
           "answer": "bandaj",
-          "hint": "bandage"
+          "hint": "bandage",
+          "translation": "I put a bandage on the knee."
         },
         {
           "sentence": "Un ___ este lângă ușă.",
           "answer": "stingător",
-          "hint": "fire extinguisher"
+          "hint": "fire extinguisher",
+          "translation": "A fire extinguisher is near the door."
         }
       ]
     },

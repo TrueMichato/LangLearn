@@ -125,22 +125,26 @@
         {
           "sentence": "أَنِي أَحْتَاجْ ___ لِلزُّكَامْ.",
           "answer": "دَاوَةْ",
-          "hint": "medicine"
+          "hint": "medicine",
+          "translation": "I need medicine for the cold."
         },
         {
           "sentence": "___ مِنَ الصُّبُحْ.",
           "answer": "رَاسِي يُوجَعْنِي",
-          "hint": "my head hurts"
+          "hint": "my head hurts",
+          "translation": "My head has hurt since morning."
         },
         {
           "sentence": "عِنْدِي ___ عِنْدَ الدُّكْتُورْ بَاجِرْ.",
           "answer": "مَوْعِدْ",
-          "hint": "appointment"
+          "hint": "appointment",
+          "translation": "I have an appointment with the doctor tomorrow."
         },
         {
           "sentence": "___ وَمَا أَكْدَرْ أَدَاوِمْ.",
           "answer": "أَنِي تَعْبَانْ",
-          "hint": "I am sick"
+          "hint": "I am sick",
+          "translation": "I am sick and cannot go to work."
         }
       ]
     },

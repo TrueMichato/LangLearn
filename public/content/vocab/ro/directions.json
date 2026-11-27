@@ -125,17 +125,20 @@
         {
           "sentence": "Școala este ___ de casă.",
           "answer": "aproape",
-          "hint": "near"
+          "hint": "near",
+          "translation": "The school is near the house."
         },
         {
           "sentence": "Ne întâlnim la ___.",
           "answer": "colț",
-          "hint": "corner"
+          "hint": "corner",
+          "translation": "We meet at the corner."
         },
         {
           "sentence": "Scriu ___ pe plic.",
           "answer": "adresă",
-          "hint": "address"
+          "hint": "address",
+          "translation": "I write the address on the envelope."
         }
       ]
     },

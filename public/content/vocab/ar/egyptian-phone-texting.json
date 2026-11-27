@@ -125,22 +125,26 @@
         {
           "sentence": "___ بَعْدِ الشُّغْلْ.",
           "answer": "كَلِّمْنِي",
-          "hint": "call me"
+          "hint": "call me",
+          "translation": "Call me after work."
         },
         {
           "sentence": "مَعَاكْ ___ لِلْمُوبَايْلْ؟",
           "answer": "شَاحِن",
-          "hint": "charger"
+          "hint": "charger",
+          "translation": "Do you have a mobile charger?"
         },
         {
           "sentence": "جُوَّهَ الْمَتْرُو ___.",
           "answer": "مَا فِيشْ شَبَكَة",
-          "hint": "there is no signal"
+          "hint": "there is no signal",
+          "translation": "There is no signal inside the metro."
         },
         {
           "sentence": "___ لِينْكِ الْمَكَانْ.",
           "answer": "ابْعَتْلِي",
-          "hint": "send me"
+          "hint": "send me",
+          "translation": "Send me the location link."
         }
       ]
     },

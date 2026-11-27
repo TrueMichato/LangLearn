@@ -125,17 +125,20 @@
         {
           "sentence": "Aleg un ___ pentru prieten.",
           "answer": "cadou",
-          "hint": "gift"
+          "hint": "gift",
+          "translation": "I choose a gift for a friend."
         },
         {
           "sentence": "Vedem ___ de Anul Nou.",
           "answer": "artificii",
-          "hint": "fireworks"
+          "hint": "fireworks",
+          "translation": "We watch the New Year's fireworks."
         },
         {
           "sentence": "O ___ veche continuă în sat.",
           "answer": "tradiție",
-          "hint": "tradition"
+          "hint": "tradition",
+          "translation": "An old tradition continues in the village."
         }
       ]
     },

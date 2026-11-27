@@ -125,22 +125,26 @@
         {
           "sentence": "نَرْكَبُ ___ إِلَى الْوَسَطِ.",
           "answer": "مِتْرُو",
-          "hint": "metro"
+          "hint": "metro",
+          "translation": "We take the metro downtown."
         },
         {
           "sentence": "تَقَعُ ___ قُرْبَ الْفُنْدُقِ.",
           "answer": "مَحَطَّةُ الْمِتْرُو",
-          "hint": "metro station"
+          "hint": "metro station",
+          "translation": "The metro station is near the hotel."
         },
         {
           "sentence": "هٰذَا ___ الأَزْرَقُ.",
           "answer": "خَطُّ الْمِتْرُو",
-          "hint": "metro line"
+          "hint": "metro line",
+          "translation": "This is the blue metro line."
         },
         {
           "sentence": "انْتَظَرْنَا عَلَى ___.",
           "answer": "رَصِيفُ الانْتِظَارِ",
-          "hint": "platform"
+          "hint": "platform",
+          "translation": "We waited on the platform."
         }
       ]
     },

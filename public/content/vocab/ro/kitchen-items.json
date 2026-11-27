@@ -125,17 +125,20 @@
         {
           "sentence": "Beau ceai dintr-o ___.",
           "answer": "cană",
-          "hint": "mug"
+          "hint": "mug",
+          "translation": "I drink tea from a mug."
         },
         {
           "sentence": "Tai pâinea cu un ___.",
           "answer": "cuțit",
-          "hint": "knife"
+          "hint": "knife",
+          "translation": "I cut the bread with a knife."
         },
         {
           "sentence": "Prăjesc legumele în ___.",
           "answer": "tigaie",
-          "hint": "frying pan"
+          "hint": "frying pan",
+          "translation": "I fry the vegetables in a pan."
         }
       ]
     },

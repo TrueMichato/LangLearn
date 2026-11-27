@@ -125,22 +125,26 @@
         {
           "sentence": "___ الْبَيْتْ يَا صَاحْبِي.",
           "answer": "نَوَّرْتْ",
-          "hint": "you lit up the place"
+          "hint": "you lit up the place",
+          "translation": "You lit up the house, my friend."
         },
         {
           "sentence": "___ فِي اخْتِيَارِ الْهَدِيَّةْ.",
           "answer": "ذَوْقَكْ حِلْوْ",
-          "hint": "you have good taste"
+          "hint": "you have good taste",
+          "translation": "You have good taste in choosing the gift."
         },
         {
           "sentence": "___، الشُّغْلْ طَلَعْ جَمِيلْ.",
           "answer": "عَاشْ",
-          "hint": "well done"
+          "hint": "well done",
+          "translation": "Well done, the work turned out beautiful."
         },
         {
           "sentence": "___ وَيَا رِيتْ نِتْقَابِلْ تَانِي.",
           "answer": "فُرْصَةْ سَعِيدَةْ",
-          "hint": "nice to meet you"
+          "hint": "nice to meet you",
+          "translation": "Nice to meet you, and I hope we meet again."
         }
       ]
     },

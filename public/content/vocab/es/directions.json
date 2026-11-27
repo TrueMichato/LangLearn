@@ -125,22 +125,26 @@
         {
           "sentence": "Gira a la ___ en la esquina.",
           "answer": "derecha",
-          "hint": "opposite of left"
+          "hint": "opposite of left",
+          "translation": "Turn right at the corner."
         },
         {
           "sentence": "Sigue ___ dos cuadras.",
           "answer": "recto",
-          "hint": "straight ahead"
+          "hint": "straight ahead",
+          "translation": "Go straight for two blocks."
         },
         {
           "sentence": "Vive a tres ___ de aquí.",
           "answer": "cuadras",
-          "hint": "street segments"
+          "hint": "street segments",
+          "translation": "He lives three blocks from here."
         },
         {
           "sentence": "La playa está ___ de aquí.",
           "answer": "lejos",
-          "hint": "opposite of near"
+          "hint": "opposite of near",
+          "translation": "The beach is far from here."
         }
       ]
     },

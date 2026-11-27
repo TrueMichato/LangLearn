@@ -125,22 +125,26 @@
         {
           "sentence": "___ وَيَسَارٌ كَلِمَتَانِ مُهِمَّتَانِ.",
           "answer": "يَمِينٌ",
-          "hint": "right side"
+          "hint": "right side",
+          "translation": "Right and left are two important words."
         },
         {
           "sentence": "___ هُنَا وَيَمِينٌ هُنَاكَ.",
           "answer": "يَسَارٌ",
-          "hint": "left side"
+          "hint": "left side",
+          "translation": "Left is here and right is there."
         },
         {
           "sentence": "___ الْبَيْتِ شَجَرَةٌ.",
           "answer": "أَمَامَ",
-          "hint": "in front of"
+          "hint": "in front of",
+          "translation": "In front of the house is a tree."
         },
         {
           "sentence": "___ الْمَدْرَسَةِ حَدِيقَةٌ.",
           "answer": "خَلْفَ",
-          "hint": "behind"
+          "hint": "behind",
+          "translation": "Behind the school is a garden."
         }
       ]
     },

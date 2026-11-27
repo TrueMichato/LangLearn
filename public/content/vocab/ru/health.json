@@ -21,11 +21,11 @@
   "exercises": [
     { "type": "match", "pairs": 6 },
     { "type": "fill-blank", "items": [
-      { "sentence": "Его отвезли в ___.", "answer": "Больницу", "hint": "Hospital (accusative)" },
-      { "sentence": "Примите ___ после еды.", "answer": "Лекарство", "hint": "Medicine" },
-      { "sentence": "У меня высокая ___.", "answer": "Температура", "hint": "Temperature / Fever" },
-      { "sentence": "___ находится за углом.", "answer": "Аптека", "hint": "Pharmacy" },
-      { "sentence": "___ прошла после таблетки.", "answer": "Боль", "hint": "Pain" }
+      { "sentence": "Его отвезли в ___.", "answer": "Больницу", "hint": "Hospital (accusative)", "translation": "He was taken to the hospital." },
+      { "sentence": "Примите ___ после еды.", "answer": "Лекарство", "hint": "Medicine", "translation": "Take the medicine after meals." },
+      { "sentence": "У меня высокая ___.", "answer": "Температура", "hint": "Temperature / Fever", "translation": "I have a high temperature." },
+      { "sentence": "___ находится за углом.", "answer": "Аптека", "hint": "Pharmacy", "translation": "The pharmacy is around the corner." },
+      { "sentence": "___ прошла после таблетки.", "answer": "Боль", "hint": "Pain", "translation": "The pain went away after the pill." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "What does 'Врач' mean?", "options": ["Doctor", "Nurse", "Patient", "Pharmacist"], "answer": 0 },

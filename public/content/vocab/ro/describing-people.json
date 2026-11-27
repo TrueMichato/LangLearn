@@ -125,17 +125,20 @@
         {
           "sentence": "Fata are ___ și drept.",
           "answer": "păr lung",
-          "hint": "long hair"
+          "hint": "long hair",
+          "translation": "The girl has long, straight hair."
         },
         {
           "sentence": "Bărbatul ___ poartă o pălărie.",
           "answer": "chel",
-          "hint": "bald"
+          "hint": "bald",
+          "translation": "The bald man is wearing a hat."
         },
         {
           "sentence": "Vecinul ___ merge încet.",
           "answer": "bătrân",
-          "hint": "elderly"
+          "hint": "elderly",
+          "translation": "The elderly neighbor walks slowly."
         }
       ]
     },

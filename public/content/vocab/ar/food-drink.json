@@ -125,22 +125,26 @@
         {
           "sentence": "___ طَازَجٌ عَلَى الطَّاوِلَةِ.",
           "answer": "خُبْزٌ",
-          "hint": "bread"
+          "hint": "bread",
+          "translation": "Fresh bread is on the table."
         },
         {
           "sentence": "___ بَارِدٌ فِي الْكُوبِ.",
           "answer": "مَاءٌ",
-          "hint": "water"
+          "hint": "water",
+          "translation": "Cold water is in the cup."
         },
         {
           "sentence": "___ سَاخِنٌ بَعْدَ الْغَدَاءِ.",
           "answer": "شَايٌ",
-          "hint": "tea"
+          "hint": "tea",
+          "translation": "Hot tea after lunch."
         },
         {
           "sentence": "___ مُرَّةٌ فِي الصَّبَاحِ.",
           "answer": "قَهْوَةٌ",
-          "hint": "coffee"
+          "hint": "coffee",
+          "translation": "Bitter coffee in the morning."
         }
       ]
     },

@@ -22,9 +22,9 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "___が降っています。", "answer": "雨", "hint": "rain" },
-      { "sentence": "___は桜がきれいです。", "answer": "春", "hint": "spring" },
-      { "sentence": "___を持っていきましょう。", "answer": "傘", "hint": "umbrella" }
+      { "sentence": "___が降っています。", "answer": "雨", "hint": "rain", "translation": "It is raining." },
+      { "sentence": "___は桜がきれいです。", "answer": "春", "hint": "spring", "translation": "The cherry blossoms are beautiful in spring." },
+      { "sentence": "___を持っていきましょう。", "answer": "傘", "hint": "umbrella", "translation": "Let's bring an umbrella." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "「曇り」はどういう意味ですか？", "options": ["sunny", "cloudy", "rainy", "windy"], "answer": 1 },

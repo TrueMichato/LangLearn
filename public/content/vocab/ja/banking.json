@@ -21,11 +21,11 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "新しい___を開きました。", "answer": "口座", "hint": "Bank account" },
-      { "sentence": "毎月___しています。", "answer": "貯金", "hint": "Savings" },
-      { "sentence": "ATMでお金を___ました。", "answer": "引き出し", "hint": "Withdrew" },
-      { "sentence": "___で払いますか。", "answer": "現金", "hint": "Cash" },
-      { "sentence": "口座の___を確認しました。", "answer": "残高", "hint": "Balance" }
+      { "sentence": "新しい___を開きました。", "answer": "口座", "hint": "Bank account", "translation": "I opened a new bank account." },
+      { "sentence": "毎月___しています。", "answer": "貯金", "hint": "Savings", "translation": "I save money every month." },
+      { "sentence": "ATMでお金を___ました。", "answer": "引き出し", "hint": "Withdrew", "translation": "I withdrew money from the ATM." },
+      { "sentence": "___で払いますか。", "answer": "現金", "hint": "Cash", "translation": "Will you pay with cash?" },
+      { "sentence": "口座の___を確認しました。", "answer": "残高", "hint": "Balance", "translation": "I checked my account balance." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "お金を銀行に入れることを何と言いますか。", "options": ["引き出す", "預ける", "振り込み", "送金"], "answer": 1 },

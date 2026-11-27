@@ -125,22 +125,26 @@
         {
           "sentence": "عَنْدَكْ ___ فْالدَّارْ؟",
           "answer": "وِيفِي",
-          "hint": "Wi-Fi"
+          "hint": "Wi-Fi",
+          "translation": "Do you have Wi-Fi at home?"
         },
         {
           "sentence": "صِيفْطْ لِي ___ دَابَا.",
           "answer": "مِيسَاج",
-          "hint": "message"
+          "hint": "message",
+          "translation": "Send me a message now."
         },
         {
           "sentence": "___ دِيَالْ الْبُورْطَابْلْ ضْعِيفَةْ.",
           "answer": "بَاطْرِيَّة",
-          "hint": "battery"
+          "hint": "battery",
+          "translation": "The cellphone's battery is weak."
         },
         {
           "sentence": "مَا كَايْنَشْ ___ هْنَا.",
           "answer": "رِيزُو",
-          "hint": "network signal"
+          "hint": "network signal",
+          "translation": "There is no network signal here."
         }
       ]
     },

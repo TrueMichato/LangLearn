@@ -125,17 +125,20 @@
         {
           "sentence": "Cumpăr un ___ de făină.",
           "answer": "kilogram",
-          "hint": "kilogram"
+          "hint": "kilogram",
+          "translation": "I buy one kilogram of flour."
         },
         {
           "sentence": "Desenez un ___ pe hârtie.",
           "answer": "cerc",
-          "hint": "circle"
+          "hint": "circle",
+          "translation": "I draw a circle on paper."
         },
         {
           "sentence": "Taie o ___ de pâine.",
           "answer": "bucată",
-          "hint": "piece"
+          "hint": "piece",
+          "translation": "Cut a piece of bread."
         }
       ]
     },

@@ -119,10 +119,10 @@
     {
       "type": "fill-blank",
       "items": [
-        { "sentence": "Os ___ apagaram o incêndio rapidamente.", "answer": "bombeiros", "hint": "professionals who fight fires" },
-        { "sentence": "Fui à ___ registrar um boletim de ocorrência.", "answer": "delegacia", "hint": "place where police work" },
-        { "sentence": "A situação é ___, precisamos agir agora.", "answer": "urgente", "hint": "requiring immediate action" },
-        { "sentence": "___! Alguém me ajude!", "answer": "Socorro", "hint": "cry for help" }
+        { "sentence": "Os ___ apagaram o incêndio rapidamente.", "answer": "bombeiros", "hint": "professionals who fight fires", "translation": "The firefighters put out the fire quickly." },
+        { "sentence": "Fui à ___ registrar um boletim de ocorrência.", "answer": "delegacia", "hint": "place where police work", "translation": "I went to the police station to file a report." },
+        { "sentence": "A situação é ___, precisamos agir agora.", "answer": "urgente", "hint": "requiring immediate action", "translation": "The situation is urgent, we need to act now." },
+        { "sentence": "___! Alguém me ajude!", "answer": "Socorro", "hint": "cry for help", "translation": "Help! Somebody help me!" }
       ]
     },
     {
