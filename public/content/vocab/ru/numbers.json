@@ -22,9 +22,9 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "У меня ___ брата.", "answer": "Два", "hint": "Two" },
-      { "sentence": "В неделе ___ дней.", "answer": "Семь", "hint": "Seven" },
-      { "sentence": "___ страниц в книге.", "answer": "Сто", "hint": "One hundred" }
+      { "sentence": "У меня ___ брата.", "answer": "Два", "hint": "Two", "translation": "I have two brothers." },
+      { "sentence": "В неделе ___ дней.", "answer": "Семь", "hint": "Seven", "translation": "There are seven days in a week." },
+      { "sentence": "___ страниц в книге.", "answer": "Сто", "hint": "One hundred", "translation": "One hundred pages in the book." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "How do you say 'Five' in Russian?", "options": ["Пять", "Три", "Семь", "Десять"], "answer": 0 },

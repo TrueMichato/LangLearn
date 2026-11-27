@@ -132,17 +132,20 @@
         {
           "sentence": "Pot ___ română puțin.",
           "answer": "vorbi",
-          "hint": "to speak"
+          "hint": "to speak",
+          "translation": "I can speak a little Romanian."
         },
         {
           "sentence": "Pot ___ cafea acum.",
           "answer": "face",
-          "hint": "to make"
+          "hint": "to make",
+          "translation": "I can make coffee now."
         },
         {
           "sentence": "Poți ___ la cină?",
           "answer": "veni",
-          "hint": "to come"
+          "hint": "to come",
+          "translation": "Can you come to dinner?"
         }
       ]
     },

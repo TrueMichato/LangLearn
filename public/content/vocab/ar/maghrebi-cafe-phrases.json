@@ -125,22 +125,26 @@
         {
           "sentence": "___؟ كِيفْ دَايْرْ؟",
           "answer": "لَا بَاسْ",
-          "hint": "all good?"
+          "hint": "all good?",
+          "translation": "All good? How are you doing?"
         },
         {
           "sentence": "___ آتَايْ بِالنَّعْنَاعْ.",
           "answer": "بَغِيتْ",
-          "hint": "I want"
+          "hint": "I want",
+          "translation": "I want mint tea."
         },
         {
           "sentence": "___ هَادْ الْقَهْوَةْ؟",
           "answer": "شْحَالْ",
-          "hint": "how much"
+          "hint": "how much",
+          "translation": "How much is this coffee?"
         },
         {
           "sentence": "___ الْمَحَطَّةْ الْقَرِيبَةْ؟",
           "answer": "فِينْ",
-          "hint": "where"
+          "hint": "where",
+          "translation": "Where is the nearby station?"
         }
       ]
     },

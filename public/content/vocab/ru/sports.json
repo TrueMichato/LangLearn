@@ -21,11 +21,11 @@
   "exercises": [
     { "type": "match", "pairs": 6 },
     { "type": "fill-blank", "items": [
-      { "sentence": "Мы играем в ___ каждую субботу.", "answer": "Футбол", "hint": "Football / Soccer" },
-      { "sentence": "Наша ___ выиграла матч.", "answer": "Команда", "hint": "Team" },
-      { "sentence": "___ начинается в шесть.", "answer": "Тренировка", "hint": "Training / Workout" },
-      { "sentence": "Я хожу в ___ три раза в неделю.", "answer": "Бассейн", "hint": "Swimming pool" },
-      { "sentence": "Он ходит в ___ каждый день.", "answer": "Спортзал", "hint": "Gym" }
+      { "sentence": "Мы играем в ___ каждую субботу.", "answer": "Футбол", "hint": "Football / Soccer", "translation": "We play soccer every Saturday." },
+      { "sentence": "Наша ___ выиграла матч.", "answer": "Команда", "hint": "Team", "translation": "Our team won the match." },
+      { "sentence": "___ начинается в шесть.", "answer": "Тренировка", "hint": "Training / Workout", "translation": "The training starts at six." },
+      { "sentence": "Я хожу в ___ три раза в неделю.", "answer": "Бассейн", "hint": "Swimming pool", "translation": "I go to the swimming pool three times a week." },
+      { "sentence": "Он ходит в ___ каждый день.", "answer": "Спортзал", "hint": "Gym", "translation": "He goes to the gym every day." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "What does 'Плавание' mean?", "options": ["Swimming", "Running", "Diving", "Sailing"], "answer": 0 },

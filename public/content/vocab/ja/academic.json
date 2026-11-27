@@ -21,9 +21,9 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "来週___がある。", "answer": "試験", "hint": "exam" },
-      { "sentence": "大学で___をしている。", "answer": "研究", "hint": "research" },
-      { "sentence": "___を提出した。", "answer": "宿題", "hint": "homework" }
+      { "sentence": "来週___がある。", "answer": "試験", "hint": "exam", "translation": "There is an exam next week." },
+      { "sentence": "大学で___をしている。", "answer": "研究", "hint": "research", "translation": "I am doing research at the university." },
+      { "sentence": "___を提出した。", "answer": "宿題", "hint": "homework", "translation": "I submitted my homework." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "「論文」はどういう意味ですか？", "options": ["textbook", "thesis / paper", "homework", "experiment"], "answer": 1 },

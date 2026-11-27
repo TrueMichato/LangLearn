@@ -125,17 +125,20 @@
         {
           "sentence": "Lipesc un ___ pe plic.",
           "answer": "timbru",
-          "hint": "stamp"
+          "hint": "stamp",
+          "translation": "I stick a stamp on the envelope."
         },
         {
           "sentence": "Completez un ___ la ghișeu.",
           "answer": "formular",
-          "hint": "form"
+          "hint": "form",
+          "translation": "I fill out a form at the counter."
         },
         {
           "sentence": "Am pregătit un ___ cu toate actele.",
           "answer": "dosar",
-          "hint": "file"
+          "hint": "file",
+          "translation": "I prepared a file with all the papers."
         }
       ]
     },

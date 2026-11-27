@@ -119,10 +119,10 @@
     {
       "type": "fill-blank",
       "items": [
-        { "sentence": "Preaqueça o ___ a 180 graus.", "answer": "forno", "hint": "appliance for baking" },
-        { "sentence": "Essa comida precisa de mais ___.", "answer": "tempero", "hint": "what adds flavor to food" },
-        { "sentence": "___ os legumes em pedaços pequenos.", "answer": "Corte", "hint": "use a knife to divide" },
-        { "sentence": "O ___ de tomate está pronto.", "answer": "molho", "hint": "liquid condiment for food" }
+        { "sentence": "Preaqueça o ___ a 180 graus.", "answer": "forno", "hint": "appliance for baking", "translation": "Preheat the oven to 180 degrees." },
+        { "sentence": "Essa comida precisa de mais ___.", "answer": "tempero", "hint": "what adds flavor to food", "translation": "This food needs more seasoning." },
+        { "sentence": "___ os legumes em pedaços pequenos.", "answer": "Corte", "hint": "use a knife to divide", "translation": "Cut the vegetables into small pieces." },
+        { "sentence": "O ___ de tomate está pronto.", "answer": "molho", "hint": "liquid condiment for food", "translation": "The tomato sauce is ready." }
       ]
     },
     {

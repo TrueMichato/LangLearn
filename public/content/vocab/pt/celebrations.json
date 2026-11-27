@@ -119,9 +119,9 @@
     {
       "type": "fill-blank",
       "items": [
-        { "sentence": "No ___, a família toda se reúne.", "answer": "Natal", "hint": "December 25th celebration" },
-        { "sentence": "Vamos fazer um ___ no domingo.", "answer": "churrasco", "hint": "Brazilian-style outdoor grilling" },
-        { "sentence": "Ela usou uma ___ de super-heroína no Carnaval.", "answer": "fantasia", "hint": "outfit worn for a celebration" }
+        { "sentence": "No ___, a família toda se reúne.", "answer": "Natal", "hint": "December 25th celebration", "translation": "At Christmas, the whole family gets together." },
+        { "sentence": "Vamos fazer um ___ no domingo.", "answer": "churrasco", "hint": "Brazilian-style outdoor grilling", "translation": "Let's have a barbecue on Sunday." },
+        { "sentence": "Ela usou uma ___ de super-heroína no Carnaval.", "answer": "fantasia", "hint": "outfit worn for a celebration", "translation": "She wore a superheroine costume at Carnival." }
       ]
     },
     {

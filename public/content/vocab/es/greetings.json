@@ -118,22 +118,26 @@
         {
           "sentence": "___, ¿cómo estás?",
           "answer": "Hola",
-          "hint": "informal greeting"
+          "hint": "informal greeting",
+          "translation": "Hi, how are you?"
         },
         {
           "sentence": "Un café, ___.",
           "answer": "por favor",
-          "hint": "please"
+          "hint": "please",
+          "translation": "A coffee, please."
         },
         {
           "sentence": "___, ¿dónde está el baño?",
           "answer": "Disculpe",
-          "hint": "formal excuse me"
+          "hint": "formal excuse me",
+          "translation": "Excuse me, where is the bathroom?"
         },
         {
           "sentence": "Muchas ___ por todo.",
           "answer": "gracias",
-          "hint": "thanks"
+          "hint": "thanks",
+          "translation": "Thank you very much for everything."
         }
       ]
     },

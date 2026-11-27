@@ -125,22 +125,26 @@
         {
           "sentence": "الطِّفْلُ ___ فِي الْحَدِيقَةِ.",
           "answer": "سَعِيدٌ",
-          "hint": "happy"
+          "hint": "happy",
+          "translation": "The child is happy in the garden."
         },
         {
           "sentence": "الْوَلَدُ ___ بَعْدَ السَّفَرِ.",
           "answer": "حَزِينٌ",
-          "hint": "sad"
+          "hint": "sad",
+          "translation": "The boy is sad after the trip."
         },
         {
           "sentence": "الْبَيْتُ ___ الْيَوْمَ.",
           "answer": "نَظِيفٌ",
-          "hint": "clean"
+          "hint": "clean",
+          "translation": "The house is clean today."
         },
         {
           "sentence": "الْحِذَاءُ ___ بَعْدَ الْمَطَرِ.",
           "answer": "وَسِخٌ",
-          "hint": "dirty"
+          "hint": "dirty",
+          "translation": "The shoe is dirty after the rain."
         }
       ]
     },

@@ -22,9 +22,9 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "___はいい天気ですね。", "answer": "今日", "hint": "Today" },
-      { "sentence": "___に桜が咲きます。", "answer": "四月", "hint": "April" },
-      { "sentence": "___は雨でした。", "answer": "昨日", "hint": "Yesterday" }
+      { "sentence": "___はいい天気ですね。", "answer": "今日", "hint": "Today", "translation": "It's nice weather today, isn't it?" },
+      { "sentence": "___に桜が咲きます。", "answer": "四月", "hint": "April", "translation": "Cherry blossoms bloom in April." },
+      { "sentence": "___は雨でした。", "answer": "昨日", "hint": "Yesterday", "translation": "It rained yesterday." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "How do you say 'Monday' in Japanese?", "options": ["月曜日", "火曜日", "金曜日", "日曜日"], "answer": 0 },

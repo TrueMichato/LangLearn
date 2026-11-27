@@ -21,9 +21,9 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "O ___ está brincando no quintal.", "answer": "cachorro", "hint": "dog" },
-      { "sentence": "A ___ pousou na flor.", "answer": "borboleta", "hint": "butterfly" },
-      { "sentence": "O ___ repete tudo que ouve.", "answer": "papagaio", "hint": "parrot" }
+      { "sentence": "O ___ está brincando no quintal.", "answer": "cachorro", "hint": "dog", "translation": "The dog is playing in the yard." },
+      { "sentence": "A ___ pousou na flor.", "answer": "borboleta", "hint": "butterfly", "translation": "The butterfly landed on the flower." },
+      { "sentence": "O ___ repete tudo que ouve.", "answer": "papagaio", "hint": "parrot", "translation": "The parrot repeats everything it hears." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "What animal is 'gato'?", "options": ["dog", "bird", "cat", "horse"], "answer": 2 },

@@ -21,9 +21,9 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "Я иду в ___ за продуктами.", "answer": "Магазин", "hint": "Store" },
-      { "sentence": "Какая ___ этого товара?", "answer": "Цена", "hint": "Price" },
-      { "sentence": "Можно ___ картой?", "answer": "Платить", "hint": "To pay" }
+      { "sentence": "Я иду в ___ за продуктами.", "answer": "Магазин", "hint": "Store", "translation": "I'm going to the store for groceries." },
+      { "sentence": "Какая ___ этого товара?", "answer": "Цена", "hint": "Price", "translation": "What is the price of this item?" },
+      { "sentence": "Можно ___ картой?", "answer": "Платить", "hint": "To pay", "translation": "Can I pay by card?" }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "What does 'Дёшево' mean?", "options": ["Cheap", "Expensive", "Free", "Beautiful"], "answer": 0 },

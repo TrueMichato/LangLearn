@@ -24,7 +24,10 @@ export interface MatchExercise {
 export interface FillBlankItem {
   sentence: string;
   answer: string;
+  /** Short English meaning of the missing word (legacy cue; shown after answering). */
   hint: string;
+  /** Full English translation of the completed sentence, shown as the cue before answering. */
+  translation?: string;
 }
 
 export interface FillBlankExercise {

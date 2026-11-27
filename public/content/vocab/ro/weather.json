@@ -125,17 +125,20 @@
         {
           "sentence": "Un ___ gri acoperă soarele.",
           "answer": "nor",
-          "hint": "cloud"
+          "hint": "cloud",
+          "translation": "A gray cloud covers the sun."
         },
         {
           "sentence": "În ___ mergem la mare.",
           "answer": "vară",
-          "hint": "summer"
+          "hint": "summer",
+          "translation": "In summer we go to the seaside."
         },
         {
           "sentence": "Un ___ apare după ploaie.",
           "answer": "curcubeu",
-          "hint": "rainbow"
+          "hint": "rainbow",
+          "translation": "A rainbow appears after rain."
         }
       ]
     },

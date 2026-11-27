@@ -21,9 +21,9 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "___は新しい政策を発表しました。", "answer": "政府", "hint": "government" },
-      { "sentence": "台風の___が広がっています。", "answer": "被害", "hint": "damage" },
-      { "sentence": "サービスの___に取り組んでいます。", "answer": "改善", "hint": "improvement" }
+      { "sentence": "___は新しい政策を発表しました。", "answer": "政府", "hint": "government", "translation": "The government announced a new policy." },
+      { "sentence": "台風の___が広がっています。", "answer": "被害", "hint": "damage", "translation": "The damage from the typhoon is spreading." },
+      { "sentence": "サービスの___に取り組んでいます。", "answer": "改善", "hint": "improvement", "translation": "We are working on service improvement." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "What does 調査 mean?", "options": ["negotiation", "investigation/survey", "announcement", "regulation"], "answer": 1 },

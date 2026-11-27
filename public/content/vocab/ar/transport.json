@@ -125,22 +125,26 @@
         {
           "sentence": "___ حَمْرَاءُ أَمَامَ الْبَيْتِ.",
           "answer": "سَيَّارَةٌ",
-          "hint": "car"
+          "hint": "car",
+          "translation": "A red car is in front of the house."
         },
         {
           "sentence": "___ كَبِيرَةٌ تَقِفُ هُنَا.",
           "answer": "حَافِلَةٌ",
-          "hint": "bus"
+          "hint": "bus",
+          "translation": "A large bus stops here."
         },
         {
           "sentence": "___ سَرِيعٌ يَصِلُ الآنَ.",
           "answer": "قِطَارٌ",
-          "hint": "train"
+          "hint": "train",
+          "translation": "A fast train is arriving now."
         },
         {
           "sentence": "___ جَدِيدَةٌ فِي الْمَطَارِ.",
           "answer": "طَائِرَةٌ",
-          "hint": "airplane"
+          "hint": "airplane",
+          "translation": "A new airplane is at the airport."
         }
       ]
     },

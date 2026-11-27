@@ -21,11 +21,11 @@
   "exercises": [
     { "type": "match", "pairs": 6 },
     { "type": "fill-blank", "items": [
-      { "sentence": "Можно посмотреть ___?", "answer": "Меню", "hint": "Menu" },
-      { "sentence": "Принесите, пожалуйста, ___.", "answer": "Счёт", "hint": "Bill / Check" },
-      { "sentence": "Я забронировал ___ на двоих.", "answer": "Столик", "hint": "Table" },
-      { "sentence": "___ принёс наш заказ.", "answer": "Официант", "hint": "Waiter" },
-      { "sentence": "Мне нужна ___ для супа.", "answer": "Ложка", "hint": "Spoon" }
+      { "sentence": "Можно посмотреть ___?", "answer": "Меню", "hint": "Menu", "translation": "May I see the menu?" },
+      { "sentence": "Принесите, пожалуйста, ___.", "answer": "Счёт", "hint": "Bill / Check", "translation": "The check, please." },
+      { "sentence": "Я забронировал ___ на двоих.", "answer": "Столик", "hint": "Table", "translation": "I reserved a table for two." },
+      { "sentence": "___ принёс наш заказ.", "answer": "Официант", "hint": "Waiter", "translation": "The waiter brought our order." },
+      { "sentence": "Мне нужна ___ для супа.", "answer": "Ложка", "hint": "Spoon", "translation": "I need a spoon for the soup." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "What does 'Чаевые' mean?", "options": ["Tip (gratuity)", "Tea", "Change", "Receipt"], "answer": 0 },

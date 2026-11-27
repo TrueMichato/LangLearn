@@ -125,22 +125,26 @@
         {
           "sentence": "___ يَدْرُسُ تَغَيُّرَ الْمَوَادِّ.",
           "answer": "عِلْمُ الْكِيمِيَاءِ",
-          "hint": "chemistry"
+          "hint": "chemistry",
+          "translation": "Chemistry studies how substances change."
         },
         {
           "sentence": "___ جِسْمٌ صَغِيرٌ مِنَ الْمَادَّةِ.",
           "answer": "ذَرَّةٌ",
-          "hint": "atom"
+          "hint": "atom",
+          "translation": "An atom is a tiny particle of matter."
         },
         {
           "sentence": "___ مَزِيجٌ مُتَجَانِسٌ.",
           "answer": "مَحْلُولٌ",
-          "hint": "solution"
+          "hint": "solution",
+          "translation": "A solution is a homogeneous mixture."
         },
         {
           "sentence": "___ أَدَاةٌ زُجَاجِيَّةٌ صَغِيرَةٌ.",
           "answer": "أُنْبُوبُ اِخْتِبَارٍ",
-          "hint": "test tube"
+          "hint": "test tube",
+          "translation": "A test tube is a small glass instrument."
         }
       ]
     },

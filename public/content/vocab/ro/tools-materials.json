@@ -125,17 +125,20 @@
         {
           "sentence": "Bat un ___ cu ciocanul.",
           "answer": "cui",
-          "hint": "nail"
+          "hint": "nail",
+          "translation": "I hammer in a nail."
         },
         {
           "sentence": "Strâng un ___ cu șurubelnița.",
           "answer": "șurub",
-          "hint": "screw"
+          "hint": "screw",
+          "translation": "I tighten a screw with the screwdriver."
         },
         {
           "sentence": "Am nevoie de ___ pentru perete.",
           "answer": "vopsea",
-          "hint": "paint"
+          "hint": "paint",
+          "translation": "I need paint for the wall."
         }
       ]
     },

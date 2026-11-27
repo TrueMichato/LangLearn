@@ -125,17 +125,20 @@
         {
           "sentence": "Am uitat ___ pentru contul meu.",
           "answer": "parola",
-          "hint": "password"
+          "hint": "password",
+          "translation": "I forgot the password for my account."
         },
         {
           "sentence": "Las un ___ politicos la postare.",
           "answer": "comentariu",
-          "hint": "comment"
+          "hint": "comment",
+          "translation": "I leave a polite comment on the post."
         },
         {
           "sentence": "Am primit o ___ pe telefon.",
           "answer": "notificare",
-          "hint": "notification"
+          "hint": "notification",
+          "translation": "I got a notification on my phone."
         }
       ]
     },

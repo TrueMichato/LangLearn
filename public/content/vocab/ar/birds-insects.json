@@ -125,22 +125,26 @@
         {
           "sentence": "___ صَغِيرٌ يُغَرِّدُ فَوْقَ الشَّجَرَةِ.",
           "answer": "طَائِرٌ",
-          "hint": "bird"
+          "hint": "bird",
+          "translation": "A small bird sings above the tree."
         },
         {
           "sentence": "___ بُنِّيٌّ يَبْحَثُ عَنْ حَبَّاتٍ.",
           "answer": "عُصْفُورٌ",
-          "hint": "sparrow"
+          "hint": "sparrow",
+          "translation": "A brown sparrow searches for grains."
         },
         {
           "sentence": "___ بَيْضَاءُ طَارَتْ فَوْقَ السَّاحَةِ.",
           "answer": "حَمَامَةٌ",
-          "hint": "dove / pigeon"
+          "hint": "dove / pigeon",
+          "translation": "A white dove flew above the square."
         },
         {
           "sentence": "___ كَبِيرٌ يُحَلِّقُ فَوْقَ الْجَبَلِ.",
           "answer": "نَسْرٌ",
-          "hint": "eagle / vulture"
+          "hint": "eagle / vulture",
+          "translation": "A large eagle soars above the mountain."
         }
       ]
     },

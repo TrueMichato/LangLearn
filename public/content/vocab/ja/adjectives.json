@@ -23,9 +23,9 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "今日はとても___。", "answer": "暑い", "hint": "hot (weather)" },
-      { "sentence": "日本語は___。", "answer": "難しい", "hint": "difficult" },
-      { "sentence": "この猫は___。", "answer": "小さい", "hint": "small" }
+      { "sentence": "今日はとても___。", "answer": "暑い", "hint": "hot (weather)", "translation": "Today is very hot." },
+      { "sentence": "日本語は___。", "answer": "難しい", "hint": "difficult", "translation": "Japanese is difficult." },
+      { "sentence": "この猫は___。", "answer": "小さい", "hint": "small", "translation": "This cat is small." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "「高い」はどういう意味ですか？", "options": ["cheap", "expensive / tall", "short", "long"], "answer": 1 },

@@ -125,22 +125,26 @@
         {
           "sentence": "___ que tienes razón.",
           "answer": "Creo",
-          "hint": "I believe"
+          "hint": "I believe",
+          "translation": "I think you’re right."
         },
         {
           "sentence": "Estoy de ___ contigo.",
           "answer": "acuerdo",
-          "hint": "to agree"
+          "hint": "to agree",
+          "translation": "I agree with you."
         },
         {
           "sentence": "Tienes ___ en eso.",
           "answer": "razón",
-          "hint": "to be right"
+          "hint": "to be right",
+          "translation": "You’re right about that."
         },
         {
           "sentence": "___ venga mañana.",
           "answer": "Quizás",
-          "hint": "maybe"
+          "hint": "maybe",
+          "translation": "Maybe I’ll come tomorrow."
         }
       ]
     },

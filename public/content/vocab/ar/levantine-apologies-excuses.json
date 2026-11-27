@@ -125,22 +125,26 @@
         {
           "sentence": "___ إِذَا زَعَّلْتَكْ.",
           "answer": "سَامِحْنِي",
-          "hint": "forgive me"
+          "hint": "forgive me",
+          "translation": "Forgive me if I upset you."
         },
         {
           "sentence": "___، مَا كَانْ لَازِمْ أَرُدّ هِيكْ.",
           "answer": "حَقَّكْ عَلَيّي",
-          "hint": "my fault"
+          "hint": "my fault",
+          "translation": "You are right; I should not have answered like that."
         },
         {
           "sentence": "___ وَمَا قِدِرْتْ إِتَّصِلْ.",
           "answer": "بَطَّارِيَّتِي خَلْصِتْ",
-          "hint": "my battery died"
+          "hint": "my battery died",
+          "translation": "My battery died and I could not call."
         },
         {
           "sentence": "___ بِقَهْوَةْ بُكْرَا.",
           "answer": "خَلِّينِي عَوِّضَكْ",
-          "hint": "let me make it up to you"
+          "hint": "let me make it up to you",
+          "translation": "Let me make it up to you with coffee tomorrow."
         }
       ]
     },

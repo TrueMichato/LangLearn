@@ -125,22 +125,26 @@
         {
           "sentence": "تُغَطِّي ___ جُزْءًا مِنَ الطَّلَبِ.",
           "answer": "طَاقَةٌ شَمْسِيَّةٌ",
-          "hint": "solar energy"
+          "hint": "solar energy",
+          "translation": "Solar energy covers part of the demand."
         },
         {
           "sentence": "يُسَاعِدُ ___ عَلَى خَفْضِ الْفَاتُورَةِ.",
           "answer": "تَرْشِيدٌ",
-          "hint": "conservation"
+          "hint": "conservation",
+          "translation": "Conservation helps lower the bill."
         },
         {
           "sentence": "وَصَلَتْ ___ الْكَهْرَبَاءِ صَبَاحًا.",
           "answer": "فَاتُورَةٌ",
-          "hint": "bill"
+          "hint": "bill",
+          "translation": "The electricity bill arrived in the morning."
         },
         {
           "sentence": "اِشْتَغَلَ ___ أَثْنَاءَ الِانْقِطَاعِ.",
           "answer": "مَوَلِّدٌ",
-          "hint": "generator"
+          "hint": "generator",
+          "translation": "The generator ran during the power outage."
         }
       ]
     },

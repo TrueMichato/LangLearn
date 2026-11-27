@@ -125,22 +125,26 @@
         {
           "sentence": "___ بَاجِرْ الصُّبُحْ.",
           "answer": "عِنْدِي مُحَاضَرَةْ",
-          "hint": "I have a lecture"
+          "hint": "I have a lecture",
+          "translation": "I have a lecture tomorrow morning."
         },
         {
           "sentence": "___ الرِّيَاضِيَّاتْ صَعْبْ شْوَيَّةْ.",
           "answer": "أِمْتِحَانْ",
-          "hint": "exam"
+          "hint": "exam",
+          "translation": "The math exam is a little hard."
         },
         {
           "sentence": "___ عِنْدْنَا دَوَامْ مُبَكِّرْ.",
           "answer": "بَاجِرْ",
-          "hint": "tomorrow"
+          "hint": "tomorrow",
+          "translation": "Tomorrow we have early classes."
         },
         {
           "sentence": "___ هَادِيَةْ وَمُنَاسِبَةْ لِلدِّرَاسَةْ.",
           "answer": "الْمَكْتَبَةْ",
-          "hint": "library"
+          "hint": "library",
+          "translation": "The library is quiet and suitable for studying."
         }
       ]
     },

@@ -139,17 +139,20 @@
         {
           "sentence": "Biletul costă ___ de lei.",
           "answer": "douăzeci",
-          "hint": "twenty"
+          "hint": "twenty",
+          "translation": "The ticket costs twenty lei."
         },
         {
           "sentence": "La ora ___ plec de acasă.",
           "answer": "opt",
-          "hint": "eight"
+          "hint": "eight",
+          "translation": "At eight o’clock I leave home."
         },
         {
           "sentence": "___ de oameni așteaptă în gară.",
           "answer": "o sută",
-          "hint": "one hundred"
+          "hint": "one hundred",
+          "translation": "One hundred people are waiting at the train station."
         }
       ]
     },

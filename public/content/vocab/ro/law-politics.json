@@ -125,17 +125,20 @@
         {
           "sentence": "Fiecare ___ contează.",
           "answer": "vot",
-          "hint": "vote"
+          "hint": "vote",
+          "translation": "Every vote counts."
         },
         {
           "sentence": "Un ___ respectă legea.",
           "answer": "cetățean",
-          "hint": "citizen"
+          "hint": "citizen",
+          "translation": "A citizen respects the law."
         },
         {
           "sentence": "Vreau ___ de exprimare pentru toți.",
           "answer": "libertate",
-          "hint": "freedom"
+          "hint": "freedom",
+          "translation": "I want freedom of expression for everyone."
         }
       ]
     },

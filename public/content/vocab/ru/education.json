@@ -21,11 +21,11 @@
   "exercises": [
     { "type": "match", "pairs": 6 },
     { "type": "fill-blank", "items": [
-      { "sentence": "___ начинается в девять утра.", "answer": "Урок", "hint": "Lesson" },
-      { "sentence": "Я забыл сделать ___.", "answer": "Домашнее задание", "hint": "Homework" },
-      { "sentence": "Откройте ___ на странице двадцать.", "answer": "Учебник", "hint": "Textbook" },
-      { "sentence": "Математика — мой любимый ___.", "answer": "Предмет", "hint": "Subject" },
-      { "sentence": "Она получила ___ с отличием.", "answer": "Диплом", "hint": "Diploma / Degree" }
+      { "sentence": "___ начинается в девять утра.", "answer": "Урок", "hint": "Lesson", "translation": "The lesson starts at nine in the morning." },
+      { "sentence": "Я забыл сделать ___.", "answer": "Домашнее задание", "hint": "Homework", "translation": "I forgot to do my homework." },
+      { "sentence": "Откройте ___ на странице двадцать.", "answer": "Учебник", "hint": "Textbook", "translation": "Open your textbook to page twenty." },
+      { "sentence": "Математика — мой любимый ___.", "answer": "Предмет", "hint": "Subject", "translation": "Math is my favorite subject." },
+      { "sentence": "Она получила ___ с отличием.", "answer": "Диплом", "hint": "Diploma / Degree", "translation": "She received her diploma with honors." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "What does 'Экзамен' mean?", "options": ["Exam", "Exercise", "Example", "Experiment"], "answer": 0 },

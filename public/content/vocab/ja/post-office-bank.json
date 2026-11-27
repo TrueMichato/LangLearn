@@ -21,9 +21,9 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "銀行で___を開いた。", "answer": "口座", "hint": "bank account" },
-      { "sentence": "大事な書類は___で送る。", "answer": "書留", "hint": "registered mail" },
-      { "sentence": "___に記入した。", "answer": "申込書", "hint": "application form" }
+      { "sentence": "銀行で___を開いた。", "answer": "口座", "hint": "bank account", "translation": "I opened a bank account." },
+      { "sentence": "大事な書類は___で送る。", "answer": "書留", "hint": "registered mail", "translation": "I send important documents by registered mail." },
+      { "sentence": "___に記入した。", "answer": "申込書", "hint": "application form", "translation": "I filled out the application form." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "「振り込み」はどういう意味ですか？", "options": ["withdrawal", "bank transfer", "savings", "fee"], "answer": 1 },

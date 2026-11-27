@@ -125,22 +125,26 @@
         {
           "sentence": "Me duele la ___.",
           "answer": "cabeza",
-          "hint": "top of body"
+          "hint": "top of body",
+          "translation": "My head hurts."
         },
         {
           "sentence": "Lávate las ___.",
           "answer": "manos",
-          "hint": "what you use to hold things"
+          "hint": "what you use to hold things",
+          "translation": "Wash your hands."
         },
         {
           "sentence": "Tengo los ___ verdes.",
           "answer": "ojos",
-          "hint": "organs of sight"
+          "hint": "organs of sight",
+          "translation": "I have green eyes."
         },
         {
           "sentence": "Me lastimé la ___ jugando.",
           "answer": "rodilla",
-          "hint": "joint in middle of leg"
+          "hint": "joint in middle of leg",
+          "translation": "I hurt my knee playing."
         }
       ]
     },

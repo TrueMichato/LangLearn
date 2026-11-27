@@ -125,22 +125,26 @@
         {
           "sentence": "___ فِي الْمَحْفَظَةِ.",
           "answer": "نُقُودٌ",
-          "hint": "money"
+          "hint": "money",
+          "translation": "The money is in the wallet."
         },
         {
           "sentence": "___ قَرِيبٌ مِنَ الْبَيْتِ.",
           "answer": "مَصْرِفٌ",
-          "hint": "bank"
+          "hint": "bank",
+          "translation": "The bank is near the house."
         },
         {
           "sentence": "لَدَى نُورٍ ___ جَدِيدٌ.",
           "answer": "حِسَابٌ مَصْرِفِيٌّ",
-          "hint": "bank account"
+          "hint": "bank account",
+          "translation": "Nour has a new bank account."
         },
         {
           "sentence": "___ مُفِيدَةٌ عِنْدَ السَّفَرِ.",
           "answer": "بِطَاقَةٌ اِئْتِمَانِيَّةٌ",
-          "hint": "credit card"
+          "hint": "credit card",
+          "translation": "A credit card is useful when traveling."
         }
       ]
     },

@@ -125,22 +125,26 @@
         {
           "sentence": "هٰذِهِ ___ كَامِلَةٌ.",
           "answer": "مُوَاطَنَةٌ",
-          "hint": "citizenship"
+          "hint": "citizenship",
+          "translation": "This is full citizenship."
         },
         {
           "sentence": "يَحْمِي ___ حُقُوقَ النَّاسِ.",
           "answer": "دُسْتُورٌ",
-          "hint": "constitution"
+          "hint": "constitution",
+          "translation": "The constitution protects people's rights."
         },
         {
           "sentence": "هٰذَا ___ وَطَنِيٌّ.",
           "answer": "وَاجِبٌ",
-          "hint": "duty"
+          "hint": "duty",
+          "translation": "This is a national duty."
         },
         {
           "sentence": "هٰذِهِ ___ فِي الْعَمَلِ.",
           "answer": "شَفَافِيَّةٌ",
-          "hint": "transparency"
+          "hint": "transparency",
+          "translation": "This is transparency at work."
         }
       ]
     },

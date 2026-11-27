@@ -465,6 +465,7 @@ function ActiveVocabLessonView({ lang, lessonId, title, onBack }: Props) {
         {currentExercise.type === 'fill-blank' && currentState?.kind === 'items' && (
           <FillBlankExercise
             items={currentExercise.items}
+            words={lesson.words}
             language={lang}
             state={currentState}
             onChange={handleExerciseChange}

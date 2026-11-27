@@ -21,9 +21,9 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "Minha mãe está na ___.", "answer": "cozinha", "hint": "kitchen" },
-      { "sentence": "Feche a ___, por favor.", "answer": "porta", "hint": "door" },
-      { "sentence": "A comida está na ___.", "answer": "mesa", "hint": "table" }
+      { "sentence": "Minha mãe está na ___.", "answer": "cozinha", "hint": "kitchen", "translation": "My mother is in the kitchen." },
+      { "sentence": "Feche a ___, por favor.", "answer": "porta", "hint": "door", "translation": "Close the door, please." },
+      { "sentence": "A comida está na ___.", "answer": "mesa", "hint": "table", "translation": "The food is on the table." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "What does 'geladeira' mean?", "options": ["stove", "refrigerator", "table", "chair"], "answer": 1 },

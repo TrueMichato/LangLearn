@@ -125,22 +125,26 @@
         {
           "sentence": "___ مُتِينٌ يَحْتَاجُ إِلَى أَسَاسٍ قَوِيٍّ.",
           "answer": "بِنَاءٌ",
-          "hint": "building / construction"
+          "hint": "building / construction",
+          "translation": "Solid construction needs a strong foundation."
         },
         {
           "sentence": "___ نَشِيطَةٌ تَبْدَأُ عِنْدَ السَّابِعَةِ.",
           "answer": "وَرْشَةٌ",
-          "hint": "worksite / workshop"
+          "hint": "worksite / workshop",
+          "translation": "A busy worksite starts at seven."
         },
         {
           "sentence": "___ أَمِينٌ يُسَلِّمُ الْمَشْرُوعَ فِي مَوْعِدِهِ.",
           "answer": "مُقَاوِلٌ",
-          "hint": "contractor"
+          "hint": "contractor",
+          "translation": "An honest contractor delivers the project on time."
         },
         {
           "sentence": "___ مُبْدِعٌ رَسَمَ وَاجِهَةً جَمِيلَةً.",
           "answer": "مِعْمَارِيٌّ",
-          "hint": "architect"
+          "hint": "architect",
+          "translation": "A creative architect drew a beautiful facade."
         }
       ]
     },

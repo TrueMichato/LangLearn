@@ -125,22 +125,26 @@
         {
           "sentence": "___ إِنْ شَاءَ الله مْنِيح.",
           "answer": "كِيفَك؟",
-          "hint": "how are you? to a man (Levantine; MSA: kayfa ḥāluka?)"
+          "hint": "how are you? to a man (Levantine; MSA: kayfa ḥāluka?)",
+          "translation": "How are you? Hopefully fine."
         },
         {
           "sentence": "___ بَدَّكْ تِشْرَبْ؟",
           "answer": "شُو؟",
-          "hint": "what? (Levantine; MSA: mādhā?)"
+          "hint": "what? (Levantine; MSA: mādhā?)",
+          "translation": "What do you want to drink?"
         },
         {
           "sentence": "___ السُّوقْ مْسَكَّرْ؟",
           "answer": "لِيش؟",
-          "hint": "why? (Levantine; MSA: limādhā?)"
+          "hint": "why? (Levantine; MSA: limādhā?)",
+          "translation": "Why is the market closed?"
         },
         {
           "sentence": "___ رَايِحْ عَالشُّغُلْ.",
           "answer": "هَلَّق",
-          "hint": "now (Levantine; MSA: al-ʾāna)"
+          "hint": "now (Levantine; MSA: al-ʾāna)",
+          "translation": "Now I am going to work."
         }
       ]
     },

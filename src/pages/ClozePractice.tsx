@@ -8,6 +8,7 @@ import { isRTL } from '../lib/rtl';
 import { jaClozeSentences, ruClozeSentences, ptClozeSentences, esClozeSentences, arClozeSentences, roClozeSentences } from '../data/cloze';
 import type { ClozeSentence } from '../data/cloze';
 import { speak } from '../lib/tts';
+import { findClozeSpan } from '../lib/cloze-match';
 import { useGuidedPractice } from '../hooks/useGuidedPractice';
 import {
   GuidedCompletionActions,
@@ -40,13 +41,18 @@ function getClozeSentences(lang: string): ClozeSentence[] {
   return [];
 }
 
-function buildClozeDisplay(sentence: string, blankedWord: string) {
-  const idx = sentence.indexOf(blankedWord);
-  if (idx === -1) return { before: sentence, after: '' };
+function buildClozeDisplay(sentence: string, blankedWord: string, language: string) {
+  const span = findClozeSpan(sentence, blankedWord, language);
+  if (!span) return null;
   return {
-    before: sentence.slice(0, idx),
-    after: sentence.slice(idx + blankedWord.length),
+    before: sentence.slice(0, span.start),
+    after: sentence.slice(span.end),
   };
+}
+
+/** Only items whose blank can actually be located are ever shown. */
+function getBlankableSentences(language: string): ClozeSentence[] {
+  return getClozeSentences(language).filter((item) => findClozeSpan(item.target, item.blankedWord, language));
 }
 
 export default function ClozePracticePage() {
@@ -76,7 +82,7 @@ export function ClozePracticeSession({ current: languageState }: { current: Retu
   const [streak, setStreak] = useState(0);
   const inputRef = useRef<HTMLInputElement>(null);
 
-  const allSentences = useMemo(() => getClozeSentences(language), [language]);
+  const allSentences = useMemo(() => getBlankableSentences(language), [language]);
   const guided = useGuidedPractice('cloze', language);
   const adaptive = useAdaptivePractice<ClozeSentence>(language);
 
@@ -293,7 +299,8 @@ export function ClozePracticeSession({ current: languageState }: { current: Retu
 
   // ── Session ──
   const current = sessionQuestions[currentIdx];
-  const { before, after } = buildClozeDisplay(current.target, current.blankedWord);
+  const { before, after } = buildClozeDisplay(current.target, current.blankedWord, language)
+    ?? { before: '', after: '' };
 
   return (
     <div className="max-w-md mx-auto space-y-4 page-enter">

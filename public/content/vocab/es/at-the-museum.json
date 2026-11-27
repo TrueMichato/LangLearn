@@ -21,10 +21,10 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "Compré la ___ por internet.", "answer": "entrada", "hint": "ticket" },
-      { "sentence": "La ___ está hecha de mármol.", "answer": "escultura", "hint": "3D art piece" },
-      { "sentence": "Los domingos la entrada es ___.", "answer": "gratis", "hint": "no cost" },
-      { "sentence": "Las entradas se compran en la ___.", "answer": "taquilla", "hint": "box office" }
+      { "sentence": "Compré la ___ por internet.", "answer": "entrada", "hint": "ticket", "translation": "I bought the ticket online." },
+      { "sentence": "La ___ está hecha de mármol.", "answer": "escultura", "hint": "3D art piece", "translation": "The sculpture is made of marble." },
+      { "sentence": "Los domingos la entrada es ___.", "answer": "gratis", "hint": "no cost", "translation": "On Sundays admission is free." },
+      { "sentence": "Las entradas se compran en la ___.", "answer": "taquilla", "hint": "box office", "translation": "Tickets are bought at the box office." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "What is 'la audioguía'?", "options": ["the audio guide", "the gallery", "the ticket", "the artist"], "answer": 0 },

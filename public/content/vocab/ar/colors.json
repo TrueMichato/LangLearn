@@ -125,22 +125,26 @@
         {
           "sentence": "اللَّوْنُ ___ عَلَى الْوَرَقِ.",
           "answer": "أَبْيَضُ",
-          "hint": "white"
+          "hint": "white",
+          "translation": "The color is white on the paper."
         },
         {
           "sentence": "اللَّوْنُ ___ فِي الصُّورَةِ.",
           "answer": "أَسْوَدُ",
-          "hint": "black"
+          "hint": "black",
+          "translation": "The color is black in the picture."
         },
         {
           "sentence": "اللَّوْنُ ___ مِثْلُ الْوَرْدَةِ.",
           "answer": "أَحْمَرُ",
-          "hint": "red"
+          "hint": "red",
+          "translation": "The color is red like the flower."
         },
         {
           "sentence": "اللَّوْنُ ___ مِثْلُ السَّمَاءِ.",
           "answer": "أَزْرَقُ",
-          "hint": "blue"
+          "hint": "blue",
+          "translation": "The color is blue like the sky."
         }
       ]
     },

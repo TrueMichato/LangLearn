@@ -125,17 +125,20 @@
         {
           "sentence": "Port un ___ alb.",
           "answer": "tricou",
-          "hint": "T-shirt"
+          "hint": "T-shirt",
+          "translation": "I wear a white T-shirt."
         },
         {
           "sentence": "Un ___ este sub pat.",
           "answer": "pantof",
-          "hint": "shoe"
+          "hint": "shoe",
+          "translation": "One shoe is under the bed."
         },
         {
           "sentence": "Port ___ la citit.",
           "answer": "ochelari",
-          "hint": "glasses"
+          "hint": "glasses",
+          "translation": "I wear glasses for reading."
         }
       ]
     },

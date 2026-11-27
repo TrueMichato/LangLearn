@@ -125,22 +125,26 @@
         {
           "sentence": "___ مَادَّةٌ شَيِّقَةٌ فِي الْجَامِعَةِ.",
           "answer": "عِلْمُ الْفَلَكِ",
-          "hint": "astronomy"
+          "hint": "astronomy",
+          "translation": "Astronomy is an exciting subject at the university."
         },
         {
           "sentence": "يَدُورُ ___ صَغِيرٌ حَوْلَ الشَّمْسِ.",
           "answer": "كَوْكَبٌ",
-          "hint": "planet"
+          "hint": "planet",
+          "translation": "A small planet orbits the sun."
         },
         {
           "sentence": "يَقَعُ ___ فَوْقَ الْجَبَلِ الْعَالِي.",
           "answer": "مِرْصَدٌ",
-          "hint": "observatory"
+          "hint": "observatory",
+          "translation": "An observatory is located on the high mountain."
         },
         {
           "sentence": "___ قَوِيَّةٌ تَجْذِبُ الْأَجْسَامَ.",
           "answer": "جَاذِبِيَّةٌ",
-          "hint": "gravity"
+          "hint": "gravity",
+          "translation": "Strong gravity attracts objects."
         }
       ]
     },

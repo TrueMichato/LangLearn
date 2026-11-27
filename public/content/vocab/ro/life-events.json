@@ -125,17 +125,20 @@
         {
           "sentence": "Am primit o ___ pentru ceremonie.",
           "answer": "invitație",
-          "hint": "invitation"
+          "hint": "invitation",
+          "translation": "I received an invitation to the ceremony."
         },
         {
           "sentence": "După ___, studenții au făcut fotografii.",
           "answer": "absolvire",
-          "hint": "graduation"
+          "hint": "graduation",
+          "translation": "After graduation, the students took photos."
         },
         {
           "sentence": "La ___, Andrei a împlinit optsprezece ani.",
           "answer": "majorat",
-          "hint": "coming of age"
+          "hint": "coming of age",
+          "translation": "On coming of age, Andrei turned eighteen."
         }
       ]
     },

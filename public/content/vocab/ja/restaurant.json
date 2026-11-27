@@ -22,11 +22,11 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "___を見せてください。", "answer": "メニュー", "hint": "Menu" },
-      { "sentence": "___をお願いします。", "answer": "会計", "hint": "Bill" },
-      { "sentence": "レストランを___しました。", "answer": "予約", "hint": "Reservation" },
-      { "sentence": "今日の___は何ですか。", "answer": "おすすめ", "hint": "Recommendation" },
-      { "sentence": "この料理は___ですか。", "answer": "辛い", "hint": "Spicy" }
+      { "sentence": "___を見せてください。", "answer": "メニュー", "hint": "Menu", "translation": "Please show me the menu." },
+      { "sentence": "___をお願いします。", "answer": "会計", "hint": "Bill", "translation": "The check, please." },
+      { "sentence": "レストランを___しました。", "answer": "予約", "hint": "Reservation", "translation": "I made a reservation at the restaurant." },
+      { "sentence": "今日の___は何ですか。", "answer": "おすすめ", "hint": "Recommendation", "translation": "What's today's recommendation?" },
+      { "sentence": "この料理は___ですか。", "answer": "辛い", "hint": "Spicy", "translation": "Is this dish spicy?" }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "レストランで食べたい物を伝えることを何と言いますか。", "options": ["予約", "会計", "注文", "おすすめ"], "answer": 2 },

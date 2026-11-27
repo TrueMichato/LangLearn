@@ -125,17 +125,20 @@
         {
           "sentence": "O ___ zboară lângă flori.",
           "answer": "albină",
-          "hint": "bee"
+          "hint": "bee",
+          "translation": "A bee flies near the flowers."
         },
         {
           "sentence": "Un ___ mă înțeapă seara.",
           "answer": "țânțar",
-          "hint": "mosquito"
+          "hint": "mosquito",
+          "translation": "A mosquito bites me in the evening."
         },
         {
           "sentence": "O ___ înoată pe lac.",
           "answer": "rață",
-          "hint": "duck"
+          "hint": "duck",
+          "translation": "A duck swims on the lake."
         }
       ]
     },

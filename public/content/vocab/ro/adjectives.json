@@ -125,17 +125,20 @@
         {
           "sentence": "Casa este ___ și luminoasă.",
           "answer": "mare",
-          "hint": "big"
+          "hint": "big",
+          "translation": "The house is big and bright."
         },
         {
           "sentence": "Ceaiul este ___.",
           "answer": "cald",
-          "hint": "hot"
+          "hint": "hot",
+          "translation": "The tea is hot."
         },
         {
           "sentence": "Exercițiul este ___.",
           "answer": "ușor",
-          "hint": "easy"
+          "hint": "easy",
+          "translation": "The exercise is easy."
         }
       ]
     },

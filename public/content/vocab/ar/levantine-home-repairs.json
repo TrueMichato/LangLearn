@@ -125,22 +125,26 @@
         {
           "sentence": "___ بِهَرِّبْ مَيّْ مِنْ الصُّبْحْ.",
           "answer": "صَنْبُورْ",
-          "hint": "faucet"
+          "hint": "faucet",
+          "translation": "The faucet has been leaking water since the morning."
         },
         {
           "sentence": "فِي ___ صَغِيرْ تَحْتَ الْمَغْسَلَةْ.",
           "answer": "تَهْرِيبْ",
-          "hint": "leak"
+          "hint": "leak",
+          "translation": "There is a small leak under the sink."
         },
         {
           "sentence": "اتَّصِلْنَا بِـ ___ يِفْحَصْ الْمَيّْ.",
           "answer": "سَبَّاكْ",
-          "hint": "plumber"
+          "hint": "plumber",
+          "translation": "We called a plumber to check the water."
         },
         {
           "sentence": "___ الْبَابْ قَبْلَ الْمَسَا.",
           "answer": "صَلِّحْلِي",
-          "hint": "fix for me"
+          "hint": "fix for me",
+          "translation": "Fix the door for me before evening."
         }
       ]
     },

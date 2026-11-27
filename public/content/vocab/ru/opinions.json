@@ -21,11 +21,11 @@
   "exercises": [
     { "type": "match", "pairs": 6 },
     { "type": "fill-blank", "items": [
-      { "sentence": "У каждого своё ___.", "answer": "Мнение", "hint": "Opinion" },
-      { "sentence": "Я полностью ___ с вами.", "answer": "Согласен", "hint": "Agree" },
-      { "sentence": "Давайте ___ этот вопрос.", "answer": "Обсудим", "hint": "To discuss (1st person plural)" },
-      { "sentence": "Нужно найти ___.", "answer": "Компромисс", "hint": "Compromise" },
-      { "sentence": "Это сильный ___.", "answer": "Аргумент", "hint": "Argument / Point" }
+      { "sentence": "У каждого своё ___.", "answer": "Мнение", "hint": "Opinion", "translation": "Everyone has their own opinion." },
+      { "sentence": "Я полностью ___ с вами.", "answer": "Согласен", "hint": "Agree", "translation": "I completely agree with you." },
+      { "sentence": "Давайте ___ этот вопрос.", "answer": "Обсудим", "hint": "To discuss (1st person plural)", "translation": "Let's discuss this issue." },
+      { "sentence": "Нужно найти ___.", "answer": "Компромисс", "hint": "Compromise", "translation": "We need to find a compromise." },
+      { "sentence": "Это сильный ___.", "answer": "Аргумент", "hint": "Argument / Point", "translation": "That's a strong argument." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "What does 'Точка зрения' mean?", "options": ["Point of view", "Point of no return", "Eyesight", "Focus"], "answer": 0 },

@@ -125,22 +125,26 @@
         {
           "sentence": "La ___, por favor.",
           "answer": "cuenta",
-          "hint": "the bill"
+          "hint": "the bill",
+          "translation": "The check, please."
         },
         {
           "sentence": "¿Me trae el ___?",
           "answer": "menú",
-          "hint": "list of dishes"
+          "hint": "list of dishes",
+          "translation": "Could you bring me the menu?"
         },
         {
           "sentence": "La salsa está muy ___.",
           "answer": "picante",
-          "hint": "hot spicy"
+          "hint": "hot spicy",
+          "translation": "The salsa is very spicy."
         },
         {
           "sentence": "Hice una ___ para las ocho.",
           "answer": "reservación",
-          "hint": "to book a table"
+          "hint": "to book a table",
+          "translation": "I made a reservation for eight."
         }
       ]
     },

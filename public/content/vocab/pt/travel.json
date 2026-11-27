@@ -21,9 +21,9 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "Não esqueça o ___ em casa.", "answer": "passaporte", "hint": "passport" },
-      { "sentence": "Eu já arrumei a ___ para a viagem.", "answer": "mala", "hint": "suitcase" },
-      { "sentence": "Eu fiz a ___ do hotel pela internet.", "answer": "reserva", "hint": "reservation" }
+      { "sentence": "Não esqueça o ___ em casa.", "answer": "passaporte", "hint": "passport", "translation": "Don't forget the passport at home." },
+      { "sentence": "Eu já arrumei a ___ para a viagem.", "answer": "mala", "hint": "suitcase", "translation": "I already packed the suitcase for the trip." },
+      { "sentence": "Eu fiz a ___ do hotel pela internet.", "answer": "reserva", "hint": "reservation", "translation": "I made the hotel reservation online." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "What does 'viagem' mean?", "options": ["flight", "trip", "ticket", "hotel"], "answer": 1 },

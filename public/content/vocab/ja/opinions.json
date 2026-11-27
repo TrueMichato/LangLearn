@@ -21,11 +21,11 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "あなたの___を聞かせてください。", "answer": "意見", "hint": "Opinion" },
-      { "sentence": "その考えに___です。", "answer": "賛成", "hint": "Agreement" },
-      { "sentence": "___を教えてください。", "answer": "理由", "hint": "Reason" },
-      { "sentence": "新しい___があります。", "answer": "提案", "hint": "Proposal" },
-      { "sentence": "最後に___を出しました。", "answer": "結論", "hint": "Conclusion" }
+      { "sentence": "あなたの___を聞かせてください。", "answer": "意見", "hint": "Opinion", "translation": "Please tell me your opinion." },
+      { "sentence": "その考えに___です。", "answer": "賛成", "hint": "Agreement", "translation": "I agree with that idea." },
+      { "sentence": "___を教えてください。", "answer": "理由", "hint": "Reason", "translation": "Please tell me the reason." },
+      { "sentence": "新しい___があります。", "answer": "提案", "hint": "Proposal", "translation": "I have a new proposal." },
+      { "sentence": "最後に___を出しました。", "answer": "結論", "hint": "Conclusion", "translation": "We reached a conclusion at the end." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "ある考えに「いいえ」と言うことを何と言いますか。", "options": ["賛成", "反対", "妥協", "納得"], "answer": 1 },

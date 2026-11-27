@@ -125,17 +125,20 @@
         {
           "sentence": "Fac ___ către prieten.",
           "answer": "transfer",
-          "hint": "transfer"
+          "hint": "transfer",
+          "translation": "I make a transfer to a friend."
         },
         {
           "sentence": "Plătesc ___ online.",
           "answer": "factură",
-          "hint": "bill"
+          "hint": "bill",
+          "translation": "I pay the bill online."
         },
         {
           "sentence": "Un ___ lunar mă ajută să economisesc.",
           "answer": "buget",
-          "hint": "budget"
+          "hint": "budget",
+          "translation": "A monthly budget helps me save."
         }
       ]
     },

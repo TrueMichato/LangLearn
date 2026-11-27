@@ -125,17 +125,20 @@
         {
           "sentence": "O ___ bună deschide dialogul.",
           "answer": "întrebare",
-          "hint": "question"
+          "hint": "question",
+          "translation": "A good question opens the dialogue."
         },
         {
           "sentence": "Un mesaj ___ evită confuzia.",
           "answer": "clar",
-          "hint": "clear"
+          "hint": "clear",
+          "translation": "A clear message avoids confusion."
         },
         {
           "sentence": "O ___ calmă rezolvă conflictul.",
           "answer": "discuție",
-          "hint": "discussion"
+          "hint": "discussion",
+          "translation": "A calm discussion solves the conflict."
         }
       ]
     },

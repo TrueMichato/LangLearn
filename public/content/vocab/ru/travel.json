@@ -21,9 +21,9 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "Мы забронировали ___.", "answer": "Гостиницу", "hint": "Hotel (accusative)" },
-      { "sentence": "Не забудь ___ дома.", "answer": "Паспорт", "hint": "Passport" },
-      { "sentence": "Россия — большая ___.", "answer": "Страна", "hint": "Country" }
+      { "sentence": "Мы забронировали ___.", "answer": "Гостиницу", "hint": "Hotel (accusative)", "translation": "We booked a hotel." },
+      { "sentence": "Не забудь ___ дома.", "answer": "Паспорт", "hint": "Passport", "translation": "Don't leave your passport at home." },
+      { "sentence": "Россия — большая ___.", "answer": "Страна", "hint": "Country", "translation": "Russia is a big country." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "What does 'Чемодан' mean?", "options": ["Suitcase", "Bag", "Wallet", "Backpack"], "answer": 0 },

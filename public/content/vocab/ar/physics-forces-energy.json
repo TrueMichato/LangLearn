@@ -125,22 +125,26 @@
         {
           "sentence": "___ تُغَيِّرُ سُرْعَةَ الْجِسْمِ.",
           "answer": "قُوَّةٌ",
-          "hint": "force"
+          "hint": "force",
+          "translation": "A force changes an object's speed."
         },
         {
           "sentence": "___ هِيَ مُعَدَّلُ تَغَيُّرِ السُّرْعَةِ.",
           "answer": "تَسَارُعٌ",
-          "hint": "acceleration"
+          "hint": "acceleration",
+          "translation": "Acceleration is the rate of change of velocity."
         },
         {
           "sentence": "___ تَجْذِبُ الْأَجْسَامَ نَحْوَ الْأَرْضِ.",
           "answer": "جَاذِبِيَّةٌ",
-          "hint": "gravity"
+          "hint": "gravity",
+          "translation": "Gravity pulls objects toward the Earth."
         },
         {
           "sentence": "___ تَسْمَحُ بِمُرُورِ التَّيَّارِ.",
           "answer": "دَارَةٌ كَهْرَبَائِيَّةٌ",
-          "hint": "electric circuit"
+          "hint": "electric circuit",
+          "translation": "An electric circuit lets current flow."
         }
       ]
     },

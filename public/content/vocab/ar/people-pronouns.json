@@ -125,22 +125,26 @@
         {
           "sentence": "___ طَالِبٌ جَدِيدٌ.",
           "answer": "أَنَا",
-          "hint": "I"
+          "hint": "I",
+          "translation": "I am a new student."
         },
         {
           "sentence": "___ صَدِيقِي.",
           "answer": "أَنْتَ",
-          "hint": "you"
+          "hint": "you",
+          "translation": "You are my friend."
         },
         {
           "sentence": "___ طَالِبَةٌ مُجْتَهِدَةٌ.",
           "answer": "أَنْتِ",
-          "hint": "you"
+          "hint": "you",
+          "translation": "You are a hardworking student."
         },
         {
           "sentence": "___ مُعَلِّمٌ لَطِيفٌ.",
           "answer": "هُوَ",
-          "hint": "he"
+          "hint": "he",
+          "translation": "He is a kind teacher."
         }
       ]
     },

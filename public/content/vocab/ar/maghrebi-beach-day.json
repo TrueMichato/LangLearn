@@ -125,22 +125,26 @@
         {
           "sentence": "غَادِي نْمْشِيُو لِـ ___ نْهَارْ السَّبْتْ.",
           "answer": "الشَّطّْ",
-          "hint": "beach"
+          "hint": "beach",
+          "translation": "We're going to the beach on Saturday."
         },
         {
           "sentence": "بْغِينَا ___ قَبْلَ الْغْرُوبْ.",
           "answer": "نْعُومُو",
-          "hint": "we swim"
+          "hint": "we swim",
+          "translation": "We want to swim before sunset."
         },
         {
           "sentence": "خُذْ ___ حِيتْ الشَّمْسْ قْوِيَّةْ.",
           "answer": "قَارُورَةْ دْ الْمَا",
-          "hint": "water bottle"
+          "hint": "water bottle",
+          "translation": "Take a water bottle because the sun is strong."
         },
         {
           "sentence": "دِيرْ الْكْرِيمْ بَاشْ مَا تْجِيكْ ___.",
           "answer": "ضَرْبَةْ الشَّمْسْ",
-          "hint": "sunburn"
+          "hint": "sunburn",
+          "translation": "Put on cream so you do not get sunburn."
         }
       ]
     },

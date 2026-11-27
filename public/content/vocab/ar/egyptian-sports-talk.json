@@ -125,22 +125,26 @@
         {
           "sentence": "جَبْنَا ___ فِي آخِر دَقِيقَةْ.",
           "answer": "جُونْ",
-          "hint": "goal"
+          "hint": "goal",
+          "translation": "We scored a goal in the last minute."
         },
         {
           "sentence": "الْمَاتْشْ خِلِصْ ___.",
           "answer": "تَعَادُلْ",
-          "hint": "draw"
+          "hint": "draw",
+          "translation": "The match ended in a draw."
         },
         {
           "sentence": "___ الْكُورَةْ لِلَّعِيبْ الْفَاضِي.",
           "answer": "بَاصِي",
-          "hint": "pass it"
+          "hint": "pass it",
+          "translation": "Pass the ball to the open player."
         },
         {
           "sentence": "___ غَيَّرِ الْخُطَّةْ.",
           "answer": "الْمَدَرَّبْ",
-          "hint": "the coach"
+          "hint": "the coach",
+          "translation": "The coach changed the plan."
         }
       ]
     },

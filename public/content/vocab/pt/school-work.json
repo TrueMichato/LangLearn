@@ -21,9 +21,9 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "A ___ de matemática é amanhã.", "answer": "prova", "hint": "test" },
-      { "sentence": "Eu uso o ___ para trabalhar.", "answer": "computador", "hint": "computer" },
-      { "sentence": "Temos uma ___ às duas horas.", "answer": "reunião", "hint": "meeting" }
+      { "sentence": "A ___ de matemática é amanhã.", "answer": "prova", "hint": "test", "translation": "The math test is tomorrow." },
+      { "sentence": "Eu uso o ___ para trabalhar.", "answer": "computador", "hint": "computer", "translation": "I use the computer to work." },
+      { "sentence": "Temos uma ___ às duas horas.", "answer": "reunião", "hint": "meeting", "translation": "We have a meeting at two o'clock." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "What does 'escola' mean?", "options": ["office", "school", "company", "class"], "answer": 1 },

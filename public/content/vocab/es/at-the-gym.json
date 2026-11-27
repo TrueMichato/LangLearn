@@ -22,10 +22,10 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "Voy al ___ tres veces por semana.", "answer": "gimnasio", "hint": "the gym" },
-      { "sentence": "Hay que ___ antes de correr.", "answer": "calentar", "hint": "to warm up" },
-      { "sentence": "Dejé mi mochila en el ___.", "answer": "casillero", "hint": "where you store things" },
-      { "sentence": "Me ___ después de entrenar.", "answer": "ducho", "hint": "to shower (yo form)" }
+      { "sentence": "Voy al ___ tres veces por semana.", "answer": "gimnasio", "hint": "the gym", "translation": "I go to the gym three times a week." },
+      { "sentence": "Hay que ___ antes de correr.", "answer": "calentar", "hint": "to warm up", "translation": "You have to warm up before running." },
+      { "sentence": "Dejé mi mochila en el ___.", "answer": "casillero", "hint": "where you store things", "translation": "I left my backpack in the locker." },
+      { "sentence": "Me ___ después de entrenar.", "answer": "ducho", "hint": "to shower (yo form)", "translation": "I shower after working out." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "What is 'las pesas'?", "options": ["the weights", "the treadmill", "the towel", "the locker"], "answer": 0 },

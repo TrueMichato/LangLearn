@@ -117,9 +117,9 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "___ президента состоятся в марте.", "answer": "Выборы", "hint": "Elections" },
-      { "sentence": "Центральный банк борется с ___.", "answer": "инфляцией", "hint": "Inflation (instrumental case)" },
-      { "sentence": "Полиция ведёт ___ по делу о коррупции.", "answer": "расследование", "hint": "Investigation" }
+      { "sentence": "___ президента состоятся в марте.", "answer": "Выборы", "hint": "Elections", "translation": "The presidential elections will take place in March." },
+      { "sentence": "Центральный банк борется с ___.", "answer": "инфляцией", "hint": "Inflation (instrumental case)", "translation": "The central bank is fighting inflation." },
+      { "sentence": "Полиция ведёт ___ по делу о коррупции.", "answer": "расследование", "hint": "Investigation", "translation": "The police are conducting an investigation into the corruption case." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "What does 'Правительство' mean?", "options": ["Government", "Parliament", "President", "Ministry"], "answer": 0 },

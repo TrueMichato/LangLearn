@@ -125,22 +125,26 @@
         {
           "sentence": "___ دَافِئٌ يَلْزَمُ فِي الشِّتَاءِ.",
           "answer": "مِعْطَفٌ",
-          "hint": "coat"
+          "hint": "coat",
+          "translation": "A warm coat is necessary in winter."
         },
         {
           "sentence": "___ رَسْمِيَّةٌ تُنَاسِبُ الْمُقَابَلَةَ.",
           "answer": "بَدْلَةٌ",
-          "hint": "suit"
+          "hint": "suit",
+          "translation": "A formal suit suits the interview."
         },
         {
           "sentence": "___ أَزْرَقُ يَلْفِتُ النَّظَرَ.",
           "answer": "فُسْتَانٌ",
-          "hint": "dress"
+          "hint": "dress",
+          "translation": "A blue dress catches the eye."
         },
         {
           "sentence": "___ جِلْدِيٌّ يُكْمِلُ الْمَلَابِسَ.",
           "answer": "حِزَامٌ",
-          "hint": "belt"
+          "hint": "belt",
+          "translation": "A leather belt completes the clothes."
         }
       ]
     },

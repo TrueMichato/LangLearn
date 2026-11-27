@@ -125,17 +125,20 @@
         {
           "sentence": "Un ___ scrie cod pentru aplicație.",
           "answer": "programator",
-          "hint": "programmer"
+          "hint": "programmer",
+          "translation": "A programmer writes code for the app."
         },
         {
           "sentence": "Un ___ apără clientul în instanță.",
           "answer": "avocat",
-          "hint": "lawyer"
+          "hint": "lawyer",
+          "translation": "A lawyer defends the client in court."
         },
         {
           "sentence": "Un ___ stinge focul rapid.",
           "answer": "pompier",
-          "hint": "firefighter"
+          "hint": "firefighter",
+          "translation": "A firefighter puts out the fire quickly."
         }
       ]
     },

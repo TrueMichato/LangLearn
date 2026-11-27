@@ -125,17 +125,20 @@
         {
           "sentence": "Fac ___ pentru a reduce gunoiul.",
           "answer": "reciclare",
-          "hint": "recycling"
+          "hint": "recycling",
+          "translation": "I recycle to reduce waste."
         },
         {
           "sentence": "O ___ lungă afectează recolta.",
           "answer": "secetă",
-          "hint": "drought"
+          "hint": "drought",
+          "translation": "A long drought affects the harvest."
         },
         {
           "sentence": "Un plan ___ economisește resurse.",
           "answer": "sustenabil",
-          "hint": "sustainable"
+          "hint": "sustainable",
+          "translation": "A sustainable plan saves resources."
         }
       ]
     },

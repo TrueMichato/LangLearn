@@ -125,22 +125,26 @@
         {
           "sentence": "___ يُنَظِّمُ حَيَاةَ كَثِيرٍ مِنَ النَّاسِ.",
           "answer": "دِينٌ",
-          "hint": "religion"
+          "hint": "religion",
+          "translation": "Religion organizes the lives of many people."
         },
         {
           "sentence": "تَبْدَأُ ___ بَعْدَ الْأَذَانِ.",
           "answer": "صَلَاةٌ",
-          "hint": "prayer"
+          "hint": "prayer",
+          "translation": "The prayer begins after the call to prayer."
         },
         {
           "sentence": "___ يَحْتَاجُ إِلَى صَبْرٍ.",
           "answer": "صَوْمٌ",
-          "hint": "fasting"
+          "hint": "fasting",
+          "translation": "Fasting requires patience."
         },
         {
           "sentence": "تُسَاعِدُ ___ الْفُقَرَاءَ.",
           "answer": "زَكَاةٌ",
-          "hint": "almsgiving / zakat"
+          "hint": "almsgiving / zakat",
+          "translation": "Zakat (obligatory almsgiving) helps the poor."
         }
       ]
     },

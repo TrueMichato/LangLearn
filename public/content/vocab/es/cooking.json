@@ -125,22 +125,26 @@
         {
           "sentence": "Sigo la ___ de mi abuela.",
           "answer": "receta",
-          "hint": "recipe"
+          "hint": "recipe",
+          "translation": "I follow my grandma’s recipe."
         },
         {
           "sentence": "Le falta ___ a la sopa.",
           "answer": "sal",
-          "hint": "seasoning"
+          "hint": "seasoning",
+          "translation": "The soup needs salt."
         },
         {
           "sentence": "Hierve el ___ para el té.",
           "answer": "agua",
-          "hint": "liquid you boil"
+          "hint": "liquid you boil",
+          "translation": "Boil the water for tea."
         },
         {
           "sentence": "Voy a ___ los huevos.",
           "answer": "freír",
-          "hint": "cook in oil"
+          "hint": "cook in oil",
+          "translation": "I’m going to fry the eggs."
         }
       ]
     },

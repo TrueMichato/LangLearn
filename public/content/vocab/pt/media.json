@@ -119,9 +119,9 @@
     {
       "type": "fill-blank",
       "items": [
-        { "sentence": "O vídeo ficou ___ em poucas horas.", "answer": "viral", "hint": "spreading rapidly online" },
-        { "sentence": "Me ___ lá no Instagram.", "answer": "segue", "hint": "subscribe to someone's content" },
-        { "sentence": "A ___ do jornal chamou atenção.", "answer": "manchete", "hint": "title of a news article" }
+        { "sentence": "O vídeo ficou ___ em poucas horas.", "answer": "viral", "hint": "spreading rapidly online", "translation": "The video went viral in just a few hours." },
+        { "sentence": "Me ___ lá no Instagram.", "answer": "segue", "hint": "subscribe to someone's content", "translation": "Follow me on Instagram." },
+        { "sentence": "A ___ do jornal chamou atenção.", "answer": "manchete", "hint": "title of a news article", "translation": "The newspaper headline caught attention." }
       ]
     },
     {

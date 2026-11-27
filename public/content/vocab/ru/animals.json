@@ -21,9 +21,9 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "___ спит на диване.", "answer": "Кошка", "hint": "Cat" },
-      { "sentence": "___ живёт в лесу.", "answer": "Медведь", "hint": "Bear" },
-      { "sentence": "___ даёт молоко.", "answer": "Корова", "hint": "Cow" }
+      { "sentence": "___ спит на диване.", "answer": "Кошка", "hint": "Cat", "translation": "The cat is sleeping on the couch." },
+      { "sentence": "___ живёт в лесу.", "answer": "Медведь", "hint": "Bear", "translation": "The bear lives in the forest." },
+      { "sentence": "___ даёт молоко.", "answer": "Корова", "hint": "Cow", "translation": "The cow gives milk." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "What does 'Собака' mean?", "options": ["Dog", "Cat", "Horse", "Wolf"], "answer": 0 },

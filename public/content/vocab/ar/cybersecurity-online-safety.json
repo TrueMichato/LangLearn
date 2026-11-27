@@ -125,22 +125,26 @@
         {
           "sentence": "___ قَوِيَّةٌ تَحْمِي الْحِسَابَ.",
           "answer": "كَلِمَةُ مُرُورٍ",
-          "hint": "password"
+          "hint": "password",
+          "translation": "A strong password protects the account."
         },
         {
           "sentence": "___ قَوِيٌّ يَحْمِي الْمِلَفَّاتِ.",
           "answer": "تَشْفِيرٌ",
-          "hint": "encryption"
+          "hint": "encryption",
+          "translation": "Strong encryption protects the files."
         },
         {
           "sentence": "___ يُنَبِّهُكَ عِنْدَ الدُّخُولِ.",
           "answer": "تَحَقُّقٌ ثُنَائِيٌّ",
-          "hint": "two-factor verification"
+          "hint": "two-factor verification",
+          "translation": "Two-factor verification alerts you at login."
         },
         {
           "sentence": "___ قَدْ يَكْشِفُ الْعُنْوَانَ.",
           "answer": "تَسَرُّبُ بَيَانَاتٍ",
-          "hint": "data leak"
+          "hint": "data leak",
+          "translation": "A data leak may reveal the address."
         }
       ]
     },

@@ -20,9 +20,9 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "___, как дела?", "answer": "Привет", "hint": "Hi (informal)" },
-      { "sentence": "___ за помощь.", "answer": "Спасибо", "hint": "Thank you" },
-      { "sentence": "___, где метро?", "answer": "Извините", "hint": "Excuse me" }
+      { "sentence": "___, как дела?", "answer": "Привет", "hint": "Hi (informal)", "translation": "Hi, how are you?" },
+      { "sentence": "___ за помощь.", "answer": "Спасибо", "hint": "Thank you", "translation": "Thank you for the help." },
+      { "sentence": "___, где метро?", "answer": "Извините", "hint": "Excuse me", "translation": "Excuse me, where is the metro?" }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "How do you say 'Nice to meet you'?", "options": ["Очень приятно", "До свидания", "Извините", "Спасибо"], "answer": 0 },

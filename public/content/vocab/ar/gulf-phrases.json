@@ -125,22 +125,26 @@
         {
           "sentence": "___ أَنَا زِينْ.",
           "answer": "شْلُونَك؟",
-          "hint": "how are you?"
+          "hint": "how are you?",
+          "translation": "How are you? I am fine."
         },
         {
           "sentence": "___ كُلّ شَيْ زِينْ.",
           "answer": "شْخْبَارَك؟",
-          "hint": "what is your news?"
+          "hint": "what is your news?",
+          "translation": "How are things? Everything is fine."
         },
         {
           "sentence": "___، نِشُوفَكْ بَاكِرْ.",
           "answer": "زِينْ",
-          "hint": "good / fine"
+          "hint": "good / fine",
+          "translation": "Good, we will see you tomorrow."
         },
         {
           "sentence": "___ السُّوقْ قَرِيبْ؟",
           "answer": "وَيْنْ؟",
-          "hint": "where?"
+          "hint": "where?",
+          "translation": "Where? Is the market near?"
         }
       ]
     },

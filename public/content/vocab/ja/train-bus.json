@@ -21,9 +21,9 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "次の駅で___てください。", "answer": "乗り換え", "hint": "transfer" },
-      { "sentence": "___に間に合った。", "answer": "終電", "hint": "last train" },
-      { "sentence": "___を確認した。", "answer": "時刻表", "hint": "timetable" }
+      { "sentence": "次の駅で___てください。", "answer": "乗り換え", "hint": "transfer", "translation": "Please transfer at the next station." },
+      { "sentence": "___に間に合った。", "answer": "終電", "hint": "last train", "translation": "I made it to the last train." },
+      { "sentence": "___を確認した。", "answer": "時刻表", "hint": "timetable", "translation": "I checked the timetable." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "「改札口」はどういう意味ですか？", "options": ["bus stop", "platform", "ticket gate", "exit"], "answer": 2 },

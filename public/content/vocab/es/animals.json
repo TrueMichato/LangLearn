@@ -125,22 +125,26 @@
         {
           "sentence": "Mi ___ se llama Max.",
           "answer": "perro",
-          "hint": "man’s best friend"
+          "hint": "man’s best friend",
+          "translation": "My dog’s name is Max."
         },
         {
           "sentence": "La ___ da leche.",
           "answer": "vaca",
-          "hint": "farm animal"
+          "hint": "farm animal",
+          "translation": "The cow gives milk."
         },
         {
           "sentence": "El ___ come zanahorias.",
           "answer": "conejo",
-          "hint": "hops, has long ears"
+          "hint": "hops, has long ears",
+          "translation": "The rabbit eats carrots."
         },
         {
           "sentence": "La ___ es muy colorida.",
           "answer": "mariposa",
-          "hint": "flying insect"
+          "hint": "flying insect",
+          "translation": "The butterfly is very colorful."
         }
       ]
     },

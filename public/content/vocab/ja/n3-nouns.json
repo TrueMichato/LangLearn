@@ -21,9 +21,9 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "それは私の___です。", "answer": "責任", "hint": "responsibility" },
-      { "sentence": "成功の___は高いです。", "answer": "可能性", "hint": "possibility" },
-      { "sentence": "___を守ることが大切です。", "answer": "環境", "hint": "environment" }
+      { "sentence": "それは私の___です。", "answer": "責任", "hint": "responsibility", "translation": "That is my responsibility." },
+      { "sentence": "成功の___は高いです。", "answer": "可能性", "hint": "possibility", "translation": "The possibility of success is high." },
+      { "sentence": "___を守ることが大切です。", "answer": "環境", "hint": "environment", "translation": "It is important to protect the environment." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "What does 傾向 mean?", "options": ["value", "impression", "tendency/trend", "judgment"], "answer": 2 },

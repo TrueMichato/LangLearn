@@ -21,9 +21,9 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "Eu pego o ___ para ir ao trabalho.", "answer": "ônibus", "hint": "bus" },
-      { "sentence": "O ___ em São Paulo é terrível.", "answer": "trânsito", "hint": "traffic" },
-      { "sentence": "Pare no ___ vermelho.", "answer": "semáforo", "hint": "traffic light" }
+      { "sentence": "Eu pego o ___ para ir ao trabalho.", "answer": "ônibus", "hint": "bus", "translation": "I take the bus to go to work." },
+      { "sentence": "O ___ em São Paulo é terrível.", "answer": "trânsito", "hint": "traffic", "translation": "The traffic in São Paulo is terrible." },
+      { "sentence": "Pare no ___ vermelho.", "answer": "semáforo", "hint": "traffic light", "translation": "Stop at the red traffic light." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "What does 'metrô' mean?", "options": ["bus", "subway", "train", "taxi"], "answer": 1 },

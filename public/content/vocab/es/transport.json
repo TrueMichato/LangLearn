@@ -125,22 +125,26 @@
         {
           "sentence": "Tomo el ___ al trabajo.",
           "answer": "autobús",
-          "hint": "public road vehicle"
+          "hint": "public road vehicle",
+          "translation": "I take the bus to work."
         },
         {
           "sentence": "Compré el ___ en línea.",
           "answer": "boleto",
-          "hint": "what you need to ride"
+          "hint": "what you need to ride",
+          "translation": "I bought the ticket online."
         },
         {
           "sentence": "El ___ está en rojo.",
           "answer": "semáforo",
-          "hint": "traffic signal"
+          "hint": "traffic signal",
+          "translation": "The light is red."
         },
         {
           "sentence": "Mi ___ es rojo.",
           "answer": "carro",
-          "hint": "LatAm word for car"
+          "hint": "LatAm word for car",
+          "translation": "My car is red."
         }
       ]
     },

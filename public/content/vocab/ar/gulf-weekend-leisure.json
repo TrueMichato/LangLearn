@@ -125,22 +125,26 @@
         {
           "sentence": "فِي الشِّتَا نِرُوحِ ___ وَنْخَيِّمْ.",
           "answer": "الْبَرّْ",
-          "hint": "the desert"
+          "hint": "the desert",
+          "translation": "In winter we go to the desert and camp."
         },
         {
           "sentence": "بَعْدَ السِّينِمَا نِشْرَبْ ___.",
           "answer": "شَايْ كَرَكْ",
-          "hint": "karak tea"
+          "hint": "karak tea",
+          "translation": "After the cinema we drink karak tea."
         },
         {
           "sentence": "___ عَلَى الْكُورْنِيشْ بِاللَّيْلْ.",
           "answer": "نِتْمَشَّى",
-          "hint": "we stroll"
+          "hint": "we stroll",
+          "translation": "We stroll on the corniche at night."
         },
         {
           "sentence": "أَبِي ___ بَعْدَ أُسْبُوعْ طَوِيلْ.",
           "answer": "رَاحَةْ",
-          "hint": "rest"
+          "hint": "rest",
+          "translation": "I want rest after a long week."
         }
       ]
     },

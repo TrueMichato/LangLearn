@@ -131,6 +131,26 @@ describe('set membership and practice queues', () => {
     expect(after.map(({ cardType }) => cardType)).toEqual(['reverse', 'reverse', 'grammar']);
   });
 
+  it('only keeps a cloze card when the saved word can be blanked in its sentence', async () => {
+    const withSentence = async (word: string, language: string, contextSentence: string) => {
+      const card = await seed(word, language, false, { review: { repetitions: 2 } });
+      await db.words.update(card.word.id!, { contextSentence });
+      return (await getWordWithReview(card.word.id!))!;
+    };
+    const cards = [
+      await withSentence('завтра', 'ru', 'Завтра будет воскресенье'),
+      await withSentence('книга', 'ru', 'Я читаю книгу'),
+      await withSentence('perro', 'es', ''),
+    ];
+    const random = vi.spyOn(Math, 'random').mockReturnValue(0.99);
+    try {
+      const prepared = await prepareReviewCards(cards, null);
+      expect(prepared.map(({ cardType }) => cardType)).toEqual(['cloze', 'classic', 'classic']);
+    } finally {
+      random.mockRestore();
+    }
+  });
+
   it('preserves future-inclusive curated mistake/topic semantics for legacy scheduled links', async () => {
     const card = await seed('regla', 'es', false, { tags: ['grammar', 'topic-one'], type: 'grammar' });
     await db.reviewLog.add({

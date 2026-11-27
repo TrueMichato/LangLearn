@@ -125,17 +125,20 @@
         {
           "sentence": "În ___, oamenii vorbesc românește.",
           "answer": "România",
-          "hint": "Romania"
+          "hint": "Romania",
+          "translation": "In Romania, people speak Romanian."
         },
         {
           "sentence": "În ___, se vorbește limba maghiară.",
           "answer": "Ungaria",
-          "hint": "Hungary"
+          "hint": "Hungary",
+          "translation": "In Hungary, the Hungarian language is spoken."
         },
         {
           "sentence": "În ___, oamenii vorbesc rusește.",
           "answer": "Rusia",
-          "hint": "Russia"
+          "hint": "Russia",
+          "translation": "In Russia, people speak Russian."
         }
       ]
     },

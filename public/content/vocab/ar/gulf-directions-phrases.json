@@ -125,22 +125,26 @@
         {
           "sentence": "___ هُوَ الْفُنْدُقْ؟",
           "answer": "وَيْنَ",
-          "hint": "where"
+          "hint": "where",
+          "translation": "Where is the hotel?"
         },
         {
           "sentence": "امْشِ ___ إِلَى الْإِشَارَةْ.",
           "answer": "عَلَى طُولْ",
-          "hint": "straight ahead"
+          "hint": "straight ahead",
+          "translation": "Go straight ahead to the traffic light."
         },
         {
           "sentence": "___ عِنْدَ الْبَابْ.",
           "answer": "وُقِّفْ هِنِي",
-          "hint": "stop here"
+          "hint": "stop here",
+          "translation": "Stop here by the door."
         },
         {
           "sentence": "___ لِلسُّوقْ الْقَدِيمْ.",
           "answer": "أَبِي أَرُوحْ",
-          "hint": "I want to go"
+          "hint": "I want to go",
+          "translation": "I want to go to the old market."
         }
       ]
     },

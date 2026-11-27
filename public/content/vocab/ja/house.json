@@ -22,9 +22,9 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "___で料理を作ります。", "answer": "台所", "hint": "kitchen" },
-      { "sentence": "___を開けてください。", "answer": "窓", "hint": "window" },
-      { "sentence": "___で靴を脱ぎます。", "answer": "玄関", "hint": "entrance" }
+      { "sentence": "___で料理を作ります。", "answer": "台所", "hint": "kitchen", "translation": "I cook in the kitchen." },
+      { "sentence": "___を開けてください。", "answer": "窓", "hint": "window", "translation": "Please open the window." },
+      { "sentence": "___で靴を脱ぎます。", "answer": "玄関", "hint": "entrance", "translation": "I take off my shoes at the entrance." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "「冷蔵庫」はどういう意味ですか？", "options": ["kitchen", "refrigerator", "bathroom", "bedroom"], "answer": 1 },

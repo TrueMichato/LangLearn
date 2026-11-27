@@ -125,22 +125,26 @@
         {
           "sentence": "___ صَغِيرَةٌ تَكْفِي لِهٰذَا الْمِسْمَارِ.",
           "answer": "مِطْرَقَةٌ",
-          "hint": "hammer"
+          "hint": "hammer",
+          "translation": "A small hammer is enough for this nail."
         },
         {
           "sentence": "___ طَوِيلٌ يُسَاعِدُ فِي فَتْحِ الْغِطَاءِ.",
           "answer": "مِفَكٌّ",
-          "hint": "screwdriver"
+          "hint": "screwdriver",
+          "translation": "A long screwdriver helps open the cover."
         },
         {
           "sentence": "___ قَصِيرٌ ثَبَّتَ اللَّوْحَ فِي الْجِدَارِ.",
           "answer": "مِسْمَارٌ",
-          "hint": "nail"
+          "hint": "nail",
+          "translation": "A short nail fixed the board to the wall."
         },
         {
           "sentence": "___ وَاحِدٌ يَنْقُصُ مِنَ الْكُرْسِيِّ.",
           "answer": "بُرْغِيٌّ",
-          "hint": "screw"
+          "hint": "screw",
+          "translation": "One screw is missing from the chair."
         }
       ]
     },

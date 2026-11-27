@@ -125,22 +125,26 @@
         {
           "sentence": "___، يَحْتَاجُ الْمَشْرُوعُ إِلَى وَقْتٍ.",
           "answer": "مِنْ نَاحِيَةٍ أُخْرَى",
-          "hint": "on the other hand"
+          "hint": "on the other hand",
+          "translation": "On the other hand, the project needs time."
         },
         {
           "sentence": "___ صُعُوبَةِ الطَّرِيقِ، وَصَلْنَا مُبَكِّرًا.",
           "answer": "عَلَى الرَّغْمِ مِنْ",
-          "hint": "despite / in spite of"
+          "hint": "despite / in spite of",
+          "translation": "Despite the difficulty of the road, we arrived early."
         },
         {
           "sentence": "___ الْمَالِ، نَحْتَاجُ إِلَى خِبْرَةٍ.",
           "answer": "بِالْإِضَافَةِ إِلَى",
-          "hint": "in addition to"
+          "hint": "in addition to",
+          "translation": "In addition to money, we need experience."
         },
         {
           "sentence": "___، تُقَدِّمُ الْمَدِينَةُ خِدْمَاتٍ جَدِيدَةً.",
           "answer": "عِلَاوَةً عَلَى ذٰلِكَ",
-          "hint": "moreover"
+          "hint": "moreover",
+          "translation": "Moreover, the city offers new services."
         }
       ]
     },

@@ -125,22 +125,26 @@
         {
           "sentence": "هٰذِهِ ___ وَاسِعَةٌ.",
           "answer": "مَزْرَعَةٌ",
-          "hint": "farm"
+          "hint": "farm",
+          "translation": "This is a large farm."
         },
         {
           "sentence": "هٰذَا ___ خِصْبٌ.",
           "answer": "حَقْلٌ",
-          "hint": "field"
+          "hint": "field",
+          "translation": "This is a fertile field."
         },
         {
           "sentence": "هٰذِهِ ___ جَيِّدَةٌ.",
           "answer": "تُرْبَةٌ",
-          "hint": "soil"
+          "hint": "soil",
+          "translation": "This is good soil."
         },
         {
           "sentence": "هٰذَا ___ قَدِيمٌ.",
           "answer": "مِحْرَاثٌ",
-          "hint": "plow"
+          "hint": "plow",
+          "translation": "This is an old plow."
         }
       ]
     },

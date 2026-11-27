@@ -22,9 +22,9 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "O ___ com feijão é o prato mais popular.", "answer": "arroz", "hint": "rice" },
-      { "sentence": "Beba muita ___ durante o dia.", "answer": "água", "hint": "water" },
-      { "sentence": "Eu preciso de um ___ para acordar.", "answer": "café", "hint": "coffee" }
+      { "sentence": "O ___ com feijão é o prato mais popular.", "answer": "arroz", "hint": "rice", "translation": "Rice and beans is the most popular dish." },
+      { "sentence": "Beba muita ___ durante o dia.", "answer": "água", "hint": "water", "translation": "Drink lots of water during the day." },
+      { "sentence": "Eu preciso de um ___ para acordar.", "answer": "café", "hint": "coffee", "translation": "I need a coffee to wake up." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "What does 'frango' mean?", "options": ["fish", "chicken", "meat", "rice"], "answer": 1 },

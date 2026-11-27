@@ -125,22 +125,26 @@
         {
           "sentence": "___ خَفِيفٌ فِي الحَقِيبَةِ.",
           "answer": "الحَاسُوبُ المَحْمُولُ",
-          "hint": "laptop computer"
+          "hint": "laptop computer",
+          "translation": "The laptop is light in the bag."
         },
         {
           "sentence": "___ قَوِيٌّ لِلْعَمَلِ.",
           "answer": "الحَاسُوبُ المَكْتَبِيُّ",
-          "hint": "desktop computer"
+          "hint": "desktop computer",
+          "translation": "The desktop computer is powerful for work."
         },
         {
           "sentence": "___ وَاضِحَةٌ أَمَامَ المُوَظَّفِ.",
           "answer": "الشَّاشَةُ",
-          "hint": "monitor / screen"
+          "hint": "monitor / screen",
+          "translation": "The monitor is clear in front of the employee."
         },
         {
           "sentence": "___ جَدِيدَةٌ عَلَى المَكْتَبِ.",
           "answer": "لَوْحَةُ المَفَاتِيحِ",
-          "hint": "keyboard"
+          "hint": "keyboard",
+          "translation": "The keyboard is new on the desk."
         }
       ]
     },

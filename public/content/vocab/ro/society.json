@@ -125,17 +125,20 @@
         {
           "sentence": "O ___ dreaptă protejează oamenii.",
           "answer": "societate",
-          "hint": "society"
+          "hint": "society",
+          "translation": "A fair society protects people."
         },
         {
           "sentence": "Avem nevoie de ___ ca să colaborăm.",
           "answer": "încredere",
-          "hint": "trust"
+          "hint": "trust",
+          "translation": "We need trust in order to collaborate."
         },
         {
           "sentence": "___ înseamnă sprijin între oameni.",
           "answer": "solidaritate",
-          "hint": "solidarity"
+          "hint": "solidarity",
+          "translation": "Solidarity means support between people."
         }
       ]
     },

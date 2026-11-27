@@ -125,22 +125,26 @@
         {
           "sentence": "___ وَاحِدٌ لِكُلِّ إِنْسَانٍ.",
           "answer": "رَأْسٌ",
-          "hint": "head"
+          "hint": "head",
+          "translation": "Every person has one head."
         },
         {
           "sentence": "___ مُبْتَسِمٌ يَظْهَرُ فِي الصُّورَةِ.",
           "answer": "وَجْهٌ",
-          "hint": "face"
+          "hint": "face",
+          "translation": "A smiling face appears in the picture."
         },
         {
           "sentence": "___ زَرْقَاءُ جَمِيلَةٌ.",
           "answer": "عَيْنٌ",
-          "hint": "eye"
+          "hint": "eye",
+          "translation": "A beautiful blue eye."
         },
         {
           "sentence": "___ صَغِيرَةٌ تَسْمَعُ الصَّوْتَ.",
           "answer": "أُذُنٌ",
-          "hint": "ear"
+          "hint": "ear",
+          "translation": "A small ear hears the sound."
         }
       ]
     },

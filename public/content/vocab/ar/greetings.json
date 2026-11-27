@@ -125,22 +125,26 @@
         {
           "sentence": "___، أَنَا لَيْلَى.",
           "answer": "مَرْحَبًا",
-          "hint": "hello"
+          "hint": "hello",
+          "translation": "Hello, I am Layla."
         },
         {
           "sentence": "___ فِي بَيْتِنَا.",
           "answer": "أَهْلًا وَسَهْلًا",
-          "hint": "welcome"
+          "hint": "welcome",
+          "translation": "Welcome to our home."
         },
         {
           "sentence": "___ يَا أُسْتَاذُ.",
           "answer": "صَبَاحُ الْخَيْرِ",
-          "hint": "good morning"
+          "hint": "good morning",
+          "translation": "Good morning, teacher."
         },
         {
           "sentence": "___ يَا مَرْيَمُ.",
           "answer": "مَسَاءُ الْخَيْرِ",
-          "hint": "good evening"
+          "hint": "good evening",
+          "translation": "Good evening, Maryam."
         }
       ]
     },

@@ -125,22 +125,26 @@
         {
           "sentence": "___ مُفِيدَةٌ لِلْجِسْمِ وَالْعَقْلِ.",
           "answer": "رِيَاضَةٌ",
-          "hint": "sport"
+          "hint": "sport",
+          "translation": "Sport is good for body and mind."
         },
         {
           "sentence": "يَبْدَأُ ___ بَعْدَ الْإِحْمَاءِ.",
           "answer": "تَمْرِينٌ",
-          "hint": "exercise / training"
+          "hint": "exercise / training",
+          "translation": "The training begins after the warm-up."
         },
         {
           "sentence": "___ سَرِيعٌ وَمَاهِرٌ.",
           "answer": "لَاعِبٌ",
-          "hint": "player"
+          "hint": "player",
+          "translation": "The player is fast and skilled."
         },
         {
           "sentence": "فَازَ ___ بِالْمُبَارَاةِ.",
           "answer": "فَرِيقٌ",
-          "hint": "team"
+          "hint": "team",
+          "translation": "The team won the match."
         }
       ]
     },

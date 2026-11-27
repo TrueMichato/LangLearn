@@ -20,9 +20,9 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "___, como você está?", "answer": "Bom dia", "hint": "morning greeting" },
-      { "sentence": "Um café, ___.", "answer": "por favor", "hint": "please" },
-      { "sentence": "___, onde fica o banheiro?", "answer": "Com licença", "hint": "excuse me" }
+      { "sentence": "___, como você está?", "answer": "Bom dia", "hint": "morning greeting", "translation": "Good morning, how are you?" },
+      { "sentence": "Um café, ___.", "answer": "por favor", "hint": "please", "translation": "A coffee, please." },
+      { "sentence": "___, onde fica o banheiro?", "answer": "Com licença", "hint": "excuse me", "translation": "Excuse me, where is the bathroom?" }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "What does 'obrigado' mean?", "options": ["goodbye", "thank you", "please", "sorry"], "answer": 1 },

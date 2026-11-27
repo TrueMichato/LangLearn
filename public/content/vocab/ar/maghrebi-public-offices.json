@@ -125,22 +125,26 @@
         {
           "sentence": "خَاصّْنِي ___ زَايْدَةْ فِي الْمِلَفّْ.",
           "answer": "وَرْقَةْ",
-          "hint": "document"
+          "hint": "document",
+          "translation": "I need an extra document in the file."
         },
         {
           "sentence": "___ بِالْقْلَمْ الْأَزْرَقْ.",
           "answer": "عَمَّرْ الْفُورْمُولَارْ",
-          "hint": "fill out the form"
+          "hint": "fill out the form",
+          "translation": "Fill out the form with the blue pen."
         },
         {
           "sentence": "___، الدُّورْ غَادِي يْجِي.",
           "answer": "صْبَرْ شْوِيَّةْ",
-          "hint": "wait a little"
+          "hint": "wait a little",
+          "translation": "Wait a little; your turn will come."
         },
         {
           "sentence": "بْغِيتْ ___ لِلْمَدْرَسَةْ.",
           "answer": "شَهَادَةْ السُّكْنَى",
-          "hint": "residence certificate"
+          "hint": "residence certificate",
+          "translation": "I want a residence certificate for the school."
         }
       ]
     },

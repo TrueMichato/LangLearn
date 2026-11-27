@@ -132,22 +132,26 @@
         {
           "sentence": "En boca ___ no entran moscas.",
           "answer": "cerrada",
-          "hint": "closed (fem.)"
+          "hint": "closed (fem.)",
+          "translation": "Flies don't enter a closed mouth. (Silence is golden.)"
         },
         {
           "sentence": "Más vale ___ que nunca.",
           "answer": "tarde",
-          "hint": "late"
+          "hint": "late",
+          "translation": "Better late than never."
         },
         {
           "sentence": "A caballo regalado no le mires el ___.",
           "answer": "diente",
-          "hint": "tooth"
+          "hint": "tooth",
+          "translation": "Don't look a gift horse in the mouth (literally: don't check its teeth)."
         },
         {
           "sentence": "Quien madruga, ___ le ayuda.",
           "answer": "Dios",
-          "hint": "God"
+          "hint": "God",
+          "translation": "God helps those who get up early. (The early bird catches the worm.)"
         }
       ]
     },

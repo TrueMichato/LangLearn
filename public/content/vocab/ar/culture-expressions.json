@@ -125,22 +125,26 @@
         {
           "sentence": "___ نَسْتَطِيعُ السَّفَرَ غَدًا.",
           "answer": "إِنْ شَاءَ اللَّهُ",
-          "hint": "God willing / hopefully"
+          "hint": "God willing / hopefully",
+          "translation": "God willing, we can travel tomorrow."
         },
         {
           "sentence": "___ أَنَا بِخَيْرٍ.",
           "answer": "الْحَمْدُ لِلَّهِ",
-          "hint": "praise be to God / thankfully"
+          "hint": "praise be to God / thankfully",
+          "translation": "Thankfully, I am well."
         },
         {
           "sentence": "___، بَيْتُكَ جَمِيلٌ.",
           "answer": "مَا شَاءَ اللَّهُ",
-          "hint": "what God has willed / how wonderful"
+          "hint": "what God has willed / how wonderful",
+          "translation": "How wonderful, your house is beautiful."
         },
         {
           "sentence": "___، الْمَنْظَرُ بَدِيعٌ.",
           "answer": "سُبْحَانَ اللَّهِ",
-          "hint": "glory be to God"
+          "hint": "glory be to God",
+          "translation": "Glory be to God, the view is splendid."
         }
       ]
     },

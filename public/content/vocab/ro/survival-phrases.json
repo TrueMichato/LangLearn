@@ -23,9 +23,9 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "Scuzați-mă, unde e ___?", "answer": "toaleta", "hint": "toilet" },
-      { "sentence": "Cum ___ la gară?", "answer": "ajung", "hint": "do I get / I arrive" },
-      { "sentence": "Faceți la ___ la semafor.", "answer": "stânga", "hint": "left" }
+      { "sentence": "Scuzați-mă, unde e ___?", "answer": "toaleta", "hint": "toilet", "translation": "Excuse me, where is the toilet?" },
+      { "sentence": "Cum ___ la gară?", "answer": "ajung", "hint": "do I get / I arrive", "translation": "How do I get to the train station?" },
+      { "sentence": "Faceți la ___ la semafor.", "answer": "stânga", "hint": "left", "translation": "Turn left at the traffic light." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "How do you say 'I'm lost' in Romanian?", "options": ["Sunt bolnav", "M-am rătăcit", "E o urgență", "Nota, vă rog"], "answer": 1 },

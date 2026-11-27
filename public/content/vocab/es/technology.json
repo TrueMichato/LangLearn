@@ -125,22 +125,26 @@
         {
           "sentence": "Olvidé mi ___.",
           "answer": "contraseña",
-          "hint": "secret login word"
+          "hint": "secret login word",
+          "translation": "I forgot my password."
         },
         {
           "sentence": "Te mando el archivo por ___.",
           "answer": "correo",
-          "hint": "electronic mail"
+          "hint": "electronic mail",
+          "translation": "I’ll send the file by email."
         },
         {
           "sentence": "Olvidé el ___ en casa.",
           "answer": "celular",
-          "hint": "LatAm word for cell phone"
+          "hint": "LatAm word for cell phone",
+          "translation": "I forgot my phone at home."
         },
         {
           "sentence": "Voy a ___ la película.",
           "answer": "descargar",
-          "hint": "to get from internet"
+          "hint": "to get from internet",
+          "translation": "I’m going to download the movie."
         }
       ]
     },

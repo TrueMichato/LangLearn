@@ -125,22 +125,26 @@
         {
           "sentence": "___ جَيِّدَةٌ نِعْمَةٌ.",
           "answer": "صِحَّةٌ",
-          "hint": "health"
+          "hint": "health",
+          "translation": "Good health is a blessing."
         },
         {
           "sentence": "___ خَفِيفٌ لَا يُخِيفُ.",
           "answer": "مَرَضٌ",
-          "hint": "illness"
+          "hint": "illness",
+          "translation": "A mild illness is not frightening."
         },
         {
           "sentence": "___ مَاهِرٌ يَفْحَصُ الْمَرِيضَ.",
           "answer": "طَبِيبٌ",
-          "hint": "doctor"
+          "hint": "doctor",
+          "translation": "A skilled doctor examines the patient."
         },
         {
           "sentence": "___ قَرِيبَةٌ مِنَ الْبَيْتِ.",
           "answer": "عِيَادَةٌ",
-          "hint": "clinic"
+          "hint": "clinic",
+          "translation": "A clinic is near the house."
         }
       ]
     },

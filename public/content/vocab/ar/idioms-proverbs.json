@@ -125,22 +125,26 @@
         {
           "sentence": "قَالَتِ الْجَدَّةُ: ___.",
           "answer": "الصَّبْرُ مِفْتَاحُ الْفَرَجِ",
-          "hint": "patience is the key to relief"
+          "hint": "patience is the key to relief",
+          "translation": "Grandmother said: patience is the key to relief."
         },
         {
           "sentence": "يُشَجِّعُ الْمُعَلِّمُ طُلَّابَهُ: ___.",
           "answer": "مَنْ جَدَّ وَجَدَ",
-          "hint": "whoever strives finds success"
+          "hint": "whoever strives finds success",
+          "translation": "The teacher encourages his students: whoever strives, succeeds."
         },
         {
           "sentence": "تَذَكَّرْ أَنَّ ___.",
           "answer": "الْوَقْتُ كَالسَّيْفِ",
-          "hint": "time is like a sword"
+          "hint": "time is like a sword",
+          "translation": "Remember that time is like a sword."
         },
         {
           "sentence": "يَنْصَحُ الطَّبِيبُ بِالنَّظَافَةِ، فَـ ___.",
           "answer": "دِرْهَمُ وِقَايَةٍ خَيْرٌ مِنْ قِنْطَارِ عِلَاجٍ",
-          "hint": "prevention is better than cure"
+          "hint": "prevention is better than cure",
+          "translation": "The doctor recommends cleanliness, for an ounce of prevention is worth a pound of cure."
         }
       ]
     },

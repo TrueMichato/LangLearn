@@ -21,11 +21,11 @@
   "exercises": [
     { "type": "match", "pairs": 6 },
     { "type": "fill-blank", "items": [
-      { "sentence": "Поверните ___ на перекрёстке.", "answer": "Направо", "hint": "To the right" },
-      { "sentence": "Идите ___ до светофора.", "answer": "Прямо", "hint": "Straight ahead" },
-      { "sentence": "Аптека ___ с банком.", "answer": "Рядом", "hint": "Nearby / Next to" },
-      { "sentence": "Аэропорт ___ от центра.", "answer": "Далеко", "hint": "Far away" },
-      { "sentence": "Где ___ из метро?", "answer": "Выход", "hint": "Exit" }
+      { "sentence": "Поверните ___ на перекрёстке.", "answer": "Направо", "hint": "To the right", "translation": "Turn right at the intersection." },
+      { "sentence": "Идите ___ до светофора.", "answer": "Прямо", "hint": "Straight ahead", "translation": "Go straight ahead to the traffic light." },
+      { "sentence": "Аптека ___ с банком.", "answer": "Рядом", "hint": "Nearby / Next to", "translation": "The pharmacy is next to the bank." },
+      { "sentence": "Аэропорт ___ от центра.", "answer": "Далеко", "hint": "Far away", "translation": "The airport is far from the center." },
+      { "sentence": "Где ___ из метро?", "answer": "Выход", "hint": "Exit", "translation": "Where is the exit from the metro?" }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "What does 'Светофор' mean?", "options": ["Traffic light", "Crossroads", "Road sign", "Bridge"], "answer": 0 },

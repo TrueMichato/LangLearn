@@ -125,22 +125,26 @@
         {
           "sentence": "يَمْتَدُّ ___ بَيْنَ الْجَبَلَيْنِ.",
           "answer": "سَهْلٌ",
-          "hint": "plain"
+          "hint": "plain",
+          "translation": "The plain stretches between the two mountains."
         },
         {
           "sentence": "تَرْتَفِعُ ___ فَوْقَ الْقَرْيَةِ.",
           "answer": "هَضْبَةٌ",
-          "hint": "plateau"
+          "hint": "plateau",
+          "translation": "The plateau rises above the village."
         },
         {
           "sentence": "يَجْرِي النَّهْرُ فِي ___ عَمِيقٍ.",
           "answer": "وَادٍ",
-          "hint": "valley"
+          "hint": "valley",
+          "translation": "The river runs through a deep valley."
         },
         {
           "sentence": "كَانَ ___ زَلِقًا بَعْدَ الْمَطَرِ.",
           "answer": "مُنْحَدَرٌ",
-          "hint": "slope"
+          "hint": "slope",
+          "translation": "The slope was slippery after the rain."
         }
       ]
     },

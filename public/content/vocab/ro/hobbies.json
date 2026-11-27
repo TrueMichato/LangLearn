@@ -125,17 +125,20 @@
         {
           "sentence": "Joc ___ cu bunicul.",
           "answer": "șah",
-          "hint": "chess"
+          "hint": "chess",
+          "translation": "I play chess with grandfather."
         },
         {
           "sentence": "Merg la ___ sâmbătă.",
           "answer": "teatru",
-          "hint": "theater"
+          "hint": "theater",
+          "translation": "I go to the theater on Saturday."
         },
         {
           "sentence": "Ascult ___ în autobuz.",
           "answer": "muzică",
-          "hint": "music"
+          "hint": "music",
+          "translation": "I listen to music on the bus."
         }
       ]
     },

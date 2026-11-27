@@ -21,10 +21,10 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "Hay que respetar la ___.", "answer": "ley", "hint": "the law" },
-      { "sentence": "Decidieron ___ a la empresa.", "answer": "demandar", "hint": "take to court" },
-      { "sentence": "Es importante ___.", "answer": "votar", "hint": "cast a ballot" },
-      { "sentence": "Mi abuelo dejó un ___.", "answer": "testamento", "hint": "legal will" }
+      { "sentence": "Hay que respetar la ___.", "answer": "ley", "hint": "the law", "translation": "One must respect the law." },
+      { "sentence": "Decidieron ___ a la empresa.", "answer": "demandar", "hint": "take to court", "translation": "They decided to sue the company." },
+      { "sentence": "Es importante ___.", "answer": "votar", "hint": "cast a ballot", "translation": "It's important to vote." },
+      { "sentence": "Mi abuelo dejó un ___.", "answer": "testamento", "hint": "legal will", "translation": "My grandfather left a will." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "What is 'el / la fiscal'?", "options": ["the judge", "the lawyer", "the prosecutor", "the witness"], "answer": 2 },

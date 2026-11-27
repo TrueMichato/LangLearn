@@ -125,22 +125,26 @@
         {
           "sentence": "الطَّالِبُ ___ وَنَشِيطٌ.",
           "answer": "طَوِيلٌ",
-          "hint": "tall"
+          "hint": "tall",
+          "translation": "The student is tall and active."
         },
         {
           "sentence": "هٰذَا الْمَمَرُّ ___ جِدًّا.",
           "answer": "قَصِيرٌ",
-          "hint": "short"
+          "hint": "short",
+          "translation": "This corridor is very short."
         },
         {
           "sentence": "أَخِي ___ لٰكِنَّهُ قَوِيٌّ.",
           "answer": "نَحِيفٌ",
-          "hint": "slender / thin"
+          "hint": "slender / thin",
+          "translation": "My brother is slender, but he is strong."
         },
         {
           "sentence": "الرَّجُلُ ___ وَوَدُودٌ.",
           "answer": "مُمْتَلِئٌ",
-          "hint": "plump / full-figured"
+          "hint": "plump / full-figured",
+          "translation": "The man is plump and friendly."
         }
       ]
     },

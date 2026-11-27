@@ -125,22 +125,26 @@
         {
           "sentence": "___ صَغِيرٌ يَنْبُتُ قُرْبَ النَّافِذَةِ.",
           "answer": "نَبَاتٌ",
-          "hint": "plant"
+          "hint": "plant",
+          "translation": "A small plant grows near the window."
         },
         {
           "sentence": "___ عَالِيَةٌ تُظِلُّ مَدْخَلَ الْبَيْتِ.",
           "answer": "شَجَرَةٌ",
-          "hint": "tree"
+          "hint": "tree",
+          "translation": "A tall tree shades the entrance of the house."
         },
         {
           "sentence": "___ بَيْضَاءُ تَفْتَحُ فِي الصَّبَاحِ.",
           "answer": "زَهْرَةٌ",
-          "hint": "flower"
+          "hint": "flower",
+          "translation": "A white flower opens in the morning."
         },
         {
           "sentence": "___ حَمْرَاءُ تُزَيِّنُ الطَّاوِلَةَ.",
           "answer": "وَرْدَةٌ",
-          "hint": "rose"
+          "hint": "rose",
+          "translation": "A red rose decorates the table."
         }
       ]
     },

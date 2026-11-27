@@ -125,17 +125,20 @@
         {
           "sentence": "Studiem ___ ca să înțelegem lumea.",
           "answer": "știință",
-          "hint": "science"
+          "hint": "science",
+          "translation": "We study science to understand the world."
         },
         {
           "sentence": "Privim stelele cu un ___.",
           "answer": "telescop",
-          "hint": "telescope"
+          "hint": "telescope",
+          "translation": "We look at the stars with a telescope."
         },
         {
           "sentence": "O ___ pornește spre spațiu.",
           "answer": "rachetă",
-          "hint": "rocket"
+          "hint": "rocket",
+          "translation": "A rocket sets off into space."
         }
       ]
     },

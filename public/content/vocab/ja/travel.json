@@ -21,9 +21,9 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "___を見せてください。", "answer": "パスポート", "hint": "passport" },
-      { "sentence": "___が多いです。", "answer": "荷物", "hint": "luggage" },
-      { "sentence": "京都で___します。", "answer": "観光", "hint": "sightseeing" }
+      { "sentence": "___を見せてください。", "answer": "パスポート", "hint": "passport", "translation": "Please show your passport." },
+      { "sentence": "___が多いです。", "answer": "荷物", "hint": "luggage", "translation": "I have a lot of luggage." },
+      { "sentence": "京都で___します。", "answer": "観光", "hint": "sightseeing", "translation": "I will go sightseeing in Kyoto." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "「予約」はどういう意味ですか。", "options": ["departure", "arrival", "reservation", "sightseeing"], "answer": 2 },

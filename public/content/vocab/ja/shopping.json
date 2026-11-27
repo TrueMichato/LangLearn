@@ -21,9 +21,9 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "この___は大きいです。", "answer": "店", "hint": "store" },
-      { "sentence": "___が足りません。", "answer": "お金", "hint": "money" },
-      { "sentence": "このバッグは___です。", "answer": "高い", "hint": "expensive" }
+      { "sentence": "この___は大きいです。", "answer": "店", "hint": "store", "translation": "This store is big." },
+      { "sentence": "___が足りません。", "answer": "お金", "hint": "money", "translation": "I don't have enough money." },
+      { "sentence": "このバッグは___です。", "answer": "高い", "hint": "expensive", "translation": "This bag is expensive." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "「安い」はどういう意味ですか。", "options": ["expensive", "cheap", "big", "small"], "answer": 1 },

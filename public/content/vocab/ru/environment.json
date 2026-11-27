@@ -21,11 +21,11 @@
   "exercises": [
     { "type": "match", "pairs": 6 },
     { "type": "fill-blank", "items": [
-      { "sentence": "Мы должны защищать ___.", "answer": "Окружающую среду", "hint": "Environment (accusative)" },
-      { "sentence": "___ воздуха — серьёзная проблема.", "answer": "Загрязнение", "hint": "Pollution" },
-      { "sentence": "___ на планете меняется.", "answer": "Климат", "hint": "Climate" },
-      { "sentence": "___ уничтожила урожай.", "answer": "Засуха", "hint": "Drought" },
-      { "sentence": "Природные ___ нужно беречь.", "answer": "Ресурсы", "hint": "Resources" }
+      { "sentence": "Мы должны защищать ___.", "answer": "Окружающую среду", "hint": "Environment (accusative)", "translation": "We must protect the environment." },
+      { "sentence": "___ воздуха — серьёзная проблема.", "answer": "Загрязнение", "hint": "Pollution", "translation": "Air pollution is a serious problem." },
+      { "sentence": "___ на планете меняется.", "answer": "Климат", "hint": "Climate", "translation": "The climate on the planet is changing." },
+      { "sentence": "___ уничтожила урожай.", "answer": "Засуха", "hint": "Drought", "translation": "The drought destroyed the harvest." },
+      { "sentence": "Природные ___ нужно беречь.", "answer": "Ресурсы", "hint": "Resources", "translation": "Natural resources must be conserved." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "What does 'Переработка' mean?", "options": ["Recycling", "Processing", "Reworking", "Translation"], "answer": 0 },

@@ -125,17 +125,20 @@
         {
           "sentence": "Am terminat, ___ putem pleca.",
           "answer": "deci",
-          "hint": "so / therefore"
+          "hint": "so / therefore",
+          "translation": "I finished, so we can leave."
         },
         {
           "sentence": "Stăm acasă ___ ninge.",
           "answer": "deoarece",
-          "hint": "because / since"
+          "hint": "because / since",
+          "translation": "We stay home because it is snowing."
         },
         {
           "sentence": "E scump; ___, este de calitate.",
           "answer": "pe de altă parte",
-          "hint": "on the other hand"
+          "hint": "on the other hand",
+          "translation": "It is expensive; on the other hand, it is high quality."
         }
       ]
     },

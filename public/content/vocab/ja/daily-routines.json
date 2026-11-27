@@ -21,11 +21,11 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "毎朝六時に___ます。", "answer": "起き", "hint": "Wake up" },
-      { "sentence": "___に一時間かかります。", "answer": "通勤", "hint": "Commuting" },
-      { "sentence": "週末に___をします。", "answer": "洗濯", "hint": "Laundry" },
-      { "sentence": "寝る前に___します。", "answer": "入浴", "hint": "Bathing" },
-      { "sentence": "いつも十一時に___ます。", "answer": "寝", "hint": "Go to bed" }
+      { "sentence": "毎朝六時に___ます。", "answer": "起き", "hint": "Wake up", "translation": "I wake up at 6 every morning." },
+      { "sentence": "___に一時間かかります。", "answer": "通勤", "hint": "Commuting", "translation": "My commute takes one hour." },
+      { "sentence": "週末に___をします。", "answer": "洗濯", "hint": "Laundry", "translation": "I do laundry on weekends." },
+      { "sentence": "寝る前に___します。", "answer": "入浴", "hint": "Bathing", "translation": "I take a bath before bed." },
+      { "sentence": "いつも十一時に___ます。", "answer": "寝", "hint": "Go to bed", "translation": "I always go to bed at 11." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "部屋をきれいにすることを何と言いますか。", "options": ["洗濯", "掃除", "家事", "支度"], "answer": 1 },

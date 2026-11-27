@@ -125,17 +125,20 @@
         {
           "sentence": "Arăt un ___ valid la ghișeu.",
           "answer": "pașaport",
-          "hint": "passport"
+          "hint": "passport",
+          "translation": "I show a valid passport at the counter."
         },
         {
           "sentence": "Avem o ___ scurtă la Viena.",
           "answer": "escală",
-          "hint": "layover"
+          "hint": "layover",
+          "translation": "We have a short layover in Vienna."
         },
         {
           "sentence": "Așteptăm la ___ până începe îmbarcarea.",
           "answer": "poartă",
-          "hint": "gate"
+          "hint": "gate",
+          "translation": "We wait at the gate until boarding begins."
         }
       ]
     },

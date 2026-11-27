@@ -125,22 +125,26 @@
         {
           "sentence": "___ الطَّالِبُ إِلَى الْمَدْرَسَةِ.",
           "answer": "يَذْهَبُ",
-          "hint": "to go"
+          "hint": "to go",
+          "translation": "The student goes to school."
         },
         {
           "sentence": "___ الْمُعَلِّمُ مُبَكِّرًا.",
           "answer": "يَأْتِي",
-          "hint": "to come"
+          "hint": "to come",
+          "translation": "The teacher comes early."
         },
         {
           "sentence": "___ الْوَلَدُ خُبْزًا.",
           "answer": "يَأْكُلُ",
-          "hint": "to eat"
+          "hint": "to eat",
+          "translation": "The boy eats bread."
         },
         {
           "sentence": "___ الطِّفْلُ مَاءً.",
           "answer": "يَشْرَبُ",
-          "hint": "to drink"
+          "hint": "to drink",
+          "translation": "The child drinks water."
         }
       ]
     },

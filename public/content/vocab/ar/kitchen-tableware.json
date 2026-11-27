@@ -125,22 +125,26 @@
         {
           "sentence": "___ نَظِيفٌ عَلَى الطَّاوِلَةِ.",
           "answer": "الصَّحْنُ",
-          "hint": "plate"
+          "hint": "plate",
+          "translation": "The plate is clean on the table."
         },
         {
           "sentence": "___ مَمْلُوءٌ بِالمَاءِ.",
           "answer": "الكَأْسُ",
-          "hint": "glass"
+          "hint": "glass",
+          "translation": "The glass is full of water."
         },
         {
           "sentence": "___ صَغِيرٌ لِلْقَهْوَةِ.",
           "answer": "الفِنْجَانُ",
-          "hint": "cup"
+          "hint": "cup",
+          "translation": "The cup is small for coffee."
         },
         {
           "sentence": "___ مَوْضُوعَةٌ جَانِبَ الصَّحْنِ.",
           "answer": "الشَّوْكَةُ",
-          "hint": "fork"
+          "hint": "fork",
+          "translation": "The fork is placed beside the plate."
         }
       ]
     },

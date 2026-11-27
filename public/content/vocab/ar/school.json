@@ -125,22 +125,26 @@
         {
           "sentence": "___ جَدِيدَةٌ فِي الْحَيِّ.",
           "answer": "مَدْرَسَةٌ",
-          "hint": "school"
+          "hint": "school",
+          "translation": "A new school is in the neighborhood."
         },
         {
           "sentence": "___ هَادِئٌ يَبْدَأُ الدَّرْسَ.",
           "answer": "صَفٌّ",
-          "hint": "classroom / class"
+          "hint": "classroom / class",
+          "translation": "A quiet class begins the lesson."
         },
         {
           "sentence": "___ صَبُورٌ يَشْرَحُ الدَّرْسَ.",
           "answer": "مُعَلِّمٌ",
-          "hint": "teacher"
+          "hint": "teacher",
+          "translation": "A patient teacher explains the lesson."
         },
         {
           "sentence": "___ مُجْتَهِدٌ يَكْتُبُ.",
           "answer": "طَالِبٌ",
-          "hint": "student"
+          "hint": "student",
+          "translation": "A hardworking student writes."
         }
       ]
     },

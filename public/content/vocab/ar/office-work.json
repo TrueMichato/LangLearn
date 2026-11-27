@@ -125,22 +125,26 @@
         {
           "sentence": "هٰذَا ___ لِلْمُدِيرِ.",
           "answer": "مَكْتَبٌ",
-          "hint": "office / desk"
+          "hint": "office / desk",
+          "translation": "This is the manager's office."
         },
         {
           "sentence": "___ كَبِيرَةٌ فِي الْمَدِينَةِ.",
           "answer": "شَرِكَةٌ",
-          "hint": "company"
+          "hint": "company",
+          "translation": "There's a big company in the city."
         },
         {
           "sentence": "بَدَأَ ___ فِي السَّاعَةِ التَّاسِعَةِ.",
           "answer": "اِجْتِمَاعٌ",
-          "hint": "meeting"
+          "hint": "meeting",
+          "translation": "The meeting started at nine o'clock."
         },
         {
           "sentence": "شَرَحَ ___ الْخُطَّةَ لِلْفَرِيقِ.",
           "answer": "مُدِيرٌ",
-          "hint": "manager"
+          "hint": "manager",
+          "translation": "The manager explained the plan to the team."
         }
       ]
     },

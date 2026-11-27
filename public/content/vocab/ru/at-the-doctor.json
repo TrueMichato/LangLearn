@@ -21,11 +21,11 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "У меня болит ___.", "answer": "Голова", "hint": "Head" },
-      { "sentence": "___ выписал рецепт.", "answer": "Врач", "hint": "Doctor" },
-      { "sentence": "___ находится за углом.", "answer": "Аптека", "hint": "Pharmacy" },
-      { "sentence": "Нужно сдать ___ крови.", "answer": "Анализ", "hint": "Test" },
-      { "sentence": "Принимайте ___ три раза в день.", "answer": "Таблетку", "hint": "Pill (accusative)" }
+      { "sentence": "У меня болит ___.", "answer": "Голова", "hint": "Head", "translation": "I have a headache. (literally: my head hurts)" },
+      { "sentence": "___ выписал рецепт.", "answer": "Врач", "hint": "Doctor", "translation": "The doctor wrote a prescription." },
+      { "sentence": "___ находится за углом.", "answer": "Аптека", "hint": "Pharmacy", "translation": "The pharmacy is around the corner." },
+      { "sentence": "Нужно сдать ___ крови.", "answer": "Анализ", "hint": "Test", "translation": "You need to have a blood test." },
+      { "sentence": "Принимайте ___ три раза в день.", "answer": "Таблетку", "hint": "Pill (accusative)", "translation": "Take one pill three times a day." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "What does 'Кашель' mean?", "options": ["Cough", "Sneeze", "Fever", "Rash"], "answer": 0 },

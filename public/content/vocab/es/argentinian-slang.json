@@ -22,10 +22,10 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "___, ¿cómo andás?", "answer": "Che", "hint": "Argentinian opener" },
-      { "sentence": "Tengo mucho ___ esta semana.", "answer": "laburo", "hint": "work" },
-      { "sentence": "Voy en el ___ al centro.", "answer": "bondi", "hint": "city bus" },
-      { "sentence": "No me queda ___.", "answer": "guita", "hint": "money" }
+      { "sentence": "___, ¿cómo andás?", "answer": "Che", "hint": "Argentinian opener", "translation": "Hey, how's it going?" },
+      { "sentence": "Tengo mucho ___ esta semana.", "answer": "laburo", "hint": "work", "translation": "I have a lot of work this week." },
+      { "sentence": "Voy en el ___ al centro.", "answer": "bondi", "hint": "city bus", "translation": "I take the bus downtown." },
+      { "sentence": "No me queda ___.", "answer": "guita", "hint": "money", "translation": "I have no money left." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "What does 'morfar' mean?", "options": ["to sleep", "to eat", "to work", "to walk"], "answer": 1 },

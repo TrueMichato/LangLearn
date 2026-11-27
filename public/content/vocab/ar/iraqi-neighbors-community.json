@@ -125,22 +125,26 @@
         {
           "sentence": "___ اِجْتِمَاعْ صُغَيَّرْ بِالْحَارَةْ.",
           "answer": "أَكُو",
-          "hint": "there is"
+          "hint": "there is",
+          "translation": "There is a small meeting in the quarter."
         },
         {
           "sentence": "___ كَهْرَبَا مِنْ سَاعَةْ.",
           "answer": "مَاكُو",
-          "hint": "there is not"
+          "hint": "there is not",
+          "translation": "There has been no electricity for an hour."
         },
         {
           "sentence": "___ قَبْلَ مَا تِدْخُلْ.",
           "answer": "دَكّ الْبَابْ",
-          "hint": "knock on the door"
+          "hint": "knock on the door",
+          "translation": "Knock on the door before you enter."
         },
         {
           "sentence": "تَعَالُوا نِشْرَبْ ___ عِنْدِ الْجِيرَانْ.",
           "answer": "جَايْ",
-          "hint": "tea"
+          "hint": "tea",
+          "translation": "Come drink tea at the neighbors' place."
         }
       ]
     },

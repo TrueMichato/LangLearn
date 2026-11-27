@@ -125,17 +125,20 @@
         {
           "sentence": "Cerul este ___ azi.",
           "answer": "albastru",
-          "hint": "blue"
+          "hint": "blue",
+          "translation": "The sky is blue today."
         },
         {
           "sentence": "Desenez un ___ pe hârtie.",
           "answer": "cerc",
-          "hint": "circle"
+          "hint": "circle",
+          "translation": "I draw a circle on paper."
         },
         {
           "sentence": "Trag o ___ dreaptă.",
           "answer": "linie",
-          "hint": "line"
+          "hint": "line",
+          "translation": "I draw a straight line."
         }
       ]
     },

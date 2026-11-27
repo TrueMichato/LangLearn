@@ -21,9 +21,9 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "やっと鍵を___ました。", "answer": "見つけ", "hint": "to find/discover" },
-      { "sentence": "昔のことを___ました。", "answer": "思い出し", "hint": "to recall" },
-      { "sentence": "チームで___ましょう。", "answer": "話し合い", "hint": "to discuss" }
+      { "sentence": "やっと鍵を___ました。", "answer": "見つけ", "hint": "to find/discover", "translation": "I finally found the key." },
+      { "sentence": "昔のことを___ました。", "answer": "思い出し", "hint": "to recall", "translation": "I recalled things from the past." },
+      { "sentence": "チームで___ましょう。", "answer": "話し合い", "hint": "to discuss", "translation": "Let's discuss it as a team." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "What does 飛び出す mean?", "options": ["to dive in", "to jump out", "to stand up", "to chase"], "answer": 1 },

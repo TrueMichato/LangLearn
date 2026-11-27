@@ -21,11 +21,11 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "___ со сметаной — классика.", "answer": "Борщ", "hint": "Borscht" },
-      { "sentence": "___ лепят всей семьёй.", "answer": "Пельмени", "hint": "Dumplings" },
-      { "sentence": "___ едят на Масленицу.", "answer": "Блины", "hint": "Pancakes" },
-      { "sentence": "Бабушка печёт ___ с капустой.", "answer": "Пирожки", "hint": "Stuffed buns" },
-      { "sentence": "___ добавляют в борщ.", "answer": "Сметану", "hint": "Sour cream (accusative)" }
+      { "sentence": "___ со сметаной — классика.", "answer": "Борщ", "hint": "Borscht", "translation": "Borscht with sour cream is a classic." },
+      { "sentence": "___ лепят всей семьёй.", "answer": "Пельмени", "hint": "Dumplings", "translation": "The whole family makes pelmeni together." },
+      { "sentence": "___ едят на Масленицу.", "answer": "Блины", "hint": "Pancakes", "translation": "Blini are eaten during Maslenitsa." },
+      { "sentence": "Бабушка печёт ___ с капустой.", "answer": "Пирожки", "hint": "Stuffed buns", "translation": "Grandma bakes cabbage pirozhki (little stuffed pies)." },
+      { "sentence": "___ добавляют в борщ.", "answer": "Сметану", "hint": "Sour cream (accusative)", "translation": "Sour cream is added to borscht." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "What is 'Окрошка'?", "options": ["Cold soup", "Hot soup", "Salad", "Stew"], "answer": 0 },

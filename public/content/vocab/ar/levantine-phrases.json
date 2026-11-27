@@ -125,22 +125,26 @@
         {
           "sentence": "___ أَنَا مْنِيحْ.",
           "answer": "كِيفَك؟",
-          "hint": "how are you?"
+          "hint": "how are you?",
+          "translation": "How are you? I am fine."
         },
         {
           "sentence": "___ مَا سْمِعْتِكْ.",
           "answer": "شُو؟",
-          "hint": "what?"
+          "hint": "what?",
+          "translation": "What? I did not hear you."
         },
         {
           "sentence": "___ بَدِّي أَعْرِفْ الطَّرِيقْ.",
           "answer": "وَيْنْ؟",
-          "hint": "where?"
+          "hint": "where?",
+          "translation": "Where? I want to know the way."
         },
         {
           "sentence": "___ فِي مُشْكِلَة؟",
           "answer": "لَيْشْ؟",
-          "hint": "why?"
+          "hint": "why?",
+          "translation": "Why? Is there a problem?"
         }
       ]
     },

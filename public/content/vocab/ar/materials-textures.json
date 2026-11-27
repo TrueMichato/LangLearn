@@ -125,22 +125,26 @@
         {
           "sentence": "___ قَوِيٌّ يُسْتَخْدَمُ فِي الطَّاوِلَةِ.",
           "answer": "خَشَبٌ",
-          "hint": "wood"
+          "hint": "wood",
+          "translation": "Strong wood is used in the table."
         },
         {
           "sentence": "___ شَفَّافٌ يَكْشِفُ مَا دَاخِلَ الْكُوبِ.",
           "answer": "زُجَاجٌ",
-          "hint": "glass"
+          "hint": "glass",
+          "translation": "Transparent glass shows what is inside the cup."
         },
         {
           "sentence": "سَطْحٌ ___ يَحْتَاجُ إِلَى صَنْفَرَةٍ.",
           "answer": "خَشِنٌ",
-          "hint": "rough"
+          "hint": "rough",
+          "translation": "A rough surface needs sanding."
         },
         {
           "sentence": "غِطَاءٌ ___ يُظْهِرُ الطَّعَامَ.",
           "answer": "شَفَّافٌ",
-          "hint": "transparent"
+          "hint": "transparent",
+          "translation": "A transparent cover shows the food."
         }
       ]
     },

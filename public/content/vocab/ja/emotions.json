@@ -21,9 +21,9 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "映画を見て___くなりました。", "answer": "悲し", "hint": "sad" },
-      { "sentence": "今日はとても___ました。", "answer": "疲れ", "hint": "to get tired" },
-      { "sentence": "猫が___です。", "answer": "好き", "hint": "like" }
+      { "sentence": "映画を見て___くなりました。", "answer": "悲し", "hint": "sad", "translation": "I became sad after watching the movie." },
+      { "sentence": "今日はとても___ました。", "answer": "疲れ", "hint": "to get tired", "translation": "I'm very tired today." },
+      { "sentence": "猫が___です。", "answer": "好き", "hint": "like", "translation": "I like cats." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "「嬉しい」はどういう意味ですか。", "options": ["sad", "angry", "happy/glad", "scary"], "answer": 2 },

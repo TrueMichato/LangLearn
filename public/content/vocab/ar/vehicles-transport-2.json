@@ -125,22 +125,26 @@
         {
           "sentence": "___ سَرِيعَةٌ فِي الشَّارِعِ.",
           "answer": "الدَّرَّاجَةُ النَّارِيَّةُ",
-          "hint": "motorcycle"
+          "hint": "motorcycle",
+          "translation": "The motorcycle is fast on the street."
         },
         {
           "sentence": "___ مُفِيدَةٌ لِلرِّيَاضَةِ.",
           "answer": "الدَّرَّاجَةُ الهَوَائِيَّةُ",
-          "hint": "bicycle"
+          "hint": "bicycle",
+          "translation": "The bicycle is useful for exercise."
         },
         {
           "sentence": "___ يَصِلُ فِي الوَقْتِ المُحَدَّدِ.",
           "answer": "القِطَارُ السَّرِيعُ",
-          "hint": "express train"
+          "hint": "express train",
+          "translation": "The express train arrives on time."
         },
         {
           "sentence": "___ تَنْتَظِرُ أَمَامَ الفُنْدُقِ.",
           "answer": "سَيَّارَةُ الأُجْرَةِ",
-          "hint": "taxi"
+          "hint": "taxi",
+          "translation": "The taxi is waiting in front of the hotel."
         }
       ]
     },

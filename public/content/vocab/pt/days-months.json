@@ -22,9 +22,9 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "___ é o primeiro mês do ano.", "answer": "Janeiro", "hint": "January" },
-      { "sentence": "___ eu fui ao cinema.", "answer": "Ontem", "hint": "yesterday" },
-      { "sentence": "No ___ vou à praia.", "answer": "sábado", "hint": "Saturday" }
+      { "sentence": "___ é o primeiro mês do ano.", "answer": "Janeiro", "hint": "January", "translation": "January is the first month of the year." },
+      { "sentence": "___ eu fui ao cinema.", "answer": "Ontem", "hint": "yesterday", "translation": "Yesterday I went to the movies." },
+      { "sentence": "No ___ vou à praia.", "answer": "sábado", "hint": "Saturday", "translation": "On Saturday I'm going to the beach." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "What day is 'segunda-feira'?", "options": ["Sunday", "Monday", "Tuesday", "Wednesday"], "answer": 1 },

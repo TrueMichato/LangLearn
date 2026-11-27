@@ -21,9 +21,9 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "Это ___ дом.", "answer": "Большой", "hint": "Big" },
-      { "sentence": "Сегодня ___ день.", "answer": "Хороший", "hint": "Good" },
-      { "sentence": "Какой ___ город!", "answer": "Красивый", "hint": "Beautiful" }
+      { "sentence": "Это ___ дом.", "answer": "Большой", "hint": "Big", "translation": "This is a big house." },
+      { "sentence": "Сегодня ___ день.", "answer": "Хороший", "hint": "Good", "translation": "Today is a good day." },
+      { "sentence": "Какой ___ город!", "answer": "Красивый", "hint": "Beautiful", "translation": "What a beautiful city!" }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "What does 'Маленький' mean?", "options": ["Small", "Big", "Old", "New"], "answer": 0 },

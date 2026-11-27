@@ -125,22 +125,26 @@
         {
           "sentence": "تَبْدَأُ ___ بِخَطْوَةٍ سَرِيعَةٍ.",
           "answer": "الدَّبْكَةُ",
-          "hint": "dabke dance"
+          "hint": "dabke dance",
+          "translation": "The dabke begins with a quick step."
         },
         {
           "sentence": "يُحَافِظُ ___ عَلَى انْسِجَامِ الرَّاقِصِينَ.",
           "answer": "الإِيقَاعُ",
-          "hint": "rhythm"
+          "hint": "rhythm",
+          "translation": "The rhythm keeps the dancers in harmony."
         },
         {
           "sentence": "تَرْتَفِعُ ___ عِنْدَ بَدْءِ الرَّقْصِ.",
           "answer": "الزَّغْرُودَةُ",
-          "hint": "ululation"
+          "hint": "ululation",
+          "translation": "The ululation rises when the dance begins."
         },
         {
           "sentence": "يَجْمَعُ ___ الْحِرَفَ وَالأَغَانِيَ.",
           "answer": "الْمَوْسِمُ التُّرَاثِيُّ",
-          "hint": "heritage festival season"
+          "hint": "heritage festival season",
+          "translation": "The heritage festival season gathers crafts and songs."
         }
       ]
     },

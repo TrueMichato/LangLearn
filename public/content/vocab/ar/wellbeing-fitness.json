@@ -125,22 +125,26 @@
         {
           "sentence": "___ حَقِيقِيَّةٌ تَبْدَأُ بِصِحَّةٍ جَيِّدَةٍ.",
           "answer": "رَفَاهِيَةٌ",
-          "hint": "well-being"
+          "hint": "well-being",
+          "translation": "True well-being begins with good health."
         },
         {
           "sentence": "___ عَالِيَةٌ تَحْتَاجُ إِلَى تَدْرِيبٍ مُنْتَظِمٍ.",
           "answer": "لِيَاقَةٌ",
-          "hint": "fitness"
+          "hint": "fitness",
+          "translation": "High fitness needs regular training."
         },
         {
           "sentence": "___ قَصِيرٌ يُنَشِّطُ الْجِسْمَ.",
           "answer": "تَمْرِينٌ",
-          "hint": "exercise"
+          "hint": "exercise",
+          "translation": "A short exercise energizes the body."
         },
         {
           "sentence": "___ هَادِئٌ يُرِيحُ الْعَضَلَاتِ.",
           "answer": "تَمَدُّدٌ",
-          "hint": "stretching"
+          "hint": "stretching",
+          "translation": "Gentle stretching relaxes the muscles."
         }
       ]
     },

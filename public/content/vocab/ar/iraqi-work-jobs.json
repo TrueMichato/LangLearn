@@ -125,22 +125,26 @@
         {
           "sentence": "آنِي عِنْدِي ___ مِنَ الصُّبِحْ.",
           "answer": "شُغُل",
-          "hint": "work"
+          "hint": "work",
+          "translation": "I have work from the morning."
         },
         {
           "sentence": "___ يِبْدَا بِالتِّسْعَةْ.",
           "answer": "دَوَام",
-          "hint": "work shift"
+          "hint": "work shift",
+          "translation": "The work shift starts at nine."
         },
         {
           "sentence": "بَاكِرْ عِنْدِي ___ بِشَرِكَةْ.",
           "answer": "مُقَابَلَة",
-          "hint": "interview"
+          "hint": "interview",
+          "translation": "Tomorrow I have an interview at a company."
         },
         {
           "sentence": "عِنْدِي ___ خَمْسْ سِنِينْ.",
           "answer": "خِبْرَة",
-          "hint": "experience"
+          "hint": "experience",
+          "translation": "I have five years of experience."
         }
       ]
     },

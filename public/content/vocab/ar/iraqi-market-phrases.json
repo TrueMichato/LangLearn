@@ -125,22 +125,26 @@
         {
           "sentence": "___ يَا عَلِي؟",
           "answer": "شْلُونَكْ",
-          "hint": "how are you?"
+          "hint": "how are you?",
+          "translation": "How are you, Ali?"
         },
         {
           "sentence": "___ سِعْرُ هَذَا؟",
           "answer": "شْقَدْ",
-          "hint": "how much"
+          "hint": "how much",
+          "translation": "How much is this?"
         },
         {
           "sentence": "___، عِفْيَة.",
           "answer": "نَزِّلْ شْوَيَّة",
-          "hint": "lower it a little"
+          "hint": "lower it a little",
+          "translation": "Lower it a little, please."
         },
         {
           "sentence": "___ التَّمْرْ الطَّازَجْ.",
           "answer": "أُرِيدْ هَذَا",
-          "hint": "I want this"
+          "hint": "I want this",
+          "translation": "I want this fresh date fruit."
         }
       ]
     },

@@ -119,9 +119,9 @@
     {
       "type": "fill-blank",
       "items": [
-        { "sentence": "O ___ está cheio de estrelas.", "answer": "céu", "hint": "what you see when you look up" },
-        { "sentence": "Visitamos uma ___ linda no fim de semana.", "answer": "cachoeira", "hint": "water falling from a height" },
-        { "sentence": "Meus avós moram no ___.", "answer": "campo", "hint": "rural area, countryside" }
+        { "sentence": "O ___ está cheio de estrelas.", "answer": "céu", "hint": "what you see when you look up", "translation": "The sky is full of stars." },
+        { "sentence": "Visitamos uma ___ linda no fim de semana.", "answer": "cachoeira", "hint": "water falling from a height", "translation": "We visited a beautiful waterfall on the weekend." },
+        { "sentence": "Meus avós moram no ___.", "answer": "campo", "hint": "rural area, countryside", "translation": "My grandparents live in the countryside." }
       ]
     },
     {

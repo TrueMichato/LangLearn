@@ -125,22 +125,26 @@
         {
           "sentence": "يُحَلِّلُ ___ الصُّوَرَ بِسُرْعَةٍ.",
           "answer": "الذَّكَاءُ الِاصْطِنَاعِيُّ",
-          "hint": "artificial intelligence"
+          "hint": "artificial intelligence",
+          "translation": "Artificial intelligence analyzes images quickly."
         },
         {
           "sentence": "تَرْفَعُ ___ الصُّنْدُوقَ الثَّقِيلَ.",
           "answer": "ذِرَاعٌ آلِيَّةٌ",
-          "hint": "robotic arm"
+          "hint": "robotic arm",
+          "translation": "A robotic arm lifts the heavy box."
         },
         {
           "sentence": "يُحَوِّلُ ___ الْكَلَامَ إِلَى نَصٍّ.",
           "answer": "تَعَرُّفٌ عَلَى الصَّوْتِ",
-          "hint": "speech recognition"
+          "hint": "speech recognition",
+          "translation": "Speech recognition turns speech into text."
         },
         {
           "sentence": "يَفْحَصُ الْبَاحِثُونَ ___ فِي الْبَيَانَاتِ.",
           "answer": "تَحَيُّزٌ",
-          "hint": "bias"
+          "hint": "bias",
+          "translation": "Researchers examine bias in the data."
         }
       ]
     },

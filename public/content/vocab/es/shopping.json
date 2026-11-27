@@ -125,22 +125,26 @@
         {
           "sentence": "¿Cuál es el ___?",
           "answer": "precio",
-          "hint": "cost"
+          "hint": "cost",
+          "translation": "What’s the price?"
         },
         {
           "sentence": "Pago con ___ de crédito.",
           "answer": "tarjeta",
-          "hint": "plastic payment"
+          "hint": "plastic payment",
+          "translation": "I pay with a credit card."
         },
         {
           "sentence": "¿Aceptan ___?",
           "answer": "efectivo",
-          "hint": "paper money"
+          "hint": "paper money",
+          "translation": "Do you take cash?"
         },
         {
           "sentence": "Hay un ___ del 20%.",
           "answer": "descuento",
-          "hint": "price reduction"
+          "hint": "price reduction",
+          "translation": "There’s a 20% discount."
         }
       ]
     },

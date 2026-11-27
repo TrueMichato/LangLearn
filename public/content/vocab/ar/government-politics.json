@@ -125,22 +125,26 @@
         {
           "sentence": "___ عَادِلَةٌ تَخْدِمُ الْمُوَاطِنِينَ.",
           "answer": "حُكُومَةٌ",
-          "hint": "government"
+          "hint": "government",
+          "translation": "A just government serves the citizens."
         },
         {
           "sentence": "___ وَاضِحٌ يَحْمِي حُقُوقَ النَّاسِ.",
           "answer": "دُسْتُورٌ",
-          "hint": "constitution"
+          "hint": "constitution",
+          "translation": "A clear constitution protects people’s rights."
         },
         {
           "sentence": "___ نَشِيطٌ يُنَاقِشُ الْمِيزَانِيَّةَ.",
           "answer": "بَرْلَمَانٌ",
-          "hint": "parliament"
+          "hint": "parliament",
+          "translation": "An active parliament discusses the budget."
         },
         {
           "sentence": "___ نَزِيهَةٌ تُعَزِّزُ الثِّقَةَ الْعَامَّةَ.",
           "answer": "اِنْتِخَابَاتٌ",
-          "hint": "elections"
+          "hint": "elections",
+          "translation": "Fair elections strengthen public trust."
         }
       ]
     },

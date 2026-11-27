@@ -22,10 +22,10 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "Tengo una ___ el lunes.", "answer": "entrevista", "hint": "job interview" },
-      { "sentence": "Recibo la ___ cada mes.", "answer": "nómina", "hint": "payslip" },
-      { "sentence": "Decidí ___ del puesto.", "answer": "dimitir", "hint": "quit voluntarily" },
-      { "sentence": "Actualicé mi ___.", "answer": "currículum", "hint": "CV / résumé" }
+      { "sentence": "Tengo una ___ el lunes.", "answer": "entrevista", "hint": "job interview", "translation": "I have an interview on Monday." },
+      { "sentence": "Recibo la ___ cada mes.", "answer": "nómina", "hint": "payslip", "translation": "I receive my payslip every month." },
+      { "sentence": "Decidí ___ del puesto.", "answer": "dimitir", "hint": "quit voluntarily", "translation": "I decided to resign from the position." },
+      { "sentence": "Actualicé mi ___.", "answer": "currículum", "hint": "CV / résumé", "translation": "I updated my résumé." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "What does 'ascender' mean here?", "options": ["to climb", "to get promoted", "to resign", "to retire"], "answer": 1 },

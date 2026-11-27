@@ -21,9 +21,9 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "O ___ está muito forte hoje.", "answer": "sol", "hint": "sun" },
-      { "sentence": "Que ___! Vamos tomar um sorvete.", "answer": "calor", "hint": "heat" },
-      { "sentence": "Vai ___ à tarde, leve o guarda-chuva.", "answer": "chover", "hint": "to rain" }
+      { "sentence": "O ___ está muito forte hoje.", "answer": "sol", "hint": "sun", "translation": "The sun is very strong today." },
+      { "sentence": "Que ___! Vamos tomar um sorvete.", "answer": "calor", "hint": "heat", "translation": "It's so hot! Let's have an ice cream." },
+      { "sentence": "Vai ___ à tarde, leve o guarda-chuva.", "answer": "chover", "hint": "to rain", "translation": "It's going to rain in the afternoon, take the umbrella." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "What does 'chuva' mean?", "options": ["wind", "rain", "snow", "cloud"], "answer": 1 },

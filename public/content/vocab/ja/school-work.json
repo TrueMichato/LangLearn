@@ -22,9 +22,9 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "日本語を___しています。", "answer": "勉強", "hint": "study" },
-      { "sentence": "明日___があります。", "answer": "テスト", "hint": "test" },
-      { "sentence": "___を忘れました。", "answer": "宿題", "hint": "homework" }
+      { "sentence": "日本語を___しています。", "answer": "勉強", "hint": "study", "translation": "I am studying Japanese." },
+      { "sentence": "明日___があります。", "answer": "テスト", "hint": "test", "translation": "There is a test tomorrow." },
+      { "sentence": "___を忘れました。", "answer": "宿題", "hint": "homework", "translation": "I forgot my homework." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "「会社」はどういう意味ですか？", "options": ["school", "company", "classroom", "library"], "answer": 1 },

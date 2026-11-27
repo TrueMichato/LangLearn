@@ -119,10 +119,10 @@
     {
       "type": "fill-blank",
       "items": [
-        { "sentence": "A ___ é obrigatória no Brasil.", "answer": "votação", "hint": "the act of choosing a candidate" },
-        { "sentence": "Preciso falar com meu ___.", "answer": "advogado", "hint": "professional who practices law" },
-        { "sentence": "Os ___ no Brasil são muito altos.", "answer": "impostos", "hint": "money paid to the government" },
-        { "sentence": "O ___ anunciou novas medidas econômicas.", "answer": "governo", "hint": "group that runs a country" }
+        { "sentence": "A ___ é obrigatória no Brasil.", "answer": "votação", "hint": "the act of choosing a candidate", "translation": "Voting is mandatory in Brazil." },
+        { "sentence": "Preciso falar com meu ___.", "answer": "advogado", "hint": "professional who practices law", "translation": "I need to talk to my lawyer." },
+        { "sentence": "Os ___ no Brasil são muito altos.", "answer": "impostos", "hint": "money paid to the government", "translation": "Taxes in Brazil are very high." },
+        { "sentence": "O ___ anunciou novas medidas econômicas.", "answer": "governo", "hint": "group that runs a country", "translation": "The government announced new economic measures." }
       ]
     },
     {

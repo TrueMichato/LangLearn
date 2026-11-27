@@ -125,17 +125,20 @@
         {
           "sentence": "Prețul ___ este mai mare.",
           "answer": "actual",
-          "hint": "current"
+          "hint": "current",
+          "translation": "The current price is higher."
         },
         {
           "sentence": "O ___ vinde romane noi.",
           "answer": "librărie",
-          "hint": "bookstore"
+          "hint": "bookstore",
+          "translation": "A bookstore sells new novels."
         },
         {
           "sentence": "El poate ___ că are dreptate.",
           "answer": "pretinde",
-          "hint": "to claim"
+          "hint": "to claim",
+          "translation": "He can claim that he is right."
         }
       ]
     },

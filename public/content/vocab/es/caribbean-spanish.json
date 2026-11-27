@@ -21,10 +21,10 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "¡Qué ___ tu camisa!", "answer": "chévere", "hint": "Venezuelan 'cool'" },
-      { "sentence": "Tomé la ___ a La Habana.", "answer": "guagua", "hint": "Caribbean bus" },
-      { "sentence": "Ella es mi ___ del alma.", "answer": "pana", "hint": "best friend" },
-      { "sentence": "Me encanta bailar ___.", "answer": "reguetón", "hint": "Caribbean music genre" }
+      { "sentence": "¡Qué ___ tu camisa!", "answer": "chévere", "hint": "Venezuelan 'cool'", "translation": "Your shirt is so cool!" },
+      { "sentence": "Tomé la ___ a La Habana.", "answer": "guagua", "hint": "Caribbean bus", "translation": "I took the bus to Havana." },
+      { "sentence": "Ella es mi ___ del alma.", "answer": "pana", "hint": "best friend", "translation": "She's my best friend." },
+      { "sentence": "Me encanta bailar ___.", "answer": "reguetón", "hint": "Caribbean music genre", "translation": "I love dancing reggaeton." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "What is 'el chinchorro'?", "options": ["the bus", "the hammock", "the kid", "the song"], "answer": 1 },

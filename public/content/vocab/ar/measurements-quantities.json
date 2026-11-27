@@ -125,22 +125,26 @@
         {
           "sentence": "___ وَاحِدٌ يَكْفِي لِقِيَاسِ الْمَمَرِّ.",
           "answer": "مِتْرٌ",
-          "hint": "meter"
+          "hint": "meter",
+          "translation": "One meter is enough to measure the corridor."
         },
         {
           "sentence": "___ صَغِيرٌ قَدْ يُغَيِّرُ الْمَقَاسَ.",
           "answer": "سَنْتِيمِتْرٌ",
-          "hint": "centimeter"
+          "hint": "centimeter",
+          "translation": "A small centimeter may change the size."
         },
         {
           "sentence": "___ وَاحِدٌ يَفْصِلُ الْقَرْيَةَ عَنِ النَّهْرِ.",
           "answer": "كِيلُومِتْرٌ",
-          "hint": "kilometer"
+          "hint": "kilometer",
+          "translation": "One kilometer separates the village from the river."
         },
         {
           "sentence": "___ مِنَ التُّفَّاحِ يَكْفِي لِلْعَائِلَةِ.",
           "answer": "كِيلُوغْرَامٌ",
-          "hint": "kilogram"
+          "hint": "kilogram",
+          "translation": "A kilogram of apples is enough for the family."
         }
       ]
     },

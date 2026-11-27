@@ -23,9 +23,9 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "朝ごはんを___。", "answer": "食べる", "hint": "to eat" },
-      { "sentence": "日本語を___。", "answer": "話す", "hint": "to speak" },
-      { "sentence": "本を___。", "answer": "読む", "hint": "to read" }
+      { "sentence": "朝ごはんを___。", "answer": "食べる", "hint": "to eat", "translation": "I eat breakfast." },
+      { "sentence": "日本語を___。", "answer": "話す", "hint": "to speak", "translation": "I speak Japanese." },
+      { "sentence": "本を___。", "answer": "読む", "hint": "to read", "translation": "I read a book." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "「飲む」はどういう意味ですか？", "options": ["to eat", "to drink", "to read", "to write"], "answer": 1 },

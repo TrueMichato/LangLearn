@@ -21,9 +21,9 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "Estou com dor de ___.", "answer": "cabeça", "hint": "head" },
-      { "sentence": "Lave as ___ antes de comer.", "answer": "mãos", "hint": "hands" },
-      { "sentence": "Escove os ___ três vezes por dia.", "answer": "dentes", "hint": "teeth" }
+      { "sentence": "Estou com dor de ___.", "answer": "cabeça", "hint": "head", "translation": "I have a headache." },
+      { "sentence": "Lave as ___ antes de comer.", "answer": "mãos", "hint": "hands", "translation": "Wash your hands before eating." },
+      { "sentence": "Escove os ___ três vezes por dia.", "answer": "dentes", "hint": "teeth", "translation": "Brush your teeth three times a day." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "What does 'olho' mean?", "options": ["ear", "eye", "nose", "mouth"], "answer": 1 },

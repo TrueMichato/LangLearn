@@ -125,22 +125,26 @@
         {
           "sentence": "___ مَا شِفْنَاكْ مِنْ زَمَانْ.",
           "answer": "شُو الْأَخْبَار؟",
-          "hint": "what is new?"
+          "hint": "what is new?",
+          "translation": "What is new? We have not seen you for a long time."
         },
         {
           "sentence": "___ إِنْ شَاءَ اللّٰهُ تَمَامْ.",
           "answer": "كِيفَك؟",
-          "hint": "how are you?"
+          "hint": "how are you?",
+          "translation": "How are you? I hope everything is fine."
         },
         {
           "sentence": "أَنَا ___، شُكْرًا عَلَى سُؤَالَكْ.",
           "answer": "مْنِيح",
-          "hint": "good / fine"
+          "hint": "good / fine",
+          "translation": "I am fine, thank you for asking."
         },
         {
           "sentence": "___ عَلَى الشُّغْلْ.",
           "answer": "يَعْطِيك الْعَافْيِة",
-          "hint": "bless you / thanks for your effort"
+          "hint": "bless you / thanks for your effort",
+          "translation": "Bless you for the work."
         }
       ]
     },

@@ -125,17 +125,20 @@
         {
           "sentence": "Pun ceapa pe ___.",
           "answer": "tocător",
-          "hint": "cutting board"
+          "hint": "cutting board",
+          "translation": "I put the onion on the cutting board."
         },
         {
           "sentence": "Amestec supa cu ___.",
           "answer": "lingură",
-          "hint": "spoon"
+          "hint": "spoon",
+          "translation": "I stir the soup with a spoon."
         },
         {
           "sentence": "Un ___ de pâine umple casa.",
           "answer": "miros",
-          "hint": "smell"
+          "hint": "smell",
+          "translation": "A smell of bread fills the house."
         }
       ]
     },

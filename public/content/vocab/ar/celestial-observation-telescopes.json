@@ -125,22 +125,26 @@
         {
           "sentence": "يَقَعُ ___ فَوْقَ جَبَلٍ عَالٍ.",
           "answer": "الْمَرْصَدُ الْفَلَكِيُّ",
-          "hint": "astronomical observatory"
+          "hint": "astronomical observatory",
+          "translation": "The astronomical observatory is located on a high mountain."
         },
         {
           "sentence": "تُرَكِّزُ ___ الضَّوْءَ عَلَى الْحَسَّاسِ.",
           "answer": "الْعَدَسَةُ",
-          "hint": "lens"
+          "hint": "lens",
+          "translation": "The lens focuses light onto the sensor."
         },
         {
           "sentence": "يَحْدُثُ ___ عِنْدَمَا يَدْخُلُ الْقَمَرُ ظِلَّ الأَرْضِ.",
           "answer": "الْخُسُوفُ",
-          "hint": "lunar eclipse"
+          "hint": "lunar eclipse",
+          "translation": "A lunar eclipse occurs when the moon enters Earth’s shadow."
         },
         {
           "sentence": "يَحْجُبُ ___ النُّجُومَ الْخَافِتَةَ.",
           "answer": "التَّلَوُّثُ الضَّوْئِيُّ",
-          "hint": "light pollution"
+          "hint": "light pollution",
+          "translation": "Light pollution hides faint stars."
         }
       ]
     },

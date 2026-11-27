@@ -125,17 +125,20 @@
         {
           "sentence": "Pun cartea pe ___.",
           "answer": "masă",
-          "hint": "table"
+          "hint": "table",
+          "translation": "I put the book on the table."
         },
         {
           "sentence": "Țin hainele în ___.",
           "answer": "dulap",
-          "hint": "closet"
+          "hint": "closet",
+          "translation": "I keep the clothes in the closet."
         },
         {
           "sentence": "Am o ___ pentru poartă.",
           "answer": "cheie",
-          "hint": "key"
+          "hint": "key",
+          "translation": "I have a key for the gate."
         }
       ]
     },

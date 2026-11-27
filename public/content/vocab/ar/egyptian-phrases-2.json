@@ -125,22 +125,26 @@
         {
           "sentence": "الْكِتَاب دَه ___",
           "answer": "بِكَام؟",
-          "hint": "how much?"
+          "hint": "how much?",
+          "translation": "How much is this book?"
         },
         {
           "sentence": "أَنْتَ ___ فِي مِصْر؟",
           "answer": "مِنِينْ؟",
-          "hint": "from where?"
+          "hint": "from where?",
+          "translation": "Where in Egypt are you from?"
         },
         {
           "sentence": "___ هَتِيجِي؟",
           "answer": "إِمْتَى؟",
-          "hint": "when?"
+          "hint": "when?",
+          "translation": "When will you come?"
         },
         {
           "sentence": "___، هَابْعَتْ الرِّسَالَة دِلْوَقْتِي.",
           "answer": "حَاضِرْ",
-          "hint": "okay"
+          "hint": "okay",
+          "translation": "Okay, I will send the message now."
         }
       ]
     },

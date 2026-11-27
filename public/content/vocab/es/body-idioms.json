@@ -125,22 +125,26 @@
         {
           "sentence": "¿Me echas una ___ con estas cajas?",
           "answer": "mano",
-          "hint": "the body part you 'lend' when helping"
+          "hint": "the body part you 'lend' when helping",
+          "translation": "Can you give me a hand with these boxes?"
         },
         {
           "sentence": "Estoy hasta las ___ del tráfico.",
           "answer": "narices",
-          "hint": "noses — to be fed up 'up to the ___'"
+          "hint": "noses — to be fed up 'up to the ___'",
+          "translation": "I'm fed up with the traffic."
         },
         {
           "sentence": "Si quieres aprobar, ponte las ___ ya.",
           "answer": "pilas",
-          "hint": "batteries — 'put on your ___' to get going"
+          "hint": "batteries — 'put on your ___' to get going",
+          "translation": "If you want to pass, get your act together now."
         },
         {
           "sentence": "Ese coche cuesta un ___ de la cara.",
           "answer": "ojo",
-          "hint": "an eye — 'an ___ of the face'"
+          "hint": "an eye — 'an ___ of the face'",
+          "translation": "That car costs an arm and a leg."
         }
       ]
     },

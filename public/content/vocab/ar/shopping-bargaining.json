@@ -125,22 +125,26 @@
         {
           "sentence": "تَحْتَاجُ ___ هَادِئَةٌ إِلَى صَبْرٍ.",
           "answer": "مُسَاوَمَةٌ",
-          "hint": "bargaining"
+          "hint": "bargaining",
+          "translation": "Calm bargaining needs patience."
         },
         {
           "sentence": "___ صَغِيرٌ يُسَاعِدُ الزَّبُونَ.",
           "answer": "تَخْفِيضٌ",
-          "hint": "discount"
+          "hint": "discount",
+          "translation": "A small discount helps the customer."
         },
         {
           "sentence": "___ يُنْهِي النِّقَاشَ.",
           "answer": "سِعْرٌ نِهَائِيٌّ",
-          "hint": "final price"
+          "hint": "final price",
+          "translation": "The final price ends the discussion."
         },
         {
           "sentence": "شَرَحَ ___ جَوْدَةَ الْقُمَاشِ.",
           "answer": "بَائِعٌ",
-          "hint": "seller / vendor"
+          "hint": "seller / vendor",
+          "translation": "A seller explained the quality of the cloth."
         }
       ]
     },

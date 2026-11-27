@@ -119,9 +119,9 @@
     {
       "type": "fill-blank",
       "items": [
-        { "sentence": "Leve uma ___ porque vai esfriar.", "answer": "jaqueta", "hint": "outerwear for cold weather" },
-        { "sentence": "Esqueci meus ___ em casa.", "answer": "óculos", "hint": "worn on the face to see better" },
-        { "sentence": "Vou lavar ___ no sábado.", "answer": "roupa", "hint": "general term for what you wear" }
+        { "sentence": "Leve uma ___ porque vai esfriar.", "answer": "jaqueta", "hint": "outerwear for cold weather", "translation": "Bring a jacket because it's going to get cold." },
+        { "sentence": "Esqueci meus ___ em casa.", "answer": "óculos", "hint": "worn on the face to see better", "translation": "I forgot my glasses at home." },
+        { "sentence": "Vou lavar ___ no sábado.", "answer": "roupa", "hint": "general term for what you wear", "translation": "I'll do laundry on Saturday." }
       ]
     },
     {

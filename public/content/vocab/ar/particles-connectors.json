@@ -125,22 +125,26 @@
         {
           "sentence": "أُحِبُّ الشَّايَ، ___ الْقَهْوَةَ أَفْضَلُ.",
           "answer": "لٰكِنَّ",
-          "hint": "but / however"
+          "hint": "but / however",
+          "translation": "I like tea, but coffee is better."
         },
         {
           "sentence": "بَقِيتُ فِي الْبَيْتِ ___ الْجَوَّ مَاطِرٌ.",
           "answer": "لِأَنَّ",
-          "hint": "because"
+          "hint": "because",
+          "translation": "I stayed at home because the weather is rainy."
         },
         {
           "sentence": "تَعِبَ الطِّفْلُ، ___ نَامَ مُبَكِّرًا.",
           "answer": "لِذٰلِكَ",
-          "hint": "therefore"
+          "hint": "therefore",
+          "translation": "The child got tired, therefore he slept early."
         },
         {
           "sentence": "خَرَجْنَا ___ الطَّرِيقَ طَوِيلٌ.",
           "answer": "مَعَ أَنَّ",
-          "hint": "although"
+          "hint": "although",
+          "translation": "We went out although the road was long."
         }
       ]
     },

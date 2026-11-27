@@ -21,9 +21,9 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "Я ___ русский язык каждый день. (study, imperfective)", "answer": "учу", "hint": "to learn/study (impf)" },
-      { "sentence": "Вчера она ___ новую книгу. (bought, perfective)", "answer": "купила", "hint": "to buy (pf, past feminine)" },
-      { "sentence": "Мы ___ эту задачу и нашли ответ. (solved, perfective)", "answer": "решили", "hint": "to solve (pf, past plural)" }
+      { "sentence": "Я ___ русский язык каждый день. (study, imperfective)", "answer": "учу", "hint": "to learn/study (impf)", "translation": "I study Russian every day." },
+      { "sentence": "Вчера она ___ новую книгу. (bought, perfective)", "answer": "купила", "hint": "to buy (pf, past feminine)", "translation": "Yesterday she bought a new book." },
+      { "sentence": "Мы ___ эту задачу и нашли ответ. (solved, perfective)", "answer": "решили", "hint": "to solve (pf, past plural)", "translation": "We solved this problem and found the answer." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "Which verb is perfective: 'читать' or 'прочитать'?", "options": ["прочитать", "читать", "Both are perfective", "Neither is perfective"], "answer": 0 },

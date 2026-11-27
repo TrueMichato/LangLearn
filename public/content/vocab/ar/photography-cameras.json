@@ -125,22 +125,26 @@
         {
           "sentence": "___ نَظِيفَةٌ تَجْعَلُ الصُّورَةَ أَوْضَحَ.",
           "answer": "عَدَسَةٌ",
-          "hint": "lens"
+          "hint": "lens",
+          "translation": "A clean lens makes the photo clearer."
         },
         {
-          "sentence": "___ ثُلَاثِيٌّ يُثَبِّتُ الْكَامِيرَا.",
+          "sentence": "___ يُثَبِّتُ الْكَامِيرَا.",
           "answer": "حَامِلٌ ثُلَاثِيٌّ",
-          "hint": "tripod"
+          "hint": "tripod",
+          "translation": "A tripod steadies the camera."
         },
         {
           "sentence": "___ دَقِيقٌ يُبْرِزُ الْوَجْهَ.",
           "answer": "تَرْكِيزٌ",
-          "hint": "focus"
+          "hint": "focus",
+          "translation": "Precise focus highlights the face."
         },
         {
           "sentence": "___ عَالِيَةٌ تُظْهِرُ أَلْوَانًا أَفْضَلَ.",
           "answer": "دِقَّةٌ",
-          "hint": "resolution"
+          "hint": "resolution",
+          "translation": "High resolution shows better colors."
         }
       ]
     },

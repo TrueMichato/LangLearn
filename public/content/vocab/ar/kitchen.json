@@ -125,22 +125,26 @@
         {
           "sentence": "___ نَظِيفٌ وَمُرَتَّبٌ.",
           "answer": "مَطْبَخٌ",
-          "hint": "kitchen"
+          "hint": "kitchen",
+          "translation": "The kitchen is clean and tidy."
         },
         {
           "sentence": "___ عَلَى النَّارِ.",
           "answer": "طَنْجَرَةٌ",
-          "hint": "pot"
+          "hint": "pot",
+          "translation": "The pot is on the stove."
         },
         {
           "sentence": "___ سَاخِنَةٌ جِدًّا.",
           "answer": "مِقْلَاةٌ",
-          "hint": "frying pan"
+          "hint": "frying pan",
+          "translation": "The frying pan is very hot."
         },
         {
           "sentence": "___ حَادٌّ وَصَغِيرٌ.",
           "answer": "سِكِّينٌ",
-          "hint": "knife"
+          "hint": "knife",
+          "translation": "The knife is sharp and small."
         }
       ]
     },

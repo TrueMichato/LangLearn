@@ -125,17 +125,20 @@
         {
           "sentence": "Am ___ că lucrurile se vor îmbunătăți.",
           "answer": "speranță",
-          "hint": "hope"
+          "hint": "hope",
+          "translation": "I have hope that things will improve."
         },
         {
           "sentence": "Îmi este ___ de bunici.",
           "answer": "dor",
-          "hint": "longing / missing someone"
+          "hint": "longing / missing someone",
+          "translation": "I miss my grandparents."
         },
         {
           "sentence": "Ea arată ___ față de colegi.",
           "answer": "empatie",
-          "hint": "empathy"
+          "hint": "empathy",
+          "translation": "She shows empathy toward colleagues."
         }
       ]
     },

@@ -21,10 +21,10 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "Eu ___ viajar para o Brasil. (I intend to...)", "answer": "pretendo", "hint": "false friend: looks like 'pretend'" },
-      { "sentence": "___ a porta, não empurre! (Pull the door)", "answer": "Puxe", "hint": "false friend: looks like 'push'" },
-      { "sentence": "Comprei um livro na ___. (bookstore)", "answer": "livraria", "hint": "false friend: looks like 'library'" },
-      { "sentence": "A ___ brasileira é famosa. (music)", "answer": "música", "hint": "true cognate from English" }
+      { "sentence": "Eu ___ viajar para o Brasil. (I intend to...)", "answer": "pretendo", "hint": "false friend: looks like 'pretend'", "translation": "I intend to travel to Brazil." },
+      { "sentence": "___ a porta, não empurre! (Pull the door)", "answer": "Puxe", "hint": "false friend: looks like 'push'", "translation": "Pull the door, don't push!" },
+      { "sentence": "Comprei um livro na ___. (bookstore)", "answer": "livraria", "hint": "false friend: looks like 'library'", "translation": "I bought a book at the bookstore." },
+      { "sentence": "A ___ brasileira é famosa. (music)", "answer": "música", "hint": "true cognate from English", "translation": "Brazilian music is famous." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "What does 'parentes' mean?", "options": ["parents", "relatives", "partners", "patients"], "answer": 1 },

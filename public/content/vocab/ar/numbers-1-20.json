@@ -139,22 +139,26 @@
         {
           "sentence": "الرَّقْمُ ___ سَهْلٌ.",
           "answer": "وَاحِدٌ",
-          "hint": "one"
+          "hint": "one",
+          "translation": "The number one is easy."
         },
         {
           "sentence": "الرَّقْمُ ___ بَعْدَ وَاحِدٍ.",
           "answer": "اِثْنَانِ",
-          "hint": "two"
+          "hint": "two",
+          "translation": "The number two comes after one."
         },
         {
           "sentence": "الرَّقْمُ ___ عَلَى اللَّوْحِ.",
           "answer": "ثَلَاثَةٌ",
-          "hint": "three"
+          "hint": "three",
+          "translation": "The number three is on the board."
         },
         {
           "sentence": "الرَّقْمُ ___ فِي الدَّفْتَرِ.",
           "answer": "أَرْبَعَةٌ",
-          "hint": "four"
+          "hint": "four",
+          "translation": "The number four is in the notebook."
         }
       ]
     },

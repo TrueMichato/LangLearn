@@ -21,9 +21,9 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "天気予報___明日は雨です。", "answer": "によると", "hint": "according to" },
-      { "sentence": "データ___判断します。", "answer": "に基づいて", "hint": "based on" },
-      { "sentence": "月曜日___毎日営業しています。", "answer": "を除いて", "hint": "except for" }
+      { "sentence": "天気予報___明日は雨です。", "answer": "によると", "hint": "according to", "translation": "According to the weather forecast, it will rain tomorrow." },
+      { "sentence": "データ___判断します。", "answer": "に基づいて", "hint": "based on", "translation": "I will make a judgment based on the data." },
+      { "sentence": "月曜日___毎日営業しています。", "answer": "を除いて", "hint": "except for", "translation": "We are open every day except Monday." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "What does ～にもかかわらず mean?", "options": ["according to", "despite", "based on", "through"], "answer": 1 },

@@ -132,22 +132,26 @@
         {
           "sentence": "El ___ vamos a la playa.",
           "answer": "sábado",
-          "hint": "weekend day"
+          "hint": "weekend day",
+          "translation": "Saturday we’re going to the beach."
         },
         {
           "sentence": "Mi cumpleaños es en ___.",
           "answer": "febrero",
-          "hint": "second month"
+          "hint": "second month",
+          "translation": "My birthday is in February."
         },
         {
           "sentence": "___ tengo un examen.",
           "answer": "Mañana",
-          "hint": "the day after today"
+          "hint": "the day after today",
+          "translation": "Tomorrow I have a test."
         },
         {
           "sentence": "Los ___ salgo con amigos.",
           "answer": "viernes",
-          "hint": "end of work week"
+          "hint": "end of work week",
+          "translation": "On Fridays I go out with friends."
         }
       ]
     },

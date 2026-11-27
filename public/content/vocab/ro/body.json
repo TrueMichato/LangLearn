@@ -125,17 +125,20 @@
         {
           "sentence": "Port geanta pe ___.",
           "answer": "umăr",
-          "hint": "shoulder"
+          "hint": "shoulder",
+          "translation": "I carry the bag on my shoulder."
         },
         {
           "sentence": "Am un ___ obosit după drum.",
           "answer": "picior",
-          "hint": "leg"
+          "hint": "leg",
+          "translation": "I have a tired leg after the trip."
         },
         {
           "sentence": "Un ___ mă doare când alerg.",
           "answer": "genunchi",
-          "hint": "knee"
+          "hint": "knee",
+          "translation": "One knee hurts when I run."
         }
       ]
     },

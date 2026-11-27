@@ -125,22 +125,26 @@
         {
           "sentence": "قَرَأْتُ ___ التَّأْمِينِ بِعِنَايَةٍ.",
           "answer": "وَثِيقَةٌ",
-          "hint": "policy / document"
+          "hint": "policy / document",
+          "translation": "I read the insurance policy carefully."
         },
         {
           "sentence": "يَدْفَعُ الْعَمِيلُ ___ شَهْرِيًّا.",
           "answer": "قِسْطٌ",
-          "hint": "premium"
+          "hint": "premium",
+          "translation": "The customer pays a premium every month."
         },
         {
           "sentence": "قَدَّمَ السَّائِقُ ___ بَعْدَ الْحَادِثِ.",
           "answer": "مُطَالَبَةٌ",
-          "hint": "claim"
+          "hint": "claim",
+          "translation": "The driver filed a claim after the accident."
         },
         {
           "sentence": "يُقَيِّمُ الْخَبِيرُ ___ الْفَيْضَانِ.",
           "answer": "خَطَرٌ",
-          "hint": "risk"
+          "hint": "risk",
+          "translation": "The expert assesses the risk of flooding."
         }
       ]
     },

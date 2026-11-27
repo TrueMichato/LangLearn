@@ -21,10 +21,10 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "Voy a ___ el tanque antes del viaje.", "answer": "llenar", "hint": "to fill" },
-      { "sentence": "El motor necesita ___ nuevo.", "answer": "aceite", "hint": "oil" },
-      { "sentence": "Tengo un ___ pinchado.", "answer": "neumático", "hint": "tire (Spain term)" },
-      { "sentence": "¿Me da el ___, por favor?", "answer": "recibo", "hint": "proof of payment" }
+      { "sentence": "Voy a ___ el tanque antes del viaje.", "answer": "llenar", "hint": "to fill", "translation": "I'm going to fill the tank before the trip." },
+      { "sentence": "El motor necesita ___ nuevo.", "answer": "aceite", "hint": "oil", "translation": "The engine needs new oil." },
+      { "sentence": "Tengo un ___ pinchado.", "answer": "neumático", "hint": "tire (Spain term)", "translation": "I have a flat tire." },
+      { "sentence": "¿Me da el ___, por favor?", "answer": "recibo", "hint": "proof of payment", "translation": "Can you give me the receipt, please?" }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "What does 'sin plomo' mean?", "options": ["unleaded", "premium", "diesel", "regular"], "answer": 0 },

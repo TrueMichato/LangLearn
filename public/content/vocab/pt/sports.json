@@ -119,9 +119,9 @@
     {
       "type": "fill-blank",
       "items": [
-        { "sentence": "O ___ de hoje foi muito puxado.", "answer": "treino", "hint": "exercise session / workout" },
-        { "sentence": "Os ___ lotaram o estádio.", "answer": "torcedores", "hint": "people who cheer for a team" },
-        { "sentence": "Ela ganhou a ___ de ouro na natação.", "answer": "medalha", "hint": "award for winning a competition" }
+        { "sentence": "O ___ de hoje foi muito puxado.", "answer": "treino", "hint": "exercise session / workout", "translation": "Today's workout was really tough." },
+        { "sentence": "Os ___ lotaram o estádio.", "answer": "torcedores", "hint": "people who cheer for a team", "translation": "The fans filled the stadium." },
+        { "sentence": "Ela ganhou a ___ de ouro na natação.", "answer": "medalha", "hint": "award for winning a competition", "translation": "She won the gold medal in swimming." }
       ]
     },
     {

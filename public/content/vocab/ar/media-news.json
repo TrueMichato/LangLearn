@@ -125,22 +125,26 @@
         {
           "sentence": "___ تُؤَثِّرُ فِي الرَّأْيِ العَامِّ.",
           "answer": "وَسَائِلُ الإِعْلَامِ",
-          "hint": "media outlets"
+          "hint": "media outlets",
+          "translation": "Media outlets influence public opinion."
         },
         {
           "sentence": "___ تَبْدَأُ فِي الثَّامِنَةِ.",
           "answer": "نَشْرَةُ الأَخْبَارِ",
-          "hint": "news bulletin"
+          "hint": "news bulletin",
+          "translation": "The news bulletin starts at eight."
         },
         {
           "sentence": "___ ظَهَرَ عَلَى الصَّفْحَةِ الأُولَى.",
           "answer": "العُنْوَانُ الرَّئِيسِيُّ",
-          "hint": "main headline"
+          "hint": "main headline",
+          "translation": "The main headline appeared on the front page."
         },
         {
           "sentence": "___ نَقَلَ الخَبَرَ مِنَ المَيْدَانِ.",
           "answer": "المُرَاسِلُ",
-          "hint": "correspondent"
+          "hint": "correspondent",
+          "translation": "The correspondent reported the news from the field."
         }
       ]
     },

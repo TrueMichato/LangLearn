@@ -21,11 +21,11 @@
   "exercises": [
     { "type": "match", "pairs": 6 },
     { "type": "fill-blank", "items": [
-      { "sentence": "Я люблю слушать ___.", "answer": "Музыку", "hint": "Music (accusative)" },
-      { "sentence": "___ висит на стене.", "answer": "Картина", "hint": "Painting / Picture" },
-      { "sentence": "Мы идём на ___ вечером.", "answer": "Концерт", "hint": "Concert" },
-      { "sentence": "___ рисует портрет.", "answer": "Художник", "hint": "Artist / Painter" },
-      { "sentence": "___ играет симфонию.", "answer": "Оркестр", "hint": "Orchestra" }
+      { "sentence": "Я люблю слушать ___.", "answer": "Музыку", "hint": "Music (accusative)", "translation": "I love listening to music." },
+      { "sentence": "___ висит на стене.", "answer": "Картина", "hint": "Painting / Picture", "translation": "The painting hangs on the wall." },
+      { "sentence": "Мы идём на ___ вечером.", "answer": "Концерт", "hint": "Concert", "translation": "We're going to a concert this evening." },
+      { "sentence": "___ рисует портрет.", "answer": "Художник", "hint": "Artist / Painter", "translation": "The artist is painting a portrait." },
+      { "sentence": "___ играет симфонию.", "answer": "Оркестр", "hint": "Orchestra", "translation": "The orchestra is playing a symphony." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "What does 'Песня' mean?", "options": ["Song", "Music", "Dance", "Poem"], "answer": 0 },

@@ -125,22 +125,26 @@
         {
           "sentence": "Mi prima está ___.",
           "answer": "embarazada",
-          "hint": "common false friend: pregnant"
+          "hint": "common false friend: pregnant",
+          "translation": "My cousin is pregnant."
         },
         {
           "sentence": "La ___ tiene libros nuevos.",
           "answer": "librería",
-          "hint": "bookstore, not library"
+          "hint": "bookstore, not library",
+          "translation": "The bookstore has new books."
         },
         {
           "sentence": "Tuvo mucho ___.",
           "answer": "éxito",
-          "hint": "success, not exit"
+          "hint": "success, not exit",
+          "translation": "He had a lot of success."
         },
         {
           "sentence": "Voy a ___ a la junta.",
           "answer": "asistir",
-          "hint": "attend, not assist"
+          "hint": "attend, not assist",
+          "translation": "I’m going to attend the meeting."
         }
       ]
     },

@@ -21,9 +21,9 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "Шёл дождь, ___ мы остались дома. (therefore)", "answer": "поэтому", "hint": "therefore" },
-      { "sentence": "___, магазин уже закрыт. (Unfortunately)", "answer": "К сожалению", "hint": "unfortunately" },
-      { "sentence": "___, это не так сложно. (In fact)", "answer": "На самом деле", "hint": "in fact / actually" }
+      { "sentence": "Шёл дождь, ___ мы остались дома. (therefore)", "answer": "поэтому", "hint": "therefore", "translation": "It was raining, so we stayed home." },
+      { "sentence": "___, магазин уже закрыт. (Unfortunately)", "answer": "К сожалению", "hint": "unfortunately", "translation": "Unfortunately, the store is already closed." },
+      { "sentence": "___, это не так сложно. (In fact)", "answer": "На самом деле", "hint": "in fact / actually", "translation": "In fact, it's not that difficult." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "What does 'тем не менее' mean?", "options": ["Nevertheless", "Therefore", "Moreover", "In general"], "answer": 0 },

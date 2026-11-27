@@ -125,22 +125,26 @@
         {
           "sentence": "وَقَّعْتُ ___ لِسَنَةٍ.",
           "answer": "عَقْدُ إِيجَارٍ",
-          "hint": "lease contract"
+          "hint": "lease contract",
+          "translation": "I signed a lease contract for a year."
         },
         {
           "sentence": "قَابَلْنَا ___ بَعْدَ الظُّهْرِ.",
           "answer": "مُؤَجِّرٌ",
-          "hint": "landlord"
+          "hint": "landlord",
+          "translation": "We met the landlord in the afternoon."
         },
         {
           "sentence": "يَدْفَعُ ___ الْإِيجَارَ شَهْرِيًّا.",
           "answer": "مُسْتَأْجِرٌ",
-          "hint": "tenant"
+          "hint": "tenant",
+          "translation": "The tenant pays the rent monthly."
         },
         {
           "sentence": "هٰذَا ___ قَرِيبٌ مِنَ الْمَدْرَسَةِ.",
           "answer": "عَقَارٌ",
-          "hint": "property"
+          "hint": "property",
+          "translation": "This is a property close to the school."
         }
       ]
     },

@@ -21,9 +21,9 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "Posso pagar com ___?", "answer": "cartão", "hint": "card" },
-      { "sentence": "Qual é o ___ dessa camisa?", "answer": "preço", "hint": "price" },
-      { "sentence": "Tem muita ___ na Black Friday.", "answer": "promoção", "hint": "sale" }
+      { "sentence": "Posso pagar com ___?", "answer": "cartão", "hint": "card", "translation": "Can I pay with a card?" },
+      { "sentence": "Qual é o ___ dessa camisa?", "answer": "preço", "hint": "price", "translation": "What is the price of this shirt?" },
+      { "sentence": "Tem muita ___ na Black Friday.", "answer": "promoção", "hint": "sale", "translation": "There are many sales on Black Friday." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "What does 'dinheiro' mean?", "options": ["card", "money", "change", "price"], "answer": 1 },

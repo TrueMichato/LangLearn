@@ -22,9 +22,9 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "Вы ___ по-русски?", "answer": "Говорите", "hint": "To speak (formal you)" },
-      { "sentence": "Она любит ___ книги.", "answer": "Читать", "hint": "To read" },
-      { "sentence": "Я ___ русский язык.", "answer": "Учу", "hint": "To learn (I form)" }
+      { "sentence": "Вы ___ по-русски?", "answer": "Говорите", "hint": "To speak (formal you)", "translation": "Do you speak Russian?" },
+      { "sentence": "Она любит ___ книги.", "answer": "Читать", "hint": "To read", "translation": "She loves to read books." },
+      { "sentence": "Я ___ русский язык.", "answer": "Учу", "hint": "To learn (I form)", "translation": "I am learning Russian." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "What does 'Писать' mean?", "options": ["To write", "To read", "To speak", "To see"], "answer": 0 },

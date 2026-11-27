@@ -125,22 +125,26 @@
         {
           "sentence": "___ قَرِيبَةٌ مِنَ الْمُسْتَشْفَى.",
           "answer": "صَيْدَلِيَّةٌ",
-          "hint": "pharmacy"
+          "hint": "pharmacy",
+          "translation": "The pharmacy is near the hospital."
         },
         {
           "sentence": "هٰذَا ___ لِلْمَرِيضِ.",
           "answer": "دَوَاءٌ",
-          "hint": "medicine"
+          "hint": "medicine",
+          "translation": "This is medicine for the patient."
         },
         {
           "sentence": "___ وَاضِحَةٌ مِنَ الطَّبِيبِ.",
           "answer": "وَصْفَةٌ طِبِّيَّةٌ",
-          "hint": "medical prescription"
+          "hint": "medical prescription",
+          "translation": "The doctor's prescription is clear."
         },
         {
           "sentence": "___ وَاحِدَةٌ عَلَى الطَّاوِلَةِ.",
           "answer": "حَبَّةٌ",
-          "hint": "pill"
+          "hint": "pill",
+          "translation": "One pill is on the table."
         }
       ]
     },

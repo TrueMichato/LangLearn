@@ -125,22 +125,26 @@
         {
           "sentence": "زُرْنَا ___ قَدِيمًا فِي وَسَطِ الْمَدِينَةِ.",
           "answer": "مَتْحَفٌ",
-          "hint": "museum"
+          "hint": "museum",
+          "translation": "We visited an old museum in the city center."
         },
         {
           "sentence": "تَكْشِفُ ___ جَدِيدَةٌ بَيْتًا قَدِيمًا.",
           "answer": "حَفْرِيَّةٌ",
-          "hint": "excavation"
+          "hint": "excavation",
+          "translation": "A new excavation reveals an old house."
         },
         {
           "sentence": "يَظْهَرُ ___ قَدِيمٌ عَلَى الْحَجَرِ.",
           "answer": "نَقْشٌ",
-          "hint": "inscription"
+          "hint": "inscription",
+          "translation": "An old inscription appears on the stone."
         },
         {
           "sentence": "تَدْرُسُ ___ نَقْشًا جَدِيدًا بِعِنَايَةٍ.",
           "answer": "بَاحِثَةٌ",
-          "hint": "researcher"
+          "hint": "researcher",
+          "translation": "A researcher studies a new inscription carefully."
         }
       ]
     },

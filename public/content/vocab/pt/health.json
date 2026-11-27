@@ -119,9 +119,9 @@
     {
       "type": "fill-blank",
       "items": [
-        { "sentence": "Não esqueça de tomar o ___.", "answer": "remédio", "hint": "something you take when sick" },
-        { "sentence": "Tomei a ___ contra a gripe.", "answer": "vacina", "hint": "injection for disease prevention" },
-        { "sentence": "Estou com ___ de cabeça.", "answer": "dor", "hint": "unpleasant physical sensation" }
+        { "sentence": "Não esqueça de tomar o ___.", "answer": "remédio", "hint": "something you take when sick", "translation": "Don't forget to take your medicine." },
+        { "sentence": "Tomei a ___ contra a gripe.", "answer": "vacina", "hint": "injection for disease prevention", "translation": "I got the flu vaccine." },
+        { "sentence": "Estou com ___ de cabeça.", "answer": "dor", "hint": "unpleasant physical sensation", "translation": "I have a headache." }
       ]
     },
     {

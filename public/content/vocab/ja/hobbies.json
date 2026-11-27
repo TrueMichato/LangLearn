@@ -21,9 +21,9 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "___は何ですか。", "answer": "趣味", "hint": "hobby" },
-      { "sentence": "プールで___ぎます。", "answer": "泳", "hint": "to swim" },
-      { "sentence": "カラオケで___います。", "answer": "歌", "hint": "to sing" }
+      { "sentence": "___は何ですか。", "answer": "趣味", "hint": "hobby", "translation": "What is your hobby?" },
+      { "sentence": "プールで___ぎます。", "answer": "泳", "hint": "to swim", "translation": "I swim in the pool." },
+      { "sentence": "カラオケで___います。", "answer": "歌", "hint": "to sing", "translation": "I sing at karaoke." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "「散歩」はどういう意味ですか。", "options": ["running", "swimming", "walk/stroll", "dancing"], "answer": 2 },

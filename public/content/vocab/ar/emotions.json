@@ -125,22 +125,26 @@
         {
           "sentence": "___ كَبِيرٌ فِي الْبَيْتِ.",
           "answer": "فَرَحٌ",
-          "hint": "joy"
+          "hint": "joy",
+          "translation": "Great joy is in the house."
         },
         {
           "sentence": "___ خَفِيفٌ ظَهَرَ عَلَى وَجْهِهِ.",
           "answer": "حُزْنٌ",
-          "hint": "sadness"
+          "hint": "sadness",
+          "translation": "A slight sadness appeared on his face."
         },
         {
           "sentence": "___ شَدِيدٌ لَا يُسَاعِدُ.",
           "answer": "غَضَبٌ",
-          "hint": "anger"
+          "hint": "anger",
+          "translation": "Strong anger does not help."
         },
         {
           "sentence": "___ قَلِيلٌ طَبِيعِيٌّ.",
           "answer": "خَوْفٌ",
-          "hint": "fear"
+          "hint": "fear",
+          "translation": "A little fear is natural."
         }
       ]
     },

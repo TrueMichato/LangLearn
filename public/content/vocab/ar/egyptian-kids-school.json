@@ -125,22 +125,26 @@
         {
           "sentence": "___ بِيِلْعَبْ فِي الْفُسْحَةْ.",
           "answer": "عَيِّل",
-          "hint": "kid"
+          "hint": "kid",
+          "translation": "The kid is playing at recess."
         },
         {
           "sentence": "حُطّ الْكِتَابْ فِي ___.",
           "answer": "شَنْطَة",
-          "hint": "school bag"
+          "hint": "school bag",
+          "translation": "Put the book in the school bag."
         },
         {
           "sentence": "عِنْدِي ___ كِتِيرْ النَّهَارْدَهْ.",
           "answer": "وَاجِب",
-          "hint": "homework"
+          "hint": "homework",
+          "translation": "I have a lot of homework today."
         },
         {
           "sentence": "هُوَّ ___ وَبِيِحِبّ الْمَدْرَسَةْ.",
           "answer": "شَاطِر",
-          "hint": "clever / good student"
+          "hint": "clever / good student",
+          "translation": "He's a good student and loves school."
         }
       ]
     },

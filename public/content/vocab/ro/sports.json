@@ -125,17 +125,20 @@
         {
           "sentence": "Merg la ___ după muncă.",
           "answer": "sală",
-          "hint": "gym"
+          "hint": "gym",
+          "translation": "I go to the gym after work."
         },
         {
           "sentence": "Ridic o ___ ușoară.",
           "answer": "greutate",
-          "hint": "weight"
+          "hint": "weight",
+          "translation": "I lift a light weight."
         },
         {
           "sentence": "Fac ___ înainte de alergare.",
           "answer": "încălzire",
-          "hint": "warm-up"
+          "hint": "warm-up",
+          "translation": "I do a warm-up before running."
         }
       ]
     },

@@ -21,9 +21,9 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "___と散歩に行きます。", "answer": "犬", "hint": "Dog" },
-      { "sentence": "___園に行きましょう。", "answer": "動物", "hint": "Animal" },
-      { "sentence": "奈良には___がたくさんいます。", "answer": "鹿", "hint": "Deer" }
+      { "sentence": "___と散歩に行きます。", "answer": "犬", "hint": "Dog", "translation": "I go for a walk with my dog." },
+      { "sentence": "___園に行きましょう。", "answer": "動物", "hint": "Animal", "translation": "Let's go to the zoo." },
+      { "sentence": "奈良には___がたくさんいます。", "answer": "鹿", "hint": "Deer", "translation": "There are many deer in Nara." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "How do you say 'cat' in Japanese?", "options": ["猫", "犬", "鳥", "馬"], "answer": 0 },

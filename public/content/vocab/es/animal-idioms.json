@@ -125,22 +125,26 @@
         {
           "sentence": "Mi tío está como una ___ , pero lo adoro.",
           "answer": "cabra",
-          "hint": "goat — used for craziness"
+          "hint": "goat — used for craziness",
+          "translation": "My uncle is as mad as a goat (totally crazy), but I adore him."
         },
         {
           "sentence": "Si voy al banco y de paso al mercado, mato dos ___ de un tiro.",
           "answer": "pájaros",
-          "hint": "the birds in 'kill two birds with one stone'"
+          "hint": "the birds in 'kill two birds with one stone'",
+          "translation": "If I go to the bank and stop by the market, I kill two birds with one stone."
         },
         {
           "sentence": "Mi abuela tiene vista de ___ — ve todo.",
           "answer": "águila",
-          "hint": "an eagle — eagle eyes"
+          "hint": "an eagle — eagle eyes",
+          "translation": "My grandma has eagle eyes — she sees everything."
         },
         {
           "sentence": "Es el único músico de una familia de abogados — es la oveja ___.",
           "answer": "negra",
-          "hint": "the black ___ of the family"
+          "hint": "the black ___ of the family",
+          "translation": "He's the only musician in a family of lawyers — he's the black sheep."
         }
       ]
     },

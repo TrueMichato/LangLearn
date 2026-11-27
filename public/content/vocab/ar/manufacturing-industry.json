@@ -125,22 +125,26 @@
         {
           "sentence": "تَوَقَّفَ ___ بِسَبَبِ عُطْلٍ.",
           "answer": "خَطُّ إِنْتَاجٍ",
-          "hint": "production line"
+          "hint": "production line",
+          "translation": "A production line stopped because of a fault."
         },
         {
           "sentence": "وَصَلَتْ ___ إِلَى الْمَخْزَنِ صَبَاحًا.",
           "answer": "مَوَادُّ خَامٌ",
-          "hint": "raw materials"
+          "hint": "raw materials",
+          "translation": "Raw materials arrived at the warehouse in the morning."
         },
         {
           "sentence": "يَحْدُثُ ___ نِهَائِيٌّ قَبْلَ الشَّحْنِ.",
           "answer": "فَحْصٌ",
-          "hint": "inspection"
+          "hint": "inspection",
+          "translation": "A final inspection happens before shipping."
         },
         {
           "sentence": "تَحْمِي ___ الْعُمَّالَ مِنَ الْحَوَادِثِ.",
           "answer": "سَلَامَةٌ صِنَاعِيَّةٌ",
-          "hint": "industrial safety"
+          "hint": "industrial safety",
+          "translation": "Industrial safety protects workers from accidents."
         }
       ]
     },

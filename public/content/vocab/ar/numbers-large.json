@@ -125,22 +125,26 @@
         {
           "sentence": "الرَّقْمُ ___ عَلَى الْوَرَقَةِ.",
           "answer": "عِشْرُونَ",
-          "hint": "twenty"
+          "hint": "twenty",
+          "translation": "The number twenty is on the paper."
         },
         {
           "sentence": "الرَّقْمُ ___ بَعْدَ عِشْرِينَ.",
           "answer": "ثَلَاثُونَ",
-          "hint": "thirty"
+          "hint": "thirty",
+          "translation": "The number thirty comes after twenty."
         },
         {
           "sentence": "الرَّقْمُ ___ فِي الْجَدْوَلِ.",
           "answer": "أَرْبَعُونَ",
-          "hint": "forty"
+          "hint": "forty",
+          "translation": "The number forty is in the table."
         },
         {
           "sentence": "الرَّقْمُ ___ سَهْلٌ.",
           "answer": "خَمْسُونَ",
-          "hint": "fifty"
+          "hint": "fifty",
+          "translation": "The number fifty is easy."
         }
       ]
     },

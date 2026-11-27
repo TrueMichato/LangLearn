@@ -21,10 +21,10 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "Me ___ la cabeza.", "answer": "duele", "hint": "hurts" },
-      { "sentence": "Tengo ___ desde anoche.", "answer": "fiebre", "hint": "high temperature" },
-      { "sentence": "El doctor me dio una ___.", "answer": "receta", "hint": "prescription" },
-      { "sentence": "Es importante ___ cada año.", "answer": "vacunarse", "hint": "to get a shot" }
+      { "sentence": "Me ___ la cabeza.", "answer": "duele", "hint": "hurts", "translation": "My head hurts." },
+      { "sentence": "Tengo ___ desde anoche.", "answer": "fiebre", "hint": "high temperature", "translation": "I've had a fever since last night." },
+      { "sentence": "El doctor me dio una ___.", "answer": "receta", "hint": "prescription", "translation": "The doctor gave me a prescription." },
+      { "sentence": "Es importante ___ cada año.", "answer": "vacunarse", "hint": "to get a shot", "translation": "It's important to get vaccinated every year." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "What is 'la tos'?", "options": ["the fever", "the cough", "the cold", "the pill"], "answer": 1 },

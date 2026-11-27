@@ -125,22 +125,26 @@
         {
           "sentence": "تُذَكِّرُنَا الْحِكْمَةُ: ___.",
           "answer": "مَنْ جَدَّ وَجَدَ",
-          "hint": "whoever strives finds success"
+          "hint": "whoever strives finds success",
+          "translation": "The saying reminds us: whoever strives finds success."
         },
         {
           "sentence": "قَالَتِ الْجَدَّةُ: ___.",
           "answer": "الصَّبْرُ مِفْتَاحُ الْفَرَجِ",
-          "hint": "patience is the key to relief"
+          "hint": "patience is the key to relief",
+          "translation": "Grandmother said: patience is the key to relief."
         },
         {
           "sentence": "كَتَبَ الْمُعَلِّمُ عَلَى السَّبُّورَةِ: ___.",
           "answer": "الْعِلْمُ نُورٌ",
-          "hint": "knowledge is light"
+          "hint": "knowledge is light",
+          "translation": "The teacher wrote on the board: knowledge is light."
         },
         {
           "sentence": "يَقُولُ أَبِي دَائِمًا: ___.",
           "answer": "الْوَقْتُ كَالسَّيْفِ",
-          "hint": "time is like a sword"
+          "hint": "time is like a sword",
+          "translation": "My father always says: time is like a sword."
         }
       ]
     },

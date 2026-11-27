@@ -125,17 +125,20 @@
         {
           "sentence": "Plătesc cu ___ la casă.",
           "answer": "card",
-          "hint": "card"
+          "hint": "card",
+          "translation": "I pay by card at the checkout."
         },
         {
           "sentence": "Caut ___ mai mare.",
           "answer": "mărime",
-          "hint": "size"
+          "hint": "size",
+          "translation": "I am looking for a larger size."
         },
         {
           "sentence": "Am ___ pentru piață.",
           "answer": "numerar",
-          "hint": "cash"
+          "hint": "cash",
+          "translation": "I have cash for the market."
         }
       ]
     },

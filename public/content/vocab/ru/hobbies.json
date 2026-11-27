@@ -21,9 +21,9 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "Пойдём в ___ вечером.", "answer": "Кино", "hint": "Cinema" },
-      { "sentence": "Я ___ по утрам.", "answer": "Бегаю", "hint": "To run (I form)" },
-      { "sentence": "Она любит ___.", "answer": "Танцевать", "hint": "To dance" }
+      { "sentence": "Пойдём в ___ вечером.", "answer": "Кино", "hint": "Cinema", "translation": "Let's go to the cinema this evening." },
+      { "sentence": "Я ___ по утрам.", "answer": "Бегаю", "hint": "To run (I form)", "translation": "I go running in the mornings." },
+      { "sentence": "Она любит ___.", "answer": "Танцевать", "hint": "To dance", "translation": "She loves to dance." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "What does 'Плавать' mean?", "options": ["To swim", "To run", "To fly", "To jump"], "answer": 0 },

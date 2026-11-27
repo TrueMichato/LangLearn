@@ -125,22 +125,26 @@
         {
           "sentence": "Reservé un ___ en la playa.",
           "answer": "hotel",
-          "hint": "place to stay"
+          "hint": "place to stay",
+          "translation": "I booked a hotel by the beach."
         },
         {
           "sentence": "¿Trajiste tu ___?",
           "answer": "pasaporte",
-          "hint": "travel document"
+          "hint": "travel document",
+          "translation": "Did you bring your passport?"
         },
         {
           "sentence": "El ___ sale a las seis.",
           "answer": "vuelo",
-          "hint": "airplane trip"
+          "hint": "airplane trip",
+          "translation": "The flight leaves at six."
         },
         {
           "sentence": "La ___ es hermosa al atardecer.",
           "answer": "playa",
-          "hint": "sandy shore"
+          "hint": "sandy shore",
+          "translation": "The beach is gorgeous at sunset."
         }
       ]
     },

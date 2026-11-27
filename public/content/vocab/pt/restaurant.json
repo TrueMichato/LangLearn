@@ -119,9 +119,9 @@
     {
       "type": "fill-blank",
       "items": [
-        { "sentence": "Posso ver o ___, por favor?", "answer": "cardápio", "hint": "list of food and drinks at a restaurant" },
-        { "sentence": "A ___, por favor.", "answer": "conta", "hint": "what you pay at the end of a meal" },
-        { "sentence": "Fiz uma ___ para duas pessoas.", "answer": "reserva", "hint": "booking a table in advance" }
+        { "sentence": "Posso ver o ___, por favor?", "answer": "cardápio", "hint": "list of food and drinks at a restaurant", "translation": "Can I see the menu, please?" },
+        { "sentence": "A ___, por favor.", "answer": "conta", "hint": "what you pay at the end of a meal", "translation": "The check, please." },
+        { "sentence": "Fiz uma ___ para duas pessoas.", "answer": "reserva", "hint": "booking a table in advance", "translation": "I made a reservation for two people." }
       ]
     },
     {

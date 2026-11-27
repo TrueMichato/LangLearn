@@ -125,22 +125,26 @@
         {
           "sentence": "___، أَخَلِّصُ الطَّلَبْ الْيَوْمْ.",
           "answer": "أَبْشِرْ",
-          "hint": "sure / gladly (Gulf; MSA: sa-afʿalu)"
+          "hint": "sure / gladly (Gulf; MSA: sa-afʿalu)",
+          "translation": "Sure, I will finish the order today."
         },
         {
           "sentence": "___ عِنْدَنَا شَايْ وَقَهْوَة.",
           "answer": "تِبِي؟",
-          "hint": "do you want? (Gulf; MSA: turīdu)"
+          "hint": "do you want? (Gulf; MSA: turīdu)",
+          "translation": "Do you want some? We have tea and coffee."
         },
         {
           "sentence": "___ الْفَاتُورَة، مَا عَلَيْك أَمْر.",
           "answer": "عَطْنِي",
-          "hint": "give me (Gulf; MSA: aʿṭinī)"
+          "hint": "give me (Gulf; MSA: aʿṭinī)",
+          "translation": "Give me the bill, please."
         },
         {
           "sentence": "___ وَنَوْصَلْ لِلْبَيْتْ.",
           "answer": "شْوَي",
-          "hint": "a little / a bit (Gulf)"
+          "hint": "a little / a bit (Gulf)",
+          "translation": "A little bit and we will reach the house."
         }
       ]
     },

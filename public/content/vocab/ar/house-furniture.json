@@ -125,22 +125,26 @@
         {
           "sentence": "___ صَغِيرٌ فِي الْقَرْيَةِ.",
           "answer": "بَيْتٌ",
-          "hint": "house"
+          "hint": "house",
+          "translation": "A small house is in the village."
         },
         {
           "sentence": "___ جَدِيدَةٌ فِي الْمَدِينَةِ.",
           "answer": "شَقَّةٌ",
-          "hint": "apartment"
+          "hint": "apartment",
+          "translation": "A new apartment is in the city."
         },
         {
           "sentence": "___ هَادِئَةٌ لِلدِّرَاسَةِ.",
           "answer": "غُرْفَةٌ",
-          "hint": "room"
+          "hint": "room",
+          "translation": "A quiet room for studying."
         },
         {
           "sentence": "___ مَفْتُوحٌ أَمَامَنَا.",
           "answer": "بَابٌ",
-          "hint": "door"
+          "hint": "door",
+          "translation": "An open door is in front of us."
         }
       ]
     },

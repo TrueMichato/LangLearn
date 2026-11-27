@@ -125,17 +125,20 @@
         {
           "sentence": "Un ___ verifică sursele.",
           "answer": "jurnalist",
-          "hint": "journalist"
+          "hint": "journalist",
+          "translation": "A journalist checks the sources."
         },
         {
           "sentence": "Un ___ scurt atrage cititorii.",
           "answer": "titlu",
-          "hint": "headline"
+          "hint": "headline",
+          "translation": "A short headline attracts readers."
         },
         {
           "sentence": "O ___ credibilă confirmă informația.",
           "answer": "sursă",
-          "hint": "source"
+          "hint": "source",
+          "translation": "A credible source confirms the information."
         }
       ]
     },

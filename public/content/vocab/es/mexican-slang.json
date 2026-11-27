@@ -22,10 +22,10 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "¿Qué ___, cuate?", "answer": "onda", "hint": "what's up" },
-      { "sentence": "Tengo mucha ___ hoy.", "answer": "chamba", "hint": "work" },
-      { "sentence": "Vamos por unas ___.", "answer": "chelas", "hint": "beers" },
-      { "sentence": "¡___ con ese perro!", "answer": "Aguas", "hint": "watch out" }
+      { "sentence": "¿Qué ___, cuate?", "answer": "onda", "hint": "what's up", "translation": "What's up, dude?" },
+      { "sentence": "Tengo mucha ___ hoy.", "answer": "chamba", "hint": "work", "translation": "I have a lot of work today." },
+      { "sentence": "Vamos por unas ___.", "answer": "chelas", "hint": "beers", "translation": "Let's go grab some beers." },
+      { "sentence": "¡___ con ese perro!", "answer": "Aguas", "hint": "watch out", "translation": "Watch out for that dog!" }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "What does 'chido' mean?", "options": ["expensive", "cool", "ugly", "old"], "answer": 1 },

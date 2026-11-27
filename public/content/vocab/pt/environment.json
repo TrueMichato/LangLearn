@@ -119,9 +119,9 @@
     {
       "type": "fill-blank",
       "items": [
-        { "sentence": "O ___ na Amazônia preocupa o mundo.", "answer": "desmatamento", "hint": "clearing of forests" },
-        { "sentence": "A ___ ajuda a reduzir o lixo.", "answer": "reciclagem", "hint": "reusing materials instead of discarding" },
-        { "sentence": "Não jogue ___ no chão.", "answer": "lixo", "hint": "waste, garbage" }
+        { "sentence": "O ___ na Amazônia preocupa o mundo.", "answer": "desmatamento", "hint": "clearing of forests", "translation": "Deforestation in the Amazon worries the world." },
+        { "sentence": "A ___ ajuda a reduzir o lixo.", "answer": "reciclagem", "hint": "reusing materials instead of discarding", "translation": "Recycling helps reduce waste." },
+        { "sentence": "Não jogue ___ no chão.", "answer": "lixo", "hint": "waste, garbage", "translation": "Don't throw trash on the ground." }
       ]
     },
     {

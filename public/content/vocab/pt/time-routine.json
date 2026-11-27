@@ -21,9 +21,9 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "Eu ___ às seis da manhã.", "answer": "acordo", "hint": "to wake up (1st person)" },
-      { "sentence": "O ___ é servido ao meio-dia.", "answer": "almoço", "hint": "lunch" },
-      { "sentence": "Eu ___ tomo café de manhã.", "answer": "sempre", "hint": "always" }
+      { "sentence": "Eu ___ às seis da manhã.", "answer": "acordo", "hint": "to wake up (1st person)", "translation": "I wake up at six in the morning." },
+      { "sentence": "O ___ é servido ao meio-dia.", "answer": "almoço", "hint": "lunch", "translation": "Lunch is served at noon." },
+      { "sentence": "Eu ___ tomo café de manhã.", "answer": "sempre", "hint": "always", "translation": "I always have coffee in the morning." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "What does 'café da manhã' mean?", "options": ["lunch", "breakfast", "dinner", "coffee"], "answer": 1 },

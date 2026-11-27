@@ -125,22 +125,26 @@
         {
           "sentence": "Hace frío, ponte ___.",
           "answer": "chaqueta",
-          "hint": "outer garment"
+          "hint": "outer garment",
+          "translation": "It’s cold, put on a jacket."
         },
         {
           "sentence": "Compré un ___ azul.",
           "answer": "vestido",
-          "hint": "one-piece outfit"
+          "hint": "one-piece outfit",
+          "translation": "I bought a blue dress."
         },
         {
           "sentence": "En verano uso ___.",
           "answer": "sandalias",
-          "hint": "open footwear"
+          "hint": "open footwear",
+          "translation": "In summer I wear sandals."
         },
         {
           "sentence": "Lavo la ___ los sábados.",
           "answer": "ropa",
-          "hint": "general word for clothes"
+          "hint": "general word for clothes",
+          "translation": "I do laundry on Saturdays."
         }
       ]
     },

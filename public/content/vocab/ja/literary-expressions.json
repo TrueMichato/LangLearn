@@ -21,9 +21,9 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "桜の美しさは___です。", "answer": "儚い", "hint": "fleeting/ephemeral" },
-      { "sentence": "映画の___がまだ残っています。", "answer": "余韻", "hint": "lingering impression" },
-      { "sentence": "日本文化は___です。", "answer": "奥深い", "hint": "profound" }
+      { "sentence": "桜の美しさは___です。", "answer": "儚い", "hint": "fleeting/ephemeral", "translation": "The beauty of cherry blossoms is fleeting." },
+      { "sentence": "映画の___がまだ残っています。", "answer": "余韻", "hint": "lingering impression", "translation": "The lingering impression of the movie still remains." },
+      { "sentence": "日本文化は___です。", "answer": "奥深い", "hint": "profound", "translation": "Japanese culture is profound." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "What does 哀れ (aware) relate to in Japanese aesthetics?", "options": ["anger at injustice", "the pathos of things (mono no aware)", "celebration of beauty", "fear of the unknown"], "answer": 1 },

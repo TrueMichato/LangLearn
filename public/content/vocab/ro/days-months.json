@@ -132,17 +132,20 @@
         {
           "sentence": "Cursul de română este ___.",
           "answer": "marți",
-          "hint": "Tuesday"
+          "hint": "Tuesday",
+          "translation": "The Romanian class is on Tuesday."
         },
         {
           "sentence": "În ___ începe primăvara.",
           "answer": "martie",
-          "hint": "March"
+          "hint": "March",
+          "translation": "Spring begins in March."
         },
         {
           "sentence": "În ___ sărbătorim Crăciunul.",
           "answer": "decembrie",
-          "hint": "December"
+          "hint": "December",
+          "translation": "In December we celebrate Christmas."
         }
       ]
     },

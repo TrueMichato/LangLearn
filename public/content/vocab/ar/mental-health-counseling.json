@@ -125,22 +125,26 @@
         {
           "sentence": "تَحْتَاجُ ___ إِلَى عِنَايَةٍ مُنْتَظِمَةٍ.",
           "answer": "صِحَّةٌ نَفْسِيَّةٌ",
-          "hint": "mental health"
+          "hint": "mental health",
+          "translation": "Mental health needs regular care."
         },
         {
           "sentence": "يَزْدَادُ ___ قَبْلَ الِامْتِحَانِ أَحْيَانًا.",
           "answer": "قَلَقٌ",
-          "hint": "anxiety"
+          "hint": "anxiety",
+          "translation": "Anxiety sometimes increases before an exam."
         },
         {
           "sentence": "يَسْتَمِعُ ___ بِاهْتِمَامٍ.",
           "answer": "مُرْشِدٌ نَفْسِيٌّ",
-          "hint": "counselor"
+          "hint": "counselor",
+          "translation": "The counselor listens attentively."
         },
         {
           "sentence": "تَحْمِي ___ الْوَقْتَ وَالطَّاقَةَ.",
           "answer": "حُدُودٌ شَخْصِيَّةٌ",
-          "hint": "personal boundaries"
+          "hint": "personal boundaries",
+          "translation": "Personal boundaries protect your time and energy."
         }
       ]
     },

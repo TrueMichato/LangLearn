@@ -132,22 +132,26 @@
         {
           "sentence": "___ en una oficina.",
           "answer": "Trabajo",
-          "hint": "I work"
+          "hint": "I work",
+          "translation": "I work in an office."
         },
         {
           "sentence": "¿Quieres ___ algo?",
           "answer": "beber",
-          "hint": "to drink"
+          "hint": "to drink",
+          "translation": "Do you want to drink something?"
         },
         {
           "sentence": "___ español e inglés.",
           "answer": "Hablo",
-          "hint": "I speak"
+          "hint": "I speak",
+          "translation": "I speak Spanish and English."
         },
         {
           "sentence": "Vamos a ___ pizza.",
           "answer": "comer",
-          "hint": "to eat"
+          "hint": "to eat",
+          "translation": "We’re going to eat pizza."
         }
       ]
     },

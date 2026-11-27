@@ -21,11 +21,11 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "来月___があります。", "answer": "選挙", "hint": "Election" },
-      { "sentence": "___に相談しました。", "answer": "弁護士", "hint": "Lawyer" },
-      { "sentence": "十八歳から___できます。", "answer": "投票", "hint": "Voting" },
-      { "sentence": "税金を払うのは___です。", "answer": "義務", "hint": "Duty" },
-      { "sentence": "新しい___ができました。", "answer": "法律", "hint": "Law" }
+      { "sentence": "来月___があります。", "answer": "選挙", "hint": "Election", "translation": "There's an election next month." },
+      { "sentence": "___に相談しました。", "answer": "弁護士", "hint": "Lawyer", "translation": "I consulted a lawyer." },
+      { "sentence": "十八歳から___できます。", "answer": "投票", "hint": "Voting", "translation": "You can vote from age 18." },
+      { "sentence": "税金を払うのは___です。", "answer": "義務", "hint": "Duty", "translation": "Paying taxes is an obligation." },
+      { "sentence": "新しい___ができました。", "answer": "法律", "hint": "Law", "translation": "A new law was made." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "日本で法律を決める場所を何と言いますか。", "options": ["裁判", "選挙", "国会", "政党"], "answer": 2 },

@@ -125,17 +125,20 @@
         {
           "sentence": "Un ___ aleargă după minge.",
           "answer": "câine",
-          "hint": "dog"
+          "hint": "dog",
+          "translation": "A dog runs after the ball."
         },
         {
           "sentence": "O ___ înoată pe lac.",
           "answer": "rață",
-          "hint": "duck"
+          "hint": "duck",
+          "translation": "A duck swims on the lake."
         },
         {
           "sentence": "Un ___ trăiește în pădure.",
           "answer": "urs",
-          "hint": "bear"
+          "hint": "bear",
+          "translation": "A bear lives in the forest."
         }
       ]
     },

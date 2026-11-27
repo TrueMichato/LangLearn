@@ -21,9 +21,9 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "この動画___で草。", "answer": "マジ", "hint": "seriously/really" },
-      { "sentence": "あの投稿が___った。", "answer": "バズ", "hint": "to go viral" },
-      { "sentence": "___の新曲が出ました。", "answer": "推し", "hint": "one's favorite idol/character" }
+      { "sentence": "この動画___で草。", "answer": "マジ", "hint": "seriously/really", "translation": "This video is seriously lol." },
+      { "sentence": "あの投稿が___った。", "answer": "バズ", "hint": "to go viral", "translation": "That post went viral." },
+      { "sentence": "___の新曲が出ました。", "answer": "推し", "hint": "one's favorite idol/character", "translation": "My favorite idol's new song came out." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "Why does 草 mean 'lol'?", "options": ["It looks like grass blowing in the wind", "www (笑) looks like grass (草) growing", "It's the kanji for laughter", "It comes from an anime"], "answer": 1 },

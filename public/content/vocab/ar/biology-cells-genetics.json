@@ -125,22 +125,26 @@
         {
           "sentence": "___ وَحْدَةُ الْبِنَاءِ فِي الْجِسْمِ.",
           "answer": "خَلِيَّةٌ",
-          "hint": "cell"
+          "hint": "cell",
+          "translation": "The cell is the building block of the body."
         },
         {
           "sentence": "___ يَحْمِلُ شَفْرَةً وِرَاثِيَّةً.",
           "answer": "حَمْضٌ نَوَوِيٌّ",
-          "hint": "nucleic acid"
+          "hint": "nucleic acid",
+          "translation": "Nucleic acid carries a genetic code."
         },
         {
           "sentence": "___ قَدْ تُغَيِّرُ شَكْلَ الْبُرُوتِينِ.",
           "answer": "طَفْرَةٌ",
-          "hint": "mutation"
+          "hint": "mutation",
+          "translation": "A mutation may change the shape of a protein."
         },
         {
           "sentence": "___ أَدَاةٌ لِرُؤْيَةِ الْخَلَايَا.",
           "answer": "مِجْهَرٌ",
-          "hint": "microscope"
+          "hint": "microscope",
+          "translation": "A microscope is a tool for seeing cells."
         }
       ]
     },

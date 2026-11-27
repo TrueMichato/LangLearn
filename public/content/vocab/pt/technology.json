@@ -119,10 +119,10 @@
     {
       "type": "fill-blank",
       "items": [
-        { "sentence": "Esqueci minha ___ do banco.", "answer": "senha", "hint": "secret code to access accounts" },
-        { "sentence": "A ___ do meu celular quebrou.", "answer": "tela", "hint": "display surface of a device" },
-        { "sentence": "Meu ___ está sem bateria.", "answer": "celular", "hint": "portable phone" },
-        { "sentence": "Comprei um ___ sem fio.", "answer": "teclado", "hint": "device with keys for typing" }
+        { "sentence": "Esqueci minha ___ do banco.", "answer": "senha", "hint": "secret code to access accounts", "translation": "I forgot my bank password." },
+        { "sentence": "A ___ do meu celular quebrou.", "answer": "tela", "hint": "display surface of a device", "translation": "My phone screen broke." },
+        { "sentence": "Meu ___ está sem bateria.", "answer": "celular", "hint": "portable phone", "translation": "My cell phone is out of battery." },
+        { "sentence": "Comprei um ___ sem fio.", "answer": "teclado", "hint": "device with keys for typing", "translation": "I bought a wireless keyboard." }
       ]
     },
     {

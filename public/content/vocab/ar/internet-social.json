@@ -125,22 +125,26 @@
         {
           "sentence": "___ سَرِيعٌ فِي الْمَكْتَبِ.",
           "answer": "إِنْتَرْنِتٌ",
-          "hint": "internet"
+          "hint": "internet",
+          "translation": "The internet is fast at the office."
         },
         {
           "sentence": "هٰذَا ___ مُفِيدٌ لِلدِّرَاسَةِ.",
           "answer": "مَوْقِعٌ",
-          "hint": "website"
+          "hint": "website",
+          "translation": "This is a useful website for studying."
         },
         {
           "sentence": "هٰذَا ___ جَدِيدٌ عَلَى التَّطْبِيقِ.",
           "answer": "حِسَابٌ",
-          "hint": "account"
+          "hint": "account",
+          "translation": "This is a new account on the app."
         },
         {
           "sentence": "يَجِبُ أَنْ تَكُونَ ___ قَوِيَّةً.",
           "answer": "كَلِمَةُ مُرُورٍ",
-          "hint": "password"
+          "hint": "password",
+          "translation": "The password must be strong."
         }
       ]
     },

@@ -22,11 +22,11 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "___は桜がきれいです。", "answer": "春", "hint": "Spring" },
-      { "sentence": "___で泳ぎました。", "answer": "海", "hint": "Sea" },
-      { "sentence": "夜空に___がたくさん見えます。", "answer": "星", "hint": "Star" },
-      { "sentence": "___は雪が降ります。", "answer": "冬", "hint": "Winter" },
-      { "sentence": "大きな___の下で休みました。", "answer": "木", "hint": "Tree" }
+      { "sentence": "___は桜がきれいです。", "answer": "春", "hint": "Spring", "translation": "Cherry blossoms are beautiful in spring." },
+      { "sentence": "___で泳ぎました。", "answer": "海", "hint": "Sea", "translation": "I swam in the sea." },
+      { "sentence": "夜空に___がたくさん見えます。", "answer": "星", "hint": "Star", "translation": "I can see many stars in the night sky." },
+      { "sentence": "___は雪が降ります。", "answer": "冬", "hint": "Winter", "translation": "It snows in winter." },
+      { "sentence": "大きな___の下で休みました。", "answer": "木", "hint": "Tree", "translation": "I rested under a big tree." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "「はる」はどの季節ですか。", "options": ["夏", "秋", "冬", "春"], "answer": 3 },

@@ -21,11 +21,11 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "来週___があります。", "answer": "試験", "hint": "Exam" },
-      { "sentence": "___を忘れてしまいました。", "answer": "宿題", "hint": "Homework" },
-      { "sentence": "三月に___します。", "answer": "卒業", "hint": "Graduation" },
-      { "sentence": "___で本を借りました。", "answer": "図書館", "hint": "Library" },
-      { "sentence": "毎日___することが大切です。", "answer": "復習", "hint": "Review" }
+      { "sentence": "来週___があります。", "answer": "試験", "hint": "Exam", "translation": "There's an exam next week." },
+      { "sentence": "___を忘れてしまいました。", "answer": "宿題", "hint": "Homework", "translation": "I forgot my homework." },
+      { "sentence": "三月に___します。", "answer": "卒業", "hint": "Graduation", "translation": "I will graduate in March." },
+      { "sentence": "___で本を借りました。", "answer": "図書館", "hint": "Library", "translation": "I borrowed a book from the library." },
+      { "sentence": "毎日___することが大切です。", "answer": "復習", "hint": "Review", "translation": "It's important to review every day." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "学校で勉強する部屋を何と言いますか。", "options": ["図書館", "教室", "教科書", "黒板"], "answer": 1 },

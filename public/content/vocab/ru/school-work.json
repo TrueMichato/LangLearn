@@ -21,9 +21,9 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "Дети идут в ___.", "answer": "Школу", "hint": "School (accusative)" },
-      { "sentence": "___ начинается в девять.", "answer": "Урок", "hint": "Lesson" },
-      { "sentence": "Завтра у нас ___.", "answer": "Экзамен", "hint": "Exam" }
+      { "sentence": "Дети идут в ___.", "answer": "Школу", "hint": "School (accusative)", "translation": "The children are going to school." },
+      { "sentence": "___ начинается в девять.", "answer": "Урок", "hint": "Lesson", "translation": "The lesson starts at nine." },
+      { "sentence": "Завтра у нас ___.", "answer": "Экзамен", "hint": "Exam", "translation": "Tomorrow we have an exam." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "What does 'Учитель' mean?", "options": ["Teacher", "Student", "Director", "Doctor"], "answer": 0 },

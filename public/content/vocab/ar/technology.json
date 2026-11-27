@@ -125,22 +125,26 @@
         {
           "sentence": "___ جَدِيدٌ فِي يَدِي.",
           "answer": "هَاتِفٌ",
-          "hint": "phone"
+          "hint": "phone",
+          "translation": "A new phone is in my hand."
         },
         {
           "sentence": "___ سَرِيعٌ عَلَى الْمَكْتَبِ.",
           "answer": "حَاسُوبٌ",
-          "hint": "computer"
+          "hint": "computer",
+          "translation": "A fast computer is on the desk."
         },
         {
           "sentence": "___ كَبِيرَةٌ أَمَامِي.",
           "answer": "شَاشَةٌ",
-          "hint": "screen"
+          "hint": "screen",
+          "translation": "A large screen is in front of me."
         },
         {
           "sentence": "___ نَظِيفَةٌ عَلَى الْمَكْتَبِ.",
           "answer": "لَوْحَةُ مَفَاتِيحَ",
-          "hint": "keyboard"
+          "hint": "keyboard",
+          "translation": "A clean keyboard is on the desk."
         }
       ]
     },

@@ -119,9 +119,9 @@
     {
       "type": "fill-blank",
       "items": [
-        { "sentence": "___ totalmente com você.", "answer": "Concordo", "hint": "to have the same opinion as someone" },
-        { "sentence": "___ eu vá ao cinema amanhã.", "answer": "Talvez", "hint": "expressing uncertainty" },
-        { "sentence": "Respeito o seu ___.", "answer": "ponto de vista", "hint": "way of seeing things" }
+        { "sentence": "___ totalmente com você.", "answer": "Concordo", "hint": "to have the same opinion as someone", "translation": "I totally agree with you." },
+        { "sentence": "___ eu vá ao cinema amanhã.", "answer": "Talvez", "hint": "expressing uncertainty", "translation": "Maybe I'll go to the movies tomorrow." },
+        { "sentence": "Respeito o seu ___.", "answer": "ponto de vista", "hint": "way of seeing things", "translation": "I respect your point of view." }
       ]
     },
     {

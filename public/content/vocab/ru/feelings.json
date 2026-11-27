@@ -21,11 +21,11 @@
   "exercises": [
     { "type": "match", "pairs": 6 },
     { "type": "fill-blank", "items": [
-      { "sentence": "Он очень ___ человек.", "answer": "Добрый", "hint": "Kind / Good-natured" },
-      { "sentence": "Почему ты такой ___?", "answer": "Грустный", "hint": "Sad" },
-      { "sentence": "Не будь таким ___!", "answer": "Ленивым", "hint": "Lazy (instrumental)" },
-      { "sentence": "Будьте ___ с гостями.", "answer": "Вежливы", "hint": "Polite (short form)" },
-      { "sentence": "Бабушка очень ___.", "answer": "Щедрая", "hint": "Generous (feminine)" }
+      { "sentence": "Он очень ___ человек.", "answer": "Добрый", "hint": "Kind / Good-natured", "translation": "He is a very kind person." },
+      { "sentence": "Почему ты такой ___?", "answer": "Грустный", "hint": "Sad", "translation": "Why are you so sad?" },
+      { "sentence": "Не будь таким ___!", "answer": "Ленивым", "hint": "Lazy (instrumental)", "translation": "Don't be so lazy!" },
+      { "sentence": "Будьте ___ с гостями.", "answer": "Вежливы", "hint": "Polite (short form)", "translation": "Be polite with the guests." },
+      { "sentence": "Бабушка очень ___.", "answer": "Щедрая", "hint": "Generous (feminine)", "translation": "Grandma is very generous." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "What does 'Строгий' mean?", "options": ["Strict", "Strong", "Strange", "Stubborn"], "answer": 0 },

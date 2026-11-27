@@ -21,11 +21,11 @@
   "exercises": [
     { "type": "match", "pairs": 6 },
     { "type": "fill-blank", "items": [
-      { "sentence": "Я забыл ___ дома.", "answer": "Телефон", "hint": "Phone" },
-      { "sentence": "Без ___ сложно работать.", "answer": "Интернета", "hint": "Internet (genitive)" },
-      { "sentence": "Сохрани ___ на диске.", "answer": "Файл", "hint": "File" },
-      { "sentence": "Не забудь свой ___.", "answer": "Пароль", "hint": "Password" },
-      { "sentence": "Я работаю на ___.", "answer": "Ноутбуке", "hint": "Laptop (prepositional)" }
+      { "sentence": "Я забыл ___ дома.", "answer": "Телефон", "hint": "Phone", "translation": "I forgot my phone at home." },
+      { "sentence": "Без ___ сложно работать.", "answer": "Интернета", "hint": "Internet (genitive)", "translation": "It's hard to work without the internet." },
+      { "sentence": "Сохрани ___ на диске.", "answer": "Файл", "hint": "File", "translation": "Save the file to the disk." },
+      { "sentence": "Не забудь свой ___.", "answer": "Пароль", "hint": "Password", "translation": "Don't forget your password." },
+      { "sentence": "Я работаю на ___.", "answer": "Ноутбуке", "hint": "Laptop (prepositional)", "translation": "I work on a laptop." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "What does 'Клавиатура' mean?", "options": ["Keyboard", "Screen", "Mouse", "Printer"], "answer": 0 },

@@ -21,11 +21,11 @@
   "exercises": [
     { "type": "match", "pairs": 6 },
     { "type": "fill-blank", "items": [
-      { "sentence": "Дедушка читает ___ каждое утро.", "answer": "Газету", "hint": "Newspaper (accusative)" },
-      { "sentence": "Я прочитал интересную ___.", "answer": "Статью", "hint": "Article (accusative)" },
-      { "sentence": "___ прервала фильм.", "answer": "Реклама", "hint": "Advertisement" },
-      { "sentence": "___ привлёк моё внимание.", "answer": "Заголовок", "hint": "Headline" },
-      { "sentence": "Матч показывают в ___.", "answer": "Прямом эфире", "hint": "Live broadcast (prepositional)" }
+      { "sentence": "Дедушка читает ___ каждое утро.", "answer": "Газету", "hint": "Newspaper (accusative)", "translation": "Grandpa reads the newspaper every morning." },
+      { "sentence": "Я прочитал интересную ___.", "answer": "Статью", "hint": "Article (accusative)", "translation": "I read an interesting article." },
+      { "sentence": "___ прервала фильм.", "answer": "Реклама", "hint": "Advertisement", "translation": "The advertisement interrupted the movie." },
+      { "sentence": "___ привлёк моё внимание.", "answer": "Заголовок", "hint": "Headline", "translation": "The headline caught my attention." },
+      { "sentence": "Матч показывают в ___.", "answer": "Прямом эфире", "hint": "Live broadcast (prepositional)", "translation": "The match is being shown live." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "What does 'Журналист' mean?", "options": ["Journalist", "Magazine", "Journal", "Editor"], "answer": 0 },

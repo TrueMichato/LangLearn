@@ -21,9 +21,9 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "___ готовит обед.", "answer": "Мама", "hint": "Mom" },
-      { "sentence": "У нас большая ___.", "answer": "Семья", "hint": "Family" },
-      { "sentence": "___ печёт пирожки.", "answer": "Бабушка", "hint": "Grandmother" }
+      { "sentence": "___ готовит обед.", "answer": "Мама", "hint": "Mom", "translation": "Mom is cooking lunch." },
+      { "sentence": "У нас большая ___.", "answer": "Семья", "hint": "Family", "translation": "We have a big family." },
+      { "sentence": "___ печёт пирожки.", "answer": "Бабушка", "hint": "Grandmother", "translation": "Grandmother bakes pies." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "What does 'Сестра' mean?", "options": ["Sister", "Brother", "Daughter", "Mother"], "answer": 0 },

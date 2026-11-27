@@ -125,22 +125,26 @@
         {
           "sentence": "دَرَسْنَا ___ قَدِيمَةً فِي الْجَامِعَةِ.",
           "answer": "حَضَارَةٌ",
-          "hint": "civilization"
+          "hint": "civilization",
+          "translation": "We studied an ancient civilization at the university."
         },
         {
           "sentence": "تَوَسَّعَتِ ___ عَبْرَ الْقَارَّةِ.",
           "answer": "إِمْبِرَاطُورِيَّةٌ",
-          "hint": "empire"
+          "hint": "empire",
+          "translation": "The empire expanded across the continent."
         },
         {
           "sentence": "نَشَأَتْ ___ عَلَى ضِفَافِ النَّهْرِ.",
           "answer": "دَوْلَةٌ قَدِيمَةٌ",
-          "hint": "ancient state"
+          "hint": "ancient state",
+          "translation": "An ancient state arose on the banks of the river."
         },
         {
           "sentence": "زُرْنَا ___ فِي الْمَدِينَةِ.",
           "answer": "أَثَرٌ تَارِيخِيٌّ",
-          "hint": "historic monument"
+          "hint": "historic monument",
+          "translation": "We visited a historic monument in the city."
         }
       ]
     },

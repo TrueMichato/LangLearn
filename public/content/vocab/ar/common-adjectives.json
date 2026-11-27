@@ -125,22 +125,26 @@
         {
           "sentence": "الْبَيْتُ ___ وَجَمِيلٌ.",
           "answer": "كَبِيرٌ",
-          "hint": "big / large"
+          "hint": "big / large",
+          "translation": "The house is big and beautiful."
         },
         {
           "sentence": "الْقِطُّ ___ جِدًّا.",
           "answer": "صَغِيرٌ",
-          "hint": "small"
+          "hint": "small",
+          "translation": "The cat is very small."
         },
         {
           "sentence": "هٰذَا كِتَابٌ ___.",
           "answer": "جَيِّدٌ",
-          "hint": "good"
+          "hint": "good",
+          "translation": "This is a good book."
         },
         {
           "sentence": "الطَّعَامُ ___ الْيَوْمَ.",
           "answer": "سَيِّئٌ",
-          "hint": "bad"
+          "hint": "bad",
+          "translation": "The food is bad today."
         }
       ]
     },

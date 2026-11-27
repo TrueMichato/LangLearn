@@ -125,17 +125,20 @@
         {
           "sentence": "Sunt ___ azi.",
           "answer": "fericit",
-          "hint": "happy"
+          "hint": "happy",
+          "translation": "I am happy today."
         },
         {
           "sentence": "Sunt ___ după drum.",
           "answer": "obosit",
-          "hint": "tired"
+          "hint": "tired",
+          "translation": "I am tired after the trip."
         },
         {
           "sentence": "Simt ___ după greșeală.",
           "answer": "rușine",
-          "hint": "shame"
+          "hint": "shame",
+          "translation": "I feel shame after the mistake."
         }
       ]
     },

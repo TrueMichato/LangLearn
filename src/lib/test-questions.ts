@@ -1,4 +1,5 @@
 import { isRTL } from './rtl';
+import { fillBlankCue } from './fill-blank-cue';
 import {
   buildGrammarCardFields,
   extractGrammarCardSources,
@@ -38,7 +39,7 @@ interface VocabLesson {
   words: VocabWord[];
   exercises: Array<{
     type: string;
-    items?: Array<{ sentence: string; answer: string; hint: string }>;
+    items?: Array<{ sentence: string; answer: string; hint: string; translation?: string }>;
   }>;
 }
 
@@ -161,7 +162,7 @@ function generateVocabQuestions(
   const questions: Question[] = [];
 
   // Collect fill-blank items from exercises
-  const fillBlanks: Array<{ sentence: string; answer: string; hint: string; lessonId: string; lessonTitle?: string }> = [];
+  const fillBlanks: Array<{ sentence: string; answer: string; hint: string; translation?: string; lessonId: string; lessonTitle?: string }> = [];
   for (const lesson of lessons) {
     for (const ex of lesson.exercises) {
       if (ex.type === 'fill-blank' && ex.items) {
@@ -215,10 +216,11 @@ function generateVocabQuestions(
         const distractors = pickDistractors(fb.answer, wordPool, 3, random);
         if (distractors.length < 3) continue;
         const opts = shuffle([fb.answer, ...distractors], random);
+        const cue = fillBlankCue(fb);
         questions.push({
           id: i,
           category: 'vocabulary',
-          question: `Fill in the blank: ${fb.sentence} (${fb.hint})`,
+          question: `Fill in the blank: ${fb.sentence}${cue ? ` (“${cue.text}”)` : ''}`,
           options: opts,
           correctIndex: opts.indexOf(fb.answer),
           lessonId: fb.lessonId,

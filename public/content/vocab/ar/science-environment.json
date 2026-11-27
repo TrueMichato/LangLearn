@@ -125,22 +125,26 @@
         {
           "sentence": "___ يَفْتَحُ أَبْوَابًا جَدِيدَةً.",
           "answer": "عِلْمٌ",
-          "hint": "science / knowledge"
+          "hint": "science / knowledge",
+          "translation": "Science opens new doors."
         },
         {
           "sentence": "يَحْتَاجُ ___ إِلَى مَصَادِرَ دَقِيقَةٍ.",
           "answer": "بَحْثٌ",
-          "hint": "research"
+          "hint": "research",
+          "translation": "Research needs accurate sources."
         },
         {
           "sentence": "___ مُهِمَّةٌ فِي الْمُخْتَبَرِ.",
           "answer": "تَجْرِبَةٌ",
-          "hint": "experiment"
+          "hint": "experiment",
+          "translation": "An experiment is important in the lab."
         },
         {
           "sentence": "ظَهَرَتِ ___ بَعْدَ سَاعَةٍ.",
           "answer": "نَتِيجَةٌ",
-          "hint": "result"
+          "hint": "result",
+          "translation": "The result appeared after an hour."
         }
       ]
     },

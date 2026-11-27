@@ -21,10 +21,10 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "___ бодрит по утрам.", "answer": "Кофе", "hint": "Coffee" },
-      { "sentence": "___ — традиционный русский напиток.", "answer": "Квас", "hint": "Kvass" },
-      { "sentence": "Дети пьют ___ на ночь.", "answer": "Молоко", "hint": "Milk" },
-      { "sentence": "Красное ___ подходит к мясу.", "answer": "Вино", "hint": "Wine" }
+      { "sentence": "___ бодрит по утрам.", "answer": "Кофе", "hint": "Coffee", "translation": "Coffee energizes in the mornings." },
+      { "sentence": "___ — традиционный русский напиток.", "answer": "Квас", "hint": "Kvass", "translation": "Kvass is a traditional Russian drink." },
+      { "sentence": "Дети пьют ___ на ночь.", "answer": "Молоко", "hint": "Milk", "translation": "Children drink milk before bed." },
+      { "sentence": "Красное ___ подходит к мясу.", "answer": "Вино", "hint": "Wine", "translation": "Red wine goes well with meat." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "What does 'Кефир' mean?", "options": ["Kefir", "Yogurt", "Cream", "Buttermilk"], "answer": 0 },

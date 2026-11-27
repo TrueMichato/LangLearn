@@ -21,11 +21,11 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "___, я опоздал.", "answer": "Извините", "hint": "Excuse me" },
-      { "sentence": "Здесь ___ курить.", "answer": "Нельзя", "hint": "It is not allowed" },
-      { "sentence": "Вызовите ___!", "answer": "Полицию", "hint": "Police (accusative)" },
-      { "sentence": "Мне ___ нужен врач.", "answer": "Срочно", "hint": "Urgently" },
-      { "sentence": "___, как пройти к вокзалу?", "answer": "Подскажите", "hint": "Could you tell me" }
+      { "sentence": "___, я опоздал.", "answer": "Извините", "hint": "Excuse me", "translation": "Sorry, I'm late." },
+      { "sentence": "Здесь ___ курить.", "answer": "Нельзя", "hint": "It is not allowed", "translation": "Smoking is not allowed here." },
+      { "sentence": "Вызовите ___!", "answer": "Полицию", "hint": "Police (accusative)", "translation": "Call the police!" },
+      { "sentence": "Мне ___ нужен врач.", "answer": "Срочно", "hint": "Urgently", "translation": "I urgently need a doctor." },
+      { "sentence": "___, как пройти к вокзалу?", "answer": "Подскажите", "hint": "Could you tell me", "translation": "Could you tell me how to get to the station?" }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "What does 'Нельзя' mean?", "options": ["It is not allowed", "It is possible", "It is necessary", "It is easy"], "answer": 0 },

@@ -125,22 +125,26 @@
         {
           "sentence": "___ الدَّرْسُ فِي الْعَاشِرَةِ.",
           "answer": "يَبْدَأُ",
-          "hint": "to begin"
+          "hint": "to begin",
+          "translation": "The lesson begins at ten."
         },
         {
           "sentence": "___ الطَّالِبُ وَاجِبَهُ قَبْلَ النَّوْمِ.",
           "answer": "يُنْهِي",
-          "hint": "to finish"
+          "hint": "to finish",
+          "translation": "The student finishes his homework before sleep."
         },
         {
           "sentence": "___ الْمُسَافِرُ الْحَافِلَةَ.",
           "answer": "يَنْتَظِرُ",
-          "hint": "to wait"
+          "hint": "to wait",
+          "translation": "The traveler waits for the bus."
         },
         {
           "sentence": "___ الْمَشْرُوعُ إِلَى وَقْتٍ أَكْثَرَ.",
           "answer": "يَحْتَاجُ",
-          "hint": "to need"
+          "hint": "to need",
+          "translation": "The project needs more time."
         }
       ]
     },

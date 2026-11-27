@@ -125,22 +125,26 @@
         {
           "sentence": "___ أَدْرُسُ الْعَرَبِيَّةَ.",
           "answer": "الْيَوْمَ",
-          "hint": "today"
+          "hint": "today",
+          "translation": "Today I study Arabic."
         },
         {
           "sentence": "___ أَزُورُ صَدِيقِي.",
           "answer": "غَدًا",
-          "hint": "tomorrow"
+          "hint": "tomorrow",
+          "translation": "Tomorrow I visit my friend."
         },
         {
           "sentence": "___ قَرَأْتُ كِتَابًا.",
           "answer": "أَمْسِ",
-          "hint": "yesterday"
+          "hint": "yesterday",
+          "translation": "Yesterday I read a book."
         },
         {
           "sentence": "___ نَكْتُبُ الدَّرْسَ.",
           "answer": "الآنَ",
-          "hint": "now"
+          "hint": "now",
+          "translation": "Now we write the lesson."
         }
       ]
     },

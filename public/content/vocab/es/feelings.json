@@ -125,22 +125,26 @@
         {
           "sentence": "La señora es muy ___.",
           "answer": "amable",
-          "hint": "kind"
+          "hint": "kind",
+          "translation": "The lady is very kind."
         },
         {
           "sentence": "Soy un poco ___ con desconocidos.",
           "answer": "tímida",
-          "hint": "shy (female)"
+          "hint": "shy (female)",
+          "translation": "I’m a bit shy with strangers."
         },
         {
           "sentence": "Mi tío es muy ___.",
           "answer": "chistoso",
-          "hint": "funny"
+          "hint": "funny",
+          "translation": "My uncle is very funny."
         },
         {
           "sentence": "No seas ___, levántate.",
           "answer": "flojo",
-          "hint": "lazy"
+          "hint": "lazy",
+          "translation": "Don’t be lazy, get up."
         }
       ]
     },

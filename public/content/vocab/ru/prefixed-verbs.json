@@ -21,9 +21,9 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "Он ___ из дома в восемь утра. (went out)", "answer": "вышел", "hint": "to go out (pf, past masc)" },
-      { "sentence": "Мы ___ до станции за пять минут. (reached)", "answer": "дошли", "hint": "to reach (pf, past plural)" },
-      { "sentence": "Она ___ домой поздно вечером. (arrived, on foot)", "answer": "пришла", "hint": "to arrive (pf, past fem)" }
+      { "sentence": "Он ___ из дома в восемь утра. (went out)", "answer": "вышел", "hint": "to go out (pf, past masc)", "translation": "He left the house at eight in the morning." },
+      { "sentence": "Мы ___ до станции за пять минут. (reached)", "answer": "дошли", "hint": "to reach (pf, past plural)", "translation": "We walked to the station in five minutes." },
+      { "sentence": "Она ___ домой поздно вечером. (arrived, on foot)", "answer": "пришла", "hint": "to arrive (pf, past fem)", "translation": "She came home late in the evening." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "What does the prefix 'при-' add to a motion verb?", "options": ["Arrival, coming to", "Departure, leaving", "Crossing over", "Going around"], "answer": 0 },

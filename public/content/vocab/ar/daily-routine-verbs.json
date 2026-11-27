@@ -125,22 +125,26 @@
         {
           "sentence": "___ فِي السَّاعَةِ السَّادِسَةِ.",
           "answer": "أَسْتَيْقِظُ",
-          "hint": "I wake up"
+          "hint": "I wake up",
+          "translation": "I wake up at six o’clock."
         },
         {
           "sentence": "___ مِنَ السَّرِيرِ بِهُدُوءٍ.",
           "answer": "أَنْهَضُ",
-          "hint": "I get up"
+          "hint": "I get up",
+          "translation": "I get up from bed quietly."
         },
         {
           "sentence": "___ وَجْهِي كُلَّ صَبَاحٍ.",
           "answer": "أَغْسِلُ",
-          "hint": "I wash"
+          "hint": "I wash",
+          "translation": "I wash my face every morning."
         },
         {
           "sentence": "___ قَبْلَ الْعَمَلِ.",
           "answer": "أَسْتَحِمُّ",
-          "hint": "I take a shower"
+          "hint": "I take a shower",
+          "translation": "I take a shower before work."
         }
       ]
     },

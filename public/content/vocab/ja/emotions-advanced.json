@@ -21,9 +21,9 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "その映画に___しました。", "answer": "感動", "hint": "to be moved/impressed" },
-      { "sentence": "旅行の前日は___します。", "answer": "ワクワク", "hint": "excited/thrilled" },
-      { "sentence": "結果を聞いて___しました。", "answer": "がっかり", "hint": "disappointed" }
+      { "sentence": "その映画に___しました。", "answer": "感動", "hint": "to be moved/impressed", "translation": "I was deeply moved by that movie." },
+      { "sentence": "旅行の前日は___します。", "answer": "ワクワク", "hint": "excited/thrilled", "translation": "I get excited the day before a trip." },
+      { "sentence": "結果を聞いて___しました。", "answer": "がっかり", "hint": "disappointed", "translation": "I was disappointed when I heard the results." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "What does 懐かしい mean?", "options": ["irritated", "nostalgic", "miserable", "refreshing"], "answer": 1 },

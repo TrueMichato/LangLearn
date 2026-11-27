@@ -125,22 +125,26 @@
         {
           "sentence": "المُعَلِّمُ ___ مَعَ الطُّلَّابِ.",
           "answer": "صَبُورٌ",
-          "hint": "patient"
+          "hint": "patient",
+          "translation": "The teacher is patient with the students."
         },
         {
           "sentence": "جَارُنَا ___ وَيُحِبُّ الضُّيُوفَ.",
           "answer": "كَرِيمٌ",
-          "hint": "generous"
+          "hint": "generous",
+          "translation": "Our neighbor is generous and loves guests."
         },
         {
           "sentence": "الرَّجُلُ ___ وَلَا يُحِبُّ المُسَاعَدَةَ.",
           "answer": "بَخِيلٌ",
-          "hint": "stingy"
+          "hint": "stingy",
+          "translation": "The man is stingy and does not like helping."
         },
         {
           "sentence": "الجُنْدِيُّ ___ فِي المَوْقِفِ الصَّعْبِ.",
           "answer": "شُجَاعٌ",
-          "hint": "brave"
+          "hint": "brave",
+          "translation": "The soldier is brave in the difficult situation."
         }
       ]
     },

@@ -21,9 +21,9 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "A casa é muito ___.", "answer": "grande", "hint": "big" },
-      { "sentence": "O café está ___ demais.", "answer": "quente", "hint": "hot" },
-      { "sentence": "A prova foi muito ___.", "answer": "difícil", "hint": "difficult" }
+      { "sentence": "A casa é muito ___.", "answer": "grande", "hint": "big", "translation": "The house is very big." },
+      { "sentence": "O café está ___ demais.", "answer": "quente", "hint": "hot", "translation": "The coffee is too hot." },
+      { "sentence": "A prova foi muito ___.", "answer": "difícil", "hint": "difficult", "translation": "The test was very difficult." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "What does 'barato' mean?", "options": ["expensive", "cheap", "big", "small"], "answer": 1 },

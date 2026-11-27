@@ -125,22 +125,26 @@
         {
           "sentence": "___ هَادِئَةٌ تُرِيحُ الْأَعْصَابَ.",
           "answer": "مُوسِيقَى",
-          "hint": "music"
+          "hint": "music",
+          "translation": "Calm music relaxes the nerves."
         },
         {
           "sentence": "___ قَدِيمَةٌ تَحْمِلُ صَوْتًا جَمِيلًا.",
           "answer": "آلَةٌ مُوسِيقِيَّةٌ",
-          "hint": "musical instrument"
+          "hint": "musical instrument",
+          "translation": "An old musical instrument carries a beautiful sound."
         },
         {
           "sentence": "___ عَرَبِيٌّ يُرَافِقُ الْمُطْرِبَ فِي الْحَفْلِ.",
           "answer": "عُودٌ",
-          "hint": "oud / lute"
+          "hint": "oud / lute",
+          "translation": "An Arabic oud accompanies the singer at the concert."
         },
         {
           "sentence": "___ رَنَّانٌ يَمْلَأُ الْقَاعَةَ نَغَمًا.",
           "answer": "قَانُونٌ",
-          "hint": "qanun / zither"
+          "hint": "qanun / zither",
+          "translation": "A resonant qanun fills the hall with melody."
         }
       ]
     },

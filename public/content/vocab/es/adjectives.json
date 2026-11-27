@@ -125,22 +125,26 @@
         {
           "sentence": "La casa es ___.",
           "answer": "grande",
-          "hint": "opposite of small"
+          "hint": "opposite of small",
+          "translation": "The house is big."
         },
         {
           "sentence": "El café está ___.",
           "answer": "caliente",
-          "hint": "high temperature"
+          "hint": "high temperature",
+          "translation": "The coffee is hot."
         },
         {
           "sentence": "El chino es muy ___.",
           "answer": "difícil",
-          "hint": "not easy"
+          "hint": "not easy",
+          "translation": "Chinese is very difficult."
         },
         {
           "sentence": "Tengo un carro ___.",
           "answer": "nuevo",
-          "hint": "not used"
+          "hint": "not used",
+          "translation": "I have a new car."
         }
       ]
     },

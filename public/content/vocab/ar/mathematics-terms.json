@@ -125,22 +125,26 @@
         {
           "sentence": "___ تَرْبِطُ كُلَّ مُدْخَلٍ بِمُخْرَجٍ.",
           "answer": "دَالَّةٌ",
-          "hint": "function"
+          "hint": "function",
+          "translation": "A function maps every input to an output."
         },
         {
           "sentence": "___ يُمَثِّلُ جُزْءًا مِنَ الْكُلِّ.",
           "answer": "كَسْرٌ",
-          "hint": "fraction"
+          "hint": "fraction",
+          "translation": "A fraction represents a part of the whole."
         },
         {
           "sentence": "___ يُسَاوِي أَرْبَعَةً بَعْدَ الْقِسْمَةِ.",
           "answer": "خَارِجُ الْقِسْمَةِ",
-          "hint": "quotient"
+          "hint": "quotient",
+          "translation": "The quotient after division equals four."
         },
         {
           "sentence": "___ لَهُ ثَلَاثَةُ أَضْلَاعٍ.",
           "answer": "مُثَلَّثٌ",
-          "hint": "triangle"
+          "hint": "triangle",
+          "translation": "A triangle has three sides."
         }
       ]
     },

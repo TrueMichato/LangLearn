@@ -125,22 +125,26 @@
         {
           "sentence": "مُمْكِنْ ___ بَسّ؟",
           "answer": "قُصّ لِي طَرَفْ",
-          "hint": "trim the ends for me"
+          "hint": "trim the ends for me",
+          "translation": "Could you just trim the ends for me?"
         },
         {
           "sentence": "نَضَّفْ ___ بِالْمَاكِينَةْ.",
           "answer": "دَقْنِي",
-          "hint": "my beard"
+          "hint": "my beard",
+          "translation": "Clean up my beard with the clippers."
         },
         {
           "sentence": "عِنْدِي ___ السَّاعَةْ خَمْسَةْ.",
           "answer": "حَجْزْ",
-          "hint": "appointment"
+          "hint": "appointment",
+          "translation": "I have an appointment at five."
         },
         {
           "sentence": "بُصّ فِي ___ وَقُولِّي رَأْيَكْ.",
           "answer": "مِرَايَةْ",
-          "hint": "mirror"
+          "hint": "mirror",
+          "translation": "Look in the mirror and tell me what you think."
         }
       ]
     },

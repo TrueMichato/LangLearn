@@ -125,22 +125,26 @@
         {
           "sentence": "___ طَوِيلَةٌ وَمُفَصَّلَةٌ.",
           "answer": "قَائِمَةُ الطَّعَامِ",
-          "hint": "menu / food list"
+          "hint": "menu / food list",
+          "translation": "The menu is long and detailed."
         },
         {
           "sentence": "___ لَذِيذَةٌ فِي هٰذَا الْمَطْعَمِ.",
           "answer": "الْمُقَبِّلَاتُ",
-          "hint": "appetizers"
+          "hint": "appetizers",
+          "translation": "The appetizers are delicious at this restaurant."
         },
         {
           "sentence": "___ هُنَا سَمَكٌ مَشْوِيٌّ.",
           "answer": "الطَّبَقُ الرَّئِيسِيُّ",
-          "hint": "main dish"
+          "hint": "main dish",
+          "translation": "The main dish here is grilled fish."
         },
         {
           "sentence": "___ يَتَغَيَّرُ كُلَّ يَوْمٍ.",
           "answer": "طَبَقُ الْيَوْمِ",
-          "hint": "dish of the day"
+          "hint": "dish of the day",
+          "translation": "The dish of the day changes every day."
         }
       ]
     },

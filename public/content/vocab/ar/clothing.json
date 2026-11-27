@@ -125,22 +125,26 @@
         {
           "sentence": "___ أَبْيَضُ فِي الْخِزَانَةِ.",
           "answer": "قَمِيصٌ",
-          "hint": "shirt"
+          "hint": "shirt",
+          "translation": "A white shirt is in the closet."
         },
         {
           "sentence": "___ أَزْرَقُ عَلَى الْكُرْسِيِّ.",
           "answer": "بِنْطَالٌ",
-          "hint": "pants"
+          "hint": "pants",
+          "translation": "Blue pants are on the chair."
         },
         {
           "sentence": "___ جَمِيلٌ لِلْحَفْلَةِ.",
           "answer": "فُسْتَانٌ",
-          "hint": "dress"
+          "hint": "dress",
+          "translation": "A beautiful dress for the party."
         },
         {
           "sentence": "___ قَصِيرَةٌ فِي الْمَتْجَرِ.",
           "answer": "تَنُّورَةٌ",
-          "hint": "skirt"
+          "hint": "skirt",
+          "translation": "A short skirt is in the store."
         }
       ]
     },

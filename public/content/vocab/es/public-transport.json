@@ -22,10 +22,10 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "Tomo el ___ todos los días al trabajo.", "answer": "metro", "hint": "subway" },
-      { "sentence": "Compra un ___ sencillo.", "answer": "boleto", "hint": "ticket (LatAm)" },
-      { "sentence": "El tren llega al ___ tres.", "answer": "andén", "hint": "platform" },
-      { "sentence": "Evita el metro en la hora ___.", "answer": "pico", "hint": "rush ___" }
+      { "sentence": "Tomo el ___ todos los días al trabajo.", "answer": "metro", "hint": "subway", "translation": "I take the subway to work every day." },
+      { "sentence": "Compra un ___ sencillo.", "answer": "boleto", "hint": "ticket (LatAm)", "translation": "Buy a one-way ticket." },
+      { "sentence": "El tren llega al ___ tres.", "answer": "andén", "hint": "platform", "translation": "The train arrives at platform three." },
+      { "sentence": "Evita el metro en la hora ___.", "answer": "pico", "hint": "rush ___", "translation": "Avoid the metro during rush hour." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "What is 'el transbordo'?", "options": ["the transfer", "the platform", "the driver", "the delay"], "answer": 0 },

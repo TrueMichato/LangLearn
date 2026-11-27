@@ -20,9 +20,9 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "___、元気ですか？", "answer": "こんにちは", "hint": "Hello (daytime)" },
-      { "sentence": "手伝ってくれて、___。", "answer": "ありがとうございます", "hint": "Thank you (polite)" },
-      { "sentence": "___、駅はどこですか？", "answer": "すみません", "hint": "Excuse me" }
+      { "sentence": "___、元気ですか？", "answer": "こんにちは", "hint": "Hello (daytime)", "translation": "Hello, how are you?" },
+      { "sentence": "手伝ってくれて、___。", "answer": "ありがとうございます", "hint": "Thank you (polite)", "translation": "Thank you for helping me." },
+      { "sentence": "___、駅はどこですか？", "answer": "すみません", "hint": "Excuse me", "translation": "Excuse me, where is the station?" }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "How do you say 'Nice to meet you'?", "options": ["はじめまして", "さようなら", "すみません", "ありがとう"], "answer": 0 },

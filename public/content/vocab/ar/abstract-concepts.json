@@ -125,22 +125,26 @@
         {
           "sentence": "___ مَسْؤُولَةٌ أَفْضَلُ مِنْ فَوْضَى.",
           "answer": "حُرِّيَّةٌ",
-          "hint": "freedom"
+          "hint": "freedom",
+          "translation": "Responsible freedom is better than chaos."
         },
         {
           "sentence": "___ بِلَا رَحْمَةٍ قَاسِيَةٌ.",
           "answer": "عَدَالَةٌ",
-          "hint": "justice"
+          "hint": "justice",
+          "translation": "Justice without mercy is harsh."
         },
         {
           "sentence": "___ صَادِقٌ يُقَوِّي الْقَلْبَ.",
           "answer": "أَمَلٌ",
-          "hint": "hope"
+          "hint": "hope",
+          "translation": "Sincere hope strengthens the heart."
         },
         {
           "sentence": "___ إِنْسَانِيَّةٌ حَقٌّ لِكُلِّ شَخْصٍ.",
           "answer": "كَرَامَةٌ",
-          "hint": "dignity"
+          "hint": "dignity",
+          "translation": "Human dignity is a right for every person."
         }
       ]
     },

@@ -21,9 +21,9 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "彼女は英語が___です。", "answer": "ペラペラ", "hint": "fluently" },
-      { "sentence": "星が___輝いています。", "answer": "キラキラ", "hint": "glittering" },
-      { "sentence": "朝はいつも___しています。", "answer": "バタバタ", "hint": "bustling/hectic" }
+      { "sentence": "彼女は英語が___です。", "answer": "ペラペラ", "hint": "fluently", "translation": "She speaks English fluently." },
+      { "sentence": "星が___輝いています。", "answer": "キラキラ", "hint": "glittering", "translation": "The stars are glittering." },
+      { "sentence": "朝はいつも___しています。", "answer": "バタバタ", "hint": "bustling/hectic", "translation": "Mornings are always hectic." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "Which onomatopoeia describes fluffy texture?", "options": ["モチモチ", "フワフワ", "サラサラ", "ボロボロ"], "answer": 1 },

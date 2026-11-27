@@ -21,9 +21,9 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "Meu ___ trabalha em um banco.", "answer": "pai", "hint": "father" },
-      { "sentence": "Minha ___ cozinha muito bem.", "answer": "mãe", "hint": "mother" },
-      { "sentence": "Meu ___ mais velho mora em São Paulo.", "answer": "irmão", "hint": "brother" }
+      { "sentence": "Meu ___ trabalha em um banco.", "answer": "pai", "hint": "father", "translation": "My father works at a bank." },
+      { "sentence": "Minha ___ cozinha muito bem.", "answer": "mãe", "hint": "mother", "translation": "My mother cooks very well." },
+      { "sentence": "Meu ___ mais velho mora em São Paulo.", "answer": "irmão", "hint": "brother", "translation": "My older brother lives in São Paulo." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "What does 'avó' mean?", "options": ["grandfather", "grandmother", "aunt", "uncle"], "answer": 1 },

@@ -125,22 +125,26 @@
         {
           "sentence": "___ قَوِيٌّ يَدْعَمُ الْمُجْتَمَعَ.",
           "answer": "اِقْتِصَادٌ",
-          "hint": "economy"
+          "hint": "economy",
+          "translation": "A strong economy supports society."
         },
         {
           "sentence": "___ دَقِيقَةٌ تُوَضِّحُ النَّفَقَاتِ.",
           "answer": "مِيزَانِيَّةٌ",
-          "hint": "budget"
+          "hint": "budget",
+          "translation": "A precise budget clarifies expenses."
         },
         {
           "sentence": "___ طَوِيلُ الْأَمَدِ يَحْتَاجُ إِلَى صَبْرٍ.",
           "answer": "اِسْتِثْمَارٌ",
-          "hint": "investment"
+          "hint": "investment",
+          "translation": "A long-term investment needs patience."
         },
         {
           "sentence": "___ سَرِيعٌ يُقَلِّلُ قِيمَةَ الْمَالِ.",
           "answer": "تَضَخُّمٌ",
-          "hint": "inflation"
+          "hint": "inflation",
+          "translation": "Rapid inflation reduces the value of money."
         }
       ]
     },

@@ -125,22 +125,26 @@
         {
           "sentence": "___ يَتَغَيَّرُ بِسُرْعَةٍ فِي هَذِهِ المِنْطَقَةِ.",
           "answer": "المُنَاخُ",
-          "hint": "climate"
+          "hint": "climate",
+          "translation": "The climate is changing quickly in this region."
         },
         {
           "sentence": "___ صَافٍ هَذَا الصَّبَاحَ.",
           "answer": "الطَّقْسُ",
-          "hint": "weather"
+          "hint": "weather",
+          "translation": "The weather is clear this morning."
         },
         {
           "sentence": "___ مُرْتَفِعَةٌ فِي الصَّحْرَاءِ.",
           "answer": "دَرَجَةُ الحَرَارَةِ",
-          "hint": "temperature"
+          "hint": "temperature",
+          "translation": "The temperature is high in the desert."
         },
         {
           "sentence": "___ عَالِيَةٌ قُرْبَ البَحْرِ.",
           "answer": "الرُّطُوبَةُ",
-          "hint": "humidity"
+          "hint": "humidity",
+          "translation": "The humidity is high near the sea."
         }
       ]
     },

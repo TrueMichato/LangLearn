@@ -125,22 +125,26 @@
         {
           "sentence": "Te ___ de menos.",
           "answer": "echo",
-          "hint": "to miss"
+          "hint": "to miss",
+          "translation": "I miss you."
         },
         {
           "sentence": "___ que te ayudo.",
           "answer": "Por supuesto",
-          "hint": "of course"
+          "hint": "of course",
+          "translation": "Of course I’ll help you."
         },
         {
           "sentence": "Estoy de ___ contigo.",
           "answer": "acuerdo",
-          "hint": "to agree"
+          "hint": "to agree",
+          "translation": "I agree with you."
         },
         {
           "sentence": "Tengo ___ de un café.",
           "answer": "ganas",
-          "hint": "feel like"
+          "hint": "feel like",
+          "translation": "I feel like a coffee."
         }
       ]
     },

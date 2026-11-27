@@ -125,22 +125,26 @@
         {
           "sentence": "بِدِّي ___ زَعْتَرْ طَازَةْ.",
           "answer": "مَنْقُوشِةْ",
-          "hint": "flatbread pie"
+          "hint": "flatbread pie",
+          "translation": "I want a fresh zaatar flatbread."
         },
         {
           "sentence": "___ الْكَعْكْ دَقِيقَتَيْنْ.",
           "answer": "سَخِّنْلِي",
-          "hint": "heat it for me"
+          "hint": "heat it for me",
+          "translation": "Heat the sesame bread for me for two minutes."
         },
         {
           "sentence": "___ شْوَيَّةْ زَيْتْ عَلَى اللَّبْنِةْ.",
           "answer": "حَطِّلِي",
-          "hint": "put for me"
+          "hint": "put for me",
+          "translation": "Put a little oil on the labneh for me."
         },
         {
           "sentence": "الْخُبْزْ ___ وَطَالِعْ هَلَّقْ.",
           "answer": "طَازَةْ",
-          "hint": "fresh"
+          "hint": "fresh",
+          "translation": "The bread is fresh and just came out."
         }
       ]
     },

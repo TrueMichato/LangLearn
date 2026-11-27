@@ -125,22 +125,26 @@
         {
           "sentence": "El ___ anunció un plan.",
           "answer": "gobierno",
-          "hint": "ruling body"
+          "hint": "ruling body",
+          "translation": "The government announced a plan."
         },
         {
           "sentence": "Mi ___ cuenta.",
           "answer": "voto",
-          "hint": "what you cast in elections"
+          "hint": "what you cast in elections",
+          "translation": "My vote counts."
         },
         {
           "sentence": "La nueva ___ entró en vigor.",
           "answer": "ley",
-          "hint": "rule passed by government"
+          "hint": "rule passed by government",
+          "translation": "The new law took effect."
         },
         {
           "sentence": "Mi ___ me defendió.",
           "answer": "abogado",
-          "hint": "legal representative"
+          "hint": "legal representative",
+          "translation": "My lawyer defended me."
         }
       ]
     },

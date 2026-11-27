@@ -21,9 +21,9 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "ルールに___ってください。", "answer": "従", "hint": "to obey/follow" },
-      { "sentence": "約束を___しました。", "answer": "果た", "hint": "to fulfill" },
-      { "sentence": "この料金は税を___でいます。", "answer": "含ん", "hint": "to include" }
+      { "sentence": "ルールに___ってください。", "answer": "従", "hint": "to obey/follow", "translation": "Please follow the rules." },
+      { "sentence": "約束を___しました。", "answer": "果た", "hint": "to fulfill", "translation": "I fulfilled my promise." },
+      { "sentence": "この料金は税を___でいます。", "answer": "含ん", "hint": "to include", "translation": "This price includes tax." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "What does 生じる mean?", "options": ["to hinder", "to occur/arise", "to supplement", "to overturn"], "answer": 1 },

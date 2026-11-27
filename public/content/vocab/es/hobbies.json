@@ -125,22 +125,26 @@
         {
           "sentence": "Juego ___ los domingos.",
           "answer": "fútbol",
-          "hint": "popular sport with a ball"
+          "hint": "popular sport with a ball",
+          "translation": "I play soccer on Sundays."
         },
         {
           "sentence": "Me encanta ___ salsa.",
           "answer": "bailar",
-          "hint": "dance verb"
+          "hint": "dance verb",
+          "translation": "I love dancing salsa."
         },
         {
           "sentence": "Mi ___ favorito es leer.",
           "answer": "pasatiempo",
-          "hint": "hobby"
+          "hint": "hobby",
+          "translation": "My favorite hobby is reading."
         },
         {
           "sentence": "Salgo a ___ por la mañana.",
           "answer": "correr",
-          "hint": "run"
+          "hint": "run",
+          "translation": "I go running in the morning."
         }
       ]
     },

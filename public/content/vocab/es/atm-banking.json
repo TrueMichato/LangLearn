@@ -21,10 +21,10 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "Quiero ___ cien euros.", "answer": "retirar", "hint": "take out" },
-      { "sentence": "Olvidé mi ___.", "answer": "PIN", "hint": "4-digit code" },
-      { "sentence": "Pedí un ___ al banco.", "answer": "préstamo", "hint": "borrowed money" },
-      { "sentence": "Hice una ___ bancaria.", "answer": "transferencia", "hint": "money sent between accounts" }
+      { "sentence": "Quiero ___ cien euros.", "answer": "retirar", "hint": "take out", "translation": "I want to withdraw one hundred euros." },
+      { "sentence": "Olvidé mi ___.", "answer": "PIN", "hint": "4-digit code", "translation": "I forgot my PIN." },
+      { "sentence": "Pedí un ___ al banco.", "answer": "préstamo", "hint": "borrowed money", "translation": "I asked the bank for a loan." },
+      { "sentence": "Hice una ___ bancaria.", "answer": "transferencia", "hint": "money sent between accounts", "translation": "I made a bank transfer." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "What is 'el saldo'?", "options": ["the loan", "the balance", "the interest", "the deposit"], "answer": 1 },

@@ -125,22 +125,26 @@
         {
           "sentence": "___ هَذَا الْقَمِيصْ؟",
           "answer": "بِكَمْ؟",
-          "hint": "how much?"
+          "hint": "how much?",
+          "translation": "How much is this shirt?"
         },
         {
           "sentence": "السِّعْرْ ___ شْوَيّ.",
           "answer": "غَالِي",
-          "hint": "expensive"
+          "hint": "expensive",
+          "translation": "The price is a bit expensive."
         },
         {
           "sentence": "أَدْفَعْ ___ وَلَا بِالْبِطَاقَةْ؟",
           "answer": "كَاش",
-          "hint": "cash"
+          "hint": "cash",
+          "translation": "Should I pay cash or by card?"
         },
         {
           "sentence": "عَطِنِي ___ بَعْدَ الدَّفْعْ.",
           "answer": "فَاتُورَة",
-          "hint": "receipt"
+          "hint": "receipt",
+          "translation": "Give me a receipt after payment."
         }
       ]
     },

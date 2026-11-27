@@ -125,22 +125,26 @@
         {
           "sentence": "___ أَوَّلُ شَهْرٍ فِي التَّقْوِيمِ الْهِجْرِيِّ.",
           "answer": "مُحَرَّمٌ",
-          "hint": "Muharram"
+          "hint": "Muharram",
+          "translation": "Muharram is the first month in the Hijri calendar."
         },
         {
           "sentence": "يَأْتِي ___ بَعْدَ مُحَرَّمٍ.",
           "answer": "صَفَرٌ",
-          "hint": "Safar"
+          "hint": "Safar",
+          "translation": "Safar comes after Muharram."
         },
         {
           "sentence": "___ شَهْرٌ مَعْرُوفٌ فِي السِّيرَةِ.",
           "answer": "رَبِيعٌ الْأَوَّلُ",
-          "hint": "Rabi al-Awwal"
+          "hint": "Rabi al-Awwal",
+          "translation": "Rabi al-Awwal is a month well known in the Prophet's biography."
         },
         {
           "sentence": "___ يَأْتِي بَعْدَ رَبِيعٍ الْأَوَّلِ.",
           "answer": "رَبِيعٌ الْآخِرُ",
-          "hint": "Rabi al-Akhir"
+          "hint": "Rabi al-Akhir",
+          "translation": "Rabi al-Akhir comes after Rabi al-Awwal."
         }
       ]
     },

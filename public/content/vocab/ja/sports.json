@@ -21,11 +21,11 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "日本では___が人気です。", "answer": "野球", "hint": "Baseball" },
-      { "sentence": "毎朝プールで___ます。", "answer": "泳ぎ", "hint": "To swim" },
-      { "sentence": "毎日___しています。", "answer": "練習", "hint": "Practice" },
-      { "sentence": "今日の試合に___ました。", "answer": "勝ち", "hint": "To win" },
-      { "sentence": "毎日___するのは大切です。", "answer": "運動", "hint": "Exercise" }
+      { "sentence": "日本では___が人気です。", "answer": "野球", "hint": "Baseball", "translation": "Baseball is popular in Japan." },
+      { "sentence": "毎朝プールで___ます。", "answer": "泳ぎ", "hint": "To swim", "translation": "I swim in the pool every morning." },
+      { "sentence": "毎日___しています。", "answer": "練習", "hint": "Practice", "translation": "I practice every day." },
+      { "sentence": "今日の試合に___ました。", "answer": "勝ち", "hint": "To win", "translation": "We won today's match." },
+      { "sentence": "毎日___するのは大切です。", "answer": "運動", "hint": "Exercise", "translation": "It's important to exercise every day." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "スポーツをする人を何と言いますか。", "options": ["チーム", "選手", "応援", "練習"], "answer": 1 },

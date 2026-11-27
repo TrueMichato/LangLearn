@@ -21,11 +21,11 @@
   "exercises": [
     { "type": "match", "pairs": 5 },
     { "type": "fill-blank", "items": [
-      { "sentence": "___ назначено на завтра.", "answer": "Собеседование", "hint": "Interview" },
-      { "sentence": "Отправьте ___ по электронной почте.", "answer": "Резюме", "hint": "Resume" },
-      { "sentence": "Она получила ___.", "answer": "Повышение", "hint": "Promotion" },
-      { "sentence": "У нас гибкий ___ работы.", "answer": "График", "hint": "Schedule" },
-      { "sentence": "___ длится три месяца.", "answer": "Стажировка", "hint": "Internship" }
+      { "sentence": "___ назначено на завтра.", "answer": "Собеседование", "hint": "Interview", "translation": "The interview is scheduled for tomorrow." },
+      { "sentence": "Отправьте ___ по электронной почте.", "answer": "Резюме", "hint": "Resume", "translation": "Send your résumé by email." },
+      { "sentence": "Она получила ___.", "answer": "Повышение", "hint": "Promotion", "translation": "She got a promotion." },
+      { "sentence": "У нас гибкий ___ работы.", "answer": "График", "hint": "Schedule", "translation": "We have a flexible work schedule." },
+      { "sentence": "___ длится три месяца.", "answer": "Стажировка", "hint": "Internship", "translation": "The internship lasts three months." }
     ]},
     { "type": "multiple-choice", "items": [
       { "question": "What does 'Обязанности' mean?", "options": ["Duties", "Abilities", "Goals", "Benefits"], "answer": 0 },
